@@ -4,14 +4,14 @@
 // Struct for tree nodes
 typedef struct Node{
     char label;
-    struct Node* dash;
+    struct Node* dash; //EIR: struct is there because it is inside its own definition
     struct Node* dot;
 } Node;
 
 // Struct for translator
 typedef struct Translator{
     Node* tree;
-    //Add any aditional fields needed
+    Node* cur;
     
 } Translator;
 
@@ -80,25 +80,54 @@ Node* create_tree(){
 Translator* new_translator(){
     
     Node* root = create_tree();
-    
-    //Complete function
-    
+    Node* cur = root;
+
+    Translator* trans = (Translator*)malloc(sizeof(Translator));
+    trans->tree = root; trans->cur = root;
+
+    return trans;
 }
 
-// Move to new possition in tree, print letter if apropriate
+// Move to new position in tree, print letter if apropriate
 void translate(Translator* translator, int c){
-    
+	//printf("Translator started\n");
+	if(c == ' '){
+		printf("%c", (char)(translator->cur->label));
+		translator->cur = translator->tree;
+	} else if(c == '.'){
+		translator->cur = (translator->cur)->dot;
+		//printf((char)((translator->cur)->label));
+	} else {
+		translator->cur = (translator->cur)->dash;
+		//printf((char)((translator->cur)->label));
+	}
+	//printf("Hollabaloi!\n");
+	return;
 }
 
+void free_node(Node* node){
+	if (node->dot!=NULL){
+		free_node(node->dot);
+	}
+	if (node->dash!=NULL){
+		free_node(node->dash);
+	}
+	free(node);
+
+	return;
+}
 
 // Deallocate translator and tree, create aditional helper functions if needed
 void free_translator(Translator* translator){
-
+	free_node(translator->tree);
+	free(translator);
+	return;
 }
+
+
      
 
 int main(int argc, char** argv){
-
     // Create translator
     Translator* translator = new_translator();
     
@@ -106,16 +135,19 @@ int main(int argc, char** argv){
     int c;
     c = getchar();
     while(c != EOF){
+    	//printf("Fun!\n");
         // Pass dots, dashes and spaces on to the translator
         if(c == ' ' || c == '.' || c == '-'){
             translate(translator, c);
         }
         c = getchar();
     }
-    printf("\n");
+    printf("over\n");
     
     //Deallocate translator
     free_translator(translator);
+
+    return 0;
 }
     
 
