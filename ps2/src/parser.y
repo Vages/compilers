@@ -149,7 +149,119 @@ int yylex ( void );                 /* Defined in the generated scanner */
 
 %%
 
-program : ;
+program : function_list
+;
+
+function : type FUNC variable '(' parameter_list ')' START statement_list END
+;
+
+function_list: function_list function
+        | {$$ = NULL}
+;
+
+statement_list : statement
+        | statement_list statement
+;
+
+variable_list : declaration_statement
+        | variable list ',' declaration_statement
+;
+
+expression_list: expression
+        | expression_list ',' expression
+;
+
+parameter_list : variable_list
+        | {$$ = NULL}
+;
+
+argument_list : expression_list
+        | {$$ = NULL}
+;
+
+statement : declaration_statement ';'
+        | assignment_statement ';'
+        | if_statement
+        | while_statement
+        | for_statement
+        | print_statement ';'
+        | return_statement ';'
+        | call  ';'
+;
+
+declaration_statement: type variable
+;
+
+assignment_statement : lvalue ASSIGN expression
+;
+
+if_statement : IF expression THEN statement_list END
+        | IF expression THEN statement_list ELSE statement_list END
+;
+
+while_statement : WHILE expression DO statement_list END
+;
+
+for_statement : FOR assignment_statement TO expression DO statement_list END
+;
+
+return_statement : RETURN expression
+;
+
+print_statement : PRINT expression_list
+;
+
+expression : constant
+        | expression '+' expression
+        | expression '-' expression
+        | expression '*' expression
+        | expression '/' expression
+        | expression '>' expression
+        | expression '<' expression
+        | expression '==' expression
+        | expression '!=' expression
+        | expression '>=' expression
+        | expression '<=' expression
+        | expression '&&' expression
+        | expression '||' expression
+        | '-' expression
+        | '!' expression
+        | NEW type
+        | '(' expression ')'
+        | call
+        | lvalue
+;
+
+call : variable '(' argument_list ')'
+;
+
+lvalue : variable
+        | expression '[' expression ']'
+;
+
+constant : TRUE_CONST
+        | FALSE_CONST
+        | INT_CONST
+        | FLOAT_CONST
+        | STRING_CONST
+;
+
+type : INT
+        | FLOAT
+        | BOOL
+        | VOID
+        | type ARRAY index_list
+;
+
+index_list : index_list '[' index ']'
+        | '[' index ']'
+;
+
+index : INT_CONST
+;
+
+variable : IDENTIFIER
+;
 
 %% 
 
