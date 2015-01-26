@@ -33,8 +33,7 @@ str \"([^\n\"]|\\\")*\"
 FUNC			{ RETURN(FUNC); }
 PRINT			{ RETURN(PRINT); }
 RETURN			{ RETURN(RETURN); }
-CONTINUE		{ RETURN(CONTINUE); }
-BREAK			{ RETURN(BREAK); }
+NEW				{ RETURN(NEW); }
 IF				{ RETURN(IF); }
 THEN			{ RETURN(THEN); }
 ELSE			{ RETURN(ELSE); }
@@ -46,12 +45,8 @@ TO				{ RETURN(TO); }
 INT				{ RETURN(INT); }
 BOOL			{ RETURN(BOOL); }
 FLOAT			{ RETURN(FLOAT); }
-CLASS			{ RETURN(CLASS); }
-HAS				{ RETURN(HAS); }
-WITH			{ RETURN(WITH); }
 START			{ RETURN(START); }
 VOID			{ RETURN(VOID); }
-THIS			{ RETURN(THIS); }
 ARRAY			{ RETURN(ARRAY); }
 
 	/* Operators */
