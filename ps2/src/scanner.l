@@ -76,7 +76,7 @@ TRUE			{ RETURN(TRUE_CONST); }
 FALSE			{ RETURN(FALSE_CONST); }
 
 {str}			{ RETURN(STRING_CONST); }
-{ltr}({ltr}|dgt)*	{ RETURN(IDENTIFIER); }
+{ltr}({ltr}|{dgt})*	{ RETURN(IDENTIFIER); }
 
 "("				{ RETURN('('); }
 ")"				{ RETURN(')'); }
