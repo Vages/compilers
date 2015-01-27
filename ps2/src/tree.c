@@ -144,6 +144,7 @@ node_t * node_init ( nodetype_t type,
 
     data_type_t data_type = {.base_type = base_type};
 
+    node->nodetype = type;
     node->label = label;
     node->data_type = data_type;
     node->expression_type = expression_type;

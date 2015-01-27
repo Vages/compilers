@@ -257,7 +257,7 @@ index_list : index_list '[' index ']' {$$ = CN(index_list_n, 2, $1, $3);}
         | '[' index ']' {$$ = CN(index_list_n, 1, $2);}
 ;
 
-index : INT_CONST {$$ = CNL(index_n, yytext, 0);}
+index : INT_CONST {$$ = CN(index_n, 0); $$->data_type.base_type = INT_TYPE; SetInteger($$, yytext);}
 ;
 
 variable : IDENTIFIER {$$ = CNL(variable_n, STRDUP(yytext), 0);}
