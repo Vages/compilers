@@ -82,5 +82,7 @@ FALSE			{ RETURN(FALSE_CONST); }
 ")"				{ RETURN(')'); }
 ","				{ RETURN(','); }
 ";"				{ RETURN(';'); }
+"["				{ RETURN('['); }
+"]"				{ RETURN(']'); }
 
 %%
