@@ -222,7 +222,7 @@ expression : constant                   {$$ = CNE(expression_n, constant_e, 1, $
         | expression NEQUAL expression  {$$ = CNE(expression_n, nequal_e, 2, $1, $3);}
         | expression GEQUAL expression  {$$ = CNE(expression_n, gequal_e, 2, $1, $3);}
         | expression LEQUAL expression  {$$ = CNE(expression_n, lequal_e, 2, $1, $3);}
-        | expression AND expression     {$$ = CNE(expression_n, and_e, 2, $1, $3)}
+        | expression AND expression     {$$ = CNE(expression_n, and_e, 2, $1, $3);}
         | expression OR expression      {$$ = CNE(expression_n, or_e, 2, $1, $3);}
         | '-' expression                {$$ = CNE(expression_n, uminus_e, 1, $2);}
         | '!' expression                {$$ = CNE(expression_n, not_e, 1, $2);}
@@ -232,7 +232,7 @@ expression : constant                   {$$ = CNE(expression_n, constant_e, 1, $
         | lvalue                        {$$ = CN(expression_n, 1, $1);}
 ;
 
-call : variable '(' argument_list ')' {$$ = CNE(expression_n, func_call_e, 2, $1, $3)}
+call : variable '(' argument_list ')' {$$ = CNE(expression_n, func_call_e, 2, $1, $3);}
 ;
 
 lvalue : variable {$$ = CNE(expression_n, variable_e, 1, $1);}
