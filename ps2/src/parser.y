@@ -149,118 +149,118 @@ int yylex ( void );                 /* Defined in the generated scanner */
 
 %%
 
-program : function_list
+program : function_list {root = CN(program_n, 1, $1);}
 ;
 
-function : type FUNC variable '(' parameter_list ')' START statement_list END
+function : type FUNC variable '(' parameter_list ')' START statement_list END {$$ = CN(function_n, 4, $1, $3, $5, $8);}
 ;
 
-function_list: function_list function
-        | {$$ = NULL}
+function_list: function_list function {$$ = CN(function_list_n, 2, $1, $2);}
+        | {$$ = NULL;}
 ;
 
-statement_list : statement
-        | statement_list statement
+statement_list : statement {$$ = CN(statement_list_n, 1, $1);}
+        | statement_list statement {$$ = CN(statement_list_n, 2, $1, $2);}
 ;
 
-variable_list : declaration_statement
-        | variable list ',' declaration_statement
+variable_list : declaration_statement {$$ = CN(variable_list_n, 1, $1);}
+        | variable_list ',' declaration_statement {$$ = CN(variable_list_n, 2, $1, $3);}
 ;
 
-expression_list: expression
-        | expression_list ',' expression
+expression_list: expression {$$ = CN(expression_list_n, 1, $1);}
+        | expression_list ',' expression {$$ = CN(expression_list_n, 2, $1, $3);}
 ;
 
-parameter_list : variable_list
-        | {$$ = NULL}
+parameter_list : variable_list {$$ = CN(parameter_list_n, 1, $1);}
+        | {$$ = NULL;}
 ;
 
-argument_list : expression_list
-        | {$$ = NULL}
+argument_list : expression_list {$$ = CN(expression_list_n, 1, $1);}
+        | {$$ = NULL;}
 ;
 
-statement : declaration_statement ';'
-        | assignment_statement ';'
-        | if_statement
-        | while_statement
-        | for_statement
-        | print_statement ';'
-        | return_statement ';'
-        | call  ';'
+statement : declaration_statement ';' {$$ = CN(statement_n, 1, $1);}
+        | assignment_statement ';' {$$ = CN(statement_n, 1, $1);}
+        | if_statement {$$ = CN(statement_n, 1, $1);}
+        | while_statement {$$ = CN(statement_n, 1, $1);}
+        | for_statement {$$ = CN(statement_n, 1, $1);}
+        | print_statement ';' {$$ = CN(statement_n, 1, $1);}
+        | return_statement ';' {$$ = CN(statement_n, 1, $1);}
+        | call ';' {$$ = CN(statement_n, 1, $1);}
 ;
 
-declaration_statement: type variable
+declaration_statement: type variable {$$ = CN(declaration_statement_n, 2, $1, $2);}
 ;
 
-assignment_statement : lvalue ASSIGN expression
+assignment_statement : lvalue ASSIGN expression {$$ = CN(assignment_statement_n, 2, $1, $3);}
 ;
 
-if_statement : IF expression THEN statement_list END
-        | IF expression THEN statement_list ELSE statement_list END
+if_statement : IF expression THEN statement_list END {$$ = CN(if_statement_n, 2, $2, $4);}
+        | IF expression THEN statement_list ELSE statement_list END {$$ = CN(if_statement_n, 3, $2, $4, $6);}
 ;
 
-while_statement : WHILE expression DO statement_list END
+while_statement : WHILE expression DO statement_list END {$$ = CN(while_statement_n, 2, $2, $4);}
 ;
 
-for_statement : FOR assignment_statement TO expression DO statement_list END
+for_statement : FOR assignment_statement TO expression DO statement_list END {$$ = CN(for_statement_n, 3, $2, $4, $6);}
 ;
 
-return_statement : RETURN expression
+return_statement : RETURN expression {$$ = CN(return_statement_n, 1, $2);}
 ;
 
-print_statement : PRINT expression_list
+print_statement : PRINT expression_list {$$ = CN(print_statement_n, 1, $2);}
 ;
 
-expression : constant
-        | expression '+' expression
-        | expression '-' expression
-        | expression '*' expression
-        | expression '/' expression
-        | expression '>' expression
-        | expression '<' expression
-        | expression '==' expression
-        | expression '!=' expression
-        | expression '>=' expression
-        | expression '<=' expression
-        | expression '&&' expression
-        | expression '||' expression
-        | '-' expression
-        | '!' expression
-        | NEW type
-        | '(' expression ')'
-        | call
-        | lvalue
+expression : constant                   {$$ = CNE(expression_n, constant_e, 1, $1);}
+        | expression '+' expression     {$$ = CNE(expression_n, add_e, 2, $1, $3);}
+        | expression '-' expression     {$$ = CNE(expression_n, sub_e, 2, $1, $3);}
+        | expression '*' expression     {$$ = CNE(expression_n, mul_e, 2, $1, $3);}
+        | expression '/' expression     {$$ = CNE(expression_n, div_e, 2, $1, $3);}
+        | expression '>' expression     {$$ = CNE(expression_n, greater_e, 2, $1, $3);}
+        | expression '<' expression     {$$ = CNE(expression_n, less_e, 2, $1, $3);}
+        | expression EQUAL expression   {$$ = CNE(expression_n, equal_e, 2, $1, $3);}
+        | expression NEQUAL expression  {$$ = CNE(expression_n, nequal_e, 2, $1, $3);}
+        | expression GEQUAL expression  {$$ = CNE(expression_n, gequal_e, 2, $1, $3);}
+        | expression LEQUAL expression  {$$ = CNE(expression_n, lequal_e, 2, $1, $3);}
+        | expression AND expression     {$$ = CNE(expression_n, and_e, 2, $1, $3)}
+        | expression OR expression      {$$ = CNE(expression_n, or_e, 2, $1, $3);}
+        | '-' expression                {$$ = CNE(expression_n, uminus_e, 1, $2);}
+        | '!' expression                {$$ = CNE(expression_n, not_e, 1, $2);}
+        | NEW type                      {$$ = CNE(expression_n, new_e, 1, $2);}
+        | '(' expression ')'            {$$ = CNE(expression_n, default_e, 1, $2);}
+        | call                          {$$ = CN(expression_n, 1, $1);}
+        | lvalue                        {$$ = CN(expression_n, 1, $1);}
 ;
 
-call : variable '(' argument_list ')'
+call : variable '(' argument_list ')' {$$ = CNE(expression_n, func_call_e, 2, $1, $3)}
 ;
 
-lvalue : variable
-        | expression '[' expression ']'
+lvalue : variable {$$ = CNE(expression_n, variable_e, 1, $1);}
+        | expression '[' expression ']' {$$ = CNE(expression_n, array_index_e, 2, $1, $3);}
 ;
 
-constant : TRUE_CONST
-        | FALSE_CONST
-        | INT_CONST
-        | FLOAT_CONST
-        | STRING_CONST
+constant : TRUE_CONST {$$ = CN(constant_n, 0); $$->data_type.base_type = BOOL_TYPE; $$->bool_const=true;}
+        | FALSE_CONST {$$ = CN(constant_n, 0); $$->data_type.base_type = BOOL_TYPE; $$->bool_const=false;}
+        | INT_CONST {$$ = CN(constant_n, 0); $$->data_type.base_type = INT_TYPE; SetInteger($$, yytext);}
+        | FLOAT_CONST {$$ = CN(constant_n, 0); $$->data_type.base_type = FLOAT_TYPE; SetFloat($$, yytext);}
+        | STRING_CONST {$$ = CN(constant_n, 0); $$->data_type.base_type = STRING_TYPE; SetString($$, yytext);}
 ;
 
-type : INT
-        | FLOAT
-        | BOOL
-        | VOID
-        | type ARRAY index_list
+type : INT {$$ = CNT(type_n, INT_TYPE, 0);}
+        | FLOAT {$$ = CNT(type_n, FLOAT_TYPE, 0);}
+        | BOOL {$$ = CNT(type_n, BOOL_TYPE, 0);}
+        | VOID {$$ = CNT(type_n, VOID_TYPE, 0);}
+        | type ARRAY index_list {$$ = CNT(type_n, ARRAY_TYPE, 2, $1, $3);}
 ;
 
-index_list : index_list '[' index ']'
-        | '[' index ']'
+index_list : index_list '[' index ']' {$$ = CN(index_list_n, 2, $1, $3);}
+        | '[' index ']' {$$ = CN(index_list_n, 1, $2);}
 ;
 
-index : INT_CONST
+index : INT_CONST {$$ = CNL(index_n, yytext, 0);}
 ;
 
-variable : IDENTIFIER
+variable : IDENTIFIER {$$ = CNL(variable_n, STDRUP(yytext), 0);}
 ;
 
 %% 
