@@ -175,7 +175,7 @@ parameter_list : variable_list {$$ = CN(parameter_list_n, 1, $1);}
         | {$$ = NULL;}
 ;
 
-argument_list : expression_list {$$ = CN(expression_list_n, 1, $1);}
+argument_list : expression_list {$$ = CN(argument_list_n, 1, $1);}
         | {$$ = NULL;}
 ;
 
