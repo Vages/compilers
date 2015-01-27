@@ -142,10 +142,10 @@ node_t * node_init ( nodetype_t type,
 {
     node_t *node = (node_t *)malloc(sizeof(node_t));
 
-    //data_type_t data_type = {.base_type = base_type};
+    data_type_t data_type = {.base_type = base_type};
 
     node->label = label;
-    node->data_type = {.base_type = base_type};
+    node->data_type = data_type;
     node->expression_type = expression_type;
     node->n_children = n_children;
     node->children = (node_t **) malloc(n_children*sizeof(node_t *));
