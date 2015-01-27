@@ -1,3 +1,7 @@
+#Vages
+testOutput/
+results.html
+
 # Object files
 *.o
 *.ko
