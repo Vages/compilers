@@ -260,7 +260,7 @@ index_list : index_list '[' index ']' {$$ = CN(index_list_n, 2, $1, $3);}
 index : INT_CONST {$$ = CNL(index_n, yytext, 0);}
 ;
 
-variable : IDENTIFIER {$$ = CNL(variable_n, STDRUP(yytext), 0);}
+variable : IDENTIFIER {$$ = CNL(variable_n, STRDUP(yytext), 0);}
 ;
 
 %% 
