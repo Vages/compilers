@@ -8,7 +8,7 @@ extern int outputStage; // This variable is located in vslc.c
             printf( "TOKEN ( %d,\t'%s' )\n", t, yytext );    \
         return t;                                                      \
     } while ( 0 )
-  
+  	// Vages: Note that RETURN_TOKEN originally was named RETURN. Renamed to avoid ambiguity.
     
 %}
 
@@ -29,6 +29,7 @@ str \"([^\n\"]|\\\")*\"
 {ws}+			{} /* Whitespace */
 "\/\/".*"\n"	{} /* Comments */
 
+	// Vages: The names of the tokens are given by what is defined in parser.y 
 	/* Keywords */
 FUNC			{ RETURN_TOKEN(FUNC); }
 PRINT			{ RETURN_TOKEN(PRINT); }
@@ -50,7 +51,7 @@ VOID			{ RETURN_TOKEN(VOID); }
 ARRAY			{ RETURN_TOKEN(ARRAY); }
 
 	/* Operators */
-":="			{ RETURN_TOKEN(ASSIGN); }
+":="			{ RETURN_TOKEN(ASSIGN); } // Vages: Operators longer than a char can not use a char for a token
 "+"				{ RETURN_TOKEN('+'); }
 "-"				{ RETURN_TOKEN('-'); }
 "*"				{ RETURN_TOKEN('*'); }
