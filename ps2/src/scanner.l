@@ -67,9 +67,6 @@ ARRAY			{ RETURN_TOKEN(ARRAY); }
 "&&"			{ RETURN_TOKEN(AND); }
 "||"			{ RETURN_TOKEN(OR); }
 "!"				{ RETURN_TOKEN('!'); }
-	/*
-"."				{ RETURN_TOKEN('.'); }
-	*/
 
 	/* Types and stuff */
 {dgt}+			{ RETURN_TOKEN(INT_CONST); }
