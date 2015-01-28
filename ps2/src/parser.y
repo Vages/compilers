@@ -133,7 +133,7 @@ int yylex ( void );                 /* Defined in the generated scanner */
 %left '+' '-'
 %left '*' '/'
 %nonassoc UMINUS '!'
-%left '[' '.' 
+%left '['
 
 /*
  * The grammar productions follow below. These are mostly a straightforward
