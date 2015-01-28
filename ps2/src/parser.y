@@ -149,17 +149,17 @@ int yylex ( void );                 /* Defined in the generated scanner */
 
 %%
 
-program         : function_list {root = CN(program_n, 1, $1);}
+program         : function_list {root = CN(program_n, 1, $1);} // Vages: This root refers to a pointer var declared above
 ;
 
 function        : type FUNC variable '(' parameter_list ')' START statement_list END {$$ = CN(function_n, 4, $1, $3, $5, $8);}
 ;
 
 function_list   : function_list function    {$$ = CN(function_list_n, 2, $1, $2);}
-                |                           {$$ = NULL;}
+                |                           {$$ = NULL;} // Vages: This is equivalent to an empty production
 ;
 
-statement_list  : statement                 {$$ = CN(statement_list_n, 1, $1);}
+statement_list  : statement                 {$$ = CN(statement_list_n, 1, $1);} // Vages: Left side of production determines node type
                 | statement_list statement  {$$ = CN(statement_list_n, 2, $1, $2);}
 ;
 
@@ -189,7 +189,7 @@ statement       : declaration_statement ';'     {$$ = CN(statement_n, 1, $1);}
                 | call ';'                      {$$ = CN(statement_n, 1, $1);}
 ;
 
-declaration_statement: type variable {$$ = CN(declaration_statement_n, 2, $1, $2);}
+declaration_statement: type variable            {$$ = CN(declaration_statement_n, 2, $1, $2);}
 ;
 
 assignment_statement : lvalue ASSIGN expression {$$ = CN(assignment_statement_n, 2, $1, $3);}
@@ -224,10 +224,10 @@ expression      : constant                      {$$ = CNE(expression_n, constant
                 | expression LEQUAL expression  {$$ = CNE(expression_n, lequal_e, 2, $1, $3);}
                 | expression AND expression     {$$ = CNE(expression_n, and_e, 2, $1, $3);}
                 | expression OR expression      {$$ = CNE(expression_n, or_e, 2, $1, $3);}
-                | '-' expression %prec UMINUS   {$$ = CNE(expression_n, uminus_e, 1, $2);}
+                | '-' expression %prec UMINUS   {$$ = CNE(expression_n, uminus_e, 1, $2);} //Vages: Note use of %prec to give higher precedence (crucial to parsing)
                 | '!' expression                {$$ = CNE(expression_n, not_e, 1, $2);}
                 | NEW type                      {$$ = CNE(expression_n, new_e, 1, $2);}
-                | '(' expression ')'            {$$ = CNE(expression_n, default_e, 1, $2);}
+                | '(' expression ')'            {$$ = CNE(expression_n, default_e, 1, $2);} //Vages: Note use of default_e
                 | call                          {$$ = CN(expression_n, 1, $1);}
                 | lvalue                        {$$ = CN(expression_n, 1, $1);}
 ;
@@ -258,6 +258,7 @@ index_list      : index_list '[' index ']'  {$$ = CN(index_list_n, 2, $1, $3);}
 ;
 
 index           : INT_CONST {$$ = CN(index_n, 0); $$->data_type.base_type = INT_TYPE; SetInteger($$, yytext);}
+                //Vages: Note the node being given the same treatment as an int constant
 ;
 
 variable        : IDENTIFIER {$$ = CNL(variable_n, STRDUP(yytext), 0);}
