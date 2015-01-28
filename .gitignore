@@ -1,7 +1,7 @@
 #Vages
 testOutput/
 results.html
-bin/vslc
+vslc
 
 # Object files
 *.o
