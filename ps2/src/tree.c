@@ -93,7 +93,13 @@ void node_print ( FILE *output, node_t *root, int nesting )
             node_print ( output, root->children[i], nesting+1 );
     }
     else
-        fprintf ( output, "%*c(nil)\n", nesting, ' ');
+        fprintf ( output, "%*c(nil)\n", nesting, ' '); 
+        /* Vages: (nil) was originally a %p, formatted with argument root, but this gave some errors
+         * relating to the lldb specific implementation of gcc. Has not given any error when running
+         * on university servers.
+         */
+
+        
 }
 
 
@@ -143,6 +149,7 @@ node_t * node_init ( nodetype_t type,
     node_t *node = (node_t *)malloc(sizeof(node_t));
 
     data_type_t data_type = {.base_type = base_type};
+    // Vages: Note the creation of an instance of datatype struct for later assignment to node.
 
     node->nodetype = type;
     node->label = label;
@@ -153,6 +160,7 @@ node_t * node_init ( nodetype_t type,
     
     for (int i =0; i < n_children; i++) {
         node->children[i] = va_arg(child_list, node_t *);
+        // Vages: va_arg is a sort of iterator for a list of variable length
     }
 
     return node;
