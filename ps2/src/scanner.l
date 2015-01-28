@@ -29,7 +29,7 @@ str \"([^\n\"]|\\\")*\"
 {ws}+			{} /* Whitespace */
 "\/\/".*"\n"	{} /* Comments */
 
-	// Vages: The names of the tokens are given by what is defined in parser.y 
+	/* Vages: The names of the tokens are given by what is defined in parser.y */
 	/* Keywords */
 FUNC			{ RETURN_TOKEN(FUNC); }
 PRINT			{ RETURN_TOKEN(PRINT); }
