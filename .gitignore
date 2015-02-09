@@ -29,7 +29,6 @@
 *.hex
 
 #Vages
-testOutput/
 vslc
 !tree.o
 !tree32.o
