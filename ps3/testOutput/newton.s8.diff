@@ -1,0 +1,12 @@
+--- correctOutput/newton.s8	2015-02-09 13:34:58.117170000 +0100
++++ testOutput/newton.s8	2015-02-09 15:42:34.763578000 +0100
+@@ -8,9 +8,5 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+-.STRING0: .ascii "The square root of"
+-.ascii "\000"
+-.STRING1: .ascii "is"
+-.ascii "\000"
+ .globl main
+ .align	2

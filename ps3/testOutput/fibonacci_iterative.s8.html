@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/fibonacci_iterative.s8	2015-02-09 13:34:57.949170000 +0100</span>
+<span class="plus3">+++ testOutput/fibonacci_iterative.s8	2015-02-09 15:42:24.832540000 +0100</span>
+<span class="at2">@@ -8,9 +8,5 @@</span>
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+<span class="minus">-.STRING0: .ascii "Fibonacci number #"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING1: .ascii "is "</span>
+<span class="minus">-.ascii "\000"</span>
+ .globl main
+ .align	2</span>
+</pre>
+</body>
+</html>

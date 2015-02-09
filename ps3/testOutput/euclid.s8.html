@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/euclid.s8	2015-02-09 13:34:57.931170000 +0100</span>
+<span class="plus3">+++ testOutput/euclid.s8	2015-02-09 15:42:21.862514000 +0100</span>
+<span class="at2">@@ -8,15 +8,5 @@</span>
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+<span class="minus">-.STRING0: .ascii "Greatest common divisor of"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING1: .ascii "and"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING2: .ascii "is"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING3: .ascii "and"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING4: .ascii "are relative primes"</span>
+<span class="minus">-.ascii "\000"</span>
+ .globl main
+ .align	2</span>
+</pre>
+</body>
+</html>

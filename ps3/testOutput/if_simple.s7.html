@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/if_simple.s7	2015-02-09 13:34:58.047168000 +0100</span>
+<span class="plus3">+++ testOutput/if_simple.s7	2015-02-09 15:42:29.070546000 +0100</span>
+<span class="at2">@@ -1,2 +0,0 @@</span>
+<span class="minus">-Add strings ("true"), index: 0 </span>
+<span class="minus">-Add strings ("false"), index: 1 </span></span>
+</pre>
+</body>
+</html>

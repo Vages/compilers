@@ -1,0 +1,18 @@
+--- correctOutput/euclid.s8	2015-02-09 13:34:57.931170000 +0100
++++ testOutput/euclid.s8	2015-02-09 15:42:21.862514000 +0100
+@@ -8,15 +8,5 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+-.STRING0: .ascii "Greatest common divisor of"
+-.ascii "\000"
+-.STRING1: .ascii "and"
+-.ascii "\000"
+-.STRING2: .ascii "is"
+-.ascii "\000"
+-.STRING3: .ascii "and"
+-.ascii "\000"
+-.STRING4: .ascii "are relative primes"
+-.ascii "\000"
+ .globl main
+ .align	2

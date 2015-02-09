@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/maxmin.s8	2015-02-09 13:34:58.089169000 +0100</span>
+<span class="plus3">+++ testOutput/maxmin.s8	2015-02-09 15:42:32.587601000 +0100</span>
+<span class="at2">@@ -8,11 +8,5 @@</span>
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+<span class="minus">-.STRING0: .ascii "a is: "</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING1: .ascii "b is: "</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING2: .ascii "c is: "</span>
+<span class="minus">-.ascii "\000"</span>
+ .globl main
+ .align	2</span>
+</pre>
+</body>
+</html>

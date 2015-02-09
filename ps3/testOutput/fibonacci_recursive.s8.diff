@@ -1,0 +1,12 @@
+--- correctOutput/fibonacci_recursive.s8	2015-02-09 13:34:57.957171000 +0100
++++ testOutput/fibonacci_recursive.s8	2015-02-09 15:42:25.400550000 +0100
+@@ -8,9 +8,5 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+-.STRING0: .ascii "The"
+-.ascii "\000"
+-.STRING1: .ascii "th fibonacci number is"
+-.ascii "\000"
+ .globl main
+ .align	2

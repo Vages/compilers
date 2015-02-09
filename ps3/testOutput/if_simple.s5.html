@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/if_simple.s5	2015-02-09 13:34:58.038173000 +0100</span>
+<span class="plus3">+++ testOutput/if_simple.s5	2015-02-09 15:42:28.942567000 +0100</span>
+<span class="at2">@@ -1,17 +1,25 @@</span>
+  PROGRAM()()
+  FUNCTION_LIST()()
+<span class="minus">-  FUNCTION(VOID)("main")()</span>
+<span class="plus">+  (nil)</span>
+<span class="plus">+  FUNCTION()()</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("main")()</span>
+    (nil)
+    STATEMENT_LIST()()
+<span class="plus">+    STATEMENT_LIST()()</span>
+<span class="plus">+     IF_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(BOOL)(True)()</span>
+<span class="plus">+      STATEMENT_LIST()()</span>
+<span class="plus">+       PRINT_STATEMENT()()</span>
+<span class="plus">+        EXPRESSION_LIST()()</span>
+<span class="plus">+         EXPRESSION()(CONSTANT)</span>
+<span class="plus">+          CONSTANT(STRING)("true")()</span>
+     IF_STATEMENT()()
+<span class="minus">-     CONSTANT(BOOL)(True)()</span>
+<span class="plus">+     EXPRESSION()(CONSTANT)</span>
+<span class="plus">+      CONSTANT(BOOL)(False)()</span>
+      STATEMENT_LIST()()
+       PRINT_STATEMENT()()
+        EXPRESSION_LIST()()
+<span class="minus">-        CONSTANT(STRING)("true")()</span>
+<span class="minus">-    IF_STATEMENT()()</span>
+<span class="minus">-     CONSTANT(BOOL)(False)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        CONSTANT(STRING)("false")()</span>
+<span class="plus">+        EXPRESSION()(CONSTANT)</span>
+<span class="plus">+         CONSTANT(STRING)("false")()</span></span>
+</pre>
+</body>
+</html>

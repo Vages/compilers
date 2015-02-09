@@ -1,0 +1,12 @@
+--- correctOutput/if_simple.s8	2015-02-09 13:34:58.048168000 +0100
++++ testOutput/if_simple.s8	2015-02-09 15:42:29.097556000 +0100
+@@ -8,9 +8,5 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+-.STRING0: .ascii "true"
+-.ascii "\000"
+-.STRING1: .ascii "false"
+-.ascii "\000"
+ .globl main
+ .align	2

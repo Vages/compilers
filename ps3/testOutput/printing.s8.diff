@@ -1,0 +1,16 @@
+--- correctOutput/printing.s8	2015-02-09 13:34:58.133170000 +0100
++++ testOutput/printing.s8	2015-02-09 15:42:35.251595000 +0100
+@@ -8,13 +8,5 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+-.STRING0: .ascii "True "
+-.ascii "\000"
+-.STRING1: .ascii "+-10 "
+-.ascii "\000"
+-.STRING2: .ascii "False "
+-.ascii "\000"
+-.STRING3: .ascii "+-0.4 "
+-.ascii "\000"
+ .globl main
+ .align	2

@@ -1,0 +1,14 @@
+--- correctOutput/maxmin.s8	2015-02-09 13:34:58.089169000 +0100
++++ testOutput/maxmin.s8	2015-02-09 15:42:32.587601000 +0100
+@@ -8,11 +8,5 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+-.STRING0: .ascii "a is: "
+-.ascii "\000"
+-.STRING1: .ascii "b is: "
+-.ascii "\000"
+-.STRING2: .ascii "c is: "
+-.ascii "\000"
+ .globl main
+ .align	2
