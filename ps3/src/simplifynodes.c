@@ -125,7 +125,7 @@ Node_t* simplify_list ( Node_t *root, int depth )
 	root = simplify_default(root, depth);
 	
 	if (root->n_children > 1){
-		left_child = root->children[0];
+		Node_t* left_child = root->children[0];
 		no_of_left_children = left_child->n_children;
 		Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_left_children+1));
 		for(int i = 0; i<no_of_left_children; i++){
