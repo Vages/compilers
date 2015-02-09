@@ -5,7 +5,7 @@ extern int outputStage; // This variable is located in vslc.c
 Node_t* simplify_default ( Node_t *root, int depth )
 {	
 	for (int i = 0; i < root->n_children; i++){
-		Node_t* child = root->children[i]
+		Node_t* child = root->children[i];
 		if (child != NULL) {
 			root->children[i] = child->simplify(child, depth+1);
 		}
