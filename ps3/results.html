@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Test Results</title>
+<style>
+iframe {
+		border-style:solid;
+		border-width:1px;
+	   }
+body {font-family:sans;}
+button {
+	background:none;
+	border:none;
+	}
+button:hover{
+	text-decoration:underline;
+	}
+</style>
+<script>
+myLoad = function(file, stage){
+document.getElementById('diffframe').src = ("testOutput/" + file + "." + stage + ".html")
+document.getElementById('inputframe').src = ("vsl_programs/" + file + ".vsl")
+}
+</script>
+</head>
+
+<body>
+<div style="width:15%;float:left;font-family:sans;">
+<h1>Test Report</h1>
+
+
+The output was incorrect for the following files.
+Click to see difference between your output and the correct output. <br>
+
+<button onClick=myLoad("adding","s5")>adding</button> <br>
+<button onClick=myLoad("adding","s6")>adding</button> <br>
+<button onClick=myLoad("arithmetic_float","s5")>arithmetic_float</button> <br>
+<button onClick=myLoad("arithmetic_float","s6")>arithmetic_float</button> <br>
+<button onClick=myLoad("arithmetic_int","s5")>arithmetic_int</button> <br>
+<button onClick=myLoad("arithmetic_int","s6")>arithmetic_int</button> <br>
+<button onClick=myLoad("array_forloop","s5")>array_forloop</button> <br>
+<button onClick=myLoad("array_forloop","s6")>array_forloop</button> <br>
+<button onClick=myLoad("array_hard","s5")>array_hard</button> <br>
+<button onClick=myLoad("array_hard","s6")>array_hard</button> <br>
+<button onClick=myLoad("array_simple","s5")>array_simple</button> <br>
+<button onClick=myLoad("array_simple","s6")>array_simple</button> <br>
+<button onClick=myLoad("compare_float","s5")>compare_float</button> <br>
+<button onClick=myLoad("compare_float","s6")>compare_float</button> <br>
+<button onClick=myLoad("compare_int","s5")>compare_int</button> <br>
+<button onClick=myLoad("compare_int","s6")>compare_int</button> <br>
+<button onClick=myLoad("euclid","s5")>euclid</button> <br>
+<button onClick=myLoad("euclid","s6")>euclid</button> <br>
+<button onClick=myLoad("euclid","s7")>euclid</button> <br>
+<button onClick=myLoad("euclid","s8")>euclid</button> <br>
+<button onClick=myLoad("expressions","s5")>expressions</button> <br>
+<button onClick=myLoad("expressions","s6")>expressions</button> <br>
+<button onClick=myLoad("fibonacci_iterative","s5")>fibonacci_iterative</button> <br>
+<button onClick=myLoad("fibonacci_iterative","s6")>fibonacci_iterative</button> <br>
+<button onClick=myLoad("fibonacci_iterative","s7")>fibonacci_iterative</button> <br>
+<button onClick=myLoad("fibonacci_iterative","s8")>fibonacci_iterative</button> <br>
+<button onClick=myLoad("fibonacci_recursive","s5")>fibonacci_recursive</button> <br>
+<button onClick=myLoad("fibonacci_recursive","s6")>fibonacci_recursive</button> <br>
+<button onClick=myLoad("fibonacci_recursive","s7")>fibonacci_recursive</button> <br>
+<button onClick=myLoad("fibonacci_recursive","s8")>fibonacci_recursive</button> <br>
+<button onClick=myLoad("for_hard","s5")>for_hard</button> <br>
+<button onClick=myLoad("for_hard","s6")>for_hard</button> <br>
+<button onClick=myLoad("for_simple","s5")>for_simple</button> <br>
+<button onClick=myLoad("for_simple","s6")>for_simple</button> <br>
+<button onClick=myLoad("function_hard","s5")>function_hard</button> <br>
+<button onClick=myLoad("function_hard","s6")>function_hard</button> <br>
+<button onClick=myLoad("function_medium","s5")>function_medium</button> <br>
+<button onClick=myLoad("function_medium","s6")>function_medium</button> <br>
+<button onClick=myLoad("function_simple","s5")>function_simple</button> <br>
+<button onClick=myLoad("function_simple","s6")>function_simple</button> <br>
+<button onClick=myLoad("function_simple","s7")>function_simple</button> <br>
+<button onClick=myLoad("function_simple","s8")>function_simple</button> <br>
+<button onClick=myLoad("hello","s5")>hello</button> <br>
+<button onClick=myLoad("hello","s6")>hello</button> <br>
+<button onClick=myLoad("hello","s7")>hello</button> <br>
+<button onClick=myLoad("hello","s8")>hello</button> <br>
+<button onClick=myLoad("if_hard","s5")>if_hard</button> <br>
+<button onClick=myLoad("if_hard","s6")>if_hard</button> <br>
+<button onClick=myLoad("if_hard","s7")>if_hard</button> <br>
+<button onClick=myLoad("if_hard","s8")>if_hard</button> <br>
+<button onClick=myLoad("if_simple","s5")>if_simple</button> <br>
+<button onClick=myLoad("if_simple","s6")>if_simple</button> <br>
+<button onClick=myLoad("if_simple","s7")>if_simple</button> <br>
+<button onClick=myLoad("if_simple","s8")>if_simple</button> <br>
+<button onClick=myLoad("logical","s5")>logical</button> <br>
+<button onClick=myLoad("logical","s6")>logical</button> <br>
+<button onClick=myLoad("matrix_multiply","s5")>matrix_multiply</button> <br>
+<button onClick=myLoad("matrix_multiply","s6")>matrix_multiply</button> <br>
+<button onClick=myLoad("maxmin","s5")>maxmin</button> <br>
+<button onClick=myLoad("maxmin","s6")>maxmin</button> <br>
+<button onClick=myLoad("maxmin","s7")>maxmin</button> <br>
+<button onClick=myLoad("maxmin","s8")>maxmin</button> <br>
+<button onClick=myLoad("merge_sort","s5")>merge_sort</button> <br>
+<button onClick=myLoad("merge_sort","s6")>merge_sort</button> <br>
+<button onClick=myLoad("minimal","s5")>minimal</button> <br>
+<button onClick=myLoad("minimal","s6")>minimal</button> <br>
+<button onClick=myLoad("newton","s5")>newton</button> <br>
+<button onClick=myLoad("newton","s6")>newton</button> <br>
+<button onClick=myLoad("newton","s7")>newton</button> <br>
+<button onClick=myLoad("newton","s8")>newton</button> <br>
+<button onClick=myLoad("printing","s5")>printing</button> <br>
+<button onClick=myLoad("printing","s6")>printing</button> <br>
+<button onClick=myLoad("printing","s7")>printing</button> <br>
+<button onClick=myLoad("printing","s8")>printing</button> <br>
+<button onClick=myLoad("return","s5")>return</button> <br>
+<button onClick=myLoad("return","s6")>return</button> <br>
+<button onClick=myLoad("return","s7")>return</button> <br>
+<button onClick=myLoad("return","s8")>return</button> <br>
+<button onClick=myLoad("sorting","s5")>sorting</button> <br>
+<button onClick=myLoad("sorting","s6")>sorting</button> <br>
+<button onClick=myLoad("strings_and_comments","s5")>strings_and_comments</button> <br>
+<button onClick=myLoad("strings_and_comments","s6")>strings_and_comments</button> <br>
+<button onClick=myLoad("strings_and_comments","s7")>strings_and_comments</button> <br>
+<button onClick=myLoad("strings_and_comments","s8")>strings_and_comments</button> <br>
+<button onClick=myLoad("type_errors_arrays","s5")>type_errors_arrays</button> <br>
+<button onClick=myLoad("type_errors_assignment","s5")>type_errors_assignment</button> <br>
+<button onClick=myLoad("type_errors_assignment","s6")>type_errors_assignment</button> <br>
+<button onClick=myLoad("type_errors_functions","s5")>type_errors_functions</button> <br>
+<button onClick=myLoad("type_errors_functions","s6")>type_errors_functions</button> <br>
+<button onClick=myLoad("variables","s5")>variables</button> <br>
+<button onClick=myLoad("variables","s6")>variables</button> <br>
+<button onClick=myLoad("while_hard","s5")>while_hard</button> <br>
+<button onClick=myLoad("while_hard","s6")>while_hard</button> <br>
+<button onClick=myLoad("while_simple","s5")>while_simple</button> <br>
+<button onClick=myLoad("while_simple","s6")>while_simple</button> <br>
+</div>
+<div style="width:40%;float:right;padding:5px;">
+Input:<br>
+<iframe height=95% width=100% id="inputframe" src=""></iframe>
+</div>
+
+<div style="width:40%;float:right;padding:5px;">
+Diff: <br>
+<iframe height=95% width=100% id="diffframe" src=""></iframe>
+</div>
+</body>
+
+</html>
