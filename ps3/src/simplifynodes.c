@@ -42,6 +42,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 	free(root->children);
 	root->children = new_children;
+	root->n_children = c_i;
 	
 	return root;
 }
