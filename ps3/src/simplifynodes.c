@@ -91,7 +91,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth);
+	root = simplify_default(root, depth+1);
 }
 
 
@@ -100,7 +100,7 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth);
+	root = simplify_default(root, depth+1);
 
 	node_t* temp_n = root->children[0];
 	free(root);
@@ -113,7 +113,9 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth);
+	root = simplify_default(root, depth+1);
+
+	return root;
 }
 
 
@@ -131,6 +133,8 @@ Node_t* simplify_expression ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s (%s) \n", depth, ' ', root->nodetype.text, root->expression_type.text );
 
-	root = simplify_default(root, depth);
+	root = simplify_default(root, depth+1);
+
+	return root;
 }
 
