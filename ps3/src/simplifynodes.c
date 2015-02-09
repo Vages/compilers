@@ -102,9 +102,7 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 
 	root = simplify_default(root, depth+1);
 
-	node_t* temp_n = root->children[0];
-	free(root);
-	return temp_n;
+	return root;
 
 }
 
