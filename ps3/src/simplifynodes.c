@@ -10,7 +10,7 @@ Node_t* simplify_default ( Node_t *root, int depth )
 			root->children[i] = child->simplify(child, depth+1);
 		}
 	}
-	
+
 	return root;
 }
 
