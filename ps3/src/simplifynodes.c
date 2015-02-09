@@ -20,6 +20,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
+	/*
 	Node_t** new_children = malloc(sizeof(Node_t*)*2);
 	int c_i = 0;
 
@@ -42,7 +43,9 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 	free(root->children);
 	root->children = new_children;
-	root->n_children = c_i;
+	root->n_children = c_i;*/
+
+	root = simplify_default(root, depth+1);
 	
 	return root;
 }
