@@ -2,6 +2,8 @@
 testOutput/
 results.html
 vslc
+!tree.o
+!tree32.o
 
 # Object files
 *.o
