@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s7	2015-02-09 13:34:57.930174000 +0100
-+++ testOutput/euclid.s7	2015-02-11 19:17:55.650383000 +0100
++++ testOutput/euclid.s7	2015-02-11 19:43:33.014969000 +0100
 @@ -1,5 +0,0 @@
 -Add strings ("Greatest common divisor of"), index: 0 
 -Add strings ("and"), index: 1 

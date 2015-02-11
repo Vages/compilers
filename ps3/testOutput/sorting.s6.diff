@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s6	2015-02-09 13:34:58.159172000 +0100
-+++ testOutput/sorting.s6	2015-02-11 19:18:19.515509000 +0100
++++ testOutput/sorting.s6	2015-02-11 19:43:54.950101000 +0100
 @@ -1,8 +0,0 @@
 -CONSTANT
 -CONSTANT

@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s6	2015-02-09 13:34:58.065171000 +0100
-+++ testOutput/matrix_multiply.s6	2015-02-11 19:18:11.482463000 +0100
++++ testOutput/matrix_multiply.s6	2015-02-11 19:43:47.665049000 +0100
 @@ -1,32 +0,0 @@
 -CONSTANT
 -CONSTANT
