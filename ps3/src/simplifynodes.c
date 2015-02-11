@@ -121,7 +121,7 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 		root = root->children[0]
 	} else if ((root->data_type == statement_n)||(root->data_type == parameter_list_n)){
 		if (root->n_children ==1){
-			root = root->children[0]
+			root = root->children[0];
 		}
 	}
 	//free (root);
