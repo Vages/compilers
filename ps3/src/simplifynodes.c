@@ -164,7 +164,7 @@ Node_t* simplify_list ( Node_t *root, int depth )
 		new_children[no_of_children_in_left] = root->children[1];
 
 		root->children = new_children;
-		root->n_children = no_of_left_children+1;
+		root->n_children = no_of_children_in_left+1;
 	}
 	/*
 	root = simplify_default(root, depth);
