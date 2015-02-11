@@ -135,7 +135,26 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth+1);
+	if (root->n_children == 1){
+		root = simplify_default(root, depth+1);
+	} else if (root->n_children>1){
+		root = simplify_default(root, depth+1);
+		Node_t* left_child = root->children[0];
+		int no_of_children_in_left = left_child->n_children;
+		
+		Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+1));
+		int new_i = 0;
+		for(int i = 0; i<no_of_children_in_left; i++){
+			if(left_child->children[i]!=NULL){
+				new_children[new_i++] = left_child->children[i];
+			}
+		}
+
+		new_children[new_i++] = root->children[1];
+
+		root->children = new_children;
+		root->n_children = new_i;
+	}
 
 	return root;
 }
