@@ -91,7 +91,22 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth+1);
+	int no_children = root->n_children;
+
+	for (int i = 0; i < no_children; i++){
+		Node_t* child = root->children[i];
+		if (child != NULL){
+			if (child->nodetype.index == TYPE){
+				root->data_type = child->data_type;
+			} else if (child->nodetype.index == VARIABLE){
+				root->label = child->label;
+			}
+			free(child);
+		}
+	}
+
+	return root;
+	
 }
 
 
