@@ -119,9 +119,12 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 
 Node_t* simplify_list ( Node_t *root, int depth )
 {
+	
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 	
+
+	/*
 	root = simplify_default(root, depth);
 	
 	if (root->n_children > 1){
@@ -138,6 +141,8 @@ Node_t* simplify_list ( Node_t *root, int depth )
 		root->children = new_children;
 		root->n_children = no_of_left_children+1;
 	}
+	*/
+	root = simplify_default(root, depth+1);
 
 	return root;
 }
