@@ -117,9 +117,9 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 
 	simplify_default(root, depth+1);
 
-	if(root->data_type==argument_list_n){
+	if(root->data_type.base_type==ARGUMENT_LIST){
 		root = root->children[0]
-	} else if ((root->data_type == statement_n)||(root->data_type == parameter_list_n)){
+	} else if ((root->data_type.base_type == STATEMENT)||(root->data_type.base_type == PARAMETER LIST)){
 		if (root->n_children ==1){
 			root = root->children[0];
 		}
