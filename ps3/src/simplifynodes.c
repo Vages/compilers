@@ -46,6 +46,25 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	root->n_children = c_i;*/
 
 	root = simplify_default(root, depth+1);
+
+	if (root->data_type.base == ARRAY_TYPE){
+		int no_of_children = root->n_children;
+		for (int i = 0; i<no_of_children; i++){
+			Node_t* child = root->children[i];
+			if (child->nodetype.index == TYPE){
+				root->data_type.array_type = child->data_type.base;
+			} else if (child->nodetype.index == INDEX_LIST){
+				int index_children = child->n_children;
+				root->data_type.n_dimensions = index_children;
+				root->data_type.dimensions = malloc(sizeof(int)*(index_children));
+				for (int j = 0; j < index_children; i++){
+					root->data_type.dimensions[j] = child->children[j];
+				}
+			}
+		}
+	}
+
+	root->n_children = 0;
 	
 	return root;
 }
@@ -175,6 +194,8 @@ Node_t* simplify_expression ( Node_t *root, int depth )
 		printf( "%*cSimplify %s (%s) \n", depth, ' ', root->nodetype.text, root->expression_type.text );
 
 	root = simplify_default(root, depth+1);
+
+
 
 	return root;
 }
