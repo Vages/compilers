@@ -16,19 +16,22 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/hello.s5	2015-02-09 13:34:58.019169000 +0100</span>
-<span class="plus3">+++ testOutput/hello.s5	2015-02-11 18:26:50.893163000 +0100</span>
-<span class="at2">@@ -1,8 +1,9 @@</span>
+<span class="plus3">+++ testOutput/hello.s5	2015-02-11 19:18:05.514428000 +0100</span>
+<span class="at2">@@ -1,8 +1,10 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(VOID)("hello")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      CONSTANT(STRING)("Hello, world!")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("Hello, world!")()</span></span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(STRING)("Hello, world!")()</span></span>
 </pre>
 </body>
 </html>

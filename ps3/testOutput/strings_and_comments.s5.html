@@ -16,34 +16,46 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/strings_and_comments.s5	2015-02-09 13:34:58.168169000 +0100</span>
-<span class="plus3">+++ testOutput/strings_and_comments.s5	2015-02-11 18:27:03.608230000 +0100</span>
-<span class="at2">@@ -1,17 +1,21 @@</span>
+<span class="plus3">+++ testOutput/strings_and_comments.s5	2015-02-11 19:18:19.695521000 +0100</span>
+<span class="at2">@@ -1,17 +1,25 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(INT)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      CONSTANT(STRING)("Hello, world!")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("Hello, world!")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      CONSTANT(STRING)("")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      CONSTANT(STRING)("Hello, \"world\"!")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("Hello, \"world\"!")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      CONSTANT(STRING)("//Comment")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("//Comment")()</span></span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(STRING)("Hello, world!")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(STRING)("")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(STRING)("Hello, \"world\"!")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(STRING)("//Comment")()</span></span>
 </pre>
 </body>
 </html>

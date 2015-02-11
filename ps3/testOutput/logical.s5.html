@@ -16,395 +16,447 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/logical.s5	2015-02-09 13:34:58.055168000 +0100</span>
-<span class="plus3">+++ testOutput/logical.s5	2015-02-11 18:26:53.292172000 +0100</span>
-<span class="at2">@@ -1,7 +1,7 @@</span>
+<span class="plus3">+++ testOutput/logical.s5	2015-02-11 19:18:08.170443000 +0100</span>
+<span class="at2">@@ -1,176 +1,373 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-     DECLARATION_STATEMENT(BOOL)("a")()
-     DECLARATION_STATEMENT(BOOL)("b")()
-<span class="at2">@@ -10,167 +10,327 @@</span>
-     DECLARATION_STATEMENT(BOOL)("e")()
-     DECLARATION_STATEMENT(BOOL)("f")()
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    DECLARATION_STATEMENT(BOOL)("a")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(BOOL)("b")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(BOOL)("c")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(BOOL)("d")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(BOOL)("e")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(BOOL)("f")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("a")()</span>
 <span class="minus">-     CONSTANT(BOOL)(True)()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("a")()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(BOOL)(True)()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("b")()</span>
 <span class="minus">-     CONSTANT(BOOL)(False)()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("b")()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(BOOL)(False)()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("c")()</span>
 <span class="minus">-     CONSTANT(BOOL)(True)()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("c")()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(BOOL)(True)()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
 <span class="minus">-      VARIABLE()("a")()</span>
 <span class="minus">-      VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
 <span class="minus">-      VARIABLE()("b")()</span>
 <span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
 <span class="minus">-      VARIABLE()("c")()</span>
 <span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      VARIABLE()("d")()</span>
 <span class="minus">-      VARIABLE()("e")()</span>
 <span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(||)
+<span class="minus">-     EXPRESSION()(||)</span>
 <span class="minus">-      VARIABLE()("a")()</span>
 <span class="minus">-      VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(||)
+<span class="minus">-     EXPRESSION()(||)</span>
 <span class="minus">-      VARIABLE()("b")()</span>
 <span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(||)
+<span class="minus">-     EXPRESSION()(||)</span>
 <span class="minus">-      VARIABLE()("c")()</span>
 <span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      VARIABLE()("d")()</span>
 <span class="minus">-      VARIABLE()("e")()</span>
 <span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(!)
+<span class="minus">-     EXPRESSION()(!)</span>
 <span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(!)
+<span class="minus">-     EXPRESSION()(!)</span>
 <span class="minus">-      VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(!)
+<span class="minus">-     EXPRESSION()(!)</span>
 <span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      VARIABLE()("d")()</span>
 <span class="minus">-      VARIABLE()("e")()</span>
 <span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
 <span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-       EXPRESSION()(!)
-<span class="minus">-       VARIABLE()("b")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-      EXPRESSION()(!)</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(BOOL)("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(BOOL)("b")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(BOOL)("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(BOOL)("d")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(BOOL)("e")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(BOOL)("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("a")()</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(BOOL)(True)()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+        VARIABLE()("b")()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
 <span class="minus">-      VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-       EXPRESSION()(!)
-<span class="minus">-       VARIABLE()("c")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-      EXPRESSION()(!)</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(BOOL)(False)()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+        VARIABLE()("c")()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
 <span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-       EXPRESSION()(!)
+<span class="minus">-      EXPRESSION()(!)</span>
 <span class="minus">-       VARIABLE()("a")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      VARIABLE()("d")()</span>
 <span class="minus">-      VARIABLE()("e")()</span>
 <span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(||)
-       EXPRESSION()(!)
-<span class="minus">-       VARIABLE()("a")()</span>
-<span class="minus">-      VARIABLE()("b")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(||)
-       EXPRESSION()(!)
-<span class="minus">-       VARIABLE()("b")()</span>
-<span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(||)
-       EXPRESSION()(!)
-<span class="minus">-       VARIABLE()("c")()</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
-<span class="minus">-      VARIABLE()("d")()</span>
-<span class="minus">-      VARIABLE()("e")()</span>
-<span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(&amp;&amp;)
-       EXPRESSION()(&amp;&amp;)
-<span class="minus">-       VARIABLE()("a")()</span>
-<span class="minus">-       VARIABLE()("b")()</span>
-<span class="minus">-      VARIABLE()("c")()</span>
+<span class="minus">-     EXPRESSION()(||)</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(BOOL)(True)()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+<span class="plus">+      EXPRESSION()(&amp;&amp;)</span>
 <span class="plus">+       EXPRESSION()()</span>
 <span class="plus">+        EXPRESSION()(VARIABLE)</span>
 <span class="plus">+         VARIABLE()("a")()</span>
 <span class="plus">+       EXPRESSION()()</span>
 <span class="plus">+        EXPRESSION()(VARIABLE)</span>
 <span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(||)
-       EXPRESSION()(||)
-<span class="minus">-       VARIABLE()("a")()</span>
-<span class="minus">-       VARIABLE()("b")()</span>
-<span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(||)
-       EXPRESSION()(&amp;&amp;)
-<span class="minus">-       VARIABLE()("a")()</span>
-<span class="minus">-       VARIABLE()("b")()</span>
-<span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
-<span class="minus">-      VARIABLE()("d")()</span>
-<span class="minus">-      VARIABLE()("e")()</span>
-<span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-      EXPRESSION()(||)
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-       EXPRESSION()(&amp;&amp;)
-<span class="minus">-       VARIABLE()("b")()</span>
-<span class="minus">-       VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+<span class="plus">+      EXPRESSION()(&amp;&amp;)</span>
 <span class="plus">+       EXPRESSION()()</span>
 <span class="plus">+        EXPRESSION()(VARIABLE)</span>
 <span class="plus">+         VARIABLE()("b")()</span>
 <span class="plus">+       EXPRESSION()()</span>
 <span class="plus">+        EXPRESSION()(VARIABLE)</span>
 <span class="plus">+         VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+<span class="plus">+      EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("b")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("b")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+       EXPRESSION()(!)
+<span class="minus">-       VARIABLE()("a")()</span>
+<span class="minus">-      VARIABLE()("b")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("e")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("e")()</span>
-      EXPRESSION()(&amp;&amp;)
+<span class="minus">-     EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+       EXPRESSION()(!)
+<span class="minus">-       VARIABLE()("b")()</span>
+<span class="minus">-      VARIABLE()("c")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("f")()</span>
+<span class="minus">-     EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("b")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+       EXPRESSION()(!)
+<span class="minus">-       VARIABLE()("c")()</span>
+<span class="minus">-      VARIABLE()("a")()</span>
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
+<span class="minus">-      VARIABLE()("d")()</span>
+<span class="minus">-      VARIABLE()("e")()</span>
+<span class="minus">-      VARIABLE()("f")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("d")()</span>
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+       EXPRESSION()(&amp;&amp;)
+<span class="minus">-       VARIABLE()("a")()</span>
+<span class="minus">-       VARIABLE()("b")()</span>
+<span class="minus">-      VARIABLE()("c")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("e")()</span>
+<span class="minus">-     EXPRESSION()(||)</span>
 <span class="minus">-      EXPRESSION()(||)</span>
 <span class="minus">-       VARIABLE()("a")()</span>
 <span class="minus">-       VARIABLE()("b")()</span>
 <span class="minus">-      VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("f")()</span>
+<span class="minus">-     EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()(!)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("b")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+       EXPRESSION()(&amp;&amp;)
+<span class="minus">-       VARIABLE()("a")()</span>
+<span class="minus">-       VARIABLE()("b")()</span>
+<span class="minus">-      VARIABLE()("c")()</span>
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
+<span class="minus">-      VARIABLE()("d")()</span>
+<span class="minus">-      VARIABLE()("e")()</span>
+<span class="minus">-      VARIABLE()("f")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("d")()</span>
+<span class="minus">-     EXPRESSION()(||)</span>
+<span class="minus">-      VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("b")()</span>
+<span class="plus">+       EXPRESSION()(!)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+       EXPRESSION()(&amp;&amp;)
+<span class="minus">-       VARIABLE()("b")()</span>
+<span class="minus">-       VARIABLE()("c")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("e")()</span>
+<span class="minus">-     EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+       EXPRESSION()(!)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+       EXPRESSION()(||)
+<span class="minus">-       VARIABLE()("a")()</span>
+<span class="minus">-       VARIABLE()("b")()</span>
+<span class="minus">-      VARIABLE()("c")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("f")()</span>
+<span class="minus">-     EXPRESSION()(||)</span>
+<span class="minus">-      VARIABLE()("a")()</span>
+<span class="minus">-      EXPRESSION()(&amp;&amp;)</span>
+<span class="minus">-       VARIABLE()("b")()</span>
+        EXPRESSION()(!)
+<span class="minus">-        VARIABLE()("c")()</span>
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
+<span class="minus">-      VARIABLE()("d")()</span>
+<span class="minus">-      VARIABLE()("e")()</span>
+<span class="minus">-      VARIABLE()("f")()</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("b")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()(!)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("b")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()(!)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("c")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+<span class="plus">+      EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+       EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("a")()</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("b")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
 <span class="plus">+       EXPRESSION()(||)</span>
 <span class="plus">+        EXPRESSION()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
@@ -412,42 +464,95 @@
 <span class="plus">+        EXPRESSION()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
 <span class="plus">+          VARIABLE()("b")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-      EXPRESSION()(||)
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-       EXPRESSION()(&amp;&amp;)
-<span class="minus">-       VARIABLE()("b")()</span>
 <span class="plus">+       EXPRESSION()()</span>
 <span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-        EXPRESSION()(!)
-<span class="minus">-        VARIABLE()("c")()</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("a")()</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("b")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("d")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("b")()</span>
 <span class="plus">+        EXPRESSION()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
 <span class="plus">+          VARIABLE()("c")()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
-<span class="minus">-      VARIABLE()("d")()</span>
-<span class="minus">-      VARIABLE()("e")()</span>
-<span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("e")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span></span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("e")()</span>
+<span class="plus">+      EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(||)</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("a")()</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("b")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("f")()</span>
+<span class="plus">+      EXPRESSION()(||)</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()(&amp;&amp;)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(VARIABLE)</span>
+<span class="plus">+          VARIABLE()("b")()</span>
+<span class="plus">+        EXPRESSION()(!)</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("c")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("d")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("e")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("f")()</span></span>
 </pre>
 </body>
 </html>

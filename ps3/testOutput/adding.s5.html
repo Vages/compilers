@@ -16,32 +16,40 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/adding.s5	2015-02-09 13:34:57.859172000 +0100</span>
-<span class="plus3">+++ testOutput/adding.s5	2015-02-11 18:26:28.394041000 +0100</span>
-<span class="at2">@@ -1,14 +1,19 @@</span>
+<span class="plus3">+++ testOutput/adding.s5	2015-02-11 19:17:41.185296000 +0100</span>
+<span class="at2">@@ -1,14 +1,22 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(VOID)("adding")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()
-     ASSIGNMENT_STATEMENT()()
+<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("a")()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("a")()</span>
-      EXPRESSION()(+)
+<span class="minus">-     EXPRESSION()(+)</span>
 <span class="minus">-      CONSTANT(INT)(1)()</span>
 <span class="minus">-      CONSTANT(INT)(2)()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(INT)(1)()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(INT)(2)()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
 <span class="minus">-      VARIABLE()("a")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("a")()</span></span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(VARIABLE)</span>
+<span class="plus">+       VARIABLE()("a")()</span>
+<span class="plus">+      EXPRESSION()(+)</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(INT)(1)()</span>
+<span class="plus">+       EXPRESSION()(CONSTANT)</span>
+<span class="plus">+        CONSTANT(INT)(2)()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     PRINT_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION_LIST()()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span></span>
 </pre>
 </body>
 </html>

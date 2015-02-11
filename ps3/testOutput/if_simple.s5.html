@@ -16,34 +16,46 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/if_simple.s5	2015-02-09 13:34:58.038173000 +0100</span>
-<span class="plus3">+++ testOutput/if_simple.s5	2015-02-11 18:26:51.968163000 +0100</span>
-<span class="at2">@@ -1,17 +1,21 @@</span>
+<span class="plus3">+++ testOutput/if_simple.s5	2015-02-11 19:18:06.745436000 +0100</span>
+<span class="at2">@@ -1,17 +1,25 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-     IF_STATEMENT()()
+<span class="minus">-    IF_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(BOOL)(True)()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(BOOL)(True)()</span>
-      STATEMENT_LIST()()
-       PRINT_STATEMENT()()
-        EXPRESSION_LIST()()
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
 <span class="minus">-        CONSTANT(STRING)("true")()</span>
-<span class="plus">+        EXPRESSION()(CONSTANT)</span>
-<span class="plus">+         CONSTANT(STRING)("true")()</span>
-     IF_STATEMENT()()
+<span class="minus">-    IF_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(BOOL)(False)()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(BOOL)(False)()</span>
-      STATEMENT_LIST()()
-       PRINT_STATEMENT()()
-        EXPRESSION_LIST()()
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
 <span class="minus">-        CONSTANT(STRING)("false")()</span>
-<span class="plus">+        EXPRESSION()(CONSTANT)</span>
-<span class="plus">+         CONSTANT(STRING)("false")()</span></span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     IF_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(BOOL)(True)()</span>
+<span class="plus">+      STATEMENT_LIST()()</span>
+<span class="plus">+       STATEMENT()()</span>
+<span class="plus">+        PRINT_STATEMENT()()</span>
+<span class="plus">+         EXPRESSION_LIST()()</span>
+<span class="plus">+          EXPRESSION()(CONSTANT)</span>
+<span class="plus">+           CONSTANT(STRING)("true")()</span>
+<span class="plus">+    STATEMENT()()</span>
+<span class="plus">+     IF_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(BOOL)(False)()</span>
+<span class="plus">+      STATEMENT_LIST()()</span>
+<span class="plus">+       STATEMENT()()</span>
+<span class="plus">+        PRINT_STATEMENT()()</span>
+<span class="plus">+         EXPRESSION_LIST()()</span>
+<span class="plus">+          EXPRESSION()(CONSTANT)</span>
+<span class="plus">+           CONSTANT(STRING)("false")()</span></span>
 </pre>
 </body>
 </html>
