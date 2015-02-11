@@ -1,6 +1,6 @@
 --- correctOutput/hello.s5	2015-02-09 13:34:58.019169000 +0100
-+++ testOutput/hello.s5	2015-02-11 19:43:42.343021000 +0100
-@@ -1,8 +1,9 @@
++++ testOutput/hello.s5	2015-02-11 20:56:35.210818000 +0100
+@@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -9,6 +9,3 @@
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
       EXPRESSION_LIST()()
--      CONSTANT(STRING)("Hello, world!")()
-+      EXPRESSION()(CONSTANT)
-+       CONSTANT(STRING)("Hello, world!")()

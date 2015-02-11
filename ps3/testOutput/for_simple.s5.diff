@@ -1,6 +1,6 @@
 --- correctOutput/for_simple.s5	2015-02-09 13:34:57.977175000 +0100
-+++ testOutput/for_simple.s5	2015-02-11 19:43:39.167001000 +0100
-@@ -1,15 +1,20 @@
++++ testOutput/for_simple.s5	2015-02-11 20:56:32.477804000 +0100
+@@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -9,20 +9,3 @@
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("i")()
      FOR_STATEMENT()()
-      ASSIGNMENT_STATEMENT()()
--      VARIABLE()("i")()
--      CONSTANT(INT)(1)()
--     CONSTANT(INT)(10)()
-+      EXPRESSION()(VARIABLE)
-+       VARIABLE()("i")()
-+      EXPRESSION()(CONSTANT)
-+       CONSTANT(INT)(1)()
-+     EXPRESSION()(CONSTANT)
-+      CONSTANT(INT)(10)()
-      STATEMENT_LIST()()
-       PRINT_STATEMENT()()
-        EXPRESSION_LIST()()
--        VARIABLE()("i")()
-+        EXPRESSION()()
-+         EXPRESSION()(VARIABLE)
-+          VARIABLE()("i")()

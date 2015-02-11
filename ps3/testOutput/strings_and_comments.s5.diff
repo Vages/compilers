@@ -1,6 +1,6 @@
 --- correctOutput/strings_and_comments.s5	2015-02-09 13:34:58.168169000 +0100
-+++ testOutput/strings_and_comments.s5	2015-02-11 19:43:55.116091000 +0100
-@@ -1,17 +1,21 @@
++++ testOutput/strings_and_comments.s5	2015-02-11 20:56:44.336869000 +0100
+@@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -9,21 +9,3 @@
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
       EXPRESSION_LIST()()
--      CONSTANT(STRING)("Hello, world!")()
-+      EXPRESSION()(CONSTANT)
-+       CONSTANT(STRING)("Hello, world!")()
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
--      CONSTANT(STRING)("")()
-+      EXPRESSION()(CONSTANT)
-+       CONSTANT(STRING)("")()
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
--      CONSTANT(STRING)("Hello, \"world\"!")()
-+      EXPRESSION()(CONSTANT)
-+       CONSTANT(STRING)("Hello, \"world\"!")()
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
--      CONSTANT(STRING)("//Comment")()
-+      EXPRESSION()(CONSTANT)
-+       CONSTANT(STRING)("//Comment")()

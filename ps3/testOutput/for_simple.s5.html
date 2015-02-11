@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/for_simple.s5	2015-02-09 13:34:57.977175000 +0100</span>
-<span class="plus3">+++ testOutput/for_simple.s5	2015-02-11 19:43:39.167001000 +0100</span>
-<span class="at2">@@ -1,15 +1,20 @@</span>
+<span class="plus3">+++ testOutput/for_simple.s5	2015-02-11 20:56:32.477804000 +0100</span>
+<span class="at2">@@ -1,7 +1,7 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
@@ -25,24 +25,7 @@
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("i")()
-     FOR_STATEMENT()()
-      ASSIGNMENT_STATEMENT()()
-<span class="minus">-      VARIABLE()("i")()</span>
-<span class="minus">-      CONSTANT(INT)(1)()</span>
-<span class="minus">-     CONSTANT(INT)(10)()</span>
-<span class="plus">+      EXPRESSION()(VARIABLE)</span>
-<span class="plus">+       VARIABLE()("i")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(INT)(1)()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(INT)(10)()</span>
-      STATEMENT_LIST()()
-       PRINT_STATEMENT()()
-        EXPRESSION_LIST()()
-<span class="minus">-        VARIABLE()("i")()</span>
-<span class="plus">+        EXPRESSION()()</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-<span class="plus">+          VARIABLE()("i")()</span></span>
+     FOR_STATEMENT()()</span>
 </pre>
 </body>
 </html>

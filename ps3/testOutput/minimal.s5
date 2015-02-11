@@ -4,5 +4,4 @@
   FUNCTION(INT)("minimal")()
    STATEMENT_LIST()()
     RETURN_STATEMENT()()
-     EXPRESSION()(CONSTANT)
-      CONSTANT(INT)(0)()
+     CONSTANT(INT)(0)()

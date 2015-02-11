@@ -1,6 +1,6 @@
 --- correctOutput/if_simple.s5	2015-02-09 13:34:58.038173000 +0100
-+++ testOutput/if_simple.s5	2015-02-11 19:43:43.443026000 +0100
-@@ -1,17 +1,21 @@
++++ testOutput/if_simple.s5	2015-02-11 20:56:36.040828000 +0100
+@@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -8,22 +8,4 @@
 -   (nil)
     STATEMENT_LIST()()
      IF_STATEMENT()()
--     CONSTANT(BOOL)(True)()
-+     EXPRESSION()(CONSTANT)
-+      CONSTANT(BOOL)(True)()
-      STATEMENT_LIST()()
-       PRINT_STATEMENT()()
-        EXPRESSION_LIST()()
--        CONSTANT(STRING)("true")()
-+        EXPRESSION()(CONSTANT)
-+         CONSTANT(STRING)("true")()
-     IF_STATEMENT()()
--     CONSTANT(BOOL)(False)()
-+     EXPRESSION()(CONSTANT)
-+      CONSTANT(BOOL)(False)()
-      STATEMENT_LIST()()
-       PRINT_STATEMENT()()
-        EXPRESSION_LIST()()
--        CONSTANT(STRING)("false")()
-+        EXPRESSION()(CONSTANT)
-+         CONSTANT(STRING)("false")()
+      CONSTANT(BOOL)(True)()

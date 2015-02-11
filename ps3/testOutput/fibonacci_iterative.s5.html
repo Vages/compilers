@@ -16,130 +16,14 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/fibonacci_iterative.s5	2015-02-09 13:34:57.947168000 +0100</span>
-<span class="plus3">+++ testOutput/fibonacci_iterative.s5	2015-02-11 19:43:37.263996000 +0100</span>
+<span class="plus3">+++ testOutput/fibonacci_iterative.s5	2015-02-11 20:56:31.099800000 +0100</span>
 <span class="at2">@@ -1,5 +1,6 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(INT)("fibonacci_iterative")()
     VARIABLE_LIST()()
-     DECLARATION_STATEMENT(INT)("n")()
-<span class="at2">@@ -8,49 +9,87 @@</span>
-     DECLARATION_STATEMENT(INT)("y")()
-     DECLARATION_STATEMENT(INT)("f")()
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("x")()</span>
-<span class="minus">-     CONSTANT(INT)(1)()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("x")()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(INT)(1)()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("y")()</span>
-<span class="minus">-     CONSTANT(INT)(1)()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("y")()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(INT)(1)()</span>
-     ASSIGNMENT_STATEMENT()()
-<span class="minus">-     VARIABLE()("f")()</span>
-<span class="minus">-     CONSTANT(INT)(1)()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("f")()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(INT)(1)()</span>
-     IF_STATEMENT()()
-      EXPRESSION()(&gt;=)
-<span class="minus">-      VARIABLE()("n")()</span>
-<span class="minus">-      CONSTANT(INT)(2)()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("n")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(INT)(2)()</span>
-      STATEMENT_LIST()()
-       DECLARATION_STATEMENT(INT)("i")()
-       ASSIGNMENT_STATEMENT()()
-<span class="minus">-       VARIABLE()("i")()</span>
-<span class="minus">-       CONSTANT(INT)(2)()</span>
-<span class="minus">-      WHILE_STATEMENT()()</span>
-<span class="minus">-       EXPRESSION()(&lt;)</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-         VARIABLE()("i")()
-<span class="minus">-        VARIABLE()("n")()</span>
-<span class="plus">+       EXPRESSION()(CONSTANT)</span>
-<span class="plus">+        CONSTANT(INT)(2)()</span>
-<span class="plus">+      WHILE_STATEMENT()()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(&lt;)</span>
-<span class="plus">+         EXPRESSION()()</span>
-<span class="plus">+          EXPRESSION()(VARIABLE)</span>
-<span class="plus">+           VARIABLE()("i")()</span>
-<span class="plus">+         EXPRESSION()()</span>
-<span class="plus">+          EXPRESSION()(VARIABLE)</span>
-<span class="plus">+           VARIABLE()("n")()</span>
-        STATEMENT_LIST()()
-         ASSIGNMENT_STATEMENT()()
-<span class="minus">-         VARIABLE()("f")()</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-<span class="plus">+          VARIABLE()("f")()</span>
-          EXPRESSION()(+)
-<span class="minus">-          VARIABLE()("x")()</span>
-<span class="minus">-          VARIABLE()("y")()</span>
-<span class="plus">+          EXPRESSION()()</span>
-<span class="plus">+           EXPRESSION()(VARIABLE)</span>
-<span class="plus">+            VARIABLE()("x")()</span>
-<span class="plus">+          EXPRESSION()()</span>
-<span class="plus">+           EXPRESSION()(VARIABLE)</span>
-<span class="plus">+            VARIABLE()("y")()</span>
-         ASSIGNMENT_STATEMENT()()
-<span class="minus">-         VARIABLE()("x")()</span>
-<span class="minus">-         VARIABLE()("y")()</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-<span class="plus">+          VARIABLE()("x")()</span>
-<span class="plus">+         EXPRESSION()()</span>
-<span class="plus">+          EXPRESSION()(VARIABLE)</span>
-<span class="plus">+           VARIABLE()("y")()</span>
-         ASSIGNMENT_STATEMENT()()
-<span class="minus">-         VARIABLE()("y")()</span>
-<span class="minus">-         VARIABLE()("f")()</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-<span class="plus">+          VARIABLE()("y")()</span>
-<span class="plus">+         EXPRESSION()()</span>
-<span class="plus">+          EXPRESSION()(VARIABLE)</span>
-<span class="plus">+           VARIABLE()("f")()</span>
-         ASSIGNMENT_STATEMENT()()
-<span class="minus">-         VARIABLE()("i")()</span>
-<span class="minus">-         EXPRESSION()(+)</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-           VARIABLE()("i")()
-<span class="minus">-          CONSTANT(INT)(1)()</span>
-<span class="plus">+         EXPRESSION()(+)</span>
-<span class="plus">+          EXPRESSION()()</span>
-<span class="plus">+           EXPRESSION()(VARIABLE)</span>
-<span class="plus">+            VARIABLE()("i")()</span>
-<span class="plus">+          EXPRESSION()(CONSTANT)</span>
-<span class="plus">+           CONSTANT(INT)(1)()</span>
-     PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
-<span class="minus">-      CONSTANT(STRING)("Fibonacci number #")()</span>
-<span class="minus">-      VARIABLE()("n")()</span>
-<span class="minus">-      CONSTANT(STRING)("is ")()</span>
-<span class="minus">-      VARIABLE()("f")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("Fibonacci number #")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("n")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("is ")()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("f")()</span>
-     RETURN_STATEMENT()()
-<span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="plus">+     EXPRESSION()(CONSTANT)</span>
-<span class="plus">+      CONSTANT(INT)(0)()</span></span>
+     DECLARATION_STATEMENT(INT)("n")()</span>
 </pre>
 </body>
 </html>

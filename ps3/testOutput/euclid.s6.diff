@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s6	2015-02-09 13:34:57.930168000 +0100
-+++ testOutput/euclid.s6	2015-02-11 19:43:32.969974000 +0100
++++ testOutput/euclid.s6	2015-02-11 20:56:28.394784000 +0100
 @@ -1,7 +0,0 @@
 -CONSTANT
 -CONSTANT

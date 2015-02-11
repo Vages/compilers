@@ -5,5 +5,4 @@
    STATEMENT_LIST()()
     PRINT_STATEMENT()()
      EXPRESSION_LIST()()
-      EXPRESSION()(CONSTANT)
-       CONSTANT(STRING)("Hello, world!")()
+      CONSTANT(STRING)("Hello, world!")()

@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_simple.s5	2015-02-09 13:34:58.007171000 +0100</span>
-<span class="plus3">+++ testOutput/function_simple.s5	2015-02-11 19:43:42.100019000 +0100</span>
-<span class="at2">@@ -1,17 +1,19 @@</span>
+<span class="plus3">+++ testOutput/function_simple.s5	2015-02-11 20:56:34.989818000 +0100</span>
+<span class="at2">@@ -1,16 +1,16 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(VOID)("main")()</span>
@@ -34,8 +34,7 @@
 <span class="plus">+    STATEMENT_LIST()()</span>
 <span class="plus">+     PRINT_STATEMENT()()</span>
 <span class="plus">+      EXPRESSION_LIST()()</span>
-<span class="plus">+       EXPRESSION()(CONSTANT)</span>
-<span class="plus">+        CONSTANT(STRING)("In main()")()</span>
+<span class="plus">+       CONSTANT(STRING)("In main()")()</span>
 <span class="plus">+     EXPRESSION()(FUNC_CALL)</span>
 <span class="plus">+      VARIABLE()("function")()</span>
 <span class="plus">+      (nil)</span>
@@ -43,10 +42,7 @@
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
-<span class="minus">-      CONSTANT(STRING)("In function()")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(STRING)("In function()")()</span></span>
+      EXPRESSION_LIST()()</span>
 </pre>
 </body>
 </html>
