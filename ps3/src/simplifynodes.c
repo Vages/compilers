@@ -117,9 +117,9 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 
 	simplify_default(root, depth+1);
 
-	if(root->data_type.base_type==ARGUMENT_LIST){
+	if(root->nodetype.index==ARGUMENT_LIST){
 		root = root->children[0]
-	} else if ((root->data_type.base_type == STATEMENT)||(root->data_type.base_type == PARAMETER_LIST)){
+	} else if ((root->nodetype.index == STATEMENT)||(root->nodetype.index == PARAMETER_LIST)){
 		if (root->n_children ==1){
 			root = root->children[0];
 		}
@@ -151,7 +151,7 @@ Node_t* simplify_list ( Node_t *root, int depth )
 		root = simplify_default(root, depth+1);
 	} else if (root->n_children>1){
 		root = simplify_default(root, depth+1);
-		Node_t* left_child = root->children[0];
+		Node_t* left_child = root->chil ydren[0];
 		int no_of_children_in_left = left_child->n_children;
 		
 		Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+1));
