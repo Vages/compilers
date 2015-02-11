@@ -106,7 +106,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	}
 
 	root->n_children = 0;
-	free(root_children);
+	free(root->children);
 
 	return root;
 	
