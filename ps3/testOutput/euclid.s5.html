@@ -16,31 +16,91 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/euclid.s5	2015-02-09 13:34:57.928174000 +0100</span>
-<span class="plus3">+++ testOutput/euclid.s5	2015-02-11 14:21:13.319603000 +0100</span>
-<span class="at2">@@ -1,65 +1,131 @@</span>
+<span class="plus3">+++ testOutput/euclid.s5	2015-02-11 14:35:40.840362000 +0100</span>
+<span class="at2">@@ -1,65 +1,115 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(INT)("euclid")()</span>
-<span class="minus">-   VARIABLE_LIST()()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    IF_STATEMENT()()</span>
+<span class="plus">+  FUNCTION_LIST()()</span>
+<span class="plus">+   (nil)</span>
+<span class="plus">+   FUNCTION(INT)("euclid")()</span>
+<span class="plus">+    VARIABLE_LIST()()</span>
+<span class="plus">+     DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+     DECLARATION_STATEMENT(INT)("b")()</span>
+<span class="plus">+    STATEMENT_LIST()()</span>
+<span class="plus">+     IF_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()()</span>
+<span class="plus">+       EXPRESSION()(-)</span>
+<span class="plus">+        EXPRESSION()()</span>
+<span class="plus">+         EXPRESSION()(FUNC_CALL)</span>
+<span class="plus">+          VARIABLE()("gcd")()</span>
+<span class="plus">+          EXPRESSION_LIST()()</span>
+<span class="plus">+           EXPRESSION()()</span>
+<span class="plus">+            EXPRESSION()(VARIABLE)</span>
+<span class="plus">+             VARIABLE()("a")()</span>
+<span class="plus">+           EXPRESSION()()</span>
+<span class="plus">+            EXPRESSION()(VARIABLE)</span>
+<span class="plus">+             VARIABLE()("b")()</span>
+<span class="plus">+        EXPRESSION()(CONSTANT)</span>
+<span class="plus">+         CONSTANT(INT)(1)()</span>
+<span class="plus">+      STATEMENT_LIST()()</span>
+<span class="plus">+       PRINT_STATEMENT()()</span>
+<span class="plus">+        EXPRESSION_LIST()()</span>
+<span class="plus">+         EXPRESSION()(CONSTANT)</span>
+<span class="plus">+          CONSTANT(STRING)("Greatest common divisor of")()</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("a")()</span>
+<span class="plus">+         EXPRESSION()(CONSTANT)</span>
+<span class="plus">+          CONSTANT(STRING)("and")()</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("b")()</span>
+<span class="plus">+         EXPRESSION()(CONSTANT)</span>
+<span class="plus">+          CONSTANT(STRING)("is")()</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(FUNC_CALL)</span>
+<span class="plus">+           VARIABLE()("gcd")()</span>
+<span class="plus">+           EXPRESSION_LIST()()</span>
+<span class="plus">+            EXPRESSION()()</span>
+<span class="plus">+             EXPRESSION()(VARIABLE)</span>
+<span class="plus">+              VARIABLE()("a")()</span>
+<span class="plus">+            EXPRESSION()()</span>
+<span class="plus">+             EXPRESSION()(VARIABLE)</span>
+<span class="plus">+              VARIABLE()("b")()</span>
+<span class="plus">+      STATEMENT_LIST()()</span>
+<span class="plus">+       PRINT_STATEMENT()()</span>
+<span class="plus">+        EXPRESSION_LIST()()</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("a")()</span>
+<span class="plus">+         EXPRESSION()(CONSTANT)</span>
+<span class="plus">+          CONSTANT(STRING)("and")()</span>
+<span class="plus">+         EXPRESSION()()</span>
+<span class="plus">+          EXPRESSION()(VARIABLE)</span>
+<span class="plus">+           VARIABLE()("b")()</span>
+<span class="plus">+         EXPRESSION()(CONSTANT)</span>
+<span class="plus">+          CONSTANT(STRING)("are relative primes")()</span>
+<span class="plus">+     RETURN_STATEMENT()()</span>
+<span class="plus">+      EXPRESSION()(CONSTANT)</span>
+<span class="plus">+       CONSTANT(INT)(0)()</span>
+<span class="plus">+  FUNCTION(INT)("gcd")()</span>
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+     DECLARATION_STATEMENT(INT)("b")()
+    STATEMENT_LIST()()
+<span class="plus">+    DECLARATION_STATEMENT(INT)("g")()</span>
+     IF_STATEMENT()()
 <span class="minus">-     EXPRESSION()(-)</span>
 <span class="minus">-      EXPRESSION()(FUNC_CALL)</span>
 <span class="minus">-       VARIABLE()("gcd")()</span>
 <span class="minus">-       EXPRESSION_LIST()()</span>
 <span class="minus">-        VARIABLE()("a")()</span>
-<span class="minus">-        VARIABLE()("b")()</span>
+<span class="plus">+     EXPRESSION()()</span>
+<span class="plus">+      EXPRESSION()()</span>
+<span class="plus">+       EXPRESSION()(VARIABLE)</span>
+         VARIABLE()("b")()
 <span class="minus">-      CONSTANT(INT)(1)()</span>
-<span class="plus">+  FUNCTION_LIST()()</span>
-<span class="plus">+   (nil)</span>
-<span class="plus">+   FUNCTION(INT)("euclid")()</span>
-<span class="plus">+    VARIABLE_LIST()()</span>
-<span class="plus">+     VARIABLE_LIST()()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="plus">+     DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
       STATEMENT_LIST()()
 <span class="minus">-      PRINT_STATEMENT()()</span>
 <span class="minus">-       EXPRESSION_LIST()()</span>
@@ -49,26 +109,12 @@
 <span class="minus">-        CONSTANT(STRING)("and")()</span>
 <span class="minus">-        VARIABLE()("b")()</span>
 <span class="minus">-        CONSTANT(STRING)("is")()</span>
-<span class="minus">-        EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-         VARIABLE()("gcd")()</span>
-<span class="plus">+      IF_STATEMENT()()</span>
+<span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+       EXPRESSION()(VARIABLE)</span>
+<span class="plus">+        VARIABLE()("g")()</span>
 <span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(-)</span>
-<span class="plus">+         EXPRESSION()()</span>
-<span class="plus">+          EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+           VARIABLE()("gcd")()</span>
-<span class="plus">+           EXPRESSION_LIST()()</span>
-<span class="plus">+            EXPRESSION_LIST()()</span>
-<span class="plus">+             EXPRESSION()()</span>
-<span class="plus">+              EXPRESSION()(VARIABLE)</span>
-<span class="plus">+               VARIABLE()("a")()</span>
-<span class="plus">+            EXPRESSION()()</span>
-<span class="plus">+             EXPRESSION()(VARIABLE)</span>
-<span class="plus">+              VARIABLE()("b")()</span>
-<span class="plus">+         EXPRESSION()(CONSTANT)</span>
-<span class="plus">+          CONSTANT(INT)(1)()</span>
-<span class="plus">+       STATEMENT_LIST()()</span>
-<span class="plus">+        PRINT_STATEMENT()()</span>
+         EXPRESSION()(FUNC_CALL)
+          VARIABLE()("gcd")()
           EXPRESSION_LIST()()
 <span class="minus">-          VARIABLE()("a")()</span>
 <span class="minus">-          VARIABLE()("b")()</span>
@@ -81,122 +127,56 @@
 <span class="minus">-        CONSTANT(STRING)("are relative primes")()</span>
 <span class="minus">-    RETURN_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="plus">+          EXPRESSION_LIST()()</span>
-<span class="plus">+           EXPRESSION_LIST()()</span>
-<span class="plus">+            EXPRESSION_LIST()()</span>
-<span class="plus">+             EXPRESSION_LIST()()</span>
-<span class="plus">+              EXPRESSION_LIST()()</span>
-<span class="plus">+               EXPRESSION()(CONSTANT)</span>
-<span class="plus">+                CONSTANT(STRING)("Greatest common divisor of")()</span>
-<span class="plus">+              EXPRESSION()()</span>
-<span class="plus">+               EXPRESSION()(VARIABLE)</span>
-<span class="plus">+                VARIABLE()("a")()</span>
-<span class="plus">+             EXPRESSION()(CONSTANT)</span>
-<span class="plus">+              CONSTANT(STRING)("and")()</span>
-<span class="plus">+            EXPRESSION()()</span>
-<span class="plus">+             EXPRESSION()(VARIABLE)</span>
-<span class="plus">+              VARIABLE()("b")()</span>
-<span class="plus">+           EXPRESSION()(CONSTANT)</span>
-<span class="plus">+            CONSTANT(STRING)("is")()</span>
-<span class="plus">+          EXPRESSION()()</span>
-<span class="plus">+           EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+            VARIABLE()("gcd")()</span>
-<span class="plus">+            EXPRESSION_LIST()()</span>
-<span class="plus">+             EXPRESSION_LIST()()</span>
-<span class="plus">+              EXPRESSION()()</span>
-<span class="plus">+               EXPRESSION()(VARIABLE)</span>
-<span class="plus">+                VARIABLE()("a")()</span>
-<span class="plus">+             EXPRESSION()()</span>
-<span class="plus">+              EXPRESSION()(VARIABLE)</span>
-<span class="plus">+               VARIABLE()("b")()</span>
-<span class="plus">+       STATEMENT_LIST()()</span>
-<span class="plus">+        PRINT_STATEMENT()()</span>
-<span class="plus">+         EXPRESSION_LIST()()</span>
-<span class="plus">+          EXPRESSION_LIST()()</span>
-<span class="plus">+           EXPRESSION_LIST()()</span>
-<span class="plus">+            EXPRESSION_LIST()()</span>
-<span class="plus">+             EXPRESSION()()</span>
-<span class="plus">+              EXPRESSION()(VARIABLE)</span>
-<span class="plus">+               VARIABLE()("a")()</span>
-<span class="plus">+            EXPRESSION()(CONSTANT)</span>
-<span class="plus">+             CONSTANT(STRING)("and")()</span>
-<span class="plus">+           EXPRESSION()()</span>
-<span class="plus">+            EXPRESSION()(VARIABLE)</span>
-<span class="plus">+             VARIABLE()("b")()</span>
-<span class="plus">+          EXPRESSION()(CONSTANT)</span>
-<span class="plus">+           CONSTANT(STRING)("are relative primes")()</span>
-<span class="plus">+     RETURN_STATEMENT()()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(INT)(0)()</span>
-   FUNCTION(INT)("gcd")()
-    VARIABLE_LIST()()
+<span class="minus">-  FUNCTION(INT)("gcd")()</span>
+<span class="minus">-   VARIABLE_LIST()()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="plus">+    VARIABLE_LIST()()</span>
-<span class="plus">+     DECLARATION_STATEMENT(INT)("a")()</span>
-     DECLARATION_STATEMENT(INT)("b")()
-    STATEMENT_LIST()()
+<span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>
+<span class="minus">-   STATEMENT_LIST()()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("g")()</span>
 <span class="minus">-    IF_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("b")()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
-      STATEMENT_LIST()()
+<span class="minus">-     STATEMENT_LIST()()</span>
 <span class="minus">-      ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-       VARIABLE()("g")()</span>
 <span class="minus">-       EXPRESSION()(FUNC_CALL)</span>
 <span class="minus">-        VARIABLE()("gcd")()</span>
 <span class="minus">-        EXPRESSION_LIST()()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("g")()</span>
-<span class="plus">+     IF_STATEMENT()()</span>
-<span class="plus">+      EXPRESSION()()</span>
-<span class="plus">+       EXPRESSION()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-          VARIABLE()("b")()
+<span class="minus">-         VARIABLE()("b")()</span>
 <span class="minus">-         EXPRESSION()(-)</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("g")()</span>
-<span class="plus">+        EXPRESSION()()</span>
-<span class="plus">+         EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+          VARIABLE()("gcd")()</span>
-<span class="plus">+          EXPRESSION_LIST()()</span>
-<span class="plus">+           EXPRESSION_LIST()()</span>
-<span class="plus">+            EXPRESSION()()</span>
-<span class="plus">+             EXPRESSION()(VARIABLE)</span>
-<span class="plus">+              VARIABLE()("b")()</span>
-<span class="plus">+           EXPRESSION()(-)</span>
-<span class="plus">+            EXPRESSION()()</span>
-<span class="plus">+             EXPRESSION()(VARIABLE)</span>
-<span class="plus">+              VARIABLE()("a")()</span>
-<span class="plus">+            EXPRESSION()()</span>
-<span class="plus">+             EXPRESSION()(*)</span>
-<span class="plus">+              EXPRESSION()()</span>
-<span class="plus">+               EXPRESSION()(/)</span>
-<span class="plus">+                EXPRESSION()()</span>
-<span class="plus">+                 EXPRESSION()(VARIABLE)</span>
-<span class="plus">+                  VARIABLE()("a")()</span>
-<span class="plus">+                EXPRESSION()()</span>
-<span class="plus">+                 EXPRESSION()(VARIABLE)</span>
-<span class="plus">+                  VARIABLE()("b")()</span>
-<span class="plus">+              EXPRESSION()()</span>
-<span class="plus">+               EXPRESSION()(VARIABLE)</span>
-<span class="plus">+                VARIABLE()("b")()</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("g")()</span>
-<span class="plus">+        EXPRESSION()()</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-           VARIABLE()("a")()
+<span class="minus">-          VARIABLE()("a")()</span>
 <span class="minus">-          EXPRESSION()(*)</span>
 <span class="minus">-           EXPRESSION()(/)</span>
 <span class="minus">-            VARIABLE()("a")()</span>
-<span class="minus">-            VARIABLE()("b")()</span>
+<span class="plus">+          EXPRESSION()()</span>
+<span class="plus">+           EXPRESSION()(VARIABLE)</span>
+             VARIABLE()("b")()
 <span class="minus">-           VARIABLE()("b")()</span>
-<span class="minus">-     STATEMENT_LIST()()</span>
-<span class="minus">-      ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+          EXPRESSION()(-)</span>
+<span class="plus">+           EXPRESSION()()</span>
+<span class="plus">+            EXPRESSION()(VARIABLE)</span>
+<span class="plus">+             VARIABLE()("a")()</span>
+<span class="plus">+           EXPRESSION()()</span>
+<span class="plus">+            EXPRESSION()(*)</span>
+<span class="plus">+             EXPRESSION()()</span>
+<span class="plus">+              EXPRESSION()(/)</span>
+<span class="plus">+               EXPRESSION()()</span>
+<span class="plus">+                EXPRESSION()(VARIABLE)</span>
+<span class="plus">+                 VARIABLE()("a")()</span>
+<span class="plus">+               EXPRESSION()()</span>
+<span class="plus">+                EXPRESSION()(VARIABLE)</span>
+<span class="plus">+                 VARIABLE()("b")()</span>
+<span class="plus">+             EXPRESSION()()</span>
+<span class="plus">+              EXPRESSION()(VARIABLE)</span>
+<span class="plus">+               VARIABLE()("b")()</span>
+      STATEMENT_LIST()()
+       ASSIGNMENT_STATEMENT()()
 <span class="minus">-       VARIABLE()("g")()</span>
 <span class="minus">-       VARIABLE()("a")()</span>
+<span class="plus">+       EXPRESSION()(VARIABLE)</span>
+<span class="plus">+        VARIABLE()("g")()</span>
+<span class="plus">+       EXPRESSION()()</span>
+<span class="plus">+        EXPRESSION()(VARIABLE)</span>
+<span class="plus">+         VARIABLE()("a")()</span>
      RETURN_STATEMENT()()
 <span class="minus">-     VARIABLE()("g")()</span>
 <span class="plus">+     EXPRESSION()()</span>

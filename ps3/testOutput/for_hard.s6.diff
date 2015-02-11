@@ -1,5 +1,5 @@
 --- correctOutput/for_hard.s6	2015-02-09 13:34:57.964168000 +0100
-+++ testOutput/for_hard.s6	2015-02-11 14:21:20.522638000 +0100
++++ testOutput/for_hard.s6	2015-02-11 14:35:47.135391000 +0100
 @@ -1,6 +0,0 @@
 -CONSTANT
 -CONSTANT

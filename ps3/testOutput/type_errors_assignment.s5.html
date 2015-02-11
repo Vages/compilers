@@ -16,18 +16,18 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_assignment.s5	2015-02-09 13:34:58.190170000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_assignment.s5	2015-02-11 14:21:38.022737000 +0100</span>
-<span class="at2">@@ -1,26 +1,46 @@</span>
+<span class="plus3">+++ testOutput/type_errors_assignment.s5	2015-02-11 14:36:04.002487000 +0100</span>
+<span class="at2">@@ -1,26 +1,38 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(FLOAT)("b")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(BOOL)("c")()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+     DECLARATION_STATEMENT(INT)("a")()
+     DECLARATION_STATEMENT(FLOAT)("b")()
+     DECLARATION_STATEMENT(BOOL)("c")()
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("a")()</span>
 <span class="minus">-     CONSTANT(BOOL)(True)()</span>
 <span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
@@ -45,42 +45,30 @@
 <span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("c")()</span>
 <span class="minus">-     CONSTANT(FLOAT)(3.000000)()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
-<span class="plus">+     STATEMENT_LIST()()</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       STATEMENT_LIST()()</span>
-<span class="plus">+        STATEMENT_LIST()()</span>
-<span class="plus">+         STATEMENT_LIST()()</span>
-<span class="plus">+          STATEMENT_LIST()()</span>
-<span class="plus">+           STATEMENT_LIST()()</span>
-<span class="plus">+            DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="plus">+           DECLARATION_STATEMENT(FLOAT)("b")()</span>
-<span class="plus">+          DECLARATION_STATEMENT(BOOL)("c")()</span>
-<span class="plus">+         ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+          EXPRESSION()(VARIABLE)</span>
-<span class="plus">+           VARIABLE()("a")()</span>
-<span class="plus">+          EXPRESSION()(CONSTANT)</span>
-<span class="plus">+           CONSTANT(BOOL)(True)()</span>
-<span class="plus">+        ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+         EXPRESSION()(VARIABLE)</span>
-<span class="plus">+          VARIABLE()("a")()</span>
-<span class="plus">+         EXPRESSION()(CONSTANT)</span>
-<span class="plus">+          CONSTANT(FLOAT)(1.000000)()</span>
-<span class="plus">+       ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+        EXPRESSION()(VARIABLE)</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+        EXPRESSION()(CONSTANT)</span>
-<span class="plus">+         CONSTANT(BOOL)(False)()</span>
-<span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+       EXPRESSION()(VARIABLE)</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-<span class="plus">+       EXPRESSION()(CONSTANT)</span>
-<span class="plus">+        CONSTANT(INT)(1)()</span>
-<span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+      EXPRESSION()(VARIABLE)</span>
-<span class="plus">+       VARIABLE()("c")()</span>
-<span class="plus">+      EXPRESSION()(CONSTANT)</span>
-<span class="plus">+       CONSTANT(INT)(3)()</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("a")()</span>
+<span class="plus">+     EXPRESSION()(CONSTANT)</span>
+<span class="plus">+      CONSTANT(BOOL)(True)()</span>
+<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("a")()</span>
+<span class="plus">+     EXPRESSION()(CONSTANT)</span>
+<span class="plus">+      CONSTANT(FLOAT)(1.000000)()</span>
+<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("b")()</span>
+<span class="plus">+     EXPRESSION()(CONSTANT)</span>
+<span class="plus">+      CONSTANT(BOOL)(False)()</span>
+<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("b")()</span>
+<span class="plus">+     EXPRESSION()(CONSTANT)</span>
+<span class="plus">+      CONSTANT(INT)(1)()</span>
+<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("c")()</span>
+<span class="plus">+     EXPRESSION()(CONSTANT)</span>
+<span class="plus">+      CONSTANT(INT)(3)()</span>
 <span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("c")()</span>
