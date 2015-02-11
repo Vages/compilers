@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s6	2015-02-09 13:34:58.169168000 +0100
-+++ testOutput/strings_and_comments.s6	2015-02-11 18:13:37.416626000 +0100
++++ testOutput/strings_and_comments.s6	2015-02-11 18:21:47.375429000 +0100
 @@ -1,4 +0,0 @@
 -CONSTANT
 -CONSTANT

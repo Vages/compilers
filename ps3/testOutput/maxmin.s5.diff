@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s5	2015-02-09 13:34:58.086168000 +0100
-+++ testOutput/maxmin.s5	2015-02-11 18:13:31.153588000 +0100
++++ testOutput/maxmin.s5	2015-02-11 18:21:40.753397000 +0100
 @@ -1,82 +1,135 @@
   PROGRAM()()
   FUNCTION_LIST()()

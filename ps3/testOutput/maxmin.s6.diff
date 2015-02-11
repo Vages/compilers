@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s6	2015-02-09 13:34:58.087169000 +0100
-+++ testOutput/maxmin.s6	2015-02-11 18:13:31.557592000 +0100
++++ testOutput/maxmin.s6	2015-02-11 18:21:41.183437000 +0100
 @@ -1,11 +0,0 @@
 -CONSTANT
 -CONSTANT

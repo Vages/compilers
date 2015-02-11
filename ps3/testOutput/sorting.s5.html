@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/sorting.s5	2015-02-09 13:34:58.158174000 +0100</span>
-<span class="plus3">+++ testOutput/sorting.s5	2015-02-11 18:13:36.764621000 +0100</span>
+<span class="plus3">+++ testOutput/sorting.s5	2015-02-11 18:21:46.668432000 +0100</span>
 <span class="at2">@@ -1,89 +1,153 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -34,8 +34,8 @@
 <span class="minus">-    FOR_STATEMENT()()</span>
 <span class="plus">+   FUNCTION(VOID)("main")()</span>
 <span class="plus">+    STATEMENT_LIST()()</span>
-<span class="plus">+     DECLARATION_STATEMENT(ARRAY(INT)[21705456])("a")()</span>
-<span class="plus">+     DECLARATION_STATEMENT(ARRAY(INT)[21707024])("b")()</span>
+<span class="plus">+     DECLARATION_STATEMENT(ARRAY(INT)[0])("a")()</span>
+<span class="plus">+     DECLARATION_STATEMENT(ARRAY(INT)[0])("b")()</span>
       ASSIGNMENT_STATEMENT()()
 <span class="minus">-      VARIABLE()("i")()</span>
 <span class="minus">-      CONSTANT(INT)(0)()</span>
@@ -44,7 +44,7 @@
 <span class="plus">+      EXPRESSION()(VARIABLE)</span>
 <span class="plus">+       VARIABLE()("a")()</span>
 <span class="plus">+      EXPRESSION()(NEW)</span>
-<span class="plus">+       TYPE(ARRAY(INT)[21709008])()</span>
+<span class="plus">+       TYPE(ARRAY(INT)[0])()</span>
 <span class="plus">+     DECLARATION_STATEMENT(INT)("i")()</span>
 <span class="plus">+     FOR_STATEMENT()()</span>
        ASSIGNMENT_STATEMENT()()
@@ -120,10 +120,10 @@
 <span class="plus">+           EXPRESSION()()</span>
 <span class="plus">+            EXPRESSION()(VARIABLE)</span>
 <span class="plus">+             VARIABLE()("i")()</span>
-<span class="plus">+  FUNCTION(ARRAY(INT)[21723968])("sort")()</span>
+<span class="plus">+  FUNCTION(ARRAY(INT)[0])("sort")()</span>
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[21724960])("a")()</span>
+<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[0])("a")()</span>
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("i")()
      DECLARATION_STATEMENT(INT)("j")()

@@ -1,5 +1,5 @@
 --- correctOutput/merge_sort.s6	2015-02-09 13:34:58.097171000 +0100
-+++ testOutput/merge_sort.s6	2015-02-11 18:13:33.958604000 +0100
++++ testOutput/merge_sort.s6	2015-02-11 18:21:43.718448000 +0100
 @@ -1,14 +0,0 @@
 -CONSTANT
 -CONSTANT

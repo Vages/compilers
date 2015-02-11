@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_int.s6	2015-02-09 13:34:57.878175000 +0100
-+++ testOutput/arithmetic_int.s6	2015-02-11 18:13:09.749464000 +0100
++++ testOutput/arithmetic_int.s6	2015-02-11 18:21:18.593274000 +0100
 @@ -1,3 +0,0 @@
 -CONSTANT
 -CONSTANT
