@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s5	2015-02-09 13:34:57.920170000 +0100
-+++ testOutput/compare_int.s5	2015-02-11 14:42:49.289711000 +0100
++++ testOutput/compare_int.s5	2015-02-11 18:13:14.802493000 +0100
 @@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()

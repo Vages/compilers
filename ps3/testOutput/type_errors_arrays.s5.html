@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_arrays.s5	2015-02-09 13:34:58.176171000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_arrays.s5	2015-02-11 14:43:12.868842000 +0100</span>
-<span class="at2">@@ -1,49 +1,99 @@</span>
+<span class="plus3">+++ testOutput/type_errors_arrays.s5	2015-02-11 18:13:37.932627000 +0100</span>
+<span class="at2">@@ -1,49 +1,59 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
@@ -28,140 +28,80 @@
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[10][10])("b")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(BOOL)[10])("c")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(FLOAT)[10][10][10])("d")()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[10519280])("a")()</span>
+<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[10520848][10521232])("b")()</span>
+<span class="plus">+    DECLARATION_STATEMENT(ARRAY(BOOL)[10522800])("c")()</span>
+<span class="plus">+    DECLARATION_STATEMENT(ARRAY(FLOAT)[10524368][10524752][10525136])("d")()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("a")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("a")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(INT)[9])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(INT)[10527120])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("a")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("a")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(BOOL)[10])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(BOOL)[10529072])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("b")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("b")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(INT)[100])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(INT)[10531024])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("b")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("b")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(BOOL)[10][10])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(BOOL)[10532976][10533360])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("b")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("b")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(INT)[10][9])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(INT)[10535312][10535696])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("c")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("c")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(FLOAT)[10])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(FLOAT)[10537648])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("c")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("c")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(BOOL)[10][10])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(BOOL)[10539600][10539984])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("d")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(INT)[10][10][10])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(INT)[10541936][10542320][10542704])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("d")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(FLOAT)[10][10][10][10])()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="plus">+      TYPE(ARRAY(FLOAT)[10544656][10545040][10545424][10545808])()</span>
+     ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="plus">+     EXPRESSION()(VARIABLE)</span>
+<span class="plus">+      VARIABLE()("d")()</span>
+      EXPRESSION()(NEW)
 <span class="minus">-      TYPE(ARRAY(FLOAT)[10][9][11])()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY())("a")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY())("b")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY())("c")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY())("d")()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("a")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(INT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(9)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("a")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(BOOL)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("b")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(INT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(100)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("b")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(BOOL)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("b")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(INT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(9)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("c")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(FLOAT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("c")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(BOOL)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(INT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(FLOAT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+    ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+     EXPRESSION()(VARIABLE)</span>
-<span class="plus">+      VARIABLE()("d")()</span>
-<span class="plus">+     EXPRESSION()(NEW)</span>
-<span class="plus">+      TYPE(ARRAY())()</span>
-<span class="plus">+       TYPE(FLOAT)()</span>
-<span class="plus">+       INDEX_LIST()()</span>
-<span class="plus">+        INDEX(INT)(10)()</span>
-<span class="plus">+        INDEX(INT)(9)()</span>
-<span class="plus">+        INDEX(INT)(11)()</span></span>
+<span class="plus">+      TYPE(ARRAY(FLOAT)[10547760][10548144][10548528])()</span></span>
 </pre>
 </body>
 </html>

@@ -1,5 +1,5 @@
 --- correctOutput/if_simple.s7	2015-02-09 13:34:58.047168000 +0100
-+++ testOutput/if_simple.s7	2015-02-11 14:43:01.104777000 +0100
++++ testOutput/if_simple.s7	2015-02-11 18:13:26.587560000 +0100
 @@ -1,2 +0,0 @@
 -Add strings ("true"), index: 0 
 -Add strings ("false"), index: 1 

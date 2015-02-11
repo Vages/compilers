@@ -1,6 +1,6 @@
 --- correctOutput/array_simple.s5	2015-02-09 13:34:57.902174000 +0100
-+++ testOutput/array_simple.s5	2015-02-11 14:42:46.345698000 +0100
-@@ -1,36 +1,62 @@
++++ testOutput/array_simple.s5	2015-02-11 18:13:11.956479000 +0100
+@@ -1,36 +1,59 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -24,17 +24,14 @@
 +      VARIABLE()("b")()
 +     EXPRESSION()(CONSTANT)
 +      CONSTANT(INT)(44)()
-+    DECLARATION_STATEMENT(ARRAY())("array")()
++    DECLARATION_STATEMENT(ARRAY(INT)[31257968])("array")()
      ASSIGNMENT_STATEMENT()()
 -     VARIABLE()("array")()
 +     EXPRESSION()(VARIABLE)
 +      VARIABLE()("array")()
       EXPRESSION()(NEW)
 -      TYPE(ARRAY(INT)[2])()
-+      TYPE(ARRAY())()
-+       TYPE(INT)()
-+       INDEX_LIST()()
-+        INDEX(INT)(2)()
++      TYPE(ARRAY(INT)[31259952])()
      ASSIGNMENT_STATEMENT()()
       EXPRESSION()(ARRAY_INDEX)
 -      VARIABLE()("array")()

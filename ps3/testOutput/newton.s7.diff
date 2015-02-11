@@ -1,5 +1,5 @@
 --- correctOutput/newton.s7	2015-02-09 13:34:58.116172000 +0100
-+++ testOutput/newton.s7	2015-02-11 14:43:09.776825000 +0100
++++ testOutput/newton.s7	2015-02-11 18:13:34.880609000 +0100
 @@ -1,2 +0,0 @@
 -Add strings ("The square root of"), index: 0 
 -Add strings ("is"), index: 1 

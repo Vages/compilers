@@ -1,6 +1,6 @@
 --- correctOutput/array_forloop.s5	2015-02-09 13:34:57.886171000 +0100
-+++ testOutput/array_forloop.s5	2015-02-11 14:42:44.536685000 +0100
-@@ -1,79 +1,139 @@
++++ testOutput/array_forloop.s5	2015-02-11 18:13:10.235467000 +0100
+@@ -1,79 +1,135 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -8,18 +8,14 @@
 -   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
-+    DECLARATION_STATEMENT(ARRAY())("a")()
++    DECLARATION_STATEMENT(ARRAY(INT)[18260720][18261104])("a")()
      ASSIGNMENT_STATEMENT()()
 -     VARIABLE()("a")()
 +     EXPRESSION()(VARIABLE)
 +      VARIABLE()("a")()
       EXPRESSION()(NEW)
 -      TYPE(ARRAY(INT)[3][3])()
-+      TYPE(ARRAY())()
-+       TYPE(INT)()
-+       INDEX_LIST()()
-+        INDEX(INT)(3)()
-+        INDEX(INT)(3)()
++      TYPE(ARRAY(INT)[18263088][18263472])()
      DECLARATION_STATEMENT(INT)("i")()
      DECLARATION_STATEMENT(INT)("j")()
      FOR_STATEMENT()()
