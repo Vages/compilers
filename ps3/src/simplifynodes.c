@@ -47,12 +47,12 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 	root = simplify_default(root, depth+1);
 
-	if (root->data_type.base == ARRAY_TYPE){
+	if (root->data_type.base_type == ARRAY_TYPE){
 		int no_of_children = root->n_children;
 		for (int i = 0; i<no_of_children; i++){
 			Node_t* child = root->children[i];
 			if (child->nodetype.index == TYPE){
-				root->data_type.array_type = child->data_type.base;
+				root->data_type.array_type = child->data_type.base_type;
 			} else if (child->nodetype.index == INDEX_LIST){
 				int index_children = child->n_children;
 				root->data_type.n_dimensions = index_children;
