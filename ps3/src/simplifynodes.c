@@ -152,8 +152,6 @@ Node_t* simplify_list ( Node_t *root, int depth )
 		root = simplify_default(root, depth+1);
 		Node_t* left_child = root->children[0];
 		int no_of_children_in_left = left_child->n_children;
-
-		fprintf(stderr, "%d\n", no_of_children_in_left);
 		
 		Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+1));
 		
