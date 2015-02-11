@@ -114,16 +114,18 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 {
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
-	/*
-	root->children[0] = root->children[0]->simplify(root->children[0], depth+1);
-
-	Node_t* child = root->children[0];
-	//free (root);
-
-	return child;
-	*/
 
 	simplify_default(root, depth+1);
+
+	if(root->data_type==argument_list_n){
+		root = root->children[0]
+	} else if ((root->data_type == statement_n)||(root->data_type == parameter_list_n)){
+		if (root->n_children ==1){
+			root = root->children[0]
+		}
+	}
+	//free (root);
+
 	return root;
 }
 
