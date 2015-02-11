@@ -1,14 +1,11 @@
 --- correctOutput/matrix_multiply.s5	2015-02-09 13:34:58.064171000 +0100
-+++ testOutput/matrix_multiply.s5	2015-02-09 15:42:30.600563000 +0100
-@@ -1,158 +1,361 @@
++++ testOutput/matrix_multiply.s5	2015-02-11 13:36:54.718145000 +0100
+@@ -1,158 +1,358 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("main")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("main")()
-    (nil)
+   FUNCTION(VOID)("main")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
 -    ASSIGNMENT_STATEMENT()()

@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100</span>
-<span class="plus3">+++ testOutput/return.s5	2015-02-09 15:42:35.336584000 +0100</span>
-<span class="at2">@@ -1,53 +1,102 @@</span>
+<span class="plus3">+++ testOutput/return.s5	2015-02-11 13:37:02.153152000 +0100</span>
+<span class="at2">@@ -1,53 +1,97 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(INT)("main")()</span>
@@ -29,10 +29,7 @@
 <span class="minus">-      CONSTANT(STRING)("t is ")()</span>
 <span class="minus">-      EXPRESSION()(FUNC_CALL)</span>
 <span class="minus">-       VARIABLE()("test")()</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(INT)()</span>
-<span class="plus">+    VARIABLE()("main")()</span>
-<span class="plus">+    (nil)</span>
+<span class="plus">+   FUNCTION(INT)("main")()</span>
 <span class="plus">+    STATEMENT_LIST()()</span>
 <span class="plus">+     STATEMENT_LIST()()</span>
 <span class="plus">+      PRINT_STATEMENT()()</span>
@@ -40,7 +37,6 @@
 <span class="minus">-        CONSTANT(INT)(64)()</span>
 <span class="minus">-    RETURN_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="minus">-  FUNCTION(INT)("test")()</span>
 <span class="plus">+        EXPRESSION_LIST()()</span>
 <span class="plus">+         EXPRESSION()(CONSTANT)</span>
 <span class="plus">+          CONSTANT(STRING)("t is ")()</span>
@@ -53,9 +49,7 @@
 <span class="plus">+     RETURN_STATEMENT()()</span>
 <span class="plus">+      EXPRESSION()(CONSTANT)</span>
 <span class="plus">+       CONSTANT(INT)(0)()</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("test")()</span>
+   FUNCTION(INT)("test")()
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
 <span class="plus">+    DECLARATION_STATEMENT()()</span>

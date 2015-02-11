@@ -1,14 +1,11 @@
 --- correctOutput/for_simple.s5	2015-02-09 13:34:57.977175000 +0100
-+++ testOutput/for_simple.s5	2015-02-09 15:42:25.876534000 +0100
-@@ -1,15 +1,26 @@
++++ testOutput/for_simple.s5	2015-02-11 13:36:46.245065000 +0100
+@@ -1,15 +1,23 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("main")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("main")()
-    (nil)
+   FUNCTION(VOID)("main")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("i")()
 +    STATEMENT_LIST()()

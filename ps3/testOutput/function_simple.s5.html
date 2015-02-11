@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_simple.s5	2015-02-09 13:34:58.007171000 +0100</span>
-<span class="plus3">+++ testOutput/function_simple.s5	2015-02-09 15:42:27.825542000 +0100</span>
-<span class="at2">@@ -1,17 +1,26 @@</span>
+<span class="plus3">+++ testOutput/function_simple.s5	2015-02-11 13:36:49.525083000 +0100</span>
+<span class="at2">@@ -1,17 +1,20 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(VOID)("main")()</span>
@@ -30,11 +30,7 @@
 <span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
 <span class="minus">-     VARIABLE()("function")()</span>
 <span class="minus">-     (nil)</span>
-<span class="minus">-  FUNCTION(VOID)("function")()</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(VOID)()</span>
-<span class="plus">+    VARIABLE()("main")()</span>
-<span class="plus">+    (nil)</span>
+<span class="plus">+   FUNCTION(VOID)("main")()</span>
 <span class="plus">+    STATEMENT_LIST()()</span>
 <span class="plus">+     STATEMENT_LIST()()</span>
 <span class="plus">+      PRINT_STATEMENT()()</span>
@@ -44,10 +40,8 @@
 <span class="plus">+     EXPRESSION()(FUNC_CALL)</span>
 <span class="plus">+      VARIABLE()("function")()</span>
 <span class="plus">+      (nil)</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("function")()</span>
-    (nil)
+   FUNCTION(VOID)("function")()
+<span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
       EXPRESSION_LIST()()

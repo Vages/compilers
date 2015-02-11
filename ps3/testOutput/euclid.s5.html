@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/euclid.s5	2015-02-09 13:34:57.928174000 +0100</span>
-<span class="plus3">+++ testOutput/euclid.s5	2015-02-09 15:42:21.316514000 +0100</span>
-<span class="at2">@@ -1,65 +1,145 @@</span>
+<span class="plus3">+++ testOutput/euclid.s5	2015-02-11 13:36:39.000026000 +0100</span>
+<span class="at2">@@ -1,65 +1,141 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(INT)("euclid")()</span>
@@ -35,9 +35,7 @@
 <span class="minus">-      CONSTANT(INT)(1)()</span>
 <span class="plus">+  FUNCTION_LIST()()</span>
 <span class="plus">+   (nil)</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(INT)()</span>
-<span class="plus">+    VARIABLE()("euclid")()</span>
+<span class="plus">+   FUNCTION(INT)("euclid")()</span>
 <span class="plus">+    VARIABLE_LIST()()</span>
 <span class="plus">+     VARIABLE_LIST()()</span>
 <span class="plus">+      DECLARATION_STATEMENT()()</span>
@@ -87,7 +85,6 @@
 <span class="minus">-        CONSTANT(STRING)("are relative primes")()</span>
 <span class="minus">-    RETURN_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="minus">-  FUNCTION(INT)("gcd")()</span>
 <span class="plus">+          EXPRESSION_LIST()()</span>
 <span class="plus">+           EXPRESSION_LIST()()</span>
 <span class="plus">+            EXPRESSION_LIST()()</span>
@@ -135,9 +132,7 @@
 <span class="plus">+     RETURN_STATEMENT()()</span>
 <span class="plus">+      EXPRESSION()(CONSTANT)</span>
 <span class="plus">+       CONSTANT(INT)(0)()</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("gcd")()</span>
+   FUNCTION(INT)("gcd")()
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>

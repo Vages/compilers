@@ -1,14 +1,11 @@
 --- correctOutput/adding.s5	2015-02-09 13:34:57.859172000 +0100
-+++ testOutput/adding.s5	2015-02-09 15:42:13.265477000 +0100
-@@ -1,14 +1,26 @@
++++ testOutput/adding.s5	2015-02-11 13:36:24.877956000 +0100
+@@ -1,14 +1,23 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("adding")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("adding")()
-    (nil)
+   FUNCTION(VOID)("adding")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    ASSIGNMENT_STATEMENT()()

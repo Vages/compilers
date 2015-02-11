@@ -1,5 +1,5 @@
 --- correctOutput/function_simple.s7	2015-02-09 13:34:58.009171000 +0100
-+++ testOutput/function_simple.s7	2015-02-09 15:42:27.952558000 +0100
++++ testOutput/function_simple.s7	2015-02-11 13:36:49.626084000 +0100
 @@ -1,2 +0,0 @@
 -Add strings ("In main()"), index: 0 
 -Add strings ("In function()"), index: 1 

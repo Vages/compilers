@@ -16,16 +16,13 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_arrays.s5	2015-02-09 13:34:58.176171000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_arrays.s5	2015-02-09 15:42:36.797591000 +0100</span>
-<span class="at2">@@ -1,49 +1,151 @@</span>
+<span class="plus3">+++ testOutput/type_errors_arrays.s5	2015-02-11 13:37:04.582167000 +0100</span>
+<span class="at2">@@ -1,49 +1,148 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
-<span class="minus">-  FUNCTION(VOID)("main")()</span>
 <span class="plus">+  (nil)</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("main")()</span>
-    (nil)
+   FUNCTION(VOID)("main")()
+<span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[10][10])("b")()</span>

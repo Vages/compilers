@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/merge_sort.s5	2015-02-09 13:34:58.096169000 +0100</span>
-<span class="plus3">+++ testOutput/merge_sort.s5	2015-02-09 15:42:32.661575000 +0100</span>
-<span class="at2">@@ -1,197 +1,444 @@</span>
+<span class="plus3">+++ testOutput/merge_sort.s5	2015-02-11 13:36:58.659132000 +0100</span>
+<span class="at2">@@ -1,197 +1,437 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(VOID)("main")()</span>
@@ -56,10 +56,7 @@
 <span class="plus">+  FUNCTION_LIST()()</span>
 <span class="plus">+   FUNCTION_LIST()()</span>
 <span class="plus">+    (nil)</span>
-<span class="plus">+    FUNCTION()()</span>
-<span class="plus">+     TYPE(VOID)()</span>
-<span class="plus">+     VARIABLE()("main")()</span>
-<span class="plus">+     (nil)</span>
+<span class="plus">+    FUNCTION(VOID)("main")()</span>
       STATEMENT_LIST()()
 <span class="minus">-      PRINT_STATEMENT()()</span>
 <span class="minus">-       EXPRESSION_LIST()()</span>
@@ -151,9 +148,7 @@
 <span class="plus">+            EXPRESSION()()</span>
 <span class="plus">+             EXPRESSION()(VARIABLE)</span>
 <span class="plus">+              VARIABLE()("i")()</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(VOID)()</span>
-<span class="plus">+    VARIABLE()("merge_sort")()</span>
+<span class="plus">+   FUNCTION(VOID)("merge_sort")()</span>
 <span class="plus">+    VARIABLE_LIST()()</span>
 <span class="plus">+     VARIABLE_LIST()()</span>
 <span class="plus">+      VARIABLE_LIST()()</span>
@@ -211,7 +206,6 @@
 <span class="minus">-        VARIABLE()("start")()</span>
 <span class="minus">-        VARIABLE()("middle")()</span>
 <span class="minus">-        VARIABLE()("end")()</span>
-<span class="minus">-  FUNCTION(VOID)("merge")()</span>
 <span class="plus">+       EXPRESSION()(CONSTANT)</span>
 <span class="plus">+        CONSTANT(INT)(1)()</span>
 <span class="plus">+      STATEMENT_LIST()()</span>
@@ -290,9 +284,7 @@
 <span class="plus">+         EXPRESSION()()</span>
 <span class="plus">+          EXPRESSION()(VARIABLE)</span>
 <span class="plus">+           VARIABLE()("end")()</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("merge")()</span>
+   FUNCTION(VOID)("merge")()
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("start")()</span>

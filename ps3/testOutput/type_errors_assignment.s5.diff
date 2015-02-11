@@ -1,14 +1,11 @@
 --- correctOutput/type_errors_assignment.s5	2015-02-09 13:34:58.190170000 +0100
-+++ testOutput/type_errors_assignment.s5	2015-02-09 15:42:37.311628000 +0100
-@@ -1,26 +1,55 @@
++++ testOutput/type_errors_assignment.s5	2015-02-11 13:37:05.208169000 +0100
+@@ -1,26 +1,52 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("main")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("main")()
-    (nil)
+   FUNCTION(VOID)("main")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    DECLARATION_STATEMENT(FLOAT)("b")()

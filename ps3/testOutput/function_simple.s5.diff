@@ -1,6 +1,6 @@
 --- correctOutput/function_simple.s5	2015-02-09 13:34:58.007171000 +0100
-+++ testOutput/function_simple.s5	2015-02-09 15:42:27.825542000 +0100
-@@ -1,17 +1,26 @@
++++ testOutput/function_simple.s5	2015-02-11 13:36:49.525083000 +0100
+@@ -1,17 +1,20 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(VOID)("main")()
@@ -13,11 +13,7 @@
 -    EXPRESSION()(FUNC_CALL)
 -     VARIABLE()("function")()
 -     (nil)
--  FUNCTION(VOID)("function")()
-+   FUNCTION()()
-+    TYPE(VOID)()
-+    VARIABLE()("main")()
-+    (nil)
++   FUNCTION(VOID)("main")()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
 +      PRINT_STATEMENT()()
@@ -27,10 +23,8 @@
 +     EXPRESSION()(FUNC_CALL)
 +      VARIABLE()("function")()
 +      (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("function")()
-    (nil)
+   FUNCTION(VOID)("function")()
+-   (nil)
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
       EXPRESSION_LIST()()

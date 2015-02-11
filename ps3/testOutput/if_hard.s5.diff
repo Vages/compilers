@@ -1,14 +1,11 @@
 --- correctOutput/if_hard.s5	2015-02-09 13:34:58.029169000 +0100
-+++ testOutput/if_hard.s5	2015-02-09 15:42:28.248546000 +0100
-@@ -1,76 +1,121 @@
++++ testOutput/if_hard.s5	2015-02-11 13:36:50.281095000 +0100
+@@ -1,76 +1,118 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(INT)("while_test")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(INT)()
-+   VARIABLE()("while_test")()
-    (nil)
+   FUNCTION(INT)("while_test")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    DECLARATION_STATEMENT(INT)("b")()

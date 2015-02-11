@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_hard.s5	2015-02-09 13:34:57.987172000 +0100</span>
-<span class="plus3">+++ testOutput/function_hard.s5	2015-02-09 15:42:26.061538000 +0100</span>
-<span class="at2">@@ -1,121 +1,280 @@</span>
+<span class="plus3">+++ testOutput/function_hard.s5	2015-02-11 13:36:47.304073000 +0100</span>
+<span class="at2">@@ -1,121 +1,271 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(VOID)("main")()</span>
@@ -45,10 +45,7 @@
 <span class="plus">+   FUNCTION_LIST()()</span>
 <span class="plus">+    FUNCTION_LIST()()</span>
 <span class="plus">+     (nil)</span>
-<span class="plus">+     FUNCTION()()</span>
-<span class="plus">+      TYPE(VOID)()</span>
-<span class="plus">+      VARIABLE()("main")()</span>
-<span class="plus">+      (nil)</span>
+<span class="plus">+     FUNCTION(VOID)("main")()</span>
 <span class="plus">+      STATEMENT_LIST()()</span>
 <span class="plus">+       STATEMENT_LIST()()</span>
 <span class="plus">+        STATEMENT_LIST()()</span>
@@ -97,9 +94,7 @@
 <span class="plus">+            EXPRESSION()()</span>
 <span class="plus">+             EXPRESSION()(VARIABLE)</span>
 <span class="plus">+              VARIABLE()("c")()</span>
-<span class="plus">+    FUNCTION()()</span>
-<span class="plus">+     TYPE(INT)()</span>
-<span class="plus">+     VARIABLE()("func1")()</span>
+<span class="plus">+    FUNCTION(INT)("func1")()</span>
 <span class="plus">+     VARIABLE_LIST()()</span>
 <span class="plus">+      VARIABLE_LIST()()</span>
 <span class="plus">+       VARIABLE_LIST()()</span>
@@ -212,9 +207,7 @@
 <span class="plus">+       EXPRESSION()()</span>
 <span class="plus">+        EXPRESSION()(VARIABLE)</span>
 <span class="plus">+         VARIABLE()("d")()</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(INT)()</span>
-<span class="plus">+    VARIABLE()("func2")()</span>
+<span class="plus">+   FUNCTION(INT)("func2")()</span>
 <span class="plus">+    VARIABLE_LIST()()</span>
 <span class="plus">+     VARIABLE_LIST()()</span>
 <span class="plus">+      VARIABLE_LIST()()</span>
@@ -277,7 +270,6 @@
 <span class="minus">-         VARIABLE()("c")()</span>
 <span class="minus">-    RETURN_STATEMENT()()</span>
 <span class="minus">-     VARIABLE()("d")()</span>
-<span class="minus">-  FUNCTION(INT)("func3")()</span>
 <span class="plus">+        EXPRESSION()(CONSTANT)</span>
 <span class="plus">+         CONSTANT(INT)(1)()</span>
 <span class="plus">+       STATEMENT_LIST()()</span>
@@ -306,9 +298,7 @@
 <span class="plus">+      EXPRESSION()()</span>
 <span class="plus">+       EXPRESSION()(VARIABLE)</span>
 <span class="plus">+        VARIABLE()("d")()</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("func3")()</span>
+   FUNCTION(INT)("func3")()
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>

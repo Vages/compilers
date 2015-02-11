@@ -1,4 +1,4 @@
 --- correctOutput/minimal.s6	2015-02-09 13:34:58.106169000 +0100
-+++ testOutput/minimal.s6	2015-02-09 15:42:34.223580000 +0100
++++ testOutput/minimal.s6	2015-02-11 13:37:00.109144000 +0100
 @@ -1 +0,0 @@
 -CONSTANT

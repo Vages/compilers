@@ -1,6 +1,6 @@
 --- correctOutput/function_medium.s5	2015-02-09 13:34:57.997168000 +0100
-+++ testOutput/function_medium.s5	2015-02-09 15:42:27.093543000 +0100
-@@ -1,81 +1,193 @@
++++ testOutput/function_medium.s5	2015-02-11 13:36:48.806079000 +0100
+@@ -1,81 +1,186 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(VOID)("main")()
@@ -61,14 +61,10 @@
 +  FUNCTION_LIST()()
 +   FUNCTION_LIST()()
 +    (nil)
-+    FUNCTION()()
-+     TYPE(VOID)()
-+     VARIABLE()("main")()
-+     (nil)
++    FUNCTION(VOID)("main")()
       STATEMENT_LIST()()
 -      RETURN_STATEMENT()()
 -       VARIABLE()("d")()
--  FUNCTION(BOOL)("func2")()
 +      STATEMENT_LIST()()
 +       STATEMENT_LIST()()
 +        STATEMENT_LIST()()
@@ -160,9 +156,7 @@
 +        EXPRESSION()()
 +         EXPRESSION()(VARIABLE)
 +          VARIABLE()("c")()
-+   FUNCTION()()
-+    TYPE(INT)()
-+    VARIABLE()("func1")()
++   FUNCTION(INT)("func1")()
 +    VARIABLE_LIST()()
 +     VARIABLE_LIST()()
 +      VARIABLE_LIST()()
@@ -198,9 +192,7 @@
 +        EXPRESSION()()
 +         EXPRESSION()(VARIABLE)
 +          VARIABLE()("d")()
-+  FUNCTION()()
-+   TYPE(BOOL)()
-+   VARIABLE()("func2")()
+   FUNCTION(BOOL)("func2")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(BOOL)("a")()
 -    DECLARATION_STATEMENT(INT)("b")()

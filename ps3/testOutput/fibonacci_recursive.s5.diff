@@ -1,6 +1,6 @@
 --- correctOutput/fibonacci_recursive.s5	2015-02-09 13:34:57.955167000 +0100
-+++ testOutput/fibonacci_recursive.s5	2015-02-09 15:42:24.926540000 +0100
-@@ -1,56 +1,111 @@
++++ testOutput/fibonacci_recursive.s5	2015-02-11 13:36:44.960062000 +0100
+@@ -1,56 +1,107 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(INT)("fibonacci_recursive")()
@@ -19,9 +19,7 @@
 -      CONSTANT(STRING)("The")()
 +  FUNCTION_LIST()()
 +   (nil)
-+   FUNCTION()()
-+    TYPE(INT)()
-+    VARIABLE()("fibonacci_recursive")()
++   FUNCTION(INT)("fibonacci_recursive")()
 +    VARIABLE_LIST()()
 +     DECLARATION_STATEMENT()()
 +      TYPE(INT)()
@@ -30,7 +28,6 @@
 -      VARIABLE()("f")()
 -    RETURN_STATEMENT()()
 -     CONSTANT(INT)(0)()
--  FUNCTION(INT)("fibonacci_number")()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
 +      STATEMENT_LIST()()
@@ -66,9 +63,7 @@
 +     RETURN_STATEMENT()()
 +      EXPRESSION()(CONSTANT)
 +       CONSTANT(INT)(0)()
-+  FUNCTION()()
-+   TYPE(INT)()
-+   VARIABLE()("fibonacci_number")()
+   FUNCTION(INT)("fibonacci_number")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(INT)("n")()
 +    DECLARATION_STATEMENT()()

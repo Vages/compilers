@@ -1,14 +1,11 @@
 --- correctOutput/type_errors_arrays.s5	2015-02-09 13:34:58.176171000 +0100
-+++ testOutput/type_errors_arrays.s5	2015-02-09 15:42:36.797591000 +0100
-@@ -1,49 +1,151 @@
++++ testOutput/type_errors_arrays.s5	2015-02-11 13:37:04.582167000 +0100
+@@ -1,49 +1,148 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("main")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("main")()
-    (nil)
+   FUNCTION(VOID)("main")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()
 -    DECLARATION_STATEMENT(ARRAY(INT)[10][10])("b")()

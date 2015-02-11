@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/newton.s5	2015-02-09 13:34:58.114170000 +0100</span>
-<span class="plus3">+++ testOutput/newton.s5	2015-02-09 15:42:34.305587000 +0100</span>
-<span class="at2">@@ -1,57 +1,124 @@</span>
+<span class="plus3">+++ testOutput/newton.s5	2015-02-11 13:37:00.585143000 +0100</span>
+<span class="at2">@@ -1,57 +1,120 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(INT)("newton")()</span>
@@ -37,9 +37,7 @@
 <span class="minus">-      CONSTANT(STRING)("The square root of")()</span>
 <span class="plus">+  FUNCTION_LIST()()</span>
 <span class="plus">+   (nil)</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(INT)()</span>
-<span class="plus">+    VARIABLE()("newton")()</span>
+<span class="plus">+   FUNCTION(INT)("newton")()</span>
 <span class="plus">+    VARIABLE_LIST()()</span>
 <span class="plus">+     DECLARATION_STATEMENT()()</span>
 <span class="plus">+      TYPE(INT)()</span>
@@ -48,7 +46,6 @@
 <span class="minus">-      VARIABLE()("square_root")()</span>
 <span class="minus">-    RETURN_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="minus">-  FUNCTION(INT)("improve")()</span>
 <span class="plus">+    STATEMENT_LIST()()</span>
 <span class="plus">+     STATEMENT_LIST()()</span>
 <span class="plus">+      STATEMENT_LIST()()</span>
@@ -87,9 +84,7 @@
 <span class="plus">+     RETURN_STATEMENT()()</span>
 <span class="plus">+      EXPRESSION()(CONSTANT)</span>
 <span class="plus">+       CONSTANT(INT)(0)()</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("improve")()</span>
+   FUNCTION(INT)("improve")()
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("n")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("estimate")()</span>

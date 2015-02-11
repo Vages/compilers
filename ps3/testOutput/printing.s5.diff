@@ -1,14 +1,11 @@
 --- correctOutput/printing.s5	2015-02-09 13:34:58.130169000 +0100
-+++ testOutput/printing.s5	2015-02-09 15:42:34.832588000 +0100
-@@ -1,43 +1,97 @@
++++ testOutput/printing.s5	2015-02-11 13:37:01.396147000 +0100
+@@ -1,43 +1,94 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("main")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("main")()
-    (nil)
+   FUNCTION(VOID)("main")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    DECLARATION_STATEMENT(BOOL)("b")()

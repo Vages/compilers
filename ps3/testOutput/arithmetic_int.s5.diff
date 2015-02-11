@@ -1,14 +1,11 @@
 --- correctOutput/arithmetic_int.s5	2015-02-09 13:34:57.878167000 +0100
-+++ testOutput/arithmetic_int.s5	2015-02-09 15:42:15.244466000 +0100
-@@ -1,229 +1,524 @@
++++ testOutput/arithmetic_int.s5	2015-02-11 13:36:29.819000000 +0100
+@@ -1,229 +1,521 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(VOID)("main")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("main")()
-    (nil)
+   FUNCTION(VOID)("main")()
+-   (nil)
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    DECLARATION_STATEMENT(INT)("b")()

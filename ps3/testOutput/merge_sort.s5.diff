@@ -1,6 +1,6 @@
 --- correctOutput/merge_sort.s5	2015-02-09 13:34:58.096169000 +0100
-+++ testOutput/merge_sort.s5	2015-02-09 15:42:32.661575000 +0100
-@@ -1,197 +1,444 @@
++++ testOutput/merge_sort.s5	2015-02-11 13:36:58.659132000 +0100
+@@ -1,197 +1,437 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(VOID)("main")()
@@ -39,10 +39,7 @@
 +  FUNCTION_LIST()()
 +   FUNCTION_LIST()()
 +    (nil)
-+    FUNCTION()()
-+     TYPE(VOID)()
-+     VARIABLE()("main")()
-+     (nil)
++    FUNCTION(VOID)("main")()
       STATEMENT_LIST()()
 -      PRINT_STATEMENT()()
 -       EXPRESSION_LIST()()
@@ -134,9 +131,7 @@
 +            EXPRESSION()()
 +             EXPRESSION()(VARIABLE)
 +              VARIABLE()("i")()
-+   FUNCTION()()
-+    TYPE(VOID)()
-+    VARIABLE()("merge_sort")()
++   FUNCTION(VOID)("merge_sort")()
 +    VARIABLE_LIST()()
 +     VARIABLE_LIST()()
 +      VARIABLE_LIST()()
@@ -194,7 +189,6 @@
 -        VARIABLE()("start")()
 -        VARIABLE()("middle")()
 -        VARIABLE()("end")()
--  FUNCTION(VOID)("merge")()
 +       EXPRESSION()(CONSTANT)
 +        CONSTANT(INT)(1)()
 +      STATEMENT_LIST()()
@@ -273,9 +267,7 @@
 +         EXPRESSION()()
 +          EXPRESSION()(VARIABLE)
 +           VARIABLE()("end")()
-+  FUNCTION()()
-+   TYPE(VOID)()
-+   VARIABLE()("merge")()
+   FUNCTION(VOID)("merge")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()
 -    DECLARATION_STATEMENT(INT)("start")()

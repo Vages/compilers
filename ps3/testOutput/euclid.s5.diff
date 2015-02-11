@@ -1,6 +1,6 @@
 --- correctOutput/euclid.s5	2015-02-09 13:34:57.928174000 +0100
-+++ testOutput/euclid.s5	2015-02-09 15:42:21.316514000 +0100
-@@ -1,65 +1,145 @@
++++ testOutput/euclid.s5	2015-02-11 13:36:39.000026000 +0100
+@@ -1,65 +1,141 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(INT)("euclid")()
@@ -18,9 +18,7 @@
 -      CONSTANT(INT)(1)()
 +  FUNCTION_LIST()()
 +   (nil)
-+   FUNCTION()()
-+    TYPE(INT)()
-+    VARIABLE()("euclid")()
++   FUNCTION(INT)("euclid")()
 +    VARIABLE_LIST()()
 +     VARIABLE_LIST()()
 +      DECLARATION_STATEMENT()()
@@ -70,7 +68,6 @@
 -        CONSTANT(STRING)("are relative primes")()
 -    RETURN_STATEMENT()()
 -     CONSTANT(INT)(0)()
--  FUNCTION(INT)("gcd")()
 +          EXPRESSION_LIST()()
 +           EXPRESSION_LIST()()
 +            EXPRESSION_LIST()()
@@ -118,9 +115,7 @@
 +     RETURN_STATEMENT()()
 +      EXPRESSION()(CONSTANT)
 +       CONSTANT(INT)(0)()
-+  FUNCTION()()
-+   TYPE(INT)()
-+   VARIABLE()("gcd")()
+   FUNCTION(INT)("gcd")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    DECLARATION_STATEMENT(INT)("b")()

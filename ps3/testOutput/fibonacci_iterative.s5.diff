@@ -1,13 +1,10 @@
 --- correctOutput/fibonacci_iterative.s5	2015-02-09 13:34:57.947168000 +0100
-+++ testOutput/fibonacci_iterative.s5	2015-02-09 15:42:24.368520000 +0100
-@@ -1,56 +1,123 @@
++++ testOutput/fibonacci_iterative.s5	2015-02-11 13:36:44.110055000 +0100
+@@ -1,56 +1,121 @@
   PROGRAM()()
   FUNCTION_LIST()()
--  FUNCTION(INT)("fibonacci_iterative")()
 +  (nil)
-+  FUNCTION()()
-+   TYPE(INT)()
-+   VARIABLE()("fibonacci_iterative")()
+   FUNCTION(INT)("fibonacci_iterative")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(INT)("n")()
 +    DECLARATION_STATEMENT()()

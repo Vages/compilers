@@ -1,6 +1,6 @@
 --- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100
-+++ testOutput/return.s5	2015-02-09 15:42:35.336584000 +0100
-@@ -1,53 +1,102 @@
++++ testOutput/return.s5	2015-02-11 13:37:02.153152000 +0100
+@@ -1,53 +1,97 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(INT)("main")()
@@ -12,10 +12,7 @@
 -      CONSTANT(STRING)("t is ")()
 -      EXPRESSION()(FUNC_CALL)
 -       VARIABLE()("test")()
-+   FUNCTION()()
-+    TYPE(INT)()
-+    VARIABLE()("main")()
-+    (nil)
++   FUNCTION(INT)("main")()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
 +      PRINT_STATEMENT()()
@@ -23,7 +20,6 @@
 -        CONSTANT(INT)(64)()
 -    RETURN_STATEMENT()()
 -     CONSTANT(INT)(0)()
--  FUNCTION(INT)("test")()
 +        EXPRESSION_LIST()()
 +         EXPRESSION()(CONSTANT)
 +          CONSTANT(STRING)("t is ")()
@@ -36,9 +32,7 @@
 +     RETURN_STATEMENT()()
 +      EXPRESSION()(CONSTANT)
 +       CONSTANT(INT)(0)()
-+  FUNCTION()()
-+   TYPE(INT)()
-+   VARIABLE()("test")()
+   FUNCTION(INT)("test")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 +    DECLARATION_STATEMENT()()

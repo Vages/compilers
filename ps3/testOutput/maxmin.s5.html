@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/maxmin.s5	2015-02-09 13:34:58.086168000 +0100</span>
-<span class="plus3">+++ testOutput/maxmin.s5	2015-02-09 15:42:31.910573000 +0100</span>
-<span class="at2">@@ -1,82 +1,182 @@</span>
+<span class="plus3">+++ testOutput/maxmin.s5	2015-02-11 13:36:56.519124000 +0100</span>
+<span class="at2">@@ -1,82 +1,175 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(VOID)("maxmin")()</span>
@@ -70,10 +70,7 @@
 <span class="plus">+  FUNCTION_LIST()()</span>
 <span class="plus">+   FUNCTION_LIST()()</span>
 <span class="plus">+    (nil)</span>
-<span class="plus">+    FUNCTION()()</span>
-<span class="plus">+     TYPE(VOID)()</span>
-<span class="plus">+     VARIABLE()("maxmin")()</span>
-<span class="plus">+     (nil)</span>
+<span class="plus">+    FUNCTION(VOID)("maxmin")()</span>
       STATEMENT_LIST()()
 <span class="minus">-      RETURN_STATEMENT()()</span>
 <span class="plus">+      STATEMENT_LIST()()</span>
@@ -158,9 +155,7 @@
 <span class="plus">+        EXPRESSION()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
 <span class="plus">+          VARIABLE()("c")()</span>
-<span class="plus">+   FUNCTION()()</span>
-<span class="plus">+    TYPE(INT)()</span>
-<span class="plus">+    VARIABLE()("max")()</span>
+<span class="plus">+   FUNCTION(INT)("max")()</span>
 <span class="plus">+    VARIABLE_LIST()()</span>
 <span class="plus">+     VARIABLE_LIST()()</span>
 <span class="plus">+      DECLARATION_STATEMENT()()</span>
@@ -178,7 +173,6 @@
 <span class="minus">-       VARIABLE()("b")()</span>
 <span class="minus">-    RETURN_STATEMENT()()</span>
 <span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="minus">-  FUNCTION(INT)("min")()</span>
 <span class="plus">+      STATEMENT_LIST()()</span>
 <span class="plus">+       IF_STATEMENT()()</span>
 <span class="plus">+        EXPRESSION()()</span>
@@ -211,9 +205,7 @@
 <span class="plus">+     RETURN_STATEMENT()()</span>
 <span class="plus">+      EXPRESSION()(CONSTANT)</span>
 <span class="plus">+       CONSTANT(INT)(0)()</span>
-<span class="plus">+  FUNCTION()()</span>
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("min")()</span>
+   FUNCTION(INT)("min")()
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>

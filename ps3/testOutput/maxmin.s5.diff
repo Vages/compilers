@@ -1,6 +1,6 @@
 --- correctOutput/maxmin.s5	2015-02-09 13:34:58.086168000 +0100
-+++ testOutput/maxmin.s5	2015-02-09 15:42:31.910573000 +0100
-@@ -1,82 +1,182 @@
++++ testOutput/maxmin.s5	2015-02-11 13:36:56.519124000 +0100
+@@ -1,82 +1,175 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(VOID)("maxmin")()
@@ -53,10 +53,7 @@
 +  FUNCTION_LIST()()
 +   FUNCTION_LIST()()
 +    (nil)
-+    FUNCTION()()
-+     TYPE(VOID)()
-+     VARIABLE()("maxmin")()
-+     (nil)
++    FUNCTION(VOID)("maxmin")()
       STATEMENT_LIST()()
 -      RETURN_STATEMENT()()
 +      STATEMENT_LIST()()
@@ -141,9 +138,7 @@
 +        EXPRESSION()()
 +         EXPRESSION()(VARIABLE)
 +          VARIABLE()("c")()
-+   FUNCTION()()
-+    TYPE(INT)()
-+    VARIABLE()("max")()
++   FUNCTION(INT)("max")()
 +    VARIABLE_LIST()()
 +     VARIABLE_LIST()()
 +      DECLARATION_STATEMENT()()
@@ -161,7 +156,6 @@
 -       VARIABLE()("b")()
 -    RETURN_STATEMENT()()
 -     CONSTANT(INT)(0)()
--  FUNCTION(INT)("min")()
 +      STATEMENT_LIST()()
 +       IF_STATEMENT()()
 +        EXPRESSION()()
@@ -194,9 +188,7 @@
 +     RETURN_STATEMENT()()
 +      EXPRESSION()(CONSTANT)
 +       CONSTANT(INT)(0)()
-+  FUNCTION()()
-+   TYPE(INT)()
-+   VARIABLE()("min")()
+   FUNCTION(INT)("min")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(INT)("a")()
 -    DECLARATION_STATEMENT(INT)("b")()
