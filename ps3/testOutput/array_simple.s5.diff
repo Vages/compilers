@@ -1,5 +1,5 @@
 --- correctOutput/array_simple.s5	2015-02-09 13:34:57.902174000 +0100
-+++ testOutput/array_simple.s5	2015-02-11 14:35:36.587334000 +0100
++++ testOutput/array_simple.s5	2015-02-11 14:42:46.345698000 +0100
 @@ -1,36 +1,62 @@
   PROGRAM()()
   FUNCTION_LIST()()

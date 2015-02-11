@@ -1,5 +1,5 @@
 --- correctOutput/logical.s5	2015-02-09 13:34:58.055168000 +0100
-+++ testOutput/logical.s5	2015-02-11 14:35:52.674422000 +0100
++++ testOutput/logical.s5	2015-02-11 14:43:02.316783000 +0100
 @@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()

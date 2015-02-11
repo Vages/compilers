@@ -1,5 +1,5 @@
 --- correctOutput/variables.s5	2015-02-09 13:34:58.207170000 +0100
-+++ testOutput/variables.s5	2015-02-11 14:36:04.950490000 +0100
++++ testOutput/variables.s5	2015-02-11 14:43:14.289848000 +0100
 @@ -1,17 +1,23 @@
   PROGRAM()()
   FUNCTION_LIST()()

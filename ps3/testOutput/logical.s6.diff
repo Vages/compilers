@@ -1,5 +1,5 @@
 --- correctOutput/logical.s6	2015-02-09 13:34:58.056168000 +0100
-+++ testOutput/logical.s6	2015-02-11 14:35:53.613429000 +0100
++++ testOutput/logical.s6	2015-02-11 14:43:03.210793000 +0100
 @@ -1,3 +0,0 @@
 -CONSTANT
 -CONSTANT

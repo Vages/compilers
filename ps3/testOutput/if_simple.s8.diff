@@ -1,5 +1,5 @@
 --- correctOutput/if_simple.s8	2015-02-09 13:34:58.048168000 +0100
-+++ testOutput/if_simple.s8	2015-02-11 14:35:51.499416000 +0100
++++ testOutput/if_simple.s8	2015-02-11 14:43:01.126776000 +0100
 @@ -8,9 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

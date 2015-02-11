@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s5	2015-02-09 13:34:57.886171000 +0100
-+++ testOutput/array_forloop.s5	2015-02-11 14:35:34.716325000 +0100
++++ testOutput/array_forloop.s5	2015-02-11 14:42:44.536685000 +0100
 @@ -1,79 +1,139 @@
   PROGRAM()()
   FUNCTION_LIST()()

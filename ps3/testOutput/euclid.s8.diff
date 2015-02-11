@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s8	2015-02-09 13:34:57.931170000 +0100
-+++ testOutput/euclid.s8	2015-02-11 14:35:41.269359000 +0100
++++ testOutput/euclid.s8	2015-02-11 14:42:51.005724000 +0100
 @@ -8,15 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"
