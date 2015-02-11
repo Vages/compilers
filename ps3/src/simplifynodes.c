@@ -118,7 +118,7 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 	simplify_default(root, depth+1);
 
 	if(root->nodetype.index==ARGUMENT_LIST){
-		root = root->children[0]
+		root = root->children[0];
 	} else if ((root->nodetype.index == STATEMENT)||(root->nodetype.index == PARAMETER_LIST)){
 		if (root->n_children ==1){
 			root = root->children[0];
