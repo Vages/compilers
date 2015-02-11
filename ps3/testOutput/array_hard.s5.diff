@@ -1,5 +1,5 @@
 --- correctOutput/array_hard.s5	2015-02-09 13:34:57.894172000 +0100
-+++ testOutput/array_hard.s5	2015-02-11 14:18:42.232772000 +0100
++++ testOutput/array_hard.s5	2015-02-11 14:21:07.800571000 +0100
 @@ -1,83 +1,164 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -18,7 +18,7 @@
 +            STATEMENT_LIST()()
 +             STATEMENT_LIST()()
 +              STATEMENT_LIST()()
-+               DECLARATION_STATEMENT(ARRAY())("€Æ")()
++               DECLARATION_STATEMENT(ARRAY())("a")()
 +              ASSIGNMENT_STATEMENT()()
 +               EXPRESSION()(VARIABLE)
 +                VARIABLE()("a")()
@@ -55,7 +55,7 @@
 +                   CONSTANT(INT)(2)()
 +                EXPRESSION()(CONSTANT)
 +                 CONSTANT(INT)(2)()
-+           DECLARATION_STATEMENT(ARRAY())("€ï")()
++           DECLARATION_STATEMENT(ARRAY())("b")()
 +          ASSIGNMENT_STATEMENT()()
 +           EXPRESSION()(VARIABLE)
 +            VARIABLE()("b")()
@@ -102,7 +102,7 @@
 +               CONSTANT(INT)(0)()
 +            EXPRESSION()(CONSTANT)
 +             CONSTANT(INT)(2)()
-+       DECLARATION_STATEMENT(ARRAY())("")()
++       DECLARATION_STATEMENT(ARRAY())("c")()
 +      ASSIGNMENT_STATEMENT()()
 +       EXPRESSION()(VARIABLE)
 +        VARIABLE()("c")()
@@ -163,7 +163,7 @@
 +      STATEMENT_LIST()()
 +       STATEMENT_LIST()()
 +        STATEMENT_LIST()()
-+         DECLARATION_STATEMENT(ARRAY())("07")()
++         DECLARATION_STATEMENT(ARRAY())("a")()
 +        ASSIGNMENT_STATEMENT()()
 +         EXPRESSION()(VARIABLE)
 +          VARIABLE()("a")()

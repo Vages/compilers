@@ -1,5 +1,5 @@
 --- correctOutput/adding.s5	2015-02-09 13:34:57.859172000 +0100
-+++ testOutput/adding.s5	2015-02-11 14:18:33.982726000 +0100
++++ testOutput/adding.s5	2015-02-11 14:21:00.071530000 +0100
 @@ -1,14 +1,21 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -15,7 +15,7 @@
 -      CONSTANT(INT)(2)()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
-+      DECLARATION_STATEMENT(INT)("À"8")()
++      DECLARATION_STATEMENT(INT)("a")()
 +     ASSIGNMENT_STATEMENT()()
 +      EXPRESSION()(VARIABLE)
 +       VARIABLE()("a")()

@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s5	2015-02-09 13:34:58.064171000 +0100
-+++ testOutput/matrix_multiply.s5	2015-02-11 14:19:02.955885000 +0100
++++ testOutput/matrix_multiply.s5	2015-02-11 14:21:28.586683000 +0100
 @@ -1,158 +1,331 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -92,7 +92,7 @@
 +              STATEMENT_LIST()()
 +               STATEMENT_LIST()()
 +                STATEMENT_LIST()()
-+                 DECLARATION_STATEMENT(ARRAY())("€öÕ")()
++                 DECLARATION_STATEMENT(ARRAY())("a")()
 +                ASSIGNMENT_STATEMENT()()
 +                 EXPRESSION()(VARIABLE)
 +                  VARIABLE()("a")()
@@ -103,7 +103,7 @@
 +                    INDEX_LIST()()
 +                     INDEX(INT)(3)()
 +                    INDEX(INT)(3)()
-+               DECLARATION_STATEMENT(ARRAY())("@Ö")()
++               DECLARATION_STATEMENT(ARRAY())("b")()
 +              ASSIGNMENT_STATEMENT()()
 +               EXPRESSION()(VARIABLE)
 +                VARIABLE()("b")()
@@ -114,8 +114,8 @@
 +                  INDEX_LIST()()
 +                   INDEX(INT)(3)()
 +                  INDEX(INT)(3)()
-+             DECLARATION_STATEMENT(INT)("@Ö")()
-+            DECLARATION_STATEMENT(INT)(" Ö")()
++             DECLARATION_STATEMENT(INT)("i")()
++            DECLARATION_STATEMENT(INT)("j")()
 +           FOR_STATEMENT()()
 +            ASSIGNMENT_STATEMENT()()
 +             EXPRESSION()(VARIABLE)
@@ -185,7 +185,7 @@
 +                   EXPRESSION()()
 +                    EXPRESSION()(VARIABLE)
 +                     VARIABLE()("j")()
-+          DECLARATION_STATEMENT(ARRAY())("ÀXÖ")()
++          DECLARATION_STATEMENT(ARRAY())("c")()
           ASSIGNMENT_STATEMENT()()
 -          VARIABLE()("k")()
 +          EXPRESSION()(VARIABLE)
@@ -197,7 +197,7 @@
 +             INDEX_LIST()()
 +              INDEX(INT)(3)()
 +             INDEX(INT)(3)()
-+        DECLARATION_STATEMENT(INT)("ÀeÖ")()
++        DECLARATION_STATEMENT(INT)("k")()
 +       FOR_STATEMENT()()
 +        ASSIGNMENT_STATEMENT()()
 +         EXPRESSION()(VARIABLE)

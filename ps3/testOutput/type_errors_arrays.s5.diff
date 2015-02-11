@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_arrays.s5	2015-02-09 13:34:58.176171000 +0100
-+++ testOutput/type_errors_arrays.s5	2015-02-11 14:19:12.292936000 +0100
++++ testOutput/type_errors_arrays.s5	2015-02-11 14:21:37.472731000 +0100
 @@ -1,49 +1,122 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -64,10 +64,10 @@
 +              STATEMENT_LIST()()
 +               STATEMENT_LIST()()
 +                STATEMENT_LIST()()
-+                 DECLARATION_STATEMENT(ARRAY())("")()
-+                DECLARATION_STATEMENT(ARRAY())(" lþ")()
-+               DECLARATION_STATEMENT(ARRAY())("Àrþ")()
-+              DECLARATION_STATEMENT(ARRAY())("à{þ")()
++                 DECLARATION_STATEMENT(ARRAY())("a")()
++                DECLARATION_STATEMENT(ARRAY())("b")()
++               DECLARATION_STATEMENT(ARRAY())("c")()
++              DECLARATION_STATEMENT(ARRAY())("d")()
 +             ASSIGNMENT_STATEMENT()()
 +              EXPRESSION()(VARIABLE)
 +               VARIABLE()("a")()

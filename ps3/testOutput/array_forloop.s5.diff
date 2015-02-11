@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s5	2015-02-09 13:34:57.886171000 +0100
-+++ testOutput/array_forloop.s5	2015-02-11 14:18:41.083771000 +0100
++++ testOutput/array_forloop.s5	2015-02-11 14:21:06.694563000 +0100
 @@ -1,79 +1,152 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -44,7 +44,7 @@
 +           STATEMENT_LIST()()
 +            STATEMENT_LIST()()
 +             STATEMENT_LIST()()
-+              DECLARATION_STATEMENT(ARRAY())("ÄVd")()
++              DECLARATION_STATEMENT(ARRAY())("a")()
 +             ASSIGNMENT_STATEMENT()()
 +              EXPRESSION()(VARIABLE)
 +               VARIABLE()("a")()
@@ -55,8 +55,8 @@
 +                 INDEX_LIST()()
 +                  INDEX(INT)(3)()
 +                 INDEX(INT)(3)()
-+            DECLARATION_STATEMENT(INT)("Äcd")()
-+           DECLARATION_STATEMENT(INT)("`gd")()
++            DECLARATION_STATEMENT(INT)("i")()
++           DECLARATION_STATEMENT(INT)("j")()
 +          FOR_STATEMENT()()
 +           ASSIGNMENT_STATEMENT()()
 +            EXPRESSION()(VARIABLE)
@@ -118,8 +118,8 @@
 +                   VARIABLE()("j")()
 +                EXPRESSION()(CONSTANT)
 +                 CONSTANT(INT)(1)()
-+         DECLARATION_STATEMENT(INT)(" êd")()
-+        DECLARATION_STATEMENT(INT)("")()
++         DECLARATION_STATEMENT(INT)("prod")()
++        DECLARATION_STATEMENT(INT)("sum")()
         ASSIGNMENT_STATEMENT()()
 -        VARIABLE()("j")()
 +        EXPRESSION()(VARIABLE)

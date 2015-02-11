@@ -1,5 +1,5 @@
 --- correctOutput/function_simple.s6	2015-02-09 13:34:58.008173000 +0100
-+++ testOutput/function_simple.s6	2015-02-11 14:18:58.083863000 +0100
++++ testOutput/function_simple.s6	2015-02-11 14:21:23.676655000 +0100
 @@ -1,2 +0,0 @@
 -CONSTANT
 -CONSTANT

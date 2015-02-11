@@ -1,5 +1,5 @@
 --- correctOutput/array_simple.s5	2015-02-09 13:34:57.902174000 +0100
-+++ testOutput/array_simple.s5	2015-02-11 14:18:43.094776000 +0100
++++ testOutput/array_simple.s5	2015-02-11 14:21:08.608579000 +0100
 @@ -1,36 +1,71 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -38,8 +38,8 @@
 +         STATEMENT_LIST()()
 +          STATEMENT_LIST()()
 +           STATEMENT_LIST()()
-+            DECLARATION_STATEMENT(INT)("À2+")()
-+           DECLARATION_STATEMENT(INT)(" 6+")()
++            DECLARATION_STATEMENT(INT)("a")()
++           DECLARATION_STATEMENT(INT)("b")()
 +          ASSIGNMENT_STATEMENT()()
 +           EXPRESSION()(VARIABLE)
 +            VARIABLE()("a")()
@@ -50,7 +50,7 @@
 +           VARIABLE()("b")()
 +          EXPRESSION()(CONSTANT)
 +           CONSTANT(INT)(44)()
-+        DECLARATION_STATEMENT(ARRAY())("€G+")()
++        DECLARATION_STATEMENT(ARRAY())("array")()
 +       ASSIGNMENT_STATEMENT()()
 +        EXPRESSION()(VARIABLE)
 +         VARIABLE()("array")()

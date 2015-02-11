@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s5	2015-02-09 13:34:58.158174000 +0100
-+++ testOutput/sorting.s5	2015-02-11 14:19:11.010928000 +0100
++++ testOutput/sorting.s5	2015-02-11 14:21:36.246727000 +0100
 @@ -1,89 +1,168 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -27,8 +27,8 @@
 +        STATEMENT_LIST()()
 +         STATEMENT_LIST()()
 +          STATEMENT_LIST()()
-+           DECLARATION_STATEMENT(ARRAY())("")()
-+          DECLARATION_STATEMENT(ARRAY())(" { ")()
++           DECLARATION_STATEMENT(ARRAY())("a")()
++          DECLARATION_STATEMENT(ARRAY())("b")()
 +         ASSIGNMENT_STATEMENT()()
 +          EXPRESSION()(VARIABLE)
 +           VARIABLE()("a")()
@@ -37,7 +37,7 @@
 +            TYPE(INT)()
 +            INDEX_LIST()()
 +             INDEX(INT)(10)()
-+        DECLARATION_STATEMENT(INT)(" † ")()
++        DECLARATION_STATEMENT(INT)("i")()
 +       FOR_STATEMENT()()
 +        ASSIGNMENT_STATEMENT()()
 +         EXPRESSION()(VARIABLE)
@@ -116,7 +116,7 @@
 +  FUNCTION(ARRAY())("sort")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()
-+    DECLARATION_STATEMENT(ARRAY())("0Á ")()
++    DECLARATION_STATEMENT(ARRAY())("a")()
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("i")()
 -    DECLARATION_STATEMENT(INT)("j")()
@@ -133,9 +133,9 @@
 -        VARIABLE()("j")()
 +      STATEMENT_LIST()()
 +       STATEMENT_LIST()()
-+        DECLARATION_STATEMENT(INT)("Å ")()
-+       DECLARATION_STATEMENT(INT)("ðÈ ")()
-+      DECLARATION_STATEMENT(INT)("ÐÌ ")()
++        DECLARATION_STATEMENT(INT)("i")()
++       DECLARATION_STATEMENT(INT)("j")()
++      DECLARATION_STATEMENT(INT)("temp")()
 +     FOR_STATEMENT()()
 +      ASSIGNMENT_STATEMENT()()
 +       EXPRESSION()(VARIABLE)

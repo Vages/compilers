@@ -1,5 +1,5 @@
 --- correctOutput/logical.s5	2015-02-09 13:34:58.055168000 +0100
-+++ testOutput/logical.s5	2015-02-11 14:19:00.710874000 +0100
++++ testOutput/logical.s5	2015-02-11 14:21:26.260668000 +0100
 @@ -1,176 +1,386 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -197,12 +197,12 @@
 +                                     STATEMENT_LIST()()
 +                                      STATEMENT_LIST()()
 +                                       STATEMENT_LIST()()
-+                                        DECLARATION_STATEMENT(BOOL)("À"ê")()
-+                                       DECLARATION_STATEMENT(BOOL)(" &ê")()
-+                                      DECLARATION_STATEMENT(BOOL)("€*ê")()
-+                                     DECLARATION_STATEMENT(BOOL)("`.ê")()
-+                                    DECLARATION_STATEMENT(BOOL)("@2ê")()
-+                                   DECLARATION_STATEMENT(BOOL)(" 6ê")()
++                                        DECLARATION_STATEMENT(BOOL)("a")()
++                                       DECLARATION_STATEMENT(BOOL)("b")()
++                                      DECLARATION_STATEMENT(BOOL)("c")()
++                                     DECLARATION_STATEMENT(BOOL)("d")()
++                                    DECLARATION_STATEMENT(BOOL)("e")()
++                                   DECLARATION_STATEMENT(BOOL)("f")()
 +                                  ASSIGNMENT_STATEMENT()()
 +                                   EXPRESSION()(VARIABLE)
 +                                    VARIABLE()("a")()

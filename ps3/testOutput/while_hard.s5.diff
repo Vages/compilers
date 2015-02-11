@@ -1,5 +1,5 @@
 --- correctOutput/while_hard.s5	2015-02-09 13:34:58.216168000 +0100
-+++ testOutput/while_hard.s5	2015-02-11 14:19:14.381948000 +0100
++++ testOutput/while_hard.s5	2015-02-11 14:21:39.474744000 +0100
 @@ -1,58 +1,109 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -13,7 +13,7 @@
 -     CONSTANT(INT)(4)()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
-+      DECLARATION_STATEMENT(INT)("¿Ç›")()
++      DECLARATION_STATEMENT(INT)("a")()
 +     ASSIGNMENT_STATEMENT()()
 +      EXPRESSION()(VARIABLE)
 +       VARIABLE()("a")()
@@ -41,7 +41,7 @@
         STATEMENT_LIST()()
 -        DECLARATION_STATEMENT(INT)("c")()
 +        STATEMENT_LIST()()
-+         DECLARATION_STATEMENT(INT)("†ê›")()
++         DECLARATION_STATEMENT(INT)("b")()
          ASSIGNMENT_STATEMENT()()
 -         VARIABLE()("c")()
 -         EXPRESSION()(UMINUS)
@@ -72,7 +72,7 @@
 -              VARIABLE()("b")()
 +          STATEMENT_LIST()()
 +           STATEMENT_LIST()()
-+            DECLARATION_STATEMENT(INT)("Äû›")()
++            DECLARATION_STATEMENT(INT)("c")()
 +           ASSIGNMENT_STATEMENT()()
 +            EXPRESSION()(VARIABLE)
               VARIABLE()("c")()

@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/sorting.s5	2015-02-09 13:34:58.158174000 +0100</span>
-<span class="plus3">+++ testOutput/sorting.s5	2015-02-11 14:19:11.010928000 +0100</span>
+<span class="plus3">+++ testOutput/sorting.s5	2015-02-11 14:21:36.246727000 +0100</span>
 <span class="at2">@@ -1,89 +1,168 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -44,8 +44,8 @@
 <span class="plus">+        STATEMENT_LIST()()</span>
 <span class="plus">+         STATEMENT_LIST()()</span>
 <span class="plus">+          STATEMENT_LIST()()</span>
-<span class="plus">+           DECLARATION_STATEMENT(ARRAY())("")()</span>
-<span class="plus">+          DECLARATION_STATEMENT(ARRAY())(" { ")()</span>
+<span class="plus">+           DECLARATION_STATEMENT(ARRAY())("a")()</span>
+<span class="plus">+          DECLARATION_STATEMENT(ARRAY())("b")()</span>
 <span class="plus">+         ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+          EXPRESSION()(VARIABLE)</span>
 <span class="plus">+           VARIABLE()("a")()</span>
@@ -54,7 +54,7 @@
 <span class="plus">+            TYPE(INT)()</span>
 <span class="plus">+            INDEX_LIST()()</span>
 <span class="plus">+             INDEX(INT)(10)()</span>
-<span class="plus">+        DECLARATION_STATEMENT(INT)(" † ")()</span>
+<span class="plus">+        DECLARATION_STATEMENT(INT)("i")()</span>
 <span class="plus">+       FOR_STATEMENT()()</span>
 <span class="plus">+        ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
@@ -133,7 +133,7 @@
 <span class="plus">+  FUNCTION(ARRAY())("sort")()</span>
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY())("0Á ")()</span>
+<span class="plus">+    DECLARATION_STATEMENT(ARRAY())("a")()</span>
     STATEMENT_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("i")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("j")()</span>
@@ -150,9 +150,9 @@
 <span class="minus">-        VARIABLE()("j")()</span>
 <span class="plus">+      STATEMENT_LIST()()</span>
 <span class="plus">+       STATEMENT_LIST()()</span>
-<span class="plus">+        DECLARATION_STATEMENT(INT)("Å ")()</span>
-<span class="plus">+       DECLARATION_STATEMENT(INT)("ðÈ ")()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("ÐÌ ")()</span>
+<span class="plus">+        DECLARATION_STATEMENT(INT)("i")()</span>
+<span class="plus">+       DECLARATION_STATEMENT(INT)("j")()</span>
+<span class="plus">+      DECLARATION_STATEMENT(INT)("temp")()</span>
 <span class="plus">+     FOR_STATEMENT()()</span>
 <span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+       EXPRESSION()(VARIABLE)</span>

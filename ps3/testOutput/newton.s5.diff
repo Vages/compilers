@@ -1,5 +1,5 @@
 --- correctOutput/newton.s5	2015-02-09 13:34:58.114170000 +0100
-+++ testOutput/newton.s5	2015-02-11 14:19:08.328916000 +0100
++++ testOutput/newton.s5	2015-02-11 14:21:33.905711000 +0100
 @@ -1,57 +1,110 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -27,12 +27,12 @@
 +   (nil)
 +   FUNCTION(INT)("newton")()
 +    VARIABLE_LIST()()
-+     DECLARATION_STATEMENT(INT)("Àb")()
++     DECLARATION_STATEMENT(INT)("n")()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
 +      STATEMENT_LIST()()
 +       STATEMENT_LIST()()
-+        DECLARATION_STATEMENT(INT)(" f")()
++        DECLARATION_STATEMENT(INT)("square_root")()
 +       ASSIGNMENT_STATEMENT()()
 +        EXPRESSION()(VARIABLE)
 +         VARIABLE()("square_root")()
@@ -67,10 +67,9 @@
    FUNCTION(INT)("improve")()
     VARIABLE_LIST()()
 -    DECLARATION_STATEMENT(INT)("n")()
--    DECLARATION_STATEMENT(INT)("estimate")()
 +    VARIABLE_LIST()()
-+     DECLARATION_STATEMENT(INT)("‹")()
-+    DECLARATION_STATEMENT(INT)("0Ž")()
++     DECLARATION_STATEMENT(INT)("n")()
+     DECLARATION_STATEMENT(INT)("estimate")()
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("next")()
 -    ASSIGNMENT_STATEMENT()()
@@ -83,7 +82,7 @@
 -         VARIABLE()("estimate")()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
-+      DECLARATION_STATEMENT(INT)("’")()
++      DECLARATION_STATEMENT(INT)("next")()
 +     ASSIGNMENT_STATEMENT()()
 +      EXPRESSION()(VARIABLE)
 +       VARIABLE()("next")()

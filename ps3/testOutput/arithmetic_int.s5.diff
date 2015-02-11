@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_int.s5	2015-02-09 13:34:57.878167000 +0100
-+++ testOutput/arithmetic_int.s5	2015-02-11 14:18:38.890753000 +0100
++++ testOutput/arithmetic_int.s5	2015-02-11 14:21:04.655554000 +0100
 @@ -1,229 +1,509 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -199,12 +199,12 @@
 +                                               STATEMENT_LIST()()
 +                                                STATEMENT_LIST()()
 +                                                 STATEMENT_LIST()()
-+                                                  DECLARATION_STATEMENT(INT)("Àòï")()
-+                                                 DECLARATION_STATEMENT(INT)(" öï")()
-+                                                DECLARATION_STATEMENT(INT)("€úï")()
-+                                               DECLARATION_STATEMENT(INT)("`þï")()
-+                                              DECLARATION_STATEMENT(INT)("@ð")()
-+                                             DECLARATION_STATEMENT(INT)(" ð")()
++                                                  DECLARATION_STATEMENT(INT)("a")()
++                                                 DECLARATION_STATEMENT(INT)("b")()
++                                                DECLARATION_STATEMENT(INT)("c")()
++                                               DECLARATION_STATEMENT(INT)("d")()
++                                              DECLARATION_STATEMENT(INT)("e")()
++                                             DECLARATION_STATEMENT(INT)("f")()
 +                                            ASSIGNMENT_STATEMENT()()
 +                                             EXPRESSION()(VARIABLE)
 +                                              VARIABLE()("a")()

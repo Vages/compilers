@@ -1,6 +1,6 @@
 --- correctOutput/compare_int.s5	2015-02-09 13:34:57.920170000 +0100
-+++ testOutput/compare_int.s5	2015-02-11 14:18:46.396797000 +0100
-@@ -1,144 +1,324 @@
++++ testOutput/compare_int.s5	2015-02-11 14:21:11.826594000 +0100
+@@ -1,144 +1,323 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -71,13 +71,12 @@
 +                                  STATEMENT_LIST()()
 +                                   STATEMENT_LIST()()
 +                                    STATEMENT_LIST()()
-+                                     DECLARATION_STATEMENT(INT)("ÀO")()
-+                                    DECLARATION_STATEMENT(INT)(" O")()
-+                                   DECLARATION_STATEMENT(INT)("€
-+O")()
-+                                  DECLARATION_STATEMENT(BOOL)("`O")()
-+                                 DECLARATION_STATEMENT(BOOL)("@O")()
-+                                DECLARATION_STATEMENT(BOOL)(" O")()
++                                     DECLARATION_STATEMENT(INT)("a")()
++                                    DECLARATION_STATEMENT(INT)("b")()
++                                   DECLARATION_STATEMENT(INT)("c")()
++                                  DECLARATION_STATEMENT(BOOL)("d")()
++                                 DECLARATION_STATEMENT(BOOL)("e")()
++                                DECLARATION_STATEMENT(BOOL)("f")()
 +                               ASSIGNMENT_STATEMENT()()
 +                                EXPRESSION()(VARIABLE)
 +                                 VARIABLE()("a")()

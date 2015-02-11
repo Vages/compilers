@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/for_hard.s5	2015-02-09 13:34:57.963168000 +0100</span>
-<span class="plus3">+++ testOutput/for_hard.s5	2015-02-11 14:18:54.538879000 +0100</span>
+<span class="plus3">+++ testOutput/for_hard.s5	2015-02-11 14:21:20.271637000 +0100</span>
 <span class="at2">@@ -1,49 +1,82 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -37,7 +37,7 @@
 <span class="minus">-      FOR_STATEMENT()()</span>
 <span class="minus">-       ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-        VARIABLE()("j")()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("¿¢ñ")()</span>
+<span class="plus">+      DECLARATION_STATEMENT(INT)("i")()</span>
 <span class="plus">+     FOR_STATEMENT()()</span>
 <span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+       EXPRESSION()(VARIABLE)</span>
@@ -53,7 +53,7 @@
 <span class="minus">-        FOR_STATEMENT()()</span>
 <span class="minus">-         ASSIGNMENT_STATEMENT()()</span>
 <span class="minus">-          VARIABLE()("k")()</span>
-<span class="plus">+        DECLARATION_STATEMENT(INT)("")()</span>
+<span class="plus">+        DECLARATION_STATEMENT(INT)("j")()</span>
 <span class="plus">+       FOR_STATEMENT()()</span>
 <span class="plus">+        ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
@@ -71,7 +71,7 @@
 <span class="minus">-           EXPRESSION_LIST()()</span>
 <span class="minus">-            VARIABLE()("i")()</span>
 <span class="minus">-            VARIABLE()("j")()</span>
-<span class="plus">+          DECLARATION_STATEMENT(INT)(" ∂ñ")()</span>
+<span class="plus">+          DECLARATION_STATEMENT(INT)("k")()</span>
 <span class="plus">+         FOR_STATEMENT()()</span>
 <span class="plus">+          ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+           EXPRESSION()(VARIABLE)</span>
@@ -100,12 +100,11 @@
     VARIABLE_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("c")()</span>
 <span class="plus">+    VARIABLE_LIST()()</span>
 <span class="plus">+     VARIABLE_LIST()()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("p◊ñ")()</span>
-<span class="plus">+     DECLARATION_STATEMENT(INT)("ê⁄ñ")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(INT)("∞›ñ")()</span>
+<span class="plus">+      DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+     DECLARATION_STATEMENT(INT)("b")()</span>
+     DECLARATION_STATEMENT(INT)("c")()
     STATEMENT_LIST()()
      FOR_STATEMENT()()
       ASSIGNMENT_STATEMENT()()

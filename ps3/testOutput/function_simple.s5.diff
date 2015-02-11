@@ -1,5 +1,5 @@
 --- correctOutput/function_simple.s5	2015-02-09 13:34:58.007171000 +0100
-+++ testOutput/function_simple.s5	2015-02-11 14:18:58.005860000 +0100
++++ testOutput/function_simple.s5	2015-02-11 14:21:23.597653000 +0100
 @@ -1,17 +1,20 @@
   PROGRAM()()
   FUNCTION_LIST()()

@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_float.s5	2015-02-09 13:34:57.869167000 +0100
-+++ testOutput/arithmetic_float.s5	2015-02-11 14:18:35.661744000 +0100
++++ testOutput/arithmetic_float.s5	2015-02-11 14:21:01.636535000 +0100
 @@ -1,229 +1,509 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -199,12 +199,12 @@
 +                                               STATEMENT_LIST()()
 +                                                STATEMENT_LIST()()
 +                                                 STATEMENT_LIST()()
-+                                                  DECLARATION_STATEMENT(FLOAT)("ÀR•")()
-+                                                 DECLARATION_STATEMENT(FLOAT)(" V•")()
-+                                                DECLARATION_STATEMENT(FLOAT)("€Z•")()
-+                                               DECLARATION_STATEMENT(FLOAT)("`^•")()
-+                                              DECLARATION_STATEMENT(FLOAT)("@b•")()
-+                                             DECLARATION_STATEMENT(FLOAT)(" f•")()
++                                                  DECLARATION_STATEMENT(FLOAT)("a")()
++                                                 DECLARATION_STATEMENT(FLOAT)("b")()
++                                                DECLARATION_STATEMENT(FLOAT)("c")()
++                                               DECLARATION_STATEMENT(FLOAT)("d")()
++                                              DECLARATION_STATEMENT(FLOAT)("e")()
++                                             DECLARATION_STATEMENT(FLOAT)("f")()
 +                                            ASSIGNMENT_STATEMENT()()
 +                                             EXPRESSION()(VARIABLE)
 +                                              VARIABLE()("a")()

@@ -21,7 +21,7 @@
        CONSTANT(INT)(0)()
   FUNCTION(INT)("test")()
    VARIABLE_LIST()()
-    DECLARATION_STATEMENT(INT)("p")()
+    DECLARATION_STATEMENT(INT)("a")()
    STATEMENT_LIST()()
     STATEMENT_LIST()()
      STATEMENT_LIST()()
@@ -29,8 +29,8 @@
        STATEMENT_LIST()()
         STATEMENT_LIST()()
          STATEMENT_LIST()()
-          DECLARATION_STATEMENT(INT)("P")()
-         DECLARATION_STATEMENT(INT)("0")()
+          DECLARATION_STATEMENT(INT)("x")()
+         DECLARATION_STATEMENT(INT)("y")()
         ASSIGNMENT_STATEMENT()()
          EXPRESSION()(VARIABLE)
           VARIABLE()("x")()
@@ -61,7 +61,7 @@
         STATEMENT_LIST()()
          STATEMENT_LIST()()
           STATEMENT_LIST()()
-           DECLARATION_STATEMENT(INT)("Ð'")()
+           DECLARATION_STATEMENT(INT)("z")()
           ASSIGNMENT_STATEMENT()()
            EXPRESSION()(VARIABLE)
             VARIABLE()("z")()

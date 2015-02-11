@@ -1,6 +1,6 @@
 --- correctOutput/compare_float.s5	2015-02-09 13:34:57.911169000 +0100
-+++ testOutput/compare_float.s5	2015-02-11 14:18:44.330785000 +0100
-@@ -1,144 +1,324 @@
++++ testOutput/compare_float.s5	2015-02-11 14:21:09.849592000 +0100
+@@ -1,144 +1,323 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -71,13 +71,12 @@
 +                                  STATEMENT_LIST()()
 +                                   STATEMENT_LIST()()
 +                                    STATEMENT_LIST()()
-+                                     DECLARATION_STATEMENT(FLOAT)("Àt")()
-+                                    DECLARATION_STATEMENT(FLOAT)(" t")()
-+                                   DECLARATION_STATEMENT(FLOAT)("€
-+t")()
-+                                  DECLARATION_STATEMENT(BOOL)("`t")()
-+                                 DECLARATION_STATEMENT(BOOL)("@t")()
-+                                DECLARATION_STATEMENT(BOOL)(" t")()
++                                     DECLARATION_STATEMENT(FLOAT)("a")()
++                                    DECLARATION_STATEMENT(FLOAT)("b")()
++                                   DECLARATION_STATEMENT(FLOAT)("c")()
++                                  DECLARATION_STATEMENT(BOOL)("d")()
++                                 DECLARATION_STATEMENT(BOOL)("e")()
++                                DECLARATION_STATEMENT(BOOL)("f")()
 +                               ASSIGNMENT_STATEMENT()()
 +                                EXPRESSION()(VARIABLE)
 +                                 VARIABLE()("a")()
