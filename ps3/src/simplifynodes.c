@@ -99,7 +99,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 			if (child->nodetype.index == TYPE){
 				root->data_type = child->data_type;
 			} else if (child->nodetype.index == VARIABLE){
-				root->label = child->label;
+				root->label = STRDUP(child->label);
 			}
 			node_finalize(child);
 		}
