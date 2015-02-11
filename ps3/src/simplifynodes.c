@@ -123,9 +123,8 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 
 	Node_t* child = root->children[0];
 	//free (root);
-	root = child;
 
-	return root;
+	return child;
 
 }
 
