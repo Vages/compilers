@@ -101,9 +101,12 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 			} else if (child->nodetype.index == VARIABLE){
 				root->label = child->label;
 			}
-			free(child);
+			node_finalize(child);
 		}
 	}
+
+	root->n_children = 0;
+	free(root_children);
 
 	return root;
 	
