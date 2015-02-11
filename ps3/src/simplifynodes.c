@@ -112,6 +112,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 
 Node_t* simplify_single_child ( Node_t *root, int depth )
 {
+	/*Seems to work*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
