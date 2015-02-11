@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/array_simple.s5	2015-02-09 13:34:57.902174000 +0100</span>
-<span class="plus3">+++ testOutput/array_simple.s5	2015-02-11 18:21:20.953281000 +0100</span>
+<span class="plus3">+++ testOutput/array_simple.s5	2015-02-11 18:26:36.596078000 +0100</span>
 <span class="at2">@@ -1,36 +1,59 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -36,19 +36,17 @@
      ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("b")()</span>
 <span class="minus">-     CONSTANT(INT)(44)()</span>
-<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[2])("array")()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("b")()</span>
 <span class="plus">+     EXPRESSION()(CONSTANT)</span>
 <span class="plus">+      CONSTANT(INT)(44)()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[0])("array")()</span>
+     DECLARATION_STATEMENT(ARRAY(INT)[2])("array")()
      ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("array")()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("array")()</span>
       EXPRESSION()(NEW)
-<span class="minus">-      TYPE(ARRAY(INT)[2])()</span>
-<span class="plus">+      TYPE(ARRAY(INT)[0])()</span>
+       TYPE(ARRAY(INT)[2])()
      ASSIGNMENT_STATEMENT()()
       EXPRESSION()(ARRAY_INDEX)
 <span class="minus">-      VARIABLE()("array")()</span>

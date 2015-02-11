@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/matrix_multiply.s5	2015-02-09 13:34:58.064171000 +0100</span>
-<span class="plus3">+++ testOutput/matrix_multiply.s5	2015-02-11 18:21:39.207385000 +0100</span>
+<span class="plus3">+++ testOutput/matrix_multiply.s5	2015-02-11 18:26:55.311181000 +0100</span>
 <span class="at2">@@ -1,158 +1,295 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -24,24 +24,20 @@
    FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[0][0])("a")()</span>
+     DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
      ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("a")()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("a")()</span>
       EXPRESSION()(NEW)
-<span class="minus">-      TYPE(ARRAY(INT)[3][3])()</span>
-<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[3][3])("b")()</span>
-<span class="plus">+      TYPE(ARRAY(INT)[0][0])()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[0][0])("b")()</span>
+       TYPE(ARRAY(INT)[3][3])()
+     DECLARATION_STATEMENT(ARRAY(INT)[3][3])("b")()
      ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("b")()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("b")()</span>
       EXPRESSION()(NEW)
-<span class="minus">-      TYPE(ARRAY(INT)[3][3])()</span>
-<span class="plus">+      TYPE(ARRAY(INT)[0][0])()</span>
+       TYPE(ARRAY(INT)[3][3])()
      DECLARATION_STATEMENT(INT)("i")()
      DECLARATION_STATEMENT(INT)("j")()
      FOR_STATEMENT()()
@@ -122,7 +118,6 @@
 <span class="minus">-            VARIABLE()("i")()</span>
 <span class="minus">-            CONSTANT(INT)(3)()</span>
 <span class="minus">-           VARIABLE()("j")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[3][3])("c")()</span>
 <span class="plus">+          EXPRESSION()(CONSTANT)</span>
 <span class="plus">+           CONSTANT(INT)(8)()</span>
 <span class="plus">+          EXPRESSION()()</span>
@@ -136,14 +131,13 @@
 <span class="plus">+            EXPRESSION()()</span>
 <span class="plus">+             EXPRESSION()(VARIABLE)</span>
 <span class="plus">+              VARIABLE()("j")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[0][0])("c")()</span>
+     DECLARATION_STATEMENT(ARRAY(INT)[3][3])("c")()
      ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("c")()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("c")()</span>
       EXPRESSION()(NEW)
-<span class="minus">-      TYPE(ARRAY(INT)[3][3])()</span>
-<span class="plus">+      TYPE(ARRAY(INT)[0][0])()</span>
+       TYPE(ARRAY(INT)[3][3])()
      DECLARATION_STATEMENT(INT)("k")()
      FOR_STATEMENT()()
       ASSIGNMENT_STATEMENT()()

@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s7	2015-02-09 13:34:57.956172000 +0100
-+++ testOutput/fibonacci_recursive.s7	2015-02-11 18:21:31.034341000 +0100
++++ testOutput/fibonacci_recursive.s7	2015-02-11 18:26:46.840141000 +0100
 @@ -1,2 +0,0 @@
 -Add strings ("The"), index: 0 
 -Add strings ("th fibonacci number is"), index: 1 

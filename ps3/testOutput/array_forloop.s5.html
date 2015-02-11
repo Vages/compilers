@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/array_forloop.s5	2015-02-09 13:34:57.886171000 +0100</span>
-<span class="plus3">+++ testOutput/array_forloop.s5	2015-02-11 18:21:19.131269000 +0100</span>
+<span class="plus3">+++ testOutput/array_forloop.s5	2015-02-11 18:26:34.727091000 +0100</span>
 <span class="at2">@@ -1,79 +1,135 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -24,15 +24,13 @@
    FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
-<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()</span>
-<span class="plus">+    DECLARATION_STATEMENT(ARRAY(INT)[0][0])("a")()</span>
+     DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
      ASSIGNMENT_STATEMENT()()
 <span class="minus">-     VARIABLE()("a")()</span>
 <span class="plus">+     EXPRESSION()(VARIABLE)</span>
 <span class="plus">+      VARIABLE()("a")()</span>
       EXPRESSION()(NEW)
-<span class="minus">-      TYPE(ARRAY(INT)[3][3])()</span>
-<span class="plus">+      TYPE(ARRAY(INT)[0][0])()</span>
+       TYPE(ARRAY(INT)[3][3])()
      DECLARATION_STATEMENT(INT)("i")()
      DECLARATION_STATEMENT(INT)("j")()
      FOR_STATEMENT()()
