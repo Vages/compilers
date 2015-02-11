@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_iterative.s5	2015-02-09 13:34:57.947168000 +0100
-+++ testOutput/fibonacci_iterative.s5	2015-02-11 20:56:31.099800000 +0100
++++ testOutput/fibonacci_iterative.s5	2015-02-11 21:01:51.007542000 +0100
 @@ -1,5 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s6	2015-02-09 13:34:57.912171000 +0100
-+++ testOutput/compare_float.s6	2015-02-11 20:56:26.606773000 +0100
++++ testOutput/compare_float.s6	2015-02-11 21:01:46.319537000 +0100
 @@ -1,4 +0,0 @@
 -CONSTANT
 -CONSTANT

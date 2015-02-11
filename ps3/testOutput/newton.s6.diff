@@ -1,5 +1,5 @@
 --- correctOutput/newton.s6	2015-02-09 13:34:58.115171000 +0100
-+++ testOutput/newton.s6	2015-02-11 20:56:42.200857000 +0100
++++ testOutput/newton.s6	2015-02-11 21:02:02.270609000 +0100
 @@ -1,6 +0,0 @@
 -CONSTANT
 -CONSTANT

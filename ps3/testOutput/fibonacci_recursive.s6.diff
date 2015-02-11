@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s6	2015-02-09 13:34:57.956167000 +0100
-+++ testOutput/fibonacci_recursive.s6	2015-02-11 20:56:31.739806000 +0100
++++ testOutput/fibonacci_recursive.s6	2015-02-11 21:01:51.688552000 +0100
 @@ -1,8 +0,0 @@
 -CONSTANT
 -CONSTANT

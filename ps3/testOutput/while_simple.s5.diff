@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s5	2015-02-09 13:34:58.225173000 +0100
-+++ testOutput/while_simple.s5	2015-02-11 20:56:46.704882000 +0100
++++ testOutput/while_simple.s5	2015-02-11 21:02:07.059628000 +0100
 @@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()

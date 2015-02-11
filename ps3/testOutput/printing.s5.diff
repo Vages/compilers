@@ -1,5 +1,5 @@
 --- correctOutput/printing.s5	2015-02-09 13:34:58.130169000 +0100
-+++ testOutput/printing.s5	2015-02-11 20:56:42.620870000 +0100
++++ testOutput/printing.s5	2015-02-11 21:02:02.732612000 +0100
 @@ -1,7 +1,7 @@
   PROGRAM()()
   FUNCTION_LIST()()
