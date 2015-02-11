@@ -17,33 +17,9 @@ Node_t* simplify_default ( Node_t *root, int depth )
 
 Node_t* simplify_types ( Node_t *root, int depth )
 {
+	/*Works*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
-
-	/*
-	Node_t** new_children = malloc(sizeof(Node_t*)*2);
-	int c_i = 0;
-
-	for (int i = 0; i<root->n_children; i++){
-		Node_t* child = root->children[i];
-		if (child != NULL){
-			child = child->simplify(child, depth+1);
-			if (child->nodetype.index == TYPE){
-				root->data_type = child->data_type;
-				free(child);
-			} else if (child->nodetype.index == VARIABLE){
-				root->label=STRDUP(child->label);
-				free(child);
-			} else {
-				new_children[c_i] = child;
-				c_i += 1;
-			}
-		}
-	}
-
-	free(root->children);
-	root->children = new_children;
-	root->n_children = c_i;*/
 
 	root = simplify_default(root, depth+1);
 
@@ -72,6 +48,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 Node_t* simplify_function ( Node_t *root, int depth )
 {
+	/*Seems to be working*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
@@ -137,16 +114,18 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 {
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
-	/*
-	root->children[0] = root->children[0]->simplify(root->children[0], depth+1);
-
-	Node_t* child = root->children[0];
-	//free (root);
-
-	return child;
-	*/
 
 	simplify_default(root, depth+1);
+
+	if(root->data_type==argument_list_n){
+		root = root->children[0]
+	} else if ((root->data_type == statement_n)||(root->data_type == parameter_list_n)){
+		if (root->n_children ==1){
+			root = root->children[0]
+		}
+	}
+	//free (root);
+
 	return root;
 }
 
