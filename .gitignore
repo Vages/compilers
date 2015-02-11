@@ -29,6 +29,5 @@
 *.hex
 
 #Vages
-vslc
 !tree.o
 !tree32.o
