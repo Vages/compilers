@@ -57,7 +57,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 				int index_children = child->n_children;
 				root->data_type.n_dimensions = index_children;
 				root->data_type.dimensions = malloc(sizeof(int)*(index_children));
-				for (int j = 0; j < index_children; i++){
+				for (int j = 0; j < index_children; j++){
 					root->data_type.dimensions[j] = child->children[j];
 				}
 			}
