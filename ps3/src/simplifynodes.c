@@ -173,6 +173,7 @@ Node_t* simplify_list ( Node_t *root, int depth )
 
 Node_t* simplify_expression ( Node_t *root, int depth )
 {
+	/* works */
 	if(outputStage == 4)
 		printf( "%*cSimplify %s (%s) \n", depth, ' ', root->nodetype.text, root->expression_type.text );
 
