@@ -48,6 +48,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 Node_t* simplify_function ( Node_t *root, int depth )
 {
+	/*Seems to be working*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
