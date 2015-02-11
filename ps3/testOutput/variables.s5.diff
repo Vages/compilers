@@ -1,5 +1,5 @@
 --- correctOutput/variables.s5	2015-02-09 13:34:58.207170000 +0100
-+++ testOutput/variables.s5	2015-02-11 13:37:06.280178000 +0100
++++ testOutput/variables.s5	2015-02-11 14:09:47.464850000 +0100
 @@ -1,17 +1,34 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -15,15 +15,15 @@
 +      STATEMENT_LIST()()
 +       STATEMENT_LIST()()
 +        STATEMENT_LIST()()
-+         DECLARATION_STATEMENT()()
-+          TYPE(INT)()
-+          VARIABLE()("a")()
-+        DECLARATION_STATEMENT()()
-+         TYPE(BOOL)()
-+         VARIABLE()("b")()
-+       DECLARATION_STATEMENT()()
-+        TYPE(FLOAT)()
-+        VARIABLE()("c")()
++         DECLARATION_STATEMENT(INT)("a")()
++          (INT)()
++          ()("a")()
++        DECLARATION_STATEMENT(BOOL)("b")()
++         (BOOL)()
++         ()("b")()
++       DECLARATION_STATEMENT(FLOAT)("c")()
++        (FLOAT)()
++        pê\()("c")()
 +      ASSIGNMENT_STATEMENT()()
 +       EXPRESSION()(VARIABLE)
 +        VARIABLE()("a")()

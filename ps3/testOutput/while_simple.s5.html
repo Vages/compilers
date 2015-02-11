@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/while_simple.s5	2015-02-09 13:34:58.225173000 +0100</span>
-<span class="plus3">+++ testOutput/while_simple.s5	2015-02-11 13:37:07.379179000 +0100</span>
+<span class="plus3">+++ testOutput/while_simple.s5	2015-02-11 14:09:48.662852000 +0100</span>
 <span class="at2">@@ -1,22 +1,38 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -30,9 +30,9 @@
 <span class="minus">-     CONSTANT(INT)(10)()</span>
 <span class="plus">+    STATEMENT_LIST()()</span>
 <span class="plus">+     STATEMENT_LIST()()</span>
-<span class="plus">+      DECLARATION_STATEMENT()()</span>
-<span class="plus">+       TYPE(INT)()</span>
-<span class="plus">+       VARIABLE()("a")()</span>
+<span class="plus">+      DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+       (INT)()</span>
+<span class="plus">+       °"`()("a")()</span>
 <span class="plus">+     ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+      EXPRESSION()(VARIABLE)</span>
 <span class="plus">+       VARIABLE()("a")()</span>

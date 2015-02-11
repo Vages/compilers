@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/printing.s5	2015-02-09 13:34:58.130169000 +0100</span>
-<span class="plus3">+++ testOutput/printing.s5	2015-02-11 13:37:01.396147000 +0100</span>
+<span class="plus3">+++ testOutput/printing.s5	2015-02-11 14:09:42.939821000 +0100</span>
 <span class="at2">@@ -1,43 +1,94 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
@@ -53,18 +53,18 @@
 <span class="plus">+            STATEMENT_LIST()()</span>
 <span class="plus">+             STATEMENT_LIST()()</span>
 <span class="plus">+              STATEMENT_LIST()()</span>
-<span class="plus">+               DECLARATION_STATEMENT()()</span>
-<span class="plus">+                TYPE(INT)()</span>
-<span class="plus">+                VARIABLE()("a")()</span>
-<span class="plus">+              DECLARATION_STATEMENT()()</span>
-<span class="plus">+               TYPE(BOOL)()</span>
-<span class="plus">+               VARIABLE()("b")()</span>
-<span class="plus">+             DECLARATION_STATEMENT()()</span>
-<span class="plus">+              TYPE(BOOL)()</span>
-<span class="plus">+              VARIABLE()("c")()</span>
-<span class="plus">+            DECLARATION_STATEMENT()()</span>
-<span class="plus">+             TYPE(FLOAT)()</span>
-<span class="plus">+             VARIABLE()("d")()</span>
+<span class="plus">+               DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+                (INT)()</span>
+<span class="plus">+                ()("a")()</span>
+<span class="plus">+              DECLARATION_STATEMENT(BOOL)("b")()</span>
+<span class="plus">+               (BOOL)()</span>
+<span class="plus">+               ()("b")()</span>
+<span class="plus">+             DECLARATION_STATEMENT(BOOL)("c")()</span>
+<span class="plus">+              (BOOL)()</span>
+<span class="plus">+              ()("c")()</span>
+<span class="plus">+            DECLARATION_STATEMENT(FLOAT)("d")()</span>
+<span class="plus">+             (FLOAT)()</span>
+<span class="plus">+             0¿()("d")()</span>
 <span class="plus">+           ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+            EXPRESSION()(VARIABLE)</span>
 <span class="plus">+             VARIABLE()("a")()</span>

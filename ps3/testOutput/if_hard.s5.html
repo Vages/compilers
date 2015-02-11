@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/if_hard.s5	2015-02-09 13:34:58.029169000 +0100</span>
-<span class="plus3">+++ testOutput/if_hard.s5	2015-02-11 13:36:50.281095000 +0100</span>
-<span class="at2">@@ -1,76 +1,118 @@</span>
+<span class="plus3">+++ testOutput/if_hard.s5	2015-02-11 14:09:32.689765000 +0100</span>
+<span class="at2">@@ -1,76 +1,119 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
@@ -73,12 +73,13 @@
 <span class="plus">+        STATEMENT_LIST()()</span>
 <span class="plus">+         STATEMENT_LIST()()</span>
 <span class="plus">+          STATEMENT_LIST()()</span>
-<span class="plus">+           DECLARATION_STATEMENT()()</span>
-<span class="plus">+            TYPE(INT)()</span>
-<span class="plus">+            VARIABLE()("a")()</span>
-<span class="plus">+          DECLARATION_STATEMENT()()</span>
-<span class="plus">+           TYPE(INT)()</span>
-<span class="plus">+           VARIABLE()("b")()</span>
+<span class="plus">+           DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+            (INT)()</span>
+<span class="plus">+            ()("a")()</span>
+<span class="plus">+          DECLARATION_STATEMENT(INT)("b")()</span>
+<span class="plus">+           (INT)()</span>
+<span class="plus">+           Ð</span>
+<span class="plus">+’()("b")()</span>
 <span class="plus">+         ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+          EXPRESSION()(VARIABLE)</span>
 <span class="plus">+           VARIABLE()("a")()</span>

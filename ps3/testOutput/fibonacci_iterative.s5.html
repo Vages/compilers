@@ -16,17 +16,16 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/fibonacci_iterative.s5	2015-02-09 13:34:57.947168000 +0100</span>
-<span class="plus3">+++ testOutput/fibonacci_iterative.s5	2015-02-11 13:36:44.110055000 +0100</span>
+<span class="plus3">+++ testOutput/fibonacci_iterative.s5	2015-02-11 14:09:27.641744000 +0100</span>
 <span class="at2">@@ -1,56 +1,121 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
    FUNCTION(INT)("fibonacci_iterative")()
     VARIABLE_LIST()()
-<span class="minus">-    DECLARATION_STATEMENT(INT)("n")()</span>
-<span class="plus">+    DECLARATION_STATEMENT()()</span>
-<span class="plus">+     TYPE(INT)()</span>
-<span class="plus">+     VARIABLE()("n")()</span>
+     DECLARATION_STATEMENT(INT)("n")()
+<span class="plus">+     (INT)()</span>
+<span class="plus">+     ()("n")()</span>
     STATEMENT_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("x")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("y")()</span>
@@ -60,15 +59,15 @@
 <span class="plus">+         STATEMENT_LIST()()</span>
 <span class="plus">+          STATEMENT_LIST()()</span>
 <span class="plus">+           STATEMENT_LIST()()</span>
-<span class="plus">+            DECLARATION_STATEMENT()()</span>
-<span class="plus">+             TYPE(INT)()</span>
-<span class="plus">+             VARIABLE()("x")()</span>
-<span class="plus">+           DECLARATION_STATEMENT()()</span>
-<span class="plus">+            TYPE(INT)()</span>
-<span class="plus">+            VARIABLE()("y")()</span>
-<span class="plus">+          DECLARATION_STATEMENT()()</span>
-<span class="plus">+           TYPE(INT)()</span>
-<span class="plus">+           VARIABLE()("f")()</span>
+<span class="plus">+            DECLARATION_STATEMENT(INT)("x")()</span>
+<span class="plus">+             (INT)()</span>
+<span class="plus">+             ()("x")()</span>
+<span class="plus">+           DECLARATION_STATEMENT(INT)("y")()</span>
+<span class="plus">+            (INT)()</span>
+<span class="plus">+            ()("y")()</span>
+<span class="plus">+          DECLARATION_STATEMENT(INT)("f")()</span>
+<span class="plus">+           (INT)()</span>
+<span class="plus">+           ()("f")()</span>
 <span class="plus">+         ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+          EXPRESSION()(VARIABLE)</span>
 <span class="plus">+           VARIABLE()("x")()</span>
@@ -113,9 +112,9 @@
 <span class="plus">+       STATEMENT_LIST()()</span>
 <span class="plus">+        STATEMENT_LIST()()</span>
 <span class="plus">+         STATEMENT_LIST()()</span>
-<span class="plus">+          DECLARATION_STATEMENT()()</span>
-<span class="plus">+           TYPE(INT)()</span>
-<span class="plus">+           VARIABLE()("i")()</span>
+<span class="plus">+          DECLARATION_STATEMENT(INT)("i")()</span>
+<span class="plus">+           (INT)()</span>
+<span class="plus">+           PL6()("i")()</span>
 <span class="plus">+         ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+          EXPRESSION()(VARIABLE)</span>
 <span class="plus">+           VARIABLE()("i")()</span>
