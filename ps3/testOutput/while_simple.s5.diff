@@ -1,6 +1,6 @@
 --- correctOutput/while_simple.s5	2015-02-09 13:34:58.225173000 +0100
-+++ testOutput/while_simple.s5	2015-02-11 14:09:48.662852000 +0100
-@@ -1,22 +1,38 @@
++++ testOutput/while_simple.s5	2015-02-11 14:19:14.941000000 +0100
+@@ -1,22 +1,36 @@
   PROGRAM()()
   FUNCTION_LIST()()
 +  (nil)
@@ -13,9 +13,7 @@
 -     CONSTANT(INT)(10)()
 +    STATEMENT_LIST()()
 +     STATEMENT_LIST()()
-+      DECLARATION_STATEMENT(INT)("a")()
-+       (INT)()
-+       °"`()("a")()
++      DECLARATION_STATEMENT(INT)("Àrí")()
 +     ASSIGNMENT_STATEMENT()()
 +      EXPRESSION()(VARIABLE)
 +       VARIABLE()("a")()

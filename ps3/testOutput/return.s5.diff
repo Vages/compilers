@@ -1,6 +1,6 @@
 --- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100
-+++ testOutput/return.s5	2015-02-11 14:09:43.765828000 +0100
-@@ -1,53 +1,97 @@
++++ testOutput/return.s5	2015-02-11 14:19:09.928925000 +0100
+@@ -1,53 +1,89 @@
   PROGRAM()()
   FUNCTION_LIST()()
 -  FUNCTION(INT)("main")()
@@ -34,9 +34,8 @@
 +       CONSTANT(INT)(0)()
    FUNCTION(INT)("test")()
     VARIABLE_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()
-+     (INT)()
-+     ()("a")()
+-    DECLARATION_STATEMENT(INT)("a")()
++    DECLARATION_STATEMENT(INT)("p")()
     STATEMENT_LIST()()
 -    DECLARATION_STATEMENT(INT)("x")()
 -    DECLARATION_STATEMENT(INT)("y")()
@@ -75,12 +74,8 @@
 +       STATEMENT_LIST()()
 +        STATEMENT_LIST()()
 +         STATEMENT_LIST()()
-+          DECLARATION_STATEMENT(INT)("x")()
-+           (INT)()
-+           ()("x")()
-+         DECLARATION_STATEMENT(INT)("y")()
-+          (INT)()
-+          ()("y")()
++          DECLARATION_STATEMENT(INT)("P")()
++         DECLARATION_STATEMENT(INT)("0")()
 +        ASSIGNMENT_STATEMENT()()
 +         EXPRESSION()(VARIABLE)
 +          VARIABLE()("x")()
@@ -111,9 +106,7 @@
 +        STATEMENT_LIST()()
 +         STATEMENT_LIST()()
 +          STATEMENT_LIST()()
-+           DECLARATION_STATEMENT(INT)("z")()
-+            (INT)()
-+            ‡è()("z")()
++           DECLARATION_STATEMENT(INT)("–'")()
 +          ASSIGNMENT_STATEMENT()()
 +           EXPRESSION()(VARIABLE)
 +            VARIABLE()("z")()

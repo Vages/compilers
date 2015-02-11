@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_arrays.s5	2015-02-09 13:34:58.176171000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_arrays.s5	2015-02-11 14:09:45.883837000 +0100</span>
-<span class="at2">@@ -1,49 +1,148 @@</span>
+<span class="plus3">+++ testOutput/type_errors_arrays.s5	2015-02-11 14:19:12.292936000 +0100</span>
+<span class="at2">@@ -1,49 +1,122 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="plus">+  (nil)</span>
@@ -81,36 +81,10 @@
 <span class="plus">+              STATEMENT_LIST()()</span>
 <span class="plus">+               STATEMENT_LIST()()</span>
 <span class="plus">+                STATEMENT_LIST()()</span>
-<span class="plus">+                 DECLARATION_STATEMENT(ARRAY())("a")()</span>
-<span class="plus">+                  (ARRAY())()</span>
-<span class="plus">+                   TYPE(INT)()</span>
-<span class="plus">+                   INDEX_LIST()()</span>
-<span class="plus">+                    INDEX(INT)(10)()</span>
-<span class="plus">+                  ()("a")()</span>
-<span class="plus">+                DECLARATION_STATEMENT(ARRAY())("b")()</span>
-<span class="plus">+                 (ARRAY())()</span>
-<span class="plus">+                  TYPE(INT)()</span>
-<span class="plus">+                  INDEX_LIST()()</span>
-<span class="plus">+                   INDEX_LIST()()</span>
-<span class="plus">+                    INDEX(INT)(10)()</span>
-<span class="plus">+                   INDEX(INT)(10)()</span>
-<span class="plus">+                 ()("b")()</span>
-<span class="plus">+               DECLARATION_STATEMENT(ARRAY())("c")()</span>
-<span class="plus">+                (ARRAY())()</span>
-<span class="plus">+                 TYPE(BOOL)()</span>
-<span class="plus">+                 INDEX_LIST()()</span>
-<span class="plus">+                  INDEX(INT)(10)()</span>
-<span class="plus">+                ()("c")()</span>
-<span class="plus">+              DECLARATION_STATEMENT(ARRAY())("d")()</span>
-<span class="plus">+               (ARRAY())()</span>
-<span class="plus">+                TYPE(FLOAT)()</span>
-<span class="plus">+                INDEX_LIST()()</span>
-<span class="plus">+                 INDEX_LIST()()</span>
-<span class="plus">+                  INDEX_LIST()()</span>
-<span class="plus">+                   INDEX(INT)(10)()</span>
-<span class="plus">+                  INDEX(INT)(10)()</span>
-<span class="plus">+                 INDEX(INT)(10)()</span>
-<span class="plus">+               8(àZ+()("d")()</span>
+<span class="plus">+                 DECLARATION_STATEMENT(ARRAY())("")()</span>
+<span class="plus">+                DECLARATION_STATEMENT(ARRAY())(" lþ")()</span>
+<span class="plus">+               DECLARATION_STATEMENT(ARRAY())("Àrþ")()</span>
+<span class="plus">+              DECLARATION_STATEMENT(ARRAY())("à{þ")()</span>
 <span class="plus">+             ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+              EXPRESSION()(VARIABLE)</span>
 <span class="plus">+               VARIABLE()("a")()</span>

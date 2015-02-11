@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100</span>
-<span class="plus3">+++ testOutput/return.s5	2015-02-11 14:09:43.765828000 +0100</span>
-<span class="at2">@@ -1,53 +1,97 @@</span>
+<span class="plus3">+++ testOutput/return.s5	2015-02-11 14:19:09.928925000 +0100</span>
+<span class="at2">@@ -1,53 +1,89 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
 <span class="minus">-  FUNCTION(INT)("main")()</span>
@@ -51,9 +51,8 @@
 <span class="plus">+       CONSTANT(INT)(0)()</span>
    FUNCTION(INT)("test")()
     VARIABLE_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()
-<span class="plus">+     (INT)()</span>
-<span class="plus">+     ()("a")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="plus">+    DECLARATION_STATEMENT(INT)("p")()</span>
     STATEMENT_LIST()()
 <span class="minus">-    DECLARATION_STATEMENT(INT)("x")()</span>
 <span class="minus">-    DECLARATION_STATEMENT(INT)("y")()</span>
@@ -92,12 +91,8 @@
 <span class="plus">+       STATEMENT_LIST()()</span>
 <span class="plus">+        STATEMENT_LIST()()</span>
 <span class="plus">+         STATEMENT_LIST()()</span>
-<span class="plus">+          DECLARATION_STATEMENT(INT)("x")()</span>
-<span class="plus">+           (INT)()</span>
-<span class="plus">+           ()("x")()</span>
-<span class="plus">+         DECLARATION_STATEMENT(INT)("y")()</span>
-<span class="plus">+          (INT)()</span>
-<span class="plus">+          ()("y")()</span>
+<span class="plus">+          DECLARATION_STATEMENT(INT)("P")()</span>
+<span class="plus">+         DECLARATION_STATEMENT(INT)("0")()</span>
 <span class="plus">+        ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+         EXPRESSION()(VARIABLE)</span>
 <span class="plus">+          VARIABLE()("x")()</span>
@@ -128,9 +123,7 @@
 <span class="plus">+        STATEMENT_LIST()()</span>
 <span class="plus">+         STATEMENT_LIST()()</span>
 <span class="plus">+          STATEMENT_LIST()()</span>
-<span class="plus">+           DECLARATION_STATEMENT(INT)("z")()</span>
-<span class="plus">+            (INT)()</span>
-<span class="plus">+            ‡è()("z")()</span>
+<span class="plus">+           DECLARATION_STATEMENT(INT)("–'")()</span>
 <span class="plus">+          ASSIGNMENT_STATEMENT()()</span>
 <span class="plus">+           EXPRESSION()(VARIABLE)</span>
 <span class="plus">+            VARIABLE()("z")()</span>
