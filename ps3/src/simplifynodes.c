@@ -137,6 +137,7 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 
 	root = simplify_default(root, depth+1);
 
+	/*
 	if (root->n_children == 1){
 		if (root -> children[0] == NULL){
 			root->n_children = 0;
@@ -162,7 +163,7 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 
 		root->children = new_children;
 		root->n_children = no_of_children_in_left+right_child_null;
-	}
+	}*/
 
 	return root;
 }
