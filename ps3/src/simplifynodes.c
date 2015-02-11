@@ -179,7 +179,7 @@ Node_t* simplify_expression ( Node_t *root, int depth )
 	root = simplify_default(root, depth+1);
 
 	if (root->n_children == 1){
-		if((root->expression_type.index!=NOT_E)&&(oot->expression_type.index!=UMINUS_E)&&(oot->expression_type.index!=NEW_E)){
+		if((root->expression_type.index!=NOT_E)&&(oot->expression_type.index!=UMINUS_E)&&(root->expression_type.index!=NEW_E)){
 			root = root->children[0];
 		}
 	}
