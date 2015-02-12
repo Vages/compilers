@@ -145,7 +145,7 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 	}
 */
 	if (root->children[0]==NULL){
-		Node_t** new_child = malloc(sizeof(Node_t*));
+		Node_t** new_children = malloc(sizeof(Node_t*));
 		new_children[0] = root->children[1];
 		free(root->children);
 		root->children = new_children;
