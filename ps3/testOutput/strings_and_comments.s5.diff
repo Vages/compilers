@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s5	2015-02-09 13:34:58.168169000 +0100
-+++ testOutput/strings_and_comments.s5	2015-02-12 15:53:38.868757000 +0100
++++ testOutput/strings_and_comments.s5	2015-02-12 21:20:54.194923000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

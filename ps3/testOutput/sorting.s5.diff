@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s5	2015-02-09 13:34:58.158174000 +0100
-+++ testOutput/sorting.s5	2015-02-12 15:53:38.637745000 +0100
++++ testOutput/sorting.s5	2015-02-12 21:20:53.997922000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

@@ -1,5 +1,5 @@
 --- correctOutput/printing.s6	2015-02-09 13:34:58.131170000 +0100
-+++ testOutput/printing.s6	2015-02-12 15:53:37.253739000 +0100
++++ testOutput/printing.s6	2015-02-12 21:20:52.788918000 +0100
 @@ -1,12 +0,0 @@
 -CONSTANT
 -CONSTANT
