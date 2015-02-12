@@ -46,4 +46,3 @@
      VARIABLE()("d")()
      EXPRESSION()(NEW)
       TYPE(ARRAY(FLOAT)[10][9][11])()
-  (nil)

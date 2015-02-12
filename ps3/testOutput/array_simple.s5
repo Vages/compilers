@@ -33,4 +33,3 @@
       EXPRESSION()(ARRAY_INDEX)
        VARIABLE()("array")()
        CONSTANT(INT)(1)()
-  (nil)

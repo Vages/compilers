@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s5	2015-02-09 13:34:57.997168000 +0100
-+++ testOutput/function_medium.s5	2015-02-12 15:48:54.559138000 +0100
++++ testOutput/function_medium.s5	2015-02-12 15:53:29.181714000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -8,11 +8,3 @@
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
      DECLARATION_STATEMENT(INT)("b")()
-@@ -41,6 +40,7 @@
-      EXPRESSION_LIST()()
-       VARIABLE()("a")()
-       VARIABLE()("c")()
-+  (nil)
-   FUNCTION(INT)("func1")()
-    VARIABLE_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()

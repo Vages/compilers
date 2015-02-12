@@ -31,7 +31,6 @@
      EXPRESSION_LIST()()
       VARIABLE()("a")()
       VARIABLE()("b")()
-  (nil)
   FUNCTION(VOID)("void_func")()
    STATEMENT_LIST()()
     RETURN_STATEMENT()()

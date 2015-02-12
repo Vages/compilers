@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s5	2015-02-09 13:34:57.886171000 +0100
-+++ testOutput/array_forloop.s5	2015-02-12 15:48:42.614056000 +0100
++++ testOutput/array_forloop.s5	2015-02-12 15:53:18.787607000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -8,8 +8,3 @@
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
      ASSIGNMENT_STATEMENT()()
-@@ -77,3 +76,4 @@
-      EXPRESSION_LIST()()
-       VARIABLE()("sum")()
-       VARIABLE()("prod")()
-+  (nil)

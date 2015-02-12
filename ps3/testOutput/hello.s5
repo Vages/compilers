@@ -5,4 +5,3 @@
     PRINT_STATEMENT()()
      EXPRESSION_LIST()()
       CONSTANT(STRING)("Hello, world!")()
-  (nil)

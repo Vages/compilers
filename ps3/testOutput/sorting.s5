@@ -39,8 +39,6 @@
         EXPRESSION()(ARRAY_INDEX)
          VARIABLE()("b")()
          VARIABLE()("i")()
-  ()("
-")()
   FUNCTION(ARRAY(INT)[10])("sort")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()

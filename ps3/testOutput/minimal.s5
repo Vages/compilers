@@ -4,4 +4,3 @@
    STATEMENT_LIST()()
     RETURN_STATEMENT()()
      CONSTANT(INT)(0)()
-  (nil)

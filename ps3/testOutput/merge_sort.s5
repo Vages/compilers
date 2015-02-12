@@ -38,7 +38,6 @@
         EXPRESSION()(ARRAY_INDEX)
          VARIABLE()("a")()
          VARIABLE()("i")()
-  (nil)
   FUNCTION(VOID)("merge_sort")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()

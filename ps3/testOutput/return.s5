@@ -11,7 +11,6 @@
         CONSTANT(INT)(64)()
     RETURN_STATEMENT()()
      CONSTANT(INT)(0)()
-  (nil)
   FUNCTION(INT)("test")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(INT)("a")()

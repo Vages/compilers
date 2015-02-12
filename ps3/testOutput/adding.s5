@@ -11,4 +11,3 @@
     PRINT_STATEMENT()()
      EXPRESSION_LIST()()
       VARIABLE()("a")()
-  (nil)

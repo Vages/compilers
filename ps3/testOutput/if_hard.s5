@@ -73,4 +73,3 @@
           CONSTANT(STRING)("a <= 0, b <= 0")()
     RETURN_STATEMENT()()
      CONSTANT(INT)(0)()
-  (nil)

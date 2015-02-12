@@ -29,7 +29,6 @@
             VARIABLE()("i")()
             VARIABLE()("j")()
             VARIABLE()("k")()
-  (nil)
   FUNCTION(VOID)("print")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(INT)("a")()

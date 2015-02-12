@@ -40,4 +40,3 @@
       CONSTANT(STRING)("+-0.4 ")()
       CONSTANT(FLOAT)(0.400000)()
       VARIABLE()("d")()
-  (nil)

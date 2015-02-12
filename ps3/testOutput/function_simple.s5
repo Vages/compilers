@@ -8,7 +8,6 @@
     EXPRESSION()(FUNC_CALL)
      VARIABLE()("function")()
      (nil)
-  (nil)
   FUNCTION(VOID)("function")()
    STATEMENT_LIST()()
     PRINT_STATEMENT()()

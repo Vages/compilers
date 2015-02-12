@@ -37,7 +37,6 @@
       VARIABLE()("b")()
       CONSTANT(STRING)("c is: ")()
       VARIABLE()("c")()
-  (nil)
   FUNCTION(INT)("max")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(INT)("a")()

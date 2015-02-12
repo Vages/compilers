@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_assignment.s5	2015-02-09 13:34:58.190170000 +0100
-+++ testOutput/type_errors_assignment.s5	2015-02-12 15:49:05.542199000 +0100
++++ testOutput/type_errors_assignment.s5	2015-02-12 15:53:39.848731000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
@@ -8,8 +8,3 @@
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
      DECLARATION_STATEMENT(FLOAT)("b")()
-@@ -24,3 +23,4 @@
-     ASSIGNMENT_STATEMENT()()
-      VARIABLE()("c")()
-      CONSTANT(FLOAT)(3.000000)()
-+  (nil)

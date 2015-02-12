@@ -22,7 +22,6 @@
         VARIABLE()("a")()
         VARIABLE()("b")()
         VARIABLE()("c")()
-  (nil)
   FUNCTION(INT)("func1")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(INT)("a")()

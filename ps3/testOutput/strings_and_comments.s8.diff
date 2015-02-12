@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s8	2015-02-09 13:34:58.170173000 +0100
-+++ testOutput/strings_and_comments.s8	2015-02-12 15:49:04.693208000 +0100
++++ testOutput/strings_and_comments.s8	2015-02-12 15:53:38.967751000 +0100
 @@ -8,13 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

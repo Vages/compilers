@@ -14,4 +14,3 @@
     ASSIGNMENT_STATEMENT()()
      VARIABLE()("c")()
      CONSTANT(FLOAT)(0.100000)()
-  (nil)
