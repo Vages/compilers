@@ -137,6 +137,7 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 
 	root = simplify_default(root, depth+1);
 
+	fprintf(stderr, "%d", root->n_children);
 	/*
 	if (root->n_children == 1){
 		if (root -> children[0] == NULL){
