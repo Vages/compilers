@@ -136,13 +136,14 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
 	root = simplify_default(root, depth+1);
-
+/*
 	fprintf(stderr, "%d\n", root->n_children);
 	for (int i = 0; i<2; i++){
 		if(root->children[i]==NULL){
 			fprintf(stderr, "%d Nullchild\n", i);
 		}
 	}
+*/
 	/*
 	if (root->n_children == 1){
 		if (root -> children[0] == NULL){
