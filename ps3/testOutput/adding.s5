@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("adding")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(INT)("a")()
@@ -12,3 +11,4 @@
     PRINT_STATEMENT()()
      EXPRESSION_LIST()()
       VARIABLE()("a")()
+  (nil)

@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("main")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(INT)("a")()
@@ -15,3 +14,4 @@
     ASSIGNMENT_STATEMENT()()
      VARIABLE()("c")()
      CONSTANT(FLOAT)(0.100000)()
+  (nil)

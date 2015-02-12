@@ -16,68 +16,20 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/for_hard.s5	2015-02-09 13:34:57.963168000 +0100</span>
-<span class="plus3">+++ testOutput/for_hard.s5	2015-02-11 21:01:52.139571000 +0100</span>
-<span class="at2">@@ -1,35 +1,36 @@</span>
+<span class="plus3">+++ testOutput/for_hard.s5	2015-02-12 15:48:52.381144000 +0100</span>
+<span class="at2">@@ -1,7 +1,6 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
-<span class="minus">-  FUNCTION(VOID)("main")()</span>
-<span class="plus">+  FUNCTION_LIST()()</span>
-    (nil)
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("i")()</span>
-<span class="minus">-    FOR_STATEMENT()()</span>
-<span class="minus">-     ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-      VARIABLE()("i")()</span>
-<span class="minus">-      CONSTANT(INT)(1)()</span>
-<span class="minus">-     CONSTANT(INT)(5)()</span>
-<span class="minus">-     STATEMENT_LIST()()</span>
-<span class="minus">-      DECLARATION_STATEMENT(INT)("j")()</span>
-<span class="minus">-      FOR_STATEMENT()()</span>
-<span class="minus">-       ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-        VARIABLE()("j")()</span>
-<span class="minus">-        CONSTANT(INT)(1)()</span>
-<span class="plus">+   FUNCTION(VOID)("main")()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
-<span class="plus">+     DECLARATION_STATEMENT(INT)("i")()</span>
-<span class="plus">+     FOR_STATEMENT()()</span>
-<span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
-        VARIABLE()("i")()
-<span class="minus">-       STATEMENT_LIST()()</span>
-<span class="minus">-        DECLARATION_STATEMENT(INT)("k")()</span>
-<span class="minus">-        FOR_STATEMENT()()</span>
-<span class="minus">-         ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-          VARIABLE()("k")()</span>
-<span class="minus">-          CONSTANT(INT)(1)()</span>
-<span class="plus">+       CONSTANT(INT)(1)()</span>
-<span class="plus">+      CONSTANT(INT)(5)()</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       DECLARATION_STATEMENT(INT)("j")()</span>
-<span class="plus">+       FOR_STATEMENT()()</span>
-<span class="plus">+        ASSIGNMENT_STATEMENT()()</span>
-          VARIABLE()("j")()
-<span class="minus">-         STATEMENT_LIST()()</span>
-<span class="minus">-          EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-           VARIABLE()("print")()</span>
-<span class="minus">-           EXPRESSION_LIST()()</span>
-<span class="minus">-            VARIABLE()("i")()</span>
-<span class="minus">-            VARIABLE()("j")()</span>
-<span class="minus">-            VARIABLE()("k")()</span>
-<span class="plus">+         CONSTANT(INT)(1)()</span>
-<span class="plus">+        VARIABLE()("i")()</span>
-<span class="plus">+        STATEMENT_LIST()()</span>
-<span class="plus">+         DECLARATION_STATEMENT(INT)("k")()</span>
-<span class="plus">+         FOR_STATEMENT()()</span>
-<span class="plus">+          ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+           VARIABLE()("k")()</span>
-<span class="plus">+           CONSTANT(INT)(1)()</span>
-<span class="plus">+          VARIABLE()("j")()</span>
-<span class="plus">+          STATEMENT_LIST()()</span>
-<span class="plus">+           EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+            VARIABLE()("print")()</span>
-<span class="plus">+            EXPRESSION_LIST()()</span>
-<span class="plus">+             VARIABLE()("i")()</span>
-<span class="plus">+             VARIABLE()("j")()</span>
-<span class="plus">+             VARIABLE()("k")()</span>
+   FUNCTION(VOID)("main")()
+<span class="minus">-   (nil)</span>
+    STATEMENT_LIST()()
+     DECLARATION_STATEMENT(INT)("i")()
+     FOR_STATEMENT()()
+<span class="at2">@@ -30,6 +29,7 @@</span>
+             VARIABLE()("i")()
+             VARIABLE()("j")()
+             VARIABLE()("k")()
+<span class="plus">+  (nil)</span>
    FUNCTION(VOID)("print")()
     VARIABLE_LIST()()
      DECLARATION_STATEMENT(INT)("a")()</span>

@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("main")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
@@ -77,3 +76,4 @@
      EXPRESSION_LIST()()
       VARIABLE()("sum")()
       VARIABLE()("prod")()
+  (nil)

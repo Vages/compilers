@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("main")()
    STATEMENT_LIST()()
     IF_STATEMENT()()
@@ -15,3 +14,4 @@
       PRINT_STATEMENT()()
        EXPRESSION_LIST()()
         CONSTANT(STRING)("false")()
+  (nil)

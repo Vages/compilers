@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("main")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(INT)("a")()
@@ -41,3 +40,4 @@
       CONSTANT(STRING)("+-0.4 ")()
       CONSTANT(FLOAT)(0.400000)()
       VARIABLE()("d")()
+  (nil)

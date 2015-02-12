@@ -1,11 +1,15 @@
 --- correctOutput/logical.s5	2015-02-09 13:34:58.055168000 +0100
-+++ testOutput/logical.s5	2015-02-11 21:01:57.341575000 +0100
-@@ -1,7 +1,7 @@
++++ testOutput/logical.s5	2015-02-12 15:48:57.410137000 +0100
+@@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
-+  (nil)
    FUNCTION(VOID)("main")()
 -   (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(BOOL)("a")()
      DECLARATION_STATEMENT(BOOL)("b")()
+@@ -174,3 +173,4 @@
+       VARIABLE()("d")()
+       VARIABLE()("e")()
+       VARIABLE()("f")()
++  (nil)

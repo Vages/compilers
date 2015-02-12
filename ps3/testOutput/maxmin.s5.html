@@ -16,128 +16,21 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/maxmin.s5	2015-02-09 13:34:58.086168000 +0100</span>
-<span class="plus3">+++ testOutput/maxmin.s5	2015-02-11 21:01:59.282587000 +0100</span>
-<span class="at2">@@ -1,64 +1,66 @@</span>
+<span class="plus3">+++ testOutput/maxmin.s5	2015-02-12 15:48:59.904194000 +0100</span>
+<span class="at2">@@ -1,7 +1,6 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
-<span class="minus">-  FUNCTION(VOID)("maxmin")()</span>
+   FUNCTION(VOID)("maxmin")()
 <span class="minus">-   (nil)</span>
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("c")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("d")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("e")()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-     VARIABLE()("a")()</span>
-<span class="minus">-     EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-      VARIABLE()("max")()</span>
-<span class="minus">-      EXPRESSION_LIST()()</span>
-<span class="minus">-       CONSTANT(INT)(5)()</span>
-<span class="minus">-       CONSTANT(INT)(6)()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-     VARIABLE()("b")()</span>
-<span class="minus">-     EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-      VARIABLE()("min")()</span>
-<span class="minus">-      EXPRESSION_LIST()()</span>
-<span class="minus">-       EXPRESSION()(UMINUS)</span>
-<span class="minus">-        CONSTANT(INT)(1)()</span>
-<span class="minus">-       CONSTANT(INT)(4)()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-     VARIABLE()("c")()</span>
-<span class="minus">-     EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-      VARIABLE()("max")()</span>
-<span class="minus">-      EXPRESSION_LIST()()</span>
-<span class="minus">-       CONSTANT(INT)(0)()</span>
-<span class="minus">-       CONSTANT(INT)(0)()</span>
-<span class="minus">-    PRINT_STATEMENT()()</span>
-<span class="minus">-     EXPRESSION_LIST()()</span>
-<span class="minus">-      CONSTANT(STRING)("a is: ")()</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="minus">-      CONSTANT(STRING)("b is: ")()</span>
-<span class="minus">-      VARIABLE()("b")()</span>
-<span class="minus">-      CONSTANT(STRING)("c is: ")()</span>
-<span class="minus">-      VARIABLE()("c")()</span>
-<span class="minus">-  FUNCTION(INT)("max")()</span>
-<span class="minus">-   VARIABLE_LIST()()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    IF_STATEMENT()()</span>
-<span class="minus">-     EXPRESSION()(&gt;)</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="minus">-      VARIABLE()("b")()</span>
-<span class="plus">+  FUNCTION_LIST()()</span>
-<span class="plus">+   FUNCTION_LIST()()</span>
-<span class="plus">+    (nil)</span>
-<span class="plus">+    FUNCTION(VOID)("maxmin")()</span>
-      STATEMENT_LIST()()
-<span class="minus">-      RETURN_STATEMENT()()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("c")()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("d")()</span>
-<span class="plus">+      DECLARATION_STATEMENT(INT)("e")()</span>
-<span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
-        VARIABLE()("a")()
-<span class="minus">-    IF_STATEMENT()()</span>
-<span class="minus">-     EXPRESSION()(&gt;)</span>
-<span class="minus">-      VARIABLE()("b")()</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="minus">-     STATEMENT_LIST()()</span>
-<span class="minus">-      RETURN_STATEMENT()()</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("max")()</span>
-<span class="plus">+        EXPRESSION_LIST()()</span>
-<span class="plus">+         CONSTANT(INT)(5)()</span>
-<span class="plus">+         CONSTANT(INT)(6)()</span>
-<span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
-        VARIABLE()("b")()
-<span class="minus">-    RETURN_STATEMENT()()</span>
-<span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("min")()</span>
-<span class="plus">+        EXPRESSION_LIST()()</span>
-<span class="plus">+         EXPRESSION()(UMINUS)</span>
-<span class="plus">+          CONSTANT(INT)(1)()</span>
-<span class="plus">+         CONSTANT(INT)(4)()</span>
-<span class="plus">+      ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+       VARIABLE()("c")()</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("max")()</span>
-<span class="plus">+        EXPRESSION_LIST()()</span>
-<span class="plus">+         CONSTANT(INT)(0)()</span>
-<span class="plus">+         CONSTANT(INT)(0)()</span>
-<span class="plus">+      PRINT_STATEMENT()()</span>
-<span class="plus">+       EXPRESSION_LIST()()</span>
-<span class="plus">+        CONSTANT(STRING)("a is: ")()</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-<span class="plus">+        CONSTANT(STRING)("b is: ")()</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-<span class="plus">+        CONSTANT(STRING)("c is: ")()</span>
-<span class="plus">+        VARIABLE()("c")()</span>
-<span class="plus">+   FUNCTION(INT)("max")()</span>
-<span class="plus">+    VARIABLE_LIST()()</span>
-<span class="plus">+     DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="plus">+     DECLARATION_STATEMENT(INT)("b")()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
-<span class="plus">+     IF_STATEMENT()()</span>
-<span class="plus">+      EXPRESSION()(&gt;)</span>
-<span class="plus">+       VARIABLE()("a")()</span>
-<span class="plus">+       VARIABLE()("b")()</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       RETURN_STATEMENT()()</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-<span class="plus">+     IF_STATEMENT()()</span>
-<span class="plus">+      EXPRESSION()(&gt;)</span>
-<span class="plus">+       VARIABLE()("b")()</span>
-<span class="plus">+       VARIABLE()("a")()</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       RETURN_STATEMENT()()</span>
-<span class="plus">+        VARIABLE()("b")()</span>
-<span class="plus">+     RETURN_STATEMENT()()</span>
-<span class="plus">+      CONSTANT(INT)(0)()</span>
-   FUNCTION(INT)("min")()
+    STATEMENT_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+     DECLARATION_STATEMENT(INT)("b")()
+<span class="at2">@@ -38,6 +37,7 @@</span>
+       VARIABLE()("b")()
+       CONSTANT(STRING)("c is: ")()
+       VARIABLE()("c")()
+<span class="plus">+  (nil)</span>
+   FUNCTION(INT)("max")()
     VARIABLE_LIST()()
      DECLARATION_STATEMENT(INT)("a")()</span>
 </pre>

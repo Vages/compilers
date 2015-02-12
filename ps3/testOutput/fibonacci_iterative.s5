@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(INT)("fibonacci_iterative")()
    VARIABLE_LIST()()
     DECLARATION_STATEMENT(INT)("n")()
@@ -55,3 +54,4 @@
       VARIABLE()("f")()
     RETURN_STATEMENT()()
      CONSTANT(INT)(0)()
+  (nil)

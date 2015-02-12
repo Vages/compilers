@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("main")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(BOOL)("a")()
@@ -174,3 +173,4 @@
       VARIABLE()("d")()
       VARIABLE()("e")()
       VARIABLE()("f")()
+  (nil)

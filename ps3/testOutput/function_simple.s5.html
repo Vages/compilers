@@ -16,28 +16,20 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_simple.s5	2015-02-09 13:34:58.007171000 +0100</span>
-<span class="plus3">+++ testOutput/function_simple.s5	2015-02-11 21:01:54.961569000 +0100</span>
-<span class="at2">@@ -1,16 +1,16 @@</span>
+<span class="plus3">+++ testOutput/function_simple.s5	2015-02-12 15:48:54.788128000 +0100</span>
+<span class="at2">@@ -1,7 +1,6 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
-<span class="minus">-  FUNCTION(VOID)("main")()</span>
-<span class="plus">+  FUNCTION_LIST()()</span>
-    (nil)
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    PRINT_STATEMENT()()</span>
-<span class="minus">-     EXPRESSION_LIST()()</span>
-<span class="minus">-      CONSTANT(STRING)("In main()")()</span>
-<span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-     VARIABLE()("function")()</span>
-<span class="minus">-     (nil)</span>
-<span class="plus">+   FUNCTION(VOID)("main")()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
-<span class="plus">+     PRINT_STATEMENT()()</span>
-<span class="plus">+      EXPRESSION_LIST()()</span>
-<span class="plus">+       CONSTANT(STRING)("In main()")()</span>
-<span class="plus">+     EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+      VARIABLE()("function")()</span>
-<span class="plus">+      (nil)</span>
+   FUNCTION(VOID)("main")()
+<span class="minus">-   (nil)</span>
+    STATEMENT_LIST()()
+     PRINT_STATEMENT()()
+      EXPRESSION_LIST()()
+<span class="at2">@@ -9,8 +8,8 @@</span>
+     EXPRESSION()(FUNC_CALL)
+      VARIABLE()("function")()
+      (nil)
+<span class="plus">+  (nil)</span>
    FUNCTION(VOID)("function")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()

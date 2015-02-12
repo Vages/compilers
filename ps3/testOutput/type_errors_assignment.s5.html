@@ -16,16 +16,20 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_assignment.s5	2015-02-09 13:34:58.190170000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_assignment.s5	2015-02-11 21:02:05.515623000 +0100</span>
-<span class="at2">@@ -1,7 +1,7 @@</span>
+<span class="plus3">+++ testOutput/type_errors_assignment.s5	2015-02-12 15:49:05.542199000 +0100</span>
+<span class="at2">@@ -1,7 +1,6 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
-<span class="plus">+  (nil)</span>
    FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
-     DECLARATION_STATEMENT(FLOAT)("b")()</span>
+     DECLARATION_STATEMENT(FLOAT)("b")()
+<span class="at2">@@ -24,3 +23,4 @@</span>
+     ASSIGNMENT_STATEMENT()()
+      VARIABLE()("c")()
+      CONSTANT(FLOAT)(3.000000)()
+<span class="plus">+  (nil)</span></span>
 </pre>
 </body>
 </html>

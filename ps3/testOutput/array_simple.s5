@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("arrayTest")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(INT)("a")()
@@ -34,3 +33,4 @@
       EXPRESSION()(ARRAY_INDEX)
        VARIABLE()("array")()
        CONSTANT(INT)(1)()
+  (nil)

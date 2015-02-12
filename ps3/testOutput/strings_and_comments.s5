@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(INT)("main")()
    STATEMENT_LIST()()
     PRINT_STATEMENT()()
@@ -15,3 +14,4 @@
     PRINT_STATEMENT()()
      EXPRESSION_LIST()()
       CONSTANT(STRING)("//Comment")()
+  (nil)

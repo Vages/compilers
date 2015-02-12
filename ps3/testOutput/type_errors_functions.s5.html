@@ -16,97 +16,30 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_functions.s5	2015-02-09 13:34:58.198172000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_functions.s5	2015-02-11 21:02:05.946649000 +0100</span>
-<span class="at2">@@ -1,47 +1,48 @@</span>
+<span class="plus3">+++ testOutput/type_errors_functions.s5	2015-02-12 15:49:06.011210000 +0100</span>
+<span class="at2">@@ -1,7 +1,6 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
-<span class="minus">-  FUNCTION(VOID)("main")()</span>
+   FUNCTION(VOID)("main")()
 <span class="minus">-   (nil)</span>
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="minus">-    DECLARATION_STATEMENT(BOOL)("b")()</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-     VARIABLE()("a")()</span>
-<span class="minus">-     EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-      VARIABLE()("void_func")()</span>
-<span class="minus">-      (nil)</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
-<span class="minus">-     VARIABLE()("a")()</span>
-<span class="minus">-     EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-      VARIABLE()("bool_func")()</span>
-<span class="minus">-      (nil)</span>
-<span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-     VARIABLE()("two_args")()</span>
-<span class="minus">-     EXPRESSION_LIST()()</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-     VARIABLE()("two_args")()</span>
-<span class="minus">-     EXPRESSION_LIST()()</span>
-<span class="minus">-      VARIABLE()("b")()</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-     VARIABLE()("two_args")()</span>
-<span class="plus">+  FUNCTION_LIST()()</span>
-<span class="plus">+   FUNCTION_LIST()()</span>
-<span class="plus">+    FUNCTION_LIST()()</span>
-      (nil)
-<span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
-<span class="minus">-     VARIABLE()("void_func")()</span>
-<span class="minus">-     EXPRESSION_LIST()()</span>
-<span class="minus">-      VARIABLE()("a")()</span>
-<span class="minus">-      VARIABLE()("b")()</span>
-<span class="minus">-  FUNCTION(VOID)("void_func")()</span>
+    STATEMENT_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+     DECLARATION_STATEMENT(BOOL)("b")()
+<span class="at2">@@ -32,13 +31,12 @@</span>
+      EXPRESSION_LIST()()
+       VARIABLE()("a")()
+       VARIABLE()("b")()
+<span class="plus">+  (nil)</span>
+   FUNCTION(VOID)("void_func")()
 <span class="minus">-   (nil)</span>
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    RETURN_STATEMENT()()</span>
-<span class="minus">-     CONSTANT(INT)(0)()</span>
-<span class="minus">-  FUNCTION(BOOL)("bool_func")()</span>
+    STATEMENT_LIST()()
+     RETURN_STATEMENT()()
+      CONSTANT(INT)(0)()
+   FUNCTION(BOOL)("bool_func")()
 <span class="minus">-   (nil)</span>
-<span class="minus">-   STATEMENT_LIST()()</span>
-<span class="minus">-    RETURN_STATEMENT()()</span>
-<span class="minus">-     CONSTANT(BOOL)(False)()</span>
-<span class="plus">+     FUNCTION(VOID)("main")()</span>
-<span class="plus">+      STATEMENT_LIST()()</span>
-<span class="plus">+       DECLARATION_STATEMENT(INT)("a")()</span>
-<span class="plus">+       DECLARATION_STATEMENT(BOOL)("b")()</span>
-<span class="plus">+       ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-<span class="plus">+        EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+         VARIABLE()("void_func")()</span>
-<span class="plus">+         (nil)</span>
-<span class="plus">+       ASSIGNMENT_STATEMENT()()</span>
-<span class="plus">+        VARIABLE()("a")()</span>
-<span class="plus">+        EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+         VARIABLE()("bool_func")()</span>
-<span class="plus">+         (nil)</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("two_args")()</span>
-<span class="plus">+        EXPRESSION_LIST()()</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("two_args")()</span>
-<span class="plus">+        EXPRESSION_LIST()()</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("two_args")()</span>
-<span class="plus">+        (nil)</span>
-<span class="plus">+       EXPRESSION()(FUNC_CALL)</span>
-<span class="plus">+        VARIABLE()("void_func")()</span>
-<span class="plus">+        EXPRESSION_LIST()()</span>
-<span class="plus">+         VARIABLE()("a")()</span>
-<span class="plus">+         VARIABLE()("b")()</span>
-<span class="plus">+    FUNCTION(VOID)("void_func")()</span>
-<span class="plus">+     STATEMENT_LIST()()</span>
-<span class="plus">+      RETURN_STATEMENT()()</span>
-<span class="plus">+       CONSTANT(INT)(0)()</span>
-<span class="plus">+   FUNCTION(BOOL)("bool_func")()</span>
-<span class="plus">+    STATEMENT_LIST()()</span>
-<span class="plus">+     RETURN_STATEMENT()()</span>
-<span class="plus">+      CONSTANT(BOOL)(False)()</span>
-   FUNCTION(VOID)("two_args")()
-    VARIABLE_LIST()()
-     DECLARATION_STATEMENT(BOOL)("a")()</span>
+    STATEMENT_LIST()()
+     RETURN_STATEMENT()()
+      CONSTANT(BOOL)(False)()</span>
 </pre>
 </body>
 </html>

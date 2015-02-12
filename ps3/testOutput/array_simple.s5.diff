@@ -1,11 +1,15 @@
 --- correctOutput/array_simple.s5	2015-02-09 13:34:57.902174000 +0100
-+++ testOutput/array_simple.s5	2015-02-11 21:01:45.126511000 +0100
-@@ -1,7 +1,7 @@
++++ testOutput/array_simple.s5	2015-02-12 15:48:44.133074000 +0100
+@@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
-+  (nil)
    FUNCTION(VOID)("arrayTest")()
 -   (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
      DECLARATION_STATEMENT(INT)("b")()
+@@ -34,3 +33,4 @@
+       EXPRESSION()(ARRAY_INDEX)
+        VARIABLE()("array")()
+        CONSTANT(INT)(1)()
++  (nil)

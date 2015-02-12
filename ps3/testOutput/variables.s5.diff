@@ -1,11 +1,15 @@
 --- correctOutput/variables.s5	2015-02-09 13:34:58.207170000 +0100
-+++ testOutput/variables.s5	2015-02-11 21:02:06.353624000 +0100
-@@ -1,7 +1,7 @@
++++ testOutput/variables.s5	2015-02-12 15:49:06.272201000 +0100
+@@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
-+  (nil)
    FUNCTION(VOID)("main")()
 -   (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
      DECLARATION_STATEMENT(BOOL)("b")()
+@@ -15,3 +14,4 @@
+     ASSIGNMENT_STATEMENT()()
+      VARIABLE()("c")()
+      CONSTANT(FLOAT)(0.100000)()
++  (nil)

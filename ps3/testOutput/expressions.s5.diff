@@ -1,11 +1,15 @@
 --- correctOutput/expressions.s5	2015-02-09 13:34:57.938167000 +0100
-+++ testOutput/expressions.s5	2015-02-11 21:01:50.409537000 +0100
-@@ -1,7 +1,7 @@
++++ testOutput/expressions.s5	2015-02-12 15:48:50.333102000 +0100
+@@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
-+  (nil)
    FUNCTION(VOID)("main")()
 -   (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
      DECLARATION_STATEMENT(INT)("b")()
+@@ -318,3 +317,4 @@
+       VARIABLE()("j")()
+       VARIABLE()("k")()
+       VARIABLE()("l")()
++  ()("`ó2")()

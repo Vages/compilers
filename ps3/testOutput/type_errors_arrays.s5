@@ -1,6 +1,5 @@
  PROGRAM()()
  FUNCTION_LIST()()
-  (nil)
   FUNCTION(VOID)("main")()
    STATEMENT_LIST()()
     DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()
@@ -47,3 +46,4 @@
      VARIABLE()("d")()
      EXPRESSION()(NEW)
       TYPE(ARRAY(FLOAT)[10][9][11])()
+  (nil)

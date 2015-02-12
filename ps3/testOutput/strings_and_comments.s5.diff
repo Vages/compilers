@@ -1,11 +1,15 @@
 --- correctOutput/strings_and_comments.s5	2015-02-09 13:34:58.168169000 +0100
-+++ testOutput/strings_and_comments.s5	2015-02-11 21:02:04.559661000 +0100
-@@ -1,7 +1,7 @@
++++ testOutput/strings_and_comments.s5	2015-02-12 15:49:04.585199000 +0100
+@@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
-+  (nil)
    FUNCTION(INT)("main")()
 -   (nil)
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
       EXPRESSION_LIST()()
+@@ -15,3 +14,4 @@
+     PRINT_STATEMENT()()
+      EXPRESSION_LIST()()
+       CONSTANT(STRING)("//Comment")()
++  (nil)
