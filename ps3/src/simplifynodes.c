@@ -151,14 +151,12 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 		return root;
 	}
 
-	Node_t* left_child = root->children[0];
-	int no_of_children_in_left = left_child->n_children;
-	int right_child_null = 0;
-	if (root -> children[1] == NULL){
-			right_child_null = 1;
-		}
-
-		Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+right_child_null));
+	if (root->n_children>1){
+		root = simplify_default(root, depth+1);
+		Node_t* left_child = root->children[0];
+		int no_of_children_in_left = left_child->n_children;
+		
+		Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+1));
 		
 		for(int i = 0; i<no_of_children_in_left; i++){
 			new_children[i] = left_child->children[i];
