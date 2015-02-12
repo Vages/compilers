@@ -132,10 +132,11 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 
 Node_t* simplify_list_with_null ( Node_t *root, int depth )
 {
+
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth+1);
+	//root = simplify_default(root, depth+1);
 /*
 	fprintf(stderr, "%d\n", root->n_children);
 	for (int i = 0; i<2; i++){
