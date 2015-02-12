@@ -162,12 +162,10 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 			new_children[i] = left_child->children[i];
 		}
 
-		if(right_child_null){
-			new_children[no_of_children_in_left] = root->children[1];
-		}
+		new_children[no_of_children_in_left] = root->children[1];
 
 		root->children = new_children;
-		root->n_children = no_of_children_in_left+right_child_null;
+		root->n_children = no_of_children_in_left+1;
 	}
 	return root;
 }
