@@ -201,8 +201,6 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 		root->children = new_children;
 		root->n_children = no_of_children_in_left+right_child_null;
 	}*/
-
-	return root;
 }
 
 
