@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_float.s5	2015-02-09 13:34:57.869167000 +0100
-+++ testOutput/arithmetic_float.s5	2015-02-13 13:56:34.869173000 +0100
++++ testOutput/arithmetic_float.s5	2015-02-13 14:00:10.541371000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

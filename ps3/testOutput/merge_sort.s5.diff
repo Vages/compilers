@@ -1,5 +1,5 @@
 --- correctOutput/merge_sort.s5	2015-02-09 13:34:58.096169000 +0100
-+++ testOutput/merge_sort.s5	2015-02-13 13:56:52.162269000 +0100
++++ testOutput/merge_sort.s5	2015-02-13 14:00:13.590394000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

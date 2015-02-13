@@ -1,5 +1,5 @@
 --- correctOutput/return.s8	2015-02-09 13:34:58.142173000 +0100
-+++ testOutput/return.s8	2015-02-13 13:56:53.786276000 +0100
++++ testOutput/return.s8	2015-02-13 14:00:14.215392000 +0100
 @@ -8,9 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

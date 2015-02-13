@@ -1,4 +1,4 @@
 --- correctOutput/hello.s7	2015-02-09 13:34:58.021168000 +0100
-+++ testOutput/hello.s7	2015-02-13 13:56:46.721237000 +0100
++++ testOutput/hello.s7	2015-02-13 14:00:12.671387000 +0100
 @@ -1 +0,0 @@
 -Add strings ("Hello, world!"), index: 0 
