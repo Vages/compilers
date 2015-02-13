@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s8	2015-02-09 13:34:58.089169000 +0100
-+++ testOutput/maxmin.s8	2015-02-13 15:35:36.981558000 +0100
++++ testOutput/maxmin.s8	2015-02-13 16:10:54.698905000 +0100
 @@ -8,11 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

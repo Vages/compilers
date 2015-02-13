@@ -1,5 +1,5 @@
 --- correctOutput/printing.s7	2015-02-09 13:34:58.132170000 +0100
-+++ testOutput/printing.s7	2015-02-13 15:35:37.280578000 +0100
++++ testOutput/printing.s7	2015-02-13 16:10:55.043914000 +0100
 @@ -1,4 +0,0 @@
 -Add strings ("True "), index: 0 
 -Add strings ("+-10 "), index: 1 
