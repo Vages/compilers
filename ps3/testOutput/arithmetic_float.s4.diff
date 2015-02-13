@@ -1,536 +1,549 @@
 --- correctOutput/arithmetic_float.s4	2015-02-09 13:34:57.867173000 +0100
-+++ testOutput/arithmetic_float.s4	2015-02-13 13:27:15.891417000 +0100
-@@ -2,394 +2,394 @@
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
--    Simplify STATEMENT_LIST 
-      Simplify STATEMENT_LIST 
--      Simplify STATEMENT_LIST 
-        Simplify STATEMENT_LIST 
--        Simplify STATEMENT_LIST 
-          Simplify STATEMENT_LIST 
--          Simplify STATEMENT_LIST 
-            Simplify STATEMENT_LIST 
--            Simplify STATEMENT_LIST 
-              Simplify STATEMENT_LIST 
--              Simplify STATEMENT_LIST 
-                Simplify STATEMENT_LIST 
--                Simplify STATEMENT_LIST 
-                  Simplify STATEMENT_LIST 
--                  Simplify STATEMENT_LIST 
-                    Simplify STATEMENT_LIST 
--                    Simplify STATEMENT_LIST 
-                      Simplify STATEMENT_LIST 
--                      Simplify STATEMENT_LIST 
-                        Simplify STATEMENT_LIST 
--                        Simplify STATEMENT_LIST 
-                          Simplify STATEMENT_LIST 
--                          Simplify STATEMENT_LIST 
-                            Simplify STATEMENT_LIST 
--                            Simplify STATEMENT_LIST 
-                              Simplify STATEMENT_LIST 
--                              Simplify STATEMENT_LIST 
-                                Simplify STATEMENT_LIST 
--                                Simplify STATEMENT_LIST 
-                                  Simplify STATEMENT_LIST 
--                                  Simplify STATEMENT_LIST 
-                                    Simplify STATEMENT_LIST 
--                                    Simplify STATEMENT_LIST 
-                                      Simplify STATEMENT_LIST 
--                                      Simplify STATEMENT_LIST 
-                                        Simplify STATEMENT_LIST 
--                                        Simplify STATEMENT_LIST 
-                                          Simplify STATEMENT_LIST 
--                                          Simplify STATEMENT_LIST 
-                                            Simplify STATEMENT_LIST 
--                                            Simplify STATEMENT_LIST 
-                                              Simplify STATEMENT_LIST 
--                                              Simplify STATEMENT_LIST 
-                                                Simplify STATEMENT_LIST 
--                                                Simplify STATEMENT_LIST 
-                                                  Simplify STATEMENT_LIST 
--                                                  Simplify STATEMENT 
++++ testOutput/arithmetic_float.s4	2015-02-13 13:53:32.867153000 +0100
+@@ -1,395 +1,395 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
++   Simplify FUNCTION 
++    Simplify TYPE 
+     Simplify STATEMENT_LIST 
+-     Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+-       Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+-         Simplify STATEMENT_LIST 
+           Simplify STATEMENT_LIST 
+-           Simplify STATEMENT_LIST 
+             Simplify STATEMENT_LIST 
+-             Simplify STATEMENT_LIST 
+               Simplify STATEMENT_LIST 
+-               Simplify STATEMENT_LIST 
+                 Simplify STATEMENT_LIST 
+-                 Simplify STATEMENT_LIST 
+                   Simplify STATEMENT_LIST 
+-                   Simplify STATEMENT_LIST 
+                     Simplify STATEMENT_LIST 
+-                     Simplify STATEMENT_LIST 
+                       Simplify STATEMENT_LIST 
+-                       Simplify STATEMENT_LIST 
+                         Simplify STATEMENT_LIST 
+-                         Simplify STATEMENT_LIST 
+                           Simplify STATEMENT_LIST 
+-                           Simplify STATEMENT_LIST 
+                             Simplify STATEMENT_LIST 
+-                             Simplify STATEMENT_LIST 
+                               Simplify STATEMENT_LIST 
+-                               Simplify STATEMENT_LIST 
+                                 Simplify STATEMENT_LIST 
+-                                 Simplify STATEMENT_LIST 
+                                   Simplify STATEMENT_LIST 
+-                                   Simplify STATEMENT_LIST 
+                                     Simplify STATEMENT_LIST 
+-                                     Simplify STATEMENT_LIST 
+                                       Simplify STATEMENT_LIST 
+-                                       Simplify STATEMENT_LIST 
+                                         Simplify STATEMENT_LIST 
+-                                         Simplify STATEMENT_LIST 
+                                           Simplify STATEMENT_LIST 
+-                                           Simplify STATEMENT_LIST 
+                                             Simplify STATEMENT_LIST 
+-                                             Simplify STATEMENT_LIST 
+                                               Simplify STATEMENT_LIST 
+-                                               Simplify STATEMENT_LIST 
+                                                 Simplify STATEMENT_LIST 
+-                                                 Simplify STATEMENT_LIST 
++                                                  Simplify STATEMENT_LIST 
++                                                    Simplify STATEMENT_LIST 
++                                                      Simplify STATEMENT_LIST 
++                                                        Simplify STATEMENT_LIST 
++                                                          Simplify STATEMENT_LIST 
++                                                            Simplify STATEMENT_LIST 
++                                                              Simplify STATEMENT_LIST 
++                                                                Simplify STATEMENT_LIST 
++                                                                  Simplify STATEMENT_LIST 
++                                                                    Simplify STATEMENT_LIST 
++                                                                      Simplify STATEMENT_LIST 
++                                                                        Simplify STATEMENT_LIST 
++                                                                          Simplify STATEMENT_LIST 
++                                                                            Simplify STATEMENT_LIST 
++                                                                              Simplify STATEMENT_LIST 
++                                                                                Simplify STATEMENT_LIST 
++                                                                                  Simplify STATEMENT_LIST 
++                                                                                    Simplify STATEMENT_LIST 
++                                                                                      Simplify STATEMENT_LIST 
++                                                                                        Simplify STATEMENT_LIST 
++                                                                                          Simplify STATEMENT_LIST 
++                                                                                            Simplify STATEMENT_LIST 
++                                                                                              Simplify STATEMENT_LIST 
++                                                                                                Simplify STATEMENT_LIST 
++                                                                                                  Simplify STATEMENT 
++                                                                                                    Simplify DECLARATION_STATEMENT 
++                                                                                                      Simplify TYPE 
++                                                                                                Simplify STATEMENT 
++                                                                                                  Simplify DECLARATION_STATEMENT 
++                                                                                                    Simplify TYPE 
++                                                                                              Simplify STATEMENT 
++                                                                                                Simplify DECLARATION_STATEMENT 
++                                                                                                  Simplify TYPE 
++                                                                                            Simplify STATEMENT 
++                                                                                              Simplify DECLARATION_STATEMENT 
++                                                                                                Simplify TYPE 
++                                                                                          Simplify STATEMENT 
++                                                                                            Simplify DECLARATION_STATEMENT 
++                                                                                              Simplify TYPE 
++                                                                                        Simplify STATEMENT 
++                                                                                          Simplify DECLARATION_STATEMENT 
++                                                                                            Simplify TYPE 
++                                                                                      Simplify STATEMENT 
++                                                                                         Simplify EXPRESSION (VARIABLE) 
++                                                                                         Simplify EXPRESSION (CONSTANT) 
++                                                                                    Simplify STATEMENT 
++                                                                                       Simplify EXPRESSION (VARIABLE) 
++                                                                                       Simplify EXPRESSION (CONSTANT) 
++                                                                                  Simplify STATEMENT 
++                                                                                     Simplify EXPRESSION (VARIABLE) 
++                                                                                     Simplify EXPRESSION (UMINUS) 
++                                                                                       Simplify EXPRESSION (CONSTANT) 
++                                                                                Simplify STATEMENT 
++                                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                                                   Simplify EXPRESSION (UMINUS) 
++                                                                                     Simplify EXPRESSION () 
++                                                                                       Simplify EXPRESSION (VARIABLE) 
++                                                                              Simplify STATEMENT 
++                                                                                 Simplify EXPRESSION (VARIABLE) 
++                                                                                 Simplify EXPRESSION (UMINUS) 
++                                                                                   Simplify EXPRESSION () 
++                                                                                     Simplify EXPRESSION (VARIABLE) 
++                                                                            Simplify STATEMENT 
++                                                                               Simplify EXPRESSION (VARIABLE) 
++                                                                               Simplify EXPRESSION (UMINUS) 
++                                                                                 Simplify EXPRESSION () 
++                                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                                          Simplify STATEMENT 
++                                                                             Simplify EXPRESSION_LIST 
++                                                                               Simplify EXPRESSION_LIST 
++                                                                                 Simplify EXPRESSION_LIST 
++                                                                                   Simplify EXPRESSION () 
++                                                                                     Simplify EXPRESSION (VARIABLE) 
++                                                                                 Simplify EXPRESSION () 
++                                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                                               Simplify EXPRESSION () 
++                                                                                 Simplify EXPRESSION (VARIABLE) 
++                                                                        Simplify STATEMENT 
++                                                                           Simplify EXPRESSION (VARIABLE) 
++                                                                           Simplify EXPRESSION (+) 
++                                                                             Simplify EXPRESSION () 
++                                                                               Simplify EXPRESSION (VARIABLE) 
++                                                                             Simplify EXPRESSION () 
++                                                                               Simplify EXPRESSION (VARIABLE) 
++                                                                      Simplify STATEMENT 
++                                                                         Simplify EXPRESSION (VARIABLE) 
++                                                                         Simplify EXPRESSION (+) 
++                                                                           Simplify EXPRESSION () 
++                                                                             Simplify EXPRESSION (VARIABLE) 
++                                                                           Simplify EXPRESSION () 
++                                                                             Simplify EXPRESSION (VARIABLE) 
++                                                                    Simplify STATEMENT 
++                                                                       Simplify EXPRESSION (VARIABLE) 
++                                                                       Simplify EXPRESSION (+) 
++                                                                         Simplify EXPRESSION () 
++                                                                           Simplify EXPRESSION (VARIABLE) 
++                                                                         Simplify EXPRESSION () 
++                                                                           Simplify EXPRESSION (VARIABLE) 
++                                                                  Simplify STATEMENT 
++                                                                     Simplify EXPRESSION_LIST 
++                                                                       Simplify EXPRESSION_LIST 
++                                                                         Simplify EXPRESSION_LIST 
++                                                                           Simplify EXPRESSION () 
++                                                                             Simplify EXPRESSION (VARIABLE) 
++                                                                         Simplify EXPRESSION () 
++                                                                           Simplify EXPRESSION (VARIABLE) 
++                                                                       Simplify EXPRESSION () 
++                                                                         Simplify EXPRESSION (VARIABLE) 
++                                                                Simplify STATEMENT 
++                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                                   Simplify EXPRESSION (-) 
++                                                                     Simplify EXPRESSION () 
++                                                                       Simplify EXPRESSION (VARIABLE) 
++                                                                     Simplify EXPRESSION () 
++                                                                       Simplify EXPRESSION (VARIABLE) 
++                                                              Simplify STATEMENT 
++                                                                 Simplify EXPRESSION (VARIABLE) 
++                                                                 Simplify EXPRESSION (-) 
++                                                                   Simplify EXPRESSION () 
++                                                                     Simplify EXPRESSION (VARIABLE) 
++                                                                   Simplify EXPRESSION () 
++                                                                     Simplify EXPRESSION (VARIABLE) 
++                                                            Simplify STATEMENT 
++                                                               Simplify EXPRESSION (VARIABLE) 
++                                                               Simplify EXPRESSION (-) 
++                                                                 Simplify EXPRESSION () 
++                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                                 Simplify EXPRESSION () 
++                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                          Simplify STATEMENT 
++                                                             Simplify EXPRESSION_LIST 
++                                                               Simplify EXPRESSION_LIST 
++                                                                 Simplify EXPRESSION_LIST 
++                                                                   Simplify EXPRESSION () 
++                                                                     Simplify EXPRESSION (VARIABLE) 
++                                                                 Simplify EXPRESSION () 
++                                                                   Simplify EXPRESSION (VARIABLE) 
++                                                               Simplify EXPRESSION () 
++                                                                 Simplify EXPRESSION (VARIABLE) 
++                                                        Simplify STATEMENT 
++                                                           Simplify EXPRESSION (VARIABLE) 
++                                                           Simplify EXPRESSION (-) 
++                                                             Simplify EXPRESSION () 
++                                                               Simplify EXPRESSION (VARIABLE) 
++                                                             Simplify EXPRESSION (UMINUS) 
++                                                               Simplify EXPRESSION () 
++                                                                 Simplify EXPRESSION (VARIABLE) 
++                                                      Simplify STATEMENT 
++                                                         Simplify EXPRESSION (VARIABLE) 
++                                                         Simplify EXPRESSION (-) 
++                                                           Simplify EXPRESSION () 
++                                                             Simplify EXPRESSION (VARIABLE) 
++                                                           Simplify EXPRESSION (UMINUS) 
++                                                             Simplify EXPRESSION () 
++                                                               Simplify EXPRESSION (VARIABLE) 
++                                                    Simplify STATEMENT 
++                                                       Simplify EXPRESSION (VARIABLE) 
++                                                       Simplify EXPRESSION (-) 
++                                                         Simplify EXPRESSION () 
++                                                           Simplify EXPRESSION (VARIABLE) 
++                                                         Simplify EXPRESSION (UMINUS) 
++                                                           Simplify EXPRESSION () 
++                                                             Simplify EXPRESSION (VARIABLE) 
+                                                   Simplify STATEMENT 
 -                                                   Simplify DECLARATION_STATEMENT 
 -                                                    Simplify TYPE 
-+                                                   Simplify STATEMENT_LIST 
-+                                                     Simplify STATEMENT_LIST 
-+                                                       Simplify STATEMENT_LIST 
-+                                                         Simplify STATEMENT_LIST 
-+                                                           Simplify STATEMENT_LIST 
-+                                                             Simplify STATEMENT_LIST 
-+                                                               Simplify STATEMENT_LIST 
-+                                                                 Simplify STATEMENT_LIST 
-+                                                                   Simplify STATEMENT_LIST 
-+                                                                     Simplify STATEMENT_LIST 
-+                                                                       Simplify STATEMENT_LIST 
-+                                                                         Simplify STATEMENT_LIST 
-+                                                                           Simplify STATEMENT_LIST 
-+                                                                             Simplify STATEMENT_LIST 
-+                                                                               Simplify STATEMENT_LIST 
-+                                                                                 Simplify STATEMENT_LIST 
-+                                                                                   Simplify STATEMENT_LIST 
-+                                                                                     Simplify STATEMENT_LIST 
-+                                                                                       Simplify STATEMENT_LIST 
-+                                                                                         Simplify STATEMENT_LIST 
-+                                                                                           Simplify STATEMENT_LIST 
-+                                                                                             Simplify STATEMENT_LIST 
-+                                                                                               Simplify STATEMENT_LIST 
-+                                                                                                 Simplify STATEMENT 
-+                                                                                                   Simplify DECLARATION_STATEMENT 
-+                                                                                                     Simplify TYPE 
-+                                                                                               Simplify STATEMENT 
-+                                                                                                 Simplify DECLARATION_STATEMENT 
-+                                                                                                   Simplify TYPE 
-+                                                                                             Simplify STATEMENT 
-+                                                                                               Simplify DECLARATION_STATEMENT 
-+                                                                                                 Simplify TYPE 
-+                                                                                           Simplify STATEMENT 
-+                                                                                             Simplify DECLARATION_STATEMENT 
-+                                                                                               Simplify TYPE 
-+                                                                                         Simplify STATEMENT 
-+                                                                                           Simplify DECLARATION_STATEMENT 
-+                                                                                             Simplify TYPE 
-+                                                                                       Simplify STATEMENT 
-+                                                                                         Simplify DECLARATION_STATEMENT 
-+                                                                                           Simplify TYPE 
-+                                                                                     Simplify STATEMENT 
-+                                                                                        Simplify EXPRESSION (VARIABLE) 
-+                                                                                        Simplify EXPRESSION (CONSTANT) 
-+                                                                                   Simplify STATEMENT 
-+                                                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                                                      Simplify EXPRESSION (CONSTANT) 
-+                                                                                 Simplify STATEMENT 
-+                                                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                                                    Simplify EXPRESSION (UMINUS) 
-+                                                                                      Simplify EXPRESSION (CONSTANT) 
-+                                                                               Simplify STATEMENT 
-+                                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                                                  Simplify EXPRESSION (UMINUS) 
-+                                                                                    Simplify EXPRESSION () 
-+                                                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                                             Simplify STATEMENT 
-+                                                                                Simplify EXPRESSION (VARIABLE) 
-+                                                                                Simplify EXPRESSION (UMINUS) 
-+                                                                                  Simplify EXPRESSION () 
-+                                                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                                           Simplify STATEMENT 
-+                                                                              Simplify EXPRESSION (VARIABLE) 
-+                                                                              Simplify EXPRESSION (UMINUS) 
-+                                                                                Simplify EXPRESSION () 
-+                                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                                         Simplify STATEMENT 
-+                                                                            Simplify EXPRESSION_LIST 
-+                                                                              Simplify EXPRESSION_LIST 
-+                                                                                Simplify EXPRESSION_LIST 
-+                                                                                  Simplify EXPRESSION () 
-+                                                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                                                Simplify EXPRESSION () 
-+                                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                                              Simplify EXPRESSION () 
-+                                                                                Simplify EXPRESSION (VARIABLE) 
-+                                                                       Simplify STATEMENT 
-+                                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                                          Simplify EXPRESSION (+) 
-+                                                                            Simplify EXPRESSION () 
-+                                                                              Simplify EXPRESSION (VARIABLE) 
-+                                                                            Simplify EXPRESSION () 
-+                                                                              Simplify EXPRESSION (VARIABLE) 
-+                                                                     Simplify STATEMENT 
-+                                                                        Simplify EXPRESSION (VARIABLE) 
-+                                                                        Simplify EXPRESSION (+) 
-+                                                                          Simplify EXPRESSION () 
-+                                                                            Simplify EXPRESSION (VARIABLE) 
-+                                                                          Simplify EXPRESSION () 
-+                                                                            Simplify EXPRESSION (VARIABLE) 
-+                                                                   Simplify STATEMENT 
-+                                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                                      Simplify EXPRESSION (+) 
-+                                                                        Simplify EXPRESSION () 
-+                                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                                        Simplify EXPRESSION () 
-+                                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                                 Simplify STATEMENT 
-+                                                                    Simplify EXPRESSION_LIST 
-+                                                                      Simplify EXPRESSION_LIST 
-+                                                                        Simplify EXPRESSION_LIST 
-+                                                                          Simplify EXPRESSION () 
-+                                                                            Simplify EXPRESSION (VARIABLE) 
-+                                                                        Simplify EXPRESSION () 
-+                                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                                      Simplify EXPRESSION () 
-+                                                                        Simplify EXPRESSION (VARIABLE) 
-+                                                               Simplify STATEMENT 
-+                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                                  Simplify EXPRESSION (-) 
-+                                                                    Simplify EXPRESSION () 
-+                                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                                    Simplify EXPRESSION () 
-+                                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                             Simplify STATEMENT 
-+                                                                Simplify EXPRESSION (VARIABLE) 
-+                                                                Simplify EXPRESSION (-) 
-+                                                                  Simplify EXPRESSION () 
-+                                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                                  Simplify EXPRESSION () 
-+                                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                           Simplify STATEMENT 
-+                                                              Simplify EXPRESSION (VARIABLE) 
-+                                                              Simplify EXPRESSION (-) 
-+                                                                Simplify EXPRESSION () 
-+                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                                Simplify EXPRESSION () 
-+                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                         Simplify STATEMENT 
-+                                                            Simplify EXPRESSION_LIST 
-+                                                              Simplify EXPRESSION_LIST 
-+                                                                Simplify EXPRESSION_LIST 
-+                                                                  Simplify EXPRESSION () 
-+                                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                                Simplify EXPRESSION () 
-+                                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                              Simplify EXPRESSION () 
-+                                                                Simplify EXPRESSION (VARIABLE) 
-+                                                       Simplify STATEMENT 
-+                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                          Simplify EXPRESSION (-) 
-+                                                            Simplify EXPRESSION () 
-+                                                              Simplify EXPRESSION (VARIABLE) 
-+                                                            Simplify EXPRESSION (UMINUS) 
-+                                                              Simplify EXPRESSION () 
-+                                                                Simplify EXPRESSION (VARIABLE) 
-+                                                     Simplify STATEMENT 
-+                                                        Simplify EXPRESSION (VARIABLE) 
-+                                                        Simplify EXPRESSION (-) 
-+                                                          Simplify EXPRESSION () 
-+                                                            Simplify EXPRESSION (VARIABLE) 
-+                                                          Simplify EXPRESSION (UMINUS) 
-+                                                            Simplify EXPRESSION () 
-+                                                              Simplify EXPRESSION (VARIABLE) 
-+                                                   Simplify STATEMENT 
-+                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                      Simplify EXPRESSION (-) 
-+                                                        Simplify EXPRESSION () 
-+                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                        Simplify EXPRESSION (UMINUS) 
-+                                                          Simplify EXPRESSION () 
-+                                                            Simplify EXPRESSION (VARIABLE) 
-                                                  Simplify STATEMENT 
+-                                                 Simplify STATEMENT 
 -                                                  Simplify DECLARATION_STATEMENT 
 -                                                   Simplify TYPE 
--                                                Simplify STATEMENT 
++                                                     Simplify EXPRESSION_LIST 
++                                                       Simplify EXPRESSION_LIST 
++                                                         Simplify EXPRESSION_LIST 
++                                                           Simplify EXPRESSION () 
++                                                             Simplify EXPRESSION (VARIABLE) 
++                                                         Simplify EXPRESSION () 
++                                                           Simplify EXPRESSION (VARIABLE) 
++                                                       Simplify EXPRESSION () 
++                                                         Simplify EXPRESSION (VARIABLE) 
+                                                 Simplify STATEMENT 
 -                                                 Simplify DECLARATION_STATEMENT 
 -                                                  Simplify TYPE 
-+                                                    Simplify EXPRESSION_LIST 
-+                                                      Simplify EXPRESSION_LIST 
-+                                                        Simplify EXPRESSION_LIST 
-+                                                          Simplify EXPRESSION () 
-+                                                            Simplify EXPRESSION (VARIABLE) 
-+                                                        Simplify EXPRESSION () 
-+                                                          Simplify EXPRESSION (VARIABLE) 
-+                                                      Simplify EXPRESSION () 
-+                                                        Simplify EXPRESSION (VARIABLE) 
-                                                Simplify STATEMENT 
+-                                               Simplify STATEMENT 
 -                                                Simplify DECLARATION_STATEMENT 
 -                                                 Simplify TYPE 
--                                              Simplify STATEMENT 
++                                                   Simplify EXPRESSION (VARIABLE) 
++                                                   Simplify EXPRESSION (*) 
++                                                     Simplify EXPRESSION () 
++                                                       Simplify EXPRESSION (VARIABLE) 
++                                                     Simplify EXPRESSION () 
++                                                       Simplify EXPRESSION (VARIABLE) 
+                                               Simplify STATEMENT 
 -                                               Simplify DECLARATION_STATEMENT 
 -                                                Simplify TYPE 
-+                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                  Simplify EXPRESSION (*) 
-+                                                    Simplify EXPRESSION () 
-+                                                      Simplify EXPRESSION (VARIABLE) 
-+                                                    Simplify EXPRESSION () 
-+                                                      Simplify EXPRESSION (VARIABLE) 
-                                              Simplify STATEMENT 
+-                                             Simplify STATEMENT 
 -                                              Simplify DECLARATION_STATEMENT 
 -                                               Simplify TYPE 
--                                            Simplify STATEMENT 
++                                                 Simplify EXPRESSION (VARIABLE) 
++                                                 Simplify EXPRESSION (*) 
++                                                   Simplify EXPRESSION () 
++                                                     Simplify EXPRESSION (VARIABLE) 
++                                                   Simplify EXPRESSION () 
++                                                     Simplify EXPRESSION (VARIABLE) 
+                                             Simplify STATEMENT 
 -                                              Simplify EXPRESSION (VARIABLE) 
 -                                              Simplify EXPRESSION (CONSTANT) 
-+                                                Simplify EXPRESSION (VARIABLE) 
-+                                                Simplify EXPRESSION (*) 
-+                                                  Simplify EXPRESSION () 
-+                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                  Simplify EXPRESSION () 
-+                                                    Simplify EXPRESSION (VARIABLE) 
-                                            Simplify STATEMENT 
+-                                           Simplify STATEMENT 
 -                                             Simplify EXPRESSION (VARIABLE) 
 -                                             Simplify EXPRESSION (CONSTANT) 
--                                          Simplify STATEMENT 
++                                               Simplify EXPRESSION (VARIABLE) 
++                                               Simplify EXPRESSION (*) 
++                                                 Simplify EXPRESSION () 
++                                                   Simplify EXPRESSION (VARIABLE) 
++                                                 Simplify EXPRESSION () 
++                                                   Simplify EXPRESSION (VARIABLE) 
+                                           Simplify STATEMENT 
 -                                            Simplify EXPRESSION (VARIABLE) 
 -                                            Simplify EXPRESSION (UMINUS) 
 -                                             Simplify EXPRESSION (CONSTANT) 
-+                                              Simplify EXPRESSION (VARIABLE) 
-+                                              Simplify EXPRESSION (*) 
-+                                                Simplify EXPRESSION () 
-+                                                  Simplify EXPRESSION (VARIABLE) 
-+                                                Simplify EXPRESSION () 
-+                                                  Simplify EXPRESSION (VARIABLE) 
-                                          Simplify STATEMENT 
--                                           Simplify EXPRESSION (VARIABLE) 
+-                                         Simplify STATEMENT 
++                                             Simplify EXPRESSION_LIST 
++                                               Simplify EXPRESSION_LIST 
++                                                 Simplify EXPRESSION_LIST 
++                                                   Simplify EXPRESSION () 
++                                                     Simplify EXPRESSION (VARIABLE) 
++                                                 Simplify EXPRESSION () 
++                                                   Simplify EXPRESSION (VARIABLE) 
++                                               Simplify EXPRESSION () 
++                                                 Simplify EXPRESSION (VARIABLE) 
++                                        Simplify STATEMENT 
+                                            Simplify EXPRESSION (VARIABLE) 
 -                                           Simplify EXPRESSION (UMINUS) 
 -                                            Simplify EXPRESSION () 
--                                             Simplify EXPRESSION (VARIABLE) 
++                                           Simplify EXPRESSION (/) 
++                                             Simplify EXPRESSION () 
++                                               Simplify EXPRESSION (VARIABLE) 
++                                             Simplify EXPRESSION () 
++                                               Simplify EXPRESSION (VARIABLE) 
++                                      Simplify STATEMENT 
++                                         Simplify EXPRESSION (VARIABLE) 
++                                         Simplify EXPRESSION (/) 
++                                           Simplify EXPRESSION () 
+                                              Simplify EXPRESSION (VARIABLE) 
 -                                        Simplify STATEMENT 
 -                                          Simplify EXPRESSION (VARIABLE) 
 -                                          Simplify EXPRESSION (UMINUS) 
--                                           Simplify EXPRESSION () 
+                                            Simplify EXPRESSION () 
 -                                            Simplify EXPRESSION (VARIABLE) 
-+                                            Simplify EXPRESSION_LIST 
-+                                              Simplify EXPRESSION_LIST 
-+                                                Simplify EXPRESSION_LIST 
-+                                                  Simplify EXPRESSION () 
-+                                                    Simplify EXPRESSION (VARIABLE) 
-+                                                Simplify EXPRESSION () 
-+                                                  Simplify EXPRESSION (VARIABLE) 
-+                                              Simplify EXPRESSION () 
-+                                                Simplify EXPRESSION (VARIABLE) 
-                                        Simplify STATEMENT 
+-                                       Simplify STATEMENT 
 -                                         Simplify EXPRESSION (VARIABLE) 
 -                                         Simplify EXPRESSION (UMINUS) 
-+                                          Simplify EXPRESSION (VARIABLE) 
-+                                          Simplify EXPRESSION (/) 
-+                                            Simplify EXPRESSION () 
-+                                              Simplify EXPRESSION (VARIABLE) 
-+                                            Simplify EXPRESSION () 
-+                                              Simplify EXPRESSION (VARIABLE) 
-+                                     Simplify STATEMENT 
-+                                        Simplify EXPRESSION (VARIABLE) 
-+                                        Simplify EXPRESSION (/) 
-                                           Simplify EXPRESSION () 
--                                           Simplify EXPRESSION (VARIABLE) 
+-                                          Simplify EXPRESSION () 
++                                             Simplify EXPRESSION (VARIABLE) 
++                                    Simplify STATEMENT 
++                                       Simplify EXPRESSION (VARIABLE) 
++                                       Simplify EXPRESSION (/) 
++                                         Simplify EXPRESSION () 
+                                            Simplify EXPRESSION (VARIABLE) 
 -                                      Simplify STATEMENT 
 -                                        Simplify EXPRESSION_LIST 
--                                         Simplify EXPRESSION_LIST 
++                                         Simplify EXPRESSION () 
++                                           Simplify EXPRESSION (VARIABLE) 
++                                  Simplify STATEMENT 
++                                     Simplify EXPRESSION_LIST 
++                                       Simplify EXPRESSION_LIST 
+                                          Simplify EXPRESSION_LIST 
 -                                          Simplify EXPRESSION_LIST 
--                                           Simplify EXPRESSION () 
-                                             Simplify EXPRESSION (VARIABLE) 
-                                           Simplify EXPRESSION () 
+                                            Simplify EXPRESSION () 
+-                                            Simplify EXPRESSION (VARIABLE) 
+-                                          Simplify EXPRESSION () 
 -                                           Simplify EXPRESSION (VARIABLE) 
--                                         Simplify EXPRESSION () 
-+                                            Simplify EXPRESSION (VARIABLE) 
-+                                   Simplify STATEMENT 
-+                                      Simplify EXPRESSION (VARIABLE) 
-+                                      Simplify EXPRESSION (/) 
-+                                        Simplify EXPRESSION () 
-                                           Simplify EXPRESSION (VARIABLE) 
++                                             Simplify EXPRESSION (VARIABLE) 
+                                          Simplify EXPRESSION () 
+-                                          Simplify EXPRESSION (VARIABLE) 
 -                                     Simplify STATEMENT 
 -                                       Simplify EXPRESSION (VARIABLE) 
 -                                       Simplify EXPRESSION (+) 
-                                         Simplify EXPRESSION () 
+-                                        Simplify EXPRESSION () 
 -                                         Simplify EXPRESSION (VARIABLE) 
-+                                          Simplify EXPRESSION (VARIABLE) 
-+                                 Simplify STATEMENT 
-+                                    Simplify EXPRESSION_LIST 
-+                                      Simplify EXPRESSION_LIST 
-+                                        Simplify EXPRESSION_LIST 
-+                                          Simplify EXPRESSION () 
-+                                            Simplify EXPRESSION (VARIABLE) 
-                                         Simplify EXPRESSION () 
--                                         Simplify EXPRESSION (VARIABLE) 
+-                                        Simplify EXPRESSION () 
++                                           Simplify EXPRESSION (VARIABLE) 
++                                       Simplify EXPRESSION () 
+                                          Simplify EXPRESSION (VARIABLE) 
 -                                    Simplify STATEMENT 
 -                                      Simplify EXPRESSION (VARIABLE) 
 -                                      Simplify EXPRESSION (+) 
--                                       Simplify EXPRESSION () 
++                                Simplify STATEMENT 
++                                   Simplify EXPRESSION (VARIABLE) 
++                                   Simplify EXPRESSION (+) 
++                                     Simplify EXPRESSION (+) 
+                                        Simplify EXPRESSION () 
 -                                        Simplify EXPRESSION (VARIABLE) 
--                                       Simplify EXPRESSION () 
++                                         Simplify EXPRESSION (VARIABLE) 
+                                        Simplify EXPRESSION () 
 -                                        Simplify EXPRESSION (VARIABLE) 
 -                                   Simplify STATEMENT 
 -                                     Simplify EXPRESSION (VARIABLE) 
 -                                     Simplify EXPRESSION (+) 
-+                                          Simplify EXPRESSION (VARIABLE) 
-                                       Simplify EXPRESSION () 
+-                                      Simplify EXPRESSION () 
 -                                       Simplify EXPRESSION (VARIABLE) 
-+                                        Simplify EXPRESSION (VARIABLE) 
-+                               Simplify STATEMENT 
-+                                  Simplify EXPRESSION (VARIABLE) 
-+                                  Simplify EXPRESSION (+) 
-+                                    Simplify EXPRESSION (+) 
-                                       Simplify EXPRESSION () 
--                                       Simplify EXPRESSION (VARIABLE) 
+-                                      Simplify EXPRESSION () 
++                                         Simplify EXPRESSION (VARIABLE) 
++                                     Simplify EXPRESSION () 
+                                        Simplify EXPRESSION (VARIABLE) 
 -                                  Simplify STATEMENT 
 -                                    Simplify EXPRESSION_LIST 
 -                                     Simplify EXPRESSION_LIST 
 -                                      Simplify EXPRESSION_LIST 
 -                                       Simplify EXPRESSION () 
-                                         Simplify EXPRESSION (VARIABLE) 
-                                       Simplify EXPRESSION () 
--                                       Simplify EXPRESSION (VARIABLE) 
--                                     Simplify EXPRESSION () 
-+                                        Simplify EXPRESSION (VARIABLE) 
-+                                    Simplify EXPRESSION () 
-                                       Simplify EXPRESSION (VARIABLE) 
+-                                        Simplify EXPRESSION (VARIABLE) 
+-                                      Simplify EXPRESSION () 
++                              Simplify STATEMENT 
++                                 Simplify EXPRESSION (VARIABLE) 
++                                 Simplify EXPRESSION (-) 
++                                   Simplify EXPRESSION (-) 
++                                     Simplify EXPRESSION () 
+                                        Simplify EXPRESSION (VARIABLE) 
+                                      Simplify EXPRESSION () 
+-                                      Simplify EXPRESSION (VARIABLE) 
 -                                 Simplify STATEMENT 
 -                                   Simplify EXPRESSION (VARIABLE) 
 -                                   Simplify EXPRESSION (-) 
-+                             Simplify STATEMENT 
-+                                Simplify EXPRESSION (VARIABLE) 
-+                                Simplify EXPRESSION (-) 
-+                                  Simplify EXPRESSION (-) 
-                                     Simplify EXPRESSION () 
+-                                    Simplify EXPRESSION () 
 -                                     Simplify EXPRESSION (VARIABLE) 
-+                                      Simplify EXPRESSION (VARIABLE) 
-                                     Simplify EXPRESSION () 
+-                                    Simplify EXPRESSION () 
 -                                     Simplify EXPRESSION (VARIABLE) 
 -                                Simplify STATEMENT 
 -                                  Simplify EXPRESSION (VARIABLE) 
 -                                  Simplify EXPRESSION (-) 
 -                                   Simplify EXPRESSION () 
 -                                    Simplify EXPRESSION (VARIABLE) 
--                                   Simplify EXPRESSION () 
++                                       Simplify EXPRESSION (VARIABLE) 
+                                    Simplify EXPRESSION () 
 -                                    Simplify EXPRESSION (VARIABLE) 
 -                               Simplify STATEMENT 
 -                                 Simplify EXPRESSION (VARIABLE) 
 -                                 Simplify EXPRESSION (-) 
 -                                  Simplify EXPRESSION () 
 -                                   Simplify EXPRESSION (VARIABLE) 
-+                                      Simplify EXPRESSION (VARIABLE) 
-                                   Simplify EXPRESSION () 
+-                                  Simplify EXPRESSION () 
 -                                   Simplify EXPRESSION (VARIABLE) 
 -                              Simplify STATEMENT 
 -                                Simplify EXPRESSION_LIST 
--                                 Simplify EXPRESSION_LIST 
++                                     Simplify EXPRESSION (VARIABLE) 
++                            Simplify STATEMENT 
++                               Simplify EXPRESSION_LIST 
+                                  Simplify EXPRESSION_LIST 
 -                                  Simplify EXPRESSION_LIST 
--                                   Simplify EXPRESSION () 
-                                     Simplify EXPRESSION (VARIABLE) 
-+                           Simplify STATEMENT 
-+                              Simplify EXPRESSION_LIST 
-+                                Simplify EXPRESSION_LIST 
-                                   Simplify EXPRESSION () 
--                                   Simplify EXPRESSION (VARIABLE) 
--                                 Simplify EXPRESSION () 
-+                                    Simplify EXPRESSION (VARIABLE) 
-+                                Simplify EXPRESSION () 
-                                   Simplify EXPRESSION (VARIABLE) 
+                                    Simplify EXPRESSION () 
+-                                    Simplify EXPRESSION (VARIABLE) 
+-                                  Simplify EXPRESSION () 
++                                     Simplify EXPRESSION (VARIABLE) 
++                                 Simplify EXPRESSION () 
+                                    Simplify EXPRESSION (VARIABLE) 
++                          Simplify STATEMENT 
++                             Simplify EXPRESSION (VARIABLE) 
++                             Simplify EXPRESSION (*) 
++                               Simplify EXPRESSION (*) 
+                                  Simplify EXPRESSION () 
+-                                  Simplify EXPRESSION (VARIABLE) 
 -                             Simplify STATEMENT 
 -                               Simplify EXPRESSION (VARIABLE) 
 -                               Simplify EXPRESSION (-) 
-+                         Simplify STATEMENT 
-+                            Simplify EXPRESSION (VARIABLE) 
-+                            Simplify EXPRESSION (*) 
-+                              Simplify EXPRESSION (*) 
-                                 Simplify EXPRESSION () 
+-                                Simplify EXPRESSION () 
 -                                 Simplify EXPRESSION (VARIABLE) 
 -                                Simplify EXPRESSION (UMINUS) 
--                                 Simplify EXPRESSION () 
-                                   Simplify EXPRESSION (VARIABLE) 
++                                   Simplify EXPRESSION (VARIABLE) 
+                                  Simplify EXPRESSION () 
+-                                  Simplify EXPRESSION (VARIABLE) 
 -                            Simplify STATEMENT 
 -                              Simplify EXPRESSION (VARIABLE) 
 -                              Simplify EXPRESSION (-) 
--                               Simplify EXPRESSION () 
++                                   Simplify EXPRESSION (VARIABLE) 
+                                Simplify EXPRESSION () 
 -                                Simplify EXPRESSION (VARIABLE) 
 -                               Simplify EXPRESSION (UMINUS) 
-                                 Simplify EXPRESSION () 
--                                 Simplify EXPRESSION (VARIABLE) 
+-                                Simplify EXPRESSION () 
+                                  Simplify EXPRESSION (VARIABLE) 
 -                           Simplify STATEMENT 
 -                             Simplify EXPRESSION (VARIABLE) 
 -                             Simplify EXPRESSION (-) 
-+                                  Simplify EXPRESSION (VARIABLE) 
-                               Simplify EXPRESSION () 
+-                              Simplify EXPRESSION () 
 -                               Simplify EXPRESSION (VARIABLE) 
 -                              Simplify EXPRESSION (UMINUS) 
--                               Simplify EXPRESSION () 
-                                 Simplify EXPRESSION (VARIABLE) 
++                        Simplify STATEMENT 
++                           Simplify EXPRESSION (VARIABLE) 
++                           Simplify EXPRESSION (/) 
++                             Simplify EXPRESSION (/) 
+                                Simplify EXPRESSION () 
+-                                Simplify EXPRESSION (VARIABLE) 
 -                          Simplify STATEMENT 
 -                            Simplify EXPRESSION_LIST 
 -                             Simplify EXPRESSION_LIST 
 -                              Simplify EXPRESSION_LIST 
--                               Simplify EXPRESSION () 
-+                       Simplify STATEMENT 
-+                          Simplify EXPRESSION (VARIABLE) 
-+                          Simplify EXPRESSION (/) 
-+                            Simplify EXPRESSION (/) 
-+                              Simplify EXPRESSION () 
-                                 Simplify EXPRESSION (VARIABLE) 
-                               Simplify EXPRESSION () 
--                               Simplify EXPRESSION (VARIABLE) 
--                             Simplify EXPRESSION () 
++                                 Simplify EXPRESSION (VARIABLE) 
+                                Simplify EXPRESSION () 
+-                                Simplify EXPRESSION (VARIABLE) 
+-                              Simplify EXPRESSION () 
++                                 Simplify EXPRESSION (VARIABLE) 
++                             Simplify EXPRESSION () 
+                                Simplify EXPRESSION (VARIABLE) 
++                      Simplify STATEMENT 
++                         Simplify EXPRESSION_LIST 
++                           Simplify EXPRESSION_LIST 
+                              Simplify EXPRESSION () 
 -                              Simplify EXPRESSION (VARIABLE) 
 -                         Simplify STATEMENT 
 -                           Simplify EXPRESSION (VARIABLE) 
 -                           Simplify EXPRESSION (*) 
-+                                Simplify EXPRESSION (VARIABLE) 
-                             Simplify EXPRESSION () 
+-                            Simplify EXPRESSION () 
 -                             Simplify EXPRESSION (VARIABLE) 
-+                              Simplify EXPRESSION (VARIABLE) 
-+                     Simplify STATEMENT 
-+                        Simplify EXPRESSION_LIST 
-+                          Simplify EXPRESSION_LIST 
-                             Simplify EXPRESSION () 
+-                            Simplify EXPRESSION () 
 -                             Simplify EXPRESSION (VARIABLE) 
 -                        Simplify STATEMENT 
 -                          Simplify EXPRESSION (VARIABLE) 
 -                          Simplify EXPRESSION (*) 
 -                           Simplify EXPRESSION () 
 -                            Simplify EXPRESSION (VARIABLE) 
--                           Simplify EXPRESSION () 
++                               Simplify EXPRESSION (VARIABLE) 
+                            Simplify EXPRESSION () 
 -                            Simplify EXPRESSION (VARIABLE) 
 -                       Simplify STATEMENT 
 -                         Simplify EXPRESSION (VARIABLE) 
 -                         Simplify EXPRESSION (*) 
-+                              Simplify EXPRESSION (VARIABLE) 
-                           Simplify EXPRESSION () 
+-                          Simplify EXPRESSION () 
 -                           Simplify EXPRESSION (VARIABLE) 
-+                            Simplify EXPRESSION (VARIABLE) 
-+                   Simplify STATEMENT 
-+                      Simplify EXPRESSION (VARIABLE) 
-+                      Simplify EXPRESSION (+) 
-+                        Simplify EXPRESSION () 
-+                          Simplify EXPRESSION (VARIABLE) 
-+                        Simplify EXPRESSION (*) 
-                           Simplify EXPRESSION () 
--                           Simplify EXPRESSION (VARIABLE) 
+-                          Simplify EXPRESSION () 
++                             Simplify EXPRESSION (VARIABLE) 
++                    Simplify STATEMENT 
++                       Simplify EXPRESSION (VARIABLE) 
++                       Simplify EXPRESSION (+) 
++                         Simplify EXPRESSION () 
+                            Simplify EXPRESSION (VARIABLE) 
 -                      Simplify STATEMENT 
 -                        Simplify EXPRESSION_LIST 
 -                         Simplify EXPRESSION_LIST 
 -                          Simplify EXPRESSION_LIST 
--                           Simplify EXPRESSION () 
-                             Simplify EXPRESSION (VARIABLE) 
-                           Simplify EXPRESSION () 
--                           Simplify EXPRESSION (VARIABLE) 
--                         Simplify EXPRESSION () 
++                         Simplify EXPRESSION (*) 
++                           Simplify EXPRESSION () 
++                             Simplify EXPRESSION (VARIABLE) 
+                            Simplify EXPRESSION () 
+-                            Simplify EXPRESSION (VARIABLE) 
+-                          Simplify EXPRESSION () 
++                             Simplify EXPRESSION (VARIABLE) 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION (VARIABLE) 
++                     Simplify EXPRESSION (+) 
++                       Simplify EXPRESSION (*) 
++                         Simplify EXPRESSION () 
+                            Simplify EXPRESSION (VARIABLE) 
+                          Simplify EXPRESSION () 
 -                          Simplify EXPRESSION (VARIABLE) 
 -                     Simplify STATEMENT 
 -                       Simplify EXPRESSION (VARIABLE) 
 -                       Simplify EXPRESSION (/) 
-+                            Simplify EXPRESSION (VARIABLE) 
-+                 Simplify STATEMENT 
-+                    Simplify EXPRESSION (VARIABLE) 
-+                    Simplify EXPRESSION (+) 
-+                      Simplify EXPRESSION (*) 
-                         Simplify EXPRESSION () 
+-                        Simplify EXPRESSION () 
 -                         Simplify EXPRESSION (VARIABLE) 
-+                          Simplify EXPRESSION (VARIABLE) 
-                         Simplify EXPRESSION () 
--                         Simplify EXPRESSION (VARIABLE) 
+-                        Simplify EXPRESSION () 
++                           Simplify EXPRESSION (VARIABLE) 
++                       Simplify EXPRESSION () 
+                          Simplify EXPRESSION (VARIABLE) 
 -                    Simplify STATEMENT 
 -                      Simplify EXPRESSION (VARIABLE) 
 -                      Simplify EXPRESSION (/) 
--                       Simplify EXPRESSION () 
++                Simplify STATEMENT 
++                   Simplify EXPRESSION (VARIABLE) 
++                   Simplify EXPRESSION (+) 
++                     Simplify EXPRESSION (/) 
+                        Simplify EXPRESSION () 
 -                        Simplify EXPRESSION (VARIABLE) 
--                       Simplify EXPRESSION () 
++                         Simplify EXPRESSION (VARIABLE) 
+                        Simplify EXPRESSION () 
 -                        Simplify EXPRESSION (VARIABLE) 
 -                   Simplify STATEMENT 
 -                     Simplify EXPRESSION (VARIABLE) 
 -                     Simplify EXPRESSION (/) 
-+                          Simplify EXPRESSION (VARIABLE) 
-                       Simplify EXPRESSION () 
+-                      Simplify EXPRESSION () 
 -                       Simplify EXPRESSION (VARIABLE) 
-+                        Simplify EXPRESSION (VARIABLE) 
-+               Simplify STATEMENT 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                  Simplify EXPRESSION (+) 
-+                    Simplify EXPRESSION (/) 
-                       Simplify EXPRESSION () 
--                       Simplify EXPRESSION (VARIABLE) 
+-                      Simplify EXPRESSION () 
++                         Simplify EXPRESSION (VARIABLE) 
++                     Simplify EXPRESSION () 
+                        Simplify EXPRESSION (VARIABLE) 
 -                  Simplify STATEMENT 
 -                    Simplify EXPRESSION_LIST 
--                     Simplify EXPRESSION_LIST 
++              Simplify STATEMENT 
++                 Simplify EXPRESSION_LIST 
++                   Simplify EXPRESSION_LIST 
+                      Simplify EXPRESSION_LIST 
 -                      Simplify EXPRESSION_LIST 
--                       Simplify EXPRESSION () 
-                         Simplify EXPRESSION (VARIABLE) 
-                       Simplify EXPRESSION () 
+                        Simplify EXPRESSION () 
+-                        Simplify EXPRESSION (VARIABLE) 
+-                      Simplify EXPRESSION () 
 -                       Simplify EXPRESSION (VARIABLE) 
 -                     Simplify EXPRESSION () 
 -                      Simplify EXPRESSION (VARIABLE) 
@@ -540,7 +553,8 @@
 -                    Simplify EXPRESSION (+) 
 -                     Simplify EXPRESSION () 
 -                      Simplify EXPRESSION (VARIABLE) 
--                     Simplify EXPRESSION () 
++                         Simplify EXPRESSION (VARIABLE) 
+                      Simplify EXPRESSION () 
 -                      Simplify EXPRESSION (VARIABLE) 
 -                    Simplify EXPRESSION () 
 -                     Simplify EXPRESSION (VARIABLE) 
@@ -548,43 +562,30 @@
 -                  Simplify EXPRESSION (VARIABLE) 
 -                  Simplify EXPRESSION (-) 
 -                   Simplify EXPRESSION (-) 
-+                        Simplify EXPRESSION (VARIABLE) 
-                     Simplify EXPRESSION () 
+-                    Simplify EXPRESSION () 
 -                     Simplify EXPRESSION (VARIABLE) 
-+                      Simplify EXPRESSION (VARIABLE) 
-+             Simplify STATEMENT 
-+                Simplify EXPRESSION_LIST 
-+                  Simplify EXPRESSION_LIST 
-+                    Simplify EXPRESSION_LIST 
-+                      Simplify EXPRESSION () 
-+                        Simplify EXPRESSION (VARIABLE) 
-                     Simplify EXPRESSION () 
--                     Simplify EXPRESSION (VARIABLE) 
--                   Simplify EXPRESSION () 
-+                      Simplify EXPRESSION (VARIABLE) 
-+                  Simplify EXPRESSION () 
-                     Simplify EXPRESSION (VARIABLE) 
+-                    Simplify EXPRESSION () 
++                       Simplify EXPRESSION (VARIABLE) 
++                   Simplify EXPRESSION () 
+                      Simplify EXPRESSION (VARIABLE) 
++            Simplify STATEMENT 
++               Simplify EXPRESSION (VARIABLE) 
++               Simplify EXPRESSION (+) 
++                 Simplify EXPRESSION () 
++                   Simplify EXPRESSION (VARIABLE) 
++                 Simplify EXPRESSION (/) 
+                    Simplify EXPRESSION () 
+-                    Simplify EXPRESSION (VARIABLE) 
 -               Simplify STATEMENT 
 -                 Simplify EXPRESSION_LIST 
 -                  Simplify EXPRESSION_LIST 
--                   Simplify EXPRESSION () 
-+           Simplify STATEMENT 
-+              Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION (+) 
-+                Simplify EXPRESSION () 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                Simplify EXPRESSION (/) 
-+                  Simplify EXPRESSION () 
-                     Simplify EXPRESSION (VARIABLE) 
-                   Simplify EXPRESSION () 
++                     Simplify EXPRESSION (VARIABLE) 
+                    Simplify EXPRESSION () 
+-                    Simplify EXPRESSION (VARIABLE) 
+-                  Simplify EXPRESSION () 
 -                   Simplify EXPRESSION (VARIABLE) 
 -              Simplify STATEMENT 
-+                    Simplify EXPRESSION (VARIABLE) 
-+         Simplify STATEMENT 
-+            Simplify EXPRESSION (VARIABLE) 
-+            Simplify EXPRESSION (-) 
-+              Simplify EXPRESSION () 
-                 Simplify EXPRESSION (VARIABLE) 
+-                Simplify EXPRESSION (VARIABLE) 
 -                Simplify EXPRESSION (*) 
 -                 Simplify EXPRESSION (*) 
 -                  Simplify EXPRESSION () 
@@ -595,45 +596,51 @@
 -                  Simplify EXPRESSION (VARIABLE) 
 -             Simplify STATEMENT 
 -               Simplify EXPRESSION (VARIABLE) 
--               Simplify EXPRESSION (/) 
++                     Simplify EXPRESSION (VARIABLE) 
++          Simplify STATEMENT 
++             Simplify EXPRESSION (VARIABLE) 
++             Simplify EXPRESSION (-) 
++               Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 
+                Simplify EXPRESSION (/) 
 -                Simplify EXPRESSION (/) 
--                 Simplify EXPRESSION () 
+                  Simplify EXPRESSION () 
 -                  Simplify EXPRESSION (VARIABLE) 
--                 Simplify EXPRESSION () 
++                   Simplify EXPRESSION (VARIABLE) 
+                  Simplify EXPRESSION () 
 -                  Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION (/) 
-                 Simplify EXPRESSION () 
+-                Simplify EXPRESSION () 
 -                 Simplify EXPRESSION (VARIABLE) 
 -            Simplify STATEMENT 
 -              Simplify EXPRESSION_LIST 
 -               Simplify EXPRESSION_LIST 
-+                  Simplify EXPRESSION (VARIABLE) 
-                 Simplify EXPRESSION () 
+-                Simplify EXPRESSION () 
 -                 Simplify EXPRESSION (VARIABLE) 
 -               Simplify EXPRESSION () 
 -                Simplify EXPRESSION (VARIABLE) 
 -           Simplify STATEMENT 
 -             Simplify EXPRESSION (VARIABLE) 
 -             Simplify EXPRESSION (+) 
-+                  Simplify EXPRESSION (VARIABLE) 
-+       Simplify STATEMENT 
-+          Simplify EXPRESSION (VARIABLE) 
-+          Simplify EXPRESSION (-) 
-+            Simplify EXPRESSION (/) 
-               Simplify EXPRESSION () 
+-              Simplify EXPRESSION () 
 -               Simplify EXPRESSION (VARIABLE) 
 -              Simplify EXPRESSION (*) 
--               Simplify EXPRESSION () 
++                   Simplify EXPRESSION (VARIABLE) 
++        Simplify STATEMENT 
++           Simplify EXPRESSION (VARIABLE) 
++           Simplify EXPRESSION (-) 
++             Simplify EXPRESSION (/) 
+                Simplify EXPRESSION () 
 -                Simplify EXPRESSION (VARIABLE) 
--               Simplify EXPRESSION () 
-                 Simplify EXPRESSION (VARIABLE) 
++                 Simplify EXPRESSION (VARIABLE) 
+                Simplify EXPRESSION () 
+-                Simplify EXPRESSION (VARIABLE) 
 -          Simplify STATEMENT 
 -            Simplify EXPRESSION (VARIABLE) 
 -            Simplify EXPRESSION (+) 
 -             Simplify EXPRESSION (*) 
 -              Simplify EXPRESSION () 
 -               Simplify EXPRESSION (VARIABLE) 
-               Simplify EXPRESSION () 
+-              Simplify EXPRESSION () 
 -               Simplify EXPRESSION (VARIABLE) 
 -             Simplify EXPRESSION () 
 -              Simplify EXPRESSION (VARIABLE) 
@@ -643,37 +650,38 @@
 -            Simplify EXPRESSION (/) 
 -             Simplify EXPRESSION () 
 -              Simplify EXPRESSION (VARIABLE) 
--             Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 
+              Simplify EXPRESSION () 
 -              Simplify EXPRESSION (VARIABLE) 
-+                Simplify EXPRESSION (VARIABLE) 
-             Simplify EXPRESSION () 
+-            Simplify EXPRESSION () 
 -             Simplify EXPRESSION (VARIABLE) 
 -        Simplify STATEMENT 
-+              Simplify EXPRESSION (VARIABLE) 
-+     Simplify STATEMENT 
-+        Simplify EXPRESSION_LIST 
-           Simplify EXPRESSION_LIST 
--           Simplify EXPRESSION_LIST 
-             Simplify EXPRESSION_LIST 
--             Simplify EXPRESSION () 
+-          Simplify EXPRESSION_LIST 
++               Simplify EXPRESSION (VARIABLE) 
++      Simplify STATEMENT 
++         Simplify EXPRESSION_LIST 
+            Simplify EXPRESSION_LIST 
+-            Simplify EXPRESSION_LIST 
++             Simplify EXPRESSION_LIST 
++               Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 
+              Simplify EXPRESSION () 
 -              Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION () 
-+                Simplify EXPRESSION (VARIABLE) 
-             Simplify EXPRESSION () 
+-            Simplify EXPRESSION () 
 -             Simplify EXPRESSION (VARIABLE) 
 -           Simplify EXPRESSION () 
 -            Simplify EXPRESSION (VARIABLE) 
 -       Simplify STATEMENT 
 -         Simplify EXPRESSION (VARIABLE) 
 -         Simplify EXPRESSION (+) 
-+              Simplify EXPRESSION (VARIABLE) 
-           Simplify EXPRESSION () 
+-          Simplify EXPRESSION () 
 -           Simplify EXPRESSION (VARIABLE) 
 -          Simplify EXPRESSION (/) 
 -           Simplify EXPRESSION () 
 -            Simplify EXPRESSION (VARIABLE) 
--           Simplify EXPRESSION () 
-             Simplify EXPRESSION (VARIABLE) 
++               Simplify EXPRESSION (VARIABLE) 
+            Simplify EXPRESSION () 
+-            Simplify EXPRESSION (VARIABLE) 
 -      Simplify STATEMENT 
 -        Simplify EXPRESSION (VARIABLE) 
 -        Simplify EXPRESSION (-) 
@@ -704,3 +712,4 @@
 -         Simplify EXPRESSION (VARIABLE) 
 -       Simplify EXPRESSION () 
 -        Simplify EXPRESSION (VARIABLE) 
++             Simplify EXPRESSION (VARIABLE) 

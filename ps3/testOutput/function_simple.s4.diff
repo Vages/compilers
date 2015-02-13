@@ -1,26 +1,32 @@
 --- correctOutput/function_simple.s4	2015-02-09 13:34:58.006172000 +0100
-+++ testOutput/function_simple.s4	2015-02-13 13:27:28.318485000 +0100
-@@ -3,15 +3,15 @@
++++ testOutput/function_simple.s4	2015-02-13 13:53:46.069228000 +0100
+@@ -1,17 +1,17 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION_LIST 
++   Simplify FUNCTION_LIST 
++     Simplify FUNCTION 
++      Simplify TYPE 
++      Simplify STATEMENT_LIST 
++        Simplify STATEMENT_LIST 
++          Simplify STATEMENT 
++             Simplify EXPRESSION_LIST 
++               Simplify EXPRESSION (CONSTANT) 
++        Simplify STATEMENT 
++          Simplify EXPRESSION (FUNC_CALL) 
     Simplify FUNCTION 
      Simplify TYPE 
      Simplify STATEMENT_LIST 
 -     Simplify STATEMENT_LIST 
-+      Simplify STATEMENT_LIST 
-+        Simplify STATEMENT 
-+           Simplify EXPRESSION_LIST 
-+             Simplify EXPRESSION (CONSTANT) 
        Simplify STATEMENT 
 -        Simplify EXPRESSION_LIST 
 -         Simplify EXPRESSION (CONSTANT) 
 -     Simplify STATEMENT 
 -      Simplify EXPRESSION (FUNC_CALL) 
-+        Simplify EXPRESSION (FUNC_CALL) 
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
 -    Simplify STATEMENT 
 -      Simplify EXPRESSION_LIST 
 -       Simplify EXPRESSION (CONSTANT) 
-+     Simplify STATEMENT 
-+        Simplify EXPRESSION_LIST 
-+          Simplify EXPRESSION (CONSTANT) 
++         Simplify EXPRESSION_LIST 
++           Simplify EXPRESSION (CONSTANT) 

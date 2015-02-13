@@ -1,78 +1,82 @@
 --- correctOutput/if_hard.s4	2015-02-09 13:34:58.028170000 +0100
-+++ testOutput/if_hard.s4	2015-02-13 13:27:28.700484000 +0100
-@@ -2,91 +2,91 @@
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
--    Simplify STATEMENT_LIST 
-      Simplify STATEMENT_LIST 
--      Simplify STATEMENT_LIST 
-        Simplify STATEMENT_LIST 
--        Simplify STATEMENT_LIST 
-          Simplify STATEMENT_LIST 
--          Simplify STATEMENT_LIST 
-+           Simplify STATEMENT_LIST 
-+             Simplify STATEMENT_LIST 
-+               Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT_LIST 
-+                   Simplify STATEMENT 
-+                     Simplify DECLARATION_STATEMENT 
-+                       Simplify TYPE 
-+                 Simplify STATEMENT 
-+                   Simplify DECLARATION_STATEMENT 
-+                     Simplify TYPE 
-+               Simplify STATEMENT 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                  Simplify EXPRESSION (CONSTANT) 
-+             Simplify STATEMENT 
-+                Simplify EXPRESSION (VARIABLE) 
-+                Simplify EXPRESSION (UMINUS) 
-+                  Simplify EXPRESSION (CONSTANT) 
-            Simplify STATEMENT 
++++ testOutput/if_hard.s4	2015-02-13 13:53:46.464230000 +0100
+@@ -1,92 +1,92 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
++   Simplify FUNCTION 
++    Simplify TYPE 
+     Simplify STATEMENT_LIST 
+-     Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+-       Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+-         Simplify STATEMENT_LIST 
+           Simplify STATEMENT_LIST 
+-           Simplify STATEMENT 
 -            Simplify DECLARATION_STATEMENT 
 -             Simplify TYPE 
--          Simplify STATEMENT 
++            Simplify STATEMENT_LIST 
++              Simplify STATEMENT_LIST 
++                Simplify STATEMENT_LIST 
++                  Simplify STATEMENT_LIST 
++                    Simplify STATEMENT 
++                      Simplify DECLARATION_STATEMENT 
++                        Simplify TYPE 
++                  Simplify STATEMENT 
++                    Simplify DECLARATION_STATEMENT 
++                      Simplify TYPE 
++                Simplify STATEMENT 
++                   Simplify EXPRESSION (VARIABLE) 
++                   Simplify EXPRESSION (CONSTANT) 
++              Simplify STATEMENT 
++                 Simplify EXPRESSION (VARIABLE) 
++                 Simplify EXPRESSION (UMINUS) 
++                   Simplify EXPRESSION (CONSTANT) 
++            Simplify STATEMENT 
++               Simplify EXPRESSION (!=) 
++                 Simplify EXPRESSION () 
++                   Simplify EXPRESSION (VARIABLE) 
++                 Simplify EXPRESSION (CONSTANT) 
++               Simplify STATEMENT_LIST 
++                 Simplify STATEMENT 
++                    Simplify EXPRESSION_LIST 
++                      Simplify EXPRESSION (CONSTANT) 
+           Simplify STATEMENT 
 -           Simplify DECLARATION_STATEMENT 
 -            Simplify TYPE 
-+              Simplify EXPRESSION (!=) 
-+                Simplify EXPRESSION () 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                Simplify EXPRESSION (CONSTANT) 
-+              Simplify STATEMENT_LIST 
-+                Simplify STATEMENT 
-+                   Simplify EXPRESSION_LIST 
-+                     Simplify EXPRESSION (CONSTANT) 
-          Simplify STATEMENT 
+-         Simplify STATEMENT 
 -           Simplify EXPRESSION (VARIABLE) 
 -           Simplify EXPRESSION (CONSTANT) 
--        Simplify STATEMENT 
++             Simplify EXPRESSION (>=) 
++               Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 
++               Simplify EXPRESSION (CONSTANT) 
++             Simplify STATEMENT_LIST 
++               Simplify STATEMENT 
++                  Simplify EXPRESSION (!=) 
++                    Simplify EXPRESSION () 
++                      Simplify EXPRESSION (VARIABLE) 
++                    Simplify EXPRESSION (UMINUS) 
++                      Simplify EXPRESSION (CONSTANT) 
++                  Simplify STATEMENT_LIST 
++                    Simplify STATEMENT 
++                       Simplify EXPRESSION_LIST 
++                         Simplify EXPRESSION (CONSTANT) 
++                  Simplify STATEMENT_LIST 
++                    Simplify STATEMENT 
++                       Simplify EXPRESSION_LIST 
++                         Simplify EXPRESSION (CONSTANT) 
++             Simplify STATEMENT_LIST 
++               Simplify STATEMENT 
++                  Simplify EXPRESSION_LIST 
++                    Simplify EXPRESSION (CONSTANT) 
+         Simplify STATEMENT 
 -          Simplify EXPRESSION (VARIABLE) 
 -          Simplify EXPRESSION (UMINUS) 
 -           Simplify EXPRESSION (CONSTANT) 
-+            Simplify EXPRESSION (>=) 
-+              Simplify EXPRESSION () 
-+                Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION (CONSTANT) 
-+            Simplify STATEMENT_LIST 
-+              Simplify STATEMENT 
-+                 Simplify EXPRESSION (!=) 
-+                   Simplify EXPRESSION () 
-+                     Simplify EXPRESSION (VARIABLE) 
-+                   Simplify EXPRESSION (UMINUS) 
-+                     Simplify EXPRESSION (CONSTANT) 
-+                 Simplify STATEMENT_LIST 
-+                   Simplify STATEMENT 
-+                      Simplify EXPRESSION_LIST 
-+                        Simplify EXPRESSION (CONSTANT) 
-+                 Simplify STATEMENT_LIST 
-+                   Simplify STATEMENT 
-+                      Simplify EXPRESSION_LIST 
-+                        Simplify EXPRESSION (CONSTANT) 
-+            Simplify STATEMENT_LIST 
-+              Simplify STATEMENT 
-+                 Simplify EXPRESSION_LIST 
-+                   Simplify EXPRESSION (CONSTANT) 
-        Simplify STATEMENT 
+-       Simplify STATEMENT 
 -         Simplify EXPRESSION (!=) 
 -          Simplify EXPRESSION () 
 -           Simplify EXPRESSION (VARIABLE) 
@@ -89,56 +93,43 @@
 -        Simplify STATEMENT_LIST 
 -         Simplify STATEMENT 
 -           Simplify EXPRESSION (!=) 
-+          Simplify EXPRESSION (>) 
-             Simplify EXPRESSION () 
+-            Simplify EXPRESSION () 
 -             Simplify EXPRESSION (VARIABLE) 
 -            Simplify EXPRESSION (UMINUS) 
--             Simplify EXPRESSION (CONSTANT) 
--           Simplify STATEMENT_LIST 
-+              Simplify EXPRESSION (VARIABLE) 
-+            Simplify EXPRESSION (CONSTANT) 
-+          Simplify STATEMENT_LIST 
-             Simplify STATEMENT 
++           Simplify EXPRESSION (>) 
++             Simplify EXPRESSION () 
++               Simplify EXPRESSION (VARIABLE) 
+              Simplify EXPRESSION (CONSTANT) 
+            Simplify STATEMENT_LIST 
+-            Simplify STATEMENT 
 -              Simplify EXPRESSION_LIST 
 -               Simplify EXPRESSION (CONSTANT) 
--           Simplify STATEMENT_LIST 
-+               Simplify EXPRESSION (>) 
-+                 Simplify EXPRESSION () 
-+                   Simplify EXPRESSION (VARIABLE) 
-+                 Simplify EXPRESSION (CONSTANT) 
-+               Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT 
-+                    Simplify EXPRESSION_LIST 
-+                      Simplify EXPRESSION (CONSTANT) 
-+               Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT 
-+                    Simplify EXPRESSION_LIST 
-+                      Simplify EXPRESSION (CONSTANT) 
-+          Simplify STATEMENT_LIST 
-             Simplify STATEMENT 
++             Simplify STATEMENT 
++                Simplify EXPRESSION (>) 
++                  Simplify EXPRESSION () 
++                    Simplify EXPRESSION (VARIABLE) 
++                  Simplify EXPRESSION (CONSTANT) 
++                Simplify STATEMENT_LIST 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION_LIST 
++                       Simplify EXPRESSION (CONSTANT) 
++                Simplify STATEMENT_LIST 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION_LIST 
++                       Simplify EXPRESSION (CONSTANT) 
+            Simplify STATEMENT_LIST 
+-            Simplify STATEMENT 
 -              Simplify EXPRESSION_LIST 
 -               Simplify EXPRESSION (CONSTANT) 
 -        Simplify STATEMENT_LIST 
 -         Simplify STATEMENT 
 -           Simplify EXPRESSION_LIST 
 -            Simplify EXPRESSION (CONSTANT) 
-+               Simplify EXPRESSION (>) 
-+                 Simplify EXPRESSION () 
-+                   Simplify EXPRESSION (VARIABLE) 
-+                 Simplify EXPRESSION (CONSTANT) 
-+               Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT 
-+                    Simplify EXPRESSION_LIST 
-+                      Simplify EXPRESSION (CONSTANT) 
-+               Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT 
-+                    Simplify EXPRESSION_LIST 
-+                      Simplify EXPRESSION (CONSTANT) 
-      Simplify STATEMENT 
+-     Simplify STATEMENT 
 -       Simplify EXPRESSION (>) 
 -        Simplify EXPRESSION () 
 -         Simplify EXPRESSION (VARIABLE) 
-         Simplify EXPRESSION (CONSTANT) 
+-        Simplify EXPRESSION (CONSTANT) 
 -       Simplify STATEMENT_LIST 
 -        Simplify STATEMENT 
 -          Simplify EXPRESSION (>) 
@@ -169,3 +160,18 @@
 -              Simplify EXPRESSION (CONSTANT) 
 -    Simplify STATEMENT 
 -      Simplify EXPRESSION (CONSTANT) 
++             Simplify STATEMENT 
++                Simplify EXPRESSION (>) 
++                  Simplify EXPRESSION () 
++                    Simplify EXPRESSION (VARIABLE) 
++                  Simplify EXPRESSION (CONSTANT) 
++                Simplify STATEMENT_LIST 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION_LIST 
++                       Simplify EXPRESSION (CONSTANT) 
++                Simplify STATEMENT_LIST 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION_LIST 
++                       Simplify EXPRESSION (CONSTANT) 
++      Simplify STATEMENT 
++         Simplify EXPRESSION (CONSTANT) 

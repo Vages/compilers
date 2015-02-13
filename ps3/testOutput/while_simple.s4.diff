@@ -1,11 +1,14 @@
 --- correctOutput/while_simple.s4	2015-02-09 13:34:58.224169000 +0100
-+++ testOutput/while_simple.s4	2015-02-13 13:27:38.193537000 +0100
-@@ -2,28 +2,28 @@
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
--    Simplify STATEMENT_LIST 
-      Simplify STATEMENT_LIST 
++++ testOutput/while_simple.s4	2015-02-13 13:53:56.593285000 +0100
+@@ -1,29 +1,29 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
++   Simplify FUNCTION 
++    Simplify TYPE 
+     Simplify STATEMENT_LIST 
+-     Simplify STATEMENT_LIST 
 -      Simplify STATEMENT 
 -       Simplify DECLARATION_STATEMENT 
 -        Simplify TYPE 
@@ -17,35 +20,37 @@
 -       Simplify EXPRESSION () 
 -        Simplify EXPRESSION (VARIABLE) 
 -       Simplify EXPRESSION (CONSTANT) 
--      Simplify STATEMENT_LIST 
-        Simplify STATEMENT_LIST 
--        Simplify STATEMENT 
+       Simplify STATEMENT_LIST 
+-       Simplify STATEMENT_LIST 
++        Simplify STATEMENT_LIST 
++          Simplify STATEMENT 
++            Simplify DECLARATION_STATEMENT 
++              Simplify TYPE 
+         Simplify STATEMENT 
 -          Simplify EXPRESSION_LIST 
 -           Simplify EXPRESSION () 
 -            Simplify EXPRESSION (VARIABLE) 
-+         Simplify STATEMENT 
-+           Simplify DECLARATION_STATEMENT 
-+             Simplify TYPE 
-        Simplify STATEMENT 
+-       Simplify STATEMENT 
 -         Simplify EXPRESSION (VARIABLE) 
 -         Simplify EXPRESSION (-) 
-+          Simplify EXPRESSION (VARIABLE) 
-+          Simplify EXPRESSION (CONSTANT) 
-+     Simplify STATEMENT 
-+        Simplify EXPRESSION (>) 
-           Simplify EXPRESSION () 
--           Simplify EXPRESSION (VARIABLE) 
-+            Simplify EXPRESSION (VARIABLE) 
-           Simplify EXPRESSION (CONSTANT) 
-+        Simplify STATEMENT_LIST 
-+          Simplify STATEMENT_LIST 
-+            Simplify STATEMENT 
-+               Simplify EXPRESSION_LIST 
-+                 Simplify EXPRESSION () 
-+                   Simplify EXPRESSION (VARIABLE) 
-+          Simplify STATEMENT 
+-          Simplify EXPRESSION () 
+            Simplify EXPRESSION (VARIABLE) 
+-          Simplify EXPRESSION (CONSTANT) 
++           Simplify EXPRESSION (CONSTANT) 
++      Simplify STATEMENT 
++         Simplify EXPRESSION (>) 
++           Simplify EXPRESSION () 
 +             Simplify EXPRESSION (VARIABLE) 
-+             Simplify EXPRESSION (-) 
-+               Simplify EXPRESSION () 
-+                 Simplify EXPRESSION (VARIABLE) 
-+               Simplify EXPRESSION (CONSTANT) 
++           Simplify EXPRESSION (CONSTANT) 
++         Simplify STATEMENT_LIST 
++           Simplify STATEMENT_LIST 
++             Simplify STATEMENT 
++                Simplify EXPRESSION_LIST 
++                  Simplify EXPRESSION () 
++                    Simplify EXPRESSION (VARIABLE) 
++           Simplify STATEMENT 
++              Simplify EXPRESSION (VARIABLE) 
++              Simplify EXPRESSION (-) 
++                Simplify EXPRESSION () 
++                  Simplify EXPRESSION (VARIABLE) 
++                Simplify EXPRESSION (CONSTANT) 

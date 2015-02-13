@@ -1,10 +1,14 @@
 --- correctOutput/minimal.s4	2015-02-09 13:34:58.104168000 +0100
-+++ testOutput/minimal.s4	2015-02-13 13:27:34.002515000 +0100
-@@ -2,5 +2,5 @@
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
++++ testOutput/minimal.s4	2015-02-13 13:53:52.082260000 +0100
+@@ -1,6 +1,6 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
 -    Simplify STATEMENT 
 -      Simplify EXPRESSION (CONSTANT) 
-+     Simplify STATEMENT 
-+        Simplify EXPRESSION (CONSTANT) 
++   Simplify FUNCTION 
++    Simplify TYPE 
++    Simplify STATEMENT_LIST 
++      Simplify STATEMENT 
++         Simplify EXPRESSION (CONSTANT) 

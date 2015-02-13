@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s6	2015-02-09 13:34:58.199171000 +0100
-+++ testOutput/type_errors_functions.s6	2015-02-13 13:27:37.495534000 +0100
++++ testOutput/type_errors_functions.s6	2015-02-13 13:53:55.819283000 +0100
 @@ -1,3 +0,0 @@
 -CONSTANT
 -CONSTANT

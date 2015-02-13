@@ -1,86 +1,90 @@
 --- correctOutput/array_simple.s4	2015-02-09 13:34:57.902167000 +0100
-+++ testOutput/array_simple.s4	2015-02-13 13:27:20.197438000 +0100
-@@ -2,61 +2,61 @@
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
--    Simplify STATEMENT_LIST 
-      Simplify STATEMENT_LIST 
--      Simplify STATEMENT_LIST 
-        Simplify STATEMENT_LIST 
--        Simplify STATEMENT_LIST 
-          Simplify STATEMENT_LIST 
--          Simplify STATEMENT_LIST 
-            Simplify STATEMENT_LIST 
--            Simplify STATEMENT 
++++ testOutput/array_simple.s4	2015-02-13 13:53:37.485181000 +0100
+@@ -1,62 +1,62 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
++   Simplify FUNCTION 
++    Simplify TYPE 
+     Simplify STATEMENT_LIST 
+-     Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+-       Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+-         Simplify STATEMENT_LIST 
+           Simplify STATEMENT_LIST 
+-           Simplify STATEMENT_LIST 
++            Simplify STATEMENT_LIST 
++              Simplify STATEMENT_LIST 
++                Simplify STATEMENT_LIST 
++                  Simplify STATEMENT_LIST 
++                    Simplify STATEMENT_LIST 
++                      Simplify STATEMENT 
++                        Simplify DECLARATION_STATEMENT 
++                          Simplify TYPE 
++                    Simplify STATEMENT 
++                      Simplify DECLARATION_STATEMENT 
++                        Simplify TYPE 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION (VARIABLE) 
++                     Simplify EXPRESSION (CONSTANT) 
++                Simplify STATEMENT 
++                   Simplify EXPRESSION (VARIABLE) 
++                   Simplify EXPRESSION (CONSTANT) 
++              Simplify STATEMENT 
++                Simplify DECLARATION_STATEMENT 
++                  Simplify TYPE 
++                    Simplify TYPE 
++                    Simplify INDEX_LIST 
+             Simplify STATEMENT 
 -             Simplify DECLARATION_STATEMENT 
 -              Simplify TYPE 
-+             Simplify STATEMENT_LIST 
-+               Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT_LIST 
-+                   Simplify STATEMENT_LIST 
-+                     Simplify STATEMENT 
-+                       Simplify DECLARATION_STATEMENT 
-+                         Simplify TYPE 
-+                   Simplify STATEMENT 
-+                     Simplify DECLARATION_STATEMENT 
-+                       Simplify TYPE 
-+                 Simplify STATEMENT 
-+                    Simplify EXPRESSION (VARIABLE) 
-+                    Simplify EXPRESSION (CONSTANT) 
-+               Simplify STATEMENT 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                  Simplify EXPRESSION (CONSTANT) 
-+             Simplify STATEMENT 
-+               Simplify DECLARATION_STATEMENT 
+-           Simplify STATEMENT 
+-            Simplify DECLARATION_STATEMENT 
+-             Simplify TYPE 
++               Simplify EXPRESSION (VARIABLE) 
++               Simplify EXPRESSION (NEW) 
 +                 Simplify TYPE 
 +                   Simplify TYPE 
 +                   Simplify INDEX_LIST 
-            Simplify STATEMENT 
--            Simplify DECLARATION_STATEMENT 
--             Simplify TYPE 
--          Simplify STATEMENT 
+           Simplify STATEMENT 
 -            Simplify EXPRESSION (VARIABLE) 
 -            Simplify EXPRESSION (CONSTANT) 
-+              Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION (NEW) 
-+                Simplify TYPE 
-+                  Simplify TYPE 
-+                  Simplify INDEX_LIST 
-          Simplify STATEMENT 
+-         Simplify STATEMENT 
 -           Simplify EXPRESSION (VARIABLE) 
 -           Simplify EXPRESSION (CONSTANT) 
--        Simplify STATEMENT 
++             Simplify EXPRESSION (ARRAY_INDEX) 
++               Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 
++               Simplify EXPRESSION (CONSTANT) 
++             Simplify EXPRESSION () 
++               Simplify EXPRESSION (VARIABLE) 
+         Simplify STATEMENT 
 -         Simplify DECLARATION_STATEMENT 
 -          Simplify TYPE 
 -           Simplify TYPE 
 -           Simplify INDEX_LIST 
-+            Simplify EXPRESSION (ARRAY_INDEX) 
-+              Simplify EXPRESSION () 
-+                Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION (CONSTANT) 
-+            Simplify EXPRESSION () 
-+              Simplify EXPRESSION (VARIABLE) 
-        Simplify STATEMENT 
+-       Simplify STATEMENT 
 -         Simplify EXPRESSION (VARIABLE) 
 -         Simplify EXPRESSION (NEW) 
 -          Simplify TYPE 
 -           Simplify TYPE 
 -           Simplify INDEX_LIST 
--      Simplify STATEMENT 
++           Simplify EXPRESSION (ARRAY_INDEX) 
++             Simplify EXPRESSION () 
++               Simplify EXPRESSION (VARIABLE) 
++             Simplify EXPRESSION (CONSTANT) 
++           Simplify EXPRESSION () 
++             Simplify EXPRESSION (VARIABLE) 
+       Simplify STATEMENT 
 -        Simplify EXPRESSION (ARRAY_INDEX) 
 -         Simplify EXPRESSION () 
 -          Simplify EXPRESSION (VARIABLE) 
 -         Simplify EXPRESSION (CONSTANT) 
 -        Simplify EXPRESSION () 
 -         Simplify EXPRESSION (VARIABLE) 
-+          Simplify EXPRESSION (ARRAY_INDEX) 
-+            Simplify EXPRESSION () 
-+              Simplify EXPRESSION (VARIABLE) 
-+            Simplify EXPRESSION (CONSTANT) 
-+          Simplify EXPRESSION () 
-+            Simplify EXPRESSION (VARIABLE) 
-      Simplify STATEMENT 
+-     Simplify STATEMENT 
 -       Simplify EXPRESSION (ARRAY_INDEX) 
 -        Simplify EXPRESSION () 
 -         Simplify EXPRESSION (VARIABLE) 
@@ -92,14 +96,7 @@
 -       Simplify EXPRESSION_LIST 
 -        Simplify EXPRESSION () 
 -         Simplify EXPRESSION (ARRAY_INDEX) 
-+        Simplify EXPRESSION_LIST 
-+          Simplify EXPRESSION_LIST 
-+            Simplify EXPRESSION () 
-+              Simplify EXPRESSION (ARRAY_INDEX) 
-+                Simplify EXPRESSION () 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                Simplify EXPRESSION (CONSTANT) 
-           Simplify EXPRESSION () 
+-          Simplify EXPRESSION () 
 -           Simplify EXPRESSION (VARIABLE) 
 -          Simplify EXPRESSION (CONSTANT) 
 -       Simplify EXPRESSION () 
@@ -107,7 +104,15 @@
 -         Simplify EXPRESSION () 
 -          Simplify EXPRESSION (VARIABLE) 
 -         Simplify EXPRESSION (CONSTANT) 
-+            Simplify EXPRESSION (ARRAY_INDEX) 
-+              Simplify EXPRESSION () 
-+                Simplify EXPRESSION (VARIABLE) 
-+              Simplify EXPRESSION (CONSTANT) 
++         Simplify EXPRESSION_LIST 
++           Simplify EXPRESSION_LIST 
++             Simplify EXPRESSION () 
++               Simplify EXPRESSION (ARRAY_INDEX) 
++                 Simplify EXPRESSION () 
++                   Simplify EXPRESSION (VARIABLE) 
++                 Simplify EXPRESSION (CONSTANT) 
++           Simplify EXPRESSION () 
++             Simplify EXPRESSION (ARRAY_INDEX) 
++               Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 
++               Simplify EXPRESSION (CONSTANT) 

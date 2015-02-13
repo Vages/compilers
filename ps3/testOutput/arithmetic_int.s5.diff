@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_int.s5	2015-02-09 13:34:57.878167000 +0100
-+++ testOutput/arithmetic_int.s5	2015-02-13 13:27:18.874430000 +0100
++++ testOutput/arithmetic_int.s5	2015-02-13 13:53:36.013172000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

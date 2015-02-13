@@ -1,103 +1,103 @@
 --- correctOutput/type_errors_arrays.s4	2015-02-09 13:34:58.175171000 +0100
-+++ testOutput/type_errors_arrays.s4	2015-02-13 13:27:36.378527000 +0100
-@@ -2,109 +2,109 @@
-   Simplify FUNCTION 
-    Simplify TYPE 
-    Simplify STATEMENT_LIST 
--    Simplify STATEMENT_LIST 
-      Simplify STATEMENT_LIST 
--      Simplify STATEMENT_LIST 
-        Simplify STATEMENT_LIST 
--        Simplify STATEMENT_LIST 
-          Simplify STATEMENT_LIST 
--          Simplify STATEMENT_LIST 
-            Simplify STATEMENT_LIST 
--            Simplify STATEMENT_LIST 
-              Simplify STATEMENT_LIST 
--              Simplify STATEMENT_LIST 
-                Simplify STATEMENT_LIST 
--                Simplify STATEMENT_LIST 
-+                 Simplify STATEMENT_LIST 
-+                   Simplify STATEMENT_LIST 
-+                     Simplify STATEMENT_LIST 
-+                       Simplify STATEMENT_LIST 
-+                         Simplify STATEMENT_LIST 
-+                           Simplify STATEMENT_LIST 
-+                             Simplify STATEMENT_LIST 
-+                               Simplify STATEMENT 
-+                                 Simplify DECLARATION_STATEMENT 
-+                                   Simplify TYPE 
-+                                     Simplify TYPE 
-+                                     Simplify INDEX_LIST 
-+                             Simplify STATEMENT 
-+                               Simplify DECLARATION_STATEMENT 
-+                                 Simplify TYPE 
-+                                   Simplify TYPE 
-+                                   Simplify INDEX_LIST 
-+                                     Simplify INDEX_LIST 
-+                           Simplify STATEMENT 
-+                             Simplify DECLARATION_STATEMENT 
-+                               Simplify TYPE 
-+                                 Simplify TYPE 
-+                                 Simplify INDEX_LIST 
-+                         Simplify STATEMENT 
-+                           Simplify DECLARATION_STATEMENT 
++++ testOutput/type_errors_arrays.s4	2015-02-13 13:53:54.662277000 +0100
+@@ -1,110 +1,110 @@
+  Simplify FUNCTION_LIST 
+-  Simplify FUNCTION 
+-   Simplify TYPE 
+-   Simplify STATEMENT_LIST 
++   Simplify FUNCTION 
++    Simplify TYPE 
+     Simplify STATEMENT_LIST 
+-     Simplify STATEMENT_LIST 
+       Simplify STATEMENT_LIST 
+-       Simplify STATEMENT_LIST 
+         Simplify STATEMENT_LIST 
+-         Simplify STATEMENT_LIST 
+           Simplify STATEMENT_LIST 
+-           Simplify STATEMENT_LIST 
+             Simplify STATEMENT_LIST 
+-             Simplify STATEMENT_LIST 
+               Simplify STATEMENT_LIST 
+-               Simplify STATEMENT_LIST 
+                 Simplify STATEMENT_LIST 
+-                 Simplify STATEMENT 
+-                  Simplify DECLARATION_STATEMENT 
+-                   Simplify TYPE 
+-                    Simplify TYPE 
+-                    Simplify INDEX_LIST 
++                  Simplify STATEMENT_LIST 
++                    Simplify STATEMENT_LIST 
++                      Simplify STATEMENT_LIST 
++                        Simplify STATEMENT_LIST 
++                          Simplify STATEMENT_LIST 
++                            Simplify STATEMENT_LIST 
++                              Simplify STATEMENT_LIST 
++                                Simplify STATEMENT 
++                                  Simplify DECLARATION_STATEMENT 
++                                    Simplify TYPE 
++                                      Simplify TYPE 
++                                      Simplify INDEX_LIST 
++                              Simplify STATEMENT 
++                                Simplify DECLARATION_STATEMENT 
++                                  Simplify TYPE 
++                                    Simplify TYPE 
++                                    Simplify INDEX_LIST 
++                                      Simplify INDEX_LIST 
++                            Simplify STATEMENT 
++                              Simplify DECLARATION_STATEMENT 
++                                Simplify TYPE 
++                                  Simplify TYPE 
++                                  Simplify INDEX_LIST 
++                          Simplify STATEMENT 
++                            Simplify DECLARATION_STATEMENT 
++                              Simplify TYPE 
++                                Simplify TYPE 
++                                Simplify INDEX_LIST 
++                                  Simplify INDEX_LIST 
++                                    Simplify INDEX_LIST 
++                        Simplify STATEMENT 
++                           Simplify EXPRESSION (VARIABLE) 
++                           Simplify EXPRESSION (NEW) 
 +                             Simplify TYPE 
 +                               Simplify TYPE 
 +                               Simplify INDEX_LIST 
-+                                 Simplify INDEX_LIST 
-+                                   Simplify INDEX_LIST 
-+                       Simplify STATEMENT 
-+                          Simplify EXPRESSION (VARIABLE) 
-+                          Simplify EXPRESSION (NEW) 
-+                            Simplify TYPE 
-+                              Simplify TYPE 
-+                              Simplify INDEX_LIST 
-+                     Simplify STATEMENT 
-+                        Simplify EXPRESSION (VARIABLE) 
-+                        Simplify EXPRESSION (NEW) 
-+                          Simplify TYPE 
-+                            Simplify TYPE 
-+                            Simplify INDEX_LIST 
-+                   Simplify STATEMENT 
-+                      Simplify EXPRESSION (VARIABLE) 
-+                      Simplify EXPRESSION (NEW) 
-+                        Simplify TYPE 
-+                          Simplify TYPE 
-+                          Simplify INDEX_LIST 
-                  Simplify STATEMENT 
--                  Simplify DECLARATION_STATEMENT 
--                   Simplify TYPE 
-+                    Simplify EXPRESSION (VARIABLE) 
-+                    Simplify EXPRESSION (NEW) 
-+                      Simplify TYPE 
-+                        Simplify TYPE 
-+                        Simplify INDEX_LIST 
-+                          Simplify INDEX_LIST 
-+               Simplify STATEMENT 
-+                  Simplify EXPRESSION (VARIABLE) 
-+                  Simplify EXPRESSION (NEW) 
-                     Simplify TYPE 
--                    Simplify INDEX_LIST 
--                Simplify STATEMENT 
++                      Simplify STATEMENT 
++                         Simplify EXPRESSION (VARIABLE) 
++                         Simplify EXPRESSION (NEW) 
++                           Simplify TYPE 
++                             Simplify TYPE 
++                             Simplify INDEX_LIST 
++                    Simplify STATEMENT 
++                       Simplify EXPRESSION (VARIABLE) 
++                       Simplify EXPRESSION (NEW) 
++                         Simplify TYPE 
++                           Simplify TYPE 
++                           Simplify INDEX_LIST 
++                  Simplify STATEMENT 
++                     Simplify EXPRESSION (VARIABLE) 
++                     Simplify EXPRESSION (NEW) 
++                       Simplify TYPE 
++                         Simplify TYPE 
++                         Simplify INDEX_LIST 
++                           Simplify INDEX_LIST 
+                 Simplify STATEMENT 
 -                 Simplify DECLARATION_STATEMENT 
-+                      Simplify TYPE 
-+                      Simplify INDEX_LIST 
-+                        Simplify INDEX_LIST 
-+             Simplify STATEMENT 
-+                Simplify EXPRESSION (VARIABLE) 
-+                Simplify EXPRESSION (NEW) 
-                   Simplify TYPE 
+-                  Simplify TYPE 
 -                   Simplify TYPE 
 -                   Simplify INDEX_LIST 
-+                    Simplify TYPE 
-                     Simplify INDEX_LIST 
+-                    Simplify INDEX_LIST 
 -               Simplify STATEMENT 
 -                Simplify DECLARATION_STATEMENT 
 -                 Simplify TYPE 
 -                  Simplify TYPE 
 -                  Simplify INDEX_LIST 
--              Simplify STATEMENT 
++                   Simplify EXPRESSION (VARIABLE) 
++                   Simplify EXPRESSION (NEW) 
++                     Simplify TYPE 
++                       Simplify TYPE 
++                       Simplify INDEX_LIST 
++                         Simplify INDEX_LIST 
+               Simplify STATEMENT 
 -               Simplify DECLARATION_STATEMENT 
 -                Simplify TYPE 
 -                 Simplify TYPE 
@@ -105,71 +105,76 @@
 -                  Simplify INDEX_LIST 
 -                   Simplify INDEX_LIST 
 -             Simplify STATEMENT 
--               Simplify EXPRESSION (VARIABLE) 
--               Simplify EXPRESSION (NEW) 
++                 Simplify EXPRESSION (VARIABLE) 
++                 Simplify EXPRESSION (NEW) 
++                   Simplify TYPE 
++                     Simplify TYPE 
++                     Simplify INDEX_LIST 
++            Simplify STATEMENT 
+                Simplify EXPRESSION (VARIABLE) 
+                Simplify EXPRESSION (NEW) 
 -                Simplify TYPE 
--                 Simplify TYPE 
+                  Simplify TYPE 
 -                 Simplify INDEX_LIST 
 -            Simplify STATEMENT 
-+           Simplify STATEMENT 
-               Simplify EXPRESSION (VARIABLE) 
-               Simplify EXPRESSION (NEW) 
+-              Simplify EXPRESSION (VARIABLE) 
+-              Simplify EXPRESSION (NEW) 
 -               Simplify TYPE 
-                 Simplify TYPE 
+-                Simplify TYPE 
 -                Simplify INDEX_LIST 
 -           Simplify STATEMENT 
--             Simplify EXPRESSION (VARIABLE) 
--             Simplify EXPRESSION (NEW) 
++                   Simplify TYPE 
++                   Simplify INDEX_LIST 
++                     Simplify INDEX_LIST 
++          Simplify STATEMENT 
+              Simplify EXPRESSION (VARIABLE) 
+              Simplify EXPRESSION (NEW) 
 -              Simplify TYPE 
--               Simplify TYPE 
+                Simplify TYPE 
 -               Simplify INDEX_LIST 
 -          Simplify STATEMENT 
-+                  Simplify TYPE 
-+                  Simplify INDEX_LIST 
-+                    Simplify INDEX_LIST 
-+         Simplify STATEMENT 
-             Simplify EXPRESSION (VARIABLE) 
-             Simplify EXPRESSION (NEW) 
+-            Simplify EXPRESSION (VARIABLE) 
+-            Simplify EXPRESSION (NEW) 
 -             Simplify TYPE 
-               Simplify TYPE 
+-              Simplify TYPE 
 -              Simplify INDEX_LIST 
 -               Simplify INDEX_LIST 
 -         Simplify STATEMENT 
--           Simplify EXPRESSION (VARIABLE) 
--           Simplify EXPRESSION (NEW) 
++                 Simplify TYPE 
++                 Simplify INDEX_LIST 
++                   Simplify INDEX_LIST 
++                     Simplify INDEX_LIST 
++        Simplify STATEMENT 
+            Simplify EXPRESSION (VARIABLE) 
+            Simplify EXPRESSION (NEW) 
 -            Simplify TYPE 
--             Simplify TYPE 
+              Simplify TYPE 
 -             Simplify INDEX_LIST 
 -              Simplify INDEX_LIST 
 -        Simplify STATEMENT 
-+                Simplify TYPE 
-+                Simplify INDEX_LIST 
-+                  Simplify INDEX_LIST 
-+                    Simplify INDEX_LIST 
-+       Simplify STATEMENT 
-           Simplify EXPRESSION (VARIABLE) 
-           Simplify EXPRESSION (NEW) 
+-          Simplify EXPRESSION (VARIABLE) 
+-          Simplify EXPRESSION (NEW) 
 -           Simplify TYPE 
-             Simplify TYPE 
+-            Simplify TYPE 
 -            Simplify INDEX_LIST 
 -       Simplify STATEMENT 
--         Simplify EXPRESSION (VARIABLE) 
--         Simplify EXPRESSION (NEW) 
++               Simplify TYPE 
++               Simplify INDEX_LIST 
++                 Simplify INDEX_LIST 
++                   Simplify INDEX_LIST 
++                     Simplify INDEX_LIST 
++      Simplify STATEMENT 
+          Simplify EXPRESSION (VARIABLE) 
+          Simplify EXPRESSION (NEW) 
 -          Simplify TYPE 
--           Simplify TYPE 
+            Simplify TYPE 
 -           Simplify INDEX_LIST 
 -            Simplify INDEX_LIST 
 -      Simplify STATEMENT 
-+              Simplify TYPE 
-+              Simplify INDEX_LIST 
-+                Simplify INDEX_LIST 
-+                  Simplify INDEX_LIST 
-+                    Simplify INDEX_LIST 
-+     Simplify STATEMENT 
-         Simplify EXPRESSION (VARIABLE) 
-         Simplify EXPRESSION (NEW) 
+-        Simplify EXPRESSION (VARIABLE) 
+-        Simplify EXPRESSION (NEW) 
 -         Simplify TYPE 
-           Simplify TYPE 
+-          Simplify TYPE 
 -          Simplify INDEX_LIST 
 -           Simplify INDEX_LIST 
 -            Simplify INDEX_LIST 
@@ -181,8 +186,7 @@
 -         Simplify INDEX_LIST 
 -          Simplify INDEX_LIST 
 -           Simplify INDEX_LIST 
-+            Simplify TYPE 
-             Simplify INDEX_LIST 
+-            Simplify INDEX_LIST 
 -    Simplify STATEMENT 
 -      Simplify EXPRESSION (VARIABLE) 
 -      Simplify EXPRESSION (NEW) 
@@ -191,5 +195,7 @@
 -        Simplify INDEX_LIST 
 -         Simplify INDEX_LIST 
 -          Simplify INDEX_LIST 
-+              Simplify INDEX_LIST 
-+                Simplify INDEX_LIST 
++             Simplify TYPE 
++             Simplify INDEX_LIST 
++               Simplify INDEX_LIST 
++                 Simplify INDEX_LIST 
