@@ -8,6 +8,9 @@ int bind_default ( node_t *root, int stackOffset)
 		node_t* child = root->children[i];
 		if (child != NULL) {
 			(child->bind_names)(child, stackOffset);
+			/*	Eirik: Stack offset simply passed on 
+				because we haven't yet been told what to do with it.
+			*/
 		}
 	}
 
@@ -22,6 +25,9 @@ int bind_constant ( node_t *root, int stackOffset)
 		printf( "CONSTANT\n");
 	
 	if (root->data_type.base_type == STRING_TYPE){ 
+		/* 	Eirik: The only constant type that we yet know what to do with
+			is strings. 
+		*/
 		root->string_index = strings_add(root->string_const);
 	}
 
