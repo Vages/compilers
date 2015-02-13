@@ -1,5 +1,5 @@
 --- correctOutput/hello.s5	2015-02-09 13:34:58.019169000 +0100
-+++ testOutput/hello.s5	2015-02-13 14:00:12.603384000 +0100
++++ testOutput/hello.s5	2015-02-13 14:19:14.540746000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s6	2015-02-09 13:34:58.226171000 +0100
-+++ testOutput/while_simple.s6	2015-02-13 14:00:15.143398000 +0100
++++ testOutput/while_simple.s6	2015-02-13 14:19:17.022762000 +0100
 @@ -1,3 +0,0 @@
 -CONSTANT
 -CONSTANT
