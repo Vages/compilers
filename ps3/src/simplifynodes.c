@@ -63,7 +63,6 @@ Node_t* simplify_function ( Node_t *root, int depth )
 				root->data_type = child->data_type;
 			} else if (child->nodetype.index == VARIABLE){
 				root->label=STRDUP(child->label);
-				free(child->label);
 			} else{
 				new_children[c_i++] = child;	
 			}
