@@ -62,8 +62,10 @@ Node_t* simplify_function ( Node_t *root, int depth )
 			child = child->simplify(child, depth+1);
 			if (child->nodetype.index == TYPE){
 				root->data_type = child->data_type;
+				node_finalize(child);
 			} else if (child->nodetype.index == VARIABLE){
 				root->label=STRDUP(child->label);
+				node_finalize(child);
 			} else{
 				new_children[c_i++] = child;	
 			}
@@ -74,6 +76,7 @@ Node_t* simplify_function ( Node_t *root, int depth )
 
 
 	}
+	free(root->children);
 	root->children = new_children;
 	root->n_children = c_i;
 	
