@@ -4,7 +4,12 @@ char* thisClass;
 
 int bind_default ( node_t *root, int stackOffset)
 {
-
+	for (int i = 0; i < root->n_children; i++){
+		Node_t* child = root->children[i];
+		if (child != NULL) {
+			child->bind(child, depth+1);
+		}
+	}
 }
 
 
