@@ -1,5 +1,7 @@
 --- correctOutput/fibonacci_iterative.s7	2015-02-09 13:34:57.948170000 +0100
-+++ testOutput/fibonacci_iterative.s7	2015-02-13 17:03:54.906193000 +0100
-@@ -1,2 +0,0 @@
++++ testOutput/fibonacci_iterative.s7	2015-02-13 17:16:17.574963000 +0100
+@@ -1,2 +1,2 @@
 -Add strings ("Fibonacci number #"), index: 0 
 -Add strings ("is "), index: 1 
++Add strings ("Fibonacci number #"), index: -1 
++Add strings ("is "), index: 0 

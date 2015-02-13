@@ -1,8 +1,13 @@
 --- correctOutput/euclid.s7	2015-02-09 13:34:57.930174000 +0100
-+++ testOutput/euclid.s7	2015-02-13 17:03:54.772206000 +0100
-@@ -1,5 +0,0 @@
++++ testOutput/euclid.s7	2015-02-13 17:16:17.440967000 +0100
+@@ -1,5 +1,5 @@
 -Add strings ("Greatest common divisor of"), index: 0 
 -Add strings ("and"), index: 1 
 -Add strings ("is"), index: 2 
 -Add strings ("and"), index: 3 
 -Add strings ("are relative primes"), index: 4 
++Add strings ("Greatest common divisor of"), index: -1 
++Add strings ("and"), index: 0 
++Add strings ("is"), index: 1 
++Add strings ("and"), index: 2 
++Add strings ("are relative primes"), index: 3 

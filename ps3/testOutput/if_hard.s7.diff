@@ -1,6 +1,6 @@
 --- correctOutput/if_hard.s7	2015-02-09 13:34:58.031170000 +0100
-+++ testOutput/if_hard.s7	2015-02-13 17:03:55.603222000 +0100
-@@ -1,8 +0,0 @@
++++ testOutput/if_hard.s7	2015-02-13 17:16:18.134965000 +0100
+@@ -1,8 +1,8 @@
 -Add strings ("A is different from 10"), index: 0 
 -Add strings ("B is different from -15"), index: 1 
 -Add strings ("B equals -15"), index: 2 
@@ -9,3 +9,11 @@
 -Add strings ("a > 0, b <= 0"), index: 5 
 -Add strings ("a <= 0, b > 0"), index: 6 
 -Add strings ("a <= 0, b <= 0"), index: 7 
++Add strings ("A is different from 10"), index: -1 
++Add strings ("B is different from -15"), index: 0 
++Add strings ("B equals -15"), index: 1 
++Add strings ("This never happens..."), index: 2 
++Add strings ("a >0, b > 0"), index: 3 
++Add strings ("a > 0, b <= 0"), index: 4 
++Add strings ("a <= 0, b > 0"), index: 5 
++Add strings ("a <= 0, b <= 0"), index: 6 
