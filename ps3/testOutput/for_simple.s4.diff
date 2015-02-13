@@ -1,13 +1,10 @@
 --- correctOutput/for_simple.s4	2015-02-09 13:34:57.977168000 +0100
-+++ testOutput/for_simple.s4	2015-02-13 13:53:44.186216000 +0100
-@@ -1,17 +1,17 @@
-  Simplify FUNCTION_LIST 
--  Simplify FUNCTION 
--   Simplify TYPE 
--   Simplify STATEMENT_LIST 
-+   Simplify FUNCTION 
-+    Simplify TYPE 
-     Simplify STATEMENT_LIST 
++++ testOutput/for_simple.s4	2015-02-13 13:56:44.652226000 +0100
+@@ -2,16 +2,16 @@
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+-    Simplify STATEMENT_LIST 
 -     Simplify STATEMENT 
 -      Simplify DECLARATION_STATEMENT 
 -       Simplify TYPE 
@@ -15,20 +12,20 @@
 -       Simplify EXPRESSION (VARIABLE) 
 -       Simplify EXPRESSION (CONSTANT) 
 -      Simplify EXPRESSION (CONSTANT) 
-       Simplify STATEMENT_LIST 
--       Simplify STATEMENT 
+-      Simplify STATEMENT_LIST 
++     Simplify STATEMENT_LIST 
+        Simplify STATEMENT 
 -         Simplify EXPRESSION_LIST 
 -          Simplify EXPRESSION () 
 -           Simplify EXPRESSION (VARIABLE) 
-+        Simplify STATEMENT 
-+          Simplify DECLARATION_STATEMENT 
-+            Simplify TYPE 
-+      Simplify STATEMENT 
-+          Simplify EXPRESSION (VARIABLE) 
-+          Simplify EXPRESSION (CONSTANT) 
++         Simplify DECLARATION_STATEMENT 
++           Simplify TYPE 
++     Simplify STATEMENT 
++         Simplify EXPRESSION (VARIABLE) 
 +         Simplify EXPRESSION (CONSTANT) 
-+         Simplify STATEMENT_LIST 
-+           Simplify STATEMENT 
-+              Simplify EXPRESSION_LIST 
-+                Simplify EXPRESSION () 
-+                  Simplify EXPRESSION (VARIABLE) 
++        Simplify EXPRESSION (CONSTANT) 
++        Simplify STATEMENT_LIST 
++          Simplify STATEMENT 
++             Simplify EXPRESSION_LIST 
++               Simplify EXPRESSION () 
++                 Simplify EXPRESSION (VARIABLE) 

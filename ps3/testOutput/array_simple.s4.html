@@ -16,92 +16,88 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/array_simple.s4	2015-02-09 13:34:57.902167000 +0100</span>
-<span class="plus3">+++ testOutput/array_simple.s4	2015-02-13 13:53:37.485181000 +0100</span>
-<span class="at2">@@ -1,62 +1,62 @@</span>
-  Simplify FUNCTION_LIST 
-<span class="minus">-  Simplify FUNCTION </span>
-<span class="minus">-   Simplify TYPE </span>
-<span class="minus">-   Simplify STATEMENT_LIST </span>
-<span class="plus">+   Simplify FUNCTION </span>
-<span class="plus">+    Simplify TYPE </span>
-     Simplify STATEMENT_LIST 
-<span class="minus">-     Simplify STATEMENT_LIST </span>
-       Simplify STATEMENT_LIST 
-<span class="minus">-       Simplify STATEMENT_LIST </span>
-         Simplify STATEMENT_LIST 
-<span class="minus">-         Simplify STATEMENT_LIST </span>
-           Simplify STATEMENT_LIST 
-<span class="minus">-           Simplify STATEMENT_LIST </span>
-<span class="plus">+            Simplify STATEMENT_LIST </span>
-<span class="plus">+              Simplify STATEMENT_LIST </span>
-<span class="plus">+                Simplify STATEMENT_LIST </span>
-<span class="plus">+                  Simplify STATEMENT_LIST </span>
-<span class="plus">+                    Simplify STATEMENT_LIST </span>
-<span class="plus">+                      Simplify STATEMENT </span>
-<span class="plus">+                        Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                          Simplify TYPE </span>
-<span class="plus">+                    Simplify STATEMENT </span>
-<span class="plus">+                      Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                        Simplify TYPE </span>
-<span class="plus">+                  Simplify STATEMENT </span>
-<span class="plus">+                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                     Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+                Simplify STATEMENT </span>
-<span class="plus">+                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                   Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+              Simplify STATEMENT </span>
-<span class="plus">+                Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                  Simplify TYPE </span>
-<span class="plus">+                    Simplify TYPE </span>
-<span class="plus">+                    Simplify INDEX_LIST </span>
-             Simplify STATEMENT 
+<span class="plus3">+++ testOutput/array_simple.s4	2015-02-13 13:56:37.928188000 +0100</span>
+<span class="at2">@@ -2,61 +2,61 @@</span>
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+<span class="minus">-    Simplify STATEMENT_LIST </span>
+      Simplify STATEMENT_LIST 
+<span class="minus">-      Simplify STATEMENT_LIST </span>
+        Simplify STATEMENT_LIST 
+<span class="minus">-        Simplify STATEMENT_LIST </span>
+          Simplify STATEMENT_LIST 
+<span class="minus">-          Simplify STATEMENT_LIST </span>
+            Simplify STATEMENT_LIST 
+<span class="minus">-            Simplify STATEMENT </span>
 <span class="minus">-             Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-              Simplify TYPE </span>
-<span class="minus">-           Simplify STATEMENT </span>
-<span class="minus">-            Simplify DECLARATION_STATEMENT </span>
-<span class="minus">-             Simplify TYPE </span>
-<span class="plus">+               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+               Simplify EXPRESSION (NEW) </span>
+<span class="plus">+             Simplify STATEMENT_LIST </span>
+<span class="plus">+               Simplify STATEMENT_LIST </span>
+<span class="plus">+                 Simplify STATEMENT_LIST </span>
+<span class="plus">+                   Simplify STATEMENT_LIST </span>
+<span class="plus">+                     Simplify STATEMENT </span>
+<span class="plus">+                       Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                         Simplify TYPE </span>
+<span class="plus">+                   Simplify STATEMENT </span>
+<span class="plus">+                     Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                       Simplify TYPE </span>
+<span class="plus">+                 Simplify STATEMENT </span>
+<span class="plus">+                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                    Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+               Simplify STATEMENT </span>
+<span class="plus">+                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                  Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+             Simplify STATEMENT </span>
+<span class="plus">+               Simplify DECLARATION_STATEMENT </span>
 <span class="plus">+                 Simplify TYPE </span>
 <span class="plus">+                   Simplify TYPE </span>
 <span class="plus">+                   Simplify INDEX_LIST </span>
-           Simplify STATEMENT 
+            Simplify STATEMENT 
+<span class="minus">-            Simplify DECLARATION_STATEMENT </span>
+<span class="minus">-             Simplify TYPE </span>
+<span class="minus">-          Simplify STATEMENT </span>
 <span class="minus">-            Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-            Simplify EXPRESSION (CONSTANT) </span>
-<span class="minus">-         Simplify STATEMENT </span>
+<span class="plus">+              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+              Simplify EXPRESSION (NEW) </span>
+<span class="plus">+                Simplify TYPE </span>
+<span class="plus">+                  Simplify TYPE </span>
+<span class="plus">+                  Simplify INDEX_LIST </span>
+          Simplify STATEMENT 
 <span class="minus">-           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-           Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+             Simplify EXPRESSION (ARRAY_INDEX) </span>
-<span class="plus">+               Simplify EXPRESSION () </span>
-<span class="plus">+                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+               Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+             Simplify EXPRESSION () </span>
-<span class="plus">+               Simplify EXPRESSION (VARIABLE) </span>
-         Simplify STATEMENT 
+<span class="minus">-        Simplify STATEMENT </span>
 <span class="minus">-         Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-          Simplify TYPE </span>
 <span class="minus">-           Simplify TYPE </span>
 <span class="minus">-           Simplify INDEX_LIST </span>
-<span class="minus">-       Simplify STATEMENT </span>
+<span class="plus">+            Simplify EXPRESSION (ARRAY_INDEX) </span>
+<span class="plus">+              Simplify EXPRESSION () </span>
+<span class="plus">+                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+              Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+            Simplify EXPRESSION () </span>
+<span class="plus">+              Simplify EXPRESSION (VARIABLE) </span>
+        Simplify STATEMENT 
 <span class="minus">-         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-         Simplify EXPRESSION (NEW) </span>
 <span class="minus">-          Simplify TYPE </span>
 <span class="minus">-           Simplify TYPE </span>
 <span class="minus">-           Simplify INDEX_LIST </span>
-<span class="plus">+           Simplify EXPRESSION (ARRAY_INDEX) </span>
-<span class="plus">+             Simplify EXPRESSION () </span>
-<span class="plus">+               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+             Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+           Simplify EXPRESSION () </span>
-<span class="plus">+             Simplify EXPRESSION (VARIABLE) </span>
-       Simplify STATEMENT 
+<span class="minus">-      Simplify STATEMENT </span>
 <span class="minus">-        Simplify EXPRESSION (ARRAY_INDEX) </span>
 <span class="minus">-         Simplify EXPRESSION () </span>
 <span class="minus">-          Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-         Simplify EXPRESSION (CONSTANT) </span>
 <span class="minus">-        Simplify EXPRESSION () </span>
 <span class="minus">-         Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-     Simplify STATEMENT </span>
+<span class="plus">+          Simplify EXPRESSION (ARRAY_INDEX) </span>
+<span class="plus">+            Simplify EXPRESSION () </span>
+<span class="plus">+              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+            Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+          Simplify EXPRESSION () </span>
+<span class="plus">+            Simplify EXPRESSION (VARIABLE) </span>
+      Simplify STATEMENT 
 <span class="minus">-       Simplify EXPRESSION (ARRAY_INDEX) </span>
 <span class="minus">-        Simplify EXPRESSION () </span>
 <span class="minus">-         Simplify EXPRESSION (VARIABLE) </span>
@@ -113,7 +109,14 @@
 <span class="minus">-       Simplify EXPRESSION_LIST </span>
 <span class="minus">-        Simplify EXPRESSION () </span>
 <span class="minus">-         Simplify EXPRESSION (ARRAY_INDEX) </span>
-<span class="minus">-          Simplify EXPRESSION () </span>
+<span class="plus">+        Simplify EXPRESSION_LIST </span>
+<span class="plus">+          Simplify EXPRESSION_LIST </span>
+<span class="plus">+            Simplify EXPRESSION () </span>
+<span class="plus">+              Simplify EXPRESSION (ARRAY_INDEX) </span>
+<span class="plus">+                Simplify EXPRESSION () </span>
+<span class="plus">+                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                Simplify EXPRESSION (CONSTANT) </span>
+           Simplify EXPRESSION () 
 <span class="minus">-           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-          Simplify EXPRESSION (CONSTANT) </span>
 <span class="minus">-       Simplify EXPRESSION () </span>
@@ -121,18 +124,10 @@
 <span class="minus">-         Simplify EXPRESSION () </span>
 <span class="minus">-          Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-         Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+         Simplify EXPRESSION_LIST </span>
-<span class="plus">+           Simplify EXPRESSION_LIST </span>
-<span class="plus">+             Simplify EXPRESSION () </span>
-<span class="plus">+               Simplify EXPRESSION (ARRAY_INDEX) </span>
-<span class="plus">+                 Simplify EXPRESSION () </span>
-<span class="plus">+                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                 Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+           Simplify EXPRESSION () </span>
-<span class="plus">+             Simplify EXPRESSION (ARRAY_INDEX) </span>
-<span class="plus">+               Simplify EXPRESSION () </span>
-<span class="plus">+                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+               Simplify EXPRESSION (CONSTANT) </span></span>
+<span class="plus">+            Simplify EXPRESSION (ARRAY_INDEX) </span>
+<span class="plus">+              Simplify EXPRESSION () </span>
+<span class="plus">+                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+              Simplify EXPRESSION (CONSTANT) </span></span>
 </pre>
 </body>
 </html>

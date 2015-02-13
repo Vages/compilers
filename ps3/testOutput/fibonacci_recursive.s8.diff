@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s8	2015-02-09 13:34:57.957171000 +0100
-+++ testOutput/fibonacci_recursive.s8	2015-02-13 13:53:43.728216000 +0100
++++ testOutput/fibonacci_recursive.s8	2015-02-13 13:56:44.214221000 +0100
 @@ -8,9 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

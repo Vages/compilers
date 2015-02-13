@@ -16,37 +16,31 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_simple.s4	2015-02-09 13:34:58.006172000 +0100</span>
-<span class="plus3">+++ testOutput/function_simple.s4	2015-02-13 13:53:46.069228000 +0100</span>
-<span class="at2">@@ -1,17 +1,17 @@</span>
-  Simplify FUNCTION_LIST 
-<span class="minus">-  Simplify FUNCTION_LIST </span>
-<span class="plus">+   Simplify FUNCTION_LIST </span>
-<span class="plus">+     Simplify FUNCTION </span>
-<span class="plus">+      Simplify TYPE </span>
-<span class="plus">+      Simplify STATEMENT_LIST </span>
-<span class="plus">+        Simplify STATEMENT_LIST </span>
-<span class="plus">+          Simplify STATEMENT </span>
-<span class="plus">+             Simplify EXPRESSION_LIST </span>
-<span class="plus">+               Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+        Simplify STATEMENT </span>
-<span class="plus">+          Simplify EXPRESSION (FUNC_CALL) </span>
+<span class="plus3">+++ testOutput/function_simple.s4	2015-02-13 13:56:46.424234000 +0100</span>
+<span class="at2">@@ -3,15 +3,15 @@</span>
     Simplify FUNCTION 
      Simplify TYPE 
      Simplify STATEMENT_LIST 
 <span class="minus">-     Simplify STATEMENT_LIST </span>
+<span class="plus">+      Simplify STATEMENT_LIST </span>
+<span class="plus">+        Simplify STATEMENT </span>
+<span class="plus">+           Simplify EXPRESSION_LIST </span>
+<span class="plus">+             Simplify EXPRESSION (CONSTANT) </span>
        Simplify STATEMENT 
 <span class="minus">-        Simplify EXPRESSION_LIST </span>
 <span class="minus">-         Simplify EXPRESSION (CONSTANT) </span>
 <span class="minus">-     Simplify STATEMENT </span>
 <span class="minus">-      Simplify EXPRESSION (FUNC_CALL) </span>
-<span class="minus">-  Simplify FUNCTION </span>
-<span class="minus">-   Simplify TYPE </span>
-<span class="minus">-   Simplify STATEMENT_LIST </span>
+<span class="plus">+        Simplify EXPRESSION (FUNC_CALL) </span>
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
 <span class="minus">-    Simplify STATEMENT </span>
 <span class="minus">-      Simplify EXPRESSION_LIST </span>
 <span class="minus">-       Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+         Simplify EXPRESSION_LIST </span>
-<span class="plus">+           Simplify EXPRESSION (CONSTANT) </span></span>
+<span class="plus">+     Simplify STATEMENT </span>
+<span class="plus">+        Simplify EXPRESSION_LIST </span>
+<span class="plus">+          Simplify EXPRESSION (CONSTANT) </span></span>
 </pre>
 </body>
 </html>

@@ -1,37 +1,33 @@
 --- correctOutput/strings_and_comments.s4	2015-02-09 13:34:58.166175000 +0100
-+++ testOutput/strings_and_comments.s4	2015-02-13 13:53:54.413273000 +0100
-@@ -1,19 +1,19 @@
-  Simplify FUNCTION_LIST 
--  Simplify FUNCTION 
--   Simplify TYPE 
--   Simplify STATEMENT_LIST 
-+   Simplify FUNCTION 
-+    Simplify TYPE 
-     Simplify STATEMENT_LIST 
--     Simplify STATEMENT_LIST 
-       Simplify STATEMENT_LIST 
--       Simplify STATEMENT 
++++ testOutput/strings_and_comments.s4	2015-02-13 13:56:54.535284000 +0100
+@@ -2,18 +2,18 @@
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+-    Simplify STATEMENT_LIST 
+      Simplify STATEMENT_LIST 
+-      Simplify STATEMENT_LIST 
++       Simplify STATEMENT_LIST 
++         Simplify STATEMENT_LIST 
++           Simplify STATEMENT 
++              Simplify EXPRESSION_LIST 
++                Simplify EXPRESSION (CONSTANT) 
++         Simplify STATEMENT 
++            Simplify EXPRESSION_LIST 
++              Simplify EXPRESSION (CONSTANT) 
+        Simplify STATEMENT 
 -         Simplify EXPRESSION_LIST 
 -          Simplify EXPRESSION (CONSTANT) 
-+        Simplify STATEMENT_LIST 
-+          Simplify STATEMENT_LIST 
-+            Simplify STATEMENT 
-+               Simplify EXPRESSION_LIST 
-+                 Simplify EXPRESSION (CONSTANT) 
-+          Simplify STATEMENT 
-+             Simplify EXPRESSION_LIST 
-+               Simplify EXPRESSION (CONSTANT) 
-+        Simplify STATEMENT 
-+           Simplify EXPRESSION_LIST 
-+             Simplify EXPRESSION (CONSTANT) 
-       Simplify STATEMENT 
+-      Simplify STATEMENT 
 -        Simplify EXPRESSION_LIST 
 -         Simplify EXPRESSION (CONSTANT) 
--     Simplify STATEMENT 
++          Simplify EXPRESSION_LIST 
++            Simplify EXPRESSION (CONSTANT) 
+      Simplify STATEMENT 
 -       Simplify EXPRESSION_LIST 
 -        Simplify EXPRESSION (CONSTANT) 
 -    Simplify STATEMENT 
 -      Simplify EXPRESSION_LIST 
 -       Simplify EXPRESSION (CONSTANT) 
-+         Simplify EXPRESSION_LIST 
-+           Simplify EXPRESSION (CONSTANT) 
++        Simplify EXPRESSION_LIST 
++          Simplify EXPRESSION (CONSTANT) 

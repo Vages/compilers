@@ -16,551 +16,538 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/arithmetic_int.s4	2015-02-09 13:34:57.877168000 +0100</span>
-<span class="plus3">+++ testOutput/arithmetic_int.s4	2015-02-13 13:53:34.516215000 +0100</span>
-<span class="at2">@@ -1,395 +1,395 @@</span>
-  Simplify FUNCTION_LIST 
-<span class="minus">-  Simplify FUNCTION </span>
-<span class="minus">-   Simplify TYPE </span>
-<span class="minus">-   Simplify STATEMENT_LIST </span>
-<span class="plus">+   Simplify FUNCTION </span>
-<span class="plus">+    Simplify TYPE </span>
-     Simplify STATEMENT_LIST 
-<span class="minus">-     Simplify STATEMENT_LIST </span>
-       Simplify STATEMENT_LIST 
-<span class="minus">-       Simplify STATEMENT_LIST </span>
-         Simplify STATEMENT_LIST 
-<span class="minus">-         Simplify STATEMENT_LIST </span>
-           Simplify STATEMENT_LIST 
-<span class="minus">-           Simplify STATEMENT_LIST </span>
-             Simplify STATEMENT_LIST 
-<span class="minus">-             Simplify STATEMENT_LIST </span>
-               Simplify STATEMENT_LIST 
-<span class="minus">-               Simplify STATEMENT_LIST </span>
-                 Simplify STATEMENT_LIST 
-<span class="minus">-                 Simplify STATEMENT_LIST </span>
-                   Simplify STATEMENT_LIST 
-<span class="minus">-                   Simplify STATEMENT_LIST </span>
-                     Simplify STATEMENT_LIST 
-<span class="minus">-                     Simplify STATEMENT_LIST </span>
-                       Simplify STATEMENT_LIST 
-<span class="minus">-                       Simplify STATEMENT_LIST </span>
-                         Simplify STATEMENT_LIST 
-<span class="minus">-                         Simplify STATEMENT_LIST </span>
-                           Simplify STATEMENT_LIST 
-<span class="minus">-                           Simplify STATEMENT_LIST </span>
-                             Simplify STATEMENT_LIST 
-<span class="minus">-                             Simplify STATEMENT_LIST </span>
-                               Simplify STATEMENT_LIST 
-<span class="minus">-                               Simplify STATEMENT_LIST </span>
-                                 Simplify STATEMENT_LIST 
-<span class="minus">-                                 Simplify STATEMENT_LIST </span>
-                                   Simplify STATEMENT_LIST 
-<span class="minus">-                                   Simplify STATEMENT_LIST </span>
-                                     Simplify STATEMENT_LIST 
-<span class="minus">-                                     Simplify STATEMENT_LIST </span>
-                                       Simplify STATEMENT_LIST 
-<span class="minus">-                                       Simplify STATEMENT_LIST </span>
-                                         Simplify STATEMENT_LIST 
-<span class="minus">-                                         Simplify STATEMENT_LIST </span>
-                                           Simplify STATEMENT_LIST 
-<span class="minus">-                                           Simplify STATEMENT_LIST </span>
-                                             Simplify STATEMENT_LIST 
-<span class="minus">-                                             Simplify STATEMENT_LIST </span>
-                                               Simplify STATEMENT_LIST 
-<span class="minus">-                                               Simplify STATEMENT_LIST </span>
-                                                 Simplify STATEMENT_LIST 
-<span class="minus">-                                                 Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                  Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                    Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                      Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                        Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                          Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                            Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                              Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                  Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                    Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                      Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                        Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                          Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                            Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                              Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                  Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                    Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                      Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                        Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                          Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                            Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                              Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                                Simplify STATEMENT_LIST </span>
-<span class="plus">+                                                                                                  Simplify STATEMENT </span>
-<span class="plus">+                                                                                                    Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                                                                                                      Simplify TYPE </span>
-<span class="plus">+                                                                                                Simplify STATEMENT </span>
-<span class="plus">+                                                                                                  Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                                                                                                    Simplify TYPE </span>
-<span class="plus">+                                                                                              Simplify STATEMENT </span>
-<span class="plus">+                                                                                                Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                                                                                                  Simplify TYPE </span>
-<span class="plus">+                                                                                            Simplify STATEMENT </span>
-<span class="plus">+                                                                                              Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                                                                                                Simplify TYPE </span>
-<span class="plus">+                                                                                          Simplify STATEMENT </span>
-<span class="plus">+                                                                                            Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                                                                                              Simplify TYPE </span>
-<span class="plus">+                                                                                        Simplify STATEMENT </span>
-<span class="plus">+                                                                                          Simplify DECLARATION_STATEMENT </span>
-<span class="plus">+                                                                                            Simplify TYPE </span>
-<span class="plus">+                                                                                      Simplify STATEMENT </span>
-<span class="plus">+                                                                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                                         Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+                                                                                    Simplify STATEMENT </span>
-<span class="plus">+                                                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                                       Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+                                                                                  Simplify STATEMENT </span>
-<span class="plus">+                                                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                                     Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                                                       Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+                                                                                Simplify STATEMENT </span>
-<span class="plus">+                                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                                   Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                                                     Simplify EXPRESSION () </span>
-<span class="plus">+                                                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                              Simplify STATEMENT </span>
-<span class="plus">+                                                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                                 Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                            Simplify STATEMENT </span>
-<span class="plus">+                                                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                               Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                          Simplify STATEMENT </span>
-<span class="plus">+                                                                             Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                               Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                                 Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                               Simplify EXPRESSION () </span>
-<span class="plus">+                                                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                        Simplify STATEMENT </span>
-<span class="plus">+                                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                           Simplify EXPRESSION (+) </span>
-<span class="plus">+                                                                             Simplify EXPRESSION () </span>
-<span class="plus">+                                                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                             Simplify EXPRESSION () </span>
-<span class="plus">+                                                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                      Simplify STATEMENT </span>
-<span class="plus">+                                                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                         Simplify EXPRESSION (+) </span>
-<span class="plus">+                                                                           Simplify EXPRESSION () </span>
-<span class="plus">+                                                                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                           Simplify EXPRESSION () </span>
-<span class="plus">+                                                                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                    Simplify STATEMENT </span>
-<span class="plus">+                                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                       Simplify EXPRESSION (+) </span>
-<span class="plus">+                                                                         Simplify EXPRESSION () </span>
-<span class="plus">+                                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                         Simplify EXPRESSION () </span>
-<span class="plus">+                                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                  Simplify STATEMENT </span>
-<span class="plus">+                                                                     Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                       Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                         Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                           Simplify EXPRESSION () </span>
-<span class="plus">+                                                                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                         Simplify EXPRESSION () </span>
-<span class="plus">+                                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                       Simplify EXPRESSION () </span>
-<span class="plus">+                                                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                Simplify STATEMENT </span>
-<span class="plus">+                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                   Simplify EXPRESSION (-) </span>
-<span class="plus">+                                                                     Simplify EXPRESSION () </span>
-<span class="plus">+                                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                     Simplify EXPRESSION () </span>
-<span class="plus">+                                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                              Simplify STATEMENT </span>
-<span class="plus">+                                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                 Simplify EXPRESSION (-) </span>
-<span class="plus">+                                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                            Simplify STATEMENT </span>
-<span class="plus">+                                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                               Simplify EXPRESSION (-) </span>
-<span class="plus">+                                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                          Simplify STATEMENT </span>
-<span class="plus">+                                                             Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                               Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                 Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                               Simplify EXPRESSION () </span>
-<span class="plus">+                                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                        Simplify STATEMENT </span>
-<span class="plus">+                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                           Simplify EXPRESSION (-) </span>
-<span class="plus">+                                                             Simplify EXPRESSION () </span>
-<span class="plus">+                                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                             Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                               Simplify EXPRESSION () </span>
-<span class="plus">+                                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                      Simplify STATEMENT </span>
-<span class="plus">+                                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                         Simplify EXPRESSION (-) </span>
-<span class="plus">+                                                           Simplify EXPRESSION () </span>
-<span class="plus">+                                                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                           Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                             Simplify EXPRESSION () </span>
-<span class="plus">+                                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                    Simplify STATEMENT </span>
-<span class="plus">+                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                       Simplify EXPRESSION (-) </span>
-<span class="plus">+                                                         Simplify EXPRESSION () </span>
-<span class="plus">+                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                         Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                                           Simplify EXPRESSION () </span>
-<span class="plus">+                                                             Simplify EXPRESSION (VARIABLE) </span>
-                                                   Simplify STATEMENT 
+<span class="plus3">+++ testOutput/arithmetic_int.s4	2015-02-13 13:56:34.980182000 +0100</span>
+<span class="at2">@@ -2,394 +2,394 @@</span>
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+<span class="minus">-    Simplify STATEMENT_LIST </span>
+      Simplify STATEMENT_LIST 
+<span class="minus">-      Simplify STATEMENT_LIST </span>
+        Simplify STATEMENT_LIST 
+<span class="minus">-        Simplify STATEMENT_LIST </span>
+          Simplify STATEMENT_LIST 
+<span class="minus">-          Simplify STATEMENT_LIST </span>
+            Simplify STATEMENT_LIST 
+<span class="minus">-            Simplify STATEMENT_LIST </span>
+              Simplify STATEMENT_LIST 
+<span class="minus">-              Simplify STATEMENT_LIST </span>
+                Simplify STATEMENT_LIST 
+<span class="minus">-                Simplify STATEMENT_LIST </span>
+                  Simplify STATEMENT_LIST 
+<span class="minus">-                  Simplify STATEMENT_LIST </span>
+                    Simplify STATEMENT_LIST 
+<span class="minus">-                    Simplify STATEMENT_LIST </span>
+                      Simplify STATEMENT_LIST 
+<span class="minus">-                      Simplify STATEMENT_LIST </span>
+                        Simplify STATEMENT_LIST 
+<span class="minus">-                        Simplify STATEMENT_LIST </span>
+                          Simplify STATEMENT_LIST 
+<span class="minus">-                          Simplify STATEMENT_LIST </span>
+                            Simplify STATEMENT_LIST 
+<span class="minus">-                            Simplify STATEMENT_LIST </span>
+                              Simplify STATEMENT_LIST 
+<span class="minus">-                              Simplify STATEMENT_LIST </span>
+                                Simplify STATEMENT_LIST 
+<span class="minus">-                                Simplify STATEMENT_LIST </span>
+                                  Simplify STATEMENT_LIST 
+<span class="minus">-                                  Simplify STATEMENT_LIST </span>
+                                    Simplify STATEMENT_LIST 
+<span class="minus">-                                    Simplify STATEMENT_LIST </span>
+                                      Simplify STATEMENT_LIST 
+<span class="minus">-                                      Simplify STATEMENT_LIST </span>
+                                        Simplify STATEMENT_LIST 
+<span class="minus">-                                        Simplify STATEMENT_LIST </span>
+                                          Simplify STATEMENT_LIST 
+<span class="minus">-                                          Simplify STATEMENT_LIST </span>
+                                            Simplify STATEMENT_LIST 
+<span class="minus">-                                            Simplify STATEMENT_LIST </span>
+                                              Simplify STATEMENT_LIST 
+<span class="minus">-                                              Simplify STATEMENT_LIST </span>
+                                                Simplify STATEMENT_LIST 
+<span class="minus">-                                                Simplify STATEMENT_LIST </span>
+                                                  Simplify STATEMENT_LIST 
+<span class="minus">-                                                  Simplify STATEMENT </span>
 <span class="minus">-                                                   Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-                                                    Simplify TYPE </span>
-<span class="minus">-                                                 Simplify STATEMENT </span>
+<span class="plus">+                                                   Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                     Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                       Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                         Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                           Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                             Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                               Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                 Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                   Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                     Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                       Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                         Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                           Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                             Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                               Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                 Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                   Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                     Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                       Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                         Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                           Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                             Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                               Simplify STATEMENT_LIST </span>
+<span class="plus">+                                                                                                 Simplify STATEMENT </span>
+<span class="plus">+                                                                                                   Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                                                                                                     Simplify TYPE </span>
+<span class="plus">+                                                                                               Simplify STATEMENT </span>
+<span class="plus">+                                                                                                 Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                                                                                                   Simplify TYPE </span>
+<span class="plus">+                                                                                             Simplify STATEMENT </span>
+<span class="plus">+                                                                                               Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                                                                                                 Simplify TYPE </span>
+<span class="plus">+                                                                                           Simplify STATEMENT </span>
+<span class="plus">+                                                                                             Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                                                                                               Simplify TYPE </span>
+<span class="plus">+                                                                                         Simplify STATEMENT </span>
+<span class="plus">+                                                                                           Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                                                                                             Simplify TYPE </span>
+<span class="plus">+                                                                                       Simplify STATEMENT </span>
+<span class="plus">+                                                                                         Simplify DECLARATION_STATEMENT </span>
+<span class="plus">+                                                                                           Simplify TYPE </span>
+<span class="plus">+                                                                                     Simplify STATEMENT </span>
+<span class="plus">+                                                                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                                        Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+                                                                                   Simplify STATEMENT </span>
+<span class="plus">+                                                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                                      Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+                                                                                 Simplify STATEMENT </span>
+<span class="plus">+                                                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                                    Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                                                      Simplify EXPRESSION (CONSTANT) </span>
+<span class="plus">+                                                                               Simplify STATEMENT </span>
+<span class="plus">+                                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                                  Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                                                    Simplify EXPRESSION () </span>
+<span class="plus">+                                                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                             Simplify STATEMENT </span>
+<span class="plus">+                                                                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                                Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                           Simplify STATEMENT </span>
+<span class="plus">+                                                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                              Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                         Simplify STATEMENT </span>
+<span class="plus">+                                                                            Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                              Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                                Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                              Simplify EXPRESSION () </span>
+<span class="plus">+                                                                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                       Simplify STATEMENT </span>
+<span class="plus">+                                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                          Simplify EXPRESSION (+) </span>
+<span class="plus">+                                                                            Simplify EXPRESSION () </span>
+<span class="plus">+                                                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                            Simplify EXPRESSION () </span>
+<span class="plus">+                                                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                     Simplify STATEMENT </span>
+<span class="plus">+                                                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                        Simplify EXPRESSION (+) </span>
+<span class="plus">+                                                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                                                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                                                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                   Simplify STATEMENT </span>
+<span class="plus">+                                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                      Simplify EXPRESSION (+) </span>
+<span class="plus">+                                                                        Simplify EXPRESSION () </span>
+<span class="plus">+                                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                        Simplify EXPRESSION () </span>
+<span class="plus">+                                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                 Simplify STATEMENT </span>
+<span class="plus">+                                                                    Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                      Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                        Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                                                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                        Simplify EXPRESSION () </span>
+<span class="plus">+                                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                      Simplify EXPRESSION () </span>
+<span class="plus">+                                                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                               Simplify STATEMENT </span>
+<span class="plus">+                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                  Simplify EXPRESSION (-) </span>
+<span class="plus">+                                                                    Simplify EXPRESSION () </span>
+<span class="plus">+                                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                    Simplify EXPRESSION () </span>
+<span class="plus">+                                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                             Simplify STATEMENT </span>
+<span class="plus">+                                                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                Simplify EXPRESSION (-) </span>
+<span class="plus">+                                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                           Simplify STATEMENT </span>
+<span class="plus">+                                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                              Simplify EXPRESSION (-) </span>
+<span class="plus">+                                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                         Simplify STATEMENT </span>
+<span class="plus">+                                                            Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                              Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                              Simplify EXPRESSION () </span>
+<span class="plus">+                                                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                       Simplify STATEMENT </span>
+<span class="plus">+                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                          Simplify EXPRESSION (-) </span>
+<span class="plus">+                                                            Simplify EXPRESSION () </span>
+<span class="plus">+                                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                            Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                              Simplify EXPRESSION () </span>
+<span class="plus">+                                                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                     Simplify STATEMENT </span>
+<span class="plus">+                                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                        Simplify EXPRESSION (-) </span>
+<span class="plus">+                                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                          Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                            Simplify EXPRESSION () </span>
+<span class="plus">+                                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                   Simplify STATEMENT </span>
+<span class="plus">+                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                      Simplify EXPRESSION (-) </span>
+<span class="plus">+                                                        Simplify EXPRESSION () </span>
+<span class="plus">+                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                        Simplify EXPRESSION (UMINUS) </span>
+<span class="plus">+                                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                                            Simplify EXPRESSION (VARIABLE) </span>
+                                                  Simplify STATEMENT 
 <span class="minus">-                                                  Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-                                                   Simplify TYPE </span>
-<span class="plus">+                                                     Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                       Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                         Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                           Simplify EXPRESSION () </span>
-<span class="plus">+                                                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                         Simplify EXPRESSION () </span>
-<span class="plus">+                                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                       Simplify EXPRESSION () </span>
-<span class="plus">+                                                         Simplify EXPRESSION (VARIABLE) </span>
-                                                 Simplify STATEMENT 
+<span class="minus">-                                                Simplify STATEMENT </span>
 <span class="minus">-                                                 Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-                                                  Simplify TYPE </span>
-<span class="minus">-                                               Simplify STATEMENT </span>
+<span class="plus">+                                                    Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                      Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                        Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                        Simplify EXPRESSION () </span>
+<span class="plus">+                                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                      Simplify EXPRESSION () </span>
+<span class="plus">+                                                        Simplify EXPRESSION (VARIABLE) </span>
+                                                Simplify STATEMENT 
 <span class="minus">-                                                Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-                                                 Simplify TYPE </span>
-<span class="plus">+                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                   Simplify EXPRESSION (*) </span>
-<span class="plus">+                                                     Simplify EXPRESSION () </span>
-<span class="plus">+                                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                     Simplify EXPRESSION () </span>
-<span class="plus">+                                                       Simplify EXPRESSION (VARIABLE) </span>
-                                               Simplify STATEMENT 
+<span class="minus">-                                              Simplify STATEMENT </span>
 <span class="minus">-                                               Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-                                                Simplify TYPE </span>
-<span class="minus">-                                             Simplify STATEMENT </span>
+<span class="plus">+                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                  Simplify EXPRESSION (*) </span>
+<span class="plus">+                                                    Simplify EXPRESSION () </span>
+<span class="plus">+                                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                    Simplify EXPRESSION () </span>
+<span class="plus">+                                                      Simplify EXPRESSION (VARIABLE) </span>
+                                              Simplify STATEMENT 
 <span class="minus">-                                              Simplify DECLARATION_STATEMENT </span>
 <span class="minus">-                                               Simplify TYPE </span>
-<span class="plus">+                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                 Simplify EXPRESSION (*) </span>
-<span class="plus">+                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                     Simplify EXPRESSION (VARIABLE) </span>
-                                             Simplify STATEMENT 
+<span class="minus">-                                            Simplify STATEMENT </span>
 <span class="minus">-                                              Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                              Simplify EXPRESSION (CONSTANT) </span>
-<span class="minus">-                                           Simplify STATEMENT </span>
+<span class="plus">+                                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                Simplify EXPRESSION (*) </span>
+<span class="plus">+                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                    Simplify EXPRESSION (VARIABLE) </span>
+                                            Simplify STATEMENT 
 <span class="minus">-                                             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                             Simplify EXPRESSION (CONSTANT) </span>
-<span class="plus">+                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                               Simplify EXPRESSION (*) </span>
-<span class="plus">+                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                   Simplify EXPRESSION (VARIABLE) </span>
-                                           Simplify STATEMENT 
+<span class="minus">-                                          Simplify STATEMENT </span>
 <span class="minus">-                                            Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                            Simplify EXPRESSION (UMINUS) </span>
 <span class="minus">-                                             Simplify EXPRESSION (CONSTANT) </span>
-<span class="minus">-                                         Simplify STATEMENT </span>
-<span class="plus">+                                             Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                               Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                 Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                                   Simplify EXPRESSION () </span>
-<span class="plus">+                                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                                 Simplify EXPRESSION () </span>
-<span class="plus">+                                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                               Simplify EXPRESSION () </span>
-<span class="plus">+                                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                        Simplify STATEMENT </span>
-                                            Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                              Simplify EXPRESSION (*) </span>
+<span class="plus">+                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                  Simplify EXPRESSION (VARIABLE) </span>
+                                          Simplify STATEMENT 
+<span class="minus">-                                           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                           Simplify EXPRESSION (UMINUS) </span>
 <span class="minus">-                                            Simplify EXPRESSION () </span>
-<span class="plus">+                                           Simplify EXPRESSION (/) </span>
-<span class="plus">+                                             Simplify EXPRESSION () </span>
-<span class="plus">+                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                             Simplify EXPRESSION () </span>
-<span class="plus">+                                               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                      Simplify STATEMENT </span>
-<span class="plus">+                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                         Simplify EXPRESSION (/) </span>
-<span class="plus">+                                           Simplify EXPRESSION () </span>
-                                              Simplify EXPRESSION (VARIABLE) 
+<span class="minus">-                                             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                        Simplify STATEMENT </span>
 <span class="minus">-                                          Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                          Simplify EXPRESSION (UMINUS) </span>
-                                            Simplify EXPRESSION () 
+<span class="minus">-                                           Simplify EXPRESSION () </span>
 <span class="minus">-                                            Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                       Simplify STATEMENT </span>
+<span class="plus">+                                            Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                              Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                                Simplify EXPRESSION () </span>
+<span class="plus">+                                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                              Simplify EXPRESSION () </span>
+<span class="plus">+                                                Simplify EXPRESSION (VARIABLE) </span>
+                                        Simplify STATEMENT 
 <span class="minus">-                                         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                         Simplify EXPRESSION (UMINUS) </span>
-<span class="minus">-                                          Simplify EXPRESSION () </span>
-<span class="plus">+                                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                    Simplify STATEMENT </span>
-<span class="plus">+                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                       Simplify EXPRESSION (/) </span>
-<span class="plus">+                                         Simplify EXPRESSION () </span>
-                                            Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                          Simplify EXPRESSION (/) </span>
+<span class="plus">+                                            Simplify EXPRESSION () </span>
+<span class="plus">+                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                            Simplify EXPRESSION () </span>
+<span class="plus">+                                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                     Simplify STATEMENT </span>
+<span class="plus">+                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                        Simplify EXPRESSION (/) </span>
+                                           Simplify EXPRESSION () 
+<span class="minus">-                                           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                      Simplify STATEMENT </span>
 <span class="minus">-                                        Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                         Simplify EXPRESSION () </span>
-<span class="plus">+                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                  Simplify STATEMENT </span>
-<span class="plus">+                                     Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                       Simplify EXPRESSION_LIST </span>
-                                          Simplify EXPRESSION_LIST 
+<span class="minus">-                                         Simplify EXPRESSION_LIST </span>
 <span class="minus">-                                          Simplify EXPRESSION_LIST </span>
-                                            Simplify EXPRESSION () 
-<span class="minus">-                                            Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                          Simplify EXPRESSION () </span>
+<span class="minus">-                                           Simplify EXPRESSION () </span>
+                                             Simplify EXPRESSION (VARIABLE) 
+                                           Simplify EXPRESSION () 
 <span class="minus">-                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                             Simplify EXPRESSION (VARIABLE) </span>
-                                          Simplify EXPRESSION () 
-<span class="minus">-                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                                         Simplify EXPRESSION () </span>
+<span class="plus">+                                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                   Simplify STATEMENT </span>
+<span class="plus">+                                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                      Simplify EXPRESSION (/) </span>
+<span class="plus">+                                        Simplify EXPRESSION () </span>
+                                           Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-                                     Simplify STATEMENT </span>
 <span class="minus">-                                       Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                       Simplify EXPRESSION (+) </span>
-<span class="minus">-                                        Simplify EXPRESSION () </span>
+                                         Simplify EXPRESSION () 
 <span class="minus">-                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                        Simplify EXPRESSION () </span>
-<span class="plus">+                                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                       Simplify EXPRESSION () </span>
-                                          Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                 Simplify STATEMENT </span>
+<span class="plus">+                                    Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                      Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                        Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                          Simplify EXPRESSION () </span>
+<span class="plus">+                                            Simplify EXPRESSION (VARIABLE) </span>
+                                         Simplify EXPRESSION () 
+<span class="minus">-                                         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                    Simplify STATEMENT </span>
 <span class="minus">-                                      Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                      Simplify EXPRESSION (+) </span>
-<span class="plus">+                                Simplify STATEMENT </span>
-<span class="plus">+                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                   Simplify EXPRESSION (+) </span>
-<span class="plus">+                                     Simplify EXPRESSION (+) </span>
-                                        Simplify EXPRESSION () 
+<span class="minus">-                                       Simplify EXPRESSION () </span>
 <span class="minus">-                                        Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                         Simplify EXPRESSION (VARIABLE) </span>
-                                        Simplify EXPRESSION () 
+<span class="minus">-                                       Simplify EXPRESSION () </span>
 <span class="minus">-                                        Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                   Simplify STATEMENT </span>
 <span class="minus">-                                     Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                     Simplify EXPRESSION (+) </span>
-<span class="minus">-                                      Simplify EXPRESSION () </span>
+<span class="plus">+                                          Simplify EXPRESSION (VARIABLE) </span>
+                                       Simplify EXPRESSION () 
 <span class="minus">-                                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                      Simplify EXPRESSION () </span>
-<span class="plus">+                                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                     Simplify EXPRESSION () </span>
-                                        Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                               Simplify STATEMENT </span>
+<span class="plus">+                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                  Simplify EXPRESSION (+) </span>
+<span class="plus">+                                    Simplify EXPRESSION (+) </span>
+                                       Simplify EXPRESSION () 
+<span class="minus">-                                       Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                  Simplify STATEMENT </span>
 <span class="minus">-                                    Simplify EXPRESSION_LIST </span>
 <span class="minus">-                                     Simplify EXPRESSION_LIST </span>
 <span class="minus">-                                      Simplify EXPRESSION_LIST </span>
 <span class="minus">-                                       Simplify EXPRESSION () </span>
-<span class="minus">-                                        Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                      Simplify EXPRESSION () </span>
-<span class="plus">+                              Simplify STATEMENT </span>
-<span class="plus">+                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                 Simplify EXPRESSION (-) </span>
-<span class="plus">+                                   Simplify EXPRESSION (-) </span>
-<span class="plus">+                                     Simplify EXPRESSION () </span>
-                                        Simplify EXPRESSION (VARIABLE) 
-                                      Simplify EXPRESSION () 
-<span class="minus">-                                      Simplify EXPRESSION (VARIABLE) </span>
+                                         Simplify EXPRESSION (VARIABLE) 
+                                       Simplify EXPRESSION () 
+<span class="minus">-                                       Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                                     Simplify EXPRESSION () </span>
+<span class="plus">+                                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                    Simplify EXPRESSION () </span>
+                                       Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-                                 Simplify STATEMENT </span>
 <span class="minus">-                                   Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                   Simplify EXPRESSION (-) </span>
-<span class="minus">-                                    Simplify EXPRESSION () </span>
+<span class="plus">+                             Simplify STATEMENT </span>
+<span class="plus">+                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                Simplify EXPRESSION (-) </span>
+<span class="plus">+                                  Simplify EXPRESSION (-) </span>
+                                     Simplify EXPRESSION () 
 <span class="minus">-                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                    Simplify EXPRESSION () </span>
+<span class="plus">+                                      Simplify EXPRESSION (VARIABLE) </span>
+                                     Simplify EXPRESSION () 
 <span class="minus">-                                     Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                Simplify STATEMENT </span>
 <span class="minus">-                                  Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                  Simplify EXPRESSION (-) </span>
 <span class="minus">-                                   Simplify EXPRESSION () </span>
 <span class="minus">-                                    Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                       Simplify EXPRESSION (VARIABLE) </span>
-                                    Simplify EXPRESSION () 
+<span class="minus">-                                   Simplify EXPRESSION () </span>
 <span class="minus">-                                    Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                               Simplify STATEMENT </span>
 <span class="minus">-                                 Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                 Simplify EXPRESSION (-) </span>
 <span class="minus">-                                  Simplify EXPRESSION () </span>
 <span class="minus">-                                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                  Simplify EXPRESSION () </span>
+<span class="plus">+                                      Simplify EXPRESSION (VARIABLE) </span>
+                                   Simplify EXPRESSION () 
 <span class="minus">-                                   Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                              Simplify STATEMENT </span>
 <span class="minus">-                                Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                            Simplify STATEMENT </span>
-<span class="plus">+                               Simplify EXPRESSION_LIST </span>
-                                  Simplify EXPRESSION_LIST 
+<span class="minus">-                                 Simplify EXPRESSION_LIST </span>
 <span class="minus">-                                  Simplify EXPRESSION_LIST </span>
-                                    Simplify EXPRESSION () 
-<span class="minus">-                                    Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                                  Simplify EXPRESSION () </span>
-<span class="plus">+                                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                                 Simplify EXPRESSION () </span>
-                                    Simplify EXPRESSION (VARIABLE) 
-<span class="plus">+                          Simplify STATEMENT </span>
-<span class="plus">+                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                             Simplify EXPRESSION (*) </span>
-<span class="plus">+                               Simplify EXPRESSION (*) </span>
-                                  Simplify EXPRESSION () 
-<span class="minus">-                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                                   Simplify EXPRESSION () </span>
+                                     Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                           Simplify STATEMENT </span>
+<span class="plus">+                              Simplify EXPRESSION_LIST </span>
+<span class="plus">+                                Simplify EXPRESSION_LIST </span>
+                                   Simplify EXPRESSION () 
+<span class="minus">-                                   Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                                 Simplify EXPRESSION () </span>
+<span class="plus">+                                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                                Simplify EXPRESSION () </span>
+                                   Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-                             Simplify STATEMENT </span>
 <span class="minus">-                               Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                               Simplify EXPRESSION (-) </span>
-<span class="minus">-                                Simplify EXPRESSION () </span>
+<span class="plus">+                         Simplify STATEMENT </span>
+<span class="plus">+                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                            Simplify EXPRESSION (*) </span>
+<span class="plus">+                              Simplify EXPRESSION (*) </span>
+                                 Simplify EXPRESSION () 
 <span class="minus">-                                 Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                                Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                                   Simplify EXPRESSION (VARIABLE) </span>
-                                  Simplify EXPRESSION () 
-<span class="minus">-                                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                                 Simplify EXPRESSION () </span>
+                                   Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-                            Simplify STATEMENT </span>
 <span class="minus">-                              Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                              Simplify EXPRESSION (-) </span>
-<span class="plus">+                                   Simplify EXPRESSION (VARIABLE) </span>
-                                Simplify EXPRESSION () 
+<span class="minus">-                               Simplify EXPRESSION () </span>
 <span class="minus">-                                Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                               Simplify EXPRESSION (UMINUS) </span>
-<span class="minus">-                                Simplify EXPRESSION () </span>
-                                  Simplify EXPRESSION (VARIABLE) 
+                                 Simplify EXPRESSION () 
+<span class="minus">-                                 Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                           Simplify STATEMENT </span>
 <span class="minus">-                             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                             Simplify EXPRESSION (-) </span>
-<span class="minus">-                              Simplify EXPRESSION () </span>
+<span class="plus">+                                  Simplify EXPRESSION (VARIABLE) </span>
+                               Simplify EXPRESSION () 
 <span class="minus">-                               Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                              Simplify EXPRESSION (UMINUS) </span>
-<span class="plus">+                        Simplify STATEMENT </span>
-<span class="plus">+                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                           Simplify EXPRESSION (/) </span>
-<span class="plus">+                             Simplify EXPRESSION (/) </span>
-                                Simplify EXPRESSION () 
-<span class="minus">-                                Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                               Simplify EXPRESSION () </span>
+                                 Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-                          Simplify STATEMENT </span>
 <span class="minus">-                            Simplify EXPRESSION_LIST </span>
 <span class="minus">-                             Simplify EXPRESSION_LIST </span>
 <span class="minus">-                              Simplify EXPRESSION_LIST </span>
-<span class="plus">+                                 Simplify EXPRESSION (VARIABLE) </span>
-                                Simplify EXPRESSION () 
-<span class="minus">-                                Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                              Simplify EXPRESSION () </span>
-<span class="plus">+                                 Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                             Simplify EXPRESSION () </span>
-                                Simplify EXPRESSION (VARIABLE) 
-<span class="plus">+                      Simplify STATEMENT </span>
-<span class="plus">+                         Simplify EXPRESSION_LIST </span>
-<span class="plus">+                           Simplify EXPRESSION_LIST </span>
-                              Simplify EXPRESSION () 
+<span class="minus">-                               Simplify EXPRESSION () </span>
+<span class="plus">+                       Simplify STATEMENT </span>
+<span class="plus">+                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                          Simplify EXPRESSION (/) </span>
+<span class="plus">+                            Simplify EXPRESSION (/) </span>
+<span class="plus">+                              Simplify EXPRESSION () </span>
+                                 Simplify EXPRESSION (VARIABLE) 
+                               Simplify EXPRESSION () 
+<span class="minus">-                               Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                             Simplify EXPRESSION () </span>
 <span class="minus">-                              Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                         Simplify STATEMENT </span>
 <span class="minus">-                           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                           Simplify EXPRESSION (*) </span>
-<span class="minus">-                            Simplify EXPRESSION () </span>
+<span class="plus">+                                Simplify EXPRESSION (VARIABLE) </span>
+                             Simplify EXPRESSION () 
 <span class="minus">-                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                            Simplify EXPRESSION () </span>
+<span class="plus">+                              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                     Simplify STATEMENT </span>
+<span class="plus">+                        Simplify EXPRESSION_LIST </span>
+<span class="plus">+                          Simplify EXPRESSION_LIST </span>
+                             Simplify EXPRESSION () 
 <span class="minus">-                             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                        Simplify STATEMENT </span>
 <span class="minus">-                          Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                          Simplify EXPRESSION (*) </span>
 <span class="minus">-                           Simplify EXPRESSION () </span>
 <span class="minus">-                            Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                               Simplify EXPRESSION (VARIABLE) </span>
-                            Simplify EXPRESSION () 
+<span class="minus">-                           Simplify EXPRESSION () </span>
 <span class="minus">-                            Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                       Simplify STATEMENT </span>
 <span class="minus">-                         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                         Simplify EXPRESSION (*) </span>
-<span class="minus">-                          Simplify EXPRESSION () </span>
+<span class="plus">+                              Simplify EXPRESSION (VARIABLE) </span>
+                           Simplify EXPRESSION () 
 <span class="minus">-                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                          Simplify EXPRESSION () </span>
-<span class="plus">+                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                    Simplify STATEMENT </span>
-<span class="plus">+                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                       Simplify EXPRESSION (+) </span>
-<span class="plus">+                         Simplify EXPRESSION () </span>
-                            Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                   Simplify STATEMENT </span>
+<span class="plus">+                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                      Simplify EXPRESSION (+) </span>
+<span class="plus">+                        Simplify EXPRESSION () </span>
+<span class="plus">+                          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                        Simplify EXPRESSION (*) </span>
+                           Simplify EXPRESSION () 
+<span class="minus">-                           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                      Simplify STATEMENT </span>
 <span class="minus">-                        Simplify EXPRESSION_LIST </span>
 <span class="minus">-                         Simplify EXPRESSION_LIST </span>
 <span class="minus">-                          Simplify EXPRESSION_LIST </span>
-<span class="plus">+                         Simplify EXPRESSION (*) </span>
-<span class="plus">+                           Simplify EXPRESSION () </span>
-<span class="plus">+                             Simplify EXPRESSION (VARIABLE) </span>
-                            Simplify EXPRESSION () 
-<span class="minus">-                            Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                          Simplify EXPRESSION () </span>
-<span class="plus">+                             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                  Simplify STATEMENT </span>
-<span class="plus">+                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                     Simplify EXPRESSION (+) </span>
-<span class="plus">+                       Simplify EXPRESSION (*) </span>
-<span class="plus">+                         Simplify EXPRESSION () </span>
-                            Simplify EXPRESSION (VARIABLE) 
-                          Simplify EXPRESSION () 
+<span class="minus">-                           Simplify EXPRESSION () </span>
+                             Simplify EXPRESSION (VARIABLE) 
+                           Simplify EXPRESSION () 
+<span class="minus">-                           Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                         Simplify EXPRESSION () </span>
 <span class="minus">-                          Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                     Simplify STATEMENT </span>
 <span class="minus">-                       Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                       Simplify EXPRESSION (/) </span>
-<span class="minus">-                        Simplify EXPRESSION () </span>
+<span class="plus">+                            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                 Simplify STATEMENT </span>
+<span class="plus">+                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                    Simplify EXPRESSION (+) </span>
+<span class="plus">+                      Simplify EXPRESSION (*) </span>
+                         Simplify EXPRESSION () 
 <span class="minus">-                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                        Simplify EXPRESSION () </span>
-<span class="plus">+                           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                       Simplify EXPRESSION () </span>
-                          Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                          Simplify EXPRESSION (VARIABLE) </span>
+                         Simplify EXPRESSION () 
+<span class="minus">-                         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                    Simplify STATEMENT </span>
 <span class="minus">-                      Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                      Simplify EXPRESSION (/) </span>
-<span class="plus">+                Simplify STATEMENT </span>
-<span class="plus">+                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                   Simplify EXPRESSION (+) </span>
-<span class="plus">+                     Simplify EXPRESSION (/) </span>
-                        Simplify EXPRESSION () 
+<span class="minus">-                       Simplify EXPRESSION () </span>
 <span class="minus">-                        Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                         Simplify EXPRESSION (VARIABLE) </span>
-                        Simplify EXPRESSION () 
+<span class="minus">-                       Simplify EXPRESSION () </span>
 <span class="minus">-                        Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                   Simplify STATEMENT </span>
 <span class="minus">-                     Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                     Simplify EXPRESSION (/) </span>
-<span class="minus">-                      Simplify EXPRESSION () </span>
+<span class="plus">+                          Simplify EXPRESSION (VARIABLE) </span>
+                       Simplify EXPRESSION () 
 <span class="minus">-                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                      Simplify EXPRESSION () </span>
-<span class="plus">+                         Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                     Simplify EXPRESSION () </span>
-                        Simplify EXPRESSION (VARIABLE) 
+<span class="plus">+                        Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+               Simplify STATEMENT </span>
+<span class="plus">+                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                  Simplify EXPRESSION (+) </span>
+<span class="plus">+                    Simplify EXPRESSION (/) </span>
+                       Simplify EXPRESSION () 
+<span class="minus">-                       Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                  Simplify STATEMENT </span>
 <span class="minus">-                    Simplify EXPRESSION_LIST </span>
-<span class="plus">+              Simplify STATEMENT </span>
-<span class="plus">+                 Simplify EXPRESSION_LIST </span>
-<span class="plus">+                   Simplify EXPRESSION_LIST </span>
-                      Simplify EXPRESSION_LIST 
+<span class="minus">-                     Simplify EXPRESSION_LIST </span>
 <span class="minus">-                      Simplify EXPRESSION_LIST </span>
-                        Simplify EXPRESSION () 
-<span class="minus">-                        Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                      Simplify EXPRESSION () </span>
+<span class="minus">-                       Simplify EXPRESSION () </span>
+                         Simplify EXPRESSION (VARIABLE) 
+                       Simplify EXPRESSION () 
 <span class="minus">-                       Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                     Simplify EXPRESSION () </span>
 <span class="minus">-                      Simplify EXPRESSION (VARIABLE) </span>
@@ -570,8 +557,7 @@
 <span class="minus">-                    Simplify EXPRESSION (+) </span>
 <span class="minus">-                     Simplify EXPRESSION () </span>
 <span class="minus">-                      Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                         Simplify EXPRESSION (VARIABLE) </span>
-                      Simplify EXPRESSION () 
+<span class="minus">-                     Simplify EXPRESSION () </span>
 <span class="minus">-                      Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                    Simplify EXPRESSION () </span>
 <span class="minus">-                     Simplify EXPRESSION (VARIABLE) </span>
@@ -579,30 +565,43 @@
 <span class="minus">-                  Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-                  Simplify EXPRESSION (-) </span>
 <span class="minus">-                   Simplify EXPRESSION (-) </span>
-<span class="minus">-                    Simplify EXPRESSION () </span>
+<span class="plus">+                        Simplify EXPRESSION (VARIABLE) </span>
+                     Simplify EXPRESSION () 
 <span class="minus">-                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                    Simplify EXPRESSION () </span>
-<span class="plus">+                       Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                   Simplify EXPRESSION () </span>
-                      Simplify EXPRESSION (VARIABLE) 
-<span class="plus">+            Simplify STATEMENT </span>
-<span class="plus">+               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+               Simplify EXPRESSION (+) </span>
-<span class="plus">+                 Simplify EXPRESSION () </span>
-<span class="plus">+                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                 Simplify EXPRESSION (/) </span>
-                    Simplify EXPRESSION () 
-<span class="minus">-                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+             Simplify STATEMENT </span>
+<span class="plus">+                Simplify EXPRESSION_LIST </span>
+<span class="plus">+                  Simplify EXPRESSION_LIST </span>
+<span class="plus">+                    Simplify EXPRESSION_LIST </span>
+<span class="plus">+                      Simplify EXPRESSION () </span>
+<span class="plus">+                        Simplify EXPRESSION (VARIABLE) </span>
+                     Simplify EXPRESSION () 
+<span class="minus">-                     Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-                   Simplify EXPRESSION () </span>
+<span class="plus">+                      Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                  Simplify EXPRESSION () </span>
+                     Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-               Simplify STATEMENT </span>
 <span class="minus">-                 Simplify EXPRESSION_LIST </span>
 <span class="minus">-                  Simplify EXPRESSION_LIST </span>
-<span class="plus">+                     Simplify EXPRESSION (VARIABLE) </span>
-                    Simplify EXPRESSION () 
-<span class="minus">-                    Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                  Simplify EXPRESSION () </span>
+<span class="minus">-                   Simplify EXPRESSION () </span>
+<span class="plus">+           Simplify STATEMENT </span>
+<span class="plus">+              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+              Simplify EXPRESSION (+) </span>
+<span class="plus">+                Simplify EXPRESSION () </span>
+<span class="plus">+                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                Simplify EXPRESSION (/) </span>
+<span class="plus">+                  Simplify EXPRESSION () </span>
+                     Simplify EXPRESSION (VARIABLE) 
+                   Simplify EXPRESSION () 
 <span class="minus">-                   Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-              Simplify STATEMENT </span>
-<span class="minus">-                Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+                    Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+         Simplify STATEMENT </span>
+<span class="plus">+            Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+            Simplify EXPRESSION (-) </span>
+<span class="plus">+              Simplify EXPRESSION () </span>
+                 Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-                Simplify EXPRESSION (*) </span>
 <span class="minus">-                 Simplify EXPRESSION (*) </span>
 <span class="minus">-                  Simplify EXPRESSION () </span>
@@ -613,51 +612,45 @@
 <span class="minus">-                  Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-             Simplify STATEMENT </span>
 <span class="minus">-               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                     Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+          Simplify STATEMENT </span>
-<span class="plus">+             Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+             Simplify EXPRESSION (-) </span>
-<span class="plus">+               Simplify EXPRESSION () </span>
-<span class="plus">+                 Simplify EXPRESSION (VARIABLE) </span>
-                Simplify EXPRESSION (/) 
+<span class="minus">-               Simplify EXPRESSION (/) </span>
 <span class="minus">-                Simplify EXPRESSION (/) </span>
-                  Simplify EXPRESSION () 
+<span class="minus">-                 Simplify EXPRESSION () </span>
 <span class="minus">-                  Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                   Simplify EXPRESSION (VARIABLE) </span>
-                  Simplify EXPRESSION () 
+<span class="minus">-                 Simplify EXPRESSION () </span>
 <span class="minus">-                  Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-                Simplify EXPRESSION () </span>
+<span class="plus">+              Simplify EXPRESSION (/) </span>
+                 Simplify EXPRESSION () 
 <span class="minus">-                 Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-            Simplify STATEMENT </span>
 <span class="minus">-              Simplify EXPRESSION_LIST </span>
 <span class="minus">-               Simplify EXPRESSION_LIST </span>
-<span class="minus">-                Simplify EXPRESSION () </span>
+<span class="plus">+                  Simplify EXPRESSION (VARIABLE) </span>
+                 Simplify EXPRESSION () 
 <span class="minus">-                 Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-               Simplify EXPRESSION () </span>
 <span class="minus">-                Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-           Simplify STATEMENT </span>
 <span class="minus">-             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-             Simplify EXPRESSION (+) </span>
-<span class="minus">-              Simplify EXPRESSION () </span>
+<span class="plus">+                  Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+       Simplify STATEMENT </span>
+<span class="plus">+          Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+          Simplify EXPRESSION (-) </span>
+<span class="plus">+            Simplify EXPRESSION (/) </span>
+               Simplify EXPRESSION () 
 <span class="minus">-               Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-              Simplify EXPRESSION (*) </span>
-<span class="plus">+                   Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+        Simplify STATEMENT </span>
-<span class="plus">+           Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+           Simplify EXPRESSION (-) </span>
-<span class="plus">+             Simplify EXPRESSION (/) </span>
-                Simplify EXPRESSION () 
+<span class="minus">-               Simplify EXPRESSION () </span>
 <span class="minus">-                Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                 Simplify EXPRESSION (VARIABLE) </span>
-                Simplify EXPRESSION () 
-<span class="minus">-                Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-               Simplify EXPRESSION () </span>
+                 Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-          Simplify STATEMENT </span>
 <span class="minus">-            Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-            Simplify EXPRESSION (+) </span>
 <span class="minus">-             Simplify EXPRESSION (*) </span>
 <span class="minus">-              Simplify EXPRESSION () </span>
 <span class="minus">-               Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-              Simplify EXPRESSION () </span>
+               Simplify EXPRESSION () 
 <span class="minus">-               Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-             Simplify EXPRESSION () </span>
 <span class="minus">-              Simplify EXPRESSION (VARIABLE) </span>
@@ -667,38 +660,37 @@
 <span class="minus">-            Simplify EXPRESSION (/) </span>
 <span class="minus">-             Simplify EXPRESSION () </span>
 <span class="minus">-              Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+                 Simplify EXPRESSION (VARIABLE) </span>
-              Simplify EXPRESSION () 
+<span class="minus">-             Simplify EXPRESSION () </span>
 <span class="minus">-              Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-            Simplify EXPRESSION () </span>
+<span class="plus">+                Simplify EXPRESSION (VARIABLE) </span>
+             Simplify EXPRESSION () 
 <span class="minus">-             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-        Simplify STATEMENT </span>
-<span class="minus">-          Simplify EXPRESSION_LIST </span>
-<span class="plus">+               Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+      Simplify STATEMENT </span>
-<span class="plus">+         Simplify EXPRESSION_LIST </span>
-            Simplify EXPRESSION_LIST 
-<span class="minus">-            Simplify EXPRESSION_LIST </span>
-<span class="plus">+             Simplify EXPRESSION_LIST </span>
-<span class="plus">+               Simplify EXPRESSION () </span>
-<span class="plus">+                 Simplify EXPRESSION (VARIABLE) </span>
-              Simplify EXPRESSION () 
+<span class="plus">+              Simplify EXPRESSION (VARIABLE) </span>
+<span class="plus">+     Simplify STATEMENT </span>
+<span class="plus">+        Simplify EXPRESSION_LIST </span>
+           Simplify EXPRESSION_LIST 
+<span class="minus">-           Simplify EXPRESSION_LIST </span>
+             Simplify EXPRESSION_LIST 
+<span class="minus">-             Simplify EXPRESSION () </span>
 <span class="minus">-              Simplify EXPRESSION (VARIABLE) </span>
-<span class="minus">-            Simplify EXPRESSION () </span>
+<span class="plus">+              Simplify EXPRESSION () </span>
+<span class="plus">+                Simplify EXPRESSION (VARIABLE) </span>
+             Simplify EXPRESSION () 
 <span class="minus">-             Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-           Simplify EXPRESSION () </span>
 <span class="minus">-            Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-       Simplify STATEMENT </span>
 <span class="minus">-         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-         Simplify EXPRESSION (+) </span>
-<span class="minus">-          Simplify EXPRESSION () </span>
+<span class="plus">+              Simplify EXPRESSION (VARIABLE) </span>
+           Simplify EXPRESSION () 
 <span class="minus">-           Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-          Simplify EXPRESSION (/) </span>
 <span class="minus">-           Simplify EXPRESSION () </span>
 <span class="minus">-            Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+               Simplify EXPRESSION (VARIABLE) </span>
-            Simplify EXPRESSION () 
-<span class="minus">-            Simplify EXPRESSION (VARIABLE) </span>
+<span class="minus">-           Simplify EXPRESSION () </span>
+             Simplify EXPRESSION (VARIABLE) 
 <span class="minus">-      Simplify STATEMENT </span>
 <span class="minus">-        Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-        Simplify EXPRESSION (-) </span>
@@ -728,8 +720,7 @@
 <span class="minus">-        Simplify EXPRESSION () </span>
 <span class="minus">-         Simplify EXPRESSION (VARIABLE) </span>
 <span class="minus">-       Simplify EXPRESSION () </span>
-<span class="minus">-        Simplify EXPRESSION (VARIABLE) </span>
-<span class="plus">+             Simplify EXPRESSION (VARIABLE) </span></span>
+<span class="minus">-        Simplify EXPRESSION (VARIABLE) </span></span>
 </pre>
 </body>
 </html>

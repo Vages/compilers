@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s6	2015-02-09 13:34:57.921168000 +0100
-+++ testOutput/compare_int.s6	2015-02-13 13:53:39.888205000 +0100
++++ testOutput/compare_int.s6	2015-02-13 13:56:40.405208000 +0100
 @@ -1,4 +0,0 @@
 -CONSTANT
 -CONSTANT

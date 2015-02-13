@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s5	2015-02-09 13:34:57.911169000 +0100
-+++ testOutput/compare_float.s5	2015-02-13 13:53:38.785187000 +0100
++++ testOutput/compare_float.s5	2015-02-13 13:56:39.256200000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()

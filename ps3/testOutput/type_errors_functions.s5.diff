@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s5	2015-02-09 13:34:58.198172000 +0100
-+++ testOutput/type_errors_functions.s5	2015-02-13 13:53:55.761281000 +0100
++++ testOutput/type_errors_functions.s5	2015-02-13 13:56:55.907287000 +0100
 @@ -1,7 +1,6 @@
   PROGRAM()()
   FUNCTION_LIST()()
