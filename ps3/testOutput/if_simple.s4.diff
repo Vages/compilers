@@ -1,0 +1,30 @@
+--- correctOutput/if_simple.s4	2015-02-09 13:34:58.037173000 +0100
++++ testOutput/if_simple.s4	2015-02-13 13:27:29.265488000 +0100
+@@ -2,16 +2,16 @@
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+-    Simplify STATEMENT_LIST 
+-     Simplify STATEMENT 
+-       Simplify EXPRESSION (CONSTANT) 
+-       Simplify STATEMENT_LIST 
+-        Simplify STATEMENT 
+-          Simplify EXPRESSION_LIST 
+-           Simplify EXPRESSION (CONSTANT) 
+-    Simplify STATEMENT 
+-      Simplify EXPRESSION (CONSTANT) 
+-      Simplify STATEMENT_LIST 
++     Simplify STATEMENT_LIST 
+        Simplify STATEMENT 
+-         Simplify EXPRESSION_LIST 
+           Simplify EXPRESSION (CONSTANT) 
++          Simplify STATEMENT_LIST 
++            Simplify STATEMENT 
++               Simplify EXPRESSION_LIST 
++                 Simplify EXPRESSION (CONSTANT) 
++     Simplify STATEMENT 
++        Simplify EXPRESSION (CONSTANT) 
++        Simplify STATEMENT_LIST 
++          Simplify STATEMENT 
++             Simplify EXPRESSION_LIST 
++               Simplify EXPRESSION (CONSTANT) 

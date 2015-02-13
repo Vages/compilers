@@ -1,0 +1,33 @@
+--- correctOutput/strings_and_comments.s4	2015-02-09 13:34:58.166175000 +0100
++++ testOutput/strings_and_comments.s4	2015-02-13 13:27:36.155525000 +0100
+@@ -2,18 +2,18 @@
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+-    Simplify STATEMENT_LIST 
+      Simplify STATEMENT_LIST 
+-      Simplify STATEMENT_LIST 
++       Simplify STATEMENT_LIST 
++         Simplify STATEMENT_LIST 
++           Simplify STATEMENT 
++              Simplify EXPRESSION_LIST 
++                Simplify EXPRESSION (CONSTANT) 
++         Simplify STATEMENT 
++            Simplify EXPRESSION_LIST 
++              Simplify EXPRESSION (CONSTANT) 
+        Simplify STATEMENT 
+-         Simplify EXPRESSION_LIST 
+-          Simplify EXPRESSION (CONSTANT) 
+-      Simplify STATEMENT 
+-        Simplify EXPRESSION_LIST 
+-         Simplify EXPRESSION (CONSTANT) 
++          Simplify EXPRESSION_LIST 
++            Simplify EXPRESSION (CONSTANT) 
+      Simplify STATEMENT 
+-       Simplify EXPRESSION_LIST 
+-        Simplify EXPRESSION (CONSTANT) 
+-    Simplify STATEMENT 
+-      Simplify EXPRESSION_LIST 
+-       Simplify EXPRESSION (CONSTANT) 
++        Simplify EXPRESSION_LIST 
++          Simplify EXPRESSION (CONSTANT) 

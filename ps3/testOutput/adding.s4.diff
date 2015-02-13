@@ -1,0 +1,32 @@
+--- correctOutput/adding.s4	2015-02-09 13:34:57.858176000 +0100
++++ testOutput/adding.s4	2015-02-13 13:27:15.731413000 +0100
+@@ -2,17 +2,17 @@
+   Simplify FUNCTION 
+    Simplify TYPE 
+    Simplify STATEMENT_LIST 
+-    Simplify STATEMENT_LIST 
+      Simplify STATEMENT_LIST 
+-      Simplify STATEMENT 
+-       Simplify DECLARATION_STATEMENT 
+-        Simplify TYPE 
++       Simplify STATEMENT_LIST 
++         Simplify STATEMENT 
++           Simplify DECLARATION_STATEMENT 
++             Simplify TYPE 
++       Simplify STATEMENT 
++          Simplify EXPRESSION (VARIABLE) 
++          Simplify EXPRESSION (+) 
++            Simplify EXPRESSION (CONSTANT) 
++            Simplify EXPRESSION (CONSTANT) 
+      Simplify STATEMENT 
+-       Simplify EXPRESSION (VARIABLE) 
+-       Simplify EXPRESSION (+) 
+-        Simplify EXPRESSION (CONSTANT) 
+-        Simplify EXPRESSION (CONSTANT) 
+-    Simplify STATEMENT 
+-      Simplify EXPRESSION_LIST 
+-       Simplify EXPRESSION () 
+-        Simplify EXPRESSION (VARIABLE) 
++        Simplify EXPRESSION_LIST 
++          Simplify EXPRESSION () 
++            Simplify EXPRESSION (VARIABLE) 
