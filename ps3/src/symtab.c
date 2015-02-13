@@ -35,7 +35,7 @@ strings_add ( char *str )
 		strings_size = strings_size*2;
 		strings = (char**)realloc(strings, strings_size*sizeof(char*));
 	}
-	strings[strings_index] = STRDUP(str);
+	strings[strings_index] = str;
 	return strings_index;
 }
 
