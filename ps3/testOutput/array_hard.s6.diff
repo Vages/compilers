@@ -1,5 +1,5 @@
 --- correctOutput/array_hard.s6	2015-02-09 13:34:57.895172000 +0100
-+++ testOutput/array_hard.s6	2015-02-13 14:27:28.948481000 +0100
++++ testOutput/array_hard.s6	2015-02-13 14:35:08.935001000 +0100
 @@ -1,19 +0,0 @@
 -CONSTANT
 -CONSTANT

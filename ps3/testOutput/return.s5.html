@@ -16,25 +16,60 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100</span>
-<span class="plus3">+++ testOutput/return.s5	2015-02-13 14:27:32.420498000 +0100</span>
-<span class="at2">@@ -1,6 +1,8 @@</span>
-  PROGRAM()()
+<span class="plus3">+++ testOutput/return.s5	2015-02-13 14:35:16.063038000 +0100</span>
+<span class="at2">@@ -2,52 +2,4 @@</span>
   FUNCTION_LIST()()
    FUNCTION(INT)("main")()
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("main")()</span>
     (nil)
-    STATEMENT_LIST()()
-     PRINT_STATEMENT()()
-<span class="at2">@@ -13,6 +15,8 @@</span>
-     RETURN_STATEMENT()()
-      CONSTANT(INT)(0)()
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
+<span class="minus">-      CONSTANT(STRING)("t is ")()</span>
+<span class="minus">-      EXPRESSION()(FUNC_CALL)</span>
+<span class="minus">-       VARIABLE()("test")()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        CONSTANT(INT)(64)()</span>
+<span class="minus">-    RETURN_STATEMENT()()</span>
+<span class="minus">-     CONSTANT(INT)(0)()</span>
    FUNCTION(INT)("test")()
-<span class="plus">+   TYPE(INT)()</span>
-<span class="plus">+   VARIABLE()("test")()</span>
-    VARIABLE_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()
-    STATEMENT_LIST()()</span>
+<span class="minus">-   VARIABLE_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("x")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("y")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("x")()</span>
+<span class="minus">-     CONSTANT(INT)(32)()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("y")()</span>
+<span class="minus">-     CONSTANT(INT)(20)()</span>
+<span class="minus">-    IF_STATEMENT()()</span>
+<span class="minus">-     CONSTANT(BOOL)(False)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      RETURN_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION()(+)</span>
+<span class="minus">-        VARIABLE()("x")()</span>
+<span class="minus">-        VARIABLE()("y")()</span>
+<span class="minus">-    IF_STATEMENT()()</span>
+<span class="minus">-     CONSTANT(BOOL)(True)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      DECLARATION_STATEMENT(INT)("z")()</span>
+<span class="minus">-      ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-       VARIABLE()("z")()</span>
+<span class="minus">-       CONSTANT(INT)(64)()</span>
+<span class="minus">-      RETURN_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION()(+)</span>
+<span class="minus">-        VARIABLE()("z")()</span>
+<span class="minus">-        VARIABLE()("a")()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        CONSTANT(STRING)("This never executes")()</span>
+<span class="minus">-      RETURN_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION()(UMINUS)</span>
+<span class="minus">-        CONSTANT(INT)(2)()</span>
+<span class="minus">-    RETURN_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION()(UMINUS)</span>
+<span class="minus">-      CONSTANT(INT)(1)()</span></span>
 </pre>
 </body>
 </html>

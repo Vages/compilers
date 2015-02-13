@@ -16,16 +16,21 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/adding.s5	2015-02-09 13:34:57.859172000 +0100</span>
-<span class="plus3">+++ testOutput/adding.s5	2015-02-13 14:27:28.451475000 +0100</span>
-<span class="at2">@@ -1,6 +1,8 @@</span>
-  PROGRAM()()
+<span class="plus3">+++ testOutput/adding.s5	2015-02-13 14:35:07.122988000 +0100</span>
+<span class="at2">@@ -2,13 +2,3 @@</span>
   FUNCTION_LIST()()
    FUNCTION(VOID)("adding")()
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("adding")()</span>
     (nil)
-    STATEMENT_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("a")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("a")()</span>
+<span class="minus">-     EXPRESSION()(+)</span>
+<span class="minus">-      CONSTANT(INT)(1)()</span>
+<span class="minus">-      CONSTANT(INT)(2)()</span>
+<span class="minus">-    PRINT_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
+<span class="minus">-      VARIABLE()("a")()</span></span>
 </pre>
 </body>
 </html>

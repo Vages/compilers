@@ -16,16 +16,24 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/if_simple.s5	2015-02-09 13:34:58.038173000 +0100</span>
-<span class="plus3">+++ testOutput/if_simple.s5	2015-02-13 14:27:31.191490000 +0100</span>
-<span class="at2">@@ -1,6 +1,8 @@</span>
-  PROGRAM()()
+<span class="plus3">+++ testOutput/if_simple.s5	2015-02-13 14:35:13.342024000 +0100</span>
+<span class="at2">@@ -2,16 +2,3 @@</span>
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("main")()</span>
     (nil)
-    STATEMENT_LIST()()
-     IF_STATEMENT()()</span>
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    IF_STATEMENT()()</span>
+<span class="minus">-     CONSTANT(BOOL)(True)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        CONSTANT(STRING)("true")()</span>
+<span class="minus">-    IF_STATEMENT()()</span>
+<span class="minus">-     CONSTANT(BOOL)(False)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        CONSTANT(STRING)("false")()</span></span>
 </pre>
 </body>
 </html>

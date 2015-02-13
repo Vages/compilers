@@ -1,11 +1,9 @@
 --- correctOutput/minimal.s5	2015-02-09 13:34:58.105169000 +0100
-+++ testOutput/minimal.s5	2015-02-13 14:27:31.959494000 +0100
-@@ -1,6 +1,8 @@
-  PROGRAM()()
++++ testOutput/minimal.s5	2015-02-13 14:35:15.440035000 +0100
+@@ -2,6 +2,3 @@
   FUNCTION_LIST()()
    FUNCTION(INT)("minimal")()
-+   TYPE(INT)()
-+   VARIABLE()("minimal")()
     (nil)
-    STATEMENT_LIST()()
-     RETURN_STATEMENT()()
+-   STATEMENT_LIST()()
+-    RETURN_STATEMENT()()
+-     CONSTANT(INT)(0)()

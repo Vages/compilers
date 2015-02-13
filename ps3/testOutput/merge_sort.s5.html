@@ -16,34 +16,204 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/merge_sort.s5	2015-02-09 13:34:58.096169000 +0100</span>
-<span class="plus3">+++ testOutput/merge_sort.s5	2015-02-13 14:27:31.796495000 +0100</span>
-<span class="at2">@@ -1,6 +1,8 @@</span>
-  PROGRAM()()
+<span class="plus3">+++ testOutput/merge_sort.s5	2015-02-13 14:35:14.889033000 +0100</span>
+<span class="at2">@@ -2,196 +2,5 @@</span>
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("main")()</span>
     (nil)
-    STATEMENT_LIST()()
-     DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()
-<span class="at2">@@ -40,6 +42,8 @@</span>
-          VARIABLE()("a")()
-          VARIABLE()("i")()
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("a")()</span>
+<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="minus">-      TYPE(ARRAY(INT)[100])()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("i")()</span>
+<span class="minus">-    FOR_STATEMENT()()</span>
+<span class="minus">-     ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-      VARIABLE()("i")()</span>
+<span class="minus">-      CONSTANT(INT)(0)()</span>
+<span class="minus">-     CONSTANT(INT)(100)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-        VARIABLE()("a")()</span>
+<span class="minus">-        VARIABLE()("i")()</span>
+<span class="minus">-       EXPRESSION()(-)</span>
+<span class="minus">-        CONSTANT(INT)(100)()</span>
+<span class="minus">-        VARIABLE()("i")()</span>
+<span class="minus">-    EXPRESSION()(FUNC_CALL)</span>
+<span class="minus">-     VARIABLE()("merge_sort")()</span>
+<span class="minus">-     EXPRESSION_LIST()()</span>
+<span class="minus">-      VARIABLE()("a")()</span>
+<span class="minus">-      CONSTANT(INT)(0)()</span>
+<span class="minus">-      CONSTANT(INT)(100)()</span>
+<span class="minus">-    FOR_STATEMENT()()</span>
+<span class="minus">-     ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-      VARIABLE()("i")()</span>
+<span class="minus">-      CONSTANT(INT)(0)()</span>
+<span class="minus">-     CONSTANT(INT)(100)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      PRINT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-         VARIABLE()("a")()</span>
+<span class="minus">-         VARIABLE()("i")()</span>
    FUNCTION(VOID)("merge_sort")()
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("merge_sort")()</span>
-    VARIABLE_LIST()()
-     DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()
-     DECLARATION_STATEMENT(INT)("start")()
-<span class="at2">@@ -85,6 +89,8 @@</span>
-         VARIABLE()("middle")()
-         VARIABLE()("end")()
+<span class="minus">-   VARIABLE_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("start")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("end")()</span>
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    IF_STATEMENT()()</span>
+<span class="minus">-     EXPRESSION()(&lt;=)</span>
+<span class="minus">-      EXPRESSION()(-)</span>
+<span class="minus">-       VARIABLE()("end")()</span>
+<span class="minus">-       VARIABLE()("start")()</span>
+<span class="minus">-      CONSTANT(INT)(1)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      RETURN_STATEMENT()()</span>
+<span class="minus">-       CONSTANT(INT)(0)()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      DECLARATION_STATEMENT(INT)("middle")()</span>
+<span class="minus">-      ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-       VARIABLE()("middle")()</span>
+<span class="minus">-       EXPRESSION()(+)</span>
+<span class="minus">-        VARIABLE()("start")()</span>
+<span class="minus">-        EXPRESSION()(/)</span>
+<span class="minus">-         EXPRESSION()(-)</span>
+<span class="minus">-          VARIABLE()("end")()</span>
+<span class="minus">-          VARIABLE()("start")()</span>
+<span class="minus">-         CONSTANT(INT)(2)()</span>
+<span class="minus">-      EXPRESSION()(FUNC_CALL)</span>
+<span class="minus">-       VARIABLE()("merge_sort")()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        VARIABLE()("a")()</span>
+<span class="minus">-        VARIABLE()("start")()</span>
+<span class="minus">-        VARIABLE()("middle")()</span>
+<span class="minus">-      EXPRESSION()(FUNC_CALL)</span>
+<span class="minus">-       VARIABLE()("merge_sort")()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        VARIABLE()("a")()</span>
+<span class="minus">-        VARIABLE()("middle")()</span>
+<span class="minus">-        VARIABLE()("end")()</span>
+<span class="minus">-      EXPRESSION()(FUNC_CALL)</span>
+<span class="minus">-       VARIABLE()("merge")()</span>
+<span class="minus">-       EXPRESSION_LIST()()</span>
+<span class="minus">-        VARIABLE()("a")()</span>
+<span class="minus">-        VARIABLE()("start")()</span>
+<span class="minus">-        VARIABLE()("middle")()</span>
+<span class="minus">-        VARIABLE()("end")()</span>
    FUNCTION(VOID)("merge")()
-<span class="plus">+   TYPE(VOID)()</span>
-<span class="plus">+   VARIABLE()("merge")()</span>
-    VARIABLE_LIST()()
-     DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()
-     DECLARATION_STATEMENT(INT)("start")()</span>
+<span class="minus">-   VARIABLE_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[100])("a")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("start")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("middle")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("end")()</span>
+<span class="minus">-   STATEMENT_LIST()()</span>
+<span class="minus">-    DECLARATION_STATEMENT(ARRAY(INT)[100])("temp")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("temp")()</span>
+<span class="minus">-     EXPRESSION()(NEW)</span>
+<span class="minus">-      TYPE(ARRAY(INT)[100])()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("i")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("j")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("i")()</span>
+<span class="minus">-     VARIABLE()("start")()</span>
+<span class="minus">-    ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-     VARIABLE()("j")()</span>
+<span class="minus">-     VARIABLE()("middle")()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("k")()</span>
+<span class="minus">-    FOR_STATEMENT()()</span>
+<span class="minus">-     ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-      VARIABLE()("k")()</span>
+<span class="minus">-      VARIABLE()("start")()</span>
+<span class="minus">-     VARIABLE()("end")()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      IF_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION()(&gt;=)</span>
+<span class="minus">-        VARIABLE()("i")()</span>
+<span class="minus">-        VARIABLE()("middle")()</span>
+<span class="minus">-       STATEMENT_LIST()()</span>
+<span class="minus">-        ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-         EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-          VARIABLE()("temp")()</span>
+<span class="minus">-          VARIABLE()("k")()</span>
+<span class="minus">-         EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-          VARIABLE()("a")()</span>
+<span class="minus">-          VARIABLE()("j")()</span>
+<span class="minus">-        ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-         VARIABLE()("j")()</span>
+<span class="minus">-         EXPRESSION()(+)</span>
+<span class="minus">-          VARIABLE()("j")()</span>
+<span class="minus">-          CONSTANT(INT)(1)()</span>
+<span class="minus">-       STATEMENT_LIST()()</span>
+<span class="minus">-        IF_STATEMENT()()</span>
+<span class="minus">-         EXPRESSION()(&gt;=)</span>
+<span class="minus">-          VARIABLE()("j")()</span>
+<span class="minus">-          VARIABLE()("end")()</span>
+<span class="minus">-         STATEMENT_LIST()()</span>
+<span class="minus">-          ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-           EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-            VARIABLE()("temp")()</span>
+<span class="minus">-            VARIABLE()("k")()</span>
+<span class="minus">-           EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-            VARIABLE()("a")()</span>
+<span class="minus">-            VARIABLE()("i")()</span>
+<span class="minus">-          ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-           VARIABLE()("i")()</span>
+<span class="minus">-           EXPRESSION()(+)</span>
+<span class="minus">-            VARIABLE()("i")()</span>
+<span class="minus">-            CONSTANT(INT)(1)()</span>
+<span class="minus">-         STATEMENT_LIST()()</span>
+<span class="minus">-          IF_STATEMENT()()</span>
+<span class="minus">-           EXPRESSION()(&lt;)</span>
+<span class="minus">-            EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-             VARIABLE()("a")()</span>
+<span class="minus">-             VARIABLE()("j")()</span>
+<span class="minus">-            EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-             VARIABLE()("a")()</span>
+<span class="minus">-             VARIABLE()("i")()</span>
+<span class="minus">-           STATEMENT_LIST()()</span>
+<span class="minus">-            ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-             EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-              VARIABLE()("temp")()</span>
+<span class="minus">-              VARIABLE()("k")()</span>
+<span class="minus">-             EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-              VARIABLE()("a")()</span>
+<span class="minus">-              VARIABLE()("j")()</span>
+<span class="minus">-            ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-             VARIABLE()("j")()</span>
+<span class="minus">-             EXPRESSION()(+)</span>
+<span class="minus">-              VARIABLE()("j")()</span>
+<span class="minus">-              CONSTANT(INT)(1)()</span>
+<span class="minus">-           STATEMENT_LIST()()</span>
+<span class="minus">-            ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-             EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-              VARIABLE()("temp")()</span>
+<span class="minus">-              VARIABLE()("k")()</span>
+<span class="minus">-             EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-              VARIABLE()("a")()</span>
+<span class="minus">-              VARIABLE()("i")()</span>
+<span class="minus">-            ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-             VARIABLE()("i")()</span>
+<span class="minus">-             EXPRESSION()(+)</span>
+<span class="minus">-              VARIABLE()("i")()</span>
+<span class="minus">-              CONSTANT(INT)(1)()</span>
+<span class="minus">-    DECLARATION_STATEMENT(INT)("n")()</span>
+<span class="minus">-    FOR_STATEMENT()()</span>
+<span class="minus">-     ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-      VARIABLE()("n")()</span>
+<span class="minus">-      VARIABLE()("start")()</span>
+<span class="minus">-     VARIABLE()("end")()</span>
+<span class="minus">-     STATEMENT_LIST()()</span>
+<span class="minus">-      ASSIGNMENT_STATEMENT()()</span>
+<span class="minus">-       EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-        VARIABLE()("a")()</span>
+<span class="minus">-        VARIABLE()("n")()</span>
+<span class="minus">-       EXPRESSION()(ARRAY_INDEX)</span>
+<span class="minus">-        VARIABLE()("temp")()</span>
+<span class="minus">-        VARIABLE()("n")()</span></span>
 </pre>
 </body>
 </html>
