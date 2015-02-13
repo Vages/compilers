@@ -38,7 +38,6 @@ strings_add ( char *str )
 		strings = (char**)realloc(strings, strings_size*sizeof(char*));
 	}
 	strings[strings_index] = str;
-	fprintf(stderr, "%s", str);
 	return strings_index;
 }
 
