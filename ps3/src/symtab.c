@@ -22,7 +22,11 @@ symtab_init ( void )
 void
 symtab_finalize ( void )
 {
+	for(int i = 0; i <= strings_index; i++){
+		free(strings[i]);
+	}
 
+	free(strings);
     
 }
 
