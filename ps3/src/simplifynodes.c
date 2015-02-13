@@ -66,7 +66,6 @@ Node_t* simplify_function ( Node_t *root, int depth )
 			} else{
 				new_children[c_i++] = child;	
 			}
-			free(child);
 			
 		} else {
 			new_children[c_i++] = child;			
@@ -74,7 +73,6 @@ Node_t* simplify_function ( Node_t *root, int depth )
 
 
 	}
-	free(root->children);
 	root->children = new_children;
 	root->n_children = c_i;
 	
