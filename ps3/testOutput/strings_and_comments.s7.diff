@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s7	2015-02-09 13:34:58.169176000 +0100
-+++ testOutput/strings_and_comments.s7	2015-02-13 16:38:57.147219000 +0100
++++ testOutput/strings_and_comments.s7	2015-02-13 17:03:56.464208000 +0100
 @@ -1,4 +0,0 @@
 -Add strings ("Hello, world!"), index: 0 
 -Add strings (""), index: 1 

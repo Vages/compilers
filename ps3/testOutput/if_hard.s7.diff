@@ -1,5 +1,5 @@
 --- correctOutput/if_hard.s7	2015-02-09 13:34:58.031170000 +0100
-+++ testOutput/if_hard.s7	2015-02-13 16:38:55.528213000 +0100
++++ testOutput/if_hard.s7	2015-02-13 17:03:55.603222000 +0100
 @@ -1,8 +0,0 @@
 -Add strings ("A is different from 10"), index: 0 
 -Add strings ("B is different from -15"), index: 1 
