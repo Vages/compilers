@@ -10,6 +10,8 @@ int bind_default ( node_t *root, int stackOffset)
 			child->bind(child, depth+1);
 		}
 	}
+
+	return 0;
 }
 
 
@@ -19,7 +21,7 @@ int bind_constant ( node_t *root, int stackOffset)
 	if(outputStage == 6)
 		printf( "CONSTANT\n");
 
-
+	return 0;
 }
 
 
