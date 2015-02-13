@@ -15,7 +15,6 @@ void
 symtab_init ( void )
 {
 	strings = (char**)malloc(sizeof(char*)*strings_size);
-
 }
 
 
@@ -39,8 +38,6 @@ symtab_finalize ( void )
 int
 strings_add ( char *str )
 {
-
-
 	strings_index++;
 	if(strings_index >= strings_size){
 		strings_size = strings_size*2;
