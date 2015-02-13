@@ -1,6 +1,0 @@
- PROGRAM()()
- FUNCTION_LIST()()
-  FUNCTION(VOID)("main")()
-   (nil)
-  FUNCTION(ARRAY(INT)[3])("create")()
-   (nil)

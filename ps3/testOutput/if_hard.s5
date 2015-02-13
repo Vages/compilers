@@ -1,4 +1,0 @@
- PROGRAM()()
- FUNCTION_LIST()()
-  FUNCTION(INT)("while_test")()
-   (nil)

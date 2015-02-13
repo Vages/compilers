@@ -1,6 +1,0 @@
- PROGRAM()()
- FUNCTION_LIST()()
-  FUNCTION(VOID)("main")()
-   (nil)
-  FUNCTION(VOID)("merge_sort")()
-  FUNCTION(VOID)("merge")()

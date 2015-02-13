@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s6	2015-02-09 13:34:57.939170000 +0100
-+++ testOutput/expressions.s6	2015-02-13 14:35:10.980008000 +0100
++++ testOutput/expressions.s6	2015-02-13 14:39:43.671500000 +0100
 @@ -1,47 +0,0 @@
 -CONSTANT
 -CONSTANT

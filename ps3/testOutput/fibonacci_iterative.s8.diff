@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_iterative.s8	2015-02-09 13:34:57.949170000 +0100
-+++ testOutput/fibonacci_iterative.s8	2015-02-13 14:35:11.334013000 +0100
++++ testOutput/fibonacci_iterative.s8	2015-02-13 14:39:43.901502000 +0100
 @@ -8,9 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

@@ -1,6 +1,0 @@
- PROGRAM()()
- FUNCTION_LIST()()
-  FUNCTION(VOID)("main")()
-   (nil)
-  FUNCTION(INT)("func1")()
-  FUNCTION(BOOL)("func2")()

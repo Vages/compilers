@@ -1,6 +1,0 @@
- PROGRAM()()
- FUNCTION_LIST()()
-  FUNCTION(VOID)("maxmin")()
-   (nil)
-  FUNCTION(INT)("max")()
-  FUNCTION(INT)("min")()

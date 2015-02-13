@@ -1,5 +1,0 @@
- PROGRAM()()
- FUNCTION_LIST()()
-  FUNCTION(VOID)("main")()
-   (nil)
-  FUNCTION(VOID)("print")()

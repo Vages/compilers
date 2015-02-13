@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s6	2015-02-09 13:34:57.998168000 +0100
-+++ testOutput/function_medium.s6	2015-02-13 14:35:12.527023000 +0100
++++ testOutput/function_medium.s6	2015-02-13 14:39:44.344504000 +0100
 @@ -1,10 +0,0 @@
 -CONSTANT
 -CONSTANT
