@@ -36,6 +36,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 					root->data_type.dimensions[j] = child->children[j]->int_const;
 				}
 			}
+			node_finalize(child);
 		}
 
 
