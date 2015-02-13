@@ -17,7 +17,6 @@ Node_t* simplify_default ( Node_t *root, int depth )
 
 Node_t* simplify_types ( Node_t *root, int depth )
 {
-	/*Works*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
@@ -50,7 +49,6 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 Node_t* simplify_function ( Node_t *root, int depth )
 {
-	/*Seems to be working*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
@@ -63,10 +61,8 @@ Node_t* simplify_function ( Node_t *root, int depth )
 			child = child->simplify(child, depth+1);
 			if (child->nodetype.index == TYPE){
 				root->data_type = child->data_type;
-				//free(child);
 			} else if (child->nodetype.index == VARIABLE){
 				root->label=STRDUP(child->label);
-				//free(child);
 			} else{
 				new_children[c_i++] = child;	
 			}
@@ -78,7 +74,6 @@ Node_t* simplify_function ( Node_t *root, int depth )
 
 	}
 
-	//free(root->children);
 	root->children = new_children;
 	root->n_children = c_i;
 	
@@ -90,7 +85,6 @@ Node_t* simplify_function ( Node_t *root, int depth )
 
 Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 {
-	/* This seems to be working all right */
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 	simplify_default(root, depth);
@@ -109,7 +103,6 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	}
 
 	root->n_children = 0;
-	//free(root->children);
 
 	return root;
 	
@@ -118,7 +111,6 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 
 Node_t* simplify_single_child ( Node_t *root, int depth )
 {
-	/*Seems to work*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
@@ -131,7 +123,6 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 			root = root->children[0];
 		}
 	}
-	//free (root);
 
 	return root;
 }
@@ -174,7 +165,6 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 
 Node_t* simplify_list ( Node_t *root, int depth )
 {
-	/*Seems to be working*/
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 	
@@ -202,7 +192,6 @@ Node_t* simplify_list ( Node_t *root, int depth )
 
 Node_t* simplify_expression ( Node_t *root, int depth )
 {
-	/* works */
 	if(outputStage == 4)
 		printf( "%*cSimplify %s (%s) \n", depth, ' ', root->nodetype.text, root->expression_type.text );
 
