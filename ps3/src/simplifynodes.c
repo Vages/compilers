@@ -38,6 +38,8 @@ Node_t* simplify_types ( Node_t *root, int depth )
 				}
 			}
 		}
+
+		destroy_subtree( , root);
 	}
 
 	root->n_children = 0;
