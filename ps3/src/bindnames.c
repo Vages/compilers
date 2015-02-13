@@ -22,7 +22,7 @@ int bind_constant ( node_t *root, int stackOffset)
 		printf( "CONSTANT\n");
 	
 	if (root->data_type.base_type = STRING_TYPE){ 
-		root->string_index = strings_add(root->string_const);
+		root.string_index = strings_add(root->string_const);
 	}
 
 	return 0;
