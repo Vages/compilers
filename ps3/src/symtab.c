@@ -25,7 +25,12 @@ symtab_finalize ( void )
 	for(int i = 0; i <= strings_index; i++){
 		free(strings[i]);
 	}
-
+	/* 	Eirik's note: I am a bit uncertain as to whether freeing each cell of strings is
+		not double freeing, because I do not know the contents of node_finalize
+		in the file from which tree.o has been compiled. However, I did not think
+		to do this when I programmed node_finalize, so I guess the safest choice
+		is to do it here.
+	*/
 	free(strings);
     
 }
