@@ -39,14 +39,21 @@ int
 strings_add ( char *str )
 {
 	strings_index++;
+	
 	if(strings_index >= strings_size){
 		strings_size = strings_size*2;
 		strings = (char**)realloc(strings, strings_size*sizeof(char*));
+		/* 	Eirik: I wager that we are more pressed for time than space,
+			and thus I'm choosing to allocate more space exponentially 
+			(by doubling the size of the array) rather than linearly.
+		*/
 	}
+	
 	strings[strings_index] = str;
 
 	if(outputStage == 7)
         printf( "Add strings (%s), index: %d \n", str, strings_index );
+	
 	return strings_index;
 }
 
