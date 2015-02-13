@@ -14,8 +14,8 @@ extern int outputStage; // This variable is located in vslc.c
 void
 symtab_init ( void )
 {
+	strings = (char**)malloc(sizeof(char*)*strings_size);
 
-    
 }
 
 
