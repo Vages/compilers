@@ -1,12 +1,22 @@
 --- correctOutput/newton.s8	2015-02-09 13:34:58.117170000 +0100
-+++ testOutput/newton.s8	2015-02-13 16:10:54.941911000 +0100
-@@ -8,9 +8,5 @@
++++ testOutput/newton.s8	2015-02-13 16:38:56.570220000 +0100
+@@ -8,9 +8,17 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"
  .NEWLINE: .ascii "\n \000"
 -.STRING0: .ascii "The square root of"
--.ascii "\000"
++.STRING0: .ascii (null)
+ .ascii "\000"
 -.STRING1: .ascii "is"
--.ascii "\000"
++.STRING1: .ascii (null)
++.ascii "\000"
++.STRING2: .ascii (null)
++.ascii "\000"
++.STRING3: .ascii (null)
++.ascii "\000"
++.STRING4: .ascii (null)
++.ascii "\000"
++.STRING5: .ascii (null)
+ .ascii "\000"
  .globl main
  .align	2

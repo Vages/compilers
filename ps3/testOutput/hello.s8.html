@@ -16,13 +16,14 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/hello.s8	2015-02-09 13:34:58.022172000 +0100</span>
-<span class="plus3">+++ testOutput/hello.s8	2015-02-13 16:10:54.150896000 +0100</span>
-<span class="at2">@@ -8,7 +8,5 @@</span>
+<span class="plus3">+++ testOutput/hello.s8	2015-02-13 16:38:55.454216000 +0100</span>
+<span class="at2">@@ -8,7 +8,7 @@</span>
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"
  .NEWLINE: .ascii "\n \000"
 <span class="minus">-.STRING0: .ascii "Hello, world!"</span>
-<span class="minus">-.ascii "\000"</span>
+<span class="plus">+.STRING0: .ascii (null)</span>
+ .ascii "\000"
  .globl main
  .align	2</span>
 </pre>

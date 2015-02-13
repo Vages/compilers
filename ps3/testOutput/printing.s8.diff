@@ -1,16 +1,36 @@
 --- correctOutput/printing.s8	2015-02-09 13:34:58.133170000 +0100
-+++ testOutput/printing.s8	2015-02-13 16:10:55.072903000 +0100
-@@ -8,13 +8,5 @@
++++ testOutput/printing.s8	2015-02-13 16:38:56.713221000 +0100
+@@ -8,13 +8,29 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"
  .NEWLINE: .ascii "\n \000"
 -.STRING0: .ascii "True "
--.ascii "\000"
++.STRING0: .ascii (null)
+ .ascii "\000"
 -.STRING1: .ascii "+-10 "
--.ascii "\000"
++.STRING1: .ascii (null)
+ .ascii "\000"
 -.STRING2: .ascii "False "
--.ascii "\000"
++.STRING2: .ascii (null)
+ .ascii "\000"
 -.STRING3: .ascii "+-0.4 "
--.ascii "\000"
++.STRING3: .ascii (null)
++.ascii "\000"
++.STRING4: .ascii (null)
++.ascii "\000"
++.STRING5: .ascii (null)
++.ascii "\000"
++.STRING6: .ascii (null)
++.ascii "\000"
++.STRING7: .ascii (null)
++.ascii "\000"
++.STRING8: .ascii (null)
++.ascii "\000"
++.STRING9: .ascii (null)
++.ascii "\000"
++.STRING10: .ascii (null)
++.ascii "\000"
++.STRING11: .ascii (null)
+ .ascii "\000"
  .globl main
  .align	2

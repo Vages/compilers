@@ -8,5 +8,27 @@
 .INTEGER: .ascii "%d \000"
 .FLOAT: .ascii "%f \000"
 .NEWLINE: .ascii "\n \000"
+.STRING0: .ascii (null)
+.ascii "\000"
+.STRING1: .ascii (null)
+.ascii "\000"
+.STRING2: .ascii (null)
+.ascii "\000"
+.STRING3: .ascii (null)
+.ascii "\000"
+.STRING4: .ascii (null)
+.ascii "\000"
+.STRING5: .ascii (null)
+.ascii "\000"
+.STRING6: .ascii (null)
+.ascii "\000"
+.STRING7: .ascii (null)
+.ascii "\000"
+.STRING8: .ascii (null)
+.ascii "\000"
+.STRING9: .ascii (null)
+.ascii "\000"
+.STRING10: .ascii (null)
+.ascii "\000"
 .globl main
 .align	2

@@ -1,16 +1,20 @@
 --- correctOutput/strings_and_comments.s8	2015-02-09 13:34:58.170173000 +0100
-+++ testOutput/strings_and_comments.s8	2015-02-13 16:10:55.364918000 +0100
-@@ -8,13 +8,5 @@
++++ testOutput/strings_and_comments.s8	2015-02-13 16:38:57.173222000 +0100
+@@ -8,13 +8,13 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"
  .NEWLINE: .ascii "\n \000"
 -.STRING0: .ascii "Hello, world!"
--.ascii "\000"
++.STRING0: .ascii (null)
+ .ascii "\000"
 -.STRING1: .ascii ""
--.ascii "\000"
++.STRING1: .ascii (null)
+ .ascii "\000"
 -.STRING2: .ascii "Hello, \"world\"!"
--.ascii "\000"
++.STRING2: .ascii (null)
+ .ascii "\000"
 -.STRING3: .ascii "//Comment"
--.ascii "\000"
++.STRING3: .ascii (null)
+ .ascii "\000"
  .globl main
  .align	2

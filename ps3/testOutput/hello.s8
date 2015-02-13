@@ -8,5 +8,7 @@
 .INTEGER: .ascii "%d \000"
 .FLOAT: .ascii "%f \000"
 .NEWLINE: .ascii "\n \000"
+.STRING0: .ascii (null)
+.ascii "\000"
 .globl main
 .align	2

@@ -1,24 +1,50 @@
 --- correctOutput/if_hard.s8	2015-02-09 13:34:58.032170000 +0100
-+++ testOutput/if_hard.s8	2015-02-13 16:10:54.276899000 +0100
-@@ -8,21 +8,5 @@
++++ testOutput/if_hard.s8	2015-02-13 16:38:55.565219000 +0100
+@@ -8,21 +8,39 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"
  .NEWLINE: .ascii "\n \000"
 -.STRING0: .ascii "A is different from 10"
--.ascii "\000"
++.STRING0: .ascii (null)
+ .ascii "\000"
 -.STRING1: .ascii "B is different from -15"
--.ascii "\000"
++.STRING1: .ascii (null)
+ .ascii "\000"
 -.STRING2: .ascii "B equals -15"
--.ascii "\000"
++.STRING2: .ascii (null)
+ .ascii "\000"
 -.STRING3: .ascii "This never happens..."
--.ascii "\000"
++.STRING3: .ascii (null)
+ .ascii "\000"
 -.STRING4: .ascii "a >0, b > 0"
--.ascii "\000"
++.STRING4: .ascii (null)
+ .ascii "\000"
 -.STRING5: .ascii "a > 0, b <= 0"
--.ascii "\000"
++.STRING5: .ascii (null)
+ .ascii "\000"
 -.STRING6: .ascii "a <= 0, b > 0"
--.ascii "\000"
++.STRING6: .ascii (null)
+ .ascii "\000"
 -.STRING7: .ascii "a <= 0, b <= 0"
--.ascii "\000"
++.STRING7: .ascii (null)
++.ascii "\000"
++.STRING8: .ascii (null)
++.ascii "\000"
++.STRING9: .ascii (null)
++.ascii "\000"
++.STRING10: .ascii (null)
++.ascii "\000"
++.STRING11: .ascii (null)
++.ascii "\000"
++.STRING12: .ascii (null)
++.ascii "\000"
++.STRING13: .ascii (null)
++.ascii "\000"
++.STRING14: .ascii (null)
++.ascii "\000"
++.STRING15: .ascii (null)
++.ascii "\000"
++.STRING16: .ascii (null)
+ .ascii "\000"
  .globl main
  .align	2
