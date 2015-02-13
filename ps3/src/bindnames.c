@@ -21,7 +21,7 @@ int bind_constant ( node_t *root, int stackOffset)
 	if(outputStage == 6)
 		printf( "CONSTANT\n");
 
-	root->string_index = strings_add(root->label);
+	root->string_index = strings_add(root->string_const);
 
 	return 0;
 }
