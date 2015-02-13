@@ -21,7 +21,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	root = simplify_default(root, depth+1);
+	root = simplify_default(root, depth);
 
 	if (root->data_type.base_type == ARRAY_TYPE){
 		int no_of_children = root->n_children;
@@ -87,7 +87,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	/* This seems to be working all right */
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
-	simplify_default(root, depth+1);
+	simplify_default(root, depth);
 	int no_children = root->n_children;
 
 	for (int i = 0; i < no_children; i++){
@@ -116,7 +116,7 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
-	simplify_default(root, depth+1);
+	simplify_default(root, depth);
 
 	if(root->nodetype.index==ARGUMENT_LIST){
 		root = root->children[0];
@@ -182,9 +182,9 @@ Node_t* simplify_list ( Node_t *root, int depth )
 	
 
 	if (root->n_children == 1){
-		root = simplify_default(root, depth+1);
+		root = simplify_default(root, depth);
 	} else if (root->n_children>1){
-		root = simplify_default(root, depth+1);
+		root = simplify_default(root, depth);
 		Node_t* left_child = root->children[0];
 		int no_of_children_in_left = left_child->n_children;
 		
@@ -210,7 +210,7 @@ Node_t* simplify_expression ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s (%s) \n", depth, ' ', root->nodetype.text, root->expression_type.text );
 
-	root = simplify_default(root, depth+1);
+	root = simplify_default(root, depth);
 
 	if (root->n_children == 1){
 		if((root->expression_type.index!=NOT_E)&&(root->expression_type.index!=UMINUS_E)&&(root->expression_type.index!=NEW_E)){
