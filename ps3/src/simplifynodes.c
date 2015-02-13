@@ -122,7 +122,9 @@ Node_t* simplify_single_child ( Node_t *root, int depth )
 		root = child;
 	} else if ((root->nodetype.index == STATEMENT)||(root->nodetype.index == PARAMETER_LIST)){
 		if (root->n_children ==1){
-			root = root->children[0];
+			Node_t* child = root->children[0];
+			node_finalize(root);
+			root = child;
 		}
 	}
 
