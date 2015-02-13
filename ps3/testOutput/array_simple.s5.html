@@ -16,15 +16,16 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/array_simple.s5	2015-02-09 13:34:57.902174000 +0100</span>
-<span class="plus3">+++ testOutput/array_simple.s5	2015-02-13 14:19:13.056737000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/array_simple.s5	2015-02-13 14:27:29.054480000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("arrayTest")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("arrayTest")()</span>
+    (nil)
     STATEMENT_LIST()()
-     DECLARATION_STATEMENT(INT)("a")()
-     DECLARATION_STATEMENT(INT)("b")()</span>
+     DECLARATION_STATEMENT(INT)("a")()</span>
 </pre>
 </body>
 </html>

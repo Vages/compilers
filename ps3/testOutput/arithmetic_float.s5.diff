@@ -1,10 +1,11 @@
 --- correctOutput/arithmetic_float.s5	2015-02-09 13:34:57.869167000 +0100
-+++ testOutput/arithmetic_float.s5	2015-02-13 14:19:12.528734000 +0100
-@@ -1,7 +1,6 @@
++++ testOutput/arithmetic_float.s5	2015-02-13 14:27:28.569475000 +0100
+@@ -1,6 +1,8 @@
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
--   (nil)
++   TYPE(VOID)()
++   VARIABLE()("main")()
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(FLOAT)("a")()
-     DECLARATION_STATEMENT(FLOAT)("b")()

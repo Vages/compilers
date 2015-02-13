@@ -1,10 +1,11 @@
 --- correctOutput/compare_int.s5	2015-02-09 13:34:57.920170000 +0100
-+++ testOutput/compare_int.s5	2015-02-13 14:19:13.263739000 +0100
-@@ -1,7 +1,6 @@
++++ testOutput/compare_int.s5	2015-02-13 14:27:29.269480000 +0100
+@@ -1,6 +1,8 @@
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
--   (nil)
++   TYPE(VOID)()
++   VARIABLE()("main")()
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
-     DECLARATION_STATEMENT(INT)("b")()

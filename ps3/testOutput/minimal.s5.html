@@ -16,15 +16,16 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/minimal.s5	2015-02-09 13:34:58.105169000 +0100</span>
-<span class="plus3">+++ testOutput/minimal.s5	2015-02-13 14:19:15.589754000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/minimal.s5	2015-02-13 14:27:31.959494000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(INT)("minimal")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(INT)()</span>
+<span class="plus">+   VARIABLE()("minimal")()</span>
+    (nil)
     STATEMENT_LIST()()
-     RETURN_STATEMENT()()
-      CONSTANT(INT)(0)()</span>
+     RETURN_STATEMENT()()</span>
 </pre>
 </body>
 </html>

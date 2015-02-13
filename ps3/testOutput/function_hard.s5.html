@@ -16,13 +16,41 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_hard.s5	2015-02-09 13:34:57.987172000 +0100</span>
-<span class="plus3">+++ testOutput/function_hard.s5	2015-02-13 14:19:14.154745000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/function_hard.s5	2015-02-13 14:27:30.373484000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("main")()</span>
+    (nil)
     STATEMENT_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+<span class="at2">@@ -24,6 +26,8 @@</span>
+         VARIABLE()("b")()
+         VARIABLE()("c")()
+   FUNCTION(INT)("func1")()
+<span class="plus">+   TYPE(INT)()</span>
+<span class="plus">+   VARIABLE()("func1")()</span>
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+     DECLARATION_STATEMENT(INT)("b")()
+<span class="at2">@@ -56,6 +60,8 @@</span>
+     RETURN_STATEMENT()()
+      VARIABLE()("d")()
+   FUNCTION(INT)("func2")()
+<span class="plus">+   TYPE(INT)()</span>
+<span class="plus">+   VARIABLE()("func2")()</span>
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+     DECLARATION_STATEMENT(INT)("b")()
+<span class="at2">@@ -88,6 +94,8 @@</span>
+     RETURN_STATEMENT()()
+      VARIABLE()("d")()
+   FUNCTION(INT)("func3")()
+<span class="plus">+   TYPE(INT)()</span>
+<span class="plus">+   VARIABLE()("func3")()</span>
+    VARIABLE_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
      DECLARATION_STATEMENT(INT)("b")()</span>
 </pre>

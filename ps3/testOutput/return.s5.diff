@@ -1,10 +1,20 @@
 --- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100
-+++ testOutput/return.s5	2015-02-13 14:19:15.978755000 +0100
-@@ -1,7 +1,6 @@
++++ testOutput/return.s5	2015-02-13 14:27:32.420498000 +0100
+@@ -1,6 +1,8 @@
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(INT)("main")()
--   (nil)
++   TYPE(INT)()
++   VARIABLE()("main")()
+    (nil)
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
-      EXPRESSION_LIST()()
+@@ -13,6 +15,8 @@
+     RETURN_STATEMENT()()
+      CONSTANT(INT)(0)()
+   FUNCTION(INT)("test")()
++   TYPE(INT)()
++   VARIABLE()("test")()
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+    STATEMENT_LIST()()

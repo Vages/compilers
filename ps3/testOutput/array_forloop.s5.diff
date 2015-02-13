@@ -1,10 +1,11 @@
 --- correctOutput/array_forloop.s5	2015-02-09 13:34:57.886171000 +0100
-+++ testOutput/array_forloop.s5	2015-02-13 14:19:12.770737000 +0100
-@@ -1,7 +1,6 @@
++++ testOutput/array_forloop.s5	2015-02-13 14:27:28.780476000 +0100
+@@ -1,6 +1,8 @@
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
--   (nil)
++   TYPE(VOID)()
++   VARIABLE()("main")()
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
-     ASSIGNMENT_STATEMENT()()

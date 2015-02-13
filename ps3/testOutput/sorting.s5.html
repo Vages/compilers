@@ -16,15 +16,25 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/sorting.s5	2015-02-09 13:34:58.158174000 +0100</span>
-<span class="plus3">+++ testOutput/sorting.s5	2015-02-13 14:19:16.142756000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/sorting.s5	2015-02-13 14:27:32.604498000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("main")()</span>
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()
-     DECLARATION_STATEMENT(ARRAY(INT)[10])("b")()</span>
+<span class="at2">@@ -41,6 +43,8 @@</span>
+          VARIABLE()("b")()
+          VARIABLE()("i")()
+   FUNCTION(ARRAY(INT)[10])("sort")()
+<span class="plus">+   TYPE(ARRAY(INT)[10])()</span>
+<span class="plus">+   VARIABLE()("sort")()</span>
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(ARRAY(INT)[10])("a")()
+    STATEMENT_LIST()()</span>
 </pre>
 </body>
 </html>

@@ -1,10 +1,11 @@
 --- correctOutput/compare_float.s5	2015-02-09 13:34:57.911169000 +0100
-+++ testOutput/compare_float.s5	2015-02-13 14:19:13.156738000 +0100
-@@ -1,7 +1,6 @@
++++ testOutput/compare_float.s5	2015-02-13 14:27:29.165480000 +0100
+@@ -1,6 +1,8 @@
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
--   (nil)
++   TYPE(VOID)()
++   VARIABLE()("main")()
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(FLOAT)("a")()
-     DECLARATION_STATEMENT(FLOAT)("b")()

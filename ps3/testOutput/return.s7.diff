@@ -1,5 +1,5 @@
 --- correctOutput/return.s7	2015-02-09 13:34:58.141172000 +0100
-+++ testOutput/return.s7	2015-02-13 14:19:16.054756000 +0100
++++ testOutput/return.s7	2015-02-13 14:27:32.512498000 +0100
 @@ -1,2 +0,0 @@
 -Add strings ("t is "), index: 0 
 -Add strings ("This never executes"), index: 1 

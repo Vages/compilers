@@ -1,5 +1,5 @@
 --- correctOutput/newton.s8	2015-02-09 13:34:58.117170000 +0100
-+++ testOutput/newton.s8	2015-02-13 14:19:15.734753000 +0100
++++ testOutput/newton.s8	2015-02-13 14:27:32.165495000 +0100
 @@ -8,9 +8,5 @@
  .INTEGER: .ascii "%d \000"
  .FLOAT: .ascii "%f \000"

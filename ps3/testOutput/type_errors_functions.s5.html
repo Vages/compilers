@@ -16,28 +16,39 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_functions.s5	2015-02-09 13:34:58.198172000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_functions.s5	2015-02-13 14:19:16.629762000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/type_errors_functions.s5	2015-02-13 14:27:33.087501000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("main")()</span>
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(INT)("a")()
-     DECLARATION_STATEMENT(BOOL)("b")()
-<span class="at2">@@ -33,12 +32,10 @@</span>
+<span class="at2">@@ -33,16 +35,22 @@</span>
        VARIABLE()("a")()
        VARIABLE()("b")()
    FUNCTION(VOID)("void_func")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("void_func")()</span>
+    (nil)
     STATEMENT_LIST()()
      RETURN_STATEMENT()()
       CONSTANT(INT)(0)()
    FUNCTION(BOOL)("bool_func")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(BOOL)()</span>
+<span class="plus">+   VARIABLE()("bool_func")()</span>
+    (nil)
     STATEMENT_LIST()()
      RETURN_STATEMENT()()
-      CONSTANT(BOOL)(False)()</span>
+      CONSTANT(BOOL)(False)()
+   FUNCTION(VOID)("two_args")()
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("two_args")()</span>
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(BOOL)("a")()
+     DECLARATION_STATEMENT(INT)("b")()</span>
 </pre>
 </body>
 </html>

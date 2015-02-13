@@ -16,15 +16,25 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/return.s5	2015-02-09 13:34:58.139172000 +0100</span>
-<span class="plus3">+++ testOutput/return.s5	2015-02-13 14:19:15.978755000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/return.s5	2015-02-13 14:27:32.420498000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(INT)("main")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(INT)()</span>
+<span class="plus">+   VARIABLE()("main")()</span>
+    (nil)
     STATEMENT_LIST()()
      PRINT_STATEMENT()()
-      EXPRESSION_LIST()()</span>
+<span class="at2">@@ -13,6 +15,8 @@</span>
+     RETURN_STATEMENT()()
+      CONSTANT(INT)(0)()
+   FUNCTION(INT)("test")()
+<span class="plus">+   TYPE(INT)()</span>
+<span class="plus">+   VARIABLE()("test")()</span>
+    VARIABLE_LIST()()
+     DECLARATION_STATEMENT(INT)("a")()
+    STATEMENT_LIST()()</span>
 </pre>
 </body>
 </html>

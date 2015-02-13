@@ -16,23 +16,25 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/array_hard.s5	2015-02-09 13:34:57.894172000 +0100</span>
-<span class="plus3">+++ testOutput/array_hard.s5	2015-02-13 14:19:12.908738000 +0100</span>
-<span class="at2">@@ -1,7 +1,6 @@</span>
+<span class="plus3">+++ testOutput/array_hard.s5	2015-02-13 14:27:28.895477000 +0100</span>
+<span class="at2">@@ -1,6 +1,8 @@</span>
   PROGRAM()()
   FUNCTION_LIST()()
    FUNCTION(VOID)("main")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(VOID)()</span>
+<span class="plus">+   VARIABLE()("main")()</span>
+    (nil)
     STATEMENT_LIST()()
      DECLARATION_STATEMENT(ARRAY(INT)[3][3])("a")()
-     ASSIGNMENT_STATEMENT()()
-<span class="at2">@@ -57,7 +56,6 @@</span>
+<span class="at2">@@ -57,6 +59,8 @@</span>
         VARIABLE()("c")()
         CONSTANT(INT)(1)()
    FUNCTION(ARRAY(INT)[3])("create")()
-<span class="minus">-   (nil)</span>
+<span class="plus">+   TYPE(ARRAY(INT)[3])()</span>
+<span class="plus">+   VARIABLE()("create")()</span>
+    (nil)
     STATEMENT_LIST()()
-     DECLARATION_STATEMENT(ARRAY(INT)[3])("a")()
-     ASSIGNMENT_STATEMENT()()</span>
+     DECLARATION_STATEMENT(ARRAY(INT)[3])("a")()</span>
 </pre>
 </body>
 </html>
