@@ -43,7 +43,6 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	}
 
 	root->n_children = 0;
-	root->children = (Node_t**)realloc(root, 0);
 
 	return root;
 }
