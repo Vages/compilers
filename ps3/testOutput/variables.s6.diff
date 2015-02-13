@@ -1,6 +1,0 @@
---- correctOutput/variables.s6	2015-02-09 13:34:58.208171000 +0100
-+++ testOutput/variables.s6	2015-02-13 14:39:46.426517000 +0100
-@@ -1,3 +0,0 @@
--CONSTANT
--CONSTANT
--CONSTANT
