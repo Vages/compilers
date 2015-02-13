@@ -30,14 +30,17 @@ symtab_finalize ( void )
 int
 strings_add ( char *str )
 {
-	if(outputStage == 7)
-        printf( "Add strings (%s), index: %d \n", str, strings_index );
+
+
 	strings_index++;
 	if(strings_index >= strings_size){
 		strings_size = strings_size*2;
 		strings = (char**)realloc(strings, strings_size*sizeof(char*));
 	}
 	strings[strings_index] = str;
+
+	if(outputStage == 7)
+        printf( "Add strings (%s), index: %d \n", str, strings_index );
 	return strings_index;
 }
 
