@@ -1,0 +1,28 @@
+--- correctOutput/function_medium.s8	2015-02-09 13:34:58.000170000 +0100
++++ testOutput/function_medium.s8	2015-02-13 16:38:55.211210000 +0100
+@@ -8,5 +8,25 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
++.STRING0: .ascii (null)
++.ascii "\000"
++.STRING1: .ascii (null)
++.ascii "\000"
++.STRING2: .ascii (null)
++.ascii "\000"
++.STRING3: .ascii (null)
++.ascii "\000"
++.STRING4: .ascii (null)
++.ascii "\000"
++.STRING5: .ascii (null)
++.ascii "\000"
++.STRING6: .ascii (null)
++.ascii "\000"
++.STRING7: .ascii (null)
++.ascii "\000"
++.STRING8: .ascii (null)
++.ascii "\000"
++.STRING9: .ascii (null)
++.ascii "\000"
+ .globl main
+ .align	2

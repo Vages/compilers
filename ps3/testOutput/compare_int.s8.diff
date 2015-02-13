@@ -1,0 +1,16 @@
+--- correctOutput/compare_int.s8	2015-02-09 13:34:57.922170000 +0100
++++ testOutput/compare_int.s8	2015-02-13 16:38:54.111206000 +0100
+@@ -8,5 +8,13 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
++.STRING0: .ascii (null)
++.ascii "\000"
++.STRING1: .ascii (null)
++.ascii "\000"
++.STRING2: .ascii (null)
++.ascii "\000"
++.STRING3: .ascii (null)
++.ascii "\000"
+ .globl main
+ .align	2

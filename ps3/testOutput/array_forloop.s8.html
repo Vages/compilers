@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/array_forloop.s8	2015-02-09 13:34:57.889168000 +0100</span>
+<span class="plus3">+++ testOutput/array_forloop.s8	2015-02-13 16:38:53.611204000 +0100</span>
+<span class="at2">@@ -8,5 +8,29 @@</span>
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+<span class="plus">+.STRING0: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING1: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING2: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING3: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING4: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING5: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING6: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING7: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING8: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING9: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING10: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING11: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+ .globl main
+ .align	2</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.syntax unified
+.cpu cortex-a15
+.fpu vfpv3-d16
+.data
+.align	2
+.DEBUG: .ascii "Hit Debug\n\000"
+.DEBUGINT: .ascii "Hit Debug, r0 was: %d\n\000"
+.INTEGER: .ascii "%d \000"
+.FLOAT: .ascii "%f \000"
+.NEWLINE: .ascii "\n \000"
+.STRING0: .ascii (null)
+.ascii "\000"
+.STRING1: .ascii (null)
+.ascii "\000"
+.STRING2: .ascii (null)
+.ascii "\000"
+.STRING3: .ascii (null)
+.ascii "\000"
+.STRING4: .ascii (null)
+.ascii "\000"
+.STRING5: .ascii (null)
+.ascii "\000"
+.STRING6: .ascii (null)
+.ascii "\000"
+.STRING7: .ascii (null)
+.ascii "\000"
+.STRING8: .ascii (null)
+.ascii "\000"
+.STRING9: .ascii (null)
+.ascii "\000"
+.STRING10: .ascii (null)
+.ascii "\000"
+.STRING11: .ascii (null)
+.ascii "\000"
+.STRING12: .ascii (null)
+.ascii "\000"
+.STRING13: .ascii (null)
+.ascii "\000"
+.STRING14: .ascii (null)
+.ascii "\000"
+.STRING15: .ascii (null)
+.ascii "\000"
+.STRING16: .ascii (null)
+.ascii "\000"
+.STRING17: .ascii (null)
+.ascii "\000"
+.STRING18: .ascii (null)
+.ascii "\000"
+.STRING19: .ascii (null)
+.ascii "\000"
+.STRING20: .ascii (null)
+.ascii "\000"
+.STRING21: .ascii (null)
+.ascii "\000"
+.STRING22: .ascii (null)
+.ascii "\000"
+.STRING23: .ascii (null)
+.ascii "\000"
+.STRING24: .ascii (null)
+.ascii "\000"
+.STRING25: .ascii (null)
+.ascii "\000"
+.STRING26: .ascii (null)
+.ascii "\000"
+.STRING27: .ascii (null)
+.ascii "\000"
+.STRING28: .ascii (null)
+.ascii "\000"
+.STRING29: .ascii (null)
+.ascii "\000"
+.STRING30: .ascii (null)
+.ascii "\000"
+.STRING31: .ascii (null)
+.ascii "\000"
+.STRING32: .ascii (null)
+.ascii "\000"
+.STRING33: .ascii (null)
+.ascii "\000"
+.STRING34: .ascii (null)
+.ascii "\000"
+.STRING35: .ascii (null)
+.ascii "\000"
+.STRING36: .ascii (null)
+.ascii "\000"
+.STRING37: .ascii (null)
+.ascii "\000"
+.STRING38: .ascii (null)
+.ascii "\000"
+.STRING39: .ascii (null)
+.ascii "\000"
+.STRING40: .ascii (null)
+.ascii "\000"
+.STRING41: .ascii (null)
+.ascii "\000"
+.STRING42: .ascii (null)
+.ascii "\000"
+.STRING43: .ascii (null)
+.ascii "\000"
+.STRING44: .ascii (null)
+.ascii "\000"
+.STRING45: .ascii (null)
+.ascii "\000"
+.STRING46: .ascii (null)
+.ascii "\000"
+.globl main
+.align	2

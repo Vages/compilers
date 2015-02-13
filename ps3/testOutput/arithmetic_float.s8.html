@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/arithmetic_float.s8	2015-02-09 13:34:57.871170000 +0100</span>
+<span class="plus3">+++ testOutput/arithmetic_float.s8	2015-02-13 16:38:53.442200000 +0100</span>
+<span class="at2">@@ -8,5 +8,11 @@</span>
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
+<span class="plus">+.STRING0: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING1: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+<span class="plus">+.STRING2: .ascii (null)</span>
+<span class="plus">+.ascii "\000"</span>
+ .globl main
+ .align	2</span>
+</pre>
+</body>
+</html>

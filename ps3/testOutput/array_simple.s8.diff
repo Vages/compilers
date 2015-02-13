@@ -1,0 +1,20 @@
+--- correctOutput/array_simple.s8	2015-02-09 13:34:57.905169000 +0100
++++ testOutput/array_simple.s8	2015-02-13 16:38:53.904214000 +0100
+@@ -8,5 +8,17 @@
+ .INTEGER: .ascii "%d \000"
+ .FLOAT: .ascii "%f \000"
+ .NEWLINE: .ascii "\n \000"
++.STRING0: .ascii (null)
++.ascii "\000"
++.STRING1: .ascii (null)
++.ascii "\000"
++.STRING2: .ascii (null)
++.ascii "\000"
++.STRING3: .ascii (null)
++.ascii "\000"
++.STRING4: .ascii (null)
++.ascii "\000"
++.STRING5: .ascii (null)
++.ascii "\000"
+ .globl main
+ .align	2
