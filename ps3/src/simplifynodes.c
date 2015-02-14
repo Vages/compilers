@@ -29,12 +29,13 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	int index_children = root->children[1]->n_children;
 	root->data_type.n_dimensions = index_children;
 	root->data_type.dimensions = malloc(sizeof(int)*index_children);
+	Node_t* child = root->children[1];
 	for (int j = 0; j < index_children; j++){
-		root->data_type.dimensions[j] = root->children[1]->children[j]->int_const;
+		root->data_type.dimensions[j] = child->children[j]->int_const;
 		//node_finalize(root->children[1]->children[j]);
 	}
 	//node_finalize(root->children[1]);
-
+	
 	//free(root->children);
 	root->n_children = 0;
 
