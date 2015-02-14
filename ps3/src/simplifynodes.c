@@ -40,32 +40,6 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	}
 
 	return root;
-	
-	
-	/*
-	if (root->data_type.base_type == ARRAY_TYPE){
-		int no_of_children = root->n_children;
-		for (int i = 0; i<no_of_children; i++){
-			Node_t* child = root->children[i];
-			if (child->nodetype.index == TYPE){
-				root->data_type.array_type = child->data_type.base_type;
-			} else if (child->nodetype.index == INDEX_LIST){
-				int index_children = child->n_children;
-				root->data_type.n_dimensions = index_children;
-				root->data_type.dimensions = malloc(sizeof(int)*(index_children));
-				for (int j = 0; j < index_children; j++){
-					root->data_type.dimensions[j] = child->children[j]->int_const;
-				}
-			}
-			node_finalize(child);
-		}
-
-		root->n_children = 0;
-	}
-
-	*/
-
-	return root;
 }
 
 
