@@ -23,19 +23,22 @@ Node_t* simplify_types ( Node_t *root, int depth )
 	root = simplify_default(root, depth);
 	
 	if (root->data_type.base_type == ARRAY_TYPE){
+		
 		root->data_type.array_type = root->children[0]->data_type.base_type;
 		node_finalize(root->children[0]);
 		
 		int index_children = root->children[1]->n_children;
 		root->data_type.n_dimensions = index_children;
+		
 		root->data_type.dimensions = malloc(sizeof(int)*index_children);
+		
 		for (int j = 0; j < index_children; j++){
 			root->data_type.dimensions[j] = root->children[1]->children[j]->int_const;
 			node_finalize(root->children[1]->children[j]); // This fixed the last memory leak
 		}
+		
 		node_finalize(root->children[1]);
 
-		//free(root->children); This doesn't work
 		root->n_children = 0;
 	}
 
@@ -62,35 +65,10 @@ Node_t* simplify_function ( Node_t *root, int depth )
 	new_children[1] = root->children[3];
 
 	free(root->children);
+
 	root->children = new_children;
 	root->n_children = 2;
 
-	/*
-	int c_i = 0;
-	for (int i = 0; i<root->n_children; i++){
-		Node_t* child = root->children[i];
-		if (child != NULL){
-			child = child->simplify(child, depth+1);
-			if (child->nodetype.index == TYPE){
-				root->data_type = child->data_type;
-				node_finalize(child);
-			} else if (child->nodetype.index == VARIABLE){
-				root->label=STRDUP(child->label);
-				node_finalize(child);
-			} else{
-				new_children[c_i++] = child;	
-			}
-			
-		} else {
-			new_children[c_i++] = child;			
-		}
-
-
-	}
-	free(root->children);
-	root->children = new_children;
-	root->n_children = c_i;
-	*/
 	return root;
 }
 
@@ -114,25 +92,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	root->n_children = 0;
 
 	return root;
-/*
-	int no_children = root->n_children;
 
-	for (int i = 0; i < no_children; i++){
-		Node_t* child = root->children[i];
-		if (child != NULL){
-			if (child->nodetype.index == TYPE){
-				root->data_type = child->data_type;
-			} else if (child->nodetype.index == VARIABLE){
-				root->label = STRDUP(child->label);
-			}
-			node_finalize(child);
-		}
-	}
-
-	root->n_children = 0;
-
-	return root;
-*/	
 }
 
 
@@ -168,13 +128,16 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 	if (root->children[0]==NULL){
 		Node_t** new_children = malloc(sizeof(Node_t*));
 		new_children[0] = root->children[1];
+		
 		free(root->children);
 		root->children = new_children;
 		root->n_children = 1;
+		
 		return root;
 	}
 
 	Node_t* left_child = root->children[0];
+	
 	int no_of_children_in_left = left_child->n_children;
 	
 	Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+1));
@@ -187,11 +150,11 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 	
 	node_finalize(left_child);
 	free(root->children);
+	
 	root->children = new_children;
 	root->n_children = no_of_children_in_left+1;
 	
-	return root;
-	
+	return root;	
 }
 
 
@@ -213,8 +176,10 @@ Node_t* simplify_list ( Node_t *root, int depth )
 		}
 
 		new_children[no_of_children_in_left] = root->children[1];
+		
 		node_finalize(left_child);
 		free(root->children);
+		
 		root->children = new_children;
 		root->n_children = no_of_children_in_left+1;
 	}
