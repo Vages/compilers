@@ -49,7 +49,6 @@ Node_t* simplify_types ( Node_t *root, int depth )
 			if (child->nodetype.index == TYPE){
 				root->data_type.array_type = child->data_type.base_type;
 			} else if (child->nodetype.index == INDEX_LIST){
-				fprintf(stderr, "%d\n", i);
 				int index_children = child->n_children;
 				root->data_type.n_dimensions = index_children;
 				root->data_type.dimensions = malloc(sizeof(int)*(index_children));
