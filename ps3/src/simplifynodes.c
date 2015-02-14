@@ -21,7 +21,6 @@ Node_t* simplify_types ( Node_t *root, int depth )
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
 	root = simplify_default(root, depth);
-
 	
 	if (root->data_type.base_type == ARRAY_TYPE){
 		root->data_type.array_type = root->children[0]->data_type.base_type;
