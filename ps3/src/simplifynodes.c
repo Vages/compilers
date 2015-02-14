@@ -51,6 +51,20 @@ Node_t* simplify_function ( Node_t *root, int depth )
 	Node_t** new_children = malloc(sizeof(Node_t*)*2);
 	int c_i = 0;
 
+	root->data_type = root->children[0]->data_type;
+	node_finalize(root->children[0]);
+
+	root->label = STRDUP(root->children[1]>label);
+	node_finalize(root->children[1]);
+
+	new_children[0] = root->children[2];
+	new_children[1] = root->children[3];
+
+	free(root->children);
+	root->children = new_children;
+	root->n_children = 2;
+
+	/*
 	for (int i = 0; i<root->n_children; i++){
 		Node_t* child = root->children[i];
 		if (child != NULL){
@@ -74,7 +88,7 @@ Node_t* simplify_function ( Node_t *root, int depth )
 	free(root->children);
 	root->children = new_children;
 	root->n_children = c_i;
-	
+	*/
 	return root;
 }
 
