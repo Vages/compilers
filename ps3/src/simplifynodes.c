@@ -56,6 +56,7 @@ Node_t* simplify_function ( Node_t *root, int depth )
 	node_finalize(root->children[0]);
 
 	root->label = STRDUP(root->children[1]->label);
+	free(root->children[1]->label);
 	node_finalize(root->children[1]);
 
 	new_children[0] = root->children[2];
