@@ -22,7 +22,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 	root = simplify_default(root, depth);
 
-	root->data_type.array_type = root->children[0].data_type.base_type;
+	root->data_type.array_type = root->children[0]->data_type.base_type;
 	node_finalize(root->children[0]);
 	
 	int index_children = root->children[1]->n_children;
