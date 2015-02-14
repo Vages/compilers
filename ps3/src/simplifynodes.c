@@ -35,7 +35,7 @@ Node_t* simplify_types ( Node_t *root, int depth )
 		}
 		node_finalize(root->children[1]);
 
-		//free(root->children);
+		free(root->children);
 		root->n_children = 0;
 	}
 
