@@ -114,7 +114,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	root->n_children = 0;
 
 	return root;
-
+/*
 	int no_children = root->n_children;
 
 	for (int i = 0; i < no_children; i++){
@@ -132,7 +132,7 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 	root->n_children = 0;
 
 	return root;
-	
+*/	
 }
 
 
