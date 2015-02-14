@@ -48,6 +48,8 @@ Node_t* simplify_function ( Node_t *root, int depth )
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
+	root = simplify_default(root, depth);
+	
 	Node_t** new_children = malloc(sizeof(Node_t*)*2);
 
 	root->data_type = root->children[0]->data_type;
