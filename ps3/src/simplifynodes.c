@@ -22,11 +22,11 @@ Node_t* simplify_types ( Node_t *root, int depth )
 
 	root = simplify_default(root, depth);
 
-	
 	root->data_type.array_type = root->children[0]->data_type.base_type;
 	//node_finalize(root->children[0]);
 	
 	int index_children = root->children[1]->n_children;
+	fprintf(stderr, "%d\n", index_children);
 	root->data_type.n_dimensions = index_children;
 	root->data_type.dimensions = malloc(sizeof(int)*index_children);
 	Node_t* child = root->children[1];
