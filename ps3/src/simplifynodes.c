@@ -235,7 +235,6 @@ Node_t* simplify_expression ( Node_t *root, int depth )
 			Node_t* child = root->children[0];
 			node_finalize(root);
 			root = child;
-			free(child);
 		}
 	}
 
