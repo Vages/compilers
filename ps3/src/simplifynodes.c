@@ -137,7 +137,6 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 	}
 
 	Node_t* left_child = root->children[0];
-	
 	int no_of_children_in_left = left_child->n_children;
 	
 	Node_t** new_children = malloc(sizeof(Node_t*)*(no_of_children_in_left+1));
