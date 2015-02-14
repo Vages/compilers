@@ -60,10 +60,10 @@ Node_t* simplify_types ( Node_t *root, int depth )
 			node_finalize(child);
 		}
 
-
+		root->n_children = 0;
 	}
 
-	root->n_children = 0;
+	
 	
 
 	return root;
