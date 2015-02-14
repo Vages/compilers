@@ -170,7 +170,6 @@ Node_t* simplify_list_with_null ( Node_t *root, int depth )
 		new_children[0] = root->children[1];
 		free(root->children);
 		root->children = new_children;
-		free(new_children);
 		root->n_children = 1;
 		return root;
 	}
