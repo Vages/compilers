@@ -64,6 +64,7 @@ Node_t* simplify_function ( Node_t *root, int depth )
 	root->n_children = 2;
 
 	/*
+	int c_i = 0;
 	for (int i = 0; i<root->n_children; i++){
 		Node_t* child = root->children[i];
 		if (child != NULL){
