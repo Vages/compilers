@@ -49,7 +49,7 @@ Node_t* simplify_function ( Node_t *root, int depth )
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
 
 	root = simplify_default(root, depth);
-	
+
 	Node_t** new_children = malloc(sizeof(Node_t*)*2);
 
 	root->data_type = root->children[0]->data_type;
@@ -101,7 +101,20 @@ Node_t* simplify_declaration_statement ( Node_t *root, int depth )
 {
 	if(outputStage == 4)
 		printf( "%*cSimplify %s \n", depth, ' ', root->nodetype.text );
+	
 	simplify_default(root, depth);
+
+	root->data_type = root->children[0]->data_type;
+	node_finalize(root->children[0]);
+
+	root->label = STRDUP(root->children[1]->label);
+	node_finalize(root->children[1]);
+
+	free(root->children);
+	root->n_children = 0;
+
+	return root;
+
 	int no_children = root->n_children;
 
 	for (int i = 0; i < no_children; i++){
