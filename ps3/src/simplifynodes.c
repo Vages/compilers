@@ -214,7 +214,7 @@ Node_t* simplify_list ( Node_t *root, int depth )
 
 		new_children[no_of_children_in_left] = root->children[1];
 		node_finalize(left_child);
-		free(children);
+		free(root->children);
 		root->children = new_children;
 		root->n_children = no_of_children_in_left+1;
 	}
