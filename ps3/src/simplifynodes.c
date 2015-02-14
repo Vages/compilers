@@ -63,6 +63,7 @@ Node_t* simplify_function ( Node_t *root, int depth )
 
 	free(root->children);
 	root->children = new_children;
+	free(new_children);
 	root->n_children = 2;
 
 	/*
