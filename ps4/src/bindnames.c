@@ -67,7 +67,16 @@ int bind_declaration ( node_t *root, int stackOffset)
 	if(outputStage == 6)
 		printf( "DECLARATION: parameter/variable : '%s', offset: %d\n", root->label, stackOffset);
 
+	/*
+		Eirik: This should pass a newly created node to the symbol table.
+	*/
 
+	s = create_symbol(root, stackOffset);
+	symbol_insert(s->label, s);
+
+	stackOffset -= 4; // Eirik: stackOffset must be decremented, as per p. 14 in the recitation
+
+	return stackOffset;
 }
 
 int bind_variable ( node_t *root, int stackOffset)
