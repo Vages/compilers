@@ -3,8 +3,8 @@ extern int outputStage; // This variable is located in vslc.c
 char* thisClass;
 
 //Solutions to last assignment, precompiled in bindsol.o
-int bc(node_t* root, int stackOffset);
-int bd(node_t* root, int stackOffset);
+int bc(node_t* root, int stackOffset); //Eirik: Bind constant; places string type in symbol table
+int bd(node_t* root, int stackOffset); //Eirik: Bind default; calls the bind function of the root's children
 
 int bind_default ( node_t *root, int stackOffset)
 {
