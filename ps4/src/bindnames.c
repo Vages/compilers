@@ -42,7 +42,7 @@ int bind_function_list ( node_t *root, int stackOffset)
 
 int bind_constant ( node_t *root, int stackOffset)
 {
-    return bc(root, stackOffset);
+    return bc(root, stackOffset); // Eirik: The same as the bind constant from last time
 }
 
 
