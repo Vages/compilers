@@ -48,7 +48,18 @@ int bind_constant ( node_t *root, int stackOffset)
 
 symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 {
-    
+    /*
+		Eirik: This function creates a symbol table struct and returns it.
+		Note that the depth parameter has to be ignored
+    */
+
+	symbol_t* s = malloc(sizeof(symbol_t));
+	s->stack_offset = stackOffset;
+	s->label = STRDUP(declaration_node->label);
+	s->type = declaration_node->data_type;
+
+	return s;
+	// Eirik: probably finished
 }
 
 int bind_declaration ( node_t *root, int stackOffset)
