@@ -59,7 +59,7 @@ symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 	s->type = declaration_node->data_type;
 
 	return s;
-	// Eirik: probably finished
+	// Eirik: Probably finished
 }
 
 int bind_declaration ( node_t *root, int stackOffset)
