@@ -1,5 +1,5 @@
 --- correctOutput/while_hard.s10	2015-02-22 13:09:53.957148000 +0100
-+++ testOutput/while_hard.s10	2015-02-22 17:12:21.106578000 +0100
++++ testOutput/while_hard.s10	2015-02-22 17:19:24.265854000 +0100
 @@ -1,15 +1,45 @@
  Type checking assignment
 +Type error at:

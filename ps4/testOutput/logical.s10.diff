@@ -1,14 +1,47 @@
 --- correctOutput/logical.s10	2015-02-22 13:09:53.588146000 +0100
-+++ testOutput/logical.s10	2015-02-22 17:12:18.973568000 +0100
-@@ -1,4 +1,6 @@
++++ testOutput/logical.s10	2015-02-22 17:19:22.055843000 +0100
+@@ -1,58 +1,170 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking assignment
  Type checking assignment
-@@ -15,44 +17,94 @@
+ Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
  Type checking expression ||
++Type error at:
++EXPRESSION (||)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression ||
++Type error at:
++EXPRESSION (||)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression ||
++Type error at:
++EXPRESSION (||)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression !
 +Type error at:
@@ -33,12 +66,7 @@
 +Type error at:
 +EXPRESSION (!)
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression &&
- Type checking expression !
-+Type error at:
-+EXPRESSION (!)
++EXPRESSION (&&)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -47,6 +75,17 @@
 +Type error at:
 +EXPRESSION (!)
 +Type error at:
++EXPRESSION (&&)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression &&
+ Type checking expression !
++Type error at:
++EXPRESSION (!)
++Type error at:
++EXPRESSION (&&)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
@@ -54,12 +93,7 @@
 +Type error at:
 +EXPRESSION (!)
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ||
- Type checking expression !
-+Type error at:
-+EXPRESSION (!)
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -68,30 +102,61 @@
 +Type error at:
 +EXPRESSION (!)
 +Type error at:
++EXPRESSION (||)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression !
++Type error at:
++EXPRESSION (!)
++Type error at:
++EXPRESSION (||)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression &&
  Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (&&)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
  Type checking expression ||
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ||
- Type checking expression &&
++EXPRESSION (||)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
  Type checking expression &&
 +Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression &&
  Type checking expression ||
++Type error at:
++EXPRESSION (||)
++Type error at:
++EXPRESSION (&&)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -100,5 +165,9 @@
  Type checking expression !
 +Type error at:
 +EXPRESSION (!)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT

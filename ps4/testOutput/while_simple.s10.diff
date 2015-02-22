@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s10	2015-02-22 13:09:53.979148000 +0100
-+++ testOutput/while_simple.s10	2015-02-22 17:12:21.274579000 +0100
++++ testOutput/while_simple.s10	2015-02-22 17:19:24.458856000 +0100
 @@ -1,4 +1,12 @@
  Type checking assignment
 +Type error at:

@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100</span>
-<span class="plus3">+++ testOutput/function_medium.s10	2015-02-22 17:12:18.509566000 +0100</span>
-<span class="at2">@@ -1,16 +1,22 @@</span>
+<span class="plus3">+++ testOutput/function_medium.s10	2015-02-22 17:19:21.565840000 +0100</span>
+<span class="at2">@@ -1,16 +1,32 @@</span>
  Type checking assignment
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
@@ -31,17 +31,27 @@
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression &amp;&amp;
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
  Type checking expression &amp;&amp;
 <span class="minus">-Type checking expression &amp;&amp;</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
  Type checking expression ||
  Type checking expression ||
  Type checking expression &amp;&amp;
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
  Type checking expression &gt;
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (&gt;)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
  Type checking expression &gt;
 <span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&gt;)</span></span>
+<span class="plus">+EXPRESSION (&gt;)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span></span>
 </pre>
 </body>
 </html>

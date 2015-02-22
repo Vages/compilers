@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_assignment.s10	2015-02-22 13:09:53.877147000 +0100
-+++ testOutput/type_errors_assignment.s10	2015-02-22 17:12:20.780577000 +0100
++++ testOutput/type_errors_assignment.s10	2015-02-22 17:19:23.938852000 +0100
 @@ -2,17 +2,7 @@
  Type error at:
  ASSIGNMENT_STATEMENT

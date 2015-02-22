@@ -1,6 +1,6 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-22 17:12:17.110556000 +0100
-@@ -1,37 +1,79 @@
++++ testOutput/expressions.s10	2015-02-22 17:19:20.000835000 +0100
+@@ -1,81 +1,215 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
@@ -65,25 +65,44 @@
  Type checking expression ||
  Type checking expression ==
  Type checking expression UMINUS
++Type error at:
++EXPRESSION (==)
  Type checking expression !=
  Type checking expression UMINUS
++Type error at:
++EXPRESSION (!=)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
  Type checking expression !=
  Type checking expression UMINUS
++Type error at:
++EXPRESSION (!=)
  Type checking expression ==
  Type checking expression UMINUS
++Type error at:
++EXPRESSION (==)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
  Type checking expression ==
-@@ -40,34 +82,92 @@
+ Type checking expression UMINUS
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (==)
  Type checking expression !=
  Type checking expression UMINUS
  Type checking expression UMINUS
++Type error at:
++EXPRESSION (!=)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -175,16 +194,31 @@
  Type checking assignment
  Type checking expression ||
  Type checking expression ||
-@@ -76,6 +176,8 @@
+ Type checking expression ||
  Type checking expression &&
++Type error at:
++EXPRESSION (&&)
  Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
  Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
+ Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
  Type checking expression ||
-@@ -83,61 +185,133 @@
+@@ -83,61 +217,179 @@
  Type checking expression !
  Type checking expression !
  Type checking expression !
@@ -200,16 +234,30 @@
 +EXPRESSION (!)
 +Type error at:
 +EXPRESSION (!)
++Type error at:
++EXPRESSION (&&)
  Type checking expression &&
  Type checking expression !
 +Type error at:
 +EXPRESSION (!)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
  Type checking expression ||
  Type checking expression &&
++Type error at:
++EXPRESSION (&&)
  Type checking expression &&
  Type checking expression !
 +Type error at:
 +EXPRESSION (!)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -228,15 +276,26 @@
  Type checking expression !
  Type checking expression &&
 +Type error at:
++EXPRESSION (&&)
++Type error at:
 +EXPRESSION (!)
  Type checking expression ||
  Type checking expression !
  Type checking expression !=
+-Type checking expression !
++Type error at:
++EXPRESSION (!=)
 +Type error at:
 +EXPRESSION (!)
- Type checking expression !
++Type checking expression !
 +Type error at:
 +EXPRESSION (!)
++Type error at:
++EXPRESSION (||)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -279,8 +338,18 @@
  Type checking expression ||
  Type checking expression ||
  Type checking expression ||
++Type error at:
++EXPRESSION (||)
  Type checking expression &&
  Type checking expression &&
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -289,6 +358,16 @@
  Type checking expression &&
  Type checking expression ||
  Type checking expression ||
++Type error at:
++EXPRESSION (||)
++Type error at:
++EXPRESSION (||)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (&&)
++Type error at:
++EXPRESSION (||)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -303,6 +382,8 @@
 +Type error at:
 +EXPRESSION (>=)
  Type checking expression !=
++Type error at:
++EXPRESSION (!=)
  Type checking expression <=
  Type checking expression UMINUS
 +Type error at:

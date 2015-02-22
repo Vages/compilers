@@ -1,6 +1,6 @@
 --- correctOutput/if_hard.s10	2015-02-22 13:09:53.530145000 +0100
-+++ testOutput/if_hard.s10	2015-02-22 17:12:18.770565000 +0100
-@@ -1,10 +1,24 @@
++++ testOutput/if_hard.s10	2015-02-22 17:19:21.845842000 +0100
+@@ -1,10 +1,28 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
@@ -11,11 +11,15 @@
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression !=
++Type error at:
++EXPRESSION (!=)
  Type checking expression >=
 +Type error at:
 +EXPRESSION (>=)
  Type checking expression !=
  Type checking expression UMINUS
++Type error at:
++EXPRESSION (!=)
  Type checking expression >
 +Type error at:
 +EXPRESSION (>)

@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s10	2015-02-22 13:09:53.426147000 +0100
-+++ testOutput/function_hard.s10	2015-02-22 17:12:18.329562000 +0100
++++ testOutput/function_hard.s10	2015-02-22 17:19:21.390840000 +0100
 @@ -1,22 +1,43 @@
  Type checking assignment
 +Type error at:
