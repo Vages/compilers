@@ -1,5 +1,5 @@
 --- correctOutput/newton.s9	2015-02-22 13:09:53.737148000 +0100
-+++ testOutput/newton.s9	2015-02-22 13:42:21.216448000 +0100
++++ testOutput/newton.s9	2015-02-22 14:16:50.936403000 +0100
 @@ -1,57 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

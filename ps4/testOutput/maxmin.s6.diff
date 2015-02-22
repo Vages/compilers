@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s6	2015-02-22 13:09:53.655147000 +0100
-+++ testOutput/maxmin.s6	2015-02-22 13:42:18.868437000 +0100
++++ testOutput/maxmin.s6	2015-02-22 14:16:48.677390000 +0100
 @@ -1,62 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: maxmin

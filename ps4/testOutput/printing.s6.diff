@@ -1,5 +1,5 @@
 --- correctOutput/printing.s6	2015-02-22 13:09:53.752153000 +0100
-+++ testOutput/printing.s6	2015-02-22 13:42:21.465449000 +0100
++++ testOutput/printing.s6	2015-02-22 14:16:51.149405000 +0100
 @@ -1,32 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

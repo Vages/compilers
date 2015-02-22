@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s8	2015-02-22 13:09:53.249145000 +0100
-+++ testOutput/compare_int.s8	2015-02-22 13:42:08.898387000 +0100
++++ testOutput/compare_int.s8	2015-02-22 14:16:39.147343000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

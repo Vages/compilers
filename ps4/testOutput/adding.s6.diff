@@ -1,5 +1,5 @@
 --- correctOutput/adding.s6	2015-02-22 13:09:53.000143000 +0100
-+++ testOutput/adding.s6	2015-02-22 13:42:01.947348000 +0100
++++ testOutput/adding.s6	2015-02-22 14:16:32.523307000 +0100
 @@ -1,11 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: adding

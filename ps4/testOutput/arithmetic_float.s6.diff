@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_float.s6	2015-02-22 13:09:53.030144000 +0100
-+++ testOutput/arithmetic_float.s6	2015-02-22 13:42:02.230348000 +0100
++++ testOutput/arithmetic_float.s6	2015-02-22 14:16:32.744307000 +0100
 @@ -1,219 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

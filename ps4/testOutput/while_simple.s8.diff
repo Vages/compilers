@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s8	2015-02-22 13:09:54.001148000 +0100
-+++ testOutput/while_simple.s8	2015-02-22 13:42:25.355468000 +0100
++++ testOutput/while_simple.s8	2015-02-22 14:16:54.961426000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

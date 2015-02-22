@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s6	2015-02-22 13:09:53.245144000 +0100
-+++ testOutput/compare_int.s6	2015-02-22 13:42:08.407379000 +0100
++++ testOutput/compare_int.s6	2015-02-22 14:16:38.675340000 +0100
 @@ -1,128 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

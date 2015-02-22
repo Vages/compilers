@@ -1,5 +1,5 @@
 --- correctOutput/for_simple.s9	2015-02-22 13:09:53.412145000 +0100
-+++ testOutput/for_simple.s9	2015-02-22 13:42:13.717433000 +0100
++++ testOutput/for_simple.s9	2015-02-22 14:16:43.768365000 +0100
 @@ -1,15 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

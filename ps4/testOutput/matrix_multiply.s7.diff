@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s7	2015-02-22 13:09:53.634146000 +0100
-+++ testOutput/matrix_multiply.s7	2015-02-22 13:42:18.131439000 +0100
++++ testOutput/matrix_multiply.s7	2015-02-22 14:16:47.963388000 +0100
 @@ -1,54 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

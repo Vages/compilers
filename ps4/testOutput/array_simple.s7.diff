@@ -1,5 +1,5 @@
 --- correctOutput/array_simple.s7	2015-02-22 13:09:53.149144000 +0100
-+++ testOutput/array_simple.s7	2015-02-22 13:42:06.636371000 +0100
++++ testOutput/array_simple.s7	2015-02-22 14:16:37.006330000 +0100
 @@ -1,18 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

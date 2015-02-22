@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s6	2015-02-22 13:09:53.921148000 +0100
-+++ testOutput/type_errors_functions.s6	2015-02-22 13:42:24.066464000 +0100
++++ testOutput/type_errors_functions.s6	2015-02-22 14:16:53.684420000 +0100
 @@ -1,36 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_arrays.s9	2015-02-22 13:09:53.873147000 +0100
-+++ testOutput/type_errors_arrays.s9	2015-02-22 13:42:23.445460000 +0100
++++ testOutput/type_errors_arrays.s9	2015-02-22 14:16:53.108415000 +0100
 @@ -1,49 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

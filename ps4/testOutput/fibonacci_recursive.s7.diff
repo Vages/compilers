@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s7	2015-02-22 13:09:53.357147000 +0100
-+++ testOutput/fibonacci_recursive.s7	2015-02-22 13:42:12.837411000 +0100
++++ testOutput/fibonacci_recursive.s7	2015-02-22 14:16:42.941362000 +0100
 @@ -4,26 +4,3 @@
  Inserting function fibonacci_number INT<=(INT) 
  Add scope, index: 2 

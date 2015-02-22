@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s6	2015-02-22 13:09:53.212145000 +0100
-+++ testOutput/compare_float.s6	2015-02-22 13:42:07.406375000 +0100
++++ testOutput/compare_float.s6	2015-02-22 14:16:37.714335000 +0100
 @@ -1,128 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

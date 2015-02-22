@@ -1,5 +1,5 @@
 --- correctOutput/logical.s6	2015-02-22 13:09:53.602146000 +0100
-+++ testOutput/logical.s6	2015-02-22 13:42:16.526424000 +0100
++++ testOutput/logical.s6	2015-02-22 14:16:46.400383000 +0100
 @@ -1,171 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main
