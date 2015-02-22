@@ -1,5 +1,5 @@
 --- correctOutput/logical.s8	2015-02-22 13:09:53.606146000 +0100
-+++ testOutput/logical.s8	2015-02-22 13:33:33.889659000 +0100
++++ testOutput/logical.s8	2015-02-22 13:42:17.141427000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

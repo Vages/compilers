@@ -1,12 +1,9 @@
 --- correctOutput/fibonacci_recursive.s7	2015-02-22 13:09:53.357147000 +0100
-+++ testOutput/fibonacci_recursive.s7	2015-02-22 13:33:18.841580000 +0100
-@@ -1,29 +1,5 @@
- Add scope, index: 0 
--Add scope, index: 1 
- Inserting function fibonacci_recursive INT<=(INT) 
++++ testOutput/fibonacci_recursive.s7	2015-02-22 13:42:12.837411000 +0100
+@@ -4,26 +4,3 @@
  Inserting function fibonacci_number INT<=(INT) 
--Add scope, index: 2 
--Inserting variable n INT depth:2 offset:8
+ Add scope, index: 2 
+ Inserting variable n INT depth:2 offset:8
 -Inserting variable f INT depth:2 offset:-4
 -Retrieving variable f
 -Retrieving function fibonacci_number
@@ -30,5 +27,3 @@
 -Retrieving variable y
 -Remove scope, index: 1 
 -Remove scope, index: 0 
-+Add scope, index: 1 
-+Inserting variable n INT depth:1 offset:8

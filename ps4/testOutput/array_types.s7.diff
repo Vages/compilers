@@ -1,5 +1,5 @@
 --- correctOutput/array_types.s7	2015-02-22 13:09:53.186144000 +0100
-+++ testOutput/array_types.s7	2015-02-22 13:32:58.671473000 +0100
++++ testOutput/array_types.s7	2015-02-22 13:42:07.059372000 +0100
 @@ -1,19 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

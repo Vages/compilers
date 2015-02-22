@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s6	2015-02-22 13:09:53.086146000 +0100
-+++ testOutput/array_forloop.s6	2015-02-22 13:32:52.468443000 +0100
++++ testOutput/array_forloop.s6	2015-02-22 13:42:05.327365000 +0100
 @@ -1,69 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

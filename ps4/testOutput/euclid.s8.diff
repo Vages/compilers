@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s8	2015-02-22 13:09:53.273144000 +0100
-+++ testOutput/euclid.s8	2015-02-22 13:33:07.625521000 +0100
++++ testOutput/euclid.s8	2015-02-22 13:42:09.648385000 +0100
 @@ -1,22 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

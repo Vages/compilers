@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s9	2015-02-22 13:09:53.275144000 +0100
-+++ testOutput/euclid.s9	2015-02-22 13:33:07.844525000 +0100
++++ testOutput/euclid.s9	2015-02-22 13:42:09.717389000 +0100
 @@ -1,65 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

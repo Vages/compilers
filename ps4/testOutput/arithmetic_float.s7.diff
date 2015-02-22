@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_float.s7	2015-02-22 13:09:53.033143000 +0100
-+++ testOutput/arithmetic_float.s7	2015-02-22 13:32:42.974393000 +0100
++++ testOutput/arithmetic_float.s7	2015-02-22 13:42:02.702349000 +0100
 @@ -1,134 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

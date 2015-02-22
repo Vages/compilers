@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_iterative.s8	2015-02-22 13:09:53.337146000 +0100
-+++ testOutput/fibonacci_iterative.s8	2015-02-22 13:33:17.472572000 +0100
++++ testOutput/fibonacci_iterative.s8	2015-02-22 13:42:12.456402000 +0100
 @@ -1,16 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

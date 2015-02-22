@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s6	2015-02-22 13:09:53.307145000 +0100
-+++ testOutput/expressions.s6	2015-02-22 13:33:08.700526000 +0100
++++ testOutput/expressions.s6	2015-02-22 13:42:09.982392000 +0100
 @@ -1,408 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

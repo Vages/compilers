@@ -1,5 +1,5 @@
 --- correctOutput/array_types.s6	2015-02-22 13:09:53.184144000 +0100
-+++ testOutput/array_types.s6	2015-02-22 13:32:58.195472000 +0100
++++ testOutput/array_types.s6	2015-02-22 13:42:06.934371000 +0100
 @@ -1,53 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

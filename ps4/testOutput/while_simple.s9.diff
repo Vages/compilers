@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s9	2015-02-22 13:09:54.004148000 +0100
-+++ testOutput/while_simple.s9	2015-02-22 13:34:02.915813000 +0100
++++ testOutput/while_simple.s9	2015-02-22 13:42:25.405472000 +0100
 @@ -1,22 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

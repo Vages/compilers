@@ -1,5 +1,5 @@
 --- correctOutput/hello.s9	2015-02-22 13:09:53.525145000 +0100
-+++ testOutput/hello.s9	2015-02-22 13:33:28.632636000 +0100
++++ testOutput/hello.s9	2015-02-22 13:42:15.661480000 +0100
 @@ -1,8 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

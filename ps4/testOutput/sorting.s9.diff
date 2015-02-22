@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s9	2015-02-22 13:09:53.824147000 +0100
-+++ testOutput/sorting.s9	2015-02-22 13:33:53.331763000 +0100
++++ testOutput/sorting.s9	2015-02-22 13:42:22.679455000 +0100
 @@ -1,89 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

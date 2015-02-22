@@ -1,5 +1,5 @@
 --- correctOutput/minimal.s6	2015-02-22 13:09:53.708148000 +0100
-+++ testOutput/minimal.s6	2015-02-22 13:33:46.809727000 +0100
++++ testOutput/minimal.s6	2015-02-22 13:42:20.746445000 +0100
 @@ -1,5 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: minimal

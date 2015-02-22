@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s8	2015-02-22 13:09:53.841148000 +0100
-+++ testOutput/strings_and_comments.s8	2015-02-22 13:33:54.736770000 +0100
++++ testOutput/strings_and_comments.s8	2015-02-22 13:42:23.067459000 +0100
 @@ -1,20 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

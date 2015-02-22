@@ -1,5 +1,5 @@
 --- correctOutput/while_hard.s6	2015-02-22 13:09:53.968148000 +0100
-+++ testOutput/while_hard.s6	2015-02-22 13:34:00.709802000 +0100
++++ testOutput/while_hard.s6	2015-02-22 13:42:24.769465000 +0100
 @@ -1,52 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

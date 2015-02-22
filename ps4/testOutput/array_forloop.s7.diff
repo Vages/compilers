@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s7	2015-02-22 13:09:53.088144000 +0100
-+++ testOutput/array_forloop.s7	2015-02-22 13:32:53.062447000 +0100
++++ testOutput/array_forloop.s7	2015-02-22 13:42:05.488365000 +0100
 @@ -1,35 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 
