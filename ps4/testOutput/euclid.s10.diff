@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s10	2015-02-22 13:09:53.257144000 +0100
-+++ testOutput/euclid.s10	2015-02-22 17:07:49.535116000 +0100
++++ testOutput/euclid.s10	2015-02-22 17:12:16.982555000 +0100
 @@ -1,12 +1,21 @@
  Type checking expression -
  Type checking expression FUNC_CALL

@@ -24,7 +24,18 @@ Type checking expression +
 Type checking expression *
 Type checking expression UMINUS
 Type error at:
-EXPRESSION (UMINUS)
+EXPRESSION (*)
+Type checking expression *
+Type error at:
+EXPRESSION (*)
+Type error at:
+EXPRESSION (+)
+Type error at:
+ASSIGNMENT_STATEMENT
+Type checking assignment
+Type checking expression +
+Type checking expression *
+Type checking expression UMINUS
 Type error at:
 EXPRESSION (*)
 Type checking expression *
@@ -39,23 +50,6 @@ Type checking expression +
 Type checking expression *
 Type checking expression UMINUS
 Type error at:
-EXPRESSION (UMINUS)
-Type error at:
-EXPRESSION (*)
-Type checking expression *
-Type error at:
-EXPRESSION (*)
-Type error at:
-EXPRESSION (+)
-Type error at:
-ASSIGNMENT_STATEMENT
-Type checking assignment
-Type checking expression +
-Type checking expression *
-Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
-Type error at:
 EXPRESSION (*)
 Type checking expression *
 Type error at:
@@ -68,42 +62,26 @@ Type checking assignment
 Type checking expression ||
 Type checking expression ==
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type checking expression !=
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ||
 Type checking expression !=
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type checking expression ==
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ||
 Type checking expression ==
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type checking expression !=
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
@@ -235,10 +213,14 @@ Type checking assignment
 Type checking expression ||
 Type checking expression ||
 Type checking expression >
+Type error at:
+EXPRESSION (>)
 Type checking expression <=
 Type checking expression UMINUS
 Type error at:
 EXPRESSION (UMINUS)
+Type error at:
+EXPRESSION (<=)
 Type checking expression &&
 Type checking expression !
 Type checking expression &&
@@ -311,19 +293,25 @@ Type checking expression ||
 Type checking expression ||
 Type checking expression ||
 Type checking expression >
+Type error at:
+EXPRESSION (>)
 Type checking expression &&
 Type checking expression >=
+Type error at:
+EXPRESSION (>=)
 Type checking expression !=
 Type checking expression <=
 Type checking expression UMINUS
 Type error at:
 EXPRESSION (UMINUS)
+Type error at:
+EXPRESSION (<=)
 Type checking expression !
 Type checking expression <
 Type checking expression UMINUS
 Type error at:
 EXPRESSION (UMINUS)
 Type error at:
-EXPRESSION (!)
+EXPRESSION (<)
 Type error at:
 ASSIGNMENT_STATEMENT

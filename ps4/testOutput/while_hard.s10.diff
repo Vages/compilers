@@ -1,14 +1,18 @@
 --- correctOutput/while_hard.s10	2015-02-22 13:09:53.957148000 +0100
-+++ testOutput/while_hard.s10	2015-02-22 17:07:53.662142000 +0100
-@@ -1,15 +1,39 @@
++++ testOutput/while_hard.s10	2015-02-22 17:12:21.106578000 +0100
+@@ -1,15 +1,45 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression >
++Type error at:
++EXPRESSION (>)
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression >
++Type error at:
++EXPRESSION (>)
  Type checking assignment
  Type checking expression UMINUS
 +Type error at:
@@ -16,6 +20,8 @@
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression <
++Type error at:
++EXPRESSION (<)
  Type checking expression *
  Type checking expression *
 +Type error at:

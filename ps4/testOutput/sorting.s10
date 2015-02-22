@@ -29,6 +29,8 @@ ASSIGNMENT_STATEMENT
 Type checking expression <
 Type checking expression ARRAY_INDEX
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (<)
 Type checking assignment
 Type checking expression ARRAY_INDEX
 Type error at:

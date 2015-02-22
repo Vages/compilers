@@ -1,6 +1,6 @@
 --- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100
-+++ testOutput/function_medium.s10	2015-02-22 17:07:51.169125000 +0100
-@@ -1,14 +1,16 @@
++++ testOutput/function_medium.s10	2015-02-22 17:12:18.509566000 +0100
+@@ -1,16 +1,22 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
@@ -19,3 +19,9 @@
  Type checking expression ||
  Type checking expression ||
  Type checking expression &&
+ Type checking expression >
++Type error at:
++EXPRESSION (>)
+ Type checking expression >
++Type error at:
++EXPRESSION (>)

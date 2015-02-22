@@ -1,13 +1,16 @@
 --- correctOutput/function_hard.s10	2015-02-22 13:09:53.426147000 +0100
-+++ testOutput/function_hard.s10	2015-02-22 17:07:51.010125000 +0100
-@@ -1,4 +1,6 @@
++++ testOutput/function_hard.s10	2015-02-22 17:12:18.329562000 +0100
+@@ -1,22 +1,43 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking assignment
  Type checking expression FUNC_CALL
-@@ -7,16 +9,25 @@
+ Type checking assignment
+ Type checking expression >
++Type error at:
++EXPRESSION (>)
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression -
@@ -17,7 +20,11 @@
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression >
++Type error at:
++EXPRESSION (>)
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression -
@@ -27,7 +34,11 @@
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression >
++Type error at:
++EXPRESSION (>)
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression -
