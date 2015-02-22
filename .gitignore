@@ -33,5 +33,7 @@
 !bindsol32.o
 !simplifynodes.o
 !simplifynodes32.o
+!symtab.o
+!symtab32.o
 !tree.o
 !tree32.o
