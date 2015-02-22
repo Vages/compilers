@@ -91,7 +91,8 @@ int bind_declaration ( node_t *root, int stackOffset)
 }
 
 int bind_variable ( node_t *root, int stackOffset)
-{
+{	
+	//Eirik: Binds a variables entry field to its appropriate symbol table entry
 	if(outputStage == 6)
 		printf( "VARIABLE: access: %s\n", root->label);
 
@@ -102,6 +103,7 @@ int bind_variable ( node_t *root, int stackOffset)
 
 int bind_expression( node_t* root, int stackOffset)
 {
+	//Eirik: Binds an expression node of the func call type to its appropriate symbol table entry
 	if(outputStage == 6)
 		printf( "EXPRESSION: Start: %s\n", root->expression_type.text);
 
