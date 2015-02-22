@@ -59,11 +59,11 @@ data_type_t typecheck_expression(node_t* root)
 	if(outputStage == 10)
 		printf( "Type checking expression %s\n", root->expression_type.text);
 
+    typecheck_default(root);
+    
 	if(root->n_children == 0){
         return NULL;
 	}
-    
-    typecheck_default(root);
 
 	else if(root->n_children == 1){
             node_t* child = root->children[0];
@@ -105,13 +105,21 @@ data_type_t typecheck_expression(node_t* root)
                     if (!(equal_types &&(child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)))){
                         type_error(root);
                     }
-                    return {.base_typ.e = BOOL_TYPE};
+                    return {.base_type = BOOL_TYPE};
                     break;
                         
                 case AND_E: case OR_E:
+                    if (!(equal_types &&(child_dt.base_type == BOOL_TYPE))){
+                        type_error(root);
+                    }
+                    return child_dt;
                     break;
                     
                 case EQUAL_E: case NEQUAL_E:
+                    if (!(equal_types &&(child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)))){
+                        type_error(root);
+                    }
+                    return {.base_type = BOOL_TYPE};
                     break;
                         
                 case FUNC_CALL_E: 
