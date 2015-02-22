@@ -176,7 +176,7 @@ data_type_t typecheck_expression(node_t* root)
                     break;
             }
         }
-        
+    return root->data_type;
 }
 
 data_type_t typecheck_variable(node_t* root){
