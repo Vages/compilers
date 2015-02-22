@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100</span>
-<span class="plus3">+++ testOutput/expressions.s10	2015-02-22 23:47:39.229197000 +0100</span>
+<span class="plus3">+++ testOutput/expressions.s10	2015-02-22 23:53:50.082123000 +0100</span>
 <span class="at2">@@ -26,12 +26,20 @@</span>
  Type checking expression UMINUS
  Type checking expression !=
@@ -49,7 +49,42 @@
  Type checking assignment
  Type checking expression +
  Type checking expression -
-<span class="at2">@@ -103,7 +115,13 @@</span>
+<span class="at2">@@ -83,14 +95,34 @@</span>
+ Type checking expression !
+ Type checking expression !
+ Type checking expression !
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+ Type checking expression !
+ Type checking expression !
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+ Type checking expression &amp;&amp;
+ Type checking expression !
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+ Type checking expression ||
+ Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+ Type checking expression !
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+ASSIGNMENT_STATEMENT</span>
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
+<span class="at2">@@ -103,7 +135,15 @@</span>
  Type checking expression ||
  Type checking expression !
  Type checking expression !=
@@ -60,9 +95,17 @@
 <span class="plus">+EXPRESSION (||)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
  Type checking assignment
  Type checking expression +
- Type checking expression *</span>
+ Type checking expression *
+<span class="at2">@@ -141,3 +181,5 @@</span>
+ Type checking expression !
+ Type checking expression &lt;
+ Type checking expression UMINUS
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span></span>
 </pre>
 </body>
 </html>
