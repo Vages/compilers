@@ -60,8 +60,11 @@ data_type_t typecheck_expression(node_t* root)
 		printf( "Type checking expression %s\n", root->expression_type.text);
 
 	if(root->n_children == 0){
-            
+        return NULL;
 	}
+    
+    typecheck_default(root);
+
 	else if(root->n_children == 1){
             node_t* child = root->children[0];
             data_type_t child_dt = child->data_type;
@@ -74,9 +77,14 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                     
                 case NOT_E:
+                    if (child_dt.base_type != BOOL_TYPE){
+                        type_error(root);
+                    }
+                    return child_dt;
                     break;
                     
                 default:
+                    return child_dt;
                     break;
             }
         }
@@ -84,10 +92,20 @@ data_type_t typecheck_expression(node_t* root)
             
             switch(root->expression_type.index)
             {
+                int eq_types = equal_types(root->children[0], root->children[1]);
+                data_type_t child_dt = root->children[0]->data_type;
                 case ADD_E: case SUB_E: case DIV_E: case MUL_E:
+                    if (!(equal_types &&((child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)))){
+                        type_error(root);
+                    }
+                    return child_dt;
                     break;
                         
                 case  LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
+                    if (!(equal_types &&(child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)))){
+                        type_error(root);
+                    }
+                    return {.base_typ.e = BOOL_TYPE};
                     break;
                         
                 case AND_E: case OR_E:
@@ -118,4 +136,6 @@ data_type_t typecheck_assignment(node_t* root)
 	if(outputStage == 10){
 		printf( "Type checking assignment\n");
 	}
+
+
 }
