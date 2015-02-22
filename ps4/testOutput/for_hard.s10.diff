@@ -1,5 +1,5 @@
 --- correctOutput/for_hard.s10	2015-02-22 13:09:53.366145000 +0100
-+++ testOutput/for_hard.s10	2015-02-22 15:22:02.808139000 +0100
++++ testOutput/for_hard.s10	2015-02-22 15:53:51.023300000 +0100
 @@ -3,4 +3,3 @@
  Type checking assignment
  Type checking expression FUNC_CALL

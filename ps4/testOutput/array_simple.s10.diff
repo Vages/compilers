@@ -1,5 +1,5 @@
 --- correctOutput/array_simple.s10	2015-02-22 13:09:53.135143000 +0100
-+++ testOutput/array_simple.s10	2015-02-22 15:22:01.347148000 +0100
++++ testOutput/array_simple.s10	2015-02-22 15:53:49.779293000 +0100
 @@ -1,10 +1,7 @@
  Type checking assignment
  Type checking assignment

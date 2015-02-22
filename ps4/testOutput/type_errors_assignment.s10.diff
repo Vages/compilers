@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_assignment.s10	2015-02-22 13:09:53.877147000 +0100
-+++ testOutput/type_errors_assignment.s10	2015-02-22 15:22:05.226196000 +0100
++++ testOutput/type_errors_assignment.s10	2015-02-22 15:53:53.041311000 +0100
 @@ -1,18 +1,6 @@
  Type checking assignment
 -Type error at:

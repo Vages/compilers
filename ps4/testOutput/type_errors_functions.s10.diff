@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s10	2015-02-22 13:09:53.898147000 +0100
-+++ testOutput/type_errors_functions.s10	2015-02-22 15:22:05.348167000 +0100
++++ testOutput/type_errors_functions.s10	2015-02-22 15:53:53.153312000 +0100
 @@ -1,18 +1,6 @@
  Type checking assignment
 -Type checking expression FUNC_CALL

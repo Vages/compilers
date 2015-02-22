@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_int.s10	2015-02-22 13:09:53.048142000 +0100
-+++ testOutput/arithmetic_int.s10	2015-02-22 15:22:00.740173000 +0100
++++ testOutput/arithmetic_int.s10	2015-02-22 15:53:49.269291000 +0100
 @@ -1,73 +1,31 @@
  Type checking assignment
  Type checking assignment
