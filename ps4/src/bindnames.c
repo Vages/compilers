@@ -73,7 +73,7 @@ int bind_function_list ( node_t *root, int stackOffset)
 		printf( "FUNCTION_LIST: Start\n");
 
 	for (int i = 0; i < root->n_children; i++){
-		function_symbol_t* fs = create_function_symbol(children[i]);
+		function_symbol_t* fs = create_function_symbol(root->children[i]);
 		function_add(root->children[i]->label, fs);
 	}
 
