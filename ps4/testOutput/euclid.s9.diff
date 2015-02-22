@@ -1,68 +1,44 @@
 --- correctOutput/euclid.s9	2015-02-22 13:09:53.275144000 +0100
-+++ testOutput/euclid.s9	2015-02-22 15:04:05.491423000 +0100
-@@ -1,65 +0,0 @@
-- PROGRAM
-- FUNCTION_LIST
--  FUNCTION, ("euclid"), (nil)
--   VARIABLE_LIST
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--   STATEMENT_LIST
--    IF_STATEMENT
--     EXPRESSION
--      EXPRESSION
--       VARIABLE, ("gcd"), (nil)
--       EXPRESSION_LIST
++++ testOutput/euclid.s9	2015-02-22 15:09:22.907149000 +0100
+@@ -10,8 +10,8 @@
+       EXPRESSION
+        VARIABLE, ("gcd"), (nil)
+        EXPRESSION_LIST
 -        VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
 -        VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--      CONSTANT
--     STATEMENT_LIST
--      PRINT_STATEMENT
--       EXPRESSION_LIST
--        CONSTANT
--        VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
--        CONSTANT
--        VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--        CONSTANT
--        EXPRESSION
--         VARIABLE, ("gcd"), (nil)
--         EXPRESSION_LIST
++        VARIABLE, ("a"), (nil)
++        VARIABLE, ("b"), (nil)
+       CONSTANT
+      STATEMENT_LIST
+       PRINT_STATEMENT
+@@ -24,8 +24,8 @@
+         EXPRESSION
+          VARIABLE, ("gcd"), (nil)
+          EXPRESSION_LIST
 -          VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
 -          VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--     STATEMENT_LIST
--      PRINT_STATEMENT
--       EXPRESSION_LIST
--        VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
--        CONSTANT
--        VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--        CONSTANT
--    RETURN_STATEMENT
--     CONSTANT
--  FUNCTION, ("gcd"), (nil)
--   VARIABLE_LIST
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--   STATEMENT_LIST
--    DECLARATION_STATEMENT
--    IF_STATEMENT
--     VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--     STATEMENT_LIST
--      ASSIGNMENT_STATEMENT
--       VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"
--       EXPRESSION
--        VARIABLE, ("gcd"), (nil)
--        EXPRESSION_LIST
++          VARIABLE, ("a"), (nil)
++          VARIABLE, ("b"), (nil)
+      STATEMENT_LIST
+       PRINT_STATEMENT
+        EXPRESSION_LIST
+@@ -49,14 +49,14 @@
+        EXPRESSION
+         VARIABLE, ("gcd"), (nil)
+         EXPRESSION_LIST
 -         VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--         EXPRESSION
++         VARIABLE, ("b"), (nil)
+          EXPRESSION
 -          VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
--          EXPRESSION
--           EXPRESSION
++          VARIABLE, ("a"), (nil)
+           EXPRESSION
+            EXPRESSION
 -            VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
 -            VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
 -           VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
--     STATEMENT_LIST
--      ASSIGNMENT_STATEMENT
--       VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"
--       VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
--    RETURN_STATEMENT
--     VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"
++            VARIABLE, ("a"), (nil)
++            VARIABLE, ("b"), (nil)
++           VARIABLE, ("b"), (nil)
+      STATEMENT_LIST
+       ASSIGNMENT_STATEMENT
+        VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"

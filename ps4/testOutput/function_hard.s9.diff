@@ -1,124 +1,58 @@
 --- correctOutput/function_hard.s9	2015-02-22 13:09:53.455145000 +0100
-+++ testOutput/function_hard.s9	2015-02-22 15:04:07.482499000 +0100
-@@ -1,121 +0,0 @@
-- PROGRAM
-- FUNCTION_LIST
--  FUNCTION, ("main"), (nil)
--   (nil)
--   STATEMENT_LIST
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--    ASSIGNMENT_STATEMENT
--     VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
--     CONSTANT
--    ASSIGNMENT_STATEMENT
--     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
--     CONSTANT
--    ASSIGNMENT_STATEMENT
--     VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
--     CONSTANT
--    PRINT_STATEMENT
--     EXPRESSION_LIST
--      EXPRESSION
--       VARIABLE, ("func1"), (nil)
--       EXPRESSION_LIST
++++ testOutput/function_hard.s9	2015-02-22 15:09:24.474133000 +0100
+@@ -20,9 +20,9 @@
+       EXPRESSION
+        VARIABLE, ("func1"), (nil)
+        EXPRESSION_LIST
 -        VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
 -        VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
 -        VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"
--  FUNCTION, ("func1"), (nil)
--   VARIABLE_LIST
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--   STATEMENT_LIST
--    PRINT_STATEMENT
--     EXPRESSION_LIST
--      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
--      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
--      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--    DECLARATION_STATEMENT
--    ASSIGNMENT_STATEMENT
--     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--     CONSTANT
--    IF_STATEMENT
--     EXPRESSION
--      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
--      CONSTANT
--     STATEMENT_LIST
--      ASSIGNMENT_STATEMENT
--       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--       EXPRESSION
--        VARIABLE, ("func2"), (nil)
--        EXPRESSION_LIST
--         EXPRESSION
++        VARIABLE, ("a"), (nil)
++        VARIABLE, ("b"), (nil)
++        VARIABLE, ("c"), (nil)
+   FUNCTION, ("func1"), (nil)
+    VARIABLE_LIST
+     DECLARATION_STATEMENT
+@@ -49,10 +49,10 @@
+         VARIABLE, ("func2"), (nil)
+         EXPRESSION_LIST
+          EXPRESSION
 -          VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
--          CONSTANT
++          VARIABLE, ("a"), (nil)
+           CONSTANT
 -         VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
 -         VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--    RETURN_STATEMENT
--     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--  FUNCTION, ("func2"), (nil)
--   VARIABLE_LIST
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--   STATEMENT_LIST
--    PRINT_STATEMENT
--     EXPRESSION_LIST
--      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
--      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
--      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--    DECLARATION_STATEMENT
--    ASSIGNMENT_STATEMENT
--     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--     CONSTANT
--    IF_STATEMENT
--     EXPRESSION
--      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
--      CONSTANT
--     STATEMENT_LIST
--      ASSIGNMENT_STATEMENT
--       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--       EXPRESSION
--        VARIABLE, ("func3"), (nil)
--        EXPRESSION_LIST
++         VARIABLE, ("b"), (nil)
++         VARIABLE, ("c"), (nil)
+     RETURN_STATEMENT
+      VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+   FUNCTION, ("func2"), (nil)
+@@ -80,11 +80,11 @@
+        EXPRESSION
+         VARIABLE, ("func3"), (nil)
+         EXPRESSION_LIST
 -         VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
--         EXPRESSION
++         VARIABLE, ("a"), (nil)
+          EXPRESSION
 -          VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
--          CONSTANT
++          VARIABLE, ("b"), (nil)
+           CONSTANT
 -         VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--    RETURN_STATEMENT
--     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--  FUNCTION, ("func3"), (nil)
--   VARIABLE_LIST
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--    DECLARATION_STATEMENT
--   STATEMENT_LIST
--    PRINT_STATEMENT
--     EXPRESSION_LIST
--      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
--      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
--      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--    DECLARATION_STATEMENT
--    ASSIGNMENT_STATEMENT
--     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--     CONSTANT
--    IF_STATEMENT
--     EXPRESSION
--      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--      CONSTANT
--     STATEMENT_LIST
--      ASSIGNMENT_STATEMENT
--       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
--       EXPRESSION
--        VARIABLE, ("func1"), (nil)
--        EXPRESSION_LIST
++         VARIABLE, ("c"), (nil)
+     RETURN_STATEMENT
+      VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+   FUNCTION, ("func3"), (nil)
+@@ -112,10 +112,10 @@
+        EXPRESSION
+         VARIABLE, ("func1"), (nil)
+         EXPRESSION_LIST
 -         VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"
 -         VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"
--         EXPRESSION
++         VARIABLE, ("a"), (nil)
++         VARIABLE, ("b"), (nil)
+          EXPRESSION
 -          VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"
--          CONSTANT
--    RETURN_STATEMENT
--     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
++          VARIABLE, ("c"), (nil)
+           CONSTANT
+     RETURN_STATEMENT
+      VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"

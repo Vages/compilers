@@ -16,64 +16,32 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/fibonacci_recursive.s9	2015-02-22 13:09:53.361145000 +0100</span>
-<span class="plus3">+++ testOutput/fibonacci_recursive.s9	2015-02-22 15:04:06.454431000 +0100</span>
-<span class="at2">@@ -1,56 +0,0 @@</span>
-<span class="minus">- PROGRAM</span>
-<span class="minus">- FUNCTION_LIST</span>
-<span class="minus">-  FUNCTION, ("fibonacci_recursive"), (nil)</span>
-<span class="minus">-   VARIABLE_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-   STATEMENT_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("f"), depth: 2, stack_offset: -4, entry label: "f"</span>
-<span class="minus">-     EXPRESSION</span>
-<span class="minus">-      VARIABLE, ("fibonacci_number"), (nil)</span>
-<span class="minus">-      EXPRESSION_LIST</span>
+<span class="plus3">+++ testOutput/fibonacci_recursive.s9	2015-02-22 15:09:23.786123000 +0100</span>
+<span class="at2">@@ -10,7 +10,7 @@</span>
+      EXPRESSION
+       VARIABLE, ("fibonacci_number"), (nil)
+       EXPRESSION_LIST
 <span class="minus">-       VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"</span>
-<span class="minus">-    PRINT_STATEMENT</span>
-<span class="minus">-     EXPRESSION_LIST</span>
-<span class="minus">-      CONSTANT</span>
-<span class="minus">-      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"</span>
-<span class="minus">-      CONSTANT</span>
-<span class="minus">-      VARIABLE, ("f"), depth: 2, stack_offset: -4, entry label: "f"</span>
-<span class="minus">-    RETURN_STATEMENT</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-  FUNCTION, ("fibonacci_number"), (nil)</span>
-<span class="minus">-   VARIABLE_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-   STATEMENT_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    IF_STATEMENT</span>
-<span class="minus">-     EXPRESSION</span>
-<span class="minus">-      VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"</span>
-<span class="minus">-      CONSTANT</span>
-<span class="minus">-     STATEMENT_LIST</span>
-<span class="minus">-      IF_STATEMENT</span>
-<span class="minus">-       EXPRESSION</span>
-<span class="minus">-        VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"</span>
-<span class="minus">-        CONSTANT</span>
-<span class="minus">-       STATEMENT_LIST</span>
-<span class="minus">-        ASSIGNMENT_STATEMENT</span>
-<span class="minus">-         VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"</span>
-<span class="minus">-         EXPRESSION</span>
-<span class="minus">-          EXPRESSION</span>
-<span class="minus">-           VARIABLE, ("fibonacci_number"), (nil)</span>
-<span class="minus">-           EXPRESSION_LIST</span>
-<span class="minus">-            EXPRESSION</span>
+<span class="plus">+       VARIABLE, ("n"), (nil)</span>
+     PRINT_STATEMENT
+      EXPRESSION_LIST
+       CONSTANT
+<span class="at2">@@ -44,13 +44,13 @@</span>
+            VARIABLE, ("fibonacci_number"), (nil)
+            EXPRESSION_LIST
+             EXPRESSION
 <span class="minus">-             VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"</span>
-<span class="minus">-             CONSTANT</span>
-<span class="minus">-          EXPRESSION</span>
-<span class="minus">-           VARIABLE, ("fibonacci_number"), (nil)</span>
-<span class="minus">-           EXPRESSION_LIST</span>
-<span class="minus">-            EXPRESSION</span>
+<span class="plus">+             VARIABLE, ("n"), (nil)</span>
+              CONSTANT
+           EXPRESSION
+            VARIABLE, ("fibonacci_number"), (nil)
+            EXPRESSION_LIST
+             EXPRESSION
 <span class="minus">-             VARIABLE, ("n"), depth: 2, stack_offset: 8, entry label: "n"</span>
-<span class="minus">-             CONSTANT</span>
-<span class="minus">-    RETURN_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"</span></span>
+<span class="plus">+             VARIABLE, ("n"), (nil)</span>
+              CONSTANT
+     RETURN_STATEMENT
+      VARIABLE, ("y"), depth: 2, stack_offset: -4, entry label: "y"</span>
 </pre>
 </body>
 </html>

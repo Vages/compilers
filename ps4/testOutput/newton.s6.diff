@@ -1,51 +1,20 @@
 --- correctOutput/newton.s6	2015-02-22 13:09:53.731147000 +0100
-+++ testOutput/newton.s6	2015-02-22 15:04:11.258457000 +0100
-@@ -4,47 +4,4 @@
++++ testOutput/newton.s6	2015-02-22 15:09:26.585139000 +0100
+@@ -4,8 +4,6 @@
  DECLARATION: parameter/variable : 'square_root', offset: -4
  VARIABLE: access: square_root
  EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: n
 -CONSTANT
--EXPRESSION: End
--CONSTANT
--VARIABLE: access: n
--CONSTANT
--VARIABLE: access: square_root
--CONSTANT
--FUNCTION: End
--FUNCTION: Start: improve
--DECLARATION: parameter/variable : 'n', offset: 12
--DECLARATION: parameter/variable : 'estimate', offset: 8
--DECLARATION: parameter/variable : 'next', offset: -4
--VARIABLE: access: next
--EXPRESSION: Start: -
--VARIABLE: access: estimate
--EXPRESSION: Start: /
--EXPRESSION: Start: -
--EXPRESSION: Start: *
--VARIABLE: access: estimate
--VARIABLE: access: estimate
--EXPRESSION: End
--VARIABLE: access: n
--EXPRESSION: End
--EXPRESSION: Start: *
--CONSTANT
--VARIABLE: access: estimate
--EXPRESSION: End
--EXPRESSION: End
--EXPRESSION: End
--EXPRESSION: Start: -
--VARIABLE: access: next
--VARIABLE: access: estimate
--EXPRESSION: End
--EXPRESSION: Start: FUNC_CALL
+ EXPRESSION: End
+ CONSTANT
+ VARIABLE: access: n
+@@ -39,8 +37,6 @@
+ VARIABLE: access: estimate
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: n
 -VARIABLE: access: next
--EXPRESSION: End
--EXPRESSION: Start: -
--VARIABLE: access: next
--CONSTANT
--EXPRESSION: End
--FUNCTION: End
--FUNCTION_LIST: End
-+VARIABLE: access: improve
+ EXPRESSION: End
+ EXPRESSION: Start: -
+ VARIABLE: access: next

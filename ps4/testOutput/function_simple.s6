@@ -1,5 +1,0 @@
-FUNCTION_LIST: Start
-FUNCTION: Start: main
-CONSTANT
-EXPRESSION: Start: FUNC_CALL
-VARIABLE: access: function

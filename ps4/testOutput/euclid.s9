@@ -1,0 +1,65 @@
+ PROGRAM
+ FUNCTION_LIST
+  FUNCTION, ("euclid"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    IF_STATEMENT
+     EXPRESSION
+      EXPRESSION
+       VARIABLE, ("gcd"), (nil)
+       EXPRESSION_LIST
+        VARIABLE, ("a"), (nil)
+        VARIABLE, ("b"), (nil)
+      CONSTANT
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        CONSTANT
+        VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+        CONSTANT
+        VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+        CONSTANT
+        EXPRESSION
+         VARIABLE, ("gcd"), (nil)
+         EXPRESSION_LIST
+          VARIABLE, ("a"), (nil)
+          VARIABLE, ("b"), (nil)
+     STATEMENT_LIST
+      PRINT_STATEMENT
+       EXPRESSION_LIST
+        VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+        CONSTANT
+        VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+        CONSTANT
+    RETURN_STATEMENT
+     CONSTANT
+  FUNCTION, ("gcd"), (nil)
+   VARIABLE_LIST
+    DECLARATION_STATEMENT
+    DECLARATION_STATEMENT
+   STATEMENT_LIST
+    DECLARATION_STATEMENT
+    IF_STATEMENT
+     VARIABLE, ("b"), depth: 2, stack_offset: 8, entry label: "b"
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"
+       EXPRESSION
+        VARIABLE, ("gcd"), (nil)
+        EXPRESSION_LIST
+         VARIABLE, ("b"), (nil)
+         EXPRESSION
+          VARIABLE, ("a"), (nil)
+          EXPRESSION
+           EXPRESSION
+            VARIABLE, ("a"), (nil)
+            VARIABLE, ("b"), (nil)
+           VARIABLE, ("b"), (nil)
+     STATEMENT_LIST
+      ASSIGNMENT_STATEMENT
+       VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"
+       VARIABLE, ("a"), depth: 2, stack_offset: 12, entry label: "a"
+    RETURN_STATEMENT
+     VARIABLE, ("g"), depth: 2, stack_offset: -4, entry label: "g"

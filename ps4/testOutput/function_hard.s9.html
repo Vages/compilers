@@ -16,129 +16,63 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_hard.s9	2015-02-22 13:09:53.455145000 +0100</span>
-<span class="plus3">+++ testOutput/function_hard.s9	2015-02-22 15:04:07.482499000 +0100</span>
-<span class="at2">@@ -1,121 +0,0 @@</span>
-<span class="minus">- PROGRAM</span>
-<span class="minus">- FUNCTION_LIST</span>
-<span class="minus">-  FUNCTION, ("main"), (nil)</span>
-<span class="minus">-   (nil)</span>
-<span class="minus">-   STATEMENT_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    PRINT_STATEMENT</span>
-<span class="minus">-     EXPRESSION_LIST</span>
-<span class="minus">-      EXPRESSION</span>
-<span class="minus">-       VARIABLE, ("func1"), (nil)</span>
-<span class="minus">-       EXPRESSION_LIST</span>
+<span class="plus3">+++ testOutput/function_hard.s9	2015-02-22 15:09:24.474133000 +0100</span>
+<span class="at2">@@ -20,9 +20,9 @@</span>
+       EXPRESSION
+        VARIABLE, ("func1"), (nil)
+        EXPRESSION_LIST
 <span class="minus">-        VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"</span>
 <span class="minus">-        VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"</span>
 <span class="minus">-        VARIABLE, ("c"), depth: 2, stack_offset: -12, entry label: "c"</span>
-<span class="minus">-  FUNCTION, ("func1"), (nil)</span>
-<span class="minus">-   VARIABLE_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-   STATEMENT_LIST</span>
-<span class="minus">-    PRINT_STATEMENT</span>
-<span class="minus">-     EXPRESSION_LIST</span>
-<span class="minus">-      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
-<span class="minus">-      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
-<span class="minus">-      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    IF_STATEMENT</span>
-<span class="minus">-     EXPRESSION</span>
-<span class="minus">-      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
-<span class="minus">-      CONSTANT</span>
-<span class="minus">-     STATEMENT_LIST</span>
-<span class="minus">-      ASSIGNMENT_STATEMENT</span>
-<span class="minus">-       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-       EXPRESSION</span>
-<span class="minus">-        VARIABLE, ("func2"), (nil)</span>
-<span class="minus">-        EXPRESSION_LIST</span>
-<span class="minus">-         EXPRESSION</span>
+<span class="plus">+        VARIABLE, ("a"), (nil)</span>
+<span class="plus">+        VARIABLE, ("b"), (nil)</span>
+<span class="plus">+        VARIABLE, ("c"), (nil)</span>
+   FUNCTION, ("func1"), (nil)
+    VARIABLE_LIST
+     DECLARATION_STATEMENT
+<span class="at2">@@ -49,10 +49,10 @@</span>
+         VARIABLE, ("func2"), (nil)
+         EXPRESSION_LIST
+          EXPRESSION
 <span class="minus">-          VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
-<span class="minus">-          CONSTANT</span>
+<span class="plus">+          VARIABLE, ("a"), (nil)</span>
+           CONSTANT
 <span class="minus">-         VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
 <span class="minus">-         VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-    RETURN_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-  FUNCTION, ("func2"), (nil)</span>
-<span class="minus">-   VARIABLE_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-   STATEMENT_LIST</span>
-<span class="minus">-    PRINT_STATEMENT</span>
-<span class="minus">-     EXPRESSION_LIST</span>
-<span class="minus">-      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
-<span class="minus">-      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
-<span class="minus">-      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    IF_STATEMENT</span>
-<span class="minus">-     EXPRESSION</span>
-<span class="minus">-      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
-<span class="minus">-      CONSTANT</span>
-<span class="minus">-     STATEMENT_LIST</span>
-<span class="minus">-      ASSIGNMENT_STATEMENT</span>
-<span class="minus">-       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-       EXPRESSION</span>
-<span class="minus">-        VARIABLE, ("func3"), (nil)</span>
-<span class="minus">-        EXPRESSION_LIST</span>
+<span class="plus">+         VARIABLE, ("b"), (nil)</span>
+<span class="plus">+         VARIABLE, ("c"), (nil)</span>
+     RETURN_STATEMENT
+      VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+   FUNCTION, ("func2"), (nil)
+<span class="at2">@@ -80,11 +80,11 @@</span>
+        EXPRESSION
+         VARIABLE, ("func3"), (nil)
+         EXPRESSION_LIST
 <span class="minus">-         VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
-<span class="minus">-         EXPRESSION</span>
+<span class="plus">+         VARIABLE, ("a"), (nil)</span>
+          EXPRESSION
 <span class="minus">-          VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
-<span class="minus">-          CONSTANT</span>
+<span class="plus">+          VARIABLE, ("b"), (nil)</span>
+           CONSTANT
 <span class="minus">-         VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-    RETURN_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-  FUNCTION, ("func3"), (nil)</span>
-<span class="minus">-   VARIABLE_LIST</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-   STATEMENT_LIST</span>
-<span class="minus">-    PRINT_STATEMENT</span>
-<span class="minus">-     EXPRESSION_LIST</span>
-<span class="minus">-      VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
-<span class="minus">-      VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
-<span class="minus">-      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-    DECLARATION_STATEMENT</span>
-<span class="minus">-    ASSIGNMENT_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-     CONSTANT</span>
-<span class="minus">-    IF_STATEMENT</span>
-<span class="minus">-     EXPRESSION</span>
-<span class="minus">-      VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-      CONSTANT</span>
-<span class="minus">-     STATEMENT_LIST</span>
-<span class="minus">-      ASSIGNMENT_STATEMENT</span>
-<span class="minus">-       VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
-<span class="minus">-       EXPRESSION</span>
-<span class="minus">-        VARIABLE, ("func1"), (nil)</span>
-<span class="minus">-        EXPRESSION_LIST</span>
+<span class="plus">+         VARIABLE, ("c"), (nil)</span>
+     RETURN_STATEMENT
+      VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"
+   FUNCTION, ("func3"), (nil)
+<span class="at2">@@ -112,10 +112,10 @@</span>
+        EXPRESSION
+         VARIABLE, ("func1"), (nil)
+         EXPRESSION_LIST
 <span class="minus">-         VARIABLE, ("a"), depth: 2, stack_offset: 16, entry label: "a"</span>
 <span class="minus">-         VARIABLE, ("b"), depth: 2, stack_offset: 12, entry label: "b"</span>
-<span class="minus">-         EXPRESSION</span>
+<span class="plus">+         VARIABLE, ("a"), (nil)</span>
+<span class="plus">+         VARIABLE, ("b"), (nil)</span>
+          EXPRESSION
 <span class="minus">-          VARIABLE, ("c"), depth: 2, stack_offset: 8, entry label: "c"</span>
-<span class="minus">-          CONSTANT</span>
-<span class="minus">-    RETURN_STATEMENT</span>
-<span class="minus">-     VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span></span>
+<span class="plus">+          VARIABLE, ("c"), (nil)</span>
+           CONSTANT
+     RETURN_STATEMENT
+      VARIABLE, ("d"), depth: 2, stack_offset: -4, entry label: "d"</span>
 </pre>
 </body>
 </html>

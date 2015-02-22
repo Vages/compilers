@@ -1,6 +1,6 @@
 --- correctOutput/function_medium.s6	2015-02-22 13:09:53.473145000 +0100
-+++ testOutput/function_medium.s6	2015-02-22 15:04:07.870434000 +0100
-@@ -10,63 +10,4 @@
++++ testOutput/function_medium.s6	2015-02-22 15:09:24.723119000 +0100
+@@ -10,25 +10,9 @@
  CONSTANT
  VARIABLE: access: a
  EXPRESSION: Start: FUNC_CALL
@@ -11,9 +11,9 @@
 -CONSTANT
 -CONSTANT
 -EXPRESSION: End
--EXPRESSION: End
--VARIABLE: access: c
--EXPRESSION: Start: FUNC_CALL
+ EXPRESSION: End
+ VARIABLE: access: c
+ EXPRESSION: Start: FUNC_CALL
 -EXPRESSION: Start: &&
 -CONSTANT
 -CONSTANT
@@ -23,45 +23,6 @@
 -CONSTANT
 -CONSTANT
 -CONSTANT
--EXPRESSION: End
--VARIABLE: access: a
--VARIABLE: access: c
--FUNCTION: End
--FUNCTION: Start: func1
--DECLARATION: parameter/variable : 'a', offset: 20
--DECLARATION: parameter/variable : 'b', offset: 16
--DECLARATION: parameter/variable : 'c', offset: 12
--DECLARATION: parameter/variable : 'd', offset: 8
--EXPRESSION: Start: &&
--VARIABLE: access: b
--VARIABLE: access: c
--EXPRESSION: End
--VARIABLE: access: a
--VARIABLE: access: d
--FUNCTION: End
--FUNCTION: Start: func2
--DECLARATION: parameter/variable : 'a', offset: 28
--DECLARATION: parameter/variable : 'b', offset: 24
--DECLARATION: parameter/variable : 'c', offset: 20
--DECLARATION: parameter/variable : 'd', offset: 16
--DECLARATION: parameter/variable : 'e', offset: 12
--DECLARATION: parameter/variable : 'f', offset: 8
--EXPRESSION: Start: ||
--EXPRESSION: Start: ||
--EXPRESSION: Start: &&
--VARIABLE: access: a
--VARIABLE: access: c
--EXPRESSION: End
--EXPRESSION: Start: >
--VARIABLE: access: b
--VARIABLE: access: d
--EXPRESSION: End
--EXPRESSION: End
--EXPRESSION: Start: >
--VARIABLE: access: e
--VARIABLE: access: f
--EXPRESSION: End
--EXPRESSION: End
--FUNCTION: End
--FUNCTION_LIST: End
-+VARIABLE: access: func1
+ EXPRESSION: End
+ VARIABLE: access: a
+ VARIABLE: access: c

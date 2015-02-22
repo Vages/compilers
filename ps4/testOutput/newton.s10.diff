@@ -1,5 +1,5 @@
 --- correctOutput/newton.s10	2015-02-22 13:09:53.720149000 +0100
-+++ testOutput/newton.s10	2015-02-22 15:04:11.634528000 +0100
++++ testOutput/newton.s10	2015-02-22 15:09:26.761141000 +0100
 @@ -1,11 +0,0 @@
 -Type checking assignment
 -Type checking expression FUNC_CALL

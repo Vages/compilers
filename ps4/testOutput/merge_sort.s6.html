@@ -16,168 +16,38 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/merge_sort.s6	2015-02-22 13:09:53.686146000 +0100</span>
-<span class="plus3">+++ testOutput/merge_sort.s6	2015-02-22 15:04:09.948507000 +0100</span>
-<span class="at2">@@ -17,159 +17,4 @@</span>
+<span class="plus3">+++ testOutput/merge_sort.s6	2015-02-22 15:09:26.051128000 +0100</span>
+<span class="at2">@@ -17,9 +17,6 @@</span>
  VARIABLE: access: i
  EXPRESSION: End
  EXPRESSION: Start: FUNC_CALL
 <span class="minus">-VARIABLE: access: a</span>
 <span class="minus">-CONSTANT</span>
 <span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-FUNCTION: End</span>
-<span class="minus">-FUNCTION: Start: merge_sort</span>
-<span class="minus">-DECLARATION: parameter/variable : 'a', offset: 16</span>
-<span class="minus">-DECLARATION: parameter/variable : 'start', offset: 12</span>
-<span class="minus">-DECLARATION: parameter/variable : 'end', offset: 8</span>
-<span class="minus">-EXPRESSION: Start: &lt;=</span>
-<span class="minus">-EXPRESSION: Start: -</span>
-<span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-VARIABLE: access: start</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-DECLARATION: parameter/variable : 'middle', offset: -4</span>
-<span class="minus">-VARIABLE: access: middle</span>
-<span class="minus">-EXPRESSION: Start: +</span>
-<span class="minus">-VARIABLE: access: start</span>
-<span class="minus">-EXPRESSION: Start: /</span>
-<span class="minus">-EXPRESSION: Start: -</span>
-<span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-VARIABLE: access: start</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+ EXPRESSION: End
+ VARIABLE: access: i
+ CONSTANT
+<span class="at2">@@ -54,20 +51,10 @@</span>
+ EXPRESSION: End
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 <span class="minus">-VARIABLE: access: a</span>
 <span class="minus">-VARIABLE: access: start</span>
 <span class="minus">-VARIABLE: access: middle</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 <span class="minus">-VARIABLE: access: a</span>
 <span class="minus">-VARIABLE: access: middle</span>
 <span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 <span class="minus">-VARIABLE: access: a</span>
 <span class="minus">-VARIABLE: access: start</span>
 <span class="minus">-VARIABLE: access: middle</span>
 <span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-FUNCTION: End</span>
-<span class="minus">-FUNCTION: Start: merge</span>
-<span class="minus">-DECLARATION: parameter/variable : 'a', offset: 20</span>
-<span class="minus">-DECLARATION: parameter/variable : 'start', offset: 16</span>
-<span class="minus">-DECLARATION: parameter/variable : 'middle', offset: 12</span>
-<span class="minus">-DECLARATION: parameter/variable : 'end', offset: 8</span>
-<span class="minus">-DECLARATION: parameter/variable : 'temp', offset: -4</span>
-<span class="minus">-VARIABLE: access: temp</span>
-<span class="minus">-EXPRESSION: Start: NEW</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-DECLARATION: parameter/variable : 'i', offset: -8</span>
-<span class="minus">-DECLARATION: parameter/variable : 'j', offset: -12</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-VARIABLE: access: start</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-VARIABLE: access: middle</span>
-<span class="minus">-DECLARATION: parameter/variable : 'k', offset: -16</span>
-<span class="minus">-VARIABLE: access: k</span>
-<span class="minus">-VARIABLE: access: start</span>
-<span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-EXPRESSION: Start: &gt;=</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-VARIABLE: access: middle</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: temp</span>
-<span class="minus">-VARIABLE: access: k</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-EXPRESSION: Start: +</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: &gt;=</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: temp</span>
-<span class="minus">-VARIABLE: access: k</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-EXPRESSION: Start: +</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: &lt;</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: temp</span>
-<span class="minus">-VARIABLE: access: k</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-EXPRESSION: Start: +</span>
-<span class="minus">-VARIABLE: access: j</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: temp</span>
-<span class="minus">-VARIABLE: access: k</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-EXPRESSION: Start: +</span>
-<span class="minus">-VARIABLE: access: i</span>
-<span class="minus">-CONSTANT</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-DECLARATION: parameter/variable : 'n', offset: -20</span>
-<span class="minus">-VARIABLE: access: n</span>
-<span class="minus">-VARIABLE: access: start</span>
-<span class="minus">-VARIABLE: access: end</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: a</span>
-<span class="minus">-VARIABLE: access: n</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-EXPRESSION: Start: ARRAY_INDEX</span>
-<span class="minus">-VARIABLE: access: temp</span>
-<span class="minus">-VARIABLE: access: n</span>
-<span class="minus">-EXPRESSION: End</span>
-<span class="minus">-FUNCTION: End</span>
-<span class="minus">-FUNCTION_LIST: End</span>
-<span class="plus">+VARIABLE: access: merge_sort</span></span>
+ EXPRESSION: End
+ FUNCTION: End
+ FUNCTION: Start: merge</span>
 </pre>
 </body>
 </html>

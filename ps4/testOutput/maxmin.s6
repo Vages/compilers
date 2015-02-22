@@ -7,4 +7,48 @@ DECLARATION: parameter/variable : 'd', offset: -16
 DECLARATION: parameter/variable : 'e', offset: -20
 VARIABLE: access: a
 EXPRESSION: Start: FUNC_CALL
-VARIABLE: access: max
+EXPRESSION: End
+VARIABLE: access: b
+EXPRESSION: Start: FUNC_CALL
+EXPRESSION: End
+VARIABLE: access: c
+EXPRESSION: Start: FUNC_CALL
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: a
+CONSTANT
+VARIABLE: access: b
+CONSTANT
+VARIABLE: access: c
+FUNCTION: End
+FUNCTION: Start: max
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+EXPRESSION: Start: >
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+VARIABLE: access: a
+EXPRESSION: Start: >
+VARIABLE: access: b
+VARIABLE: access: a
+EXPRESSION: End
+VARIABLE: access: b
+CONSTANT
+FUNCTION: End
+FUNCTION: Start: min
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+EXPRESSION: Start: <
+VARIABLE: access: a
+VARIABLE: access: b
+EXPRESSION: End
+VARIABLE: access: a
+EXPRESSION: Start: <
+VARIABLE: access: b
+VARIABLE: access: a
+EXPRESSION: End
+VARIABLE: access: b
+CONSTANT
+FUNCTION: End
+FUNCTION_LIST: End

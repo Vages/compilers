@@ -1,37 +1,20 @@
 --- correctOutput/type_errors_functions.s6	2015-02-22 13:09:53.921148000 +0100
-+++ testOutput/type_errors_functions.s6	2015-02-22 15:04:13.198517000 +0100
-@@ -4,33 +4,4 @@
- DECLARATION: parameter/variable : 'b', offset: -8
- VARIABLE: access: a
++++ testOutput/type_errors_functions.s6	2015-02-22 15:09:27.768130000 +0100
+@@ -9,17 +9,12 @@
  EXPRESSION: Start: FUNC_CALL
--EXPRESSION: End
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: a
--EXPRESSION: Start: FUNC_CALL
--EXPRESSION: End
--EXPRESSION: Start: FUNC_CALL
--VARIABLE: access: a
--EXPRESSION: End
--EXPRESSION: Start: FUNC_CALL
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: b
 -VARIABLE: access: a
--EXPRESSION: End
--EXPRESSION: Start: FUNC_CALL
--EXPRESSION: End
--EXPRESSION: Start: FUNC_CALL
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
+ EXPRESSION: End
+ EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: a
 -VARIABLE: access: b
--EXPRESSION: End
--FUNCTION: End
--FUNCTION: Start: void_func
--CONSTANT
--FUNCTION: End
--FUNCTION: Start: bool_func
--CONSTANT
--FUNCTION: End
--FUNCTION: Start: two_args
--DECLARATION: parameter/variable : 'a', offset: 12
--DECLARATION: parameter/variable : 'b', offset: 8
--CONSTANT
--FUNCTION: End
--FUNCTION_LIST: End
-+VARIABLE: access: void_func
+ EXPRESSION: End
+ FUNCTION: End
+ FUNCTION: Start: void_func

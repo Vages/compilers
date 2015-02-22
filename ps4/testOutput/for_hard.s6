@@ -13,4 +13,18 @@ VARIABLE: access: k
 CONSTANT
 VARIABLE: access: j
 EXPRESSION: Start: FUNC_CALL
-VARIABLE: access: print
+EXPRESSION: End
+FUNCTION: End
+FUNCTION: Start: print
+DECLARATION: parameter/variable : 'a', offset: 16
+DECLARATION: parameter/variable : 'b', offset: 12
+DECLARATION: parameter/variable : 'c', offset: 8
+VARIABLE: access: a
+EXPRESSION: Start: UMINUS
+CONSTANT
+EXPRESSION: End
+CONSTANT
+VARIABLE: access: b
+VARIABLE: access: c
+FUNCTION: End
+FUNCTION_LIST: End
