@@ -164,7 +164,7 @@ int bind_expression( node_t* root, int stackOffset)
 		root->function_entry = function_get(root->label);
 	}
 
-	bd(root, stackOffset)
+	bd(root, stackOffset);
 
 	if(outputStage == 6)
 		printf( "EXPRESSION: End\n");
