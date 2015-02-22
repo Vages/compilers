@@ -1,9 +1,12 @@
 --- correctOutput/merge_sort.s7	2015-02-22 13:09:53.688147000 +0100
-+++ testOutput/merge_sort.s7	2015-02-22 14:33:37.278737000 +0100
-@@ -4,100 +4,3 @@
- Inserting function merge_sort VOID<=(ARRAY(INT)[100],INT,INT) 
- Inserting function merge VOID<=(ARRAY(INT)[100],INT,INT,INT) 
- Add scope, index: 2 
++++ testOutput/merge_sort.s7	2015-02-22 14:43:54.724014000 +0100
+@@ -1,103 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Inserting function merge_sort VOID<=(ARRAY(INT)[100],INT,INT) 
+-Inserting function merge VOID<=(ARRAY(INT)[100],INT,INT,INT) 
+-Add scope, index: 2 
 -Inserting variable a ARRAY(INT)[100] depth:2 offset:-4
 -Retrieving variable a
 -Inserting variable i INT depth:2 offset:-8

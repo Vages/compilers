@@ -1,9 +1,12 @@
 --- correctOutput/function_medium.s7	2015-02-22 13:09:53.475145000 +0100
-+++ testOutput/function_medium.s7	2015-02-22 14:33:32.752713000 +0100
-@@ -4,45 +4,3 @@
- Inserting function func1 INT<=(INT,BOOL,BOOL,INT) 
- Inserting function func2 BOOL<=(BOOL,INT,BOOL,INT,INT,INT) 
- Add scope, index: 2 
++++ testOutput/function_medium.s7	2015-02-22 14:43:52.349999000 +0100
+@@ -1,48 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Inserting function func1 INT<=(INT,BOOL,BOOL,INT) 
+-Inserting function func2 BOOL<=(BOOL,INT,BOOL,INT,INT,INT) 
+-Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:-4
 -Inserting variable b INT depth:2 offset:-8
 -Inserting variable c BOOL depth:2 offset:-12

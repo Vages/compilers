@@ -1,5 +1,5 @@
 --- correctOutput/newton.s8	2015-02-22 13:09:53.735147000 +0100
-+++ testOutput/newton.s8	2015-02-22 14:33:38.449744000 +0100
++++ testOutput/newton.s8	2015-02-22 14:43:55.853017000 +0100
 @@ -1,16 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

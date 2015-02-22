@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s7	2015-02-22 13:09:53.271144000 +0100
-+++ testOutput/euclid.s7	2015-02-22 14:33:27.763691000 +0100
++++ testOutput/euclid.s7	2015-02-22 14:43:49.612988000 +0100
 @@ -1,40 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

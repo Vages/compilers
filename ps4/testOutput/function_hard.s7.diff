@@ -1,9 +1,13 @@
 --- correctOutput/function_hard.s7	2015-02-22 13:09:53.450145000 +0100
-+++ testOutput/function_hard.s7	2015-02-22 14:33:32.014736000 +0100
-@@ -5,66 +5,3 @@
- Inserting function func2 INT<=(INT,INT,INT) 
- Inserting function func3 INT<=(INT,INT,INT) 
- Add scope, index: 2 
++++ testOutput/function_hard.s7	2015-02-22 14:43:51.623993000 +0100
+@@ -1,70 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Inserting function func1 INT<=(INT,INT,INT) 
+-Inserting function func2 INT<=(INT,INT,INT) 
+-Inserting function func3 INT<=(INT,INT,INT) 
+-Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:-4
 -Inserting variable b INT depth:2 offset:-8
 -Inserting variable c INT depth:2 offset:-12

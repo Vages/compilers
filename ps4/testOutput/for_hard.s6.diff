@@ -1,10 +1,10 @@
 --- correctOutput/for_hard.s6	2015-02-22 13:09:53.377146000 +0100
-+++ testOutput/for_hard.s6	2015-02-22 14:33:31.207705000 +0100
-@@ -1,33 +1,3 @@
- FUNCTION_LIST: Start
- FUNCTION: Start: main
++++ testOutput/for_hard.s6	2015-02-22 14:43:50.950988000 +0100
+@@ -1,33 +0,0 @@
+-FUNCTION_LIST: Start
+-FUNCTION: Start: main
 -DECLARATION: parameter/variable : 'i', offset: -4
- VARIABLE: access: i
+-VARIABLE: access: i
 -CONSTANT
 -CONSTANT
 -DECLARATION: parameter/variable : 'j', offset: -8

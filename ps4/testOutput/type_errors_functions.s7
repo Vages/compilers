@@ -1,7 +1,0 @@
-Add scope, index: 0 
-Add scope, index: 1 
-Inserting function main VOID<=() 
-Inserting function void_func VOID<=() 
-Inserting function bool_func BOOL<=() 
-Inserting function two_args VOID<=(BOOL,INT) 
-Add scope, index: 2 

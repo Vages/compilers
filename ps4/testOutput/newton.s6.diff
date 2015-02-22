@@ -1,11 +1,11 @@
 --- correctOutput/newton.s6	2015-02-22 13:09:53.731147000 +0100
-+++ testOutput/newton.s6	2015-02-22 14:33:38.244744000 +0100
-@@ -1,50 +1,4 @@
- FUNCTION_LIST: Start
- FUNCTION: Start: newton
- DECLARATION: parameter/variable : 'n', offset: 8
++++ testOutput/newton.s6	2015-02-22 14:43:55.649015000 +0100
+@@ -1,50 +0,0 @@
+-FUNCTION_LIST: Start
+-FUNCTION: Start: newton
+-DECLARATION: parameter/variable : 'n', offset: 8
 -DECLARATION: parameter/variable : 'square_root', offset: -4
- VARIABLE: access: square_root
+-VARIABLE: access: square_root
 -EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: n
 -CONSTANT

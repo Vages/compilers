@@ -1,9 +1,12 @@
 --- correctOutput/newton.s7	2015-02-22 13:09:53.733146000 +0100
-+++ testOutput/newton.s7	2015-02-22 14:33:38.368745000 +0100
-@@ -4,30 +4,3 @@
- Inserting function improve INT<=(INT,INT) 
- Add scope, index: 2 
- Inserting variable n INT depth:2 offset:8
++++ testOutput/newton.s7	2015-02-22 14:43:55.767016000 +0100
+@@ -1,33 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function newton INT<=(INT) 
+-Inserting function improve INT<=(INT,INT) 
+-Add scope, index: 2 
+-Inserting variable n INT depth:2 offset:8
 -Inserting variable square_root INT depth:2 offset:-4
 -Retrieving variable square_root
 -Retrieving function improve

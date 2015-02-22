@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s8	2015-02-22 13:09:53.359146000 +0100
-+++ testOutput/fibonacci_recursive.s8	2015-02-22 14:33:30.947702000 +0100
++++ testOutput/fibonacci_recursive.s8	2015-02-22 14:43:50.693987000 +0100
 @@ -1,16 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

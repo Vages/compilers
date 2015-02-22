@@ -1,9 +1,11 @@
 --- correctOutput/sorting.s7	2015-02-22 13:09:53.819148000 +0100
-+++ testOutput/sorting.s7	2015-02-22 14:33:39.691750000 +0100
-@@ -3,43 +3,3 @@
- Inserting function main VOID<=() 
- Inserting function sort ARRAY(INT)[10]<=(ARRAY(INT)[10]) 
- Add scope, index: 2 
++++ testOutput/sorting.s7	2015-02-22 14:43:56.769027000 +0100
+@@ -1,45 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Inserting function sort ARRAY(INT)[10]<=(ARRAY(INT)[10]) 
+-Add scope, index: 2 
 -Inserting variable a ARRAY(INT)[10] depth:2 offset:-4
 -Inserting variable b ARRAY(INT)[10] depth:2 offset:-8
 -Retrieving variable a

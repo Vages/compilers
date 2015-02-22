@@ -1,5 +1,5 @@
 --- correctOutput/return.s7	2015-02-22 13:09:53.788147000 +0100
-+++ testOutput/return.s7	2015-02-22 14:33:39.204748000 +0100
++++ testOutput/return.s7	2015-02-22 14:43:56.294018000 +0100
 @@ -1,23 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 
