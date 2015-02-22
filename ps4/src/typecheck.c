@@ -92,9 +92,10 @@ data_type_t typecheck_expression(node_t* root)
 
             switch(root->expression_type.index)
             {
+                data_type_t l_child_dt;
                 case ADD_E: case SUB_E: case DIV_E: case MUL_E:
                     ;
-                    data_type_t l_child_dt = root->children[0]->data_type;
+                    l_child_dt = root->children[0]->data_type;
                     int iseq = equal_types(l_child_dt, root->children[1]->data_type);
                     if (!iseq){
                         type_error(root);
