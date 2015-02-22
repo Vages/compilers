@@ -93,6 +93,7 @@ data_type_t typecheck_expression(node_t* root)
             switch(root->expression_type.index)
             {
                 data_type_t l_child_dt;
+                data_type_t r_child_dt;
                 case ADD_E: case SUB_E: case DIV_E: case MUL_E:
                     ;
                     l_child_dt = root->children[0]->data_type;
@@ -156,6 +157,14 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                 
                 case ARRAY_INDEX_E:
+                    ;
+                    l_child_dt = root->children[0]->data_type;
+                    r_child_dt = root->children[1]->data_type;
+                    if (!equal_types(l_child_dt, r_child_dt)){
+                        type_error(root);
+                    }
+                    
+                    return l_child_dt;
                     break;
                 
                 default:
