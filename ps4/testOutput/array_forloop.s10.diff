@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s10	2015-02-22 13:09:53.075144000 +0100
-+++ testOutput/array_forloop.s10	2015-02-22 22:38:31.674751000 +0100
++++ testOutput/array_forloop.s10	2015-02-22 22:41:40.062718000 +0100
 @@ -1,14 +1,23 @@
  Type checking assignment
  Type checking expression NEW
