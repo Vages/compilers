@@ -70,7 +70,7 @@ data_type_t typecheck_expression(node_t* root)
                     if !((child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)){
                         type_error(root);
                     }
-                    return child_dt
+                    return child_dt;
                     break;
                     
                 case NOT_E:
