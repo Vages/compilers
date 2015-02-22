@@ -48,6 +48,8 @@ int bind_function ( node_t *root, int stackOffset)
 
 function_symbol_t* create_function_symbol(node_t* function_node)
 {
+	//FINISHED
+	//Eirik: Creates a function symbol
     function_symbol_t* fs = malloc(sizeof(function_symbol_t));
     fs->label = STRDUP(function_node->label);
     fs->return_type = function_node->data_type;
