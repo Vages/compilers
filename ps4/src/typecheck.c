@@ -144,9 +144,11 @@ data_type_t typecheck_expression(node_t* root)
                 case FUNC_CALL_E: 
                     ;
                     function_symbol_t* fst = root->function_entry;
-                    for (int i = 0; i < fst->nArguments; i++){
-                        if (!(equal_types(fst->argument_types[i], root->children[1]->children[i]->data_type))){
-                            type_error(root);
+                    if(fst->nArguments>0){
+                        for (int i = 0; i < fst->nArguments; i++){
+                            if (!(equal_types(fst->argument_types[i], root->children[1]->children[i]->data_type))){
+                                type_error(root);
+                            }
                         }
                     }
                     return fst->return_type;
