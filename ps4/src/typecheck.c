@@ -99,8 +99,10 @@ data_type_t typecheck_expression(node_t* root)
                     l_child_dt = root->children[0]->data_type;
                     r_child_dt = root->children[1]->data_type;
                     if (!equal_types(l_child_dt, r_child_dt)){
+                        fprintf(stderr, "%s\n", "Unequal types");
                         type_error(root);
                     } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
+                        fprintf(stderr, "%s\n", "Not float or int");
                         type_error(root);
                     }
                     return l_child_dt;
