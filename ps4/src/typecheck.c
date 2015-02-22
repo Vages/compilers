@@ -105,7 +105,8 @@ data_type_t typecheck_expression(node_t* root)
                     if (!(equal_types) || ((child_dt.base_type != INT_TYPE)&&(child_dt.base_type != FLOAT_TYPE))){
                         type_error(root);
                     }
-                    return {.base_type = BOOL_TYPE};
+                    data_type_t dt = {.base_type = BOOL_TYPE}
+                    return dt;
                     break;
                         
                 case AND_E: case OR_E:
@@ -119,7 +120,8 @@ data_type_t typecheck_expression(node_t* root)
                     if (!(equal_types) || ((child_dt.base_type != INT_TYPE)&&(child_dt.base_type != FLOAT_TYPE))){
                         type_error(root);
                     }
-                    return {.base_type = BOOL_TYPE};
+                    data_type_t dt = {.base_type = BOOL_TYPE}
+                    return dt;
                     break;
                         
                 case FUNC_CALL_E: 
