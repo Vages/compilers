@@ -111,7 +111,7 @@ data_type_t typecheck_expression(node_t* root)
                     } else if ((l_child_dt != INT_TYPE) || (l_child_dt != FLOAT_TYPE)){
                         type_error(root);
                     }
-                    data_type_t dt = {.base_type = BOOL_TYPE}
+                    data_type_t dt = {.base_type = BOOL_TYPE};
                     return dt;
                     break;
                         
@@ -134,7 +134,7 @@ data_type_t typecheck_expression(node_t* root)
                     } else if ((l_child_dt != INT_TYPE) || (l_child_dt != FLOAT_TYPE) || (l_child_dt != BOOL_TYPE)){
                         type_error(root);
                     }
-                    data_type_t dt = {.base_type = BOOL_TYPE}
+                    data_type_t dt = {.base_type = BOOL_TYPE};
                     return dt;
                     break;
                         
