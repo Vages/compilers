@@ -1,0 +1,7 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: euclid
+DECLARATION: parameter/variable : 'a', offset: 12
+DECLARATION: parameter/variable : 'b', offset: 8
+EXPRESSION: Start: -
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: gcd

@@ -1,0 +1,9 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function fibonacci_recursive INT<=(INT) 
+Inserting function fibonacci_number INT<=(INT) 
+Add scope, index: 2 
+Inserting variable n INT depth:2 offset:8
+Inserting variable f INT depth:2 offset:-4
+Retrieving variable f
+Retrieving function fibonacci_number

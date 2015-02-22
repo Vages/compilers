@@ -1,0 +1,14 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function main VOID<=() 
+Inserting function merge_sort VOID<=(ARRAY(INT)[100],INT,INT) 
+Inserting function merge VOID<=(ARRAY(INT)[100],INT,INT,INT) 
+Add scope, index: 2 
+Inserting variable a ARRAY(INT)[100] depth:2 offset:-4
+Retrieving variable a
+Inserting variable i INT depth:2 offset:-8
+Retrieving variable i
+Retrieving variable a
+Retrieving variable i
+Retrieving variable i
+Retrieving function merge_sort

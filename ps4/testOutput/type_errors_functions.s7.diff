@@ -1,17 +1,9 @@
 --- correctOutput/type_errors_functions.s7	2015-02-22 13:09:53.923148000 +0100
-+++ testOutput/type_errors_functions.s7	2015-02-22 14:48:59.420625000 +0100
-@@ -1,32 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Inserting function void_func VOID<=() 
--Inserting function bool_func BOOL<=() 
--Inserting function two_args VOID<=(BOOL,INT) 
--Add scope, index: 2 
--Inserting variable a INT depth:2 offset:-4
--Inserting variable b BOOL depth:2 offset:-8
--Retrieving variable a
--Retrieving function void_func
++++ testOutput/type_errors_functions.s7	2015-02-22 14:57:32.160339000 +0100
+@@ -9,24 +9,3 @@
+ Inserting variable b BOOL depth:2 offset:-8
+ Retrieving variable a
+ Retrieving function void_func
 -Retrieving variable a
 -Retrieving function bool_func
 -Retrieving function two_args

@@ -1,0 +1,22 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: main
+DECLARATION: parameter/variable : 'a', offset: -4
+DECLARATION: parameter/variable : 'b', offset: -8
+VARIABLE: access: a
+EXPRESSION: Start: NEW
+EXPRESSION: End
+DECLARATION: parameter/variable : 'i', offset: -12
+VARIABLE: access: i
+CONSTANT
+CONSTANT
+EXPRESSION: Start: ARRAY_INDEX
+VARIABLE: access: a
+VARIABLE: access: i
+EXPRESSION: End
+EXPRESSION: Start: -
+CONSTANT
+VARIABLE: access: i
+EXPRESSION: End
+VARIABLE: access: b
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: sort

@@ -1,10 +1,9 @@
 --- correctOutput/return.s6	2015-02-22 13:09:53.785147000 +0100
-+++ testOutput/return.s6	2015-02-22 14:48:57.949617000 +0100
-@@ -1,38 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
--CONSTANT
--EXPRESSION: Start: FUNC_CALL
++++ testOutput/return.s6	2015-02-22 14:57:30.760331000 +0100
+@@ -2,37 +2,4 @@
+ FUNCTION: Start: main
+ CONSTANT
+ EXPRESSION: Start: FUNC_CALL
 -CONSTANT
 -EXPRESSION: End
 -CONSTANT
@@ -39,3 +38,4 @@
 -EXPRESSION: End
 -FUNCTION: End
 -FUNCTION_LIST: End
++VARIABLE: access: test

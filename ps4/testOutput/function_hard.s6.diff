@@ -1,18 +1,9 @@
 --- correctOutput/function_hard.s6	2015-02-22 13:09:53.448149000 +0100
-+++ testOutput/function_hard.s6	2015-02-22 14:48:53.254593000 +0100
-@@ -1,93 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
--DECLARATION: parameter/variable : 'a', offset: -4
--DECLARATION: parameter/variable : 'b', offset: -8
--DECLARATION: parameter/variable : 'c', offset: -12
--VARIABLE: access: a
--CONSTANT
--VARIABLE: access: b
--CONSTANT
--VARIABLE: access: c
--CONSTANT
--EXPRESSION: Start: FUNC_CALL
++++ testOutput/function_hard.s6	2015-02-22 14:57:26.256308000 +0100
+@@ -10,84 +10,4 @@
+ VARIABLE: access: c
+ CONSTANT
+ EXPRESSION: Start: FUNC_CALL
 -VARIABLE: access: a
 -VARIABLE: access: b
 -VARIABLE: access: c
@@ -94,3 +85,4 @@
 -VARIABLE: access: d
 -FUNCTION: End
 -FUNCTION_LIST: End
++VARIABLE: access: func1

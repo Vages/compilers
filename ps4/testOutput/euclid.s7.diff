@@ -1,14 +1,9 @@
 --- correctOutput/euclid.s7	2015-02-22 13:09:53.271144000 +0100
-+++ testOutput/euclid.s7	2015-02-22 14:48:51.464583000 +0100
-@@ -1,40 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function euclid INT<=(INT,INT) 
--Inserting function gcd INT<=(INT,INT) 
--Add scope, index: 2 
--Inserting variable a INT depth:2 offset:12
--Inserting variable b INT depth:2 offset:8
--Retrieving function gcd
++++ testOutput/euclid.s7	2015-02-22 14:57:24.564299000 +0100
+@@ -6,35 +6,3 @@
+ Inserting variable a INT depth:2 offset:12
+ Inserting variable b INT depth:2 offset:8
+ Retrieving function gcd
 -Retrieving variable a
 -Retrieving variable b
 -Add strings ("Greatest common divisor of"), index: 0 

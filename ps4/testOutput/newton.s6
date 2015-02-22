@@ -1,0 +1,7 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: newton
+DECLARATION: parameter/variable : 'n', offset: 8
+DECLARATION: parameter/variable : 'square_root', offset: -4
+VARIABLE: access: square_root
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: improve

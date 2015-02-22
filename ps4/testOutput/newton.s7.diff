@@ -1,15 +1,9 @@
 --- correctOutput/newton.s7	2015-02-22 13:09:53.733146000 +0100
-+++ testOutput/newton.s7	2015-02-22 14:48:57.505614000 +0100
-@@ -1,33 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function newton INT<=(INT) 
--Inserting function improve INT<=(INT,INT) 
--Add scope, index: 2 
--Inserting variable n INT depth:2 offset:8
--Inserting variable square_root INT depth:2 offset:-4
--Retrieving variable square_root
--Retrieving function improve
++++ testOutput/newton.s7	2015-02-22 14:57:30.337330000 +0100
+@@ -7,27 +7,3 @@
+ Inserting variable square_root INT depth:2 offset:-4
+ Retrieving variable square_root
+ Retrieving function improve
 -Retrieving variable n
 -Add strings ("The square root of"), index: 0 
 -Retrieving variable n

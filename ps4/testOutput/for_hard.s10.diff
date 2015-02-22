@@ -1,5 +1,5 @@
 --- correctOutput/for_hard.s10	2015-02-22 13:09:53.366145000 +0100
-+++ testOutput/for_hard.s10	2015-02-22 14:48:53.105593000 +0100
++++ testOutput/for_hard.s10	2015-02-22 14:57:26.116307000 +0100
 @@ -1,6 +0,0 @@
 -Type checking assignment
 -Type checking assignment

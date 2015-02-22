@@ -1,0 +1,8 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function euclid INT<=(INT,INT) 
+Inserting function gcd INT<=(INT,INT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:12
+Inserting variable b INT depth:2 offset:8
+Retrieving function gcd

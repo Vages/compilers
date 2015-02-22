@@ -1,12 +1,9 @@
 --- correctOutput/type_errors_functions.s6	2015-02-22 13:09:53.921148000 +0100
-+++ testOutput/type_errors_functions.s6	2015-02-22 14:48:59.330623000 +0100
-@@ -1,36 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
--DECLARATION: parameter/variable : 'a', offset: -4
--DECLARATION: parameter/variable : 'b', offset: -8
--VARIABLE: access: a
--EXPRESSION: Start: FUNC_CALL
++++ testOutput/type_errors_functions.s6	2015-02-22 14:57:32.073338000 +0100
+@@ -4,33 +4,4 @@
+ DECLARATION: parameter/variable : 'b', offset: -8
+ VARIABLE: access: a
+ EXPRESSION: Start: FUNC_CALL
 -EXPRESSION: End
 -VARIABLE: access: a
 -EXPRESSION: Start: FUNC_CALL
@@ -37,3 +34,4 @@
 -CONSTANT
 -FUNCTION: End
 -FUNCTION_LIST: End
++VARIABLE: access: void_func

@@ -1,19 +1,9 @@
 --- correctOutput/maxmin.s7	2015-02-22 13:09:53.657147000 +0100
-+++ testOutput/maxmin.s7	2015-02-22 14:48:55.673602000 +0100
-@@ -1,45 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function maxmin VOID<=() 
--Inserting function max INT<=(INT,INT) 
--Inserting function min INT<=(INT,INT) 
--Add scope, index: 2 
--Inserting variable a INT depth:2 offset:-4
--Inserting variable b INT depth:2 offset:-8
--Inserting variable c INT depth:2 offset:-12
--Inserting variable d INT depth:2 offset:-16
--Inserting variable e INT depth:2 offset:-20
--Retrieving variable a
--Retrieving function max
++++ testOutput/maxmin.s7	2015-02-22 14:57:28.589320000 +0100
+@@ -11,35 +11,3 @@
+ Inserting variable e INT depth:2 offset:-20
+ Retrieving variable a
+ Retrieving function max
 -Retrieving variable b
 -Retrieving function min
 -Retrieving variable c

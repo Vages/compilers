@@ -1,13 +1,9 @@
 --- correctOutput/return.s7	2015-02-22 13:09:53.788147000 +0100
-+++ testOutput/return.s7	2015-02-22 14:48:58.044619000 +0100
-@@ -1,23 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main INT<=() 
--Inserting function test INT<=(INT) 
--Add scope, index: 2 
--Add strings ("t is "), index: 0 
--Retrieving function test
++++ testOutput/return.s7	2015-02-22 14:57:30.854332000 +0100
+@@ -5,19 +5,3 @@
+ Add scope, index: 2 
+ Add strings ("t is "), index: 0 
+ Retrieving function test
 -Remove scope, index: 1 
 -Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:8

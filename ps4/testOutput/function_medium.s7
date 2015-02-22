@@ -1,0 +1,14 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function main VOID<=() 
+Inserting function func1 INT<=(INT,BOOL,BOOL,INT) 
+Inserting function func2 BOOL<=(BOOL,INT,BOOL,INT,INT,INT) 
+Add scope, index: 2 
+Inserting variable a INT depth:2 offset:-4
+Inserting variable b INT depth:2 offset:-8
+Inserting variable c BOOL depth:2 offset:-12
+Inserting variable d BOOL depth:2 offset:-16
+Retrieving variable b
+Retrieving variable d
+Retrieving variable a
+Retrieving function func1

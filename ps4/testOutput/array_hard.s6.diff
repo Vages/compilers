@@ -1,55 +1,9 @@
 --- correctOutput/array_hard.s6	2015-02-22 13:09:53.118143000 +0100
-+++ testOutput/array_hard.s6	2015-02-22 14:48:50.187576000 +0100
-@@ -1,78 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
--DECLARATION: parameter/variable : 'a', offset: -4
--VARIABLE: access: a
--EXPRESSION: Start: NEW
--EXPRESSION: End
--EXPRESSION: Start: ARRAY_INDEX
--EXPRESSION: Start: ARRAY_INDEX
--VARIABLE: access: a
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: Start: ARRAY_INDEX
--EXPRESSION: Start: ARRAY_INDEX
--VARIABLE: access: a
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: End
--DECLARATION: parameter/variable : 'b', offset: -8
--VARIABLE: access: b
--EXPRESSION: Start: NEW
--EXPRESSION: End
--EXPRESSION: Start: ARRAY_INDEX
--EXPRESSION: Start: ARRAY_INDEX
--EXPRESSION: Start: ARRAY_INDEX
--VARIABLE: access: b
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: Start: ARRAY_INDEX
--EXPRESSION: Start: ARRAY_INDEX
--EXPRESSION: Start: ARRAY_INDEX
--VARIABLE: access: b
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: End
--CONSTANT
--EXPRESSION: End
--DECLARATION: parameter/variable : 'c', offset: -12
--VARIABLE: access: c
--EXPRESSION: Start: FUNC_CALL
++++ testOutput/array_hard.s6	2015-02-22 14:57:23.420292000 +0100
+@@ -47,32 +47,4 @@
+ DECLARATION: parameter/variable : 'c', offset: -12
+ VARIABLE: access: c
+ EXPRESSION: Start: FUNC_CALL
 -EXPRESSION: End
 -EXPRESSION: Start: ARRAY_INDEX
 -VARIABLE: access: c
@@ -79,3 +33,4 @@
 -VARIABLE: access: a
 -FUNCTION: End
 -FUNCTION_LIST: End
++VARIABLE: access: create

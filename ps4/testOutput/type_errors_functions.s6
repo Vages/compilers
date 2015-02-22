@@ -1,0 +1,7 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: main
+DECLARATION: parameter/variable : 'a', offset: -4
+DECLARATION: parameter/variable : 'b', offset: -8
+VARIABLE: access: a
+EXPRESSION: Start: FUNC_CALL
+VARIABLE: access: void_func
