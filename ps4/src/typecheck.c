@@ -93,7 +93,7 @@ data_type_t typecheck_expression(node_t* root)
             switch(root->expression_type.index)
             {
                 case ADD_E: case SUB_E: case DIV_E: case MUL_E:
-                    l_child_dt = root->children[0]->data_type;
+                    data_type_t l_child_dt = root->children[0]->data_type;
                     int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
                     if (!eq_types){
                         type_error(root);
@@ -104,7 +104,7 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                         
                 case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
-                    l_child_dt = root->children[0]->data_type;
+                    data_type_t l_child_dt = root->children[0]->data_type;
                     int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
                     if (!eq_types){
                         type_error(root);
@@ -116,7 +116,7 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                         
                 case AND_E: case OR_E:
-                    l_child_dt = root->children[0]->data_type;
+                    data_type_t l_child_dt = root->children[0]->data_type;
                     int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
                     if (!eq_types){
                         type_error(root);
@@ -127,7 +127,7 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                     
                 case EQUAL_E: case NEQUAL_E:
-                    l_child_dt = root->children[0]->data_type;
+                    data_type_t l_child_dt = root->children[0]->data_type;
                     int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
                     if (!eq_types){
                         type_error(root);
