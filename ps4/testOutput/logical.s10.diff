@@ -1,5 +1,5 @@
 --- correctOutput/logical.s10	2015-02-22 13:09:53.588146000 +0100
-+++ testOutput/logical.s10	2015-02-22 14:43:53.307002000 +0100
++++ testOutput/logical.s10	2015-02-22 14:48:55.126600000 +0100
 @@ -1,58 +0,0 @@
 -Type checking assignment
 -Type checking assignment

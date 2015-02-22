@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s7	2015-02-22 13:09:53.657147000 +0100
-+++ testOutput/maxmin.s7	2015-02-22 14:43:53.849009000 +0100
++++ testOutput/maxmin.s7	2015-02-22 14:48:55.673602000 +0100
 @@ -1,45 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

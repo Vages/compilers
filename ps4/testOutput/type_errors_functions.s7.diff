@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s7	2015-02-22 13:09:53.923148000 +0100
-+++ testOutput/type_errors_functions.s7	2015-02-22 14:43:57.662026000 +0100
++++ testOutput/type_errors_functions.s7	2015-02-22 14:48:59.420625000 +0100
 @@ -1,32 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

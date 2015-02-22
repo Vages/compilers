@@ -1,5 +1,5 @@
 --- correctOutput/printing.s10	2015-02-22 13:09:53.742147000 +0100
-+++ testOutput/printing.s10	2015-02-22 14:43:56.134023000 +0100
++++ testOutput/printing.s10	2015-02-22 14:48:57.880617000 +0100
 @@ -1,6 +0,0 @@
 -Type checking assignment
 -Type checking expression UMINUS

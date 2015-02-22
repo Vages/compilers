@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s6	2015-02-22 13:09:53.269144000 +0100
-+++ testOutput/euclid.s6	2015-02-22 14:43:49.483985000 +0100
++++ testOutput/euclid.s6	2015-02-22 14:48:51.342582000 +0100
 @@ -1,50 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: euclid

@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s6	2015-02-22 13:09:53.473145000 +0100
-+++ testOutput/function_medium.s6	2015-02-22 14:43:52.187998000 +0100
++++ testOutput/function_medium.s6	2015-02-22 14:48:54.026596000 +0100
 @@ -1,72 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

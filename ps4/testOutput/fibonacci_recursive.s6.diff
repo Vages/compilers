@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s6	2015-02-22 13:09:53.355145000 +0100
-+++ testOutput/fibonacci_recursive.s6	2015-02-22 14:43:50.490986000 +0100
++++ testOutput/fibonacci_recursive.s6	2015-02-22 14:48:52.337587000 +0100
 @@ -1,45 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: fibonacci_recursive

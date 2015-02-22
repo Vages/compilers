@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s7	2015-02-22 13:09:53.450145000 +0100
-+++ testOutput/function_hard.s7	2015-02-22 14:43:51.623993000 +0100
++++ testOutput/function_hard.s7	2015-02-22 14:48:53.459592000 +0100
 @@ -1,70 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

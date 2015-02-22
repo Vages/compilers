@@ -1,5 +1,5 @@
 --- correctOutput/merge_sort.s7	2015-02-22 13:09:53.688147000 +0100
-+++ testOutput/merge_sort.s7	2015-02-22 14:43:54.724014000 +0100
++++ testOutput/merge_sort.s7	2015-02-22 14:48:56.473606000 +0100
 @@ -1,103 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

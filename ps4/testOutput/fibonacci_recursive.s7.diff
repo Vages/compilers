@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s7	2015-02-22 13:09:53.357147000 +0100
-+++ testOutput/fibonacci_recursive.s7	2015-02-22 14:43:50.605987000 +0100
++++ testOutput/fibonacci_recursive.s7	2015-02-22 14:48:52.445587000 +0100
 @@ -1,29 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 
