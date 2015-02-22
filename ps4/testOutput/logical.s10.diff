@@ -1,5 +1,5 @@
 --- correctOutput/logical.s10	2015-02-22 13:09:53.588146000 +0100
-+++ testOutput/logical.s10	2015-02-22 16:54:43.584898000 +0100
++++ testOutput/logical.s10	2015-02-22 16:59:36.711467000 +0100
 @@ -1,4 +1,6 @@
  Type checking assignment
 +Type error at:

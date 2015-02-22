@@ -1,5 +1,5 @@
 --- correctOutput/adding.s10	2015-02-22 13:09:52.983144000 +0100
-+++ testOutput/adding.s10	2015-02-22 16:54:39.919875000 +0100
++++ testOutput/adding.s10	2015-02-22 16:59:33.186448000 +0100
 @@ -1,2 +1,4 @@
  Type checking assignment
  Type checking expression +
