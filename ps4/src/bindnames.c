@@ -29,7 +29,7 @@ int bind_function ( node_t *root, int stackOffset)
 		stackOffset = bind_declaration(params->children[i], stackOffset);
 	}
 
-	stackOffset = -4
+	stackOffset = -4;
 
 	node_t* stmts = root->children[1];
 	int n_stmts = stmts->n_children;
