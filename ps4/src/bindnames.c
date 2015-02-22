@@ -26,7 +26,9 @@ int bind_function ( node_t *root, int stackOffset)
 	stackOffset = 4*(n_params+1);
 
 	for (int i = 0; i < n_params; i++){
-		stackOffset = bind_declaration(params->children[i], stackOffset);
+		if (params->children[i] != NULL){
+			stackOffset = bind_declaration(params->children[i], stackOffset);
+		}
 	}
 
 	stackOffset = -4;
