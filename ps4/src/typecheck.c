@@ -106,7 +106,7 @@ data_type_t typecheck_expression(node_t* root)
                         
                 case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
                     ;
-                    data_type_t l_child_dt = root->children[0]->data_type;
+                    l_child_dt = root->children[0]->data_type;
                     int iseq = equal_types(l_child_dt, root->children[1]->data_type);
                     if (!iseq){
                         type_error(root);
