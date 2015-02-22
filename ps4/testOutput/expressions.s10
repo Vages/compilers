@@ -181,8 +181,6 @@ Type checking assignment
 Type checking expression ||
 Type checking expression ||
 Type checking expression >
-Type error at:
-EXPRESSION (>)
 Type checking expression <=
 Type checking expression UMINUS
 Type error at:
@@ -265,8 +263,6 @@ Type checking expression ||
 Type checking expression ||
 Type checking expression ||
 Type checking expression >
-Type error at:
-EXPRESSION (>)
 Type checking expression &&
 Type checking expression >=
 Type error at:

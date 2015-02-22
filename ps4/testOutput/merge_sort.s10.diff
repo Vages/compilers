@@ -1,6 +1,6 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 23:05:18.283034000 +0100
-@@ -1,52 +1,116 @@
++++ testOutput/merge_sort.s10	2015-02-22 23:09:17.463269000 +0100
+@@ -1,52 +1,110 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
@@ -28,8 +28,6 @@
  Type checking expression -
 +Type error at:
 +EXPRESSION (-)
-+Type error at:
-+EXPRESSION (<=)
  Type checking assignment
  Type checking expression +
  Type checking expression /
@@ -51,8 +49,6 @@
  Type checking assignment
  Type checking assignment
  Type checking expression >=
-+Type error at:
-+EXPRESSION (>=)
  Type checking assignment
  Type checking expression ARRAY_INDEX
 +Type error at:
@@ -65,8 +61,6 @@
 +Type error at:
 +EXPRESSION (+)
  Type checking expression >=
-+Type error at:
-+EXPRESSION (>=)
  Type checking assignment
  Type checking expression ARRAY_INDEX
 +Type error at:

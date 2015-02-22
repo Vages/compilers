@@ -25,8 +25,6 @@ Type checking expression <=
 Type checking expression -
 Type error at:
 EXPRESSION (-)
-Type error at:
-EXPRESSION (<=)
 Type checking assignment
 Type checking expression +
 Type checking expression /
@@ -48,8 +46,6 @@ Type checking assignment
 Type checking assignment
 Type checking assignment
 Type checking expression >=
-Type error at:
-EXPRESSION (>=)
 Type checking assignment
 Type checking expression ARRAY_INDEX
 Type error at:
@@ -62,8 +58,6 @@ Type checking expression +
 Type error at:
 EXPRESSION (+)
 Type checking expression >=
-Type error at:
-EXPRESSION (>=)
 Type checking assignment
 Type checking expression ARRAY_INDEX
 Type error at:

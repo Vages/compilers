@@ -1,6 +1,6 @@
 --- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100
-+++ testOutput/function_medium.s10	2015-02-22 23:05:17.348033000 +0100
-@@ -3,14 +3,30 @@
++++ testOutput/function_medium.s10	2015-02-22 23:09:16.543265000 +0100
+@@ -3,11 +3,23 @@
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression +
@@ -26,10 +26,3 @@
  Type checking expression &&
  Type checking expression ||
  Type checking expression ||
- Type checking expression &&
- Type checking expression >
-+Type error at:
-+EXPRESSION (>)
- Type checking expression >
-+Type error at:
-+EXPRESSION (>)
