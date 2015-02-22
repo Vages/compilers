@@ -46,7 +46,7 @@ data_type_t typecheck_default(node_t* root)
 {
     for (int i = 0; i < root->n_children; i++){
         if (root->children[i] != NULL){
-            root->children[i]->data_type_t = (root->children[i]->typecheck)(root->children[i]);
+            root->children[i]->data_type = (root->children[i]->typecheck)(root->children[i]);
         }
     }
 }
