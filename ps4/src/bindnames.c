@@ -74,7 +74,7 @@ int bind_function_list ( node_t *root, int stackOffset)
 
 	for (int i = 0; i < root->n_children; i++){
 		function_symbol_t* fs = create_function_symbol(children[i]);
-		function_add(children[i]->label, fs);
+		function_add(root->children[i]->label, fs);
 	}
 
 	for (int j = 0; j < root->n_children; j++){
@@ -114,7 +114,7 @@ int bind_declaration ( node_t *root, int stackOffset)
 	if(outputStage == 6)
 		printf( "DECLARATION: parameter/variable : '%s', offset: %d\n", root->label, stackOffset);
 
-	s = create_symbol(root, stackOffset);
+	symbol_t* s = create_symbol(root, stackOffset);
 	symbol_insert(s->label, s);
 
 	stackOffset -= 4; // Eirik: stackOffset must be decremented, as per p. 14 in the recitation
