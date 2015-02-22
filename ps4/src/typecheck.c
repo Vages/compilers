@@ -92,17 +92,23 @@ data_type_t typecheck_expression(node_t* root)
             
             switch(root->expression_type.index)
             {
-                int eq_types = equal_types(root->children[0]->data_type, root->children[1]->data_type);
-                data_type_t child_dt = root->children[0]->data_type;
                 case ADD_E: case SUB_E: case DIV_E: case MUL_E:
-                    if (!(equal_types) || ((child_dt.base_type != INT_TYPE)&&(child_dt.base_type != FLOAT_TYPE))){
+                    l_child_dt = root->children[0]->data_type;
+                    int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
+                    if (!eq_types){
+                        type_error(root);
+                    } else if ((l_child_dt != INT_TYPE) || (l_child_dt != FLOAT_TYPE)){
                         type_error(root);
                     }
-                    return child_dt;
+                    return l_child_dt;
                     break;
                         
                 case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
-                    if (!(equal_types) || ((child_dt.base_type != INT_TYPE)&&(child_dt.base_type != FLOAT_TYPE))){
+                    l_child_dt = root->children[0]->data_type;
+                    int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
+                    if (!eq_types){
+                        type_error(root);
+                    } else if ((l_child_dt != INT_TYPE) || (l_child_dt != FLOAT_TYPE)){
                         type_error(root);
                     }
                     data_type_t dt = {.base_type = BOOL_TYPE}
@@ -110,14 +116,22 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                         
                 case AND_E: case OR_E:
-                    if (!(equal_types) || (child_dt.base_type != BOOL_TYPE)){
+                    l_child_dt = root->children[0]->data_type;
+                    int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
+                    if (!eq_types){
+                        type_error(root);
+                    } else if (l_child_dt != BOOL_TYPE){
                         type_error(root);
                     }
                     return child_dt;
                     break;
                     
                 case EQUAL_E: case NEQUAL_E:
-                    if (!(equal_types) || ((child_dt.base_type != INT_TYPE)&&(child_dt.base_type != FLOAT_TYPE))){
+                    l_child_dt = root->children[0]->data_type;
+                    int eq_types = equal_types(l_child_dt, root->children[1]->data_type);
+                    if (!eq_types){
+                        type_error(root);
+                    } else if ((l_child_dt != INT_TYPE) || (l_child_dt != FLOAT_TYPE) || (l_child_dt != BOOL_TYPE)){
                         type_error(root);
                     }
                     data_type_t dt = {.base_type = BOOL_TYPE}
