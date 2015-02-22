@@ -1,6 +1,6 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 22:41:43.249734000 +0100
-@@ -1,52 +1,96 @@
++++ testOutput/merge_sort.s10	2015-02-22 23:05:18.283034000 +0100
+@@ -1,52 +1,116 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
@@ -8,6 +8,8 @@
  Type checking assignment
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression -
 +Type error at:
 +EXPRESSION (-)
@@ -20,6 +22,8 @@
 +EXPRESSION (FUNC_CALL)
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression <=
  Type checking expression -
 +Type error at:
@@ -51,9 +55,11 @@
 +EXPRESSION (>=)
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
 +Type error at:
-+ASSIGNMENT_STATEMENT
++EXPRESSION (ARRAY_INDEX)
  Type checking assignment
  Type checking expression +
 +Type error at:
@@ -63,30 +69,42 @@
 +EXPRESSION (>=)
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
 +Type error at:
-+ASSIGNMENT_STATEMENT
++EXPRESSION (ARRAY_INDEX)
  Type checking assignment
  Type checking expression +
 +Type error at:
 +EXPRESSION (+)
  Type checking expression <
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
 +Type error at:
 +EXPRESSION (<)
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
 +Type error at:
-+ASSIGNMENT_STATEMENT
++EXPRESSION (ARRAY_INDEX)
  Type checking assignment
  Type checking expression +
 +Type error at:
 +EXPRESSION (+)
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking assignment
  Type checking expression +
 +Type error at:
@@ -94,6 +112,8 @@
  Type checking assignment
  Type checking assignment
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
 +Type error at:
-+ASSIGNMENT_STATEMENT
++EXPRESSION (ARRAY_INDEX)

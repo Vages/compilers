@@ -5,6 +5,8 @@ ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression -
 Type error at:
 EXPRESSION (-)
@@ -17,6 +19,8 @@ Type error at:
 EXPRESSION (FUNC_CALL)
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression <=
 Type checking expression -
 Type error at:
@@ -48,9 +52,11 @@ Type error at:
 EXPRESSION (>=)
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression ARRAY_INDEX
 Type error at:
-ASSIGNMENT_STATEMENT
+EXPRESSION (ARRAY_INDEX)
 Type checking assignment
 Type checking expression +
 Type error at:
@@ -60,30 +66,42 @@ Type error at:
 EXPRESSION (>=)
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression ARRAY_INDEX
 Type error at:
-ASSIGNMENT_STATEMENT
+EXPRESSION (ARRAY_INDEX)
 Type checking assignment
 Type checking expression +
 Type error at:
 EXPRESSION (+)
 Type checking expression <
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type error at:
 EXPRESSION (<)
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression ARRAY_INDEX
 Type error at:
-ASSIGNMENT_STATEMENT
+EXPRESSION (ARRAY_INDEX)
 Type checking assignment
 Type checking expression +
 Type error at:
 EXPRESSION (+)
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking assignment
 Type checking expression +
 Type error at:
@@ -91,6 +109,8 @@ EXPRESSION (+)
 Type checking assignment
 Type checking assignment
 Type checking expression ARRAY_INDEX
+Type error at:
+EXPRESSION (ARRAY_INDEX)
 Type checking expression ARRAY_INDEX
 Type error at:
-ASSIGNMENT_STATEMENT
+EXPRESSION (ARRAY_INDEX)

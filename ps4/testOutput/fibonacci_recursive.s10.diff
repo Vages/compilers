@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s10	2015-02-22 13:09:53.343149000 +0100
-+++ testOutput/fibonacci_recursive.s10	2015-02-22 22:41:41.952727000 +0100
++++ testOutput/fibonacci_recursive.s10	2015-02-22 23:05:16.952028000 +0100
 @@ -2,12 +2,20 @@
  Type checking expression FUNC_CALL
  Type checking assignment

@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s10	2015-02-22 13:09:53.231147000 +0100
-+++ testOutput/compare_int.s10	2015-02-22 22:41:40.857721000 +0100
++++ testOutput/compare_int.s10	2015-02-22 23:05:15.899021000 +0100
 @@ -1,41 +1,81 @@
  Type checking assignment
  Type checking assignment
