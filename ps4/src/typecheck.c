@@ -49,6 +49,8 @@ data_type_t typecheck_default(node_t* root)
             root->children[i]->data_type = (root->children[i]->typecheck)(root->children[i]);
         }
     }
+
+    return root->data_type;
 }
 
 data_type_t typecheck_expression(node_t* root)
