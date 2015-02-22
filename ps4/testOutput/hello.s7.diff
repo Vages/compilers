@@ -1,0 +1,10 @@
+--- correctOutput/hello.s7	2015-02-22 13:09:53.521146000 +0100
++++ testOutput/hello.s7	2015-02-22 13:33:28.354629000 +0100
+@@ -1,7 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function hello VOID<=() 
+-Add scope, index: 2 
+-Add strings ("Hello, world!"), index: 0 
+-Remove scope, index: 1 
+-Remove scope, index: 0 

@@ -1,0 +1,11 @@
+--- correctOutput/if_simple.s7	2015-02-22 13:09:53.579146000 +0100
++++ testOutput/if_simple.s7	2015-02-22 13:33:30.898644000 +0100
+@@ -1,8 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Add scope, index: 2 
+-Add strings ("true"), index: 0 
+-Add strings ("false"), index: 1 
+-Remove scope, index: 1 
+-Remove scope, index: 0 

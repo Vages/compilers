@@ -1,0 +1,20 @@
+--- correctOutput/strings_and_comments.s9	2015-02-22 13:09:53.844147000 +0100
++++ testOutput/strings_and_comments.s9	2015-02-22 13:33:54.952770000 +0100
+@@ -1,17 +0,0 @@
+- PROGRAM
+- FUNCTION_LIST
+-  FUNCTION, ("main"), (nil)
+-   (nil)
+-   STATEMENT_LIST
+-    PRINT_STATEMENT
+-     EXPRESSION_LIST
+-      CONSTANT
+-    PRINT_STATEMENT
+-     EXPRESSION_LIST
+-      CONSTANT
+-    PRINT_STATEMENT
+-     EXPRESSION_LIST
+-      CONSTANT
+-    PRINT_STATEMENT
+-     EXPRESSION_LIST
+-      CONSTANT

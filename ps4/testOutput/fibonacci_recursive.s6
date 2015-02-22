@@ -1,0 +1,4 @@
+FUNCTION_LIST: Start
+FUNCTION: Start: fibonacci_recursive
+DECLARATION: parameter/variable : 'n', offset: 8
+VARIABLE: access: f

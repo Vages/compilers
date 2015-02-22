@@ -1,0 +1,15 @@
+--- correctOutput/function_simple.s7	2015-02-22 13:09:53.500145000 +0100
++++ testOutput/function_simple.s7	2015-02-22 13:33:27.529628000 +0100
+@@ -1,12 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Inserting function function VOID<=() 
+-Add scope, index: 2 
+-Add strings ("In main()"), index: 0 
+-Retrieving function function
+-Remove scope, index: 1 
+-Add scope, index: 2 
+-Add strings ("In function()"), index: 1 
+-Remove scope, index: 1 
+-Remove scope, index: 0 

@@ -1,0 +1,13 @@
+--- correctOutput/array_simple.s10	2015-02-22 13:09:53.135143000 +0100
++++ testOutput/array_simple.s10	2015-02-22 13:32:57.927469000 +0100
+@@ -1,10 +0,0 @@
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment
+-Type checking expression NEW
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX

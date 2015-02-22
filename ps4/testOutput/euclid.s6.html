@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/euclid.s6	2015-02-22 13:09:53.269144000 +0100</span>
+<span class="plus3">+++ testOutput/euclid.s6	2015-02-22 13:33:06.827516000 +0100</span>
+<span class="at2">@@ -1,50 +0,0 @@</span>
+<span class="minus">-FUNCTION_LIST: Start</span>
+<span class="minus">-FUNCTION: Start: euclid</span>
+<span class="minus">-DECLARATION: parameter/variable : 'a', offset: 12</span>
+<span class="minus">-DECLARATION: parameter/variable : 'b', offset: 8</span>
+<span class="minus">-EXPRESSION: Start: -</span>
+<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-FUNCTION: End</span>
+<span class="minus">-FUNCTION: Start: gcd</span>
+<span class="minus">-DECLARATION: parameter/variable : 'a', offset: 12</span>
+<span class="minus">-DECLARATION: parameter/variable : 'b', offset: 8</span>
+<span class="minus">-DECLARATION: parameter/variable : 'g', offset: -4</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-VARIABLE: access: g</span>
+<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-EXPRESSION: Start: -</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-EXPRESSION: Start: *</span>
+<span class="minus">-EXPRESSION: Start: /</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-VARIABLE: access: g</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-VARIABLE: access: g</span>
+<span class="minus">-FUNCTION: End</span>
+<span class="minus">-FUNCTION_LIST: End</span></span>
+</pre>
+</body>
+</html>

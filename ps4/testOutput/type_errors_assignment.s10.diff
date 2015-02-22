@@ -1,0 +1,21 @@
+--- correctOutput/type_errors_assignment.s10	2015-02-22 13:09:53.877147000 +0100
++++ testOutput/type_errors_assignment.s10	2015-02-22 13:33:57.821786000 +0100
+@@ -1,18 +0,0 @@
+-Type checking assignment
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type error at:
+-ASSIGNMENT_STATEMENT

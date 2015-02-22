@@ -1,0 +1,15 @@
+--- correctOutput/while_simple.s7	2015-02-22 13:09:53.999148000 +0100
++++ testOutput/while_simple.s7	2015-02-22 13:34:02.611811000 +0100
+@@ -1,12 +0,0 @@
+-Add scope, index: 0 
+-Add scope, index: 1 
+-Inserting function main VOID<=() 
+-Add scope, index: 2 
+-Inserting variable a INT depth:2 offset:-4
+-Retrieving variable a
+-Retrieving variable a
+-Retrieving variable a
+-Retrieving variable a
+-Retrieving variable a
+-Remove scope, index: 1 
+-Remove scope, index: 0 

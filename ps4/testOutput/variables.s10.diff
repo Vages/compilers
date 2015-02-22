@@ -1,0 +1,6 @@
+--- correctOutput/variables.s10	2015-02-22 13:09:53.931148000 +0100
++++ testOutput/variables.s10	2015-02-22 13:34:00.451800000 +0100
+@@ -1,3 +0,0 @@
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment

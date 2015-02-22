@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/arithmetic_int.s7	2015-02-22 13:09:53.065146000 +0100</span>
+<span class="plus3">+++ testOutput/arithmetic_int.s7	2015-02-22 13:32:48.489420000 +0100</span>
+<span class="at2">@@ -1,134 +0,0 @@</span>
+<span class="minus">-Add scope, index: 0 </span>
+<span class="minus">-Add scope, index: 1 </span>
+<span class="minus">-Inserting function main VOID&lt;=() </span>
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable a INT depth:2 offset:-4</span>
+<span class="minus">-Inserting variable b INT depth:2 offset:-8</span>
+<span class="minus">-Inserting variable c INT depth:2 offset:-12</span>
+<span class="minus">-Inserting variable d INT depth:2 offset:-16</span>
+<span class="minus">-Inserting variable e INT depth:2 offset:-20</span>
+<span class="minus">-Inserting variable f INT depth:2 offset:-24</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable d</span>
+<span class="minus">-Retrieving variable e</span>
+<span class="minus">-Retrieving variable f</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Remove scope, index: 0 </span></span>
+</pre>
+</body>
+</html>

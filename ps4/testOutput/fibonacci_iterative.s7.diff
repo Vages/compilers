@@ -1,0 +1,36 @@
+--- correctOutput/fibonacci_iterative.s7	2015-02-22 13:09:53.334146000 +0100
++++ testOutput/fibonacci_iterative.s7	2015-02-22 13:33:17.152571000 +0100
+@@ -1,31 +1,4 @@
+ Add scope, index: 0 
+-Add scope, index: 1 
+ Inserting function fibonacci_iterative INT<=(INT) 
+-Add scope, index: 2 
+-Inserting variable n INT depth:2 offset:8
+-Inserting variable x INT depth:2 offset:-4
+-Inserting variable y INT depth:2 offset:-8
+-Inserting variable f INT depth:2 offset:-12
+-Retrieving variable x
+-Retrieving variable y
+-Retrieving variable f
+-Retrieving variable n
+-Inserting variable i INT depth:2 offset:-16
+-Retrieving variable i
+-Retrieving variable i
+-Retrieving variable n
+-Retrieving variable f
+-Retrieving variable x
+-Retrieving variable y
+-Retrieving variable x
+-Retrieving variable y
+-Retrieving variable y
+-Retrieving variable f
+-Retrieving variable i
+-Retrieving variable i
+-Add strings ("Fibonacci number #"), index: 0 
+-Retrieving variable n
+-Add strings ("is "), index: 1 
+-Retrieving variable f
+-Remove scope, index: 1 
+-Remove scope, index: 0 
++Add scope, index: 1 
++Inserting variable n INT depth:1 offset:8

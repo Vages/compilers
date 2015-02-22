@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/array_types.s7	2015-02-22 13:09:53.186144000 +0100</span>
+<span class="plus3">+++ testOutput/array_types.s7	2015-02-22 13:32:58.671473000 +0100</span>
+<span class="at2">@@ -1,19 +0,0 @@</span>
+<span class="minus">-Add scope, index: 0 </span>
+<span class="minus">-Add scope, index: 1 </span>
+<span class="minus">-Inserting function main VOID&lt;=() </span>
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable a ARRAY(INT)[3][4][5] depth:2 offset:-4</span>
+<span class="minus">-Inserting variable b ARRAY(INT)[4][5] depth:2 offset:-8</span>
+<span class="minus">-Inserting variable c ARRAY(INT)[5] depth:2 offset:-12</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Remove scope, index: 0 </span></span>
+</pre>
+</body>
+</html>

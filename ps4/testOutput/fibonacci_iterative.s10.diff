@@ -1,0 +1,15 @@
+--- correctOutput/fibonacci_iterative.s10	2015-02-22 13:09:53.321144000 +0100
++++ testOutput/fibonacci_iterative.s10	2015-02-22 13:33:18.155576000 +0100
+@@ -1,12 +0,0 @@
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment
+-Type checking expression >=
+-Type checking assignment
+-Type checking expression <
+-Type checking assignment
+-Type checking expression +
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment
+-Type checking expression +

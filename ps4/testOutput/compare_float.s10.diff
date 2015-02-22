@@ -1,0 +1,44 @@
+--- correctOutput/compare_float.s10	2015-02-22 13:09:53.195144000 +0100
++++ testOutput/compare_float.s10	2015-02-22 13:33:02.965497000 +0100
+@@ -1,41 +0,0 @@
+-Type checking assignment
+-Type checking assignment
+-Type checking expression UMINUS
+-Type checking assignment
+-Type checking assignment
+-Type checking expression >
+-Type checking assignment
+-Type checking expression >
+-Type checking assignment
+-Type checking expression >
+-Type checking assignment
+-Type checking expression <
+-Type checking assignment
+-Type checking expression <
+-Type checking assignment
+-Type checking expression <
+-Type checking assignment
+-Type checking assignment
+-Type checking expression >=
+-Type checking assignment
+-Type checking expression >=
+-Type checking assignment
+-Type checking expression >=
+-Type checking assignment
+-Type checking expression <=
+-Type checking assignment
+-Type checking expression <=
+-Type checking assignment
+-Type checking expression <=
+-Type checking assignment
+-Type checking expression ==
+-Type checking assignment
+-Type checking expression ==
+-Type checking assignment
+-Type checking expression ==
+-Type checking assignment
+-Type checking expression !=
+-Type checking assignment
+-Type checking expression !=
+-Type checking assignment
+-Type checking expression !=

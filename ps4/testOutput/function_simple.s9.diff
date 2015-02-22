@@ -1,0 +1,20 @@
+--- correctOutput/function_simple.s9	2015-02-22 13:09:53.504148000 +0100
++++ testOutput/function_simple.s9	2015-02-22 13:33:27.863629000 +0100
+@@ -1,17 +0,0 @@
+- PROGRAM
+- FUNCTION_LIST
+-  FUNCTION, ("main"), (nil)
+-   (nil)
+-   STATEMENT_LIST
+-    PRINT_STATEMENT
+-     EXPRESSION_LIST
+-      CONSTANT
+-    EXPRESSION
+-     VARIABLE, ("function"), (nil)
+-     (nil)
+-  FUNCTION, ("function"), (nil)
+-   (nil)
+-   STATEMENT_LIST
+-    PRINT_STATEMENT
+-     EXPRESSION_LIST
+-      CONSTANT

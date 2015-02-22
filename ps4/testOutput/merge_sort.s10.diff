@@ -1,0 +1,55 @@
+--- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
++++ testOutput/merge_sort.s10	2015-02-22 13:33:46.197745000 +0100
+@@ -1,52 +0,0 @@
+-Type checking assignment
+-Type checking expression NEW
+-Type checking assignment
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression -
+-Type checking expression FUNC_CALL
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression <=
+-Type checking expression -
+-Type checking assignment
+-Type checking expression +
+-Type checking expression /
+-Type checking expression -
+-Type checking expression FUNC_CALL
+-Type checking expression FUNC_CALL
+-Type checking expression FUNC_CALL
+-Type checking assignment
+-Type checking expression NEW
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment
+-Type checking expression >=
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking expression +
+-Type checking expression >=
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking expression +
+-Type checking expression <
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking expression +
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking expression +
+-Type checking assignment
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX

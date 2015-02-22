@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/for_hard.s7	2015-02-22 13:09:53.380145000 +0100</span>
+<span class="plus3">+++ testOutput/for_hard.s7	2015-02-22 13:33:20.432588000 +0100</span>
+<span class="at2">@@ -1,27 +0,0 @@</span>
+<span class="minus">-Add scope, index: 0 </span>
+<span class="minus">-Add scope, index: 1 </span>
+<span class="minus">-Inserting function main VOID&lt;=() </span>
+<span class="minus">-Inserting function print VOID&lt;=(INT,INT,INT) </span>
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable i INT depth:2 offset:-4</span>
+<span class="minus">-Retrieving variable i</span>
+<span class="minus">-Inserting variable j INT depth:2 offset:-8</span>
+<span class="minus">-Retrieving variable j</span>
+<span class="minus">-Retrieving variable i</span>
+<span class="minus">-Inserting variable k INT depth:2 offset:-12</span>
+<span class="minus">-Retrieving variable k</span>
+<span class="minus">-Retrieving variable j</span>
+<span class="minus">-Retrieving function print</span>
+<span class="minus">-Retrieving variable i</span>
+<span class="minus">-Retrieving variable j</span>
+<span class="minus">-Retrieving variable k</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable a INT depth:2 offset:16</span>
+<span class="minus">-Inserting variable b INT depth:2 offset:12</span>
+<span class="minus">-Inserting variable c INT depth:2 offset:8</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Remove scope, index: 0 </span></span>
+</pre>
+</body>
+</html>

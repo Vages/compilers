@@ -1,0 +1,43 @@
+--- correctOutput/type_errors_arrays.s10	2015-02-22 13:09:53.848147000 +0100
++++ testOutput/type_errors_arrays.s10	2015-02-22 13:33:56.504779000 +0100
+@@ -1,40 +0,0 @@
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT
+-Type checking assignment
+-Type checking expression NEW
+-Type error at:
+-ASSIGNMENT_STATEMENT

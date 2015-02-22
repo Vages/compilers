@@ -1,0 +1,79 @@
+--- correctOutput/if_hard.s9	2015-02-22 13:09:53.555149000 +0100
++++ testOutput/if_hard.s9	2015-02-22 13:33:29.860638000 +0100
+@@ -1,76 +0,0 @@
+- PROGRAM
+- FUNCTION_LIST
+-  FUNCTION, ("while_test"), (nil)
+-   (nil)
+-   STATEMENT_LIST
+-    DECLARATION_STATEMENT
+-    DECLARATION_STATEMENT
+-    ASSIGNMENT_STATEMENT
+-     VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+-     CONSTANT
+-    ASSIGNMENT_STATEMENT
+-     VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+-     EXPRESSION
+-      CONSTANT
+-    IF_STATEMENT
+-     EXPRESSION
+-      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+-      CONSTANT
+-     STATEMENT_LIST
+-      PRINT_STATEMENT
+-       EXPRESSION_LIST
+-        CONSTANT
+-    IF_STATEMENT
+-     EXPRESSION
+-      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+-      CONSTANT
+-     STATEMENT_LIST
+-      IF_STATEMENT
+-       EXPRESSION
+-        VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+-        EXPRESSION
+-         CONSTANT
+-       STATEMENT_LIST
+-        PRINT_STATEMENT
+-         EXPRESSION_LIST
+-          CONSTANT
+-       STATEMENT_LIST
+-        PRINT_STATEMENT
+-         EXPRESSION_LIST
+-          CONSTANT
+-     STATEMENT_LIST
+-      PRINT_STATEMENT
+-       EXPRESSION_LIST
+-        CONSTANT
+-    IF_STATEMENT
+-     EXPRESSION
+-      VARIABLE, ("a"), depth: 2, stack_offset: -4, entry label: "a"
+-      CONSTANT
+-     STATEMENT_LIST
+-      IF_STATEMENT
+-       EXPRESSION
+-        VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+-        CONSTANT
+-       STATEMENT_LIST
+-        PRINT_STATEMENT
+-         EXPRESSION_LIST
+-          CONSTANT
+-       STATEMENT_LIST
+-        PRINT_STATEMENT
+-         EXPRESSION_LIST
+-          CONSTANT
+-     STATEMENT_LIST
+-      IF_STATEMENT
+-       EXPRESSION
+-        VARIABLE, ("b"), depth: 2, stack_offset: -8, entry label: "b"
+-        CONSTANT
+-       STATEMENT_LIST
+-        PRINT_STATEMENT
+-         EXPRESSION_LIST
+-          CONSTANT
+-       STATEMENT_LIST
+-        PRINT_STATEMENT
+-         EXPRESSION_LIST
+-          CONSTANT
+-    RETURN_STATEMENT
+-     CONSTANT

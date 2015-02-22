@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/variables.s7	2015-02-22 13:09:53.949149000 +0100</span>
+<span class="plus3">+++ testOutput/variables.s7	2015-02-22 13:33:59.955797000 +0100</span>
+<span class="at2">@@ -1,12 +0,0 @@</span>
+<span class="minus">-Add scope, index: 0 </span>
+<span class="minus">-Add scope, index: 1 </span>
+<span class="minus">-Inserting function main VOID&lt;=() </span>
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable a INT depth:2 offset:-4</span>
+<span class="minus">-Inserting variable b BOOL depth:2 offset:-8</span>
+<span class="minus">-Inserting variable c FLOAT depth:2 offset:-12</span>
+<span class="minus">-Retrieving variable a</span>
+<span class="minus">-Retrieving variable b</span>
+<span class="minus">-Retrieving variable c</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Remove scope, index: 0 </span></span>
+</pre>
+</body>
+</html>

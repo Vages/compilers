@@ -1,0 +1,73 @@
+--- correctOutput/matrix_multiply.s10	2015-02-22 13:09:53.619150000 +0100
++++ testOutput/matrix_multiply.s10	2015-02-22 13:33:39.347688000 +0100
+@@ -1,70 +0,0 @@
+-Type checking assignment
+-Type checking expression NEW
+-Type checking assignment
+-Type checking expression NEW
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression +
+-Type checking expression *
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression -
+-Type checking expression +
+-Type checking expression *
+-Type checking assignment
+-Type checking expression NEW
+-Type checking assignment
+-Type checking assignment
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking assignment
+-Type checking assignment
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression +
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression *
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/for_hard.s6	2015-02-22 13:09:53.377146000 +0100</span>
+<span class="plus3">+++ testOutput/for_hard.s6	2015-02-22 13:33:20.115586000 +0100</span>
+<span class="at2">@@ -1,33 +0,0 @@</span>
+<span class="minus">-FUNCTION_LIST: Start</span>
+<span class="minus">-FUNCTION: Start: main</span>
+<span class="minus">-DECLARATION: parameter/variable : 'i', offset: -4</span>
+<span class="minus">-VARIABLE: access: i</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-DECLARATION: parameter/variable : 'j', offset: -8</span>
+<span class="minus">-VARIABLE: access: j</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-VARIABLE: access: i</span>
+<span class="minus">-DECLARATION: parameter/variable : 'k', offset: -12</span>
+<span class="minus">-VARIABLE: access: k</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-VARIABLE: access: j</span>
+<span class="minus">-EXPRESSION: Start: FUNC_CALL</span>
+<span class="minus">-VARIABLE: access: i</span>
+<span class="minus">-VARIABLE: access: j</span>
+<span class="minus">-VARIABLE: access: k</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-FUNCTION: End</span>
+<span class="minus">-FUNCTION: Start: print</span>
+<span class="minus">-DECLARATION: parameter/variable : 'a', offset: 16</span>
+<span class="minus">-DECLARATION: parameter/variable : 'b', offset: 12</span>
+<span class="minus">-DECLARATION: parameter/variable : 'c', offset: 8</span>
+<span class="minus">-VARIABLE: access: a</span>
+<span class="minus">-EXPRESSION: Start: UMINUS</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-EXPRESSION: End</span>
+<span class="minus">-CONSTANT</span>
+<span class="minus">-VARIABLE: access: b</span>
+<span class="minus">-VARIABLE: access: c</span>
+<span class="minus">-FUNCTION: End</span>
+<span class="minus">-FUNCTION_LIST: End</span></span>
+</pre>
+</body>
+</html>

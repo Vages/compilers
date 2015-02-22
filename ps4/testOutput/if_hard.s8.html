@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/if_hard.s8	2015-02-22 13:09:53.553146000 +0100</span>
+<span class="plus3">+++ testOutput/if_hard.s8	2015-02-22 13:33:29.587637000 +0100</span>
+<span class="at2">@@ -1,28 +0,0 @@</span>
+<span class="minus">-.syntax unified</span>
+<span class="minus">-.cpu cortex-a15</span>
+<span class="minus">-.fpu vfpv3-d16</span>
+<span class="minus">-.data</span>
+<span class="minus">-.align	2</span>
+<span class="minus">-.DEBUG: .ascii "Hit Debug\n\000"</span>
+<span class="minus">-.DEBUGINT: .ascii "Hit Debug, r0 was: %d\n\000"</span>
+<span class="minus">-.INTEGER: .ascii "%d \000"</span>
+<span class="minus">-.FLOAT: .ascii "%f \000"</span>
+<span class="minus">-.NEWLINE: .ascii "\n \000"</span>
+<span class="minus">-.STRING0: .ascii "A is different from 10"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING1: .ascii "B is different from -15"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING2: .ascii "B equals -15"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING3: .ascii "This never happens..."</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING4: .ascii "a &gt;0, b &gt; 0"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING5: .ascii "a &gt; 0, b &lt;= 0"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING6: .ascii "a &lt;= 0, b &gt; 0"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.STRING7: .ascii "a &lt;= 0, b &lt;= 0"</span>
+<span class="minus">-.ascii "\000"</span>
+<span class="minus">-.globl main</span>
+<span class="minus">-.align	2</span></span>
+</pre>
+</body>
+</html>

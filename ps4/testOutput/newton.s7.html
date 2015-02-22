@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/newton.s7	2015-02-22 13:09:53.733146000 +0100</span>
+<span class="plus3">+++ testOutput/newton.s7	2015-02-22 13:33:47.905733000 +0100</span>
+<span class="at2">@@ -1,33 +1,5 @@</span>
+ Add scope, index: 0 
+<span class="minus">-Add scope, index: 1 </span>
+ Inserting function newton INT&lt;=(INT) 
+ Inserting function improve INT&lt;=(INT,INT) 
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable n INT depth:2 offset:8</span>
+<span class="minus">-Inserting variable square_root INT depth:2 offset:-4</span>
+<span class="minus">-Retrieving variable square_root</span>
+<span class="minus">-Retrieving function improve</span>
+<span class="minus">-Retrieving variable n</span>
+<span class="minus">-Add strings ("The square root of"), index: 0 </span>
+<span class="minus">-Retrieving variable n</span>
+<span class="minus">-Add strings ("is"), index: 1 </span>
+<span class="minus">-Retrieving variable square_root</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Add scope, index: 2 </span>
+<span class="minus">-Inserting variable n INT depth:2 offset:12</span>
+<span class="minus">-Inserting variable estimate INT depth:2 offset:8</span>
+<span class="minus">-Inserting variable next INT depth:2 offset:-4</span>
+<span class="minus">-Retrieving variable next</span>
+<span class="minus">-Retrieving variable estimate</span>
+<span class="minus">-Retrieving variable estimate</span>
+<span class="minus">-Retrieving variable estimate</span>
+<span class="minus">-Retrieving variable n</span>
+<span class="minus">-Retrieving variable estimate</span>
+<span class="minus">-Retrieving variable next</span>
+<span class="minus">-Retrieving variable estimate</span>
+<span class="minus">-Retrieving function improve</span>
+<span class="minus">-Retrieving variable n</span>
+<span class="minus">-Retrieving variable next</span>
+<span class="minus">-Retrieving variable next</span>
+<span class="minus">-Remove scope, index: 1 </span>
+<span class="minus">-Remove scope, index: 0 </span>
+<span class="plus">+Add scope, index: 1 </span>
+<span class="plus">+Inserting variable n INT depth:1 offset:8</span></span>
+</pre>
+</body>
+</html>
