@@ -1,6 +1,6 @@
 --- correctOutput/while_hard.s10	2015-02-22 13:09:53.957148000 +0100
-+++ testOutput/while_hard.s10	2015-02-22 16:59:38.557477000 +0100
-@@ -1,15 +1,29 @@
++++ testOutput/while_hard.s10	2015-02-22 17:07:53.662142000 +0100
+@@ -1,15 +1,39 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
@@ -18,15 +18,25 @@
  Type checking expression <
  Type checking expression *
  Type checking expression *
++Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (*)
  Type checking assignment
  Type checking expression +
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression -
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression -
++Type error at:
++EXPRESSION (-)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression -
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT

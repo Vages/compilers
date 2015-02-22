@@ -1,7 +1,9 @@
 --- correctOutput/adding.s10	2015-02-22 13:09:52.983144000 +0100
-+++ testOutput/adding.s10	2015-02-22 16:59:33.186448000 +0100
-@@ -1,2 +1,4 @@
++++ testOutput/adding.s10	2015-02-22 17:07:47.022103000 +0100
+@@ -1,2 +1,6 @@
  Type checking assignment
  Type checking expression +
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT

@@ -1,6 +1,6 @@
 --- correctOutput/newton.s10	2015-02-22 13:09:53.720149000 +0100
-+++ testOutput/newton.s10	2015-02-22 16:59:37.649472000 +0100
-@@ -1,11 +1,15 @@
++++ testOutput/newton.s10	2015-02-22 17:07:52.658134000 +0100
+@@ -1,11 +1,29 @@
  Type checking assignment
  Type checking expression FUNC_CALL
 +Type error at:
@@ -10,9 +10,23 @@
  Type checking expression /
  Type checking expression -
  Type checking expression *
++Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (-)
  Type checking expression *
++Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (/)
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression -
++Type error at:
++EXPRESSION (-)
  Type checking expression FUNC_CALL
  Type checking expression -
++Type error at:
++EXPRESSION (-)

@@ -6,12 +6,22 @@ Type checking assignment
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking expression -
+Type error at:
+EXPRESSION (-)
 Type checking expression -
+Type error at:
+EXPRESSION (-)
 Type checking assignment
 Type checking expression +
 Type checking expression FUNC_CALL
 Type checking expression -
+Type error at:
+EXPRESSION (-)
 Type checking expression FUNC_CALL
 Type checking expression -
+Type error at:
+EXPRESSION (-)
+Type error at:
+EXPRESSION (+)
 Type error at:
 ASSIGNMENT_STATEMENT

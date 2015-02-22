@@ -9,6 +9,8 @@ Type checking assignment
 Type checking expression ARRAY_INDEX
 Type checking expression -
 Type error at:
+EXPRESSION (-)
+Type error at:
 ASSIGNMENT_STATEMENT
 Type checking expression FUNC_CALL
 Type checking assignment
@@ -17,10 +19,18 @@ ASSIGNMENT_STATEMENT
 Type checking expression ARRAY_INDEX
 Type checking expression <=
 Type checking expression -
+Type error at:
+EXPRESSION (-)
 Type checking assignment
 Type checking expression +
 Type checking expression /
 Type checking expression -
+Type error at:
+EXPRESSION (-)
+Type error at:
+EXPRESSION (/)
+Type error at:
+EXPRESSION (+)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking expression FUNC_CALL
@@ -43,10 +53,10 @@ Type checking expression >=
 Type checking assignment
 Type checking expression ARRAY_INDEX
 Type checking expression ARRAY_INDEX
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +
+Type error at:
+EXPRESSION (+)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking expression >=
@@ -57,6 +67,8 @@ Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +
+Type error at:
+EXPRESSION (+)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking expression <
@@ -70,6 +82,8 @@ ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +
 Type error at:
+EXPRESSION (+)
+Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ARRAY_INDEX
@@ -78,6 +92,8 @@ Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +
+Type error at:
+EXPRESSION (+)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment

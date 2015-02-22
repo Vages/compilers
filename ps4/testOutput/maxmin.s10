@@ -5,8 +5,6 @@ ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression FUNC_CALL
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (UMINUS)
 Type checking assignment
 Type checking expression FUNC_CALL
 Type checking expression >

@@ -1,6 +1,6 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 16:59:37.329471000 +0100
-@@ -1,11 +1,19 @@
++++ testOutput/merge_sort.s10	2015-02-22 17:07:52.295131000 +0100
+@@ -1,52 +1,106 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
@@ -11,6 +11,8 @@
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression -
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression FUNC_CALL
@@ -20,10 +22,18 @@
  Type checking expression ARRAY_INDEX
  Type checking expression <=
  Type checking expression -
-@@ -13,40 +21,70 @@
++Type error at:
++EXPRESSION (-)
+ Type checking assignment
  Type checking expression +
  Type checking expression /
  Type checking expression -
++Type error at:
++EXPRESSION (-)
++Type error at:
++EXPRESSION (/)
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression FUNC_CALL
@@ -46,10 +56,10 @@
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression >=
@@ -60,6 +70,8 @@
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression <
@@ -73,6 +85,8 @@
  Type checking assignment
  Type checking expression +
 +Type error at:
++EXPRESSION (+)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
@@ -81,6 +95,8 @@
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment

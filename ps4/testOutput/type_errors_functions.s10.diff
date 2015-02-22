@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s10	2015-02-22 13:09:53.898147000 +0100
-+++ testOutput/type_errors_functions.s10	2015-02-22 16:59:38.370476000 +0100
++++ testOutput/type_errors_functions.s10	2015-02-22 17:07:53.458138000 +0100
 @@ -4,15 +4,7 @@
  ASSIGNMENT_STATEMENT
  Type checking assignment

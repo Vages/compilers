@@ -1,11 +1,13 @@
 --- correctOutput/while_simple.s10	2015-02-22 13:09:53.979148000 +0100
-+++ testOutput/while_simple.s10	2015-02-22 16:59:38.699479000 +0100
-@@ -1,4 +1,8 @@
++++ testOutput/while_simple.s10	2015-02-22 17:07:53.821144000 +0100
+@@ -1,4 +1,10 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression >
  Type checking assignment
  Type checking expression -
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT

@@ -16,8 +16,8 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/arithmetic_float.s10	2015-02-22 13:09:53.011143000 +0100</span>
-<span class="plus3">+++ testOutput/arithmetic_float.s10	2015-02-22 16:59:33.272450000 +0100</span>
-<span class="at2">@@ -1,73 +1,147 @@</span>
+<span class="plus3">+++ testOutput/arithmetic_float.s10	2015-02-22 17:07:47.120103000 +0100</span>
+<span class="at2">@@ -1,73 +1,217 @@</span>
  Type checking assignment
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
@@ -49,25 +49,37 @@
  Type checking assignment
  Type checking expression +
 <span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
- Type checking expression +
+<span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression +
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
- Type checking expression -
+ Type checking expression +
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression -
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression -
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+ASSIGNMENT_STATEMENT</span>
+ Type checking assignment
+ Type checking expression -
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
@@ -76,12 +88,7 @@
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (UMINUS)</span>
 <span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
- Type checking expression -
- Type checking expression UMINUS
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (UMINUS)</span>
+<span class="plus">+EXPRESSION (-)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
@@ -90,79 +97,142 @@
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (UMINUS)</span>
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
- Type checking expression *
+ Type checking expression -
+ Type checking expression UMINUS
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (UMINUS)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression *
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression *
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
- Type checking expression /
+ Type checking expression *
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression /
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression /
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+ASSIGNMENT_STATEMENT</span>
+ Type checking assignment
+ Type checking expression /
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression +
  Type checking expression +
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression -
  Type checking expression -
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression *
  Type checking expression *
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression /
  Type checking expression /
 <span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
- Type checking expression +
- Type checking expression *
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression +
  Type checking expression *
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression +
- Type checking expression /
+ Type checking expression *
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (*)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression +
  Type checking expression /
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+ASSIGNMENT_STATEMENT</span>
+ Type checking assignment
+ Type checking expression +
+ Type checking expression /
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression -
  Type checking expression /
 <span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
+<span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression -
  Type checking expression /
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (/)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (-)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span></span>
 </pre>

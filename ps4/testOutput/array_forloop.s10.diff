@@ -1,6 +1,6 @@
 --- correctOutput/array_forloop.s10	2015-02-22 13:09:53.075144000 +0100
-+++ testOutput/array_forloop.s10	2015-02-22 16:59:34.017454000 +0100
-@@ -1,25 +1,42 @@
++++ testOutput/array_forloop.s10	2015-02-22 17:07:48.224109000 +0100
+@@ -1,25 +1,52 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
@@ -19,8 +19,14 @@
  Type checking expression +
  Type checking expression *
 +Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (+)
++Type error at:
++EXPRESSION (+)
++Type error at:
 +ASSIGNMENT_STATEMENT
- Type checking assignment
++Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -30,6 +36,7 @@
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
+-Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -38,11 +45,15 @@
  Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 +Type error at:
++EXPRESSION (*)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT

@@ -1,4 +1,6 @@
 Type checking assignment
 Type checking expression +
 Type error at:
+EXPRESSION (+)
+Type error at:
 ASSIGNMENT_STATEMENT

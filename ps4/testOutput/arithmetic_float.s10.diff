@@ -1,6 +1,6 @@
 --- correctOutput/arithmetic_float.s10	2015-02-22 13:09:53.011143000 +0100
-+++ testOutput/arithmetic_float.s10	2015-02-22 16:59:33.272450000 +0100
-@@ -1,73 +1,147 @@
++++ testOutput/arithmetic_float.s10	2015-02-22 17:07:47.120103000 +0100
+@@ -1,73 +1,217 @@
  Type checking assignment
 +Type error at:
 +ASSIGNMENT_STATEMENT
@@ -32,25 +32,37 @@
  Type checking assignment
  Type checking expression +
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression +
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
 +Type error at:
++EXPRESSION (+)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking expression -
+ Type checking expression +
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression -
 +Type error at:
++EXPRESSION (-)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression -
++Type error at:
++EXPRESSION (-)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression -
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -59,12 +71,7 @@
 +Type error at:
 +EXPRESSION (UMINUS)
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression -
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (UMINUS)
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -73,78 +80,141 @@
 +Type error at:
 +EXPRESSION (UMINUS)
 +Type error at:
++EXPRESSION (-)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking expression *
+ Type checking expression -
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression *
 +Type error at:
++EXPRESSION (*)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression *
 +Type error at:
++EXPRESSION (*)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking expression /
+ Type checking expression *
++Type error at:
++EXPRESSION (*)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression /
 +Type error at:
++EXPRESSION (/)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression /
++Type error at:
++EXPRESSION (/)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression /
++Type error at:
++EXPRESSION (/)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
  Type checking expression +
++Type error at:
++EXPRESSION (+)
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression -
  Type checking expression -
 +Type error at:
++EXPRESSION (-)
++Type error at:
++EXPRESSION (-)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression *
  Type checking expression *
++Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (*)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression /
  Type checking expression /
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression +
- Type checking expression *
++EXPRESSION (/)
++Type error at:
++EXPRESSION (/)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
  Type checking expression *
 +Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (+)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
- Type checking expression /
+ Type checking expression *
++Type error at:
++EXPRESSION (*)
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
  Type checking expression /
++Type error at:
++EXPRESSION (/)
++Type error at:
++EXPRESSION (+)
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression +
+ Type checking expression /
++Type error at:
++EXPRESSION (/)
++Type error at:
++EXPRESSION (+)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression -
  Type checking expression /
 +Type error at:
++EXPRESSION (/)
++Type error at:
++EXPRESSION (-)
++Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression -
  Type checking expression /
++Type error at:
++EXPRESSION (/)
++Type error at:
++EXPRESSION (-)
 +Type error at:
 +ASSIGNMENT_STATEMENT

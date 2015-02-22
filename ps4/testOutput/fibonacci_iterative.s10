@@ -11,6 +11,8 @@ Type checking expression <
 Type checking assignment
 Type checking expression +
 Type error at:
+EXPRESSION (+)
+Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type error at:
@@ -20,5 +22,7 @@ Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +
+Type error at:
+EXPRESSION (+)
 Type error at:
 ASSIGNMENT_STATEMENT
