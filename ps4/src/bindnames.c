@@ -39,13 +39,7 @@ int bind_function ( node_t *root, int stackOffset)
 	node_t* stmts = root->children[1];
 
 	if (stmts != NULL){
-		int n_stmts = stmts->n_children;
-
-		for (int j = 0; j < n_stmts; j++){
-			if (stmts->children[j] != NULL){
-				stackOffset = bd(stmts->children[j], stackOffset);
-			}
-		}
+		stackOffset = bd(stmts, stackOffset);
 	}
 
 	scope_remove();
