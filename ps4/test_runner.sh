@@ -9,7 +9,7 @@ correctDir="correctOutput"
 warningsAssembler=0
 
 singleStage=0
-upToStage=10
+upToStage=7
 
 cat > results.html <<XX
 <html>
