@@ -1,13 +1,11 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 17:19:22.888848000 +0100
-@@ -1,52 +1,116 @@
++++ testOutput/merge_sort.s10	2015-02-22 22:29:07.426852000 +0100
+@@ -1,52 +1,92 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression -
@@ -17,8 +15,6 @@
 +ASSIGNMENT_STATEMENT
  Type checking expression FUNC_CALL
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking expression ARRAY_INDEX
  Type checking expression <=
  Type checking expression -
@@ -36,8 +32,6 @@
 +EXPRESSION (/)
 +Type error at:
 +EXPRESSION (+)
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking expression FUNC_CALL
  Type checking expression FUNC_CALL
  Type checking expression FUNC_CALL
@@ -46,14 +40,8 @@
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking expression >=
 +Type error at:
 +EXPRESSION (>=)
@@ -66,8 +54,6 @@
  Type checking expression +
 +Type error at:
 +EXPRESSION (+)
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking expression >=
 +Type error at:
 +EXPRESSION (>=)
@@ -80,8 +66,6 @@
  Type checking expression +
 +Type error at:
 +EXPRESSION (+)
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking expression <
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
@@ -96,22 +80,14 @@
  Type checking expression +
 +Type error at:
 +EXPRESSION (+)
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
 +Type error at:
 +EXPRESSION (+)
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX

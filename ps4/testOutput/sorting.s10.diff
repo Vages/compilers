@@ -1,13 +1,11 @@
 --- correctOutput/sorting.s10	2015-02-22 13:09:53.796147000 +0100
-+++ testOutput/sorting.s10	2015-02-22 17:19:23.636853000 +0100
-@@ -1,22 +1,46 @@
++++ testOutput/sorting.s10	2015-02-22 22:29:08.059854000 +0100
+@@ -1,9 +1,15 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression -
@@ -17,18 +15,8 @@
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression FUNC_CALL
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking expression ARRAY_INDEX
- Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
-+Type error at:
-+ASSIGNMENT_STATEMENT
+@@ -13,6 +19,8 @@
  Type checking expression <
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
@@ -36,14 +24,4 @@
 +EXPRESSION (<)
  Type checking assignment
  Type checking expression ARRAY_INDEX
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking expression ARRAY_INDEX
- Type checking expression ARRAY_INDEX
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ARRAY_INDEX
-+Type error at:
-+ASSIGNMENT_STATEMENT

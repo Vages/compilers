@@ -1,6 +1,4 @@
 Type checking assignment
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression UMINUS
 Type error at:
@@ -8,116 +6,76 @@ EXPRESSION (UMINUS)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >
 Type error at:
 EXPRESSION (>)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >
 Type error at:
 EXPRESSION (>)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >
 Type error at:
 EXPRESSION (>)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <
 Type error at:
 EXPRESSION (<)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <
 Type error at:
 EXPRESSION (<)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <
 Type error at:
 EXPRESSION (<)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >=
 Type error at:
 EXPRESSION (>=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >=
 Type error at:
 EXPRESSION (>=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >=
 Type error at:
 EXPRESSION (>=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <=
 Type error at:
 EXPRESSION (<=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <=
 Type error at:
 EXPRESSION (<=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <=
 Type error at:
 EXPRESSION (<=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ==
 Type error at:
 EXPRESSION (==)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ==
 Type error at:
 EXPRESSION (==)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ==
 Type error at:
 EXPRESSION (==)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression !=
 Type error at:
 EXPRESSION (!=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression !=
 Type error at:
 EXPRESSION (!=)
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression !=
 Type error at:
 EXPRESSION (!=)
-Type error at:
-ASSIGNMENT_STATEMENT

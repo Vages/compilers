@@ -1,6 +1,6 @@
 --- correctOutput/array_hard.s10	2015-02-22 13:09:53.106144000 +0100
-+++ testOutput/array_hard.s10	2015-02-22 17:19:18.744825000 +0100
-@@ -1,37 +1,43 @@
++++ testOutput/array_hard.s10	2015-02-22 22:29:04.406836000 +0100
+@@ -1,26 +1,22 @@
  Type checking assignment
  Type checking expression NEW
 +Type error at:
@@ -33,10 +33,7 @@
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
- Type checking assignment
- Type checking expression FUNC_CALL
-+Type error at:
-+ASSIGNMENT_STATEMENT
+@@ -29,9 +25,17 @@
  Type checking expression ARRAY_INDEX
  Type checking assignment
  Type checking expression NEW

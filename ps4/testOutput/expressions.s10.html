@@ -16,11 +16,9 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100</span>
-<span class="plus3">+++ testOutput/expressions.s10	2015-02-22 17:19:20.000835000 +0100</span>
-<span class="at2">@@ -1,81 +1,215 @@</span>
+<span class="plus3">+++ testOutput/expressions.s10	2015-02-22 22:29:05.427840000 +0100</span>
+<span class="at2">@@ -1,6 +1,10 @@</span>
  Type checking assignment
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression UMINUS
 <span class="plus">+Type error at:</span>
@@ -28,17 +26,19 @@
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
+<span class="at2">@@ -9,65 +13,147 @@</span>
+ Type checking expression +
+ Type checking expression *
+ Type checking expression UMINUS
 <span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
+<span class="plus">+EXPRESSION (*)</span>
+ Type checking expression *
 <span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
+<span class="plus">+EXPRESSION (*)</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (+)</span>
  Type checking assignment
  Type checking expression +
  Type checking expression *
@@ -50,8 +50,6 @@
 <span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (+)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression +
  Type checking expression *
@@ -63,21 +61,6 @@
 <span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (+)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
- Type checking expression +
- Type checking expression *
- Type checking expression UMINUS
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (*)</span>
- Type checking expression *
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (*)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (+)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression ||
  Type checking expression ==
@@ -137,8 +120,6 @@
 <span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type checking expression UMINUS</span>
 <span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (UMINUS)</span>
-<span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (-)</span>
  Type checking expression *
  Type checking expression *
@@ -151,24 +132,15 @@
 <span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (+)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression *
  Type checking expression +
  Type checking expression -
  Type checking expression UMINUS
  Type checking expression UMINUS
-<span class="minus">-Type checking expression UMINUS</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (UMINUS)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (UMINUS)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (-)</span>
-<span class="plus">+Type checking expression UMINUS</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (UMINUS)</span>
+ Type checking expression UMINUS
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (+)</span>
  Type checking expression +
@@ -176,8 +148,6 @@
 <span class="plus">+EXPRESSION (+)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (*)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression /
  Type checking expression -
@@ -197,8 +167,6 @@
  Type checking expression -
  Type checking expression UMINUS
 <span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (UMINUS)</span>
-<span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (-)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (+)</span>
@@ -206,78 +174,10 @@
 <span class="plus">+EXPRESSION (/)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (/)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression ||
  Type checking expression ||
- Type checking expression ||
- Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
- Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
- Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
- Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
- Type checking expression ||
- Type checking expression ||
-<span class="at2">@@ -83,61 +217,179 @@</span>
- Type checking expression !
- Type checking expression !
- Type checking expression !
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
- Type checking expression !
- Type checking expression !
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
- Type checking expression &amp;&amp;
- Type checking expression !
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
- Type checking expression ||
- Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
- Type checking expression &amp;&amp;
- Type checking expression !
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
- Type checking assignment
+<span class="at2">@@ -95,49 +181,109 @@</span>
  Type checking expression ||
  Type checking expression ||
  Type checking expression &gt;
@@ -292,29 +192,12 @@
  Type checking expression &amp;&amp;
  Type checking expression !
  Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
  Type checking expression ||
  Type checking expression !
  Type checking expression !=
-<span class="minus">-Type checking expression !</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (!=)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type checking expression !</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (!)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
+ Type checking expression !
  Type checking assignment
  Type checking expression +
  Type checking expression *
@@ -325,8 +208,6 @@
 <span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (+)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression *
  Type checking expression *
@@ -337,8 +218,6 @@
 <span class="plus">+EXPRESSION (*)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (*)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression /
  Type checking expression /
@@ -349,8 +228,6 @@
 <span class="plus">+EXPRESSION (/)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (/)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
  Type checking expression ||
  Type checking expression ||
@@ -359,10 +236,6 @@
 <span class="plus">+EXPRESSION (||)</span>
  Type checking expression &amp;&amp;
  Type checking expression &amp;&amp;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&amp;&amp;)</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
 <span class="plus">+Type error at:</span>
@@ -413,9 +286,7 @@
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (UMINUS)</span>
 <span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (&lt;)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+ASSIGNMENT_STATEMENT</span></span>
+<span class="plus">+EXPRESSION (&lt;)</span></span>
 </pre>
 </body>
 </html>
