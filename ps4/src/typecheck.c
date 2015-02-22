@@ -172,6 +172,7 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                 
                 default:
+                    return root->data_type;
                     break;
             }
         }
@@ -184,6 +185,8 @@ data_type_t typecheck_variable(node_t* root){
     if(root->entry != NULL){
         return root->entry->type;
     }
+
+    return root->data_type;
 }
 
 data_type_t typecheck_assignment(node_t* root)
