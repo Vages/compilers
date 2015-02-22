@@ -1,5 +1,5 @@
 --- correctOutput/newton.s7	2015-02-22 13:09:53.733146000 +0100
-+++ testOutput/newton.s7	2015-02-22 14:29:28.182418000 +0100
++++ testOutput/newton.s7	2015-02-22 14:33:38.368745000 +0100
 @@ -4,30 +4,3 @@
  Inserting function improve INT<=(INT,INT) 
  Add scope, index: 2 

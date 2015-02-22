@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s6	2015-02-22 13:09:53.996152000 +0100
-+++ testOutput/while_simple.s6	2015-02-22 14:29:31.967502000 +0100
++++ testOutput/while_simple.s6	2015-02-22 14:33:42.129763000 +0100
 @@ -1,17 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

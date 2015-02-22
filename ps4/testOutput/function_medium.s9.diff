@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s9	2015-02-22 13:09:53.479145000 +0100
-+++ testOutput/function_medium.s9	2015-02-22 14:29:22.737388000 +0100
++++ testOutput/function_medium.s9	2015-02-22 14:33:32.901714000 +0100
 @@ -1,81 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

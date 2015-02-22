@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s7	2015-02-22 13:09:53.475145000 +0100
-+++ testOutput/function_medium.s7	2015-02-22 14:29:22.551387000 +0100
++++ testOutput/function_medium.s7	2015-02-22 14:33:32.752713000 +0100
 @@ -4,45 +4,3 @@
  Inserting function func1 INT<=(INT,BOOL,BOOL,INT) 
  Inserting function func2 BOOL<=(BOOL,INT,BOOL,INT,INT,INT) 

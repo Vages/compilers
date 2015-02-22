@@ -1,5 +1,5 @@
 --- correctOutput/array_types.s9	2015-02-22 13:09:53.190145000 +0100
-+++ testOutput/array_types.s9	2015-02-22 14:29:15.192397000 +0100
++++ testOutput/array_types.s9	2015-02-22 14:33:25.429675000 +0100
 @@ -1,54 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

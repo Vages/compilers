@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s7	2015-02-22 13:09:53.247144000 +0100
-+++ testOutput/compare_int.s7	2015-02-22 14:29:16.713357000 +0100
++++ testOutput/compare_int.s7	2015-02-22 14:33:26.927684000 +0100
 @@ -2,87 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

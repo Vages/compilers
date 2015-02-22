@@ -1,5 +1,5 @@
 --- correctOutput/merge_sort.s7	2015-02-22 13:09:53.688147000 +0100
-+++ testOutput/merge_sort.s7	2015-02-22 14:29:27.132413000 +0100
++++ testOutput/merge_sort.s7	2015-02-22 14:33:37.278737000 +0100
 @@ -4,100 +4,3 @@
  Inserting function merge_sort VOID<=(ARRAY(INT)[100],INT,INT) 
  Inserting function merge VOID<=(ARRAY(INT)[100],INT,INT,INT) 

@@ -1,5 +1,5 @@
 --- correctOutput/variables.s6	2015-02-22 13:09:53.947147000 +0100
-+++ testOutput/variables.s6	2015-02-22 14:29:31.260435000 +0100
++++ testOutput/variables.s6	2015-02-22 14:33:41.413761000 +0100
 @@ -1,13 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

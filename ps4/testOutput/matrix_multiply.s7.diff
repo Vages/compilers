@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s7	2015-02-22 13:09:53.634146000 +0100
-+++ testOutput/matrix_multiply.s7	2015-02-22 14:29:25.464403000 +0100
++++ testOutput/matrix_multiply.s7	2015-02-22 14:33:35.611729000 +0100
 @@ -2,53 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s7	2015-02-22 13:09:53.309144000 +0100
-+++ testOutput/expressions.s7	2015-02-22 14:29:18.782367000 +0100
++++ testOutput/expressions.s7	2015-02-22 14:33:28.996693000 +0100
 @@ -2,124 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

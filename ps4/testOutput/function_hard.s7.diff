@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s7	2015-02-22 13:09:53.450145000 +0100
-+++ testOutput/function_hard.s7	2015-02-22 14:29:21.828384000 +0100
++++ testOutput/function_hard.s7	2015-02-22 14:33:32.014736000 +0100
 @@ -5,66 +5,3 @@
  Inserting function func2 INT<=(INT,INT,INT) 
  Inserting function func3 INT<=(INT,INT,INT) 

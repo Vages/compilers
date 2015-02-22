@@ -1,4 +1,4 @@
 --- correctOutput/function_simple.s10	2015-02-22 13:09:53.483146000 +0100
-+++ testOutput/function_simple.s10	2015-02-22 14:29:23.192391000 +0100
++++ testOutput/function_simple.s10	2015-02-22 14:33:33.352719000 +0100
 @@ -1 +0,0 @@
 -Type checking expression FUNC_CALL

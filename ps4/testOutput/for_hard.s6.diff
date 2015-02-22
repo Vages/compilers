@@ -1,5 +1,5 @@
 --- correctOutput/for_hard.s6	2015-02-22 13:09:53.377146000 +0100
-+++ testOutput/for_hard.s6	2015-02-22 14:29:21.016379000 +0100
++++ testOutput/for_hard.s6	2015-02-22 14:33:31.207705000 +0100
 @@ -1,33 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

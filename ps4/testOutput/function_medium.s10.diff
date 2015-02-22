@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100
-+++ testOutput/function_medium.s10	2015-02-22 14:29:22.928390000 +0100
++++ testOutput/function_medium.s10	2015-02-22 14:33:33.093716000 +0100
 @@ -1,16 +0,0 @@
 -Type checking assignment
 -Type checking assignment

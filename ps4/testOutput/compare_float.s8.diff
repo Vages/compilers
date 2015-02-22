@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s8	2015-02-22 13:09:53.216144000 +0100
-+++ testOutput/compare_float.s8	2015-02-22 14:29:15.910353000 +0100
++++ testOutput/compare_float.s8	2015-02-22 14:33:26.151681000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

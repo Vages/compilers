@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s7	2015-02-22 13:09:53.088144000 +0100
-+++ testOutput/array_forloop.s7	2015-02-22 14:29:13.587341000 +0100
++++ testOutput/array_forloop.s7	2015-02-22 14:33:23.823666000 +0100
 @@ -2,34 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

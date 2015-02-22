@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_int.s6	2015-02-22 13:09:53.063146000 +0100
-+++ testOutput/arithmetic_int.s6	2015-02-22 14:29:11.833331000 +0100
++++ testOutput/arithmetic_int.s6	2015-02-22 14:33:22.151657000 +0100
 @@ -1,219 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

@@ -1,5 +1,5 @@
 --- correctOutput/while_hard.s7	2015-02-22 13:09:53.970150000 +0100
-+++ testOutput/while_hard.s7	2015-02-22 14:29:31.631435000 +0100
++++ testOutput/while_hard.s7	2015-02-22 14:33:41.780763000 +0100
 @@ -2,26 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

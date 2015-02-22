@@ -1,5 +1,5 @@
 --- correctOutput/newton.s6	2015-02-22 13:09:53.731147000 +0100
-+++ testOutput/newton.s6	2015-02-22 14:29:28.060417000 +0100
++++ testOutput/newton.s6	2015-02-22 14:33:38.244744000 +0100
 @@ -1,50 +1,4 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: newton

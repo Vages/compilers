@@ -1,5 +1,5 @@
 --- correctOutput/array_hard.s6	2015-02-22 13:09:53.118143000 +0100
-+++ testOutput/array_hard.s6	2015-02-22 14:29:13.999344000 +0100
++++ testOutput/array_hard.s6	2015-02-22 14:33:24.245670000 +0100
 @@ -1,78 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

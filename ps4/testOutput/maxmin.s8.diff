@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s8	2015-02-22 13:09:53.659147000 +0100
-+++ testOutput/maxmin.s8	2015-02-22 14:29:26.428409000 +0100
++++ testOutput/maxmin.s8	2015-02-22 14:33:36.580733000 +0100
 @@ -1,18 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

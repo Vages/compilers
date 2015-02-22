@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_arrays.s7	2015-02-22 13:09:53.861147000 +0100
-+++ testOutput/type_errors_arrays.s7	2015-02-22 14:29:30.151428000 +0100
++++ testOutput/type_errors_arrays.s7	2015-02-22 14:33:40.320756000 +0100
 @@ -2,19 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

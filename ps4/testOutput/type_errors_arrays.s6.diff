@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_arrays.s6	2015-02-22 13:09:53.859148000 +0100
-+++ testOutput/type_errors_arrays.s6	2015-02-22 14:29:30.054427000 +0100
++++ testOutput/type_errors_arrays.s6	2015-02-22 14:33:40.226753000 +0100
 @@ -1,38 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s7	2015-02-22 13:09:53.819148000 +0100
-+++ testOutput/sorting.s7	2015-02-22 14:29:29.516424000 +0100
++++ testOutput/sorting.s7	2015-02-22 14:33:39.691750000 +0100
 @@ -3,43 +3,3 @@
  Inserting function main VOID<=() 
  Inserting function sort ARRAY(INT)[10]<=(ARRAY(INT)[10]) 

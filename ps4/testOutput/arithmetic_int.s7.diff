@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_int.s7	2015-02-22 13:09:53.065146000 +0100
-+++ testOutput/arithmetic_int.s7	2015-02-22 14:29:12.361334000 +0100
++++ testOutput/arithmetic_int.s7	2015-02-22 14:33:22.615660000 +0100
 @@ -2,133 +2,3 @@
  Add scope, index: 1 
  Inserting function main VOID<=() 

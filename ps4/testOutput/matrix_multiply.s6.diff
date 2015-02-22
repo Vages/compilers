@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s6	2015-02-22 13:09:53.632146000 +0100
-+++ testOutput/matrix_multiply.s6	2015-02-22 14:29:25.105401000 +0100
++++ testOutput/matrix_multiply.s6	2015-02-22 14:33:35.247726000 +0100
 @@ -1,168 +1,3 @@
  FUNCTION_LIST: Start
  FUNCTION: Start: main

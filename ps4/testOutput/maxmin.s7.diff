@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s7	2015-02-22 13:09:53.657147000 +0100
-+++ testOutput/maxmin.s7	2015-02-22 14:29:26.328407000 +0100
++++ testOutput/maxmin.s7	2015-02-22 14:33:36.473734000 +0100
 @@ -4,42 +4,3 @@
  Inserting function max INT<=(INT,INT) 
  Inserting function min INT<=(INT,INT) 

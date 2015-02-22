@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_arrays.s10	2015-02-22 13:09:53.848147000 +0100
-+++ testOutput/type_errors_arrays.s10	2015-02-22 14:29:30.377428000 +0100
++++ testOutput/type_errors_arrays.s10	2015-02-22 14:33:40.535758000 +0100
 @@ -1,40 +0,0 @@
 -Type checking assignment
 -Type checking expression NEW

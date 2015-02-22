@@ -1,5 +1,5 @@
 --- correctOutput/adding.s7	2015-02-22 13:09:53.002142000 +0100
-+++ testOutput/adding.s7	2015-02-22 14:29:10.127323000 +0100
++++ testOutput/adding.s7	2015-02-22 14:33:20.476648000 +0100
 @@ -2,8 +2,3 @@
  Add scope, index: 1 
  Inserting function adding VOID<=() 
