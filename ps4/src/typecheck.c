@@ -67,11 +67,10 @@ data_type_t typecheck_expression(node_t* root)
             data_type_t* child_dt = child->data_type
             switch(root->expression_type.index){
                 case UMINUS_E:
-                    if ((child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)){
-                        return child_dt;
-                    } else {
+                    if !((child_dt.base_type == INT_TYPE)||(child_dt.base_type == FLOAT_TYPE)){
                         type_error(root);
                     }
+                    return child_dt
                     break;
                     
                 case NOT_E:
