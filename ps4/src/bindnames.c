@@ -155,7 +155,7 @@ int bind_expression( node_t* root, int stackOffset)
 		printf( "EXPRESSION: Start: %s\n", root->expression_type.text);
 
 	if (root->expression_type.index == FUNC_CALL_E){
-		root->function_entry = function_get(root->label);
+		root->function_entry = function_get(root->children[0]->label);
 	}
 
 	bd(root, stackOffset);
