@@ -6,13 +6,9 @@ EXPRESSION (UMINUS)
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking expression !=
-Type error at:
-EXPRESSION (!=)
 Type checking expression >=
 Type checking expression !=
 Type checking expression UMINUS
-Type error at:
-EXPRESSION (!=)
 Type checking expression >
 Type checking expression >
 Type checking expression >

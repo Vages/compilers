@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s10	2015-02-22 13:09:53.195144000 +0100
-+++ testOutput/compare_float.s10	2015-02-22 23:17:15.695738000 +0100
++++ testOutput/compare_float.s10	2015-02-22 23:28:43.615305000 +0100
 @@ -1,6 +1,10 @@
  Type checking assignment
  Type checking assignment
@@ -11,29 +11,3 @@
  Type checking assignment
  Type checking assignment
  Type checking expression >
-@@ -29,13 +33,25 @@
- Type checking expression <=
- Type checking assignment
- Type checking expression ==
-+Type error at:
-+EXPRESSION (==)
- Type checking assignment
- Type checking expression ==
-+Type error at:
-+EXPRESSION (==)
- Type checking assignment
- Type checking expression ==
-+Type error at:
-+EXPRESSION (==)
- Type checking assignment
- Type checking expression !=
-+Type error at:
-+EXPRESSION (!=)
- Type checking assignment
- Type checking expression !=
-+Type error at:
-+EXPRESSION (!=)
- Type checking assignment
- Type checking expression !=
-+Type error at:
-+EXPRESSION (!=)
