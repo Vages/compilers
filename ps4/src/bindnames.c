@@ -56,7 +56,8 @@ function_symbol_t* create_function_symbol(node_t* function_node)
     int args = function_node->children[0]->n_children;
     fs->nArguments = args;
     
-    fs->argument_types* = (data_type_t*)malloc(sizeof(data_type_t)*args);
+    data_type_t* at = malloc(sizeof(data_type_t)*args);
+    fs->argument_types* = at;
     for (int i = 0; i < args; i++){
     	fs->argument_types[i] = function_node->children[0]->children[i]->data_type;
     }
