@@ -1,44 +1,90 @@
 --- correctOutput/compare_float.s10	2015-02-22 13:09:53.195144000 +0100
-+++ testOutput/compare_float.s10	2015-02-22 15:53:49.999295000 +0100
-@@ -1,41 +1,22 @@
++++ testOutput/compare_float.s10	2015-02-22 16:54:41.408882000 +0100
+@@ -1,41 +1,87 @@
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression UMINUS
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression >
+ Type checking expression >
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression >
+ Type checking expression >
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression >
+ Type checking expression >
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression <
+ Type checking expression <
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression <
+ Type checking expression <
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression <
+ Type checking expression <
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression >=
+ Type checking expression >=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression >=
+ Type checking expression >=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression >=
+ Type checking expression >=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression <=
+ Type checking expression <=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression <=
+ Type checking expression <=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression <=
+ Type checking expression <=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression ==
+ Type checking expression ==
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression ==
+ Type checking expression ==
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression ==
+ Type checking expression ==
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression !=
+ Type checking expression !=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression !=
+ Type checking expression !=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression !=
+ Type checking expression !=
++Type error at:
++ASSIGNMENT_STATEMENT

@@ -1,19 +1,19 @@
 --- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100
-+++ testOutput/function_medium.s10	2015-02-22 15:53:51.288301000 +0100
-@@ -1,16 +1,6 @@
++++ testOutput/function_medium.s10	2015-02-22 16:54:43.175891000 +0100
+@@ -1,14 +1,14 @@
+ Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking assignment
- Type checking assignment
--Type checking expression FUNC_CALL
+ Type checking expression FUNC_CALL
+ Type checking expression +
 -Type checking expression +
--Type checking expression +
  Type checking assignment
--Type checking expression FUNC_CALL
--Type checking expression &&
--Type checking expression &&
+ Type checking expression FUNC_CALL
  Type checking expression &&
- Type checking expression ||
--Type checking expression ||
+ Type checking expression &&
 -Type checking expression &&
--Type checking expression >
--Type checking expression >
+ Type checking expression ||
+ Type checking expression ||
+ Type checking expression &&

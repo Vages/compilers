@@ -1,10 +1,42 @@
 Type checking assignment
+Type checking expression NEW
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type checking expression ARRAY_INDEX
+Type checking expression ARRAY_INDEX
+Type checking expression +
+Type checking expression +
+Type checking expression *
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type checking expression *
+Type checking expression ARRAY_INDEX
+Type checking expression ARRAY_INDEX
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type checking expression +
+Type checking expression ARRAY_INDEX
+Type checking expression ARRAY_INDEX
+Type error at:
+ASSIGNMENT_STATEMENT

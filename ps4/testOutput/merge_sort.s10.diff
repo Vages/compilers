@@ -1,55 +1,93 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 15:53:52.188306000 +0100
-@@ -1,52 +1,28 @@
++++ testOutput/merge_sort.s10	2015-02-22 16:54:44.241896000 +0100
+@@ -1,11 +1,19 @@
  Type checking assignment
--Type checking expression NEW
+ Type checking expression NEW
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression -
- Type checking expression FUNC_CALL
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
+ Type checking expression -
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking expression FUNC_CALL
+ Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking expression ARRAY_INDEX
  Type checking expression <=
--Type checking expression -
- Type checking assignment
--Type checking expression +
--Type checking expression /
--Type checking expression -
+ Type checking expression -
+@@ -13,40 +21,70 @@
+ Type checking expression +
+ Type checking expression /
+ Type checking expression -
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression FUNC_CALL
  Type checking expression FUNC_CALL
  Type checking expression FUNC_CALL
  Type checking assignment
--Type checking expression NEW
+ Type checking expression NEW
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression >=
  Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression >=
  Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression <
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
  Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT

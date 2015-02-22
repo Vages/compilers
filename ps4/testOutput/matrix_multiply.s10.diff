@@ -1,43 +1,72 @@
 --- correctOutput/matrix_multiply.s10	2015-02-22 13:09:53.619150000 +0100
-+++ testOutput/matrix_multiply.s10	2015-02-22 15:53:51.876305000 +0100
-@@ -1,67 +1,18 @@
++++ testOutput/matrix_multiply.s10	2015-02-22 16:54:43.880895000 +0100
+@@ -1,55 +1,63 @@
  Type checking assignment
--Type checking expression NEW
+ Type checking expression NEW
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression NEW
+ Type checking expression NEW
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression +
--Type checking expression *
- Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression -
--Type checking expression +
--Type checking expression *
- Type checking assignment
--Type checking expression NEW
- Type checking assignment
- Type checking assignment
- Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
- Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression +
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
  Type checking expression ARRAY_INDEX
--Type checking expression +
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression -
+ Type checking expression +
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression NEW
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression +
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression *
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking expression *
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
@@ -46,25 +75,8 @@
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
--Type checking expression ARRAY_INDEX
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX

@@ -1,5 +1,15 @@
 Type checking assignment
+Type checking expression FUNC_CALL
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking assignment
+Type checking expression -
+Type checking expression /
+Type checking expression -
+Type checking expression *
+Type checking expression *
+Type error at:
+ASSIGNMENT_STATEMENT
 Type checking expression -
 Type checking expression FUNC_CALL
 Type checking expression -

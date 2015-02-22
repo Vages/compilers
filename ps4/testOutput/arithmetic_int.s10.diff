@@ -1,76 +1,150 @@
 --- correctOutput/arithmetic_int.s10	2015-02-22 13:09:53.048142000 +0100
-+++ testOutput/arithmetic_int.s10	2015-02-22 15:53:49.269291000 +0100
-@@ -1,73 +1,31 @@
++++ testOutput/arithmetic_int.s10	2015-02-22 16:54:40.396876000 +0100
+@@ -1,73 +1,147 @@
+ Type checking assignment
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking assignment
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression UMINUS
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression UMINUS
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression UMINUS
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression UMINUS
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
+ Type checking expression -
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
+ Type checking expression -
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
+ Type checking expression -
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
+ Type checking expression -
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
--Type checking expression UMINUS
+ Type checking expression -
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
--Type checking expression UMINUS
+ Type checking expression -
+ Type checking expression UMINUS
++Type error at:
++EXPRESSION (UMINUS)
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
--Type checking expression UMINUS
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression *
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression *
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression *
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression /
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression /
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression /
+ Type checking expression +
+ Type checking expression +
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
--Type checking expression +
+ Type checking expression -
+ Type checking expression -
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
--Type checking expression -
+ Type checking expression *
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression *
--Type checking expression *
+ Type checking expression /
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression /
--Type checking expression /
+ Type checking expression +
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
--Type checking expression *
+ Type checking expression +
+ Type checking expression *
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
--Type checking expression *
+ Type checking expression +
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
--Type checking expression /
+ Type checking expression +
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression +
--Type checking expression /
+ Type checking expression -
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
--Type checking expression -
--Type checking expression /
- Type checking assignment
--Type checking expression -
--Type checking expression /
+ Type checking expression -
+ Type checking expression /
++Type error at:
++ASSIGNMENT_STATEMENT
