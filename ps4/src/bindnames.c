@@ -35,7 +35,9 @@ int bind_function ( node_t *root, int stackOffset)
 	int n_stmts = stmts->n_children;
 
 	for (int j = 0; j < n_stmts; j++){
-		stackOffset = bd(stmts->children[j], stackOffset);
+		if (stmts->children[j] != NULL){
+			stackOffset = bd(stmts->children[j], stackOffset);
+		}
 	}
 
 	scope_remove();
@@ -84,7 +86,7 @@ int bind_function_list ( node_t *root, int stackOffset)
 	}
 
 	scope_remove();
-	
+
 	if(outputStage == 6)
 		printf( "FUNCTION_LIST: End\n");
 
