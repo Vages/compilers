@@ -1,14 +1,14 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-22 15:11:20.252742000 +0100
-@@ -1,143 +0,0 @@
--Type checking assignment
--Type checking assignment
++++ testOutput/expressions.s10	2015-02-22 15:22:02.146138000 +0100
+@@ -1,143 +1,24 @@
+ Type checking assignment
+ Type checking assignment
 -Type checking expression UMINUS
--Type checking assignment
--Type checking assignment
--Type checking assignment
--Type checking assignment
--Type checking assignment
+ Type checking assignment
+ Type checking assignment
+ Type checking assignment
+ Type checking assignment
+ Type checking assignment
 -Type checking expression +
 -Type checking expression *
 -Type checking expression UMINUS
@@ -144,3 +144,20 @@
 -Type checking expression !
 -Type checking expression <
 -Type checking expression UMINUS
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment
++Type checking assignment

@@ -1,61 +1,60 @@
 --- correctOutput/logical.s10	2015-02-22 13:09:53.588146000 +0100
-+++ testOutput/logical.s10	2015-02-22 15:11:21.766744000 +0100
-@@ -1,58 +0,0 @@
--Type checking assignment
--Type checking assignment
--Type checking assignment
--Type checking assignment
++++ testOutput/logical.s10	2015-02-22 15:22:03.582185000 +0100
+@@ -2,57 +2,23 @@
+ Type checking assignment
+ Type checking assignment
+ Type checking assignment
 -Type checking expression &&
--Type checking assignment
+ Type checking assignment
 -Type checking expression &&
--Type checking assignment
+ Type checking assignment
 -Type checking expression &&
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
--Type checking assignment
+ Type checking assignment
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression !
--Type checking assignment
--Type checking expression &&
--Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression &&
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression &&
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
+-Type checking expression &&
+-Type checking expression !
+ Type checking assignment
 -Type checking expression ||
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
 -Type checking expression !
--Type checking assignment
+ Type checking assignment
 -Type checking expression &&
 -Type checking expression &&
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
 -Type checking expression ||
--Type checking assignment
--Type checking expression ||
--Type checking expression &&
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
 -Type checking expression &&
--Type checking assignment
+ Type checking assignment
+-Type checking expression ||
+-Type checking expression &&
+ Type checking assignment
 -Type checking expression &&
 -Type checking expression ||
--Type checking assignment
+ Type checking assignment
 -Type checking expression ||
 -Type checking expression &&
 -Type checking expression !

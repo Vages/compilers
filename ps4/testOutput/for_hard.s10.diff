@@ -1,9 +1,7 @@
 --- correctOutput/for_hard.s10	2015-02-22 13:09:53.366145000 +0100
-+++ testOutput/for_hard.s10	2015-02-22 15:11:20.925747000 +0100
-@@ -1,6 +0,0 @@
--Type checking assignment
--Type checking assignment
--Type checking assignment
--Type checking expression FUNC_CALL
--Type checking assignment
++++ testOutput/for_hard.s10	2015-02-22 15:22:02.808139000 +0100
+@@ -3,4 +3,3 @@
+ Type checking assignment
+ Type checking expression FUNC_CALL
+ Type checking assignment
 -Type checking expression UMINUS

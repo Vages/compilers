@@ -1,55 +1,55 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 15:11:22.320742000 +0100
-@@ -1,52 +0,0 @@
--Type checking assignment
++++ testOutput/merge_sort.s10	2015-02-22 15:22:04.161143000 +0100
+@@ -1,52 +1,28 @@
+ Type checking assignment
 -Type checking expression NEW
--Type checking assignment
--Type checking assignment
+ Type checking assignment
+ Type checking assignment
 -Type checking expression ARRAY_INDEX
 -Type checking expression -
--Type checking expression FUNC_CALL
--Type checking assignment
--Type checking expression ARRAY_INDEX
--Type checking expression <=
+ Type checking expression FUNC_CALL
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression <=
 -Type checking expression -
--Type checking assignment
+ Type checking assignment
 -Type checking expression +
 -Type checking expression /
 -Type checking expression -
--Type checking expression FUNC_CALL
--Type checking expression FUNC_CALL
--Type checking expression FUNC_CALL
--Type checking assignment
+ Type checking expression FUNC_CALL
+ Type checking expression FUNC_CALL
+ Type checking expression FUNC_CALL
+ Type checking assignment
 -Type checking expression NEW
--Type checking assignment
--Type checking assignment
--Type checking assignment
--Type checking expression >=
--Type checking assignment
+ Type checking assignment
+ Type checking assignment
+ Type checking assignment
+ Type checking expression >=
+ Type checking assignment
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking assignment
+ Type checking assignment
 -Type checking expression +
--Type checking expression >=
--Type checking assignment
+ Type checking expression >=
+ Type checking assignment
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking assignment
+ Type checking assignment
 -Type checking expression +
--Type checking expression <
+ Type checking expression <
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking assignment
+ Type checking assignment
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking assignment
+ Type checking assignment
 -Type checking expression +
--Type checking assignment
+ Type checking assignment
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
--Type checking assignment
+ Type checking assignment
 -Type checking expression +
--Type checking assignment
--Type checking assignment
+ Type checking assignment
+ Type checking assignment
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX

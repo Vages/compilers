@@ -1,44 +1,44 @@
 --- correctOutput/compare_int.s10	2015-02-22 13:09:53.231147000 +0100
-+++ testOutput/compare_int.s10	2015-02-22 15:11:19.945753000 +0100
-@@ -1,41 +0,0 @@
--Type checking assignment
--Type checking assignment
++++ testOutput/compare_int.s10	2015-02-22 15:22:01.815144000 +0100
+@@ -1,41 +1,22 @@
+ Type checking assignment
+ Type checking assignment
 -Type checking expression UMINUS
--Type checking assignment
--Type checking assignment
+ Type checking assignment
+ Type checking assignment
 -Type checking expression >
--Type checking assignment
+ Type checking assignment
 -Type checking expression >
--Type checking assignment
+ Type checking assignment
 -Type checking expression >
--Type checking assignment
+ Type checking assignment
 -Type checking expression <
--Type checking assignment
+ Type checking assignment
 -Type checking expression <
--Type checking assignment
+ Type checking assignment
 -Type checking expression <
--Type checking assignment
--Type checking assignment
+ Type checking assignment
+ Type checking assignment
 -Type checking expression >=
--Type checking assignment
+ Type checking assignment
 -Type checking expression >=
--Type checking assignment
+ Type checking assignment
 -Type checking expression >=
--Type checking assignment
+ Type checking assignment
 -Type checking expression <=
--Type checking assignment
+ Type checking assignment
 -Type checking expression <=
--Type checking assignment
+ Type checking assignment
 -Type checking expression <=
--Type checking assignment
+ Type checking assignment
 -Type checking expression ==
--Type checking assignment
+ Type checking assignment
 -Type checking expression ==
--Type checking assignment
+ Type checking assignment
 -Type checking expression ==
--Type checking assignment
+ Type checking assignment
 -Type checking expression !=
--Type checking assignment
+ Type checking assignment
 -Type checking expression !=
--Type checking assignment
+ Type checking assignment
 -Type checking expression !=
