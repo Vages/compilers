@@ -97,8 +97,8 @@ data_type_t typecheck_expression(node_t* root)
                 case ADD_E: case SUB_E: case DIV_E: case MUL_E:
                     ;
                     l_child_dt = root->children[0]->data_type;
-                    int iseq = equal_types(l_child_dt, root->children[1]->data_type);
-                    if (!iseq){
+                    r_child_dt = root->children[1]->data_type;
+                    if (!equal_types(l_child_dt, r_child_dt)){
                         type_error(root);
                     } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
                         type_error(root);
