@@ -29,5 +29,9 @@
 *.hex
 
 #Vages
+!bindsol.o
+!bindsol32.o
+!simplifynodes.o
+!simplifynodes32.o
 !tree.o
 !tree32.o
