@@ -105,6 +105,16 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                         
                 case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
+                    ;
+                    data_type_t l_child_dt = root->children[0]->data_type;
+                    int iseq = equal_types(l_child_dt, root->children[1]->data_type);
+                    if (!iseq){
+                        type_error(root);
+                    } else if ((l_child_dt.base_type != FLOAT_TYPE) || (l_child_dt.base_type != INT_TYPE)){
+                        type_error(root);
+                    }
+                    data_type_t tmp_dt = {.base_type = BOOL_TYPE};
+                    return tmp_dt;
                     break;
                         
                 case AND_E: case OR_E:
