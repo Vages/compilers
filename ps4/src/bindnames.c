@@ -66,12 +66,24 @@ function_symbol_t* create_function_symbol(node_t* function_node)
 
 int bind_function_list ( node_t *root, int stackOffset)
 {
+	//FINISHED
+	//Eirik: Binds all function symbols in a function list and then continues tree traversal.
 	if(outputStage == 6)
 		printf( "FUNCTION_LIST: Start\n");
 
+	for (int i = 0; i < root->n_children; i++){
+		function_symbol_t* fs = create_function_symbol(children[i]);
+		function_add(children[i]->label, fs);
+	}
+
+	for (int j = 0; i < root->n_children; j++){
+		stackOffset = bind_function(children[j], stackOffset);
+	}
 
 	if(outputStage == 6)
 		printf( "FUNCTION_LIST: End\n");
+
+	return stackOffset;
 }
 
 int bind_constant ( node_t *root, int stackOffset)
