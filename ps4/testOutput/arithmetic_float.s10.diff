@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_float.s10	2015-02-22 13:09:53.011143000 +0100
-+++ testOutput/arithmetic_float.s10	2015-02-22 14:23:49.380622000 +0100
++++ testOutput/arithmetic_float.s10	2015-02-22 14:29:11.622330000 +0100
 @@ -1,73 +0,0 @@
 -Type checking assignment
 -Type checking assignment

@@ -1,12 +1,12 @@
 --- correctOutput/variables.s6	2015-02-22 13:09:53.947147000 +0100
-+++ testOutput/variables.s6	2015-02-22 14:24:09.328728000 +0100
-@@ -1,13 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
++++ testOutput/variables.s6	2015-02-22 14:29:31.260435000 +0100
+@@ -1,13 +1,3 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: main
 -DECLARATION: parameter/variable : 'a', offset: -4
 -DECLARATION: parameter/variable : 'b', offset: -8
 -DECLARATION: parameter/variable : 'c', offset: -12
--VARIABLE: access: a
+ VARIABLE: access: a
 -CONSTANT
 -VARIABLE: access: b
 -CONSTANT

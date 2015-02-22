@@ -1,5 +1,5 @@
 --- correctOutput/adding.s8	2015-02-22 13:09:53.004143000 +0100
-+++ testOutput/adding.s8	2015-02-22 14:23:47.941615000 +0100
++++ testOutput/adding.s8	2015-02-22 14:29:10.165324000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

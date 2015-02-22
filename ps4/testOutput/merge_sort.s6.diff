@@ -1,10 +1,10 @@
 --- correctOutput/merge_sort.s6	2015-02-22 13:09:53.686146000 +0100
-+++ testOutput/merge_sort.s6	2015-02-22 14:24:04.599703000 +0100
-@@ -1,175 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
++++ testOutput/merge_sort.s6	2015-02-22 14:29:26.758413000 +0100
+@@ -1,175 +1,3 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: main
 -DECLARATION: parameter/variable : 'a', offset: -4
--VARIABLE: access: a
+ VARIABLE: access: a
 -EXPRESSION: Start: NEW
 -EXPRESSION: End
 -DECLARATION: parameter/variable : 'i', offset: -8

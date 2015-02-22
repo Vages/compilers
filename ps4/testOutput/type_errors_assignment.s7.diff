@@ -1,10 +1,9 @@
 --- correctOutput/type_errors_assignment.s7	2015-02-22 13:09:53.890147000 +0100
-+++ testOutput/type_errors_assignment.s7	2015-02-22 14:24:08.644724000 +0100
-@@ -1,15 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/type_errors_assignment.s7	2015-02-22 14:29:30.574430000 +0100
+@@ -2,14 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:-4
 -Inserting variable b FLOAT depth:2 offset:-8
 -Inserting variable c BOOL depth:2 offset:-12

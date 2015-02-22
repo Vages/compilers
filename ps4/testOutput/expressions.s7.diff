@@ -1,10 +1,9 @@
 --- correctOutput/expressions.s7	2015-02-22 13:09:53.309144000 +0100
-+++ testOutput/expressions.s7	2015-02-22 14:23:56.427658000 +0100
-@@ -1,125 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/expressions.s7	2015-02-22 14:29:18.782367000 +0100
+@@ -2,124 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:-4
 -Inserting variable b INT depth:2 offset:-8
 -Inserting variable c INT depth:2 offset:-12

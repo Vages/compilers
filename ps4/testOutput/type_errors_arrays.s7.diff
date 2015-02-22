@@ -1,10 +1,9 @@
 --- correctOutput/type_errors_arrays.s7	2015-02-22 13:09:53.861147000 +0100
-+++ testOutput/type_errors_arrays.s7	2015-02-22 14:24:08.223720000 +0100
-@@ -1,20 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/type_errors_arrays.s7	2015-02-22 14:29:30.151428000 +0100
+@@ -2,19 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a ARRAY(INT)[10] depth:2 offset:-4
 -Inserting variable b ARRAY(INT)[10][10] depth:2 offset:-8
 -Inserting variable c ARRAY(BOOL)[10] depth:2 offset:-12

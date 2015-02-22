@@ -1,0 +1,6 @@
+Add scope, index: 0 
+Add scope, index: 1 
+Inserting function main VOID<=() 
+Inserting function merge_sort VOID<=(ARRAY(INT)[100],INT,INT) 
+Inserting function merge VOID<=(ARRAY(INT)[100],INT,INT,INT) 
+Add scope, index: 2 

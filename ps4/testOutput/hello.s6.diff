@@ -1,8 +1,0 @@
---- correctOutput/hello.s6	2015-02-22 13:09:53.519145000 +0100
-+++ testOutput/hello.s6	2015-02-22 14:24:00.841684000 +0100
-@@ -1,5 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: hello
--CONSTANT
--FUNCTION: End
--FUNCTION_LIST: End

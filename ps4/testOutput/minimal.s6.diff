@@ -1,8 +1,0 @@
---- correctOutput/minimal.s6	2015-02-22 13:09:53.708148000 +0100
-+++ testOutput/minimal.s6	2015-02-22 14:24:05.823711000 +0100
-@@ -1,5 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: minimal
--CONSTANT
--FUNCTION: End
--FUNCTION_LIST: End

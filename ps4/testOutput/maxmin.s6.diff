@@ -1,14 +1,14 @@
 --- correctOutput/maxmin.s6	2015-02-22 13:09:53.655147000 +0100
-+++ testOutput/maxmin.s6	2015-02-22 14:24:04.019700000 +0100
-@@ -1,62 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: maxmin
++++ testOutput/maxmin.s6	2015-02-22 14:29:26.184407000 +0100
+@@ -1,62 +1,3 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: maxmin
 -DECLARATION: parameter/variable : 'a', offset: -4
 -DECLARATION: parameter/variable : 'b', offset: -8
 -DECLARATION: parameter/variable : 'c', offset: -12
 -DECLARATION: parameter/variable : 'd', offset: -16
 -DECLARATION: parameter/variable : 'e', offset: -20
--VARIABLE: access: a
+ VARIABLE: access: a
 -EXPRESSION: Start: FUNC_CALL
 -CONSTANT
 -CONSTANT

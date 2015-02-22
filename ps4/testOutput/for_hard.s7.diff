@@ -1,11 +1,9 @@
 --- correctOutput/for_hard.s7	2015-02-22 13:09:53.380145000 +0100
-+++ testOutput/for_hard.s7	2015-02-22 14:23:58.716670000 +0100
-@@ -1,27 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Inserting function print VOID<=(INT,INT,INT) 
--Add scope, index: 2 
++++ testOutput/for_hard.s7	2015-02-22 14:29:21.100380000 +0100
+@@ -3,25 +3,3 @@
+ Inserting function main VOID<=() 
+ Inserting function print VOID<=(INT,INT,INT) 
+ Add scope, index: 2 
 -Inserting variable i INT depth:2 offset:-4
 -Retrieving variable i
 -Inserting variable j INT depth:2 offset:-8

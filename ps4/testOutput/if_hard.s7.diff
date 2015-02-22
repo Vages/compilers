@@ -1,10 +1,9 @@
 --- correctOutput/if_hard.s7	2015-02-22 13:09:53.551147000 +0100
-+++ testOutput/if_hard.s7	2015-02-22 14:24:01.131685000 +0100
-@@ -1,24 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function while_test INT<=() 
--Add scope, index: 2 
++++ testOutput/if_hard.s7	2015-02-22 14:29:23.453392000 +0100
+@@ -2,23 +2,3 @@
+ Add scope, index: 1 
+ Inserting function while_test INT<=() 
+ Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:-4
 -Inserting variable b INT depth:2 offset:-8
 -Retrieving variable a

@@ -1,10 +1,9 @@
 --- correctOutput/matrix_multiply.s7	2015-02-22 13:09:53.634146000 +0100
-+++ testOutput/matrix_multiply.s7	2015-02-22 14:24:03.299695000 +0100
-@@ -1,54 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/matrix_multiply.s7	2015-02-22 14:29:25.464403000 +0100
+@@ -2,53 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a ARRAY(INT)[3][3] depth:2 offset:-4
 -Retrieving variable a
 -Inserting variable b ARRAY(INT)[3][3] depth:2 offset:-8

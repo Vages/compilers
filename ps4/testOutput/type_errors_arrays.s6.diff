@@ -1,13 +1,13 @@
 --- correctOutput/type_errors_arrays.s6	2015-02-22 13:09:53.859148000 +0100
-+++ testOutput/type_errors_arrays.s6	2015-02-22 14:24:08.129721000 +0100
-@@ -1,38 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
++++ testOutput/type_errors_arrays.s6	2015-02-22 14:29:30.054427000 +0100
+@@ -1,38 +1,3 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: main
 -DECLARATION: parameter/variable : 'a', offset: -4
 -DECLARATION: parameter/variable : 'b', offset: -8
 -DECLARATION: parameter/variable : 'c', offset: -12
 -DECLARATION: parameter/variable : 'd', offset: -16
--VARIABLE: access: a
+ VARIABLE: access: a
 -EXPRESSION: Start: NEW
 -EXPRESSION: End
 -VARIABLE: access: a

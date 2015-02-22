@@ -1,15 +1,15 @@
 --- correctOutput/arithmetic_int.s6	2015-02-22 13:09:53.063146000 +0100
-+++ testOutput/arithmetic_int.s6	2015-02-22 14:23:49.581624000 +0100
-@@ -1,219 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
++++ testOutput/arithmetic_int.s6	2015-02-22 14:29:11.833331000 +0100
+@@ -1,219 +1,3 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: main
 -DECLARATION: parameter/variable : 'a', offset: -4
 -DECLARATION: parameter/variable : 'b', offset: -8
 -DECLARATION: parameter/variable : 'c', offset: -12
 -DECLARATION: parameter/variable : 'd', offset: -16
 -DECLARATION: parameter/variable : 'e', offset: -20
 -DECLARATION: parameter/variable : 'f', offset: -24
--VARIABLE: access: a
+ VARIABLE: access: a
 -CONSTANT
 -VARIABLE: access: b
 -CONSTANT

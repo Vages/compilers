@@ -1,10 +1,9 @@
 --- correctOutput/for_simple.s7	2015-02-22 13:09:53.407145000 +0100
-+++ testOutput/for_simple.s7	2015-02-22 14:23:59.049673000 +0100
-@@ -1,9 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/for_simple.s7	2015-02-22 14:29:21.431383000 +0100
+@@ -2,8 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable i INT depth:2 offset:-4
 -Retrieving variable i
 -Retrieving variable i

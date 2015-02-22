@@ -1,9 +1,0 @@
---- correctOutput/minimal.s7	2015-02-22 13:09:53.710147000 +0100
-+++ testOutput/minimal.s7	2015-02-22 14:24:05.850711000 +0100
-@@ -1,6 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function minimal INT<=() 
--Add scope, index: 2 
--Remove scope, index: 1 
--Remove scope, index: 0 

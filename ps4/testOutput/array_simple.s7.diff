@@ -1,10 +1,9 @@
 --- correctOutput/array_simple.s7	2015-02-22 13:09:53.149144000 +0100
-+++ testOutput/array_simple.s7	2015-02-22 14:23:52.345641000 +0100
-@@ -1,18 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function arrayTest VOID<=() 
--Add scope, index: 2 
++++ testOutput/array_simple.s7	2015-02-22 14:29:14.698347000 +0100
+@@ -2,17 +2,3 @@
+ Add scope, index: 1 
+ Inserting function arrayTest VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a INT depth:2 offset:-4
 -Inserting variable b INT depth:2 offset:-8
 -Retrieving variable a

@@ -1,10 +1,9 @@
 --- correctOutput/logical.s7	2015-02-22 13:09:53.604146000 +0100
-+++ testOutput/logical.s7	2015-02-22 14:24:02.107690000 +0100
-@@ -1,102 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/logical.s7	2015-02-22 14:29:24.288397000 +0100
+@@ -2,101 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a BOOL depth:2 offset:-4
 -Inserting variable b BOOL depth:2 offset:-8
 -Inserting variable c BOOL depth:2 offset:-12

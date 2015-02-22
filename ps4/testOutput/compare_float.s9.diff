@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s9	2015-02-22 13:09:53.227145000 +0100
-+++ testOutput/compare_float.s9	2015-02-22 14:23:53.590647000 +0100
++++ testOutput/compare_float.s9	2015-02-22 14:29:15.960353000 +0100
 @@ -1,144 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

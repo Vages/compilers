@@ -1,10 +1,9 @@
 --- correctOutput/compare_float.s7	2015-02-22 13:09:53.214145000 +0100
-+++ testOutput/compare_float.s7	2015-02-22 14:23:53.353644000 +0100
-@@ -1,88 +0,0 @@
--Add scope, index: 0 
--Add scope, index: 1 
--Inserting function main VOID<=() 
--Add scope, index: 2 
++++ testOutput/compare_float.s7	2015-02-22 14:29:15.715351000 +0100
+@@ -2,87 +2,3 @@
+ Add scope, index: 1 
+ Inserting function main VOID<=() 
+ Add scope, index: 2 
 -Inserting variable a FLOAT depth:2 offset:-4
 -Inserting variable b FLOAT depth:2 offset:-8
 -Inserting variable c FLOAT depth:2 offset:-12

@@ -1,8 +1,8 @@
 --- correctOutput/expressions.s6	2015-02-22 13:09:53.307145000 +0100
-+++ testOutput/expressions.s6	2015-02-22 14:23:55.556655000 +0100
-@@ -1,408 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
++++ testOutput/expressions.s6	2015-02-22 14:29:17.924362000 +0100
+@@ -1,408 +1,3 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: main
 -DECLARATION: parameter/variable : 'a', offset: -4
 -DECLARATION: parameter/variable : 'b', offset: -8
 -DECLARATION: parameter/variable : 'c', offset: -12
@@ -15,7 +15,7 @@
 -DECLARATION: parameter/variable : 'j', offset: -40
 -DECLARATION: parameter/variable : 'k', offset: -44
 -DECLARATION: parameter/variable : 'l', offset: -48
--VARIABLE: access: a
+ VARIABLE: access: a
 -CONSTANT
 -VARIABLE: access: b
 -EXPRESSION: Start: UMINUS

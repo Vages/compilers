@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-22 14:23:57.411666000 +0100
++++ testOutput/expressions.s10	2015-02-22 14:29:19.779372000 +0100
 @@ -1,143 +0,0 @@
 -Type checking assignment
 -Type checking assignment

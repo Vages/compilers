@@ -1,9 +1,9 @@
 --- correctOutput/function_simple.s6	2015-02-22 13:09:53.498145000 +0100
-+++ testOutput/function_simple.s6	2015-02-22 14:24:00.602682000 +0100
-@@ -1,10 +0,0 @@
--FUNCTION_LIST: Start
--FUNCTION: Start: main
--CONSTANT
++++ testOutput/function_simple.s6	2015-02-22 14:29:23.016392000 +0100
+@@ -1,10 +1,4 @@
+ FUNCTION_LIST: Start
+ FUNCTION: Start: main
+ CONSTANT
 -EXPRESSION: Start: FUNC_CALL
 -EXPRESSION: End
 -FUNCTION: End
@@ -11,3 +11,4 @@
 -CONSTANT
 -FUNCTION: End
 -FUNCTION_LIST: End
++VARIABLE: access: function
