@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s6	2015-02-22 13:09:53.921148000 +0100
-+++ testOutput/type_errors_functions.s6	2015-02-22 14:57:32.073338000 +0100
++++ testOutput/type_errors_functions.s6	2015-02-22 15:04:13.198517000 +0100
 @@ -4,33 +4,4 @@
  DECLARATION: parameter/variable : 'b', offset: -8
  VARIABLE: access: a

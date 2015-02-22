@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s6	2015-02-22 13:09:53.448149000 +0100
-+++ testOutput/function_hard.s6	2015-02-22 14:57:26.256308000 +0100
++++ testOutput/function_hard.s6	2015-02-22 15:04:07.098490000 +0100
 @@ -10,84 +10,4 @@
  VARIABLE: access: c
  CONSTANT

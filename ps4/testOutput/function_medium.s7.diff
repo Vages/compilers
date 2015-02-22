@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s7	2015-02-22 13:09:53.475145000 +0100
-+++ testOutput/function_medium.s7	2015-02-22 14:57:27.156314000 +0100
++++ testOutput/function_medium.s7	2015-02-22 15:04:08.020485000 +0100
 @@ -12,37 +12,3 @@
  Retrieving variable d
  Retrieving variable a

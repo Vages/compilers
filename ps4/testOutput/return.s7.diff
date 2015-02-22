@@ -1,5 +1,5 @@
 --- correctOutput/return.s7	2015-02-22 13:09:53.788147000 +0100
-+++ testOutput/return.s7	2015-02-22 14:57:30.854332000 +0100
++++ testOutput/return.s7	2015-02-22 15:04:11.930534000 +0100
 @@ -5,19 +5,3 @@
  Add scope, index: 2 
  Add strings ("t is "), index: 0 

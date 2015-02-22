@@ -1,5 +1,5 @@
 --- correctOutput/array_hard.s6	2015-02-22 13:09:53.118143000 +0100
-+++ testOutput/array_hard.s6	2015-02-22 14:57:23.420292000 +0100
++++ testOutput/array_hard.s6	2015-02-22 15:04:04.065418000 +0100
 @@ -47,32 +47,4 @@
  DECLARATION: parameter/variable : 'c', offset: -12
  VARIABLE: access: c

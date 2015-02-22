@@ -1,5 +1,5 @@
 --- correctOutput/function_simple.s8	2015-02-22 13:09:53.502145000 +0100
-+++ testOutput/function_simple.s8	2015-02-22 14:57:27.639314000 +0100
++++ testOutput/function_simple.s8	2015-02-22 15:04:08.531476000 +0100
 @@ -1,16 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

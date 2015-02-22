@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s6	2015-02-22 13:09:53.269144000 +0100
-+++ testOutput/euclid.s6	2015-02-22 14:57:24.432298000 +0100
++++ testOutput/euclid.s6	2015-02-22 15:04:05.220429000 +0100
 @@ -4,47 +4,4 @@
  DECLARATION: parameter/variable : 'b', offset: 8
  EXPRESSION: Start: -

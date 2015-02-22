@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_functions.s8	2015-02-22 13:09:53.925147000 +0100
-+++ testOutput/type_errors_functions.s8	2015-02-22 14:57:32.224340000 +0100
++++ testOutput/type_errors_functions.s8	2015-02-22 15:04:13.357484000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

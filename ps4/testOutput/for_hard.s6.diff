@@ -1,5 +1,5 @@
 --- correctOutput/for_hard.s6	2015-02-22 13:09:53.377146000 +0100
-+++ testOutput/for_hard.s6	2015-02-22 14:57:25.843306000 +0100
++++ testOutput/for_hard.s6	2015-02-22 15:04:06.669432000 +0100
 @@ -13,21 +13,4 @@
  CONSTANT
  VARIABLE: access: j

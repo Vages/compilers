@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s6	2015-02-22 13:09:53.473145000 +0100
-+++ testOutput/function_medium.s6	2015-02-22 14:57:26.987315000 +0100
++++ testOutput/function_medium.s6	2015-02-22 15:04:07.870434000 +0100
 @@ -10,63 +10,4 @@
  CONSTANT
  VARIABLE: access: a

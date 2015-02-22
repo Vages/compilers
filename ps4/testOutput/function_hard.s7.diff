@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s7	2015-02-22 13:09:53.450145000 +0100
-+++ testOutput/function_hard.s7	2015-02-22 14:57:26.446309000 +0100
++++ testOutput/function_hard.s7	2015-02-22 15:04:07.293452000 +0100
 @@ -12,59 +12,3 @@
  Retrieving variable b
  Retrieving variable c

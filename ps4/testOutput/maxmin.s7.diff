@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s7	2015-02-22 13:09:53.657147000 +0100
-+++ testOutput/maxmin.s7	2015-02-22 14:57:28.589320000 +0100
++++ testOutput/maxmin.s7	2015-02-22 15:04:09.521443000 +0100
 @@ -11,35 +11,3 @@
  Inserting variable e INT depth:2 offset:-20
  Retrieving variable a

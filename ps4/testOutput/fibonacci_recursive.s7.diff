@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s7	2015-02-22 13:09:53.357147000 +0100
-+++ testOutput/fibonacci_recursive.s7	2015-02-22 14:57:25.512304000 +0100
++++ testOutput/fibonacci_recursive.s7	2015-02-22 15:04:06.340430000 +0100
 @@ -7,23 +7,3 @@
  Inserting variable f INT depth:2 offset:-4
  Retrieving variable f

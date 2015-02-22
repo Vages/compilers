@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s6	2015-02-22 13:09:53.655147000 +0100
-+++ testOutput/maxmin.s6	2015-02-22 14:57:28.455321000 +0100
++++ testOutput/maxmin.s6	2015-02-22 15:04:09.377503000 +0100
 @@ -7,56 +7,4 @@
  DECLARATION: parameter/variable : 'e', offset: -20
  VARIABLE: access: a

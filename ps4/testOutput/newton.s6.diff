@@ -1,5 +1,5 @@
 --- correctOutput/newton.s6	2015-02-22 13:09:53.731147000 +0100
-+++ testOutput/newton.s6	2015-02-22 14:57:30.223330000 +0100
++++ testOutput/newton.s6	2015-02-22 15:04:11.258457000 +0100
 @@ -4,47 +4,4 @@
  DECLARATION: parameter/variable : 'square_root', offset: -4
  VARIABLE: access: square_root
