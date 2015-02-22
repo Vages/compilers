@@ -21,24 +21,30 @@ int bind_function ( node_t *root, int stackOffset)
 	scope_add();
 	
 	node_t* params = root->children[0];
-	int n_params = params->n_children;
 
-	stackOffset = 4*(n_params+1);
+	if (params != NULL){
+		int n_params = params->n_children;
 
-	for (int i = 0; i < n_params; i++){
-		if (params->children[i] != NULL){
-			stackOffset = bind_declaration(params->children[i], stackOffset);
+		stackOffset = 4*(n_params+1);
+
+		for (int i = 0; i < n_params; i++){
+			if (params->children[i] != NULL){
+				stackOffset = bind_declaration(params->children[i], stackOffset);
+			}
 		}
 	}
 
 	stackOffset = -4;
 
 	node_t* stmts = root->children[1];
-	int n_stmts = stmts->n_children;
 
-	for (int j = 0; j < n_stmts; j++){
-		if (stmts->children[j] != NULL){
-			stackOffset = bd(stmts->children[j], stackOffset);
+	if (stmts != NULL){
+		int n_stmts = stmts->n_children;
+
+		for (int j = 0; j < n_stmts; j++){
+			if (stmts->children[j] != NULL){
+				stackOffset = bd(stmts->children[j], stackOffset);
+			}
 		}
 	}
 
