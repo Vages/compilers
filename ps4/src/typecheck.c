@@ -122,8 +122,8 @@ data_type_t typecheck_expression(node_t* root)
                 case AND_E: case OR_E:
                     ;
                     l_child_dt = root->children[0]->data_type;
-                    iseq = equal_types(l_child_dt, root->children[1]->data_type);
-                    if (!iseq){
+                    r_child_dt = root->children[1]->data_type;
+                    if (!equal_types(l_child_dt, r_child_dt)){
                         type_error(root);
                     } else if (l_child_dt.base_type != BOOL_TYPE){
                         type_error(root);
@@ -134,8 +134,8 @@ data_type_t typecheck_expression(node_t* root)
                 case EQUAL_E: case NEQUAL_E:
                     ;
                     l_child_dt = root->children[0]->data_type;
-                    iseq = equal_types(l_child_dt, root->children[1]->data_type);
-                    if (!iseq){
+                    r_child_dt = root->children[1]->data_type;
+                    if (!equal_types(l_child_dt, r_child_dt)){
                         type_error(root);
                     } else if ((l_child_dt.base_type != FLOAT_TYPE) || (l_child_dt.base_type != INT_TYPE) || (l_child_dt.base_type != BOOL_TYPE)){
                         type_error(root);
@@ -163,7 +163,7 @@ data_type_t typecheck_expression(node_t* root)
                     if (!equal_types(l_child_dt, r_child_dt)){
                         type_error(root);
                     }
-                    
+
                     return l_child_dt;
                     break;
                 
