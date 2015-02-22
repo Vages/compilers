@@ -55,7 +55,7 @@ function_symbol_t* create_function_symbol(node_t* function_node)
 	//FINISHED
 	//Eirik: Creates a function symbol
     function_symbol_t* fs = malloc(sizeof(function_symbol_t));
-    fs->label = STRDUP(function_node->label);
+    fs->label = function_node->label;
     fs->return_type = function_node->data_type;
 
     if (function_node->children[0] == NULL){
@@ -114,7 +114,7 @@ symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 
 	symbol_t* s = malloc(sizeof(symbol_t));
 	s->stack_offset = stackOffset;
-	s->label = STRDUP(declaration_node->label);
+	s->label = declaration_node->label;
 	s->type = declaration_node->data_type;
 
 	return s;
