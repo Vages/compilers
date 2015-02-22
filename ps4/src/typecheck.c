@@ -82,7 +82,7 @@ data_type_t typecheck_expression(node_t* root)
                     if (child_dt.base_type != BOOL_TYPE){
                         type_error(root);
                     }
-                    return root->data_type;
+                    return child_dt;
                     break;
                     
                 default:
