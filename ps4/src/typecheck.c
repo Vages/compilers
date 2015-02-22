@@ -139,7 +139,7 @@ data_type_t typecheck_expression(node_t* root)
                     r_child_dt = root->children[1]->data_type;
                     if (!equal_types(l_child_dt, r_child_dt)){
                         type_error(root);
-                    } else if ((l_child_dt.base_type != FLOAT_TYPE) || (l_child_dt.base_type != INT_TYPE) || (l_child_dt.base_type != BOOL_TYPE)){
+                    } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE) && (l_child_dt.base_type != BOOL_TYPE)){
                         type_error(root);
                     }
                     return tmp_dt;
