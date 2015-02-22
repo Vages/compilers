@@ -1,5 +1,5 @@
 --- correctOutput/merge_sort.s10	2015-02-22 13:09:53.672147000 +0100
-+++ testOutput/merge_sort.s10	2015-02-22 23:44:43.663287000 +0100
++++ testOutput/merge_sort.s10	2015-02-22 23:47:40.655205000 +0100
 @@ -3,10 +3,16 @@
  Type checking assignment
  Type checking assignment
