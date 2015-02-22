@@ -60,9 +60,9 @@ data_type_t typecheck_expression(node_t* root)
 		printf( "Type checking expression %s\n", root->expression_type.text);
 
     typecheck_default(root);
-    
+
 	if(root->n_children == 0){
-        return NULL;
+        return root->data_type;
 	}
 
 	else if(root->n_children == 1){
