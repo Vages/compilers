@@ -105,9 +105,14 @@ int bind_expression( node_t* root, int stackOffset)
 	if(outputStage == 6)
 		printf( "EXPRESSION: Start: %s\n", root->expression_type.text);
 
+	if (root->expression_type.index == FUNC_CALL_E){
+		root->function_entry = function_get(root->label);
+	}
 
 	if(outputStage == 6)
 		printf( "EXPRESSION: End\n");
+
+	return stackOffset;
 }
 
 
