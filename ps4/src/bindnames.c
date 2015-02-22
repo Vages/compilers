@@ -57,13 +57,18 @@ function_symbol_t* create_function_symbol(node_t* function_node)
     function_symbol_t* fs = malloc(sizeof(function_symbol_t));
     fs->label = STRDUP(function_node->label);
     fs->return_type = function_node->data_type;
-    int args = function_node->children[0]->n_children;
-    fs->nArguments = args;
+
+    if (function_node->children[0] == NULL){
+    	fs->nArguments = 0;
+    } else {
+    	int args = function_node->children[0]->n_children;
+    	fs->nArguments = args;
     
-    data_type_t* at = malloc(sizeof(data_type_t)*args);
-    fs->argument_types = at;
-    for (int i = 0; i < args; i++){
-    	fs->argument_types[i] = function_node->children[0]->children[i]->data_type;
+    	data_type_t* at = malloc(sizeof(data_type_t)*args);
+    	fs->argument_types = at;
+    	for (int i = 0; i < args; i++){
+    		fs->argument_types[i] = function_node->children[0]->children[i]->data_type;
+    	}
     }
 
     return fs;
