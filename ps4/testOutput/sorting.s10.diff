@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s10	2015-02-22 13:09:53.796147000 +0100
-+++ testOutput/sorting.s10	2015-02-22 15:09:27.229132000 +0100
++++ testOutput/sorting.s10	2015-02-22 15:11:23.068757000 +0100
 @@ -1,22 +0,0 @@
 -Type checking assignment
 -Type checking expression NEW

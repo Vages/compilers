@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s10	2015-02-22 13:09:53.619150000 +0100
-+++ testOutput/matrix_multiply.s10	2015-02-22 15:09:25.668143000 +0100
++++ testOutput/matrix_multiply.s10	2015-02-22 15:11:21.967742000 +0100
 @@ -1,70 +0,0 @@
 -Type checking assignment
 -Type checking expression NEW

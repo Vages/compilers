@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s10	2015-02-22 13:09:53.426147000 +0100
-+++ testOutput/function_hard.s10	2015-02-22 15:09:24.612143000 +0100
++++ testOutput/function_hard.s10	2015-02-22 15:11:21.131745000 +0100
 @@ -1,22 +0,0 @@
 -Type checking assignment
 -Type checking assignment
