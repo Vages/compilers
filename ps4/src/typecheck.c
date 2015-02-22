@@ -44,7 +44,11 @@ int equal_types(data_type_t a, data_type_t b){
 
 data_type_t typecheck_default(node_t* root)
 {
-    
+    for (int i = 0; i < root->n_children; i++){
+        if (root->children[i] != NULL){
+            (root->children[i]->typecheck)(root->children[i]);
+        }
+    }
 }
 
 data_type_t typecheck_expression(node_t* root)
