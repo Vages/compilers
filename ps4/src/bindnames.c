@@ -13,17 +13,38 @@ int bind_default ( node_t *root, int stackOffset)
 
 int bind_function ( node_t *root, int stackOffset)
 {
+	//FINISHED
+	//Eirik: Handles the bindings of a functions parameters and statements. The function itself has been bound in bind_function_list
 	if(outputStage == 6)
 		printf( "FUNCTION: Start: %s\n", root->label);
 
-        
+	scope_add();
+	
+	node_t* params = root->children[0];
+	int n_params = params->n_children;
+
+	stackOffset = 4*(n_params+1);
+
+	for (int i = 0; i < n_params; i++){
+		stackOffset = bind_declaration(params->children[i], stackOffset);
+	}
+
+	stackOffset = -4
+
+	node_t* stmts = root->children[1];
+	int n_stmts = stmts->n_children;
+
+	for (int j = 0; j < n_stmts; j++){
+		stackOffset = bd(stmts->children[j], stackOffset);
+	}
+
+	scope_remove();
 
 	if(outputStage == 6)
 		printf( "FUNCTION: End\n");
+
+	return stackOffset;
 }
-
-
-
 
 function_symbol_t* create_function_symbol(node_t* function_node)
 {
