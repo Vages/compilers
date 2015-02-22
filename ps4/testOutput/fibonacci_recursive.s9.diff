@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_recursive.s9	2015-02-22 13:09:53.361145000 +0100
-+++ testOutput/fibonacci_recursive.s9	2015-02-22 14:16:43.059363000 +0100
++++ testOutput/fibonacci_recursive.s9	2015-02-22 14:23:58.420671000 +0100
 @@ -1,56 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

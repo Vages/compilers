@@ -1,5 +1,5 @@
 --- correctOutput/type_errors_assignment.s7	2015-02-22 13:09:53.890147000 +0100
-+++ testOutput/type_errors_assignment.s7	2015-02-22 14:16:53.420418000 +0100
++++ testOutput/type_errors_assignment.s7	2015-02-22 14:24:08.644724000 +0100
 @@ -1,15 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

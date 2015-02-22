@@ -1,5 +1,5 @@
 --- correctOutput/if_simple.s6	2015-02-22 13:09:53.577145000 +0100
-+++ testOutput/if_simple.s6	2015-02-22 14:16:46.187379000 +0100
++++ testOutput/if_simple.s6	2015-02-22 14:24:01.524687000 +0100
 @@ -1,8 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

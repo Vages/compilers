@@ -1,5 +1,5 @@
 --- correctOutput/logical.s7	2015-02-22 13:09:53.604146000 +0100
-+++ testOutput/logical.s7	2015-02-22 14:16:46.766385000 +0100
++++ testOutput/logical.s7	2015-02-22 14:24:02.107690000 +0100
 @@ -1,102 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

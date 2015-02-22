@@ -1,5 +1,5 @@
 --- correctOutput/fibonacci_iterative.s7	2015-02-22 13:09:53.334146000 +0100
-+++ testOutput/fibonacci_iterative.s7	2015-02-22 14:16:42.493358000 +0100
++++ testOutput/fibonacci_iterative.s7	2015-02-22 14:23:57.863667000 +0100
 @@ -3,29 +3,3 @@
  Inserting function fibonacci_iterative INT<=(INT) 
  Add scope, index: 2 

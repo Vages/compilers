@@ -1,5 +1,5 @@
 --- correctOutput/compare_int.s7	2015-02-22 13:09:53.247144000 +0100
-+++ testOutput/compare_int.s7	2015-02-22 14:16:38.952340000 +0100
++++ testOutput/compare_int.s7	2015-02-22 14:23:54.324649000 +0100
 @@ -1,88 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

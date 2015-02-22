@@ -1,5 +1,5 @@
 --- correctOutput/minimal.s9	2015-02-22 13:09:53.715147000 +0100
-+++ testOutput/minimal.s9	2015-02-22 14:16:50.601403000 +0100
++++ testOutput/minimal.s9	2015-02-22 14:24:05.919710000 +0100
 @@ -1,7 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

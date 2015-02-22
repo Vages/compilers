@@ -1,5 +1,5 @@
 --- correctOutput/variables.s8	2015-02-22 13:09:53.951148000 +0100
-+++ testOutput/variables.s8	2015-02-22 14:16:54.225422000 +0100
++++ testOutput/variables.s8	2015-02-22 14:24:09.413728000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

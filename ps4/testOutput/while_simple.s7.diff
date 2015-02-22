@@ -1,5 +1,5 @@
 --- correctOutput/while_simple.s7	2015-02-22 13:09:53.999148000 +0100
-+++ testOutput/while_simple.s7	2015-02-22 14:16:54.920425000 +0100
++++ testOutput/while_simple.s7	2015-02-22 14:24:10.092730000 +0100
 @@ -1,12 +0,0 @@
 -Add scope, index: 0 
 -Add scope, index: 1 

@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s6	2015-02-22 13:09:53.837148000 +0100
-+++ testOutput/strings_and_comments.s6	2015-02-22 14:16:52.610412000 +0100
++++ testOutput/strings_and_comments.s6	2015-02-22 14:24:07.898720000 +0100
 @@ -1,8 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

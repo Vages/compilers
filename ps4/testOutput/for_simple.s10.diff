@@ -1,4 +1,4 @@
 --- correctOutput/for_simple.s10	2015-02-22 13:09:53.393147000 +0100
-+++ testOutput/for_simple.s10	2015-02-22 14:16:43.815369000 +0100
++++ testOutput/for_simple.s10	2015-02-22 14:23:59.172674000 +0100
 @@ -1 +0,0 @@
 -Type checking assignment

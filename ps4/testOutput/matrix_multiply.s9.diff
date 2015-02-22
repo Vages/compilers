@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s9	2015-02-22 13:09:53.639146000 +0100
-+++ testOutput/matrix_multiply.s9	2015-02-22 14:16:48.132390000 +0100
++++ testOutput/matrix_multiply.s9	2015-02-22 14:24:03.469697000 +0100
 @@ -1,158 +0,0 @@
 - PROGRAM
 - FUNCTION_LIST

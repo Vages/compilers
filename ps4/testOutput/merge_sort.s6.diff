@@ -1,5 +1,5 @@
 --- correctOutput/merge_sort.s6	2015-02-22 13:09:53.686146000 +0100
-+++ testOutput/merge_sort.s6	2015-02-22 14:16:49.257396000 +0100
++++ testOutput/merge_sort.s6	2015-02-22 14:24:04.599703000 +0100
 @@ -1,175 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main

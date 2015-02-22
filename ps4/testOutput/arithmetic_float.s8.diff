@@ -1,5 +1,5 @@
 --- correctOutput/arithmetic_float.s8	2015-02-22 13:09:53.040143000 +0100
-+++ testOutput/arithmetic_float.s8	2015-02-22 14:16:33.500314000 +0100
++++ testOutput/arithmetic_float.s8	2015-02-22 14:23:48.845618000 +0100
 @@ -1,12 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

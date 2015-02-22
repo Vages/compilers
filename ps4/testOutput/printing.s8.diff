@@ -1,5 +1,5 @@
 --- correctOutput/printing.s8	2015-02-22 13:09:53.757148000 +0100
-+++ testOutput/printing.s8	2015-02-22 14:16:51.308409000 +0100
++++ testOutput/printing.s8	2015-02-22 14:24:06.625714000 +0100
 @@ -1,20 +0,0 @@
 -.syntax unified
 -.cpu cortex-a15

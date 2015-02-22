@@ -1,5 +1,5 @@
 --- correctOutput/array_simple.s6	2015-02-22 13:09:53.147143000 +0100
-+++ testOutput/array_simple.s6	2015-02-22 14:16:36.923331000 +0100
++++ testOutput/array_simple.s6	2015-02-22 14:23:52.263640000 +0100
 @@ -1,32 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: arrayTest

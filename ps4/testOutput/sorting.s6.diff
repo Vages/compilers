@@ -1,5 +1,5 @@
 --- correctOutput/sorting.s6	2015-02-22 13:09:53.808146000 +0100
-+++ testOutput/sorting.s6	2015-02-22 14:16:51.974410000 +0100
++++ testOutput/sorting.s6	2015-02-22 14:24:07.277716000 +0100
 @@ -1,73 +0,0 @@
 -FUNCTION_LIST: Start
 -FUNCTION: Start: main
