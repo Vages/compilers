@@ -13,7 +13,6 @@ int bind_default ( node_t *root, int stackOffset)
 
 int bind_function ( node_t *root, int stackOffset)
 {
-	//FINISHED
 	//Eirik: Handles the bindings of a functions parameters and statements. The function itself has been bound in bind_function_list
 	if(outputStage == 6)
 		printf( "FUNCTION: Start: %s\n", root->label);
@@ -52,7 +51,6 @@ int bind_function ( node_t *root, int stackOffset)
 
 function_symbol_t* create_function_symbol(node_t* function_node)
 {
-	//FINISHED
 	//Eirik: Creates a function symbol
     function_symbol_t* fs = malloc(sizeof(function_symbol_t));
     fs->label = function_node->label;
@@ -76,7 +74,6 @@ function_symbol_t* create_function_symbol(node_t* function_node)
 
 int bind_function_list ( node_t *root, int stackOffset)
 {
-	//FINISHED
 	//Eirik: Binds all function symbols in a function list and then continues tree traversal.
 	if(outputStage == 6)
 		printf( "FUNCTION_LIST: Start\n");
@@ -102,14 +99,12 @@ int bind_function_list ( node_t *root, int stackOffset)
 
 int bind_constant ( node_t *root, int stackOffset)
 {
-	//FINISHED
     return bc(root, stackOffset); // Eirik: The same as the bind constant from last time
 }
 
 
 symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 {
-	//FINISHED
     //Eirik: Creates a symbol table struct and returns it.
 
 	symbol_t* s = malloc(sizeof(symbol_t));
@@ -122,7 +117,6 @@ symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 
 int bind_declaration ( node_t *root, int stackOffset)
 {
-	//FINISHED
 	//Eirik: Creates and passes an entry the symbol table.
 	if(outputStage == 6)
 		printf( "DECLARATION: parameter/variable : '%s', offset: %d\n", root->label, stackOffset);
@@ -137,7 +131,6 @@ int bind_declaration ( node_t *root, int stackOffset)
 
 int bind_variable ( node_t *root, int stackOffset)
 {	
-	//FINISHED
 	//Eirik: Binds a variables entry field to its appropriate symbol table entry
 	if(outputStage == 6)
 		printf( "VARIABLE: access: %s\n", root->label);
@@ -149,7 +142,6 @@ int bind_variable ( node_t *root, int stackOffset)
 
 int bind_expression( node_t* root, int stackOffset)
 {
-	//FINISHED
 	//Eirik: Binds an expression node of the func call type to its appropriate symbol table entry
 	if(outputStage == 6)
 		printf( "EXPRESSION: Start: %s\n", root->expression_type.text);
