@@ -1,8 +1,0 @@
---- correctOutput/while_simple.s10	2015-02-22 13:09:53.979148000 +0100
-+++ testOutput/while_simple.s10	2015-02-22 23:09:18.892277000 +0100
-@@ -2,3 +2,5 @@
- Type checking expression >
- Type checking assignment
- Type checking expression -
-+Type error at:
-+EXPRESSION (-)

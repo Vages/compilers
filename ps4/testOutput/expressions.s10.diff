@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-22 23:09:15.422258000 +0100
++++ testOutput/expressions.s10	2015-02-22 23:10:44.402718000 +0100
 @@ -1,6 +1,10 @@
  Type checking assignment
  Type checking assignment
@@ -11,40 +11,7 @@
  Type checking assignment
  Type checking assignment
  Type checking assignment
-@@ -9,65 +13,147 @@
- Type checking expression +
- Type checking expression *
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (*)
- Type checking expression *
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (+)
- Type checking assignment
- Type checking expression +
- Type checking expression *
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (*)
- Type checking expression *
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (+)
- Type checking assignment
- Type checking expression +
- Type checking expression *
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (*)
- Type checking expression *
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (+)
- Type checking assignment
+@@ -24,22 +28,46 @@
  Type checking expression ||
  Type checking expression ==
  Type checking expression UMINUS
@@ -91,76 +58,7 @@
  Type checking assignment
  Type checking expression +
  Type checking expression -
- Type checking expression +
- Type checking expression /
- Type checking expression /
--Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (/)
-+Type error at:
-+EXPRESSION (/)
-+Type error at:
-+EXPRESSION (+)
-+Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (-)
- Type checking expression *
- Type checking expression *
- Type checking expression *
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (+)
- Type checking assignment
- Type checking expression *
- Type checking expression +
- Type checking expression -
- Type checking expression UMINUS
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (-)
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (+)
- Type checking expression +
-+Type error at:
-+EXPRESSION (+)
-+Type error at:
-+EXPRESSION (*)
- Type checking assignment
- Type checking expression /
- Type checking expression -
- Type checking expression /
-+Type error at:
-+EXPRESSION (/)
-+Type error at:
-+EXPRESSION (-)
- Type checking expression /
- Type checking expression -
- Type checking expression /
-+Type error at:
-+EXPRESSION (/)
-+Type error at:
-+EXPRESSION (-)
- Type checking expression +
- Type checking expression -
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (-)
-+Type error at:
-+EXPRESSION (+)
-+Type error at:
-+EXPRESSION (/)
-+Type error at:
-+EXPRESSION (/)
- Type checking assignment
- Type checking expression ||
- Type checking expression ||
-@@ -97,37 +183,81 @@
+@@ -97,12 +125,18 @@
  Type checking expression >
  Type checking expression <=
  Type checking expression UMINUS
@@ -179,35 +77,7 @@
  Type checking expression !
  Type checking assignment
  Type checking expression +
- Type checking expression *
-+Type error at:
-+EXPRESSION (*)
- Type checking expression *
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (+)
- Type checking assignment
- Type checking expression *
- Type checking expression *
- Type checking expression +
-+Type error at:
-+EXPRESSION (+)
-+Type error at:
-+EXPRESSION (*)
-+Type error at:
-+EXPRESSION (*)
- Type checking assignment
- Type checking expression /
- Type checking expression /
- Type checking expression -
-+Type error at:
-+EXPRESSION (-)
-+Type error at:
-+EXPRESSION (/)
-+Type error at:
-+EXPRESSION (/)
- Type checking assignment
+@@ -120,14 +154,34 @@
  Type checking expression ||
  Type checking expression ||
  Type checking expression ||
@@ -242,7 +112,7 @@
  Type checking assignment
  Type checking expression ||
  Type checking expression ||
-@@ -135,9 +265,21 @@
+@@ -135,9 +189,21 @@
  Type checking expression >
  Type checking expression &&
  Type checking expression >=

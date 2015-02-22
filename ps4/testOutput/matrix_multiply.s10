@@ -18,10 +18,6 @@ EXPRESSION (ARRAY_INDEX)
 Type checking expression +
 Type checking expression *
 Type error at:
-EXPRESSION (*)
-Type error at:
-EXPRESSION (+)
-Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ARRAY_INDEX
@@ -33,10 +29,6 @@ EXPRESSION (ARRAY_INDEX)
 Type checking expression -
 Type checking expression +
 Type checking expression *
-Type error at:
-EXPRESSION (*)
-Type error at:
-EXPRESSION (+)
 Type error at:
 EXPRESSION (-)
 Type error at:

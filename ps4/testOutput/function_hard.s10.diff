@@ -1,25 +1,19 @@
 --- correctOutput/function_hard.s10	2015-02-22 13:09:53.426147000 +0100
-+++ testOutput/function_hard.s10	2015-02-22 23:09:16.419298000 +0100
-@@ -7,16 +7,19 @@
++++ testOutput/function_hard.s10	2015-02-22 23:10:45.050723000 +0100
+@@ -7,16 +7,13 @@
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression -
 -Type checking expression -
-+Type error at:
-+EXPRESSION (-)
  Type checking assignment
  Type checking expression >
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression -
 -Type checking expression -
-+Type error at:
-+EXPRESSION (-)
  Type checking assignment
  Type checking expression >
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression -
 -Type checking expression -
-+Type error at:
-+EXPRESSION (-)
