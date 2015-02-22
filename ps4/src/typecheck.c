@@ -86,7 +86,7 @@ data_type_t typecheck_expression(node_t* root)
                     break;
                     
                 default:
-                    return child_dt;
+                    return root->data_type;
                     break;
             }
         }
