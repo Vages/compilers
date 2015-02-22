@@ -1,17 +1,6 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-22 23:28:43.897306000 +0100
-@@ -1,6 +1,10 @@
- Type checking assignment
- Type checking assignment
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (UMINUS)
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking assignment
- Type checking assignment
-@@ -26,12 +30,20 @@
++++ testOutput/expressions.s10	2015-02-22 23:44:42.249279000 +0100
+@@ -26,12 +26,20 @@
  Type checking expression UMINUS
  Type checking expression !=
  Type checking expression UMINUS
@@ -32,7 +21,7 @@
  Type checking assignment
  Type checking expression ||
  Type checking expression ==
-@@ -40,6 +52,10 @@
+@@ -40,6 +48,10 @@
  Type checking expression !=
  Type checking expression UMINUS
  Type checking expression UMINUS
@@ -43,69 +32,17 @@
  Type checking assignment
  Type checking expression +
  Type checking expression -
-@@ -97,6 +113,10 @@
- Type checking expression >
- Type checking expression <=
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (UMINUS)
-+Type error at:
-+EXPRESSION (<=)
- Type checking expression &&
+@@ -103,7 +115,13 @@
+ Type checking expression ||
  Type checking expression !
- Type checking expression &&
-@@ -120,14 +140,34 @@
- Type checking expression ||
- Type checking expression ||
- Type checking expression ||
-+Type error at:
-+EXPRESSION (||)
- Type checking expression &&
- Type checking expression &&
-+Type error at:
-+EXPRESSION (||)
-+Type error at:
-+EXPRESSION (||)
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ||
- Type checking expression &&
- Type checking expression &&
- Type checking expression ||
- Type checking expression ||
-+Type error at:
-+EXPRESSION (||)
-+Type error at:
-+EXPRESSION (||)
-+Type error at:
-+EXPRESSION (&&)
-+Type error at:
-+EXPRESSION (&&)
-+Type error at:
-+EXPRESSION (||)
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ||
- Type checking expression ||
-@@ -135,9 +175,19 @@
- Type checking expression >
- Type checking expression &&
- Type checking expression >=
-+Type error at:
-+EXPRESSION (>=)
  Type checking expression !=
- Type checking expression <=
- Type checking expression UMINUS
 +Type error at:
-+EXPRESSION (UMINUS)
-+Type error at:
-+EXPRESSION (<=)
++EXPRESSION (!)
  Type checking expression !
- Type checking expression <
- Type checking expression UMINUS
 +Type error at:
-+EXPRESSION (UMINUS)
++EXPRESSION (||)
 +Type error at:
-+EXPRESSION (<)
++EXPRESSION (&&)
+ Type checking assignment
+ Type checking expression +
+ Type checking expression *

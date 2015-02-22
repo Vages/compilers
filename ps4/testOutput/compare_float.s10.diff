@@ -1,13 +1,28 @@
 --- correctOutput/compare_float.s10	2015-02-22 13:09:53.195144000 +0100
-+++ testOutput/compare_float.s10	2015-02-22 23:28:43.615305000 +0100
-@@ -1,6 +1,10 @@
++++ testOutput/compare_float.s10	2015-02-22 23:44:41.902277000 +0100
+@@ -29,13 +29,25 @@
+ Type checking expression <=
  Type checking assignment
- Type checking assignment
- Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (UMINUS)
+ Type checking expression ==
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
+ Type checking expression ==
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking expression >
+ Type checking expression ==
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression !=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression !=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression !=
++Type error at:
++ASSIGNMENT_STATEMENT

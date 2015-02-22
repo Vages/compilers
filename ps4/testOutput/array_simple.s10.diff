@@ -1,18 +1,22 @@
 --- correctOutput/array_simple.s10	2015-02-22 13:09:53.135143000 +0100
-+++ testOutput/array_simple.s10	2015-02-22 23:28:43.373304000 +0100
-@@ -2,9 +2,15 @@
- Type checking assignment
- Type checking assignment
++++ testOutput/array_simple.s10	2015-02-22 23:44:41.615277000 +0100
+@@ -4,7 +4,19 @@
  Type checking expression NEW
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
 +Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ARRAY_INDEX
++EXPRESSION (ARRAY_INDEX)
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
  Type checking expression ARRAY_INDEX
++Type error at:
++EXPRESSION (ARRAY_INDEX)
