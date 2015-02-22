@@ -76,8 +76,8 @@ int bind_function_list ( node_t *root, int stackOffset)
 		function_add(children[i]->label, fs);
 	}
 
-	for (int j = 0; i < root->n_children; j++){
-		stackOffset = bind_function(children[j], stackOffset);
+	for (int j = 0; j < root->n_children; j++){
+		stackOffset = bind_function(root->children[j], stackOffset);
 	}
 
 	if(outputStage == 6)
