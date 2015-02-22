@@ -53,16 +53,15 @@ int bind_function_list ( node_t *root, int stackOffset)
 
 int bind_constant ( node_t *root, int stackOffset)
 {
+	//FINISHED
     return bc(root, stackOffset); // Eirik: The same as the bind constant from last time
 }
 
 
 symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 {
-    /*
-		Eirik: This function creates a symbol table struct and returns it.
-		Note that the depth parameter has to be ignored
-    */
+	//FINISHED
+    //Eirik: Creates a symbol table struct and returns it.
 
 	symbol_t* s = malloc(sizeof(symbol_t));
 	s->stack_offset = stackOffset;
@@ -70,17 +69,14 @@ symbol_t* create_symbol(node_t* declaration_node, int stackOffset)
 	s->type = declaration_node->data_type;
 
 	return s;
-	// Eirik: Probably finished
 }
 
 int bind_declaration ( node_t *root, int stackOffset)
 {
+	//FINISHED
+	//Eirik: Creates and passes an entry the symbol table.
 	if(outputStage == 6)
 		printf( "DECLARATION: parameter/variable : '%s', offset: %d\n", root->label, stackOffset);
-
-	/*
-		Eirik: This should pass a newly created node to the symbol table.
-	*/
 
 	s = create_symbol(root, stackOffset);
 	symbol_insert(s->label, s);
@@ -92,6 +88,7 @@ int bind_declaration ( node_t *root, int stackOffset)
 
 int bind_variable ( node_t *root, int stackOffset)
 {	
+	//FINISHED
 	//Eirik: Binds a variables entry field to its appropriate symbol table entry
 	if(outputStage == 6)
 		printf( "VARIABLE: access: %s\n", root->label);
