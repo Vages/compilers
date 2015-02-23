@@ -68,114 +68,115 @@ data_type_t typecheck_expression(node_t* root)
 	}
 
 	else if(root->n_children == 1){
-            node_t* child = root->children[0];
-            data_type_t child_dt = child->data_type;
-            switch(root->expression_type.index){
-                case UMINUS_E:
-                    if ((child_dt.base_type != INT_TYPE) && (child_dt.base_type != FLOAT_TYPE)){
-                        type_error(root);
-                    }
-                    return child_dt;
-                    break;
-                    
-                case NOT_E:
-                    if (child_dt.base_type != BOOL_TYPE){
-                        type_error(root);
-                    }
-                    return child_dt;
-                    break;
-                    
-                default:
-                    return root->data_type;
-                    break;
-            }
+        node_t* child = root->children[0];
+        data_type_t child_dt = child->data_type;
+        switch(root->expression_type.index){
+            case UMINUS_E:
+                if ((child_dt.base_type != INT_TYPE) && (child_dt.base_type != FLOAT_TYPE)){
+                    type_error(root);
+                }
+                return child_dt;
+                break;
+                
+            case NOT_E:
+                if (child_dt.base_type != BOOL_TYPE){
+                    type_error(root);
+                }
+                return child_dt;
+                break;
+                
+            default:
+                return root->data_type;
+                break;
         }
-        else if(root->n_children > 1){
+    }
+    else if(root->n_children > 1){
 
-            switch(root->expression_type.index)
-            {
-                data_type_t l_child_dt;
-                data_type_t r_child_dt;
-                data_type_t rt_bool = {.base_type = BOOL_TYPE};
-                case ADD_E: case SUB_E: case DIV_E: case MUL_E:
-                    ;
-                    l_child_dt = root->children[0]->data_type;
-                    r_child_dt = root->children[1]->data_type;
-                    if (!equal_types(l_child_dt, r_child_dt)){
-                        fprintf(stderr, "%s\n", "Unequal types");
-                        type_error(root);
-                    } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
-                        fprintf(stderr, "%s\n", "Not float or int");
-                        type_error(root);
-                    }
-                    return l_child_dt;
-                    break;
-                        
-                case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
-                    ;
-                    l_child_dt = root->children[0]->data_type;
-                    r_child_dt = root->children[1]->data_type;
-                    if (!equal_types(l_child_dt, r_child_dt)){
-                        type_error(root);
-                    } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
-                        type_error(root);
-                    }
-                    return rt_bool;
-                    break;
-                        
-                case AND_E: case OR_E:
-                    ;
-                    l_child_dt = root->children[0]->data_type;
-                    r_child_dt = root->children[1]->data_type;
-                    if (!equal_types(l_child_dt, r_child_dt)){
-                        type_error(root);
-                    } else if (l_child_dt.base_type != BOOL_TYPE){
-                        type_error(root);
-                    }
-                    return l_child_dt;
-                    break;
+        switch(root->expression_type.index)
+        {
+            data_type_t l_child_dt;
+            data_type_t r_child_dt;
+            data_type_t rt_bool = {.base_type = BOOL_TYPE};
+            
+            case ADD_E: case SUB_E: case DIV_E: case MUL_E:
+                ;
+                l_child_dt = root->children[0]->data_type;
+                r_child_dt = root->children[1]->data_type;
+                if (!equal_types(l_child_dt, r_child_dt)){
+                    fprintf(stderr, "%s\n", "Unequal types");
+                    type_error(root);
+                } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
+                    fprintf(stderr, "%s\n", "Not float or int");
+                    type_error(root);
+                }
+                return l_child_dt;
+                break;
                     
-                case EQUAL_E: case NEQUAL_E:
-                    ;
-                    l_child_dt = root->children[0]->data_type;
-                    r_child_dt = root->children[1]->data_type;
-                    if (!equal_types(l_child_dt, r_child_dt)){
-                        type_error(root);
-                    } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE) && (l_child_dt.base_type != BOOL_TYPE)){
-                        type_error(root);
-                    }
-                    return rt_bool;
-                    break;
-                        
-                case FUNC_CALL_E: 
-                    ;
-                    function_symbol_t* fst = root->function_entry;
-                    if(fst->nArguments>0){
-                        for (int i = 0; i < fst->nArguments; i++){
-                            if (!(equal_types(fst->argument_types[i], root->children[1]->children[i]->data_type))){
-                                type_error(root);
-                            }
+            case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
+                ;
+                l_child_dt = root->children[0]->data_type;
+                r_child_dt = root->children[1]->data_type;
+                if (!equal_types(l_child_dt, r_child_dt)){
+                    type_error(root);
+                } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
+                    type_error(root);
+                }
+                return rt_bool;
+                break;
+                    
+            case AND_E: case OR_E:
+                ;
+                l_child_dt = root->children[0]->data_type;
+                r_child_dt = root->children[1]->data_type;
+                if (!equal_types(l_child_dt, r_child_dt)){
+                    type_error(root);
+                } else if (l_child_dt.base_type != BOOL_TYPE){
+                    type_error(root);
+                }
+                return l_child_dt;
+                break;
+                
+            case EQUAL_E: case NEQUAL_E:
+                ;
+                l_child_dt = root->children[0]->data_type;
+                r_child_dt = root->children[1]->data_type;
+                if (!equal_types(l_child_dt, r_child_dt)){
+                    type_error(root);
+                } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE) && (l_child_dt.base_type != BOOL_TYPE)){
+                    type_error(root);
+                }
+                return rt_bool;
+                break;
+                    
+            case FUNC_CALL_E: 
+                ;
+                function_symbol_t* fst = root->function_entry;
+                if(fst->nArguments>0){
+                    for (int i = 0; i < fst->nArguments; i++){
+                        if (!(equal_types(fst->argument_types[i], root->children[1]->children[i]->data_type))){
+                            type_error(root);
                         }
                     }
-                    return fst->return_type;
-                    break;
-                
-                case ARRAY_INDEX_E:
-                    ;
-                    l_child_dt = root->children[0]->data_type;
-                    r_child_dt = root->children[1]->data_type;
-                    if (!equal_types(l_child_dt, r_child_dt)){
-                        type_error(root);
-                    }
+                }
+                return fst->return_type;
+                break;
+            
+            case ARRAY_INDEX_E:
+                ;
+                l_child_dt = root->children[0]->data_type;
+                r_child_dt = root->children[1]->data_type;
+                if (!equal_types(l_child_dt, r_child_dt)){
+                    type_error(root);
+                }
 
-                    return l_child_dt;
-                    break;
-                
-                default:
-                    return root->data_type;
-                    break;
-            }
+                return l_child_dt;
+                break;
+            
+            default:
+                return root->data_type;
+                break;
         }
+    }
     return root->data_type;
 }
 
