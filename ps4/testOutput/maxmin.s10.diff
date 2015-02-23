@@ -1,13 +1,10 @@
 --- correctOutput/maxmin.s10	2015-02-22 13:09:53.643147000 +0100
-+++ testOutput/maxmin.s10	2015-02-23 15:19:26.716309000 +0100
-@@ -2,8 +2,8 @@
- Type checking expression FUNC_CALL
++++ testOutput/maxmin.s10	2015-02-23 15:24:13.782904000 +0100
+@@ -3,7 +3,6 @@
  Type checking assignment
  Type checking expression FUNC_CALL
+ Type checking expression UMINUS
 -Type checking expression UMINUS
--Type checking expression UMINUS
-+Type error at:
-+EXPRESSION (FUNC_CALL)
  Type checking assignment
  Type checking expression FUNC_CALL
  Type checking expression >

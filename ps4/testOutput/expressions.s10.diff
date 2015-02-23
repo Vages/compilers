@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-23 15:19:21.372282000 +0100
++++ testOutput/expressions.s10	2015-02-23 15:24:09.358881000 +0100
 @@ -26,12 +26,22 @@
  Type checking expression UMINUS
  Type checking expression !=
@@ -35,28 +35,20 @@
  Type checking assignment
  Type checking expression +
  Type checking expression -
-@@ -97,13 +112,29 @@
+@@ -97,6 +112,9 @@
  Type checking expression >
  Type checking expression <=
  Type checking expression UMINUS
++Not bool
 +Type error at:
 +EXPRESSION (||)
-+Unequal types
  Type checking expression &&
  Type checking expression !
  Type checking expression &&
- Type checking expression ||
+@@ -104,6 +122,11 @@
  Type checking expression !
  Type checking expression !=
-+Type error at:
-+EXPRESSION (!)
  Type checking expression !
-+Type error at:
-+EXPRESSION (||)
-+Unequal types
-+Type error at:
-+EXPRESSION (&&)
-+Unequal types
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
@@ -65,16 +57,8 @@
  Type checking assignment
  Type checking expression +
  Type checking expression *
-@@ -136,8 +167,24 @@
- Type checking expression &&
- Type checking expression >=
+@@ -138,6 +161,14 @@
  Type checking expression !=
-+Type error at:
-+EXPRESSION (&&)
-+Unequal types
-+Type error at:
-+EXPRESSION (||)
-+Unequal types
  Type checking expression <=
  Type checking expression UMINUS
 +Type error at:
@@ -88,5 +72,3 @@
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
-+Type error at:
-+ASSIGNMENT_STATEMENT

@@ -16,37 +16,21 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100</span>
-<span class="plus3">+++ testOutput/function_medium.s10	2015-02-23 15:19:24.324302000 +0100</span>
-<span class="at2">@@ -2,15 +2,29 @@</span>
- Type checking assignment
- Type checking assignment
- Type checking expression FUNC_CALL
-<span class="minus">-Type checking expression +</span>
-<span class="minus">-Type checking expression +</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (FUNC_CALL)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (FUNC_CALL)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (FUNC_CALL)</span>
+<span class="plus3">+++ testOutput/function_medium.s10	2015-02-23 15:24:11.549912000 +0100</span>
+<span class="at2">@@ -3,14 +3,15 @@</span>
  Type checking assignment
  Type checking expression FUNC_CALL
-<span class="minus">-Type checking expression &amp;&amp;</span>
-<span class="minus">-Type checking expression &amp;&amp;</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (FUNC_CALL)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (FUNC_CALL)</span>
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (FUNC_CALL)</span>
+ Type checking expression +
+<span class="minus">-Type checking expression +</span>
+ Type checking assignment
+ Type checking expression FUNC_CALL
  Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+<span class="minus">-Type checking expression &amp;&amp;</span>
  Type checking expression ||
  Type checking expression ||
  Type checking expression &amp;&amp;
  Type checking expression &gt;
-<span class="plus">+Type error at:</span>
-<span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Unequal types</span>
  Type checking expression &gt;
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
