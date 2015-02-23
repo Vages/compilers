@@ -1,77 +1,99 @@
 --- correctOutput/compare_float.s10	2015-02-22 13:09:53.195144000 +0100
-+++ testOutput/compare_float.s10	2015-02-23 15:13:16.603272000 +0100
-@@ -4,38 +4,74 @@
++++ testOutput/compare_float.s10	2015-02-23 15:16:13.968250000 +0100
+@@ -1,41 +1,96 @@
+ Type checking assignment
+ Type checking assignment
+ Type checking expression UMINUS
++Type checking expression UMINUS
  Type checking assignment
  Type checking assignment
  Type checking expression >
++Type checking expression >
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression >
++Type checking expression >
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression >
++Type checking expression >
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression <
++Type checking expression <
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression <
++Type checking expression <
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression <
++Type checking expression <
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking assignment
  Type checking expression >=
++Type checking expression >=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression >=
++Type checking expression >=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression >=
++Type checking expression >=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression <=
++Type checking expression <=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression <=
++Type checking expression <=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression <=
++Type checking expression <=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ==
++Type checking expression ==
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ==
++Type checking expression ==
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ==
++Type checking expression ==
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression !=
++Type checking expression !=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression !=
++Type checking expression !=
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression !=
++Type checking expression !=
 +Type error at:
 +ASSIGNMENT_STATEMENT
