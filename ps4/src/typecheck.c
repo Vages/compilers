@@ -136,8 +136,8 @@ data_type_t typecheck_expression(node_t* root)
                 
             case EQUAL_E: case NEQUAL_E:
                 ;
-                l_child_dt = root->children[0]->data_type;
-                r_child_dt = root->children[1]->data_type;
+                l_child_dt = root->children[0]->typecheck(root->children[0]);
+                r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
                     fprintf(stdout, "%s\n", "Unequal types");
@@ -210,8 +210,8 @@ data_type_t typecheck_assignment(node_t* root)
 	}
     typecheck_default(root);
 
-    data_type_t l_child_dt = root->children[0]->data_type;
-    if (!equal_types(l_child_dt, root->children[1]->data_type)){
+    data_type_t l_child_dt = root->children[0]->typecheck(root->children[0]);
+    if (!equal_types(l_child_dt, root->children[1]->typecheck(root->children[1]))){
         type_error(root);
     }
 
