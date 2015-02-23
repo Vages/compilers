@@ -76,18 +76,15 @@ data_type_t typecheck_expression(node_t* root)
                     type_error(root);
                 }
                 return child_dt;
-                break;
                 
             case NOT_E:
                 if (child_dt.base_type != BOOL_TYPE){
                     type_error(root);
                 }
                 return child_dt;
-                break;
                 
             default:
                 return child_dt;
-                break;
         }
     }
     else if(root->n_children > 1){
