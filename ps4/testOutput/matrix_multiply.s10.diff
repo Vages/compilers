@@ -1,16 +1,6 @@
 --- correctOutput/matrix_multiply.s10	2015-02-22 13:09:53.619150000 +0100
-+++ testOutput/matrix_multiply.s10	2015-02-23 13:36:01.711697000 +0100
-@@ -1,70 +1,134 @@
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking assignment
++++ testOutput/matrix_multiply.s10	2015-02-23 13:46:47.506241000 +0100
+@@ -7,16 +7,26 @@
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
@@ -38,10 +28,8 @@
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
- Type checking assignment
+@@ -24,47 +34,95 @@
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX

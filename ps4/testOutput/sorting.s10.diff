@@ -1,10 +1,6 @@
 --- correctOutput/sorting.s10	2015-02-22 13:09:53.796147000 +0100
-+++ testOutput/sorting.s10	2015-02-23 13:36:04.182707000 +0100
-@@ -1,22 +1,48 @@
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
++++ testOutput/sorting.s10	2015-02-23 13:46:51.125293000 +0100
+@@ -3,20 +3,44 @@
  Type checking assignment
  Type checking assignment
  Type checking expression ARRAY_INDEX

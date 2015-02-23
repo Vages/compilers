@@ -1,15 +1,6 @@
 --- correctOutput/array_types.s10	2015-02-22 13:09:53.172145000 +0100
-+++ testOutput/array_types.s10	2015-02-23 13:35:55.509662000 +0100
-@@ -1,24 +1,50 @@
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
++++ testOutput/array_types.s10	2015-02-23 13:46:40.810204000 +0100
+@@ -6,19 +6,41 @@
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
