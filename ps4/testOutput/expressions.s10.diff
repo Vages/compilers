@@ -1,12 +1,16 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-23 15:01:30.237308000 +0100
-@@ -26,12 +26,22 @@
++++ testOutput/expressions.s10	2015-02-23 15:09:46.294077000 +0100
+@@ -26,12 +26,30 @@
  Type checking expression UMINUS
  Type checking expression !=
  Type checking expression UMINUS
-+Not bool
++Type checking expression ==
++Type checking expression UMINUS
++Type checking expression !=
++Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
++Unequal types
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
@@ -15,6 +19,10 @@
  Type checking expression UMINUS
  Type checking expression ==
  Type checking expression UMINUS
++Type checking expression !=
++Type checking expression UMINUS
++Type checking expression ==
++Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
@@ -23,10 +31,16 @@
  Type checking assignment
  Type checking expression ||
  Type checking expression ==
-@@ -40,6 +50,11 @@
+@@ -40,6 +58,17 @@
  Type checking expression !=
  Type checking expression UMINUS
  Type checking expression UMINUS
++Type checking expression ==
++Type checking expression UMINUS
++Type checking expression UMINUS
++Type checking expression !=
++Type checking expression UMINUS
++Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
@@ -35,13 +49,120 @@
  Type checking assignment
  Type checking expression +
  Type checking expression -
-@@ -97,13 +112,29 @@
+@@ -76,6 +105,28 @@
+ Type checking expression &&
+ Type checking expression &&
+ Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
+@@ -85,25 +136,174 @@
+ Type checking expression !
+ Type checking expression !
+ Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
+ Type checking expression &&
+ Type checking expression !
++Type checking expression !
+ Type checking expression ||
+ Type checking expression &&
+ Type checking expression &&
+ Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression ||
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression !
++Type checking expression !
++Type checking expression &&
++Type checking expression &&
++Type checking expression !
++Type checking expression !
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
  Type checking expression >
  Type checking expression <=
  Type checking expression UMINUS
++Type checking expression >
++Type checking expression <=
++Type checking expression UMINUS
++Not bool
 +Type error at:
 +EXPRESSION (||)
-+Unequal types
  Type checking expression &&
  Type checking expression !
  Type checking expression &&
@@ -50,7 +171,74 @@
  Type checking expression !=
 +Type error at:
 +EXPRESSION (!)
++Type checking expression !
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
  Type checking expression !
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression !
++Type checking expression &&
++Type checking expression ||
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
++Type checking expression !
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
++Type checking expression !
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type checking expression ||
++Type checking expression >
++Type checking expression <=
++Type checking expression UMINUS
++Type checking expression >
++Type checking expression <=
++Type checking expression UMINUS
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression &&
++Type checking expression !
++Type checking expression &&
++Type checking expression ||
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
++Type checking expression !
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
++Type checking expression !
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression !
++Type checking expression &&
++Type checking expression ||
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
++Type checking expression !
++Type checking expression !
++Type checking expression !=
++Type error at:
++EXPRESSION (!)
++Type checking expression !
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
@@ -65,10 +253,155 @@
  Type checking assignment
  Type checking expression +
  Type checking expression *
-@@ -136,8 +167,24 @@
+@@ -122,12 +322,52 @@
+ Type checking expression ||
+ Type checking expression &&
+ Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression &&
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression &&
+ Type checking expression &&
+ Type checking expression ||
+ Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression &&
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression &&
++Type checking expression &&
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression &&
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
++Type checking expression ||
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
+@@ -136,8 +376,116 @@
  Type checking expression &&
  Type checking expression >=
  Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression <=
++Type checking expression UMINUS
++Type checking expression ||
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression <=
++Type checking expression UMINUS
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression !
++Type checking expression <
++Type checking expression UMINUS
++Type error at:
++EXPRESSION (!)
++Type checking expression ||
++Type checking expression ||
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Type error at:
++EXPRESSION (&&)
++Unequal types
++Type error at:
++EXPRESSION (||)
++Unequal types
++Type checking expression <=
++Type checking expression UMINUS
++Type checking expression ||
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
++Not bool
++Type error at:
++EXPRESSION (&&)
++Type checking expression >
++Type checking expression &&
++Type checking expression >=
++Type checking expression !=
++Type checking expression >=
++Type checking expression !=
 +Type error at:
 +EXPRESSION (&&)
 +Unequal types

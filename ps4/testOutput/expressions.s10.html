@@ -16,14 +16,18 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100</span>
-<span class="plus3">+++ testOutput/expressions.s10	2015-02-23 15:01:30.237308000 +0100</span>
-<span class="at2">@@ -26,12 +26,22 @@</span>
+<span class="plus3">+++ testOutput/expressions.s10	2015-02-23 15:09:46.294077000 +0100</span>
+<span class="at2">@@ -26,12 +26,30 @@</span>
  Type checking expression UMINUS
  Type checking expression !=
  Type checking expression UMINUS
-<span class="plus">+Not bool</span>
+<span class="plus">+Type checking expression ==</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression UMINUS</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+ASSIGNMENT_STATEMENT</span>
  Type checking assignment
@@ -32,6 +36,10 @@
  Type checking expression UMINUS
  Type checking expression ==
  Type checking expression UMINUS
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression ==</span>
+<span class="plus">+Type checking expression UMINUS</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
 <span class="plus">+Unequal types</span>
@@ -40,10 +48,16 @@
  Type checking assignment
  Type checking expression ||
  Type checking expression ==
-<span class="at2">@@ -40,6 +50,11 @@</span>
+<span class="at2">@@ -40,6 +58,17 @@</span>
  Type checking expression !=
  Type checking expression UMINUS
  Type checking expression UMINUS
+<span class="plus">+Type checking expression ==</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression UMINUS</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
 <span class="plus">+Unequal types</span>
@@ -52,13 +66,120 @@
  Type checking assignment
  Type checking expression +
  Type checking expression -
-<span class="at2">@@ -97,13 +112,29 @@</span>
+<span class="at2">@@ -76,6 +105,28 @@</span>
+ Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
+<span class="at2">@@ -85,25 +136,174 @@</span>
+ Type checking expression !
+ Type checking expression !
+ Type checking expression !
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+ Type checking expression &amp;&amp;
+ Type checking expression !
+<span class="plus">+Type checking expression !</span>
+ Type checking expression ||
+ Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+ Type checking expression !
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
  Type checking expression &gt;
  Type checking expression &lt;=
  Type checking expression UMINUS
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &lt;=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Not bool</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
-<span class="plus">+Unequal types</span>
  Type checking expression &amp;&amp;
  Type checking expression !
  Type checking expression &amp;&amp;
@@ -67,7 +188,74 @@
  Type checking expression !=
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
  Type checking expression !
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &lt;=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &lt;=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression !</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (||)</span>
 <span class="plus">+Unequal types</span>
@@ -82,10 +270,155 @@
  Type checking assignment
  Type checking expression +
  Type checking expression *
-<span class="at2">@@ -136,8 +167,24 @@</span>
+<span class="at2">@@ -122,12 +322,52 @@</span>
+ Type checking expression ||
+ Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression &amp;&amp;
+ Type checking expression &amp;&amp;
+ Type checking expression ||
+ Type checking expression ||
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+ Type checking assignment
+ Type checking expression ||
+ Type checking expression ||
+<span class="at2">@@ -136,8 +376,116 @@</span>
  Type checking expression &amp;&amp;
  Type checking expression &gt;=
  Type checking expression !=
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &lt;=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &lt;=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression !</span>
+<span class="plus">+Type checking expression &lt;</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (!)</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (||)</span>
+<span class="plus">+Unequal types</span>
+<span class="plus">+Type checking expression &lt;=</span>
+<span class="plus">+Type checking expression UMINUS</span>
+<span class="plus">+Type checking expression ||</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Not bool</span>
+<span class="plus">+Type error at:</span>
+<span class="plus">+EXPRESSION (&amp;&amp;)</span>
+<span class="plus">+Type checking expression &gt;</span>
+<span class="plus">+Type checking expression &amp;&amp;</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
+<span class="plus">+Type checking expression &gt;=</span>
+<span class="plus">+Type checking expression !=</span>
 <span class="plus">+Type error at:</span>
 <span class="plus">+EXPRESSION (&amp;&amp;)</span>
 <span class="plus">+Unequal types</span>
