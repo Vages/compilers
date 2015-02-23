@@ -110,7 +110,6 @@ data_type_t typecheck_expression(node_t* root)
                     type_error(root);
                 }
                 return l_child_dt;
-                break;
                     
             case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
                 ;
@@ -122,7 +121,6 @@ data_type_t typecheck_expression(node_t* root)
                     type_error(root);
                 }
                 return rt_bool;
-                break;
                     
             case AND_E: case OR_E:
                 ;
@@ -134,7 +132,6 @@ data_type_t typecheck_expression(node_t* root)
                     type_error(root);
                 }
                 return l_child_dt;
-                break;
                 
             case EQUAL_E: case NEQUAL_E:
                 ;
@@ -146,7 +143,6 @@ data_type_t typecheck_expression(node_t* root)
                     type_error(root);
                 }
                 return rt_bool;
-                break;
                     
             case FUNC_CALL_E: 
                 ;
@@ -159,7 +155,6 @@ data_type_t typecheck_expression(node_t* root)
                     }
                 }
                 return fst->return_type;
-                break;
             
             case ARRAY_INDEX_E:
                 ;
@@ -170,11 +165,9 @@ data_type_t typecheck_expression(node_t* root)
                 }
 
                 return l_child_dt;
-                break;
             
             default:
                 return root->data_type;
-                break;
         }
     }
     return root->data_type;
