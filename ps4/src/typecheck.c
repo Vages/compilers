@@ -205,8 +205,7 @@ data_type_t typecheck_assignment(node_t* root)
     typecheck_default(root);
 
     data_type_t l_child_dt = root->children[0]->data_type;
-    int iseq = equal_types(l_child_dt, root->children[1]->data_type);
-    if (!iseq){
+    if (!equal_types(l_child_dt, root->children[1]->data_type)){
         type_error(root);
     }
 
