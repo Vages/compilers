@@ -194,7 +194,7 @@ data_type_t typecheck_expression(node_t* root)
 }
 
 data_type_t typecheck_variable(node_t* root){
-    typecheck_default(root);
+    //typecheck_default(root);
 
     if(root->entry != NULL){
         return root->entry->type;
@@ -208,7 +208,7 @@ data_type_t typecheck_assignment(node_t* root)
 	if(outputStage == 10){
 		printf( "Type checking assignment\n");
 	}
-    //typecheck_default(root);
+    typecheck_default(root);
 
     data_type_t l_child_dt = root->children[0]->typecheck(root->children[0]);
     if (!equal_types(l_child_dt, root->children[1]->typecheck(root->children[1]))){
