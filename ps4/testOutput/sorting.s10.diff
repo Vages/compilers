@@ -1,0 +1,11 @@
+--- correctOutput/sorting.s10	2015-02-22 13:09:53.796147000 +0100
++++ testOutput/sorting.s10	2015-02-23 15:19:28.945320000 +0100
+@@ -6,6 +6,8 @@
+ Type checking expression -
+ Type checking assignment
+ Type checking expression FUNC_CALL
++Type error at:
++EXPRESSION (FUNC_CALL)
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking assignment

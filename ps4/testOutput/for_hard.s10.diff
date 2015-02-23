@@ -1,0 +1,14 @@
+--- correctOutput/for_hard.s10	2015-02-22 13:09:53.366145000 +0100
++++ testOutput/for_hard.s10	2015-02-23 15:19:23.041298000 +0100
+@@ -2,5 +2,11 @@
+ Type checking assignment
+ Type checking assignment
+ Type checking expression FUNC_CALL
++Type error at:
++EXPRESSION (FUNC_CALL)
++Type error at:
++EXPRESSION (FUNC_CALL)
++Type error at:
++EXPRESSION (FUNC_CALL)
+ Type checking assignment
+ Type checking expression UMINUS

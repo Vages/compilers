@@ -1,0 +1,48 @@
+--- correctOutput/matrix_multiply.s10	2015-02-22 13:09:53.619150000 +0100
++++ testOutput/matrix_multiply.s10	2015-02-23 15:19:26.056305000 +0100
+@@ -7,13 +7,11 @@
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression +
+ Type checking expression *
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression -
+ Type checking expression +
+ Type checking expression *
+@@ -24,31 +22,17 @@
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking assignment
+ Type checking assignment
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression +
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression *
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+-Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
+ Type checking expression ARRAY_INDEX
