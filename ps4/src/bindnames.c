@@ -148,7 +148,7 @@ int bind_expression( node_t* root, int stackOffset)
 
 	if (root->expression_type.index == FUNC_CALL_E){
 		root->function_entry = function_get(root->children[0]->label);
-		printf(stderr, "%d", n_children);
+		fprintf(stderr, "%d", n_children);
 		stackOffset = bd(root->children[1], stackOffset);
 	} else {
 		stackOffset = bd(root, stackOffset);
