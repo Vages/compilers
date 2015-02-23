@@ -97,8 +97,8 @@ data_type_t typecheck_expression(node_t* root)
 
             case ADD_E: case SUB_E: case DIV_E: case MUL_E:
                 ;
-                l_child_dt = root->children[0]->data_type;
-                r_child_dt = root->children[1]->data_type;
+                l_child_dt = root->children[0]->typecheck(root->children[0]);
+                r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
                     fprintf(stdout, "%s\n", "Unequal types");
@@ -110,8 +110,8 @@ data_type_t typecheck_expression(node_t* root)
                     
             case LEQUAL_E: case GEQUAL_E: case GREATER_E: case LESS_E:
                 ;
-                l_child_dt = root->children[0]->data_type;
-                r_child_dt = root->children[1]->data_type;
+                l_child_dt = root->children[0]->typecheck(root->children[0]);
+                r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
                     fprintf(stdout, "%s\n", "Unequal types");
