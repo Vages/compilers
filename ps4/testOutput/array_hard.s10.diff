@@ -1,5 +1,5 @@
 --- correctOutput/array_hard.s10	2015-02-22 13:09:53.106144000 +0100
-+++ testOutput/array_hard.s10	2015-02-22 23:56:19.968904000 +0100
++++ testOutput/array_hard.s10	2015-02-23 10:37:18.544918000 +0100
 @@ -1,37 +1,71 @@
  Type checking assignment
  Type checking expression NEW

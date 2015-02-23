@@ -1,7 +1,56 @@
 --- correctOutput/compare_int.s10	2015-02-22 13:09:53.231147000 +0100
-+++ testOutput/compare_int.s10	2015-02-22 23:56:20.602907000 +0100
-@@ -29,13 +29,25 @@
++++ testOutput/compare_int.s10	2015-02-23 10:37:21.429933000 +0100
+@@ -4,38 +4,74 @@
+ Type checking assignment
+ Type checking assignment
+ Type checking expression >
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression >
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression >
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression <
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression <
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression <
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking assignment
+ Type checking expression >=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression >=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression >=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
  Type checking expression <=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression <=
++Type error at:
++ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression <=
++Type error at:
++ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ==
 +Type error at:
