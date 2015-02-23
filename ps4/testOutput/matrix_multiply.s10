@@ -1,16 +1,10 @@
 Type checking assignment
 Type checking expression NEW
-Type checking expression NEW
 Type checking assignment
 Type checking expression NEW
-Type checking expression NEW
 Type checking assignment
 Type checking assignment
 Type checking assignment
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression +
-Type checking expression *
 Type checking expression ARRAY_INDEX
 Type checking expression ARRAY_INDEX
 Type checking expression +
@@ -21,33 +15,15 @@ Type checking expression ARRAY_INDEX
 Type checking expression -
 Type checking expression +
 Type checking expression *
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression -
-Type checking expression +
-Type checking expression *
 Type checking assignment
 Type checking expression NEW
-Type checking expression NEW
 Type checking assignment
 Type checking assignment
 Type checking assignment
 Type checking expression ARRAY_INDEX
 Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
 Type checking assignment
 Type checking assignment
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression +
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression *
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
-Type checking expression ARRAY_INDEX
 Type checking expression ARRAY_INDEX
 Type checking expression ARRAY_INDEX
 Type checking expression +
