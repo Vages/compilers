@@ -1,32 +1,32 @@
 --- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100
-+++ testOutput/function_medium.s10	2015-02-23 15:16:30.668337000 +0100
-@@ -3,14 +3,33 @@
++++ testOutput/function_medium.s10	2015-02-23 15:19:24.324302000 +0100
+@@ -2,15 +2,29 @@
+ Type checking assignment
  Type checking assignment
  Type checking expression FUNC_CALL
- Type checking expression +
-+Type checking expression FUNC_CALL
- Type checking expression +
+-Type checking expression +
+-Type checking expression +
++Type error at:
++EXPRESSION (FUNC_CALL)
++Type error at:
++EXPRESSION (FUNC_CALL)
++Type error at:
++EXPRESSION (FUNC_CALL)
  Type checking assignment
  Type checking expression FUNC_CALL
- Type checking expression &&
-+Type checking expression FUNC_CALL
- Type checking expression &&
+-Type checking expression &&
+-Type checking expression &&
++Type error at:
++EXPRESSION (FUNC_CALL)
++Type error at:
++EXPRESSION (FUNC_CALL)
++Type error at:
++EXPRESSION (FUNC_CALL)
  Type checking expression &&
  Type checking expression ||
  Type checking expression ||
  Type checking expression &&
  Type checking expression >
-+Type checking expression &&
-+Type checking expression >
-+Type error at:
-+EXPRESSION (||)
-+Unequal types
-+Type checking expression >
-+Type checking expression ||
-+Type checking expression &&
-+Type checking expression >
-+Type checking expression &&
-+Type checking expression >
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
