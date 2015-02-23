@@ -145,12 +145,10 @@ int bind_expression( node_t* root, int stackOffset)
 	//Eirik: Binds an expression node of the func call type to its appropriate symbol table entry
 	if(outputStage == 6)
 		printf( "EXPRESSION: Start: %s\n", root->expression_type.text);
+	bd(root, stackOffset);
 
 	if (root->expression_type.index == FUNC_CALL_E){
 		root->function_entry = function_get(root->children[0]->label);
-		stackOffset = bd(root->children[1], stackOffset);
-	} else {
-		stackOffset = bd(root, stackOffset);
 	}
 
 	if(outputStage == 6)
