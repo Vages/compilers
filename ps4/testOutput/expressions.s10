@@ -1,6 +1,7 @@
 Type checking assignment
 Type checking assignment
 Type checking expression UMINUS
+Type checking expression UMINUS
 Type checking assignment
 Type checking assignment
 Type checking assignment
@@ -10,7 +11,6 @@ Type checking expression +
 Type checking expression *
 Type checking expression UMINUS
 Type checking expression *
-Type checking assignment
 Type checking expression +
 Type checking expression *
 Type checking expression UMINUS
@@ -20,7 +20,28 @@ Type checking expression +
 Type checking expression *
 Type checking expression UMINUS
 Type checking expression *
+Type checking expression +
+Type checking expression *
+Type checking expression UMINUS
+Type checking expression *
 Type checking assignment
+Type checking expression +
+Type checking expression *
+Type checking expression UMINUS
+Type checking expression *
+Type checking expression +
+Type checking expression *
+Type checking expression UMINUS
+Type checking expression *
+Type checking assignment
+Type checking expression ||
+Type checking expression ==
+Type checking expression UMINUS
+Type checking expression !=
+Type checking expression UMINUS
+Type error at:
+EXPRESSION (||)
+Unequal types
 Type checking expression ||
 Type checking expression ==
 Type checking expression UMINUS
@@ -40,9 +61,27 @@ Type checking expression UMINUS
 Type error at:
 EXPRESSION (||)
 Unequal types
+Type checking expression ||
+Type checking expression !=
+Type checking expression UMINUS
+Type checking expression ==
+Type checking expression UMINUS
+Type error at:
+EXPRESSION (||)
+Unequal types
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
+Type checking expression ||
+Type checking expression ==
+Type checking expression UMINUS
+Type checking expression UMINUS
+Type checking expression !=
+Type checking expression UMINUS
+Type checking expression UMINUS
+Type error at:
+EXPRESSION (||)
+Unequal types
 Type checking expression ||
 Type checking expression ==
 Type checking expression UMINUS
@@ -65,7 +104,23 @@ Type checking expression UMINUS
 Type checking expression *
 Type checking expression *
 Type checking expression *
+Type checking expression +
+Type checking expression -
+Type checking expression +
+Type checking expression /
+Type checking expression /
+Type checking expression UMINUS
+Type checking expression *
+Type checking expression *
+Type checking expression *
 Type checking assignment
+Type checking expression *
+Type checking expression +
+Type checking expression -
+Type checking expression UMINUS
+Type checking expression UMINUS
+Type checking expression UMINUS
+Type checking expression +
 Type checking expression *
 Type checking expression +
 Type checking expression -
@@ -83,6 +138,15 @@ Type checking expression /
 Type checking expression +
 Type checking expression -
 Type checking expression UMINUS
+Type checking expression /
+Type checking expression -
+Type checking expression /
+Type checking expression /
+Type checking expression -
+Type checking expression /
+Type checking expression +
+Type checking expression -
+Type checking expression UMINUS
 Type checking assignment
 Type checking expression ||
 Type checking expression ||
@@ -91,7 +155,28 @@ Type checking expression &&
 Type checking expression &&
 Type checking expression &&
 Type checking expression &&
+Type checking expression ||
+Type checking expression ||
+Type checking expression ||
+Type checking expression &&
+Type checking expression &&
+Type checking expression &&
+Type checking expression &&
 Type checking assignment
+Type checking expression ||
+Type checking expression ||
+Type checking expression &&
+Type checking expression !
+Type checking expression !
+Type checking expression !
+Type checking expression !
+Type checking expression !
+Type checking expression &&
+Type checking expression !
+Type checking expression ||
+Type checking expression &&
+Type checking expression &&
+Type checking expression !
 Type checking expression ||
 Type checking expression ||
 Type checking expression &&
@@ -133,17 +218,52 @@ Unequal types
 Type error at:
 EXPRESSION (||)
 Unequal types
+Type checking expression ||
+Type checking expression ||
+Type checking expression >
+Type checking expression <=
+Type checking expression UMINUS
+Type error at:
+EXPRESSION (||)
+Unequal types
+Type checking expression &&
+Type checking expression !
+Type checking expression &&
+Type checking expression ||
+Type checking expression !
+Type checking expression !=
+Type error at:
+EXPRESSION (!)
+Type checking expression !
+Type error at:
+EXPRESSION (||)
+Unequal types
+Type error at:
+EXPRESSION (&&)
+Unequal types
+Type error at:
+EXPRESSION (||)
+Unequal types
 Type error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +
 Type checking expression *
 Type checking expression *
+Type checking expression +
+Type checking expression *
+Type checking expression *
 Type checking assignment
 Type checking expression *
 Type checking expression *
 Type checking expression +
+Type checking expression *
+Type checking expression *
+Type checking expression +
 Type checking assignment
+Type checking expression /
+Type checking expression /
+Type checking expression -
 Type checking expression /
 Type checking expression /
 Type checking expression -
@@ -153,13 +273,49 @@ Type checking expression ||
 Type checking expression ||
 Type checking expression &&
 Type checking expression &&
+Type checking expression ||
+Type checking expression ||
+Type checking expression ||
+Type checking expression &&
+Type checking expression &&
 Type checking assignment
 Type checking expression ||
 Type checking expression &&
 Type checking expression &&
 Type checking expression ||
 Type checking expression ||
+Type checking expression ||
+Type checking expression &&
+Type checking expression &&
+Type checking expression ||
+Type checking expression ||
 Type checking assignment
+Type checking expression ||
+Type checking expression ||
+Type checking expression ||
+Type checking expression >
+Type checking expression &&
+Type checking expression >=
+Type checking expression !=
+Type error at:
+EXPRESSION (&&)
+Unequal types
+Type error at:
+EXPRESSION (||)
+Unequal types
+Type checking expression <=
+Type checking expression UMINUS
+Type error at:
+EXPRESSION (||)
+Unequal types
+Type checking expression !
+Type checking expression <
+Type checking expression UMINUS
+Type error at:
+EXPRESSION (!)
+Type error at:
+EXPRESSION (||)
+Unequal types
 Type checking expression ||
 Type checking expression ||
 Type checking expression ||
