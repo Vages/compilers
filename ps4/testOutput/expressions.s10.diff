@@ -1,9 +1,10 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-23 14:39:29.537930000 +0100
-@@ -26,12 +26,20 @@
++++ testOutput/expressions.s10	2015-02-23 15:01:30.237308000 +0100
+@@ -26,12 +26,22 @@
  Type checking expression UMINUS
  Type checking expression !=
  Type checking expression UMINUS
++Not bool
 +Type error at:
 +EXPRESSION (||)
 +Type error at:
@@ -16,28 +17,31 @@
  Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
++Unequal types
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ||
  Type checking expression ==
-@@ -40,6 +48,10 @@
+@@ -40,6 +50,11 @@
  Type checking expression !=
  Type checking expression UMINUS
  Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
++Unequal types
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
  Type checking expression -
-@@ -97,13 +109,25 @@
+@@ -97,13 +112,29 @@
  Type checking expression >
  Type checking expression <=
  Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
++Unequal types
  Type checking expression &&
  Type checking expression !
  Type checking expression &&
@@ -49,27 +53,33 @@
  Type checking expression !
 +Type error at:
 +EXPRESSION (||)
++Unequal types
 +Type error at:
 +EXPRESSION (&&)
++Unequal types
 +Type error at:
 +EXPRESSION (||)
++Unequal types
 +Type error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +
  Type checking expression *
-@@ -136,8 +160,20 @@
+@@ -136,8 +167,24 @@
  Type checking expression &&
  Type checking expression >=
  Type checking expression !=
 +Type error at:
 +EXPRESSION (&&)
++Unequal types
 +Type error at:
 +EXPRESSION (||)
++Unequal types
  Type checking expression <=
  Type checking expression UMINUS
 +Type error at:
 +EXPRESSION (||)
++Unequal types
  Type checking expression !
  Type checking expression <
  Type checking expression UMINUS
@@ -77,5 +87,6 @@
 +EXPRESSION (!)
 +Type error at:
 +EXPRESSION (||)
++Unequal types
 +Type error at:
 +ASSIGNMENT_STATEMENT
