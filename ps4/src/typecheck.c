@@ -152,17 +152,34 @@ data_type_t typecheck_expression(node_t* root)
                     }
                 }
                 return fst->return_type;
-            
+
             case ARRAY_INDEX_E:
                 ;
-                l_child_dt = root->children[0]->data_type;
-                r_child_dt = root->children[1]->data_type;
-                if (!equal_types(l_child_dt, r_child_dt)){
-                    type_error(root);
+                node_t* array = root->children[0];
+
+                data_type_t array_type = array->typecheck(array);
+
+                int dim_minus_1 = array_type.n_dimensions - 1;
+                if (dim_minus_1 <= 0) {
+                    return (data_type_t) {
+                        .base_type = array_type.array_type
+                    };
                 }
 
-                return l_child_dt;
-            
+                data_type_t tmp_dtt = {
+                    .array_type=array_type.array_type, 
+                    .n_dimensions=dim_minus_1, 
+                    .base_type = array_type.base_type } ;
+
+                int* new_dimensions = malloc(sizeof(int)*dim_minus_1); 
+                for (int i = 1; i < array_type.n_dimensions; i++){
+                    new_dimensions[i-1] = array_type.dimensions[i];
+                }
+
+                tmp_dtt.dimensions = new_dimensions;
+
+                return tmp_dtt;
+
             default:
                 return root->data_type;
         }
