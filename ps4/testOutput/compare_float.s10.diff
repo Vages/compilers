@@ -1,5 +1,5 @@
 --- correctOutput/compare_float.s10	2015-02-22 13:09:53.195144000 +0100
-+++ testOutput/compare_float.s10	2015-02-23 13:28:16.512135000 +0100
++++ testOutput/compare_float.s10	2015-02-23 13:35:56.215664000 +0100
 @@ -4,38 +4,74 @@
  Type checking assignment
  Type checking assignment
