@@ -1,10 +1,18 @@
 --- correctOutput/euclid.s10	2015-02-22 13:09:53.257144000 +0100
-+++ testOutput/euclid.s10	2015-02-23 15:09:45.926069000 +0100
-@@ -6,7 +6,4 @@
++++ testOutput/euclid.s10	2015-02-23 15:13:18.386323000 +0100
+@@ -1,12 +1,14 @@
+ Type checking expression -
+ Type checking expression FUNC_CALL
+ Type checking expression FUNC_CALL
++Type checking expression FUNC_CALL
+ Type checking assignment
+ Type checking expression FUNC_CALL
  Type checking expression -
  Type checking expression *
  Type checking expression /
 -Type checking expression -
--Type checking expression *
--Type checking expression /
++Type checking expression /
+ Type checking expression *
+ Type checking expression /
++Type checking expression /
  Type checking assignment
