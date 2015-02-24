@@ -152,7 +152,10 @@ data_type_t typecheck_expression(node_t* root)
                 function_symbol_t* fst = root->function_entry;
                 
                 if(fst->nArguments>0){
-                    if (fst->nArguments != root->children[1]->n_children){
+                    if (root->children[1] == NULL){
+                        type_error(root);
+                        return root->data_type;
+                    } else if (fst->nArguments != root->children[1]->n_children){
                         type_error(root);
                         return root->data_type;
                     } else {
