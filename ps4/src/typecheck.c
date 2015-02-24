@@ -100,10 +100,8 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
-                    fprintf(stdout, "%s\n", "Unequal types");
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
                     type_error(root);
-                    fprintf(stdout, "%s\n", "Not float or int");
                 }
                 return l_child_dt;
                     
@@ -113,9 +111,7 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
-                    fprintf(stdout, "%s\n", "Unequal types");
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
-                    fprintf(stdout, "%s\n", "Not float or int");
                     type_error(root);
                 }
                 return (data_type_t){.base_type = BOOL_TYPE};
