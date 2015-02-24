@@ -2,9 +2,11 @@ Type checking assignment
 Type checking assignment
 Type checking assignment
 Type checking expression FUNC_CALL
+Type checking expression +
 INT
 Type checking assignment
 Type checking expression FUNC_CALL
+Type checking expression &&
 BOOL
 Type checking expression &&
 Type checking expression ||

@@ -3,6 +3,7 @@ Type checking expression FUNC_CALL
 INT
 Type checking assignment
 Type checking expression FUNC_CALL
+Type checking expression UMINUS
 INT
 Type checking assignment
 Type checking expression FUNC_CALL

@@ -7,6 +7,8 @@ Type checking expression -
 Type checking assignment
 Type checking expression +
 Type checking expression FUNC_CALL
+Type checking expression -
 INT
 Type checking expression FUNC_CALL
+Type checking expression -
 INT

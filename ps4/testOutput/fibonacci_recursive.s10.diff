@@ -1,17 +1,17 @@
 --- correctOutput/fibonacci_recursive.s10	2015-02-24 17:24:07.041925000 +0100
-+++ testOutput/fibonacci_recursive.s10	2015-02-24 18:34:24.893280000 +0100
-@@ -1,11 +1,12 @@
++++ testOutput/fibonacci_recursive.s10	2015-02-24 18:51:09.872661000 +0100
+@@ -1,5 +1,6 @@
  Type checking assignment
  Type checking expression FUNC_CALL
 +INT
  Type checking assignment
  Type checking expression -
  Type checking expression -
- Type checking assignment
+@@ -7,5 +8,7 @@
  Type checking expression +
  Type checking expression FUNC_CALL
--Type checking expression -
+ Type checking expression -
 +INT
  Type checking expression FUNC_CALL
--Type checking expression -
+ Type checking expression -
 +INT
