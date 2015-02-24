@@ -1,5 +1,5 @@
 --- correctOutput/euclid.s10	2015-02-22 13:09:53.257144000 +0100
-+++ testOutput/euclid.s10	2015-02-24 12:46:57.405659000 +0100
++++ testOutput/euclid.s10	2015-02-24 13:03:17.600860000 +0100
 @@ -6,7 +6,4 @@
  Type checking expression -
  Type checking expression *
