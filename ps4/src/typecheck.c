@@ -166,7 +166,6 @@ data_type_t typecheck_expression(node_t* root)
             case ARRAY_INDEX_E:
                 ;
                 node_t* array = root->children[0];
-                fprintf(stderr, "%d\n", root->n_children);
 
                 data_type_t a_t = array->typecheck(array);
 
