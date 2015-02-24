@@ -85,7 +85,7 @@ data_type_t typecheck_expression(node_t* root)
                 return child_dt;
                 
             default:
-                return root->data_type;
+                return child_dt;
         }
     }
     else if(root->n_children > 1){
