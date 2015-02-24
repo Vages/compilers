@@ -93,7 +93,6 @@ data_type_t typecheck_expression(node_t* root)
         {
             data_type_t l_child_dt;
             data_type_t r_child_dt;
-            data_type_t rt_bool = {.base_type = BOOL_TYPE};
 
             case ADD_E: case SUB_E: case DIV_E: case MUL_E:
                 ;
