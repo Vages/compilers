@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s10	2015-02-22 13:09:53.459148000 +0100
-+++ testOutput/function_medium.s10	2015-02-24 13:03:20.232875000 +0100
++++ testOutput/function_medium.s10	2015-02-24 13:09:27.953824000 +0100
 @@ -3,14 +3,18 @@
  Type checking assignment
  Type checking expression FUNC_CALL

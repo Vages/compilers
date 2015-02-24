@@ -1,12 +1,6 @@
 --- correctOutput/array_hard.s10	2015-02-22 13:09:53.106144000 +0100
-+++ testOutput/array_hard.s10	2015-02-24 13:03:14.402849000 +0100
-@@ -1,14 +1,16 @@
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
- Type checking expression ARRAY_INDEX
++++ testOutput/array_hard.s10	2015-02-24 13:09:22.571798000 +0100
+@@ -5,22 +5,12 @@
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
@@ -14,14 +8,9 @@
 -Type checking expression ARRAY_INDEX
  Type checking assignment
  Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
-@@ -16,19 +18,13 @@
- Type checking expression ARRAY_INDEX
- Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
@@ -31,13 +20,6 @@
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
 -Type checking expression ARRAY_INDEX
- Type checking assignment
- Type checking expression FUNC_CALL
  Type checking expression ARRAY_INDEX
- Type checking assignment
- Type checking expression NEW
-+Type error at:
-+ASSIGNMENT_STATEMENT
- Type checking assignment
  Type checking expression ARRAY_INDEX
- Type checking assignment
+ Type checking expression ARRAY_INDEX
