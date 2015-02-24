@@ -165,10 +165,11 @@ data_type_t typecheck_expression(node_t* root)
                             }
                         }
                     }
-                }
-                if (fst->nArguments != root->children[1]->n_children){
-                    type_error(root);
-                    return root->data_type;
+                } else {
+                    if (root->children[1] != NULL){
+                        type_error(root);
+                        return root->data_type;    
+                    }
                 }
                 fprintf(stdout, "%s\n", base_type_to_string(fst->return_type.base_type));
                 return fst->return_type;
