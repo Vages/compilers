@@ -178,7 +178,7 @@ data_type_t typecheck_expression(node_t* root)
                     .n_dimensions=dim_minus_1, 
                     .base_type = array_type.base_type } ;
 
-                int* new_dimensions = malloc(sizeof(int)*dim_minus_1); 
+                int* new_dimensions = malloc(sizeof(int)*decr_dims); 
                 for (int i = 1; i < array_type.n_dimensions; i++){
                     new_dimensions[i-1] = array_type.dimensions[i];
                 }
