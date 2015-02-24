@@ -1,5 +1,5 @@
 --- correctOutput/array_types.s10	2015-02-22 13:09:53.172145000 +0100
-+++ testOutput/array_types.s10	2015-02-23 15:56:01.921453000 +0100
++++ testOutput/array_types.s10	2015-02-24 12:36:16.389265000 +0100
 @@ -6,19 +6,13 @@
  Type checking expression ARRAY_INDEX
  Type checking expression ARRAY_INDEX
