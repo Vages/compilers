@@ -61,8 +61,6 @@ data_type_t typecheck_expression(node_t* root)
 	if(outputStage == 10)
 		printf( "Type checking expression %s\n", root->expression_type.text);
 
-    //typecheck_default(root);
-
 	if(root->n_children == 0){
         return (data_type_t){.base_type=NO_TYPE};
 	}
