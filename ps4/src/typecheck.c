@@ -153,7 +153,9 @@ data_type_t typecheck_expression(node_t* root)
                 function_symbol_t* fst = root->function_entry;
                 if(fst->nArguments>0){
                     for (int i = 0; i < fst->nArguments; i++){
-                        if (!(equal_types(fst->argument_types[i], root->children[1]->children[i]->typecheck(root->children[1]->children[i])))){
+                        node_t* child_i = root->children[1]->children[i];
+                        data_type_t child_i_type = child_i->typecheck(child_i);
+                        if (!equal_types(fst->argument_types[i], child_i_type)){
                             type_error(root);
                         }
                     }
@@ -212,7 +214,8 @@ data_type_t typecheck_assignment(node_t* root)
     //typecheck_default(root);
 
     data_type_t l_child_dt = root->children[0]->typecheck(root->children[0]);
-    if (!equal_types(l_child_dt, root->children[1]->typecheck(root->children[1]))){
+    data_type_t r_child_dt = root->children[1]->typecheck(root->children[1]);
+    if (!equal_types(l_child_dt, r_child_dt)){
         type_error(root);
     }
 
