@@ -65,7 +65,7 @@ data_type_t typecheck_expression(node_t* root)
     //typecheck_default(root);
 
 	if(root->n_children == 0){
-        return root->data_type;
+        return (data_type_t){.base_type=NO_TYPE};
 	}
 
 	else if(root->n_children == 1){
