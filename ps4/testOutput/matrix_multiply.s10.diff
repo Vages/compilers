@@ -1,5 +1,5 @@
 --- correctOutput/matrix_multiply.s10	2015-02-22 13:09:53.619150000 +0100
-+++ testOutput/matrix_multiply.s10	2015-02-24 13:46:13.268522000 +0100
++++ testOutput/matrix_multiply.s10	2015-02-24 14:04:38.764393000 +0100
 @@ -7,13 +7,11 @@
  Type checking assignment
  Type checking expression ARRAY_INDEX
