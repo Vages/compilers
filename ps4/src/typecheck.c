@@ -191,7 +191,7 @@ data_type_t typecheck_expression(node_t* root)
                 return typecheck_default(root);
         }
     }
-    return root->data_type;
+    return typecheck_default(root);
 }
 
 data_type_t typecheck_variable(node_t* root){
@@ -201,7 +201,7 @@ data_type_t typecheck_variable(node_t* root){
         return root->entry->type;
     }
 
-    return root->data_type;
+    return (data_type_t){.base_type = NO_TYPE};
 }
 
 data_type_t typecheck_assignment(node_t* root)
