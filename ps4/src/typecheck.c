@@ -151,6 +151,10 @@ data_type_t typecheck_expression(node_t* root)
                 ;
                 function_symbol_t* fst = root->function_entry;
                 if(fst->nArguments>0){
+                    if (fst->nArguments != root->children[1]->n_children){
+                        type_error(root);
+                        return root->data_type;
+                    }
                     for (int i = 0; i < fst->nArguments; i++){
                         node_t* child_i = root->children[1]->children[i];
                         data_type_t child_i_type = child_i->typecheck(child_i);
