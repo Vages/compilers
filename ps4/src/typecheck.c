@@ -129,6 +129,7 @@ data_type_t typecheck_expression(node_t* root)
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
                     fprintf(stdout, "%s\n", "Unequal types");
+                    fprintf(stdout, "%s, %s", base_type_to_string(l_child_dt), base_type_to_string(r_child_dt));
                 } else if (l_child_dt.base_type != BOOL_TYPE){
                     fprintf(stdout, "%s\n", "Not bool");
                     type_error(root);
