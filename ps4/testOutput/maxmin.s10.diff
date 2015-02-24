@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s10	2015-02-24 17:24:07.071927000 +0100
-+++ testOutput/maxmin.s10	2015-02-24 18:51:12.612616000 +0100
++++ testOutput/maxmin.s10	2015-02-24 18:55:43.349056000 +0100
 @@ -1,10 +1,13 @@
  Type checking assignment
  Type checking expression FUNC_CALL

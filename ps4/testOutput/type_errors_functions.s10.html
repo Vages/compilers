@@ -16,26 +16,26 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/type_errors_functions.s10	2015-02-22 13:09:53.898147000 +0100</span>
-<span class="plus3">+++ testOutput/type_errors_functions.s10	2015-02-24 18:51:15.299631000 +0100</span>
-<span class="at2">@@ -1,18 +0,0 @@</span>
-<span class="minus">-Type checking assignment</span>
-<span class="minus">-Type checking expression FUNC_CALL</span>
-<span class="minus">-Type error at:</span>
-<span class="minus">-ASSIGNMENT_STATEMENT</span>
-<span class="minus">-Type checking assignment</span>
-<span class="minus">-Type checking expression FUNC_CALL</span>
-<span class="minus">-Type error at:</span>
-<span class="minus">-ASSIGNMENT_STATEMENT</span>
-<span class="minus">-Type checking expression FUNC_CALL</span>
-<span class="minus">-Type error at:</span>
-<span class="minus">-EXPRESSION (FUNC_CALL)</span>
-<span class="minus">-Type checking expression FUNC_CALL</span>
-<span class="minus">-Type checking expression FUNC_CALL</span>
-<span class="minus">-Type error at:</span>
-<span class="minus">-EXPRESSION (FUNC_CALL)</span>
-<span class="minus">-Type checking expression FUNC_CALL</span>
-<span class="minus">-Type error at:</span>
-<span class="minus">-EXPRESSION (FUNC_CALL)</span></span>
+<span class="plus3">+++ testOutput/type_errors_functions.s10	2015-02-24 18:55:46.153063000 +0100</span>
+<span class="at2">@@ -1,15 +1,18 @@</span>
+ Type checking assignment
+ Type checking expression FUNC_CALL
+<span class="plus">+VOID</span>
+ Type error at:
+ ASSIGNMENT_STATEMENT
+ Type checking assignment
+ Type checking expression FUNC_CALL
+<span class="plus">+BOOL</span>
+ Type error at:
+ ASSIGNMENT_STATEMENT
+ Type checking expression FUNC_CALL
+ Type error at:
+ EXPRESSION (FUNC_CALL)
+ Type checking expression FUNC_CALL
+<span class="plus">+VOID</span>
+ Type checking expression FUNC_CALL
+ Type error at:
+ EXPRESSION (FUNC_CALL)</span>
 </pre>
 </body>
 </html>
