@@ -154,7 +154,7 @@ data_type_t typecheck_expression(node_t* root)
                     for (int i = 0; i < fst->nArguments; i++){
                         node_t* child_i = root->children[1]->children[i];
                         data_type_t child_i_type = child_i->typecheck(child_i);
-                        if (!equal_types(fst->argument_types[i]->typecheck(fst->argument_types[i]), child_i_type)){
+                        if (!equal_types(fst->argument_types[i], child_i_type)){
                             type_error(root);
                         }
                     }
