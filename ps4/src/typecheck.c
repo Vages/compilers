@@ -166,11 +166,11 @@ data_type_t typecheck_expression(node_t* root)
 
                 data_type_t array_type = array->typecheck(array);
 
-                int dim_minus_1 = array_type.n_dimensions - 1;
-                if (dim_minus_1 <= 0) {
-                    return (data_type_t) {
-                        .base_type = array_type.array_type
-                    };
+                root->children[1]->typecheck(root->children[1]);
+
+                int decr_dims = array_type.n_dimensions - 1;
+                if (decr_dims <= 0) {
+                    return (data_type_t){.base_type = array_type.array_type};
                 }
 
                 data_type_t tmp_dtt = {
