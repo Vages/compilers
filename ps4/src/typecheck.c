@@ -167,6 +167,7 @@ data_type_t typecheck_expression(node_t* root)
 
             case ARRAY_INDEX_E:
                 ;
+                //Eirik: Remove first element of dimensions. If this leaves it empty, convert the array to its appropriate type.
                 node_t* array = root->children[0];
 
                 data_type_t a_t = array->typecheck(array);
