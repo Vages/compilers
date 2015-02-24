@@ -64,7 +64,7 @@ data_type_t typecheck_expression(node_t* root)
     //typecheck_default(root);
 
 	if(root->n_children == 0){
-        return root->data_type;
+        return (data_type_t){.base_type=NO_TYPE};
 	}
 
 	else if(root->n_children == 1){
@@ -100,8 +100,10 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
+                    fprintf(stdout, "%s\n", "Unequal types");
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
                     type_error(root);
+                    fprintf(stdout, "%s\n", "Not float or int");
                 }
                 return l_child_dt;
                     
@@ -111,10 +113,12 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
+                    fprintf(stdout, "%s\n", "Unequal types");
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
+                    fprintf(stdout, "%s\n", "Not float or int");
                     type_error(root);
                 }
-                return (data_type_t){.base_type = BOOL_TYPE}; //Eirik: Tried to store BOOL_TYPE in a separate variable, but it had to be here
+                return (data_type_t){.base_type = BOOL_TYPE};
                     
             case AND_E: case OR_E:
                 ;
@@ -122,7 +126,10 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
+                    fprintf(stdout, "%s\n", "Unequal types");
+                    fprintf(stdout, "%s, %s", (char*) base_type_to_string(l_child_dt.base_type), (char*) base_type_to_string(r_child_dt.base_type));
                 } else if (l_child_dt.base_type != BOOL_TYPE){
+                    fprintf(stdout, "%s\n", "Not bool");
                     type_error(root);
                 }
                 return (data_type_t){.base_type = BOOL_TYPE};
@@ -133,8 +140,10 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
+                    fprintf(stdout, "%s\n", "Unequal types");
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE) && (l_child_dt.base_type != BOOL_TYPE)){
                     type_error(root);
+                    fprintf(stdout, "%s\n", "Not float or int");
                 }
                 return (data_type_t){.base_type = BOOL_TYPE};
                     
@@ -165,15 +174,11 @@ data_type_t typecheck_expression(node_t* root)
                         return root->data_type;    
                     }
                 }
-
+                //fprintf(stdout, "%s\n", base_type_to_string(fst->return_type.base_type));
                 return fst->return_type;
 
             case ARRAY_INDEX_E:
                 ;
-                /*
-                    Eirik: The strategy is to peel off the first element in dimensions. 
-                    If this results in no elements in dimensions, change type.
-                */
                 node_t* array = root->children[0];
 
                 data_type_t a_t = array->typecheck(array);
@@ -194,8 +199,6 @@ data_type_t typecheck_expression(node_t* root)
                 for (int i = 1; i < a_t.n_dimensions; i++){
                     new_dimensions[i-1] = a_t.dimensions[i];
                 }
-
-                free(a_t.dimensions);
 
                 tmp_dtt.dimensions = new_dimensions;
 
