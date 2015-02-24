@@ -147,7 +147,7 @@ data_type_t typecheck_expression(node_t* root)
                     type_error(root);
                     fprintf(stdout, "%s\n", "Not float or int");
                 }
-                return rt_bool;
+                return (data_type_t){.base_type = BOOL_TYPE};
                     
             case FUNC_CALL_E: 
                 ;
