@@ -150,7 +150,6 @@ data_type_t typecheck_expression(node_t* root)
             case FUNC_CALL_E: 
                 ;
                 function_symbol_t* fst = root->function_entry;
-                /*
                 if(fst->nArguments>0){
                     for (int i = 0; i < fst->nArguments; i++){
                         node_t* child_i = root->children[1]->children[i];
@@ -160,7 +159,6 @@ data_type_t typecheck_expression(node_t* root)
                         }
                     }
                 }
-                */
                 return fst->return_type;
 
             case ARRAY_INDEX_E:
