@@ -166,23 +166,23 @@ data_type_t typecheck_expression(node_t* root)
                 ;
                 node_t* array = root->children[0];
 
-                data_type_t array_type = array->typecheck(array);
+                data_type_t a_t = array->typecheck(array);
 
                 root->children[1]->typecheck(root->children[1]);
 
-                int decr_dims = array_type.n_dimensions - 1;
+                int decr_dims = a_t.n_dimensions - 1;
                 if (decr_dims <= 0) {
-                    return (data_type_t){.base_type = array_type.array_type};
+                    return (data_type_t){.base_type = a_t.array_type};
                 }
 
                 data_type_t tmp_dtt = {
-                    .array_type=array_type.array_type, 
+                    .array_type=a_t.array_type, 
                     .n_dimensions=decr_dims, 
-                    .base_type = array_type.base_type } ;
+                    .base_type = a_t.base_type } ;
 
                 int* new_dimensions = malloc(sizeof(int)*decr_dims); 
-                for (int i = 1; i < array_type.n_dimensions; i++){
-                    new_dimensions[i-1] = array_type.dimensions[i];
+                for (int i = 1; i < a_t.n_dimensions; i++){
+                    new_dimensions[i-1] = a_t.dimensions[i];
                 }
 
                 tmp_dtt.dimensions = new_dimensions;
