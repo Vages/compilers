@@ -120,7 +120,7 @@ data_type_t typecheck_expression(node_t* root)
                     fprintf(stdout, "%s\n", "Not float or int");
                     type_error(root);
                 }
-                return rt_bool;
+                return (data_type_t){.base_type = BOOL_TYPE};
                     
             case AND_E: case OR_E:
                 ;
