@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/array_hard.s10	2015-02-24 17:24:07.024924000 +0100</span>
+<span class="plus3">+++ testOutput/array_hard.s10	2015-02-24 18:34:23.078271000 +0100</span>
+<span class="at2">@@ -16,6 +16,7 @@</span>
+ Type checking expression ARRAY_INDEX
+ Type checking assignment
+ Type checking expression FUNC_CALL
+<span class="plus">+ARRAY</span>
+ Type checking expression ARRAY_INDEX
+ Type checking assignment
+ Type checking expression NEW</span>
+</pre>
+</body>
+</html>

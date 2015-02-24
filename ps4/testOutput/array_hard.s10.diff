@@ -1,0 +1,10 @@
+--- correctOutput/array_hard.s10	2015-02-24 17:24:07.024924000 +0100
++++ testOutput/array_hard.s10	2015-02-24 18:34:23.078271000 +0100
+@@ -16,6 +16,7 @@
+ Type checking expression ARRAY_INDEX
+ Type checking assignment
+ Type checking expression FUNC_CALL
++ARRAY
+ Type checking expression ARRAY_INDEX
+ Type checking assignment
+ Type checking expression NEW
