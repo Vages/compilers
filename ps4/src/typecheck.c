@@ -150,6 +150,7 @@ data_type_t typecheck_expression(node_t* root)
             case FUNC_CALL_E: 
                 ;
                 function_symbol_t* fst = root->function_entry;
+                /*
                 if(fst->nArguments>0){
                     if (fst->nArguments != root->children[1]->n_children){
                         type_error(root);
@@ -163,7 +164,8 @@ data_type_t typecheck_expression(node_t* root)
                             type_error(root);
                         }
                     }
-                }
+                }*/
+                fprintf(stdout, "%s\n", base_type_to_string(fst->return_type.base_type));
                 return fst->return_type;
 
             case ARRAY_INDEX_E:
