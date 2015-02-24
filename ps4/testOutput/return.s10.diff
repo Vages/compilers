@@ -1,8 +1,0 @@
---- correctOutput/return.s10	2015-02-22 13:09:53.764147000 +0100
-+++ testOutput/return.s10	2015-02-24 18:55:44.927057000 +0100
-@@ -1,4 +1,5 @@
- Type checking expression FUNC_CALL
-+INT
- Type checking assignment
- Type checking assignment
- Type checking expression +

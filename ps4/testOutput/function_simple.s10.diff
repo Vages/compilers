@@ -1,5 +1,0 @@
---- correctOutput/function_simple.s10	2015-02-22 13:09:53.483146000 +0100
-+++ testOutput/function_simple.s10	2015-02-24 18:55:42.035043000 +0100
-@@ -1 +1,2 @@
- Type checking expression FUNC_CALL
-+VOID
