@@ -114,7 +114,7 @@ data_type_t typecheck_expression(node_t* root)
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE)){
                     type_error(root);
                 }
-                return (data_type_t){.base_type = BOOL_TYPE};
+                return (data_type_t){.base_type = BOOL_TYPE}; //Eirik: Tried to store BOOL_TYPE in a separate variable, but it had to be here
                     
             case AND_E: case OR_E:
                 ;
@@ -165,11 +165,15 @@ data_type_t typecheck_expression(node_t* root)
                         return root->data_type;    
                     }
                 }
-                
+
                 return fst->return_type;
 
             case ARRAY_INDEX_E:
                 ;
+                /*
+                    Eirik: The strategy is to peel off the first element in dimensions. 
+                    If this results in no elements in dimensions, change type.
+                */
                 node_t* array = root->children[0];
 
                 data_type_t a_t = array->typecheck(array);
