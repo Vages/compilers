@@ -174,7 +174,7 @@ data_type_t typecheck_expression(node_t* root)
                         return root->data_type;    
                     }
                 }
-                fprintf(stdout, "%s\n", base_type_to_string(fst->return_type.base_type));
+                //fprintf(stdout, "%s\n", base_type_to_string(fst->return_type.base_type));
                 return fst->return_type;
 
             case ARRAY_INDEX_E:
