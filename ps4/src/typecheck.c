@@ -46,7 +46,6 @@ data_type_t typecheck_default(node_t* root)
 {
     for (int i = 0; i < root->n_children; i++){
         if (root->children[i] != NULL){
-            //root->children[i]->data_type = 
             root->children[i]->typecheck(root->children[i]);
         }
     }
@@ -134,7 +133,7 @@ data_type_t typecheck_expression(node_t* root)
                     fprintf(stdout, "%s\n", "Not bool");
                     type_error(root);
                 }
-                return l_child_dt;
+                return (data_type_t){.base_type = BOOL_TYPE};
                 
             case EQUAL_E: case NEQUAL_E:
                 ;
