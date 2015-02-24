@@ -1,5 +1,5 @@
 --- correctOutput/function_medium.s10	2015-02-24 17:24:07.056922000 +0100
-+++ testOutput/function_medium.s10	2015-02-24 17:43:12.587987000 +0100
++++ testOutput/function_medium.s10	2015-02-24 17:47:53.252473000 +0100
 @@ -12,3 +12,7 @@
  Type checking expression &&
  Type checking expression >

@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-24 17:43:10.826978000 +0100
++++ testOutput/expressions.s10	2015-02-24 17:47:51.532465000 +0100
 @@ -26,12 +26,22 @@
  Type checking expression UMINUS
  Type checking expression !=
