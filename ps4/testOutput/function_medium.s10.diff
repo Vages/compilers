@@ -1,13 +1,11 @@
 --- correctOutput/function_medium.s10	2015-02-24 17:24:07.056922000 +0100
-+++ testOutput/function_medium.s10	2015-02-24 17:24:15.114966000 +0100
-@@ -11,4 +11,10 @@
- Type checking expression ||
++++ testOutput/function_medium.s10	2015-02-24 17:36:07.156735000 +0100
+@@ -12,3 +12,7 @@
  Type checking expression &&
  Type checking expression >
-+Type error at:
-+EXPRESSION (||)
-+Unequal types
  Type checking expression >
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
++, 
+\ No newline at end of file
