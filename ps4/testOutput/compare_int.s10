@@ -4,53 +4,29 @@ Type checking expression UMINUS
 Type checking assignment
 Type checking assignment
 Type checking expression >
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking assignment
 Type checking expression >=
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >=
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression >=
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <=
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <=
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression <=
-Type error at:
-ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression ==
 Type error at:
