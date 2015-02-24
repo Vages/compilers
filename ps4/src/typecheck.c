@@ -3,6 +3,25 @@ extern int outputStage;
 
 static int type_errors = 0;
 
+char* base_type_to_string(base_data_type_t bt){
+    switch(bt){
+    case INT_TYPE:
+        return "INT";
+    case FLOAT_TYPE:
+        return "FLOAT";
+    case BOOL_TYPE:
+        return "BOOL";
+    case VOID_TYPE:
+        return "VOID";
+    case STRING_TYPE:
+        return "STRING";
+    case ARRAY_TYPE:
+        return "ARRAY";
+    default:
+        return "";
+    }
+}
+
 int has_type_errors(){
 	return type_errors;
 }
