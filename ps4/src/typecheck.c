@@ -122,10 +122,7 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
-                    fprintf(stdout, "%s\n", "Unequal types");
-                    fprintf(stdout, "%s, %s", (char*) base_type_to_string(l_child_dt.base_type), (char*) base_type_to_string(r_child_dt.base_type));
                 } else if (l_child_dt.base_type != BOOL_TYPE){
-                    fprintf(stdout, "%s\n", "Not bool");
                     type_error(root);
                 }
                 return (data_type_t){.base_type = BOOL_TYPE};
@@ -136,10 +133,8 @@ data_type_t typecheck_expression(node_t* root)
                 r_child_dt = root->children[1]->typecheck(root->children[1]);
                 if (!equal_types(l_child_dt, r_child_dt)){
                     type_error(root);
-                    fprintf(stdout, "%s\n", "Unequal types");
                 } else if ((l_child_dt.base_type != FLOAT_TYPE) && (l_child_dt.base_type != INT_TYPE) && (l_child_dt.base_type != BOOL_TYPE)){
                     type_error(root);
-                    fprintf(stdout, "%s\n", "Not float or int");
                 }
                 return (data_type_t){.base_type = BOOL_TYPE};
                     
@@ -170,7 +165,6 @@ data_type_t typecheck_expression(node_t* root)
                         return root->data_type;    
                     }
                 }
-                //fprintf(stdout, "%s\n", base_type_to_string(fst->return_type.base_type));
                 return fst->return_type;
 
             case ARRAY_INDEX_E:
