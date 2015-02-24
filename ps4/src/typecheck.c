@@ -175,7 +175,7 @@ data_type_t typecheck_expression(node_t* root)
 
                 data_type_t tmp_dtt = {
                     .array_type=array_type.array_type, 
-                    .n_dimensions=dim_minus_1, 
+                    .n_dimensions=decr_dims, 
                     .base_type = array_type.base_type } ;
 
                 int* new_dimensions = malloc(sizeof(int)*decr_dims); 
