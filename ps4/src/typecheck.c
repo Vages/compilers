@@ -188,7 +188,7 @@ data_type_t typecheck_expression(node_t* root)
                 return tmp_dtt;
 
             default:
-                return root->data_type;
+                return typecheck_default(root);
         }
     }
     return root->data_type;
