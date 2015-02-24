@@ -195,6 +195,8 @@ data_type_t typecheck_expression(node_t* root)
                     new_dimensions[i-1] = a_t.dimensions[i];
                 }
 
+                free(a_t.dimensions);
+
                 tmp_dtt.dimensions = new_dimensions;
 
                 return tmp_dtt;
