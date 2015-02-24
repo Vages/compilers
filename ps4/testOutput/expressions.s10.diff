@@ -1,5 +1,5 @@
 --- correctOutput/expressions.s10	2015-02-22 13:09:53.291144000 +0100
-+++ testOutput/expressions.s10	2015-02-24 17:36:05.597728000 +0100
++++ testOutput/expressions.s10	2015-02-24 17:40:45.020206000 +0100
 @@ -26,12 +26,22 @@
  Type checking expression UMINUS
  Type checking expression !=
@@ -52,7 +52,7 @@
 +Type error at:
 +EXPRESSION (||)
 +Unequal types
-+, Type error at:
++INT, BOOLType error at:
 +ASSIGNMENT_STATEMENT
  Type checking assignment
  Type checking expression +

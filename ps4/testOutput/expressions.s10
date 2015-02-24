@@ -125,7 +125,7 @@ Type checking expression !
 Type error at:
 EXPRESSION (||)
 Unequal types
-, Type error at:
+INT, BOOLType error at:
 ASSIGNMENT_STATEMENT
 Type checking assignment
 Type checking expression +

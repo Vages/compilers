@@ -15,4 +15,4 @@ Type checking expression >
 Type error at:
 EXPRESSION (||)
 Unequal types
-, 
+BOOL, INT
