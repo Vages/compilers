@@ -124,7 +124,7 @@ void gen_PROGRAM ( node_t *root, int scopedepth)
 	
 
 	/* TODO: Insert a call to the first defined function here */
-        
+    //Eirik: Perhaps by jumping to a label?    
 
 	tracePrint("End PROGRAM\n");
 
