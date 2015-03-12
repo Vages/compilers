@@ -160,7 +160,7 @@ void gen_DECLARATION_STATEMENT (node_t *root, int scopedepth)
 	*/
 	tracePrint("Starting DECLARATION: adding space on stack\n");
 
-	instruction_add(PUSH, "r6", NULL, 0, 0);
+	instruction_add(PUSH, r6, NULL, 0, 0);
 
 	tracePrint("Ending DECLARATION\n");
 }
