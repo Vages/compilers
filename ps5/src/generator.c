@@ -188,7 +188,35 @@ void gen_VARIABLE ( node_t *root, int scopedepth )
 void gen_CONSTANT (node_t * root, int scopedepth)
 {
 	tracePrint("Starting CONSTANT\n");
+	/*Eirik: There are three constant types we have to handle: Integers, strings and booleans.
+	This will be done using a switch case, each taking care of their types 
 
+	There might be a possibility for cleanup later here.
+	*/
+
+	switch (root->data_type.base_type) 
+	{
+		case INT_TYPE:
+			char* strval; 
+			sprintf(strval, "%d", root->int_const);
+			instruction_add(MOVE32, r1, strval, 0, 0);
+			instruction_add(PUSH, r1, 0, 0);
+			break;
+		case BOOL_TYPE:
+			char* strval;
+			sprintf(strval, "%c", root->bool_const ? '1':'0');
+			instruction_add(MOVE32, r1, strval, 0, 0);
+			instruction_add(PUSH, r1, 0, 0);
+			break;
+		case STRING_TYPE:
+			char* strval;
+			sprintf(strval, ".STRING%d", root->string_index);
+			instruction_add(MOVE32, r1, strval, 0, 0);
+			instruction_add(PUSH, r1, 0, 0);
+			break;
+		default:
+			break;
+	}
 
 	tracePrint("End CONSTANT\n");
 }
