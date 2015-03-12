@@ -196,7 +196,7 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 
 void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 {
-	 tracePrint ( "Starting ASSIGNMENT_STATEMENT\n");
+	tracePrint ( "Starting ASSIGNMENT_STATEMENT\n");
 
 
 	tracePrint ( "End ASSIGNMENT_STATEMENT\n");
