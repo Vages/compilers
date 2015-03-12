@@ -17,6 +17,7 @@ static instruction_t *start = NULL, *last = NULL;
 
 
 /* Support variables for nested while, for, if and continue.*/
+/* Eirik: It seems our language doesn't support these features this year. */
 node_t *continue_target;
 char *continue_target_label;
 int continue_target_depth;
@@ -31,6 +32,8 @@ static int nodeCounter = 0;
 
 static void instruction_append ( instruction_t *next )
 {
+	/* Eirik: Appends an instruction to the end of the instruction list.
+	Will also set the appended element as first element if that is needed. */
 	if ( start != NULL )
 	{
 		last->next = next;
@@ -43,9 +46,11 @@ static void instruction_append ( instruction_t *next )
 
 static void instruction_add ( opcode_t op, char *arg1, char *arg2, int off1, int off2 )
 {
+	/* Eirik: Used for two-address instructions.
+	*/
 	instruction_t *i = (instruction_t *) malloc ( sizeof(instruction_t) );
 	i->opcode = op;
-	i->offsets[0] = off1; i->offsets[1] = off2;
+	i->offsets[0] = off1; i->offsets[1] = off2; //Eirik: Offsets are used for indirect addressing. Needs to be understood.
 	i->operands[0] = arg1; i->operands[1] = arg2;
 	i->next = NULL;
 	instruction_append ( i );
@@ -53,6 +58,8 @@ static void instruction_add ( opcode_t op, char *arg1, char *arg2, int off1, int
 
 static void instruction_add3 ( opcode_t op, char* arg1, char* arg2, char* arg3)
 {
+	/* Eirik: Used for three-address instructions.
+	*/
 	instruction_t *i = (instruction_t *) malloc ( sizeof(instruction_t) );
 	i->opcode = op;
 	i->offsets[0] = 0; i->offsets[1] = 0;
@@ -62,7 +69,7 @@ static void instruction_add3 ( opcode_t op, char* arg1, char* arg2, char* arg3)
 }
 
 
-static void instructions_finalize ( void ) {};
+static void instructions_finalize ( void ) {}; //Eirik: It seems the point that this should be empty.
 
 
 /*
