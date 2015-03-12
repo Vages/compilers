@@ -155,8 +155,12 @@ void gen_ARRAY(int nDimensions, int* dimensions){
 
 void gen_DECLARATION_STATEMENT (node_t *root, int scopedepth)
 {
+	/* Eirik: As mentioned on slide 21 of the recitation, we only need to make room on the stack.
+	It doesn't matter what that space contains. I've thus chosen to use register 6, the least likely to be used.
+	*/
 	tracePrint("Starting DECLARATION: adding space on stack\n");
 
+	instruction_add(PUSH, "r6", NULL, 0, 0);
 
 	tracePrint("Ending DECLARATION\n");
 }
