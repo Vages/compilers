@@ -193,30 +193,24 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 
 	There might be a possibility for cleanup later here.
 	*/
-
+	char* strval;
 	switch (root->data_type.base_type) 
 	{
 		case INT_TYPE:
-			char* strval; 
 			sprintf(strval, "%d", root->int_const);
-			instruction_add(MOVE32, r1, strval, 0, 0);
-			instruction_add(PUSH, r1, 0, 0);
 			break;
 		case BOOL_TYPE:
-			char* strval;
 			sprintf(strval, "%c", root->bool_const ? '1':'0');
-			instruction_add(MOVE32, r1, strval, 0, 0);
-			instruction_add(PUSH, r1, 0, 0);
 			break;
 		case STRING_TYPE:
-			char* strval;
 			sprintf(strval, ".STRING%d", root->string_index);
-			instruction_add(MOVE32, r1, strval, 0, 0);
-			instruction_add(PUSH, r1, 0, 0);
 			break;
 		default:
 			break;
 	}
+
+	instruction_add(MOVE32, r1, strval, 0, 0);
+	instruction_add(PUSH, r1, 0, 0);
 
 	tracePrint("End CONSTANT\n");
 }
