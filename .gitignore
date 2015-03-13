@@ -39,3 +39,4 @@
 !symtab32.o
 !tree.o
 !tree32.o
+!bindnames.o
