@@ -227,8 +227,13 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 
 void gen_RETURN_STATEMENT ( node_t *root, int scopedepth )
 {
+	/*Eirik: A return_statement node has one child, an expression node. 
+	We assume that this will place its result in r0.
+	*/
 	tracePrint ( "Starting RETURN_STATEMENT\n");
 	
+	gen_default(root->children[0]);
+
 	tracePrint ( "End RETURN_STATEMENT\n");
 }
 
