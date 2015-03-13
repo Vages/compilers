@@ -234,7 +234,7 @@ void gen_RETURN_STATEMENT ( node_t *root, int scopedepth )
 	
 	fprintf(stderr, "%d\n", root->n_children);
 
-	gen_default(root->children[0]);
+	gen_default(root->children[0], scopedepth);
 
 	tracePrint ( "End RETURN_STATEMENT\n");
 }
