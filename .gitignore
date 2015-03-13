@@ -40,3 +40,4 @@
 !tree.o
 !tree32.o
 !bindnames.o
+!typecheck.o
