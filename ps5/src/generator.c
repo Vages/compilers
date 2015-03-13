@@ -210,7 +210,7 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 	}
 
 	instruction_add(MOVE32, r1, strval, 0, 0);
-	instruction_add(PUSH, r1, 0, 0);
+	instruction_add(PUSH, r1, NULL, 0, 0);
 
 	tracePrint("End CONSTANT\n");
 }
