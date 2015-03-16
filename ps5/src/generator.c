@@ -153,7 +153,7 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
     instruction_add(PUSH, fp, NULL, 0, 0);  // Callee saves old fp on stack.
     instruction_add(MOV, fp, sp, 0, 0);  // Callee sets new fp to top of stack.
     gen_default(root->children[1], scopedepth);  // Generate code for function body (statement list, second child).
-    instruction_add(MOV, sp, fp);  // Callee sets sp to its fp.
+    instruction_add(MOV, sp, fp, 0, 0);  // Callee sets sp to its fp.
     instruction_add(POP, fp, NULL, 0, 0);  // Callee restores old fp.
     // TODO: Slides say that we have to store return value in r0 here, but this has perhaps been done for us already.
     instruction_add(POP, pc, NULL, 0, 0);  // Callee jumps back to caller by popping the return address.
