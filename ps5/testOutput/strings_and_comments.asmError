@@ -1,0 +1,5 @@
+testOutput/strings_and_comments.s: Assembler messages:
+testOutput/strings_and_comments.s:1: Error: bad instruction `error in instruction stream'
+testOutput/strings_and_comments.s:2: Error: bad instruction `error in instruction stream'
+testOutput/strings_and_comments.s:3: Error: bad instruction `error in instruction stream'
+testOutput/strings_and_comments.s:4: Error: bad instruction `error in instruction stream'

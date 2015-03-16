@@ -1,0 +1,2 @@
+testOutput/hello.s: Assembler messages:
+testOutput/hello.s:1: Error: bad instruction `error in instruction stream'
