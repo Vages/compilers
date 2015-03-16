@@ -30,10 +30,12 @@ static int nodeCounter = 0;
 
 /* Provided auxiliaries... */
 
+/* 
+Eirik: Appends an instruction to the end of the instruction list.
+Will also set the appended element as first element if that is needed. 
+*/
 static void instruction_append ( instruction_t *next )
 {
-	/* Eirik: Appends an instruction to the end of the instruction list.
-	Will also set the appended element as first element if that is needed. */
 	if ( start != NULL )
 	{
 		last->next = next;
@@ -43,11 +45,12 @@ static void instruction_append ( instruction_t *next )
 		start = last = next;
 }
 
-
+/* 
+Eirik: Used for two-address instructions.
+*/
 static void instruction_add ( opcode_t op, char *arg1, char *arg2, int off1, int off2 )
 {
-	/* Eirik: Used for two-address instructions.
-	*/
+	
 	instruction_t *i = (instruction_t *) malloc ( sizeof(instruction_t) );
 	i->opcode = op;
 	i->offsets[0] = off1; i->offsets[1] = off2; //Eirik: Offsets are used for indirect addressing. Needs to be understood.
@@ -56,10 +59,12 @@ static void instruction_add ( opcode_t op, char *arg1, char *arg2, int off1, int
 	instruction_append ( i );
 }
 
+/* 
+Eirik: Used for three-address instructions.
+*/
 static void instruction_add3 ( opcode_t op, char* arg1, char* arg2, char* arg3)
 {
-	/* Eirik: Used for three-address instructions.
-	*/
+	
 	instruction_t *i = (instruction_t *) malloc ( sizeof(instruction_t) );
 	i->opcode = op;
 	i->offsets[0] = 0; i->offsets[1] = 0;
