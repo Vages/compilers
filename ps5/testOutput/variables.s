@@ -13,7 +13,32 @@
 .text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (main) with depth 2
-#2 Leaving FUNCTION (main) with depth 2
+_main:
+	push	{lr}
+	push	{fp}
+	mov	fp, sp
+#2 Starting DECLARATION: adding space on stack
+	push	{r6}
+#3 Ending DECLARATION
+#4 Starting DECLARATION: adding space on stack
+	push	{r6}
+#5 Ending DECLARATION
+#6 Starting DECLARATION: adding space on stack
+	push	{r6}
+#7 Ending DECLARATION
+#8 Starting ASSIGNMENT_STATEMENT
+	str	r0, [fp, #-4]
+#9 End ASSIGNMENT_STATEMENT
+#10 Starting ASSIGNMENT_STATEMENT
+	str	r0, [fp, #-8]
+#11 End ASSIGNMENT_STATEMENT
+#12 Starting ASSIGNMENT_STATEMENT
+	str	r0, [fp, #-12]
+#13 End ASSIGNMENT_STATEMENT
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#14 Leaving FUNCTION (main) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -54,7 +79,8 @@ pusharg:
 	cmp	r5,#0
 	bne	pusharg
 noargs:
-#3 End PROGRAM
+	b	main
+#15 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

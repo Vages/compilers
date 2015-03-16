@@ -1,3 +1,4 @@
+1
 .syntax unified
 .cpu cortex-a15
 .fpu vfpv3-d16
@@ -13,7 +14,16 @@
 .text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (minimal) with depth 2
-#2 Leaving FUNCTION (minimal) with depth 2
+_minimal:
+	push	{lr}
+	push	{fp}
+	mov	fp, sp
+#2 Starting RETURN_STATEMENT
+#3 End RETURN_STATEMENT
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#4 Leaving FUNCTION (minimal) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -54,7 +64,8 @@ pusharg:
 	cmp	r5,#0
 	bne	pusharg
 noargs:
-#3 End PROGRAM
+	b	minimal
+#5 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
