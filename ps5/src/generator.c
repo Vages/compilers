@@ -185,6 +185,23 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 {
 	tracePrint ( "Starting EXPRESSION of type %s\n", (char*) root->expression_type.text);
 
+	// Eirik: Start of own stuff
+	if (root->expression_type == FUNC_CALL_E){
+		// Perhaps save registers on stack here ...
+		for (int i; i<root->children[1]->n_children; i++){
+			gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes)
+			instruction_add(PUSH, r0, NULL, 0, 0);  // Results are assumed to be in r0. Push them to the stack.
+		}
+		instruction_add(BL, STRDUP(root->children[0]->label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
+		// Results are assumed to be in r0. We'll just have to pass it on.
+	}
+	else if (root->expression_type == ARRAY_INDEX_E){
+		
+	}
+	else if (root->expression_type == NEW_E){
+
+	}
+	// Eirik: End of own stuff
 
 	tracePrint ( "Ending EXPRESSION of type %s\n", (char*) root->expression_type.text);
 }
