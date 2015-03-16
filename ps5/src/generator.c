@@ -129,7 +129,8 @@ void gen_PROGRAM ( node_t *root, int scopedepth)
 	
 
 	/* TODO: Insert a call to the first defined function here */
-    //Eirik: Perhaps by jumping to a label?    
+    //Eirik: Perhaps by jumping to a label?
+    //Eirik: Look at first child node and branch-link to it?
 
 	tracePrint("End PROGRAM\n");
 
