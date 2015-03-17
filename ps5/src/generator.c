@@ -169,7 +169,7 @@ void gen_ARRAY(int nDimensions, int* dimensions){
 	char* size;
 	sprintf(size, "#%d", dimensions[0]*4);  // Size to send to malloc
 	instruction_add(MOVE32, r0, STRDUP(size), 0, 0);  // Push parameter to stack
-	instruction_add(BL, STRDUP("_malloc"), 0, 0);  // Branch link to _malloc (malloc wrapper)
+	instruction_add(BL, STRDUP("_malloc"), NULL, 0, 0);  // Branch link to _malloc (malloc wrapper)
 	instruction_add(POP, r6, NULL, 0, 0);  // Remove argument
 	if (nDimensions > 1){
 		char* offset;
