@@ -12,8 +12,6 @@
 .ascii "\000"
 .globl main
 .align	2
-
-Hithere.STRING0
 .text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (hello) with depth 2

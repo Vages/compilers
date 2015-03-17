@@ -18,14 +18,6 @@
 .ascii "\000"
 .globl main
 .align	2
-
-Hithere.STRING0
-
-Hithere.STRING1
-
-Hithere.STRING2
-
-Hithere.STRING3
 .text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (main) with depth 2
