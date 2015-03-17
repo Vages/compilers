@@ -1,2 +1,3 @@
 testOutput/hello.s: Assembler messages:
-testOutput/hello.s:16: Error: unknown pseudo-op: `.string0'
+testOutput/hello.s:16: Error: bad size 0 in type specifier
+testOutput/hello.s:16: Error: bad instruction `hithere.string0'

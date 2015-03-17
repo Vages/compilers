@@ -19,13 +19,13 @@
 .globl main
 .align	2
 
-.STRING0
+Hithere.STRING0
 
-.STRING1
+Hithere.STRING1
 
-.STRING2
+Hithere.STRING2
 
-.STRING3
+Hithere.STRING3
 .text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (main) with depth 2

@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s12	2015-03-13 17:27:09.978494000 +0100
-+++ testOutput/strings_and_comments.s	2015-03-18 00:33:49.999325000 +0100
++++ testOutput/strings_and_comments.s	2015-03-18 00:35:21.048808000 +0100
 @@ -1,4 +1,141 @@
 -Hello, world!
 +.syntax unified
@@ -25,13 +25,13 @@
  
 -Hello, "world"!
 -//Comment
-+.STRING0
++Hithere.STRING0
 +
-+.STRING1
++Hithere.STRING1
 +
-+.STRING2
++Hithere.STRING2
 +
-+.STRING3
++Hithere.STRING3
 +.text
 +#0 Starting PROGRAM
 +#1 Starting FUNCTION (main) with depth 2
