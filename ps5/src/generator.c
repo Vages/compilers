@@ -200,7 +200,9 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		instruction_add (STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers. Assume that parent nodes use result.
 	}
 	else if (root->expression_type.index == ARRAY_INDEX_E){
-		// TODO: Array access
+		gen_default(root->children[0], scopedepth);  // Generate code for left child. When this has been run, its result should be in r0
+		int index_offset = 4*(root->children[1]->int_const);  // Find address of array information – the array index + offset
+		instruction_add(LDR, r0, r0, 0, index_offset);  // Load information to r0 from the addrass in r0 plus our newly calculated offset
 	}
 	else if (root->expression_type.index == NEW_E){
 		// TODO: Array instantiation
