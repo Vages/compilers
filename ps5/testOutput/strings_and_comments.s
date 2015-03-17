@@ -31,7 +31,6 @@ _main:
 	mov	fp, sp
 #2 Starting PRINT_STATEMENT
 	push	{r6}
-	pop	{r6}
 #3 Starting CONSTANT
 	movw	r0, #:lower16:.STRING0
 	movt	r0, #:upper16:.STRING0
@@ -45,7 +44,6 @@ _main:
 #5 Ending PRINT_STATEMENT
 #6 Starting PRINT_STATEMENT
 	push	{r6}
-	pop	{r6}
 #7 Starting CONSTANT
 	movw	r0, #:lower16:.STRING1
 	movt	r0, #:upper16:.STRING1
@@ -59,7 +57,6 @@ _main:
 #9 Ending PRINT_STATEMENT
 #10 Starting PRINT_STATEMENT
 	push	{r6}
-	pop	{r6}
 #11 Starting CONSTANT
 	movw	r0, #:lower16:.STRING2
 	movt	r0, #:upper16:.STRING2
@@ -73,7 +70,6 @@ _main:
 #13 Ending PRINT_STATEMENT
 #14 Starting PRINT_STATEMENT
 	push	{r6}
-	pop	{r6}
 #15 Starting CONSTANT
 	movw	r0, #:lower16:.STRING3
 	movt	r0, #:upper16:.STRING3

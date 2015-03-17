@@ -22,7 +22,6 @@ _hello:
 	mov	fp, sp
 #2 Starting PRINT_STATEMENT
 	push	{r6}
-	pop	{r6}
 #3 Starting CONSTANT
 	movw	r0, #:lower16:.STRING0
 	movt	r0, #:upper16:.STRING0
