@@ -262,7 +262,7 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 			sprintf(strval, "%c", root->bool_const ? '1':'0');
 			break;
 		case STRING_TYPE:
-			sprintf(strval, ".STRING%d", STRDUP(root->string_index));
+			sprintf(strval, ".STRING%d", root->string_index);
 			break;
 		default:
 			break;
