@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s12	2015-03-13 17:27:09.978494000 +0100
-+++ testOutput/strings_and_comments.s	2015-03-17 17:03:45.331501000 +0100
++++ testOutput/strings_and_comments.s	2015-03-17 17:06:09.610250000 +0100
 @@ -1,4 +1,133 @@
 -Hello, world!
 -
@@ -132,7 +132,7 @@
 +	cmp	r5,#0
 +	bne	pusharg
 +noargs:
-+	b	main
++	bl	main
 +#19 End PROGRAM
 +	mov	sp, fp
 +	pop	{fp}

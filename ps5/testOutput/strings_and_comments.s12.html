@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/strings_and_comments.s12	2015-03-13 17:27:09.978494000 +0100</span>
-<span class="plus3">+++ testOutput/strings_and_comments.s	2015-03-17 17:03:45.331501000 +0100</span>
+<span class="plus3">+++ testOutput/strings_and_comments.s	2015-03-17 17:06:09.610250000 +0100</span>
 <span class="at2">@@ -1,4 +1,133 @@</span>
 <span class="minus">-Hello, world!</span>
 <span class="minus">-</span>
@@ -149,7 +149,7 @@
 <span class="plus">+	cmp	r5,#0</span>
 <span class="plus">+	bne	pusharg</span>
 <span class="plus">+noargs:</span>
-<span class="plus">+	b	main</span>
+<span class="plus">+	bl	main</span>
 <span class="plus">+#19 End PROGRAM</span>
 <span class="plus">+	mov	sp, fp</span>
 <span class="plus">+	pop	{fp}</span>

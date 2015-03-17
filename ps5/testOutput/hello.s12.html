@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/hello.s12	2015-03-13 17:27:09.949442000 +0100</span>
-<span class="plus3">+++ testOutput/hello.s	2015-03-17 17:03:43.726493000 +0100</span>
+<span class="plus3">+++ testOutput/hello.s	2015-03-17 17:06:08.890245000 +0100</span>
 <span class="at2">@@ -1 +1,85 @@</span>
 <span class="minus">-Hello, world!</span>
 <span class="plus">+Error in instruction stream</span>
@@ -98,7 +98,7 @@
 <span class="plus">+	cmp	r5,#0</span>
 <span class="plus">+	bne	pusharg</span>
 <span class="plus">+noargs:</span>
-<span class="plus">+	b	hello</span>
+<span class="plus">+	bl	hello</span>
 <span class="plus">+#7 End PROGRAM</span>
 <span class="plus">+	mov	sp, fp</span>
 <span class="plus">+	pop	{fp}</span>
