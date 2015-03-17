@@ -206,7 +206,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		instruction_add(LDR, r0, r0, 0, index_offset);  // Load information to r0 from the addrass in r0 plus our newly calculated offset
 	}
 	else if (root->expression_type.index == NEW_E){
-		// TODO: Array instantiation
+		gen_ARRAY(root->data_type->n_dimensions, root->data_type->dimensions);
 	}
 	// Eirik: End of own stuff
 
