@@ -7,9 +7,9 @@ int peephole = 1;
 /* Registers */
 // stackpointer = r13 = sp, framepointer = r11 / r7 = fp, linkregister (return address) = r14 = lr
 static char
-	*lr = "lr", *r0 = "r0", *r1 = "r1", *r2 = "r2", *r3 = "r3", 
+	*lr = "lr", *r0 = "r0", *r1 = "r1", *r2 = "r2", *r3 = "r3",
 	*fp = "fp", *sp = "sp", *r5 = "r5", *r6 = "r6",
-	*d0 = "d0", *d1 = "d1", *s0 = "s0", *s1 = "s1", *pc = "pc";
+	*d0 = "d0", *d1="d1", *s0 = "s0", *s1 = "s1", *pc = "pc";
 
 
 /* Start and last element for emitting/appending instructions */
@@ -17,7 +17,6 @@ static instruction_t *start = NULL, *last = NULL;
 
 
 /* Support variables for nested while, for, if and continue.*/
-/* Eirik: It seems our language doesn't support these features this year. */
 node_t *continue_target;
 char *continue_target_label;
 int continue_target_depth;
@@ -30,10 +29,6 @@ static int nodeCounter = 0;
 
 /* Provided auxiliaries... */
 
-/* 
-Eirik: Appends an instruction to the end of the instruction list.
-Will also set the appended element as first element if that is needed. 
-*/
 static void instruction_append ( instruction_t *next )
 {
 	if ( start != NULL )
@@ -45,26 +40,19 @@ static void instruction_append ( instruction_t *next )
 		start = last = next;
 }
 
-/* 
-Eirik: Used for two-address instructions.
-*/
+
 static void instruction_add ( opcode_t op, char *arg1, char *arg2, int off1, int off2 )
 {
-	
 	instruction_t *i = (instruction_t *) malloc ( sizeof(instruction_t) );
 	i->opcode = op;
-	i->offsets[0] = off1; i->offsets[1] = off2; //Eirik: Offsets are used for indirect addressing. Needs to be understood.
+	i->offsets[0] = off1; i->offsets[1] = off2;
 	i->operands[0] = arg1; i->operands[1] = arg2;
 	i->next = NULL;
 	instruction_append ( i );
 }
 
-/* 
-Eirik: Used for three-address instructions.
-*/
 static void instruction_add3 ( opcode_t op, char* arg1, char* arg2, char* arg3)
 {
-	
 	instruction_t *i = (instruction_t *) malloc ( sizeof(instruction_t) );
 	i->opcode = op;
 	i->offsets[0] = 0; i->offsets[1] = 0;
@@ -74,7 +62,7 @@ static void instruction_add3 ( opcode_t op, char* arg1, char* arg2, char* arg3)
 }
 
 
-static void instructions_finalize ( void ) {}; //Eirik: It seems the point that this should be empty.
+static void instructions_finalize ( void ) {};
 
 
 /*
@@ -189,9 +177,6 @@ void gen_ARRAY(int nDimensions, int* dimensions){
 
 void gen_DECLARATION_STATEMENT (node_t *root, int scopedepth)
 {
-	/* Eirik: As mentioned on slide 21 of the recitation, we only need to make room on the stack.
-	It doesn't matter what that space contains. I've thus chosen to use register 6, the least likely to be used.
-	*/
 	tracePrint("Starting DECLARATION: adding space on stack\n");
 
 	instruction_add(PUSH, r6, NULL, 0, 0); // Make room for the variable on stack. 
@@ -278,7 +263,7 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 
 void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 {
-	tracePrint ( "Starting ASSIGNMENT_STATEMENT\n");
+	 tracePrint ( "Starting ASSIGNMENT_STATEMENT\n");
 
 	// Eirik: Start of own stuff
 	gen_default(root->children[1], scopedepth);  // Generating code for right hand side.
@@ -292,13 +277,8 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 
 void gen_RETURN_STATEMENT ( node_t *root, int scopedepth )
 {
-	/*Eirik: A return_statement node has one child, an expression node. 
-	We assume that this will place its result in r0.
-	*/
 	tracePrint ( "Starting RETURN_STATEMENT\n");
 	
-	fprintf(stderr, "%d\n", root->n_children);
-
 	gen_default(root->children[0], scopedepth);
 
 	tracePrint ( "End RETURN_STATEMENT\n");
