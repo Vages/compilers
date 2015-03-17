@@ -27,12 +27,15 @@ _main:
 	push	{r6}
 #7 Ending DECLARATION
 #8 Starting ASSIGNMENT_STATEMENT
+	pop	{r0}
 	str	r0, [fp, #-4]
 #9 End ASSIGNMENT_STATEMENT
 #10 Starting ASSIGNMENT_STATEMENT
+	pop	{r0}
 	str	r0, [fp, #-8]
 #11 End ASSIGNMENT_STATEMENT
 #12 Starting ASSIGNMENT_STATEMENT
+	pop	{r0}
 	str	r0, [fp, #-12]
 #13 End ASSIGNMENT_STATEMENT
 	mov	sp, fp

@@ -18,6 +18,7 @@ _minimal:
 	push	{fp}
 	mov	fp, sp
 #2 Starting RETURN_STATEMENT
+	pop	{r0}
 #3 End RETURN_STATEMENT
 	mov	sp, fp
 	pop	{fp}
