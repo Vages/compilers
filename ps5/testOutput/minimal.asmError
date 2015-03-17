@@ -1,2 +1,0 @@
-testOutput/minimal.s: Assembler messages:
-testOutput/minimal.s:1: Error: junk at end of line, first unrecognized character is `1'

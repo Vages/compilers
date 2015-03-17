@@ -1,4 +1,3 @@
-1
 .syntax unified
 .cpu cortex-a15
 .fpu vfpv3-d16

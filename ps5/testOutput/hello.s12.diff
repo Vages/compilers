@@ -1,5 +1,5 @@
 --- correctOutput/hello.s12	2015-03-13 17:27:09.949442000 +0100
-+++ testOutput/hello.s	2015-03-17 17:44:49.741269000 +0100
++++ testOutput/hello.s	2015-03-17 18:09:07.592824000 +0100
 @@ -1 +1,85 @@
 -Hello, world!
 +Error in instruction stream
