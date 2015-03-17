@@ -1,17 +1,7 @@
 --- correctOutput/strings_and_comments.s12	2015-03-13 17:27:09.978494000 +0100
-+++ testOutput/strings_and_comments.s	2015-03-18 00:26:03.048830000 +0100
++++ testOutput/strings_and_comments.s	2015-03-18 00:33:49.999325000 +0100
 @@ -1,4 +1,141 @@
 -Hello, world!
- 
--Hello, "world"!
--//Comment
-+.STRING0
-+
-+.STRING1
-+
-+.STRING2
-+
-+.STRING3
 +.syntax unified
 +.cpu cortex-a15
 +.fpu vfpv3-d16
@@ -32,6 +22,16 @@
 +.ascii "\000"
 +.globl main
 +.align	2
+ 
+-Hello, "world"!
+-//Comment
++.STRING0
++
++.STRING1
++
++.STRING2
++
++.STRING3
 +.text
 +#0 Starting PROGRAM
 +#1 Starting FUNCTION (main) with depth 2

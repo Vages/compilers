@@ -16,19 +16,9 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/strings_and_comments.s12	2015-03-13 17:27:09.978494000 +0100</span>
-<span class="plus3">+++ testOutput/strings_and_comments.s	2015-03-18 00:26:03.048830000 +0100</span>
+<span class="plus3">+++ testOutput/strings_and_comments.s	2015-03-18 00:33:49.999325000 +0100</span>
 <span class="at2">@@ -1,4 +1,141 @@</span>
 <span class="minus">-Hello, world!</span>
- 
-<span class="minus">-Hello, "world"!</span>
-<span class="minus">-//Comment</span>
-<span class="plus">+.STRING0</span>
-<span class="plus">+</span>
-<span class="plus">+.STRING1</span>
-<span class="plus">+</span>
-<span class="plus">+.STRING2</span>
-<span class="plus">+</span>
-<span class="plus">+.STRING3</span>
 <span class="plus">+.syntax unified</span>
 <span class="plus">+.cpu cortex-a15</span>
 <span class="plus">+.fpu vfpv3-d16</span>
@@ -49,6 +39,16 @@
 <span class="plus">+.ascii "\000"</span>
 <span class="plus">+.globl main</span>
 <span class="plus">+.align	2</span>
+ 
+<span class="minus">-Hello, "world"!</span>
+<span class="minus">-//Comment</span>
+<span class="plus">+.STRING0</span>
+<span class="plus">+</span>
+<span class="plus">+.STRING1</span>
+<span class="plus">+</span>
+<span class="plus">+.STRING2</span>
+<span class="plus">+</span>
+<span class="plus">+.STRING3</span>
 <span class="plus">+.text</span>
 <span class="plus">+#0 Starting PROGRAM</span>
 <span class="plus">+#1 Starting FUNCTION (main) with depth 2</span>

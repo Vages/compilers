@@ -1,2 +1,3 @@
-testOutput/function_minimal.s: Assembler messages:
-testOutput/function_minimal.s:2: Error: unknown pseudo-op: `.string0'
+/usr/lib/gcc-cross/arm-linux-gnueabihf/4.8/../../../../arm-linux-gnueabihf/lib/../lib/crt1.o: In function `_start':
+(.text+0x28): undefined reference to `main'
+collect2: error: ld returned 1 exit status

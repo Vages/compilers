@@ -1,11 +1,3 @@
-
-.STRING0
-
-.STRING1
-
-.STRING2
-
-.STRING3
 .syntax unified
 .cpu cortex-a15
 .fpu vfpv3-d16
@@ -26,6 +18,14 @@
 .ascii "\000"
 .globl main
 .align	2
+
+.STRING0
+
+.STRING1
+
+.STRING2
+
+.STRING3
 .text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (main) with depth 2

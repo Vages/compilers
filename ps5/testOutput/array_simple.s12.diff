@@ -1,4 +1,4 @@
 --- correctOutput/array_simple.s12	2015-03-13 17:27:09.902439000 +0100
-+++ testOutput/array_simple.s	2015-03-18 00:26:00.179814000 +0100
++++ testOutput/array_simple.s	2015-03-18 00:33:46.835364000 +0100
 @@ -1 +0,0 @@
 -66 44 

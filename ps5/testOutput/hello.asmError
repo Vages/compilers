@@ -1,2 +1,2 @@
 testOutput/hello.s: Assembler messages:
-testOutput/hello.s:2: Error: unknown pseudo-op: `.string0'
+testOutput/hello.s:16: Error: unknown pseudo-op: `.string0'

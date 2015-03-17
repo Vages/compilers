@@ -1,5 +1,5 @@
 testOutput/strings_and_comments.s: Assembler messages:
-testOutput/strings_and_comments.s:2: Error: unknown pseudo-op: `.string0'
-testOutput/strings_and_comments.s:4: Error: unknown pseudo-op: `.string1'
-testOutput/strings_and_comments.s:6: Error: unknown pseudo-op: `.string2'
-testOutput/strings_and_comments.s:8: Error: unknown pseudo-op: `.string3'
+testOutput/strings_and_comments.s:22: Error: unknown pseudo-op: `.string0'
+testOutput/strings_and_comments.s:24: Error: unknown pseudo-op: `.string1'
+testOutput/strings_and_comments.s:26: Error: unknown pseudo-op: `.string2'
+testOutput/strings_and_comments.s:28: Error: unknown pseudo-op: `.string3'
