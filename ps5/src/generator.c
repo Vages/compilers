@@ -286,7 +286,7 @@ void gen_RETURN_STATEMENT ( node_t *root, int scopedepth )
 	
 	// Eirik: Start of own stuff
 	gen_default(root->children[0], scopedepth);  // Generate code for right hand side. An expression, so result is on top of stack.
-	instruction_add(POP, r0, NULL, 0, 0);  // Place result on top of stack, as slides describe.
+	instruction_add(POP, r0, NULL, 0, 0);  // Place result in r0, as slides describe.
 	// Eirik: End of own stuff
 
 	tracePrint ( "End RETURN_STATEMENT\n");
