@@ -190,7 +190,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		instruction_add(STRING, STRDUP("\tpush {r1-r11, lr}"), NULL, 0, 0 ); // Save registers r1 to r11 to stack (we do not care about r0, because it is used for results)
 		for (int i; i<root->children[1]->n_children; i++){
 			gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes)
-			instruction_add(PUSH, r0, NULL, 0, 0);  // Results are assumed to be in r0. Push them to the stack.
+			instruction_add(PUSH, r0, NULL, 0, 0);  // Results of the expressions are assumed to be in r0. Push them to the stack.
 		}
 		instruction_add(BL, STRDUP(root->children[0]->label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
 		instruction_add (STRING, STRDUP("\tpop {r1-r11, lr}"), NULL, 0, 0 );
