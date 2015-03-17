@@ -158,7 +158,7 @@ void gen_ARRAY(int nDimensions, int* dimensions){
 	instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 );  // Save registers to stack (r0 will be edited anyway)
 	char* size;
 	sprintf(size, "#%d", dimensions[0]*4);  // Size to send to malloc
-	instruction_add(MOVE32, r0, STRDUP(size), 0, 0);  // Push parameter to stack
+	instruction_add(MOV, r0, STRDUP(size), 0, 0);  // Push parameter to stack
 	instruction_add(BL, STRDUP("_malloc"), NULL, 0, 0);  // Branch link to _malloc (malloc wrapper)
 	instruction_add(POP, r0, NULL, 0, 0);  // Remove argument
 	if (nDimensions > 1){
