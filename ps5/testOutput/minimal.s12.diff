@@ -1,5 +1,5 @@
 --- correctOutput/minimal.s12	2015-03-13 17:27:09.962438000 +0100
-+++ testOutput/minimal.s	2015-03-17 17:22:43.635399000 +0100
++++ testOutput/minimal.s	2015-03-17 17:28:10.541092000 +0100
 @@ -0,0 +1,72 @@
 +1
 +.syntax unified
