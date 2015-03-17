@@ -130,7 +130,7 @@ void gen_PROGRAM ( node_t *root, int scopedepth)
 	// Eirik: Start of own stuff
 	char* first_func_label;
 	sprintf(first_func_label, "_%s", root->children[0]->children[0]->label)
-	instruction_add(BL, first_func_label), NULL, 0, 0);  // Insert a branch to the label of the first function in the function list
+	instruction_add(BL, first_func_label, NULL, 0, 0);  // Insert a branch to the label of the first function in the function list
 	// Eirik: End of own stuff
 
 	tracePrint("End PROGRAM\n");
