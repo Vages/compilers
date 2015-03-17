@@ -311,6 +311,7 @@ void gen_PRINT_STATEMENT(node_t* root, int scopedepth)
 
         instruction_add(PUSH, r6, NULL, 0,0);
         instruction_add(POP, r6, NULL, 0,0);
+        instruction_add(POP, r6, NULL, 0,0);
 
         for(int i = 0; i < root->children[0]->n_children; i++){
 
