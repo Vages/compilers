@@ -213,7 +213,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		instruction_add(PUSH, r0, NULL, 0, 0);  // Push returned value to top of stack.
 	}
 	else if (root->expression_type.index == NEW_E){
-		gen_ARRAY(root->data_type.n_dimensions, root->data_type.dimensions);
+		gen_ARRAY(root->data_type.n_dimensions, root->data_type.dimensions);  // Because of the way gen_array is constructed, the value is on top of stack when we return
 	}
 	// Eirik: End of own stuff
 
