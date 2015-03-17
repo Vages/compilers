@@ -1,5 +1,5 @@
 --- correctOutput/hello.s12	2015-03-13 17:27:09.949442000 +0100
-+++ testOutput/hello.s	2015-03-17 16:59:23.263150000 +0100
++++ testOutput/hello.s	2015-03-17 17:03:43.726493000 +0100
 @@ -1 +1,85 @@
 -Hello, world!
 +Error in instruction stream
@@ -27,9 +27,9 @@
 +#2 Starting PRINT_STATEMENT
 +	push	{r6}
 +#3 Starting CONSTANT
-+	movw	r1, #:lower16:.STRING0
-+	movt	r1, #:upper16:.STRING0
-+	push	{r1}
++	movw	r0, #:lower16:.STRING0
++	movt	r0, #:upper16:.STRING0
++	push	{r0}
 +#4 End CONSTANT
 +	pop	{r0}
 +	bl	printf

@@ -32,9 +32,9 @@ _main:
 #2 Starting PRINT_STATEMENT
 	push	{r6}
 #3 Starting CONSTANT
-	movw	r1, #:lower16:.STRING0
-	movt	r1, #:upper16:.STRING0
-	push	{r1}
+	movw	r0, #:lower16:.STRING0
+	movt	r0, #:upper16:.STRING0
+	push	{r0}
 #4 End CONSTANT
 	pop	{r0}
 	bl	printf
@@ -45,9 +45,9 @@ _main:
 #6 Starting PRINT_STATEMENT
 	push	{r6}
 #7 Starting CONSTANT
-	movw	r1, #:lower16:.STRING1
-	movt	r1, #:upper16:.STRING1
-	push	{r1}
+	movw	r0, #:lower16:.STRING1
+	movt	r0, #:upper16:.STRING1
+	push	{r0}
 #8 End CONSTANT
 	pop	{r0}
 	bl	printf
@@ -58,9 +58,9 @@ _main:
 #10 Starting PRINT_STATEMENT
 	push	{r6}
 #11 Starting CONSTANT
-	movw	r1, #:lower16:.STRING2
-	movt	r1, #:upper16:.STRING2
-	push	{r1}
+	movw	r0, #:lower16:.STRING2
+	movt	r0, #:upper16:.STRING2
+	push	{r0}
 #12 End CONSTANT
 	pop	{r0}
 	bl	printf
@@ -71,9 +71,9 @@ _main:
 #14 Starting PRINT_STATEMENT
 	push	{r6}
 #15 Starting CONSTANT
-	movw	r1, #:lower16:.STRING3
-	movt	r1, #:upper16:.STRING3
-	push	{r1}
+	movw	r0, #:lower16:.STRING3
+	movt	r0, #:upper16:.STRING3
+	push	{r0}
 #16 End CONSTANT
 	pop	{r0}
 	bl	printf
