@@ -192,8 +192,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 			gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes)
 			instruction_add(PUSH, r0, NULL, 0, 0);  // Results of the expressions are assumed to be in r0. Push them to the stack.
 		}
-		instruction_add(BL, STRDUP(root->children[0]->label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
-		instruction_add (STRING, STRDUP("\tpop {r1-r11, lr}"), NULL, 0, 0 );
+		instruction_add(BL, STRDUP("_"+root->children[0]->label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
 		for (int i; i<root->children[1]->n_children; i++){
 			instruction_add(pop, r6, NULL, 0, 0);  // We need to remove parameters from stack. This is one way to do it; another would be to manipulate sp directly.
 		}
