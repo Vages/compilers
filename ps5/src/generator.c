@@ -256,6 +256,7 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 		default:
 			break;
 	}
+	fprintf(stderr, strval);
 
 	instruction_add(MOVE32, r0, STRDUP(strval), 0, 0);  // Move retrieved value to r0
 	instruction_add(PUSH, r0, NULL, 0, 0);  // Push the retrieved value to stack
