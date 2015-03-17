@@ -1,5 +1,5 @@
 --- correctOutput/strings_and_comments.s12	2015-03-13 17:27:09.978494000 +0100
-+++ testOutput/strings_and_comments.s	2015-03-17 23:56:12.287243000 +0100
++++ testOutput/strings_and_comments.s	2015-03-18 00:10:21.287791000 +0100
 @@ -1,4 +0,0 @@
 -Hello, world!
 -
