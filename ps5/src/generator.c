@@ -199,10 +199,10 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		instruction_add (STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers. Assume that parent nodes use result.
 	}
 	else if (root->expression_type.index == ARRAY_INDEX_E){
-
+		// TODO: Array access
 	}
 	else if (root->expression_type.index == NEW_E){
-
+		// TODO: Array instantiation
 	}
 	// Eirik: End of own stuff
 
