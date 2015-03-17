@@ -149,10 +149,10 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
     
     // Eirik: Start of my own stuff.
     instruction_add(LABEL, STRDUP(root->label), NULL, 0, 0);  // Make label.
-    instruction_add(PUSH, lr, NULL, 0, 0);  // Callee saves link register on stack.
-    instruction_add(PUSH, fp, NULL, 0, 0);  // Callee saves old fp on stack.
+    instruction_add(PUSH, lr, NULL, 0, 0);  // Callee saves link register on stack (return address)
+    instruction_add(PUSH, fp, NULL, 0, 0);  // Callee saves old fp on stack. 
     instruction_add(MOV, fp, sp, 0, 0);  // Callee sets new fp to top of stack.
-    gen_default(root->children[1], scopedepth);  // Generate code for function body (statement list, second child).
+    gen_default(root->children[1], scopedepth);  // Generate code for function body (statement list is the second child).
     instruction_add(MOV, sp, fp, 0, 0);  // Callee sets sp to its fp.
     instruction_add(POP, fp, NULL, 0, 0);  // Callee restores old fp.
     // TODO: Slides say that we have to store return value in r0 here, but this has perhaps been done for us already.
