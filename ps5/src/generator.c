@@ -198,7 +198,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		for (int i; i<root->children[1]->n_children; i++){
 			instruction_add(POP, r6, NULL, 0, 0);  // We need to remove parameters from stack. This is one way to do it; another would be to manipulate sp directly.
 		}
-		instruction_add (STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers. Assume that parent nodes use result.
+		instruction_add(STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers. Assume that parent nodes use result.
 	}
 	else if (root->expression_type.index == ARRAY_INDEX_E){
 		gen_default(root->children[0], scopedepth);  // Generate code for left child. When this has been run, its result should be in r0
