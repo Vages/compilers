@@ -241,7 +241,7 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 	tracePrint("Starting CONSTANT\n");
 
 	// Eirik: Start of own stuff
-	char* strval;
+	char* strval[80];
 	switch (root->data_type.base_type) // Handle the three different constant types
 	{
 		case INT_TYPE:
