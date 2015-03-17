@@ -79,7 +79,7 @@ pusharg:
 	cmp	r5,#0
 	bne	pusharg
 noargs:
-	bl	main
+	bl	_main
 #15 End PROGRAM
 	mov	sp, fp
 	pop	{fp}

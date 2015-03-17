@@ -16,7 +16,7 @@
 <body>
 <pre>
 <span class="comment"><span class="minus3">--- correctOutput/minimal.s12	2015-03-13 17:27:09.962438000 +0100</span>
-<span class="plus3">+++ testOutput/minimal.s	2015-03-17 17:06:09.303249000 +0100</span>
+<span class="plus3">+++ testOutput/minimal.s	2015-03-17 17:22:43.635399000 +0100</span>
 <span class="at2">@@ -0,0 +1,72 @@</span>
 <span class="plus">+1</span>
 <span class="plus">+.syntax unified</span>
@@ -84,7 +84,7 @@
 <span class="plus">+	cmp	r5,#0</span>
 <span class="plus">+	bne	pusharg</span>
 <span class="plus">+noargs:</span>
-<span class="plus">+	bl	minimal</span>
+<span class="plus">+	bl	_minimal</span>
 <span class="plus">+#5 End PROGRAM</span>
 <span class="plus">+	mov	sp, fp</span>
 <span class="plus">+	pop	{fp}</span>
