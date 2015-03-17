@@ -115,11 +115,9 @@ void gen_PROGRAM ( node_t *root, int scopedepth)
 
 	print_start();
 	
-	// Eirik: Start of own stuff
-	char* first_func_label;
-	sprintf(first_func_label, "_%s", STRDUP(root->children[0]->children[0]->label));
-	instruction_add(BL, first_func_label, NULL, 0, 0);  // Insert a branch to the label of the first function in the function list
-	// Eirik: End of own stuff
+
+	/* TODO: Insert a call to the first defined function here */
+        
 
 	tracePrint("End PROGRAM\n");
 
@@ -137,17 +135,7 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
     scopedepth++;
     tracePrint ( "Starting FUNCTION (%s) with depth %d\n", root->label, scopedepth);
     
-    // Eirik: Start of my own stuff.
-    instruction_add(LABEL, STRDUP(root->label), NULL, 0, 0);  // Make label.
-    instruction_add(PUSH, lr, NULL, 0, 0);  // Callee saves link register on stack (return address)
-    instruction_add(PUSH, fp, NULL, 0, 0);  // Callee saves old fp on stack. 
-    instruction_add(MOV, fp, sp, 0, 0);  // Callee sets new fp to top of stack.
-    gen_default(root->children[1], scopedepth);  // Generate code for function body (statement list is the second child).
-    instruction_add(MOV, sp, fp, 0, 0);  // Callee sets stack pointer to its frame pointer (removing all local variables).
-    instruction_add(POP, fp, NULL, 0, 0);  // Callee restores old fp.
-    // TODO: Slides say that we have to store return value in r0 here, but this has perhaps been done for us already.
-    instruction_add(POP, pc, NULL, 0, 0);  // Callee jumps back to caller by popping the return address.
-    //Eirik: End of my own stuff.
+    
     
     tracePrint ("Leaving FUNCTION (%s) with depth %d\n", root->label, scopedepth);
     scopedepth--;      
@@ -155,23 +143,6 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
 
 
 void gen_ARRAY(int nDimensions, int* dimensions){
-	instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 );  // Save registers to stack (r0 will be edited anyway)
-	char* size;
-	sprintf(size, "#%d", dimensions[0]*4);  // Size to send to malloc
-	instruction_add(MOVE32, r0, STRDUP(size), 0, 0);  // Push parameter to stack
-	instruction_add(BL, STRDUP("_malloc"), NULL, 0, 0);  // Branch link to _malloc (malloc wrapper)
-	instruction_add(POP, r6, NULL, 0, 0);  // Remove argument
-	if (nDimensions > 1){
-		//char* offset;
-		instruction_add(MOV, r6, r0, 0 , 0);  // Copy the address of the start of our array to R6
-		for (int i = 0; i < dimensions[0]; i++){  // Loop fills array cells with its sub-arrays
-			gen_ARRAY(nDimensions-1, (int*)dimensions+sizeof(int));  // Make an array for the sub-array here. When it returns, r0 will be the start of this sub-array
-			//sprintf(offset, "#%d", i*4);  // Calculate offset for 
-			instruction_add(STR, r0, r6, 0, i*4);  // Store the pointer to the new array in [r6 + offset]
-		}
-		instruction_add(MOV, r0, r6, 0, 0);  // Copy back from r6
-	}
-	instruction_add(STRING, STRDUP("\tpop {r1-r6}"), NULL, 0, 0 );  // Restore registers; address of start of array is now in r0
 }
 
 
@@ -179,7 +150,6 @@ void gen_DECLARATION_STATEMENT (node_t *root, int scopedepth)
 {
 	tracePrint("Starting DECLARATION: adding space on stack\n");
 
-	instruction_add(PUSH, r6, NULL, 0, 0); // Make room for the variable on stack. 
 
 	tracePrint("Ending DECLARATION\n");
 }
@@ -189,30 +159,6 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 {
 	tracePrint ( "Starting EXPRESSION of type %s\n", (char*) root->expression_type.text);
 
-	// Eirik: Start of own stuff
-	if (root->expression_type.index == FUNC_CALL_E){
-		instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
-		for (int i; i<root->children[1]->n_children; i++){
-			gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes)
-			instruction_add(PUSH, r0, NULL, 0, 0);  // Results of the expressions are assumed to be in r0. Push them to the stack.
-		}
-		char* func_label; 
-		sprintf(func_label, "_%s", root->children[0]->label);
-		instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
-		for (int i; i<root->children[1]->n_children; i++){
-			instruction_add(POP, r6, NULL, 0, 0);  // We need to remove parameters from stack. This is one way to do it; another would be to manipulate sp directly.
-		}
-		instruction_add(STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers. Assume that parent nodes use result.
-	}
-	else if (root->expression_type.index == ARRAY_INDEX_E){
-		gen_default(root->children[0], scopedepth);  // Generate code for left child. When this has been run, its result should be in r0
-		int index_offset = 4*(root->children[1]->int_const);  // Find address of array information – the array index + offset
-		instruction_add(LDR, r0, r0, 0, index_offset);  // Load information to r0 from the addrass in r0 plus our newly calculated offset
-	}
-	else if (root->expression_type.index == NEW_E){
-		gen_ARRAY(root->data_type.n_dimensions, root->data_type.dimensions);
-	}
-	// Eirik: End of own stuff
 
 	tracePrint ( "Ending EXPRESSION of type %s\n", (char*) root->expression_type.text);
 }
@@ -223,10 +169,6 @@ void gen_VARIABLE ( node_t *root, int scopedepth )
 
 	tracePrint ( "Starting VARIABLE\n");
 
-	// Eirik: Start of own stuff
-	int offset = root->entry->stack_offset;  // Get offset from symbol table entry
-	instruction_add(LDR, r0, fp, 0, offset);  // Load value to r0 from frame pointer+offset
-	// Eirik: End of own stuff
 
 	tracePrint ( "End VARIABLE %s, depth difference: %d, stack offset: %d\n", root->label, 0, root->entry->stack_offset);
 }
@@ -236,26 +178,6 @@ void gen_CONSTANT (node_t * root, int scopedepth)
 {
 	tracePrint("Starting CONSTANT\n");
 
-	// Eirik: Start of own stuff
-	char* strval;
-	switch (root->data_type.base_type) // Handle the three different constant types
-	{
-		case INT_TYPE:
-			sprintf(strval, "%d", root->int_const);
-			break;
-		case BOOL_TYPE:
-			sprintf(strval, "%c", root->bool_const ? '1':'0');
-			break;
-		case STRING_TYPE:
-			sprintf(strval, ".STRING%d", root->string_index);
-			break;
-		default:
-			break;
-	}
-
-	instruction_add(MOVE32, r0, strval, 0, 0);
-	instruction_add(PUSH, r0, NULL, 0, 0);
-	// Eirik: End of own stuff
 
 	tracePrint("End CONSTANT\n");
 }
@@ -265,11 +187,6 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 {
 	 tracePrint ( "Starting ASSIGNMENT_STATEMENT\n");
 
-	// Eirik: Start of own stuff
-	gen_default(root->children[1], scopedepth);  // Generating code for right hand side.
-	int offset = root->children[0]->entry->stack_offset;  // Get stack offset for the variable on left side.
-	instruction_add(STR, r0, fp, 0, offset); // Store contents of r0 in the variable (frame pointer + offset)
-	// Eirik: End of own stuff
 
 	tracePrint ( "End ASSIGNMENT_STATEMENT\n");
 }
@@ -279,8 +196,6 @@ void gen_RETURN_STATEMENT ( node_t *root, int scopedepth )
 {
 	tracePrint ( "Starting RETURN_STATEMENT\n");
 	
-	gen_default(root->children[0], scopedepth);
-
 	tracePrint ( "End RETURN_STATEMENT\n");
 }
 
