@@ -116,7 +116,7 @@ void gen_PROGRAM ( node_t *root, int scopedepth)
 	print_start();
 	
 	// Eirik: Start of own stuff
-	char* first_func_label;
+	char* first_func_label[80];
 	sprintf(first_func_label, "_%s", STRDUP(root->children[0]->children[0]->label));
 	instruction_add(BL, STRDUP(first_func_label), NULL, 0, 0);  // Insert a branch to the label of the first function in the function list
 	// Eirik: End of own stuff
@@ -156,7 +156,7 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
 
 void gen_ARRAY(int nDimensions, int* dimensions){
 	instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 );  // Save registers to stack (r0 will be edited anyway)
-	char* size;
+	char* size[80];
 	sprintf(size, "#%d", dimensions[0]*4);  // Size to send to malloc
 	instruction_add(MOV, r0, STRDUP(size), 0, 0);  // Push parameter to stack
 	instruction_add(BL, STRDUP("_malloc"), NULL, 0, 0);  // Branch link to _malloc (malloc wrapper)
@@ -196,7 +196,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		for (int i; i<root->children[1]->n_children; i++){
 			gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes). Because expressions always leave their values on the top of the stack, there's no more need to do anything here.
 		}
-		char* func_label; 
+		char* func_label[80]; 
 		sprintf(func_label, "_%s", root->children[0]->label);
 		instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
 		for (int i; i<root->children[1]->n_children; i++){
