@@ -1,6 +1,6 @@
 --- correctOutput/hello.s12	2015-03-13 17:27:09.949442000 +0100
-+++ testOutput/hello.s	2015-03-17 17:28:09.793088000 +0100
-@@ -1 +1,85 @@
++++ testOutput/hello.s	2015-03-17 17:38:07.969189000 +0100
+@@ -1 +1,86 @@
 -Hello, world!
 +Error in instruction stream
 +.syntax unified
@@ -26,6 +26,7 @@
 +	mov	fp, sp
 +#2 Starting PRINT_STATEMENT
 +	push	{r6}
++	pop	{r6}
 +#3 Starting CONSTANT
 +	movw	r0, #:lower16:.STRING0
 +	movt	r0, #:upper16:.STRING0
