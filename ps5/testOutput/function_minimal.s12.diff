@@ -1,5 +1,7 @@
 --- correctOutput/function_minimal.s12	2015-03-13 17:27:09.942475000 +0100
-+++ testOutput/function_minimal.s	2015-03-18 00:10:19.716785000 +0100
-@@ -1,2 +0,0 @@
++++ testOutput/function_minimal.s	2015-03-18 00:26:01.384821000 +0100
+@@ -1,2 +1,2 @@
 -In main()
 -In function()
++
++.STRING0
