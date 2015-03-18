@@ -195,8 +195,8 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 	if (root->expression_type.index == FUNC_CALL_E){
 		
 		instruction_add(STRING, STRDUP("\tpush {r1-r6, lr}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
-		gen_default(root->children[1], scopedepth);
-		instruction_add(MOV, lr, pc, 0, 0); // Save return address in linke register
+		gen_default(root->children[1], scopedepth);  // Push parameters on stack
+		instruction_add(MOV, lr, pc, 0, 0); // Save return address in link register
 		char func_label[80]; 
 		sprintf(func_label, "_%s", root->children[0]->label);
 		instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
