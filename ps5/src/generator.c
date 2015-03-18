@@ -295,7 +295,7 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 		root->children[1]->generate(root->children[1], scopedepth);  // Generate code for right child
 		instruction_add(POP, r0, NULL, 0, 0);  // Pop from top of stack to r0
 		instruction_add(POP, r1, NULL, 0, 0);  // Pop memory address from stack to r1
-		instruction_add(STR, r0, r1, 0, 0);  // Store contents in retrieved array address 
+		instruction_add(STR, r1, r0, 0, 0);  // Store contents in retrieved array address 
 	}
 	// Eirik: End of own stuff
 
