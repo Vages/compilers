@@ -137,6 +137,7 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
     scopedepth++;
     tracePrint ( "Starting FUNCTION (%s) with depth %d\n", root->label, scopedepth);
     
+    // Ser visstnok riktig ut
     // Eirik: Start of my own stuff.
     instruction_add(LABEL, STRDUP(root->label), NULL, 0, 0);  // Make label.
     instruction_add(PUSH, lr, NULL, 0, 0);  // Callee saves link register on stack (return address)
@@ -161,14 +162,14 @@ void gen_ARRAY(int nDimensions, int* dimensions){
 	instruction_add(MOV, r0, STRDUP(size), 0, 0);  // Push parameter to stack
 	instruction_add(PUSH, r0, NULL, 0,0 );
 	instruction_add(BL, STRDUP("_malloc"), NULL, 0, 0);  // Branch link to _malloc (malloc wrapper)
-	instruction_add(POP, r6, NULL, 0, 0);
-	//instruction_add(POP, r0, NULL, 0, 0);  // Remove argument
+	// Result is now in r0
+	instruction_add(POP, r6, NULL, 0, 0);  // Remove argument
+	// Stack now has r6 on top
 	if (nDimensions > 1){
-		//char* offset;
 		instruction_add(MOV, r6, r0, 0 , 0);  // Copy the address of the start of our array to R6
 		for (int i = 0; i < dimensions[0]; i++){  // Loop fills array cells with its sub-arrays
 			gen_ARRAY(nDimensions-1, (int*)(dimensions+sizeof(int)));  // Make an array for the sub-array here. When it returns, r0 will be the start of this sub-array
-			//instruction_add(POP, r0, NULL, 0, 0); // Pop address of generated array from top of stack
+			// Address of the start of the child array is now in r0
 			instruction_add(STR, r0, r6, 0, i*4);  // Store the pointer to the new array in [r6 + offset]
 		}
 		instruction_add(MOV, r0, r6, 0, 0);  // Copy back from r6	
