@@ -199,7 +199,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		}
 		char func_label[80]; 
 		sprintf(func_label, "_%s", root->children[0]->label);
-		instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
+		//instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
 		for (int i; i<root->children[1]->n_children; i++){
 			instruction_add(POP, r6, NULL, 0, 0);  // We need to remove parameters from stack. This is one way to do it; another would be to manipulate sp directly.
 		}
