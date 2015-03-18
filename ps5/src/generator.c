@@ -213,7 +213,8 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 
 	}
 	else if (root->expression_type.index == ARRAY_INDEX_E){
-		gen_default(root->children[0], scopedepth);  // Generate code for left child. When this has been run, its result should be on top of the stack
+		//gen_default(root->children[0], scopedepth);  // Generate code for left child. When this has been run, its result should be on top of the stack
+		root->children[0]->generate(root->children[0], scopedepth)
 		instruction_add(POP, r0, NULL, 0, 0);  // Pop top of stack to r0. 
 		int index_offset = 4*(root->children[1]->int_const);  // Find address of array information – the array index + offset
 		instruction_add(LDR, r0, r0, 0, index_offset);  // Load information to r0 from the address in r0 plus our newly calculated offset
