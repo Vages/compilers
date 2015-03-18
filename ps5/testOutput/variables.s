@@ -38,7 +38,6 @@ _main:
 	pop	{r0}
 	str	r0, [fp, #-12]
 #13 End ASSIGNMENT_STATEMENT
-	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}

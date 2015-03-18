@@ -81,7 +81,6 @@ _main:
 	movt	r0, #:upper16:0x0A
 	bl	putchar
 #17 Ending PRINT_STATEMENT
-	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
