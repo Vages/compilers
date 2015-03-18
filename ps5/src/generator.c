@@ -146,7 +146,6 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
     instruction_add(POP, r0, NULL, 0, 0);
     instruction_add(MOV, sp, fp, 0, 0);  // Callee sets stack pointer to its frame pointer (removing all local variables).
     instruction_add(POP, fp, NULL, 0, 0);  // Callee restores old fp.
-    // TODO: Slides say that we have to store return value in r0 here, but this has perhaps been done for us already.
     instruction_add(POP, pc, NULL, 0, 0);  // Callee jumps back to caller by popping the return address.
     //Eirik: End of my own stuff.
     
@@ -192,6 +191,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 	tracePrint ( "Starting EXPRESSION of type %s\n", (char*) root->expression_type.text);
 
 	// Eirik: Start of own stuff
+	fprint(stderr, "Hi, i'm in a function");
 	if (root->expression_type.index == FUNC_CALL_E){
 		
 		instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
