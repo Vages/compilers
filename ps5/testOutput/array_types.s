@@ -89,16 +89,16 @@ _main:
 	ldr	r0, [fp, #-4]
 	push	{r0}
 #21 End VARIABLE a, depth difference: 0, stack offset: -4
-	pop	{r0}
-	ldr	r0, [r0, #4]
+	pop	{r1}
+	ldr	r0, [r1, #4]
 	push	{r0}
 #22 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r0}
-	ldr	r0, [r0, #8]
+	pop	{r1}
+	ldr	r0, [r1, #8]
 	push	{r0}
 #23 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r0}
-	ldr	r0, [r0, #12]
+	pop	{r1}
+	ldr	r0, [r1, #12]
 	push	{r0}
 #24 Ending EXPRESSION of type ARRAY_INDEX
 #25 Starting CONSTANT
@@ -116,8 +116,8 @@ _main:
 	ldr	r0, [fp, #-12]
 	push	{r0}
 #31 End VARIABLE c, depth difference: 0, stack offset: -12
-	pop	{r0}
-	ldr	r0, [r0, #12]
+	pop	{r1}
+	ldr	r0, [r1, #12]
 	push	{r0}
 #32 Ending EXPRESSION of type ARRAY_INDEX
 #33 Starting CONSTANT
@@ -135,8 +135,8 @@ _main:
 	ldr	r0, [fp, #-4]
 	push	{r0}
 #39 End VARIABLE a, depth difference: 0, stack offset: -4
-	pop	{r0}
-	ldr	r0, [r0, #4]
+	pop	{r1}
+	ldr	r0, [r1, #4]
 	push	{r0}
 #40 Ending EXPRESSION of type ARRAY_INDEX
 	pop	{r0}
@@ -151,12 +151,12 @@ _main:
 	ldr	r0, [fp, #-8]
 	push	{r0}
 #46 End VARIABLE b, depth difference: 0, stack offset: -8
-	pop	{r0}
-	ldr	r0, [r0, #8]
+	pop	{r1}
+	ldr	r0, [r1, #8]
 	push	{r0}
 #47 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r0}
-	ldr	r0, [r0, #12]
+	pop	{r1}
+	ldr	r0, [r1, #12]
 	push	{r0}
 #48 Ending EXPRESSION of type ARRAY_INDEX
 	movw  r0, #:lower16:.INTEGER
@@ -173,8 +173,8 @@ _main:
 	ldr	r0, [fp, #-8]
 	push	{r0}
 #53 End VARIABLE b, depth difference: 0, stack offset: -8
-	pop	{r0}
-	ldr	r0, [r0, #4]
+	pop	{r1}
+	ldr	r0, [r1, #4]
 	push	{r0}
 #54 Ending EXPRESSION of type ARRAY_INDEX
 #55 Starting VARIABLE
@@ -194,12 +194,12 @@ _main:
 	ldr	r0, [fp, #-8]
 	push	{r0}
 #62 End VARIABLE b, depth difference: 0, stack offset: -8
-	pop	{r0}
-	ldr	r0, [r0, #4]
+	pop	{r1}
+	ldr	r0, [r1, #4]
 	push	{r0}
 #63 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r0}
-	ldr	r0, [r0, #12]
+	pop	{r1}
+	ldr	r0, [r1, #12]
 	push	{r0}
 #64 Ending EXPRESSION of type ARRAY_INDEX
 	movw  r0, #:lower16:.INTEGER

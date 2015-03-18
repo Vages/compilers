@@ -63,8 +63,8 @@ _arrayTest:
 	ldr	r0, [fp, #-12]
 	push	{r0}
 #23 End VARIABLE array, depth difference: 0, stack offset: -12
-	pop	{r0}
-	ldr	r0, [r0]
+	pop	{r1}
+	ldr	r0, [r1]
 	push	{r0}
 #24 Ending EXPRESSION of type ARRAY_INDEX
 #25 Starting VARIABLE
@@ -81,8 +81,8 @@ _arrayTest:
 	ldr	r0, [fp, #-12]
 	push	{r0}
 #31 End VARIABLE array, depth difference: 0, stack offset: -12
-	pop	{r0}
-	ldr	r0, [r0, #4]
+	pop	{r1}
+	ldr	r0, [r1, #4]
 	push	{r0}
 #32 Ending EXPRESSION of type ARRAY_INDEX
 #33 Starting VARIABLE
@@ -101,8 +101,8 @@ _arrayTest:
 	ldr	r0, [fp, #-12]
 	push	{r0}
 #39 End VARIABLE array, depth difference: 0, stack offset: -12
-	pop	{r0}
-	ldr	r0, [r0]
+	pop	{r1}
+	ldr	r0, [r1]
 	push	{r0}
 #40 Ending EXPRESSION of type ARRAY_INDEX
 	movw  r0, #:lower16:.INTEGER
@@ -114,8 +114,8 @@ _arrayTest:
 	ldr	r0, [fp, #-12]
 	push	{r0}
 #43 End VARIABLE array, depth difference: 0, stack offset: -12
-	pop	{r0}
-	ldr	r0, [r0, #4]
+	pop	{r1}
+	ldr	r0, [r1, #4]
 	push	{r0}
 #44 Ending EXPRESSION of type ARRAY_INDEX
 	movw  r0, #:lower16:.INTEGER
