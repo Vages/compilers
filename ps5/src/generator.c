@@ -237,9 +237,9 @@ void gen_VARIABLE ( node_t *root, int scopedepth )
 
 	// Eirik: Start of own stuff
 	if (root->expression_type.index != ARRAY_INDEX_E){
-	int offset = root->entry->stack_offset;  // Get offset from symbol table entry
-	instruction_add(LDR, r0, fp, 0, offset);  // Load value to r0 from frame pointer+offset
-	instruction_add(PUSH, r0, NULL, 0, 0);  // Push value to stack.
+		int offset = root->entry->stack_offset;  // Get offset from symbol table entry
+		instruction_add(LDR, r0, fp, 0, offset);  // Load value to r0 from frame pointer+offset
+		instruction_add(PUSH, r0, NULL, 0, 0);  // Push value to stack.
 	}
 	// Eirik: End of own stuff
 
