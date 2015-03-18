@@ -240,6 +240,8 @@ void gen_VARIABLE ( node_t *root, int scopedepth )
 		int offset = root->entry->stack_offset;  // Get offset from symbol table entry
 		instruction_add(LDR, r0, fp, 0, offset);  // Load value to r0 from frame pointer+offset
 		instruction_add(PUSH, r0, NULL, 0, 0);  // Push value to stack.
+	} else {
+		root->generate(root, scopedepth);
 	}
 	// Eirik: End of own stuff
 
