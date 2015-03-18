@@ -101,13 +101,13 @@ _main:
 	ldr	r0, [r0, #12]
 	push	{r0}
 #24 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #25 Starting CONSTANT
 	movw	r0, #:lower16:42
 	movt	r0, #:upper16:42
 	push	{r0}
 #26 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #27 End ASSIGNMENT_STATEMENT
 #28 Starting ASSIGNMENT_STATEMENT
@@ -120,13 +120,13 @@ _main:
 	ldr	r0, [r0, #12]
 	push	{r0}
 #32 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #33 Starting CONSTANT
 	movw	r0, #:lower16:43
 	movt	r0, #:upper16:43
 	push	{r0}
 #34 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #35 End ASSIGNMENT_STATEMENT
 #36 Starting ASSIGNMENT_STATEMENT
@@ -177,12 +177,12 @@ _main:
 	ldr	r0, [r0, #4]
 	push	{r0}
 #54 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #55 Starting VARIABLE
 	ldr	r0, [fp, #-12]
 	push	{r0}
 #56 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #57 End ASSIGNMENT_STATEMENT
 #58 Starting PRINT_STATEMENT

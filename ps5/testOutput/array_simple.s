@@ -57,10 +57,79 @@ _arrayTest:
 	pop	{r0}
 	str	r0, [fp, #-12]
 #19 End ASSIGNMENT_STATEMENT
+#20 Starting ASSIGNMENT_STATEMENT
+#21 Starting EXPRESSION of type ARRAY_INDEX
+#22 Starting VARIABLE
+	ldr	r0, [fp, #-12]
+	push	{r0}
+#23 End VARIABLE array, depth difference: 0, stack offset: -12
+	pop	{r0}
+	ldr	r0, [r0]
+	push	{r0}
+#24 Ending EXPRESSION of type ARRAY_INDEX
+#25 Starting VARIABLE
+	ldr	r0, [fp, #-4]
+	push	{r0}
+#26 End VARIABLE a, depth difference: 0, stack offset: -4
+	pop	{r0}
+	pop	{r1}
+	str	r0, [r1]
+#27 End ASSIGNMENT_STATEMENT
+#28 Starting ASSIGNMENT_STATEMENT
+#29 Starting EXPRESSION of type ARRAY_INDEX
+#30 Starting VARIABLE
+	ldr	r0, [fp, #-12]
+	push	{r0}
+#31 End VARIABLE array, depth difference: 0, stack offset: -12
+	pop	{r0}
+	ldr	r0, [r0, #4]
+	push	{r0}
+#32 Ending EXPRESSION of type ARRAY_INDEX
+#33 Starting VARIABLE
+	ldr	r0, [fp, #-8]
+	push	{r0}
+#34 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r0}
+	pop	{r1}
+	str	r0, [r1]
+#35 End ASSIGNMENT_STATEMENT
+#36 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#37 Starting EXPRESSION of type ARRAY_INDEX
+#38 Starting VARIABLE
+	ldr	r0, [fp, #-12]
+	push	{r0}
+#39 End VARIABLE array, depth difference: 0, stack offset: -12
+	pop	{r0}
+	ldr	r0, [r0]
+	push	{r0}
+#40 Ending EXPRESSION of type ARRAY_INDEX
+	movw  r0, #:lower16:.INTEGER
+	movt  r0, #:upper16:.INTEGER
+	pop	{r1}
+	bl	printf
+#41 Starting EXPRESSION of type ARRAY_INDEX
+#42 Starting VARIABLE
+	ldr	r0, [fp, #-12]
+	push	{r0}
+#43 End VARIABLE array, depth difference: 0, stack offset: -12
+	pop	{r0}
+	ldr	r0, [r0, #4]
+	push	{r0}
+#44 Ending EXPRESSION of type ARRAY_INDEX
+	movw  r0, #:lower16:.INTEGER
+	movt  r0, #:upper16:.INTEGER
+	pop	{r1}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#45 Ending PRINT_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#20 Leaving FUNCTION (arrayTest) with depth 2
+#46 Leaving FUNCTION (arrayTest) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -102,7 +171,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_arrayTest
-#21 End PROGRAM
+#47 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

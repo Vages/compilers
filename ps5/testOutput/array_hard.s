@@ -71,13 +71,13 @@ _main:
 	ldr	r0, [r0, #8]
 	push	{r0}
 #14 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #15 Starting CONSTANT
 	movw	r0, #:lower16:5
 	movt	r0, #:upper16:5
 	push	{r0}
 #16 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #17 End ASSIGNMENT_STATEMENT
 #18 Starting PRINT_STATEMENT
@@ -179,13 +179,13 @@ _main:
 	ldr	r0, [r0, #8]
 	push	{r0}
 #40 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #41 Starting CONSTANT
 	movw	r0, #:lower16:10
 	movt	r0, #:upper16:10
 	push	{r0}
 #42 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #43 End ASSIGNMENT_STATEMENT
 #44 Starting PRINT_STATEMENT
@@ -286,13 +286,13 @@ _create:
 	ldr	r0, [r0]
 	push	{r0}
 #78 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #79 Starting CONSTANT
 	movw	r0, #:lower16:1
 	movt	r0, #:upper16:1
 	push	{r0}
 #80 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #81 End ASSIGNMENT_STATEMENT
 #82 Starting ASSIGNMENT_STATEMENT
@@ -305,13 +305,13 @@ _create:
 	ldr	r0, [r0, #4]
 	push	{r0}
 #86 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #87 Starting CONSTANT
 	movw	r0, #:lower16:2
 	movt	r0, #:upper16:2
 	push	{r0}
 #88 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #89 End ASSIGNMENT_STATEMENT
 #90 Starting ASSIGNMENT_STATEMENT
@@ -324,13 +324,13 @@ _create:
 	ldr	r0, [r0, #8]
 	push	{r0}
 #94 Ending EXPRESSION of type ARRAY_INDEX
-	pop	{r1}
 #95 Starting CONSTANT
 	movw	r0, #:lower16:3
 	movt	r0, #:upper16:3
 	push	{r0}
 #96 End CONSTANT
 	pop	{r0}
+	pop	{r1}
 	str	r0, [r1]
 #97 End ASSIGNMENT_STATEMENT
 #98 Starting RETURN_STATEMENT
