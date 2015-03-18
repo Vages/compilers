@@ -202,6 +202,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 				gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes). Because expressions always leave their values on the top of the stack, there's no more need to do anything here.
 			}	
 		}*/
+		instruction_add(MOV, lr, pc, 0, 0); // Save return address in linke register
 		char func_label[80]; 
 		sprintf(func_label, "_%s", root->children[0]->label);
 		instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
