@@ -288,9 +288,9 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 		instruction_add(STR, r0, fp, 0, offset); // Store contents of r0 in the variable (frame pointer + offset)
 	} else {
 		root->children[0]->generate(root->children[0], scopedepth);  // Generate code for the left array index
-		instruction_add(POP, r1, NULL, 0, 0);  // Pop memory address from stack to r1
 		root->children[1]->generate(root->children[1], scopedepth);  // Generate code for right child
 		instruction_add(POP, r0, NULL, 0, 0);  // Pop from top of stack to r0
+		instruction_add(POP, r1, NULL, 0, 0);  // Pop memory address from stack to r1
 		instruction_add(STR, r0, r1, 0, 0);  // Store contents in retrieved array address 
 	}
 	// Eirik: End of own stuff
