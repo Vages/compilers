@@ -193,20 +193,20 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 
 	// Eirik: Start of own stuff
 	if (root->expression_type.index == FUNC_CALL_E){
-		/*
+		
 		instruction_add(STRING, STRDUP("\tpush {r1-r6, lr}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
 		for (int i; i<root->children[1]->n_children; i++){
 			gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes). Because expressions always leave their values on the top of the stack, there's no more need to do anything here.
 		}
 		char func_label[80]; 
 		sprintf(func_label, "_%s", root->children[0]->label);
-		//instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
-		for (int i; i<root->children[1]->n_children; i++){
+		instruction_add(BL, STRDUP(func_label), NULL, 0, 0);  // Caller saves return address in link register and branches to function
+		/*for (int i; i<root->children[1]->n_children; i++){
 			instruction_add(POP, r6, NULL, 0, 0);  // We need to remove parameters from stack. This is one way to do it; another would be to manipulate sp directly.
-		}
+		}*/
 		instruction_add(STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers.
 		instruction_add(PUSH, r0, NULL, 0, 0); // Push returned value to top of stack.
-		*/
+
 	}
 	else if (root->expression_type.index == ARRAY_INDEX_E){
 		gen_default(root->children[0], scopedepth);  // Generate code for left child. When this has been run, its result should be on top of the stack
