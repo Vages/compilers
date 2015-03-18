@@ -14,7 +14,7 @@
 .ascii "\000"
 .globl main
 .align	2
-Hi, i'm in a function.text
+.text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (main) with depth 2
 _main:
