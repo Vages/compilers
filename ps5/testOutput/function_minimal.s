@@ -1,4 +1,4 @@
-Hi, i'm in a function.syntax unified
+.syntax unified
 .cpu cortex-a15
 .fpu vfpv3-d16
 .data
@@ -14,7 +14,7 @@ Hi, i'm in a function.syntax unified
 .ascii "\000"
 .globl main
 .align	2
-.text
+Hi, i'm in a function.text
 #0 Starting PROGRAM
 #1 Starting FUNCTION (main) with depth 2
 _main:

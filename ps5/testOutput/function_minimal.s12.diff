@@ -1,9 +1,9 @@
 --- correctOutput/function_minimal.s12	2015-03-13 17:27:09.942475000 +0100
-+++ testOutput/function_minimal.s	2015-03-18 14:25:57.485984000 +0100
++++ testOutput/function_minimal.s	2015-03-18 14:31:32.559697000 +0100
 @@ -1,2 +1,118 @@
 -In main()
 -In function()
-+Hi, i'm in a function.syntax unified
++.syntax unified
 +.cpu cortex-a15
 +.fpu vfpv3-d16
 +.data
@@ -19,7 +19,7 @@
 +.ascii "\000"
 +.globl main
 +.align	2
-+.text
++Hi, i'm in a function.text
 +#0 Starting PROGRAM
 +#1 Starting FUNCTION (main) with depth 2
 +_main:
