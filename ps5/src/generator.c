@@ -143,6 +143,7 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
     instruction_add(PUSH, fp, NULL, 0, 0);  // Callee saves old fp on stack. 
     instruction_add(MOV, fp, sp, 0, 0);  // Callee sets new fp to top of stack.
     gen_default(root->children[1], scopedepth);  // Generate code for function body (statement list is the second child).
+    
     instruction_add(MOV, sp, fp, 0, 0);  // Callee sets stack pointer to its frame pointer (removing all local variables).
     instruction_add(POP, fp, NULL, 0, 0);  // Callee restores old fp.
     // TODO: Slides say that we have to store return value in r0 here, but this has perhaps been done for us already.
@@ -202,7 +203,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		for (int i; i<root->children[1]->n_children; i++){
 			instruction_add(POP, r6, NULL, 0, 0);  // We need to remove parameters from stack. This is one way to do it; another would be to manipulate sp directly.
 		}
-		instruction_add(STRING, STRDUP("\tpop {r1-r6, lr}"), NULL, 0, 0 ); // Restore registers.
+		instruction_add(STRING, STRDUP("\tpop {r1-r6}"), NULL, 0, 0 ); // Restore registers.
 		instruction_add(PUSH, r0, NULL, 0, 0); // Push returned value to top of stack.
 	}
 	else if (root->expression_type.index == ARRAY_INDEX_E){
