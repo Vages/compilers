@@ -1,3 +1,0 @@
-testOutput/variables.s: Assembler messages:
-testOutput/variables.s:64: Error: garbage following instruction -- `movw r0,#:lower16:p n«ÿ'
-testOutput/variables.s:65: Error: garbage following instruction -- `movt r0,#:upper16:p n«ÿ'
