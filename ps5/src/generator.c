@@ -191,7 +191,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 	tracePrint ( "Starting EXPRESSION of type %s\n", (char*) root->expression_type.text);
 
 	// Eirik: Start of own stuff
-	fprintf(stderr, "Hi, i'm in a function");
+	fprintf(stdout, "Hi, i'm in a function");
 	if (root->expression_type.index == FUNC_CALL_E){
 		
 		instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
