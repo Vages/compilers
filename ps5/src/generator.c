@@ -279,7 +279,8 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 	 tracePrint ( "Starting ASSIGNMENT_STATEMENT\n");
 
 	// Eirik: Start of own stuff
-	gen_default(root->children[1], scopedepth);  // Generating code for right hand side.
+	//gen_default(root->children[1], scopedepth);  // Generating code for right hand side.
+	root->children[1]->generate(root->children[1], scopedepth);
 	int offset = root->children[0]->entry->stack_offset;  // Get stack offset for the variable on left side.
 	instruction_add(POP, r0, NULL, 0, 0);  // Because right hand side is an expression, its results are stored on top of stack
 	instruction_add(STR, r0, fp, 0, offset); // Store contents of r0 in the variable (frame pointer + offset)
