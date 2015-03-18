@@ -36,9 +36,10 @@ _main:
 	bl	putchar
 #5 Ending PRINT_STATEMENT
 #6 Starting EXPRESSION of type FUNC_CALL
-	push {r1-r6, lr}
+	push {r1-r6}
+	mov	lr, pc
 	bl	_function
-	pop {r1-r6, lr}
+	pop {r1-r6}
 	push	{r0}
 #7 Ending EXPRESSION of type FUNC_CALL
 	mov	sp, fp

@@ -1,5 +1,5 @@
 --- correctOutput/function_simple.s12	2015-03-13 17:27:09.947436000 +0100
-+++ testOutput/function_simple.s	2015-03-18 01:43:22.548406000 +0100
++++ testOutput/function_simple.s	2015-03-18 13:40:39.335138000 +0100
 @@ -1,2 +0,0 @@
 -5 
 -5 5 
