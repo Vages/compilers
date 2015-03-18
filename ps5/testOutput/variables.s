@@ -27,36 +27,51 @@ _main:
 	push	{r6}
 #7 Ending DECLARATION
 #8 Starting ASSIGNMENT_STATEMENT
-#9 Starting CONSTANT
+#9 Starting VARIABLE
+	ldr	r0, [fp, #-4]
+	push	{r0}
+#10 End VARIABLE a, depth difference: 0, stack offset: -4
+	mov	r1, r0
+#11 Starting CONSTANT
 	movw	r0, #:lower16:10
 	movt	r0, #:upper16:10
 	push	{r0}
-#10 End CONSTANT
+#12 End CONSTANT
 	pop	{r0}
-	str	r0, [fp, #-4]
-#11 End ASSIGNMENT_STATEMENT
-#12 Starting ASSIGNMENT_STATEMENT
-#13 Starting CONSTANT
+	str	r0, [r1]
+#13 End ASSIGNMENT_STATEMENT
+#14 Starting ASSIGNMENT_STATEMENT
+#15 Starting VARIABLE
+	ldr	r0, [fp, #-8]
+	push	{r0}
+#16 End VARIABLE b, depth difference: 0, stack offset: -8
+	mov	r1, r0
+#17 Starting CONSTANT
 	movw	r0, #:lower16:1
 	movt	r0, #:upper16:1
 	push	{r0}
-#14 End CONSTANT
-	pop	{r0}
-	str	r0, [fp, #-8]
-#15 End ASSIGNMENT_STATEMENT
-#16 Starting ASSIGNMENT_STATEMENT
-#17 Starting CONSTANT
-	movw	r0, #:lower16:Ð0jÿ
-	movt	r0, #:upper16:Ð0jÿ
-	push	{r0}
 #18 End CONSTANT
 	pop	{r0}
-	str	r0, [fp, #-12]
+	str	r0, [r1]
 #19 End ASSIGNMENT_STATEMENT
+#20 Starting ASSIGNMENT_STATEMENT
+#21 Starting VARIABLE
+	ldr	r0, [fp, #-12]
+	push	{r0}
+#22 End VARIABLE c, depth difference: 0, stack offset: -12
+	mov	r1, r0
+#23 Starting CONSTANT
+	movw	r0, #:lower16:p n«ÿ
+	movt	r0, #:upper16:p n«ÿ
+	push	{r0}
+#24 End CONSTANT
+	pop	{r0}
+	str	r0, [r1]
+#25 End ASSIGNMENT_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#20 Leaving FUNCTION (main) with depth 2
+#26 Leaving FUNCTION (main) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -98,7 +113,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#21 End PROGRAM
+#27 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
