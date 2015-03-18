@@ -1,4 +1,4 @@
-.syntax unified
+Hi, i'm in a function.syntax unified
 .cpu cortex-a15
 .fpu vfpv3-d16
 .data
@@ -37,11 +37,11 @@ _main:
 #5 Ending PRINT_STATEMENT
 #6 Starting EXPRESSION of type FUNC_CALL
 	push {r1-r6}
-	mov	lr, pc
 	bl	_function
 	pop {r1-r6}
 	push	{r0}
 #7 Ending EXPRESSION of type FUNC_CALL
+	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
@@ -65,6 +65,7 @@ _function:
 	movt	r0, #:upper16:0x0A
 	bl	putchar
 #13 Ending PRINT_STATEMENT
+	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}

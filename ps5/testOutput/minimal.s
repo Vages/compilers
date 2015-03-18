@@ -20,6 +20,7 @@ _minimal:
 #2 Starting RETURN_STATEMENT
 	pop	{r0}
 #3 End RETURN_STATEMENT
+	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
