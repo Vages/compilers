@@ -193,7 +193,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 	tracePrint ( "Starting EXPRESSION of type %s\n", (char*) root->expression_type.text);
 
 	// Eirik: Start of own stuff
-	fprintf(stdout, "Hi, i'm in a function");
+	//fprintf(stdout, "Hi, i'm in a function");
 	if (root->expression_type.index == FUNC_CALL_E){
 		
 		instruction_add(STRING, STRDUP("\tpush {r1-r6}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
@@ -220,7 +220,7 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 	}
 	else if (root->expression_type.index == NEW_E){
 		gen_ARRAY(root->data_type.n_dimensions, root->data_type.dimensions);  // Because of the way gen_array is constructed, the value is on top of stack when we return
-		instruction_add(PUSH, r0, NULL, 0, 0);
+		instruction_add(PUSH, r0, NULL, 0, 0);  // Push address of array to top of stack
 	}
 	// Eirik: End of own stuff
 
