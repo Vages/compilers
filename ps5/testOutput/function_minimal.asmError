@@ -1,0 +1,2 @@
+testOutput/function_minimal.s: Assembler messages:
+testOutput/function_minimal.s:1: Error: bad instruction `hi, i109in a function.syntax unified'
