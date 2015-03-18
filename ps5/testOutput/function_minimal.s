@@ -10,7 +10,9 @@
 .NEWLINE: .ascii "\n \000"
 .STRING0: .ascii "In main()"
 .ascii "\000"
-.STRING1: .ascii "In function()"
+.STRING1: .ascii "This is fun()"
+.ascii "\000"
+.STRING2: .ascii "In function()"
 .ascii "\000"
 .globl main
 .align	2
@@ -41,35 +43,49 @@ _main:
 	pop {r1-r6}
 	push	{r0}
 #7 Ending EXPRESSION of type FUNC_CALL
-	pop	{r0}
-	mov	sp, fp
-	pop	{fp}
-	pop	{pc}
-#8 Leaving FUNCTION (main) with depth 2
-#9 Starting FUNCTION (function) with depth 2
-_function:
-	push	{lr}
-	push	{fp}
-	mov	fp, sp
-#10 Starting PRINT_STATEMENT
+#8 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
-#11 Starting CONSTANT
+#9 Starting CONSTANT
 	movw	r0, #:lower16:.STRING1
 	movt	r0, #:upper16:.STRING1
 	push	{r0}
-#12 End CONSTANT
+#10 End CONSTANT
 	pop	{r0}
 	bl	printf
 	movw	r0, #:lower16:0x0A
 	movt	r0, #:upper16:0x0A
 	bl	putchar
-#13 Ending PRINT_STATEMENT
+#11 Ending PRINT_STATEMENT
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#14 Leaving FUNCTION (function) with depth 2
+#12 Leaving FUNCTION (main) with depth 2
+#13 Starting FUNCTION (function) with depth 2
+_function:
+	push	{lr}
+	push	{fp}
+	mov	fp, sp
+#14 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#15 Starting CONSTANT
+	movw	r0, #:lower16:.STRING2
+	movt	r0, #:upper16:.STRING2
+	push	{r0}
+#16 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#17 Ending PRINT_STATEMENT
+	pop	{r0}
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#18 Leaving FUNCTION (function) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -111,7 +127,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#15 End PROGRAM
+#19 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
