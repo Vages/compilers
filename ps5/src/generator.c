@@ -196,12 +196,6 @@ void gen_EXPRESSION ( node_t *root, int scopedepth )
 		
 		instruction_add(STRING, STRDUP("\tpush {r1-r6, lr}"), NULL, 0, 0 ); // Save registers r1 to r6 to stack (we do not care about r0, because it is used for results)
 		gen_default(root->children[1], scopedepth);
-		/*
-		if (root->children[1] != NULL){
-			for (int i = 0; i<root->children[1]->n_children; i++){
-				gen_default(root->children[1]->children[i], scopedepth);  // Generate code for each argument to the function (expression nodes). Because expressions always leave their values on the top of the stack, there's no more need to do anything here.
-			}	
-		}*/
 		instruction_add(MOV, lr, pc, 0, 0); // Save return address in linke register
 		char func_label[80]; 
 		sprintf(func_label, "_%s", root->children[0]->label);
