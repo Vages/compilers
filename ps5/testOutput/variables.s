@@ -46,8 +46,8 @@ _main:
 #15 End ASSIGNMENT_STATEMENT
 #16 Starting ASSIGNMENT_STATEMENT
 #17 Starting CONSTANT
-	movw	r0, #:lower16:`Ô*àÿ
-	movt	r0, #:upper16:`Ô*àÿ
+	movw	r0, #:lower16: "ÿÿ
+	movt	r0, #:upper16: "ÿÿ
 	push	{r0}
 #18 End CONSTANT
 	pop	{r0}

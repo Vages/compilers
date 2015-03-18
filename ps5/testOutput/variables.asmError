@@ -1,3 +1,5 @@
 testOutput/variables.s: Assembler messages:
-testOutput/variables.s:49: Error: bad expression -- `movw r0,#:lower16:`Ô*àÿ'
-testOutput/variables.s:50: Error: bad expression -- `movt r0,#:upper16:`Ô*àÿ'
+testOutput/variables.s:49: Warning: missing closing `"'
+testOutput/variables.s:49: Error: garbage following instruction -- `movw r0,#:lower16: "ÿÿ'
+testOutput/variables.s:50: Warning: missing closing `"'
+testOutput/variables.s:50: Error: bad instruction `movt	r0, #:upper16: "ÿÿ'
