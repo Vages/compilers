@@ -71,7 +71,7 @@ _arrayTest:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #25 Starting VARIABLE
 	ldr	r0, [fp, #-4]
@@ -95,7 +95,7 @@ _arrayTest:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #33 Starting VARIABLE
 	ldr	r0, [fp, #-8]

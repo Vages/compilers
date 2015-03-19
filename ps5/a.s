@@ -8,55 +8,51 @@
 .INTEGER: .ascii "%d \000"
 .FLOAT: .ascii "%f \000"
 .NEWLINE: .ascii "\n \000"
+.STRING0: .ascii "test"
+.ascii "\000"
 .globl main
 .align	2
 .text
 #0 Starting PROGRAM
-#1 Starting FUNCTION (main) with depth 2
-_main:
+#1 Starting FUNCTION (arrayTest) with depth 2
+_arrayTest:
 	push	{lr}
 	push	{fp}
 	mov	fp, sp
 #2 Starting DECLARATION: adding space on stack
 	push	{r6}
 #3 Ending DECLARATION
-#4 Starting DECLARATION: adding space on stack
+#4 Starting ASSIGNMENT_STATEMENT
+#5 Starting EXPRESSION of type NEW
+	push {r1-r6}
+	mov	r0, #8
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	push	{r0}
+#6 Ending EXPRESSION of type NEW
+	pop	{r0}
+	str	r0, [fp, #-4]
+#7 End ASSIGNMENT_STATEMENT
+#8 Starting PRINT_STATEMENT
 	push	{r6}
-#5 Ending DECLARATION
-#6 Starting DECLARATION: adding space on stack
-	push	{r6}
-#7 Ending DECLARATION
-#8 Starting ASSIGNMENT_STATEMENT
+	pop	{r6}
 #9 Starting CONSTANT
-	movw	r0, #:lower16:10
-	movt	r0, #:upper16:10
+	movw	r0, #:lower16:.STRING0
+	movt	r0, #:upper16:.STRING0
 	push	{r0}
 #10 End CONSTANT
 	pop	{r0}
-	str	r0, [fp, #-4]
-#11 End ASSIGNMENT_STATEMENT
-#12 Starting ASSIGNMENT_STATEMENT
-#13 Starting CONSTANT
-	movw	r0, #:lower16:1
-	movt	r0, #:upper16:1
-	push	{r0}
-#14 End CONSTANT
-	pop	{r0}
-	str	r0, [fp, #-8]
-#15 End ASSIGNMENT_STATEMENT
-#16 Starting ASSIGNMENT_STATEMENT
-#17 Starting CONSTANT
-	movw	r0, #:lower16:ê˙IÕˇ
-	movt	r0, #:upper16:ê˙IÕˇ
-	push	{r0}
-#18 End CONSTANT
-	pop	{r0}
-	str	r0, [fp, #-12]
-#19 End ASSIGNMENT_STATEMENT
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#11 Ending PRINT_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#20 Leaving FUNCTION (main) with depth 2
+#12 Leaving FUNCTION (arrayTest) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -97,8 +93,8 @@ pusharg:
 	cmp	r5,#0
 	bne	pusharg
 noargs:
-	bl	_main
-#21 End PROGRAM
+	bl	_arrayTest
+#13 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

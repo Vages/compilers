@@ -75,7 +75,7 @@ _main:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #15 Starting CONSTANT
 	movw	r0, #:lower16:5
@@ -189,7 +189,7 @@ _main:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #41 Starting CONSTANT
 	movw	r0, #:lower16:10
@@ -302,7 +302,7 @@ _create:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #79 Starting CONSTANT
 	movw	r0, #:lower16:1
@@ -327,7 +327,7 @@ _create:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #87 Starting CONSTANT
 	movw	r0, #:lower16:2
@@ -352,7 +352,7 @@ _create:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #95 Starting CONSTANT
 	movw	r0, #:lower16:3

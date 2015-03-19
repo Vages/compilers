@@ -105,7 +105,7 @@ _main:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #25 Starting CONSTANT
 	movw	r0, #:lower16:42
@@ -130,7 +130,7 @@ _main:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #33 Starting CONSTANT
 	movw	r0, #:lower16:43
@@ -193,7 +193,7 @@ _main:
 	mov	r5, #4
 	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r3
+	add	r0, r1, r3
 	push	{r0}
 #55 Starting VARIABLE
 	ldr	r0, [fp, #-12]
