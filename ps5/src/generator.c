@@ -297,7 +297,7 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 		instruction_add(MOV, r5, STRDUP("#4"), 0, 0);
 		instruction_add3(MUL, r3, r2, r5);
 		instruction_add(POP, r1, NULL, 0, 0);  // Retrieve the array pointer from stack
-		instruction_add3(ADD, r0, r2, r3);  // Add offset to array pointer and store result in r0
+		instruction_add3(ADD, r0, r1, r3);  // Add offset to array pointer and store result in r0
 		instruction_add(PUSH, r0, NULL, 0, 0); // Push result to stack
 		root->children[1]->generate(root->children[1], scopedepth);  // Generate code for right child
 		instruction_add(POP, r0, NULL, 0, 0);  // Pop right value from top of stack to r0
