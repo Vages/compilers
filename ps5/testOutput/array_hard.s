@@ -29,21 +29,21 @@ _main:
 	pop	{r6}
 	mov	r6, r0
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #12
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
 	pop {r1-r6}
 	str	r0, [r6]
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #12
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
 	pop {r1-r6}
 	str	r0, [r6, #4]
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #12
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
@@ -123,38 +123,150 @@ _main:
 	pop	{r6}
 	mov	r6, r0
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #16
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
 	mov	r6, r0
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #4]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #8]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #12]
 	mov	r0, r6
 	pop {r1-r6}
 	str	r0, [r6]
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #16
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
 	mov	r6, r0
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #4]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #8]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #12]
 	mov	r0, r6
 	pop {r1-r6}
 	str	r0, [r6, #4]
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #16
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
 	mov	r6, r0
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #4]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #8]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #12]
 	mov	r0, r6
 	pop {r1-r6}
 	str	r0, [r6, #8]
 	push {r1-r6}
-	mov	r0, #0
+	mov	r0, #16
 	push	{r0}
 	bl	_malloc
 	pop	{r6}
 	mov	r6, r0
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #4]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #8]
+	push {r1-r6}
+	mov	r0, #16
+	push	{r0}
+	bl	_malloc
+	pop	{r6}
+	pop {r1-r6}
+	str	r0, [r6, #12]
 	mov	r0, r6
 	pop {r1-r6}
 	str	r0, [r6, #12]
