@@ -1,3 +1,3 @@
 testOutput/variables.s: Assembler messages:
-testOutput/variables.s:49: Error: missing expression -- `movw r0,#:lower16:'
-testOutput/variables.s:50: Error: missing expression -- `movt r0,#:upper16:'
+testOutput/variables.s:49: Error: garbage following instruction -- `movw r0,#:lower16:ÐŒ©ÿ'
+testOutput/variables.s:50: Error: garbage following instruction -- `movt r0,#:upper16:ÐŒ©ÿ'

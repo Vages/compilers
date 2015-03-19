@@ -68,8 +68,10 @@ _arrayTest:
 	push	{r0}
 #24 End CONSTANT
 	pop	{r2}
+	mov	r5, #4
+	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r1
+	add	r0, r2, r3
 	push	{r0}
 #25 Starting VARIABLE
 	ldr	r0, [fp, #-4]
@@ -90,8 +92,10 @@ _arrayTest:
 	push	{r0}
 #32 End CONSTANT
 	pop	{r2}
+	mov	r5, #4
+	mul	r3,r2,r5
 	pop	{r1}
-	add	r0, r2, r1
+	add	r0, r2, r3
 	push	{r0}
 #33 Starting VARIABLE
 	ldr	r0, [fp, #-8]
