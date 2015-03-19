@@ -168,7 +168,7 @@ void gen_ARRAY(int nDimensions, int* dimensions){
 	if (nDimensions > 1){
 		instruction_add(MOV, r6, r0, 0 , 0);  // Copy the address of the start of our array to R6
 		for (int i = 0; i < dimensions[0]; i++){  // Loop fills array cells with its sub-arrays
-			new_dimensions[nDimensions-1];
+			int new_dimensions[nDimensions-1];
 			for (int j = 0; j<nDimensions-1; j++){
 				new_dimensions[j] = dimensions[j+1];
 			}
