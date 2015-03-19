@@ -294,8 +294,8 @@ void gen_ASSIGNMENT_STATEMENT ( node_t *root, int scopedepth )
 		root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth);  // Generate code to find position of array pointer in memory
 		root->children[0]->children[1]->generate(root->children[0]->children[1], scopedepth);  // Find offset.
 		instruction_add(POP, r2, NULL, 0, 0);  // Retrieve the offset from the stack
-		instruction_add(MOV, r4, STRDUP("#4"), 0, 0);
-		instruction_add3(MUL, r3, r2, r4);
+		instruction_add(MOV, r5, STRDUP("#4"), 0, 0);
+		instruction_add3(MUL, r3, r2, r5);
 		instruction_add(POP, r1, NULL, 0, 0);  // Retrieve the array pointer from stack
 		instruction_add3(ADD, r0, r2, r3);  // Add offset to array pointer and store result in r0
 		instruction_add(PUSH, r0, NULL, 0, 0); // Push result to stack
