@@ -1,5 +1,93 @@
 #include "generator.h"
 #include "optimizer.h"
+
+/*
+A Stack structure implementation
+*/
+ 
+#include <stdlib.h>
+#include <stdio.h>
+ 
+#define STACK_TYPE int
+#define STACK_TYPE_NULL NULL
+ 
+typedef struct stack stack;
+typedef struct stack_item stack_item;
+typedef STACK_TYPE stack_value;
+ 
+struct stack
+{
+	stack_item * top;
+};
+struct stack_item
+{
+	stack_value value;
+	stack_item * next;
+};
+ 
+stack * 		stack_new();
+void			stack_delete(stack * s);
+stack_value 		stack_peek(stack * s);
+stack_value 		stack_pull(stack * s);
+void 			stack_put(stack * s, stack_value v);
+int			stack_empty(stack * s);
+ 
+/** IMPLEMENTATION **/
+stack * stack_new()
+{
+	stack * s = (stack *) malloc(sizeof(stack));
+	s->top = NULL;
+	return s;
+}
+void stack_delete(stack * s)
+{
+	stack_item * current = s->top;
+	while (current != NULL) {
+		stack_item * next = current->next;
+		free(current);
+		current = next;
+	}
+	free(s);
+}
+stack_value stack_peek(stack * s)
+{
+	stack_item * top = s->top;
+	if (top != NULL)
+		return top->value;
+	
+	return STACK_TYPE_NULL;
+}
+stack_value stack_pull(stack * s)
+{
+	stack_item * top = s->top;
+	
+	if (top != NULL)
+	{
+		stack_value value = top->value;
+		stack_item * tmp = top->next;
+		s->top = tmp;
+		free(top);
+		
+		return value;
+	}
+	
+	return STACK_TYPE_NULL;
+}
+void stack_put(stack * s, stack_value value)
+{
+	stack_item * top = s->top;
+	stack_item * next = malloc(sizeof(stack_item));
+	next->value = value;
+	next->next = top;
+	s->top = next;
+}
+int stack_empty(stack * s)
+{
+	return s->top == NULL;
+}
+
+// Eirik: End of stack implementation 
+
 extern int outputStage; // This variable is located in vslc.c
 
 int peephole = 1;
