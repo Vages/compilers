@@ -19,18 +19,19 @@ struct stack
 {
 	stack_item * top;
 };
+
 struct stack_item
 {
 	stack_value value;
 	stack_item * next;
 };
  
-stack * 		stack_new();
-void			stack_delete(stack * s);
-stack_value 		stack_peek(stack * s);
-stack_value 		stack_pull(stack * s);
-void 			stack_put(stack * s, stack_value v);
-int			stack_empty(stack * s);
+stack * stack_new();
+void stack_delete(stack * s);
+stack_value stack_peek(stack * s);
+stack_value stack_pull(stack * s);
+void stack_put(stack * s, stack_value v);
+int	stack_empty(stack * s);
  
 /** IMPLEMENTATION **/
 stack * stack_new()
@@ -39,6 +40,7 @@ stack * stack_new()
 	s->top = NULL;
 	return s;
 }
+
 void stack_delete(stack * s)
 {
 	stack_item * current = s->top;
@@ -49,6 +51,7 @@ void stack_delete(stack * s)
 	}
 	free(s);
 }
+
 stack_value stack_peek(stack * s)
 {
 	stack_item * top = s->top;
@@ -57,6 +60,7 @@ stack_value stack_peek(stack * s)
 	
 	return STACK_TYPE_NULL;
 }
+
 stack_value stack_pull(stack * s)
 {
 	stack_item * top = s->top;
@@ -73,6 +77,7 @@ stack_value stack_pull(stack * s)
 	
 	return STACK_TYPE_NULL;
 }
+
 void stack_put(stack * s, stack_value value)
 {
 	stack_item * top = s->top;
@@ -81,6 +86,7 @@ void stack_put(stack * s, stack_value value)
 	next->next = top;
 	s->top = next;
 }
+
 int stack_empty(stack * s)
 {
 	return s->top == NULL;
