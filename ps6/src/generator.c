@@ -478,7 +478,7 @@ void gen_bool_expression(node_t* root, int scopedepth)
         	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
         	instruction_add(POP, r1, NULL, 0, 0);
         	instruction_add(CMP, r0, r1, 0, 0);
-        	instruction_add(MOVEQ, r0, STRDUP("#1"), 0, 0));
+        	instruction_add(MOVEQ, r0, STRDUP("#1"), 0, 0);
         	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
