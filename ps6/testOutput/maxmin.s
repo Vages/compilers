@@ -70,9 +70,8 @@ _maxmin:
 	movt	r0, #:upper16:1
 	push	{r0}
 #25 End CONSTANT
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #26 Ending EXPRESSION of type UMINUS
 #27 Starting CONSTANT

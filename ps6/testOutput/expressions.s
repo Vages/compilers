@@ -72,9 +72,8 @@ _main:
 	movt	r0, #:upper16:10
 	push	{r0}
 #33 End CONSTANT
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #34 Ending EXPRESSION of type UMINUS
 	push	{fp}
@@ -141,9 +140,8 @@ _main:
 	pop	{fp}
 	push	{r0}
 #57 End VARIABLE a, depth difference: 0, stack offset: -4
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #58 Ending EXPRESSION of type UMINUS
 #59 Starting VARIABLE
@@ -195,9 +193,8 @@ _main:
 	pop	{fp}
 	push	{r0}
 #75 End VARIABLE b, depth difference: 0, stack offset: -8
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #76 Ending EXPRESSION of type UMINUS
 #77 Starting VARIABLE
@@ -249,9 +246,8 @@ _main:
 	pop	{fp}
 	push	{r0}
 #93 End VARIABLE c, depth difference: 0, stack offset: -12
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #94 Ending EXPRESSION of type UMINUS
 #95 Starting VARIABLE
@@ -449,9 +445,8 @@ _main:
 	pop	{fp}
 	push	{r0}
 #151 End VARIABLE c, depth difference: 0, stack offset: -12
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #152 Ending EXPRESSION of type UMINUS
 	pop	{r2}
@@ -529,14 +524,12 @@ _main:
 	pop	{fp}
 	push	{r0}
 #179 End VARIABLE b, depth difference: 0, stack offset: -8
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #180 Ending EXPRESSION of type UMINUS
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #181 Ending EXPRESSION of type UMINUS
 	pop	{r2}
@@ -551,9 +544,8 @@ _main:
 	pop	{fp}
 	push	{r0}
 #185 End VARIABLE b, depth difference: 0, stack offset: -8
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #186 Ending EXPRESSION of type UMINUS
 	pop	{r2}
@@ -667,9 +659,8 @@ _main:
 	pop	{fp}
 	push	{r0}
 #225 End VARIABLE b, depth difference: 0, stack offset: -8
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #226 Ending EXPRESSION of type UMINUS
 	pop	{r2}

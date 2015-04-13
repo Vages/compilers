@@ -58,9 +58,8 @@ _while_test:
 	movt	r0, #:upper16:15
 	push	{r0}
 #13 End CONSTANT
-	mov	r1, #0
-	pop	{r2}
-	sub	r0, r1, r2
+	pop	{r1}
+	neg	r0, r1
 	push	{r0}
 #14 Ending EXPRESSION of type UMINUS
 	push	{fp}

@@ -1,5 +1,5 @@
 --- correctOutput/function_hard.s12	2015-04-13 14:04:09.373678000 +0200
-+++ testOutput/function_hard.s12	2015-04-13 14:05:37.178132000 +0200
++++ testOutput/function_hard.s12	2015-04-13 14:15:36.082220000 +0200
 @@ -1,29 +1,2 @@
  10 10 10 
 -9 10 10 
