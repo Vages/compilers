@@ -5,7 +5,7 @@ extern int outputStage; // This variable is located in vslc.c
 int peephole = 1;
 
 static char
-*lr = "lr", *r0 = "r0", *r1 = "r1", *r2 = "r2", *r3 = "r3", *r4 = "r4"
+*lr = "lr", *r0 = "r0", *r1 = "r1", *r2 = "r2", *r3 = "r3", *r4 = "r4",
 *fp = "fp", *sp = "sp", *r5 = "r5", *r6 = "r6",
 *d0 = "d0", *d1="d1", *s0 = "s0", *s1 = "s1", *pc = "pc";
 
