@@ -2,7 +2,7 @@
 #include "optimizer.h"
 
 /*
-A Stack structure implementation
+A Stack structure implementation: https://gist.github.com/Mooxmirror/beae39bd1bcf8ce52e6e
 */
  
 #include <stdlib.h>
