@@ -339,21 +339,69 @@ void gen_int_expression(node_t* root, int scopedepth)
             break;
             
         case LESS_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(CMP, r1, r2, 0, 0);
+        	instruction_add(MOVLT, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case GREATER_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(CMP, r1, r2, 0, 0);
+        	instruction_add(MOVGT, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case GEQUAL_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(CMP, r1, r2, 0, 0);
+        	instruction_add(MOVGE, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case LEQUAL_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(CMP, r1, r2, 0, 0);
+        	instruction_add(MOVLE, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case EQUAL_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(CMP, r1, r2, 0, 0);
+        	instruction_add(MOVEQ, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case NEQUAL_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(CMP, r1, r2, 0, 0);
+        	instruction_add(MOVNE, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
     }
 }
