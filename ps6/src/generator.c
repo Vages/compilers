@@ -415,18 +415,71 @@ void gen_bool_expression(node_t* root, int scopedepth)
 {
     switch(root->expression_type.index){
         case OR_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add3(ADD, r0, r1, r2);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
         
         case AND_E:
+        	root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add3(MUL, r0, r1, r2);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case EQUAL_E:
+        	/* 	Eirik: I have not been able to come up with any other way to do this 
+				than to convert the variables from truthy to bit values.
+        	*/
+			instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+			instruction_add(MOV, r3, STRDUP("#0"), 0, 0);
+			instruction_add(MOV, r4, STRDUP("#0"), 0, 0);
+			root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	// Eirik: Conversion of truthy to bits starts here
+        	instruction_add(CMP, r0, r1, 0, 0);
+        	instruction_add(MOVNE, r3, STRDUP("#1"), 0, 0);
+        	instruction_add(CMP, r0, r2, 0, 0);
+        	instruction_add(MOVNE, r4, STRDUP("#1"), 0, 0);
+        	// Eirik: Comparison of registers
+        	instruction_add(CMP, r3, r4, 0, 0);
+        	instruction_add(MOVEQ, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case NEQUAL_E:
+			root->children[0]->generate(root->children[0], scopedepth);
+        	root->children[1]->generate(root->children[1], scopedepth);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+			instruction_add(MOV, r3, STRDUP("#0"), 0, 0);
+			instruction_add(MOV, r4, STRDUP("#0"), 0, 0);
+        	instruction_add(POP, r2, NULL, 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	// Eirik: Conversion of truthy to bits starts here
+        	instruction_add(CMP, r0, r1, 0, 0);
+        	instruction_add(MOVNE, r3, STRDUP("#1"), 0, 0);
+        	instruction_add(CMP, r0, r2, 0, 0);
+        	instruction_add(MOVNE, r4, STRDUP("#1"), 0, 0);
+        	// Eirik: Comparison of registers
+        	instruction_add(CMP, r3, r4, 0, 0);
+        	instruction_add(MOVEQ, r0, STRDUP("#1"), 0, 0);
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
         case NOT_E:
+			root->children[0]->generate(root->children[0], scopedepth);
+        	instruction_add(MOV, r0, STRDUP("#0"), 0, 0);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(CMP, r0, r1, 0, 0);
+        	instruction_add(MOVEQ, r0, STRDUP("#1", 0, 0));
+        	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
     }
