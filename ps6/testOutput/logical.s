@@ -73,116 +73,88 @@ _main:
 #25 End ASSIGNMENT_STATEMENT
 #26 Starting ASSIGNMENT_STATEMENT
 #27 Starting EXPRESSION of type &&
-#28 Ending EXPRESSION of type &&
+#28 Starting VARIABLE
 	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#29 End VARIABLE a, depth difference: 0, stack offset: -4
+#30 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#31 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
 	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-16]
-	mov	fp, r1
-#29 End ASSIGNMENT_STATEMENT
-#30 Starting ASSIGNMENT_STATEMENT
-#31 Starting EXPRESSION of type &&
+	mul	r0,r1,r2
+	push	{r0}
 #32 Ending EXPRESSION of type &&
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
-	str	r0, [fp, #-20]
+	str	r0, [fp, #-16]
 	mov	fp, r1
 #33 End ASSIGNMENT_STATEMENT
 #34 Starting ASSIGNMENT_STATEMENT
 #35 Starting EXPRESSION of type &&
-#36 Ending EXPRESSION of type &&
+#36 Starting VARIABLE
 	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-24]
-	mov	fp, r1
-#37 End ASSIGNMENT_STATEMENT
-#38 Starting PRINT_STATEMENT
-	push	{r6}
-	pop	{r6}
-#39 Starting VARIABLE
-	push	{fp}
-	ldr	r0, [fp, #-16]
+	ldr	r0, [fp, #-8]
 	pop	{fp}
 	push	{r0}
-#40 End VARIABLE d, depth difference: 0, stack offset: -16
-	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-#41 Starting VARIABLE
+#37 End VARIABLE b, depth difference: 0, stack offset: -8
+#38 Starting VARIABLE
 	push	{fp}
-	ldr	r0, [fp, #-20]
+	ldr	r0, [fp, #-12]
 	pop	{fp}
 	push	{r0}
-#42 End VARIABLE e, depth difference: 0, stack offset: -20
+#39 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
 	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-#43 Starting VARIABLE
-	push	{fp}
-	ldr	r0, [fp, #-24]
-	pop	{fp}
+	mul	r0,r1,r2
 	push	{r0}
-#44 End VARIABLE f, depth difference: 0, stack offset: -24
-	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-	movw	r0, #:lower16:0x0A
-	movt	r0, #:upper16:0x0A
-	bl	putchar
-#45 Ending PRINT_STATEMENT
-#46 Starting ASSIGNMENT_STATEMENT
-#47 Starting EXPRESSION of type ||
-#48 Ending EXPRESSION of type ||
-	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-16]
-	mov	fp, r1
-#49 End ASSIGNMENT_STATEMENT
-#50 Starting ASSIGNMENT_STATEMENT
-#51 Starting EXPRESSION of type ||
-#52 Ending EXPRESSION of type ||
+#40 Ending EXPRESSION of type &&
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-20]
 	mov	fp, r1
-#53 End ASSIGNMENT_STATEMENT
-#54 Starting ASSIGNMENT_STATEMENT
-#55 Starting EXPRESSION of type ||
-#56 Ending EXPRESSION of type ||
+#41 End ASSIGNMENT_STATEMENT
+#42 Starting ASSIGNMENT_STATEMENT
+#43 Starting EXPRESSION of type &&
+#44 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#45 End VARIABLE c, depth difference: 0, stack offset: -12
+#46 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#47 End VARIABLE a, depth difference: 0, stack offset: -4
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#48 Ending EXPRESSION of type &&
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-24]
 	mov	fp, r1
-#57 End ASSIGNMENT_STATEMENT
-#58 Starting PRINT_STATEMENT
+#49 End ASSIGNMENT_STATEMENT
+#50 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
-#59 Starting VARIABLE
+#51 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-16]
 	pop	{fp}
 	push	{r0}
-#60 End VARIABLE d, depth difference: 0, stack offset: -16
+#52 End VARIABLE d, depth difference: 0, stack offset: -16
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -191,12 +163,12 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
-#61 Starting VARIABLE
+#53 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-20]
 	pop	{fp}
 	push	{r0}
-#62 End VARIABLE e, depth difference: 0, stack offset: -20
+#54 End VARIABLE e, depth difference: 0, stack offset: -20
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -205,12 +177,12 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
-#63 Starting VARIABLE
+#55 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-24]
 	pop	{fp}
 	push	{r0}
-#64 End VARIABLE f, depth difference: 0, stack offset: -24
+#56 End VARIABLE f, depth difference: 0, stack offset: -24
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -222,19 +194,51 @@ _main:
 	movw	r0, #:lower16:0x0A
 	movt	r0, #:upper16:0x0A
 	bl	putchar
-#65 Ending PRINT_STATEMENT
-#66 Starting ASSIGNMENT_STATEMENT
-#67 Starting EXPRESSION of type !
-#68 Ending EXPRESSION of type !
+#57 Ending PRINT_STATEMENT
+#58 Starting ASSIGNMENT_STATEMENT
+#59 Starting EXPRESSION of type ||
+#60 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#61 End VARIABLE a, depth difference: 0, stack offset: -4
+#62 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#63 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#64 Ending EXPRESSION of type ||
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-16]
 	mov	fp, r1
-#69 End ASSIGNMENT_STATEMENT
-#70 Starting ASSIGNMENT_STATEMENT
-#71 Starting EXPRESSION of type !
-#72 Ending EXPRESSION of type !
+#65 End ASSIGNMENT_STATEMENT
+#66 Starting ASSIGNMENT_STATEMENT
+#67 Starting EXPRESSION of type ||
+#68 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#69 End VARIABLE b, depth difference: 0, stack offset: -8
+#70 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#71 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#72 Ending EXPRESSION of type ||
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
@@ -242,99 +246,39 @@ _main:
 	mov	fp, r1
 #73 End ASSIGNMENT_STATEMENT
 #74 Starting ASSIGNMENT_STATEMENT
-#75 Starting EXPRESSION of type !
-#76 Ending EXPRESSION of type !
+#75 Starting EXPRESSION of type ||
+#76 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#77 End VARIABLE c, depth difference: 0, stack offset: -12
+#78 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#79 End VARIABLE a, depth difference: 0, stack offset: -4
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#80 Ending EXPRESSION of type ||
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-24]
 	mov	fp, r1
-#77 End ASSIGNMENT_STATEMENT
-#78 Starting PRINT_STATEMENT
+#81 End ASSIGNMENT_STATEMENT
+#82 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
-#79 Starting VARIABLE
-	push	{fp}
-	ldr	r0, [fp, #-16]
-	pop	{fp}
-	push	{r0}
-#80 End VARIABLE d, depth difference: 0, stack offset: -16
-	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-#81 Starting VARIABLE
-	push	{fp}
-	ldr	r0, [fp, #-20]
-	pop	{fp}
-	push	{r0}
-#82 End VARIABLE e, depth difference: 0, stack offset: -20
-	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
 #83 Starting VARIABLE
 	push	{fp}
-	ldr	r0, [fp, #-24]
-	pop	{fp}
-	push	{r0}
-#84 End VARIABLE f, depth difference: 0, stack offset: -24
-	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-	movw	r0, #:lower16:0x0A
-	movt	r0, #:upper16:0x0A
-	bl	putchar
-#85 Ending PRINT_STATEMENT
-#86 Starting ASSIGNMENT_STATEMENT
-#87 Starting EXPRESSION of type &&
-#88 Ending EXPRESSION of type &&
-	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-16]
-	mov	fp, r1
-#89 End ASSIGNMENT_STATEMENT
-#90 Starting ASSIGNMENT_STATEMENT
-#91 Starting EXPRESSION of type &&
-#92 Ending EXPRESSION of type &&
-	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-20]
-	mov	fp, r1
-#93 End ASSIGNMENT_STATEMENT
-#94 Starting ASSIGNMENT_STATEMENT
-#95 Starting EXPRESSION of type &&
-#96 Ending EXPRESSION of type &&
-	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-24]
-	mov	fp, r1
-#97 End ASSIGNMENT_STATEMENT
-#98 Starting PRINT_STATEMENT
-	push	{r6}
-	pop	{r6}
-#99 Starting VARIABLE
-	push	{fp}
 	ldr	r0, [fp, #-16]
 	pop	{fp}
 	push	{r0}
-#100 End VARIABLE d, depth difference: 0, stack offset: -16
+#84 End VARIABLE d, depth difference: 0, stack offset: -16
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -343,12 +287,12 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
-#101 Starting VARIABLE
+#85 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-20]
 	pop	{fp}
 	push	{r0}
-#102 End VARIABLE e, depth difference: 0, stack offset: -20
+#86 End VARIABLE e, depth difference: 0, stack offset: -20
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -357,12 +301,12 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
-#103 Starting VARIABLE
+#87 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-24]
 	pop	{fp}
 	push	{r0}
-#104 End VARIABLE f, depth difference: 0, stack offset: -24
+#88 End VARIABLE f, depth difference: 0, stack offset: -24
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -374,43 +318,76 @@ _main:
 	movw	r0, #:lower16:0x0A
 	movt	r0, #:upper16:0x0A
 	bl	putchar
-#105 Ending PRINT_STATEMENT
-#106 Starting ASSIGNMENT_STATEMENT
-#107 Starting EXPRESSION of type ||
-#108 Ending EXPRESSION of type ||
+#89 Ending PRINT_STATEMENT
+#90 Starting ASSIGNMENT_STATEMENT
+#91 Starting EXPRESSION of type !
+#92 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#93 End VARIABLE a, depth difference: 0, stack offset: -4
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#94 Ending EXPRESSION of type !
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-16]
 	mov	fp, r1
-#109 End ASSIGNMENT_STATEMENT
-#110 Starting ASSIGNMENT_STATEMENT
-#111 Starting EXPRESSION of type ||
-#112 Ending EXPRESSION of type ||
+#95 End ASSIGNMENT_STATEMENT
+#96 Starting ASSIGNMENT_STATEMENT
+#97 Starting EXPRESSION of type !
+#98 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#99 End VARIABLE b, depth difference: 0, stack offset: -8
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#100 Ending EXPRESSION of type !
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-20]
 	mov	fp, r1
-#113 End ASSIGNMENT_STATEMENT
-#114 Starting ASSIGNMENT_STATEMENT
-#115 Starting EXPRESSION of type ||
-#116 Ending EXPRESSION of type ||
+#101 End ASSIGNMENT_STATEMENT
+#102 Starting ASSIGNMENT_STATEMENT
+#103 Starting EXPRESSION of type !
+#104 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#105 End VARIABLE c, depth difference: 0, stack offset: -12
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#106 Ending EXPRESSION of type !
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-24]
 	mov	fp, r1
-#117 End ASSIGNMENT_STATEMENT
-#118 Starting PRINT_STATEMENT
+#107 End ASSIGNMENT_STATEMENT
+#108 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
-#119 Starting VARIABLE
+#109 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-16]
 	pop	{fp}
 	push	{r0}
-#120 End VARIABLE d, depth difference: 0, stack offset: -16
+#110 End VARIABLE d, depth difference: 0, stack offset: -16
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -419,150 +396,143 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
+#111 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-20]
+	pop	{fp}
+	push	{r0}
+#112 End VARIABLE e, depth difference: 0, stack offset: -20
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#113 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-24]
+	pop	{fp}
+	push	{r0}
+#114 End VARIABLE f, depth difference: 0, stack offset: -24
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#115 Ending PRINT_STATEMENT
+#116 Starting ASSIGNMENT_STATEMENT
+#117 Starting EXPRESSION of type &&
+#118 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#119 End VARIABLE a, depth difference: 0, stack offset: -4
+#120 Starting EXPRESSION of type !
 #121 Starting VARIABLE
 	push	{fp}
-	ldr	r0, [fp, #-20]
+	ldr	r0, [fp, #-8]
 	pop	{fp}
 	push	{r0}
-#122 End VARIABLE e, depth difference: 0, stack offset: -20
-	pop	{r1}
+#122 End VARIABLE b, depth difference: 0, stack offset: -8
 	mov	r0, #0
+	pop	{r1}
 	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-#123 Starting VARIABLE
+	moveq	 r0, #1
+	push	{r0}
+#123 Ending EXPRESSION of type !
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#124 Ending EXPRESSION of type &&
 	push	{fp}
-	ldr	r0, [fp, #-24]
-	pop	{fp}
-	push	{r0}
-#124 End VARIABLE f, depth difference: 0, stack offset: -24
 	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-	movw	r0, #:lower16:0x0A
-	movt	r0, #:upper16:0x0A
-	bl	putchar
-#125 Ending PRINT_STATEMENT
+	pop	{r0}
+	str	r0, [fp, #-16]
+	mov	fp, r1
+#125 End ASSIGNMENT_STATEMENT
 #126 Starting ASSIGNMENT_STATEMENT
 #127 Starting EXPRESSION of type &&
-#128 Ending EXPRESSION of type &&
+#128 Starting VARIABLE
 	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#129 End VARIABLE b, depth difference: 0, stack offset: -8
+#130 Starting EXPRESSION of type !
+#131 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#132 End VARIABLE c, depth difference: 0, stack offset: -12
+	mov	r0, #0
 	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-16]
-	mov	fp, r1
-#129 End ASSIGNMENT_STATEMENT
-#130 Starting ASSIGNMENT_STATEMENT
-#131 Starting EXPRESSION of type ||
-#132 Ending EXPRESSION of type ||
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#133 Ending EXPRESSION of type !
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#134 Ending EXPRESSION of type &&
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-20]
 	mov	fp, r1
-#133 End ASSIGNMENT_STATEMENT
-#134 Starting ASSIGNMENT_STATEMENT
-#135 Starting EXPRESSION of type ||
-#136 Ending EXPRESSION of type ||
+#135 End ASSIGNMENT_STATEMENT
+#136 Starting ASSIGNMENT_STATEMENT
+#137 Starting EXPRESSION of type &&
+#138 Starting VARIABLE
 	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-24]
-	mov	fp, r1
-#137 End ASSIGNMENT_STATEMENT
-#138 Starting PRINT_STATEMENT
-	push	{r6}
-	pop	{r6}
-#139 Starting VARIABLE
-	push	{fp}
-	ldr	r0, [fp, #-16]
+	ldr	r0, [fp, #-12]
 	pop	{fp}
 	push	{r0}
-#140 End VARIABLE d, depth difference: 0, stack offset: -16
-	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
+#139 End VARIABLE c, depth difference: 0, stack offset: -12
+#140 Starting EXPRESSION of type !
 #141 Starting VARIABLE
 	push	{fp}
-	ldr	r0, [fp, #-20]
+	ldr	r0, [fp, #-4]
 	pop	{fp}
 	push	{r0}
-#142 End VARIABLE e, depth difference: 0, stack offset: -20
-	pop	{r1}
+#142 End VARIABLE a, depth difference: 0, stack offset: -4
 	mov	r0, #0
+	pop	{r1}
 	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-#143 Starting VARIABLE
-	push	{fp}
-	ldr	r0, [fp, #-24]
-	pop	{fp}
+	moveq	 r0, #1
 	push	{r0}
-#144 End VARIABLE f, depth difference: 0, stack offset: -24
+#143 Ending EXPRESSION of type !
+	pop	{r2}
 	pop	{r1}
-	mov	r0, #0
-	cmp	r0,r1
-	mov	r1, #0
-	movne	 r1, #1
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
-	bl	printf
-	movw	r0, #:lower16:0x0A
-	movt	r0, #:upper16:0x0A
-	bl	putchar
-#145 Ending PRINT_STATEMENT
-#146 Starting ASSIGNMENT_STATEMENT
-#147 Starting EXPRESSION of type ||
-#148 Ending EXPRESSION of type ||
-	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-16]
-	mov	fp, r1
-#149 End ASSIGNMENT_STATEMENT
-#150 Starting ASSIGNMENT_STATEMENT
-#151 Starting EXPRESSION of type &&
-#152 Ending EXPRESSION of type &&
-	push	{fp}
-	pop	{r1}
-	pop	{r0}
-	str	r0, [fp, #-20]
-	mov	fp, r1
-#153 End ASSIGNMENT_STATEMENT
-#154 Starting ASSIGNMENT_STATEMENT
-#155 Starting EXPRESSION of type ||
-#156 Ending EXPRESSION of type ||
+	mul	r0,r1,r2
+	push	{r0}
+#144 Ending EXPRESSION of type &&
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-24]
 	mov	fp, r1
-#157 End ASSIGNMENT_STATEMENT
-#158 Starting PRINT_STATEMENT
+#145 End ASSIGNMENT_STATEMENT
+#146 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
-#159 Starting VARIABLE
+#147 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-16]
 	pop	{fp}
 	push	{r0}
-#160 End VARIABLE d, depth difference: 0, stack offset: -16
+#148 End VARIABLE d, depth difference: 0, stack offset: -16
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -571,12 +541,12 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
-#161 Starting VARIABLE
+#149 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-20]
 	pop	{fp}
 	push	{r0}
-#162 End VARIABLE e, depth difference: 0, stack offset: -20
+#150 End VARIABLE e, depth difference: 0, stack offset: -20
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -585,12 +555,12 @@ _main:
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	bl	printf
-#163 Starting VARIABLE
+#151 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-24]
 	pop	{fp}
 	push	{r0}
-#164 End VARIABLE f, depth difference: 0, stack offset: -24
+#152 End VARIABLE f, depth difference: 0, stack offset: -24
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -602,11 +572,483 @@ _main:
 	movw	r0, #:lower16:0x0A
 	movt	r0, #:upper16:0x0A
 	bl	putchar
-#165 Ending PRINT_STATEMENT
+#153 Ending PRINT_STATEMENT
+#154 Starting ASSIGNMENT_STATEMENT
+#155 Starting EXPRESSION of type ||
+#156 Starting EXPRESSION of type !
+#157 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#158 End VARIABLE a, depth difference: 0, stack offset: -4
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#159 Ending EXPRESSION of type !
+#160 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#161 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#162 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-16]
+	mov	fp, r1
+#163 End ASSIGNMENT_STATEMENT
+#164 Starting ASSIGNMENT_STATEMENT
+#165 Starting EXPRESSION of type ||
+#166 Starting EXPRESSION of type !
+#167 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#168 End VARIABLE b, depth difference: 0, stack offset: -8
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#169 Ending EXPRESSION of type !
+#170 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#171 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#172 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-20]
+	mov	fp, r1
+#173 End ASSIGNMENT_STATEMENT
+#174 Starting ASSIGNMENT_STATEMENT
+#175 Starting EXPRESSION of type ||
+#176 Starting EXPRESSION of type !
+#177 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#178 End VARIABLE c, depth difference: 0, stack offset: -12
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#179 Ending EXPRESSION of type !
+#180 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#181 End VARIABLE a, depth difference: 0, stack offset: -4
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#182 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-24]
+	mov	fp, r1
+#183 End ASSIGNMENT_STATEMENT
+#184 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#185 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-16]
+	pop	{fp}
+	push	{r0}
+#186 End VARIABLE d, depth difference: 0, stack offset: -16
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#187 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-20]
+	pop	{fp}
+	push	{r0}
+#188 End VARIABLE e, depth difference: 0, stack offset: -20
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#189 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-24]
+	pop	{fp}
+	push	{r0}
+#190 End VARIABLE f, depth difference: 0, stack offset: -24
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#191 Ending PRINT_STATEMENT
+#192 Starting ASSIGNMENT_STATEMENT
+#193 Starting EXPRESSION of type &&
+#194 Starting EXPRESSION of type &&
+#195 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#196 End VARIABLE a, depth difference: 0, stack offset: -4
+#197 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#198 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#199 Ending EXPRESSION of type &&
+#200 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#201 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#202 Ending EXPRESSION of type &&
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-16]
+	mov	fp, r1
+#203 End ASSIGNMENT_STATEMENT
+#204 Starting ASSIGNMENT_STATEMENT
+#205 Starting EXPRESSION of type ||
+#206 Starting EXPRESSION of type ||
+#207 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#208 End VARIABLE a, depth difference: 0, stack offset: -4
+#209 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#210 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#211 Ending EXPRESSION of type ||
+#212 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#213 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#214 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-20]
+	mov	fp, r1
+#215 End ASSIGNMENT_STATEMENT
+#216 Starting ASSIGNMENT_STATEMENT
+#217 Starting EXPRESSION of type ||
+#218 Starting EXPRESSION of type &&
+#219 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#220 End VARIABLE a, depth difference: 0, stack offset: -4
+#221 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#222 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#223 Ending EXPRESSION of type &&
+#224 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#225 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#226 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-24]
+	mov	fp, r1
+#227 End ASSIGNMENT_STATEMENT
+#228 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#229 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-16]
+	pop	{fp}
+	push	{r0}
+#230 End VARIABLE d, depth difference: 0, stack offset: -16
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#231 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-20]
+	pop	{fp}
+	push	{r0}
+#232 End VARIABLE e, depth difference: 0, stack offset: -20
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#233 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-24]
+	pop	{fp}
+	push	{r0}
+#234 End VARIABLE f, depth difference: 0, stack offset: -24
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#235 Ending PRINT_STATEMENT
+#236 Starting ASSIGNMENT_STATEMENT
+#237 Starting EXPRESSION of type ||
+#238 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#239 End VARIABLE a, depth difference: 0, stack offset: -4
+#240 Starting EXPRESSION of type &&
+#241 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#242 End VARIABLE b, depth difference: 0, stack offset: -8
+#243 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#244 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#245 Ending EXPRESSION of type &&
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#246 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-16]
+	mov	fp, r1
+#247 End ASSIGNMENT_STATEMENT
+#248 Starting ASSIGNMENT_STATEMENT
+#249 Starting EXPRESSION of type &&
+#250 Starting EXPRESSION of type ||
+#251 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#252 End VARIABLE a, depth difference: 0, stack offset: -4
+#253 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#254 End VARIABLE b, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#255 Ending EXPRESSION of type ||
+#256 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#257 End VARIABLE c, depth difference: 0, stack offset: -12
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#258 Ending EXPRESSION of type &&
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-20]
+	mov	fp, r1
+#259 End ASSIGNMENT_STATEMENT
+#260 Starting ASSIGNMENT_STATEMENT
+#261 Starting EXPRESSION of type ||
+#262 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#263 End VARIABLE a, depth difference: 0, stack offset: -4
+#264 Starting EXPRESSION of type &&
+#265 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#266 End VARIABLE b, depth difference: 0, stack offset: -8
+#267 Starting EXPRESSION of type !
+#268 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#269 End VARIABLE c, depth difference: 0, stack offset: -12
+	mov	r0, #0
+	pop	{r1}
+	cmp	r0,r1
+	moveq	 r0, #1
+	push	{r0}
+#270 Ending EXPRESSION of type !
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#271 Ending EXPRESSION of type &&
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#272 Ending EXPRESSION of type ||
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-24]
+	mov	fp, r1
+#273 End ASSIGNMENT_STATEMENT
+#274 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#275 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-16]
+	pop	{fp}
+	push	{r0}
+#276 End VARIABLE d, depth difference: 0, stack offset: -16
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#277 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-20]
+	pop	{fp}
+	push	{r0}
+#278 End VARIABLE e, depth difference: 0, stack offset: -20
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+#279 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-24]
+	pop	{fp}
+	push	{r0}
+#280 End VARIABLE f, depth difference: 0, stack offset: -24
+	pop	{r1}
+	mov	r0, #0
+	cmp	r0,r1
+	mov	r1, #0
+	movne	 r1, #1
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#281 Ending PRINT_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#166 Leaving FUNCTION (main) with depth 2
+#282 Leaving FUNCTION (main) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -648,7 +1090,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#167 End PROGRAM
+#283 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

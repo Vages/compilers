@@ -1,4 +1,4 @@
 --- correctOutput/if_simple.s12	2015-04-13 14:04:09.388676000 +0200
-+++ testOutput/if_simple.s12	2015-04-13 14:19:09.347325000 +0200
++++ testOutput/if_simple.s12	2015-04-13 15:00:35.066194000 +0200
 @@ -1 +0,0 @@
 -true

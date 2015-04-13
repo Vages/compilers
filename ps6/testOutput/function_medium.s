@@ -105,34 +105,48 @@ _main:
 #35 Starting ASSIGNMENT_STATEMENT
 #36 Starting EXPRESSION of type FUNC_CALL
 #37 Starting EXPRESSION of type &&
-#38 Ending EXPRESSION of type &&
-#39 Starting VARIABLE
+#38 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#39 End CONSTANT
+#40 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#41 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#42 Ending EXPRESSION of type &&
+#43 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-8]
 	pop	{fp}
 	push	{r0}
-#40 End VARIABLE b, depth difference: 0, stack offset: -8
-#41 Starting VARIABLE
+#44 End VARIABLE b, depth difference: 0, stack offset: -8
+#45 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-16]
 	pop	{fp}
 	push	{r0}
-#42 End VARIABLE d, depth difference: 0, stack offset: -16
-#43 Starting CONSTANT
+#46 End VARIABLE d, depth difference: 0, stack offset: -16
+#47 Starting CONSTANT
 	movw	r0, #:lower16:10
 	movt	r0, #:upper16:10
 	push	{r0}
-#44 End CONSTANT
-#45 Starting CONSTANT
+#48 End CONSTANT
+#49 Starting CONSTANT
 	movw	r0, #:lower16:11
 	movt	r0, #:upper16:11
 	push	{r0}
-#46 End CONSTANT
-#47 Starting CONSTANT
+#50 End CONSTANT
+#51 Starting CONSTANT
 	movw	r0, #:lower16:12
 	movt	r0, #:upper16:12
 	push	{r0}
-#48 End CONSTANT
+#52 End CONSTANT
 	bl	_func2
 	add	sp, sp, $4
 	add	sp, sp, $4
@@ -141,33 +155,33 @@ _main:
 	add	sp, sp, $4
 	add	sp, sp, $4
 	push	{r0}
-#49 Ending EXPRESSION of type (null)
-#50 Ending EXPRESSION of type FUNC_CALL
+#53 Ending EXPRESSION of type (null)
+#54 Ending EXPRESSION of type FUNC_CALL
 	push	{fp}
 	pop	{r1}
 	pop	{r0}
 	str	r0, [fp, #-12]
 	mov	fp, r1
-#51 End ASSIGNMENT_STATEMENT
-#52 Starting PRINT_STATEMENT
+#55 End ASSIGNMENT_STATEMENT
+#56 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
-#53 Starting VARIABLE
+#57 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-4]
 	pop	{fp}
 	push	{r0}
-#54 End VARIABLE a, depth difference: 0, stack offset: -4
+#58 End VARIABLE a, depth difference: 0, stack offset: -4
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	pop	{r1}
 	bl	printf
-#55 Starting VARIABLE
+#59 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-12]
 	pop	{fp}
 	push	{r0}
-#56 End VARIABLE c, depth difference: 0, stack offset: -12
+#60 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r1}
 	mov	r0, #0
 	cmp	r0,r1
@@ -179,39 +193,107 @@ _main:
 	movw	r0, #:lower16:0x0A
 	movt	r0, #:upper16:0x0A
 	bl	putchar
-#57 Ending PRINT_STATEMENT
+#61 Ending PRINT_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#58 Leaving FUNCTION (main) with depth 2
-#59 Starting FUNCTION (func1) with depth 2
+#62 Leaving FUNCTION (main) with depth 2
+#63 Starting FUNCTION (func1) with depth 2
 _func1:
 	push	{lr}
 	push	{fp}
 	mov	fp, sp
-#60 Starting IF_STATEMENT'
-#61 End IF_STATEMENT
+#64 Starting IF_STATEMENT'
+#65 End IF_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#62 Leaving FUNCTION (func1) with depth 2
-#63 Starting FUNCTION (func2) with depth 2
+#66 Leaving FUNCTION (func1) with depth 2
+#67 Starting FUNCTION (func2) with depth 2
 _func2:
 	push	{lr}
 	push	{fp}
 	mov	fp, sp
-#64 Starting RETURN_STATEMENT
-#65 Starting EXPRESSION of type ||
-#66 Ending EXPRESSION of type ||
+#68 Starting RETURN_STATEMENT
+#69 Starting EXPRESSION of type ||
+#70 Starting EXPRESSION of type ||
+#71 Starting EXPRESSION of type &&
+#72 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #28]
+	pop	{fp}
+	push	{r0}
+#73 End VARIABLE a, depth difference: 0, stack offset: 28
+#74 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #20]
+	pop	{fp}
+	push	{r0}
+#75 End VARIABLE c, depth difference: 0, stack offset: 20
+	pop	{r2}
+	pop	{r1}
+	mul	r0,r1,r2
+	push	{r0}
+#76 Ending EXPRESSION of type &&
+#77 Starting EXPRESSION of type >
+#78 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #24]
+	pop	{fp}
+	push	{r0}
+#79 End VARIABLE b, depth difference: 0, stack offset: 24
+#80 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #16]
+	pop	{fp}
+	push	{r0}
+#81 End VARIABLE d, depth difference: 0, stack offset: 16
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#82 Ending EXPRESSION of type >
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#83 Ending EXPRESSION of type ||
+#84 Starting EXPRESSION of type >
+#85 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
+	push	{r0}
+#86 End VARIABLE e, depth difference: 0, stack offset: 12
+#87 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#88 End VARIABLE f, depth difference: 0, stack offset: 8
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#89 Ending EXPRESSION of type >
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#90 Ending EXPRESSION of type ||
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#67 End RETURN_STATEMENT
+#91 End RETURN_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#68 Leaving FUNCTION (func2) with depth 2
+#92 Leaving FUNCTION (func2) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -253,7 +335,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#69 End PROGRAM
+#93 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
