@@ -605,6 +605,13 @@ void gen_WHILE_STATEMENT ( node_t *root, int scopedepth )
 {
     tracePrint ( "Starting WHILE_STATEMENT\n");
     
+    stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
+    cur_cond = ++cond_i; // Eirik: New conditional scope.
+
+
+
+    cur_cond = stack_pull(cond_stack); // Eirik: Restore old scope.
+
     tracePrint ( "End WHILE_STATEMENT\n");
 }
 
