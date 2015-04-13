@@ -33,6 +33,7 @@
 !libghthash32.a
 !bindsol.o
 !bindsol32.o
+!generator_sol.o
 !simplifynodes.o
 !simplifynodes32.o
 !symtab.o
