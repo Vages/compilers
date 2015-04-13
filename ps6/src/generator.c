@@ -223,11 +223,6 @@ void gen_FUNCTION ( node_t *root, int scopedepth )
      
 }
 
-
-
-
-
-
 void gen_DECLARATION_STATEMENT (node_t *root, int scopedepth)
 {
     gd(root, scopedepth);
