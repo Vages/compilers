@@ -1,5 +1,5 @@
 --- correctOutput/maxmin.s12	2015-04-13 14:04:09.396676000 +0200
-+++ testOutput/maxmin.s12	2015-04-13 14:15:40.119243000 +0200
++++ testOutput/maxmin.s12	2015-04-13 14:19:10.069328000 +0200
 @@ -1 +1 @@
 -a is: 6 b is: -1 c is: 0 
 +a is: 0 b is: 0 c is: 0 

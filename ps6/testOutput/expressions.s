@@ -420,7 +420,7 @@ _main:
 #143 End CONSTANT
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #144 Ending EXPRESSION of type /
 #145 Starting CONSTANT
@@ -430,7 +430,7 @@ _main:
 #146 End CONSTANT
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #147 Ending EXPRESSION of type /
 	pop	{r2}
@@ -599,7 +599,7 @@ _main:
 #203 End VARIABLE b, depth difference: 0, stack offset: -8
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #204 Ending EXPRESSION of type /
 #205 Starting VARIABLE
@@ -636,7 +636,7 @@ _main:
 #216 End VARIABLE b, depth difference: 0, stack offset: -8
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #217 Ending EXPRESSION of type /
 	pop	{r2}
@@ -680,12 +680,12 @@ _main:
 #230 Ending EXPRESSION of type +
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #231 Ending EXPRESSION of type /
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #232 Ending EXPRESSION of type /
 	push	{fp}
@@ -925,7 +925,7 @@ _main:
 #302 Ending EXPRESSION of type -
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #303 Ending EXPRESSION of type /
 #304 Starting CONSTANT
@@ -935,7 +935,7 @@ _main:
 #305 End CONSTANT
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #306 Ending EXPRESSION of type /
 	push	{fp}

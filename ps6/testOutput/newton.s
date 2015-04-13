@@ -171,7 +171,7 @@ _improve:
 #51 Ending EXPRESSION of type *
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #52 Ending EXPRESSION of type /
 	pop	{r2}

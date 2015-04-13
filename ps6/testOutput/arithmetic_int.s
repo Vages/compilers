@@ -646,7 +646,7 @@ _main:
 #193 End VARIABLE b, depth difference: 0, stack offset: -8
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #194 Ending EXPRESSION of type /
 	push	{fp}
@@ -671,7 +671,7 @@ _main:
 #201 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #202 Ending EXPRESSION of type /
 	push	{fp}
@@ -696,7 +696,7 @@ _main:
 #209 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #210 Ending EXPRESSION of type /
 	push	{fp}
@@ -897,7 +897,7 @@ _main:
 #268 End VARIABLE b, depth difference: 0, stack offset: -8
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #269 Ending EXPRESSION of type /
 #270 Starting VARIABLE
@@ -908,7 +908,7 @@ _main:
 #271 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #272 Ending EXPRESSION of type /
 	push	{fp}
@@ -1035,7 +1035,7 @@ _main:
 #310 End VARIABLE b, depth difference: 0, stack offset: -8
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #311 Ending EXPRESSION of type /
 #312 Starting VARIABLE
@@ -1115,7 +1115,7 @@ _main:
 #332 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #333 Ending EXPRESSION of type /
 	pop	{r2}
@@ -1152,7 +1152,7 @@ _main:
 #344 End VARIABLE c, depth difference: 0, stack offset: -12
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #345 Ending EXPRESSION of type /
 	pop	{r2}
@@ -1183,7 +1183,7 @@ _main:
 #354 End VARIABLE b, depth difference: 0, stack offset: -8
 	pop	{r2}
 	pop	{r1}
-	add	r0, r1, r2
+	sdiv	r0, r1, r2
 	push	{r0}
 #355 Ending EXPRESSION of type /
 #356 Starting VARIABLE
