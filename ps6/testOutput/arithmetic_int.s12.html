@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Colorized Diff</title>
+</head>
+<style>
+.diffdiv  { border: solid 1px black;           }
+.comment  { color: gray;                       }
+.diff     { color: #8A2BE2;                    }
+.minus3   { color: blue;                       }
+.plus3    { color: maroon;                     }
+.at2      { color: lime;                       }
+.plus     { color: green; background: #E7E7E7; }
+.minus    { color: red;   background: #D7D7D7; }
+.only     { color: purple;                     }
+</style>
+<body>
+<pre>
+<span class="comment"><span class="minus3">--- correctOutput/arithmetic_int.s12	2015-04-13 14:04:09.337678000 +0200</span>
+<span class="plus3">+++ testOutput/arithmetic_int.s12	2015-04-13 14:05:31.858102000 +0200</span>
+<span class="at2">@@ -3,8 +3,8 @@</span>
+ 520 975 455 
+ 566 111 -409 
+ 12489 -234576 -9936 
+<span class="minus">-23 -1 0 </span>
+<span class="plus">+566 111 -409 </span>
+ 134 952 
+<span class="minus">--5395248 0 </span>
+<span class="minus">--9393 12057 -409 </span>
+<span class="minus">-543 543 455 </span>
+<span class="plus">+-5395248 134 </span>
+<span class="plus">+-9393 12057 134 </span>
+<span class="plus">+134 952 998 </span></span>
+</pre>
+</body>
+</html>

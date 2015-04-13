@@ -1,0 +1,5 @@
+--- correctOutput/function_medium.s12	2015-04-13 14:04:09.375678000 +0200
++++ testOutput/function_medium.s12	2015-04-13 14:05:37.823135000 +0200
+@@ -1 +1 @@
+-4 0 
++4 1 
