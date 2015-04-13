@@ -333,7 +333,7 @@ void gen_int_expression(node_t* root, int scopedepth)
         	root->children[1]->generate(root->children[1], scopedepth);
         	instruction_add(POP, r2, NULL, 0, 0);
         	instruction_add(POP, r1, NULL, 0, 0);
-        	instruction_add3(ADD, r0, r1, r2);
+        	instruction_add3(DIV, r0, r1, r2);
         	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
             
