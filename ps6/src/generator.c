@@ -296,9 +296,8 @@ void gen_int_expression(node_t* root, int scopedepth)
     switch(root->expression_type.index){
         case UMINUS_E:
         	root->children[0]->generate(root->children[0], scopedepth);
-        	instruction_add(MOV, r1, STRDUP("#0"), 0, 0);
-        	instruction_add(POP, r2, NULL, 0, 0);
-        	instruction_add3(SUB, r0, r1, r2);
+        	instruction_add(POP, r1, NULL, 0, 0);
+        	instruction_add(NEG, r0, r1, 0, 0);
         	instruction_add(PUSH, r0, NULL, 0, 0);
             break;
 
