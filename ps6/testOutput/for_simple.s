@@ -21,11 +21,68 @@ _main:
 	push	{r0}
 #3 Ending DECLARATION
 #4 Starting FOR_STATEMENT
-#5 End FOR_STATEMENT
+#5 Starting ASSIGNMENT_STATEMENT
+#6 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#7 End CONSTANT
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-4]
+	mov	fp, r1
+#8 End ASSIGNMENT_STATEMENT
+_for_start1:
+#9 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#10 End VARIABLE i, depth difference: 0, stack offset: -4
+#11 Starting CONSTANT
+	movw	r0, #:lower16:10
+	movt	r0, #:upper16:10
+	push	{r0}
+#12 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	cmp	r1,r2
+	beq	_for_end1
+#13 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#14 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#15 End VARIABLE i, depth difference: 0, stack offset: -4
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	pop	{r1}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#16 Ending PRINT_STATEMENT
+#17 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#18 End VARIABLE i, depth difference: 0, stack offset: -4
+	mov	r2, #1
+	pop	{r1}
+	add	r0, r1, r2
+	str	r0, [fp, #-4]
+	beq	_for_start1
+_for_end1:
+#19 End FOR_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#6 Leaving FUNCTION (main) with depth 2
+#20 Leaving FUNCTION (main) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -67,7 +124,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#7 End PROGRAM
+#21 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
