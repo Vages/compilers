@@ -670,7 +670,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     instruction_add(POP, r1, NULL, 0, 0);
     instruction_add3(ADD, r0, r1, r2); // Eirik: Increment value by one.
 
-    int offset = root->children[0]->children[0]->children[0]->entry->stack_offset;  // Get stack offset for the iteration variable
+    int offset = root->children[0]->children[0]->entry->stack_offset;  // Get stack offset for the iteration variable
 	instruction_add(STR, r0, fp, 0, offset); // Store contents of r0 in the variable (frame pointer + offset)
 
     // Eirik: Branching back to the start
