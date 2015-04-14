@@ -628,7 +628,7 @@ void gen_IF_STATEMENT ( node_t *root, int scopedepth )
 {
     tracePrint ( "Starting IF_STATEMENT'\n");
 
-    stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
+    //stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
     cur_cond = ++cond_i; // Eirik: New conditional scope.
 
  	root->children[0]->generate(root->children[0], scopedepth);
@@ -665,7 +665,7 @@ void gen_IF_STATEMENT ( node_t *root, int scopedepth )
     	instruction_add(LABEL, "end_label", NULL, 0, 0);
     }
 
-    cur_cond = stack_pull(cond_stack); // Eirik: Restore old scope.
+    //cur_cond = stack_pull(cond_stack); // Eirik: Restore old scope.
     
     tracePrint ( "End IF_STATEMENT\n");
 }
