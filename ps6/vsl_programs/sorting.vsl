@@ -10,6 +10,7 @@ START
 	END
 	
 	FOR i := 0 TO 10 DO
+		PRINT i;
 		PRINT a[i];
 	END
 
