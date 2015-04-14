@@ -648,17 +648,20 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     // Eirik: Generate the assignment statement for iteration variable
     root->children[0]->generate(root->children[0], scopedepth);
 
+    // Eirik: We will restart the loop at the point where we check if the loop condition is met
     char start_label[80];
     sprintf(start_label, "for_start%d", cur_cond);
     instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
-    root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
+    instruction_add(LDR, r1, fp, 0, root->children[0]->children[0]->entry->stack_offset);
+    //root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
     root->children[1]->generate(root->children[1], scopedepth); // Eirik: Evaluate expression after "TO"
     
     instruction_add(POP, r2, NULL, 0, 0);
-    instruction_add(POP, r1, NULL, 0, 0);
-    instruction_add(CMP, r1, r2, 0, 0); // Eirik: If the values are equal, the loop has finished its iteration.
+    //instruction_add(POP, r1, NULL, 0, 0);
+    instruction_add(CMP, r1, r2, 0, 0); 
     
+    // Eirik: If the values are equal, the loop has finished. We have to branch to the end.
     char end_b_label[80];
     sprintf(end_b_label, "_for_end%d", cur_cond);
     instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
