@@ -644,7 +644,7 @@ void gen_IF_STATEMENT ( node_t *root, int scopedepth )
     	
     	char* end_label[80];
     	sprintf(end_label, "end%d", cur_cond);
-    	instruction_add(LABEL, "end_label", NULL, 0, 0);
+    	instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
     } else {
     	char* else_b_label[80];
     	sprintf(else_b_label, "_else%d", cur_cond);
@@ -663,7 +663,7 @@ void gen_IF_STATEMENT ( node_t *root, int scopedepth )
 
     	char* end_label[80];
     	sprintf(end_label, "end%d", cur_cond);
-    	instruction_add(LABEL, "end_label", NULL, 0, 0);
+    	instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
     }
 
     cur_cond = stack_pull(cond_stack); // Eirik: Restore old scope.
