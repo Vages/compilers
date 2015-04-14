@@ -653,12 +653,11 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     sprintf(start_label, "for_start%d", cur_cond);
     instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
-    instruction_add(LDR, r1, fp, 0, root->children[0]->children[0]->entry->stack_offset);
-    //root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
+    root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
     root->children[1]->generate(root->children[1], scopedepth); // Eirik: Evaluate expression after "TO"
     
     instruction_add(POP, r2, NULL, 0, 0);
-    //instruction_add(POP, r1, NULL, 0, 0);
+    instruction_add(POP, r1, NULL, 0, 0);
     instruction_add(CMP, r1, r2, 0, 0); 
     
     // Eirik: If the values are equal, the loop has finished. We have to branch to the end.
