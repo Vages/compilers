@@ -627,6 +627,45 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
 void gen_IF_STATEMENT ( node_t *root, int scopedepth )
 {
     tracePrint ( "Starting IF_STATEMENT'\n");
+
+    stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
+    cur_cond = ++cond_i; // Eirik: New conditional scope.
+
+ 	root->children[0]->generate(root->children[0], scopedepth);
+ 	instruction_add(MOV, r2, STRDUP("#0"), 0, 0);
+ 	instruction_add(POP, r1, NULL, 0, 0);
+ 	instruction_add(CMP, r1, r2, 0, 0);
+    if(root->n_children == 2){
+    	/* Eirik: Jump to end-label if zero (false) */
+    	char* end_b_label;
+    	sprintf(end_b_label, "_end%d", cur_cond);
+    	instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
+    	root->children[1]->generate(root->children[1], scopedepth);
+    	
+    	char* end_label;
+    	sprintf(end_label, "end%d", cur_cond);
+    	instruction_add(LABEL, "end_label", NULL, 0, 0);
+    } else {
+    	char* else_b_label;
+    	sprintf(else_b_label, "_else%d", cur_cond);
+    	instruction_add(BEQ, STRDUP(else_b_label), NULL, 0, 0);
+    	root->children[1]->generate(root->children[1], scopedepth);
+    	char* end_b_label;
+    	sprintf(end_b_label, "_end%d", cur_cond);
+    	instruction_add(B, STRDUP(end_b_label), NULL, 0, 0);
+
+    	char* else_label;
+    	sprintf(else_label, "else%d", cur_cond);
+    	instruction_add(LABEL, else_label, NULL, 0, 0);
+    	root->children[2]->generate(root->children[2], scopedepth);
+    	instruction_add(B, STRDUP(end_b_label), NULL, 0, 0);
+
+    	char* end_label;
+    	sprintf(end_label, "end%d", cur_cond);
+    	instruction_add(LABEL, "end_label", NULL, 0, 0);
+    }
+
+    cur_cond = stack_pull(cond_stack); // Eirik: Restore old scope.
     
     tracePrint ( "End IF_STATEMENT\n");
 }
