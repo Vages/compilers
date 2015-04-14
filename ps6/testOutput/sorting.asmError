@@ -1,2 +1,0 @@
-testOutput/sorting.s: Assembler messages:
-testOutput/sorting.s:1: Error: bad instruction `symbol k not found'
