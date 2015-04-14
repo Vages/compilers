@@ -657,7 +657,7 @@ void gen_IF_STATEMENT ( node_t *root, int scopedepth )
 
     	char* else_label[80];
     	sprintf(else_label, "else%d", cur_cond);
-    	instruction_add(LABEL, else_label, NULL, 0, 0);
+    	instruction_add(LABEL, STRDUP(else_label), NULL, 0, 0);
     	root->children[2]->generate(root->children[2], scopedepth);
     	instruction_add(B, STRDUP(end_b_label), NULL, 0, 0);
 
