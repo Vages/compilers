@@ -680,7 +680,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     // Eirik: Branching back to the start
     char start_b_label[80];
     sprintf(start_b_label, "_for_start%d", cur_cond);
-    instruction_add(BEQ, STRDUP(start_b_label), NULL, 0, 0);
+    instruction_add(B, STRDUP(start_b_label), NULL, 0, 0);
 
     char end_label[80];
     sprintf(end_label, "for_end%d", cur_cond);
