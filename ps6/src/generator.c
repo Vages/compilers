@@ -96,8 +96,7 @@ int stack_empty(stack * s)
 
 int cond_i = 0; // Eirik: Used for enumerating conditionals
 int cur_cond = 0; // Eirik: Holds value of current conditional
-stack* cond_stack = (stack *) malloc(sizeof(stack));
-cond_stack.top = NULL;
+stack* cond_stack;
 
 extern int outputStage; // This variable is located in vslc.c
 
@@ -197,6 +196,8 @@ void gen_default ( node_t *root, int scopedepth)
 
 void gen_PROGRAM ( node_t *root, int scopedepth)
 {
+	/* Eirik: Stack initialization */
+	cond_stack = stack_new();
     /* Output the data segment */
     if( outputStage == 12 )
         strings_output ( stdout );
