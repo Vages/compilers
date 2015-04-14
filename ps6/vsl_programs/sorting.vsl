@@ -9,9 +9,8 @@ START
 		a[i] := 10 - i;
 	END
 	
-	INT k;
-	FOR k := 0 TO 10 DO
-		PRINT b[k];
+	FOR i := 0 TO 10 DO
+		PRINT a[i];
 	END
 
 	b := sort(a);
