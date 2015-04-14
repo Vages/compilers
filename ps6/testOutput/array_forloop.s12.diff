@@ -1,5 +1,5 @@
 --- correctOutput/array_forloop.s12	2015-04-13 14:04:09.340679000 +0200
-+++ testOutput/array_forloop.s12	2015-04-14 21:20:27.138059000 +0200
++++ testOutput/array_forloop.s12	2015-04-14 21:45:41.445102000 +0200
 @@ -1 +1 @@
 -45 362880 
 +1 1 
