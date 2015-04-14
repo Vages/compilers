@@ -9,6 +9,10 @@ START
 		a[i] := 10 - i;
 	END
 	
+	FOR i := 0 TO 10 DO
+		PRINT b[i];
+	END
+
 	b := sort(a);
 	
 	FOR i := 0 TO 10 DO
