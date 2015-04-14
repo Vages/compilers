@@ -106,42 +106,144 @@ _fibonacci_iterative:
 	mov	fp, r1
 #32 End ASSIGNMENT_STATEMENT
 #33 Starting WHILE_STATEMENT
-#34 End WHILE_STATEMENT
-_end1:
-#35 End IF_STATEMENT
-#36 Starting PRINT_STATEMENT
-	push	{r6}
-	pop	{r6}
-#37 Starting CONSTANT
-	movw	r0, #:lower16:.STRING0
-	movt	r0, #:upper16:.STRING0
+_while_start2:
+#34 Starting EXPRESSION of type <
+#35 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-16]
+	pop	{fp}
 	push	{r0}
-#38 End CONSTANT
-	pop	{r0}
-	bl	printf
-#39 Starting VARIABLE
+#36 End VARIABLE i, depth difference: 0, stack offset: -16
+#37 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #8]
 	pop	{fp}
 	push	{r0}
-#40 End VARIABLE n, depth difference: 0, stack offset: 8
-	movw	r0, #:lower16:.INTEGER
-	movt	r0, #:upper16:.INTEGER
+#38 End VARIABLE n, depth difference: 0, stack offset: 8
+	pop	{r2}
 	pop	{r1}
-	bl	printf
-#41 Starting CONSTANT
-	movw	r0, #:lower16:.STRING1
-	movt	r0, #:upper16:.STRING1
+	mov	r0, #0
+	cmp	r1,r2
+	movlt	 r0, #1
 	push	{r0}
-#42 End CONSTANT
+#39 Ending EXPRESSION of type <
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_while_end2
+#40 Starting ASSIGNMENT_STATEMENT
+#41 Starting EXPRESSION of type +
+#42 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#43 End VARIABLE x, depth difference: 0, stack offset: -4
+#44 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#45 End VARIABLE y, depth difference: 0, stack offset: -8
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#46 Ending EXPRESSION of type +
+	push	{fp}
+	pop	{r1}
 	pop	{r0}
-	bl	printf
-#43 Starting VARIABLE
+	str	r0, [fp, #-12]
+	mov	fp, r1
+#47 End ASSIGNMENT_STATEMENT
+#48 Starting ASSIGNMENT_STATEMENT
+#49 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#50 End VARIABLE y, depth difference: 0, stack offset: -8
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-4]
+	mov	fp, r1
+#51 End ASSIGNMENT_STATEMENT
+#52 Starting ASSIGNMENT_STATEMENT
+#53 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-12]
 	pop	{fp}
 	push	{r0}
-#44 End VARIABLE f, depth difference: 0, stack offset: -12
+#54 End VARIABLE f, depth difference: 0, stack offset: -12
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-8]
+	mov	fp, r1
+#55 End ASSIGNMENT_STATEMENT
+#56 Starting ASSIGNMENT_STATEMENT
+#57 Starting EXPRESSION of type +
+#58 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-16]
+	pop	{fp}
+	push	{r0}
+#59 End VARIABLE i, depth difference: 0, stack offset: -16
+#60 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#61 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#62 Ending EXPRESSION of type +
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-16]
+	mov	fp, r1
+#63 End ASSIGNMENT_STATEMENT
+	b	_while_start2
+_while_end2:
+#64 End WHILE_STATEMENT
+_end1:
+#65 End IF_STATEMENT
+#66 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#67 Starting CONSTANT
+	movw	r0, #:lower16:.STRING0
+	movt	r0, #:upper16:.STRING0
+	push	{r0}
+#68 End CONSTANT
+	pop	{r0}
+	bl	printf
+#69 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#70 End VARIABLE n, depth difference: 0, stack offset: 8
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	pop	{r1}
+	bl	printf
+#71 Starting CONSTANT
+	movw	r0, #:lower16:.STRING1
+	movt	r0, #:upper16:.STRING1
+	push	{r0}
+#72 End CONSTANT
+	pop	{r0}
+	bl	printf
+#73 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-12]
+	pop	{fp}
+	push	{r0}
+#74 End VARIABLE f, depth difference: 0, stack offset: -12
 	movw	r0, #:lower16:.INTEGER
 	movt	r0, #:upper16:.INTEGER
 	pop	{r1}
@@ -149,22 +251,22 @@ _end1:
 	movw	r0, #:lower16:0x0A
 	movt	r0, #:upper16:0x0A
 	bl	putchar
-#45 Ending PRINT_STATEMENT
-#46 Starting RETURN_STATEMENT
-#47 Starting CONSTANT
+#75 Ending PRINT_STATEMENT
+#76 Starting RETURN_STATEMENT
+#77 Starting CONSTANT
 	movw	r0, #:lower16:0
 	movt	r0, #:upper16:0
 	push	{r0}
-#48 End CONSTANT
+#78 End CONSTANT
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#49 End RETURN_STATEMENT
+#79 End RETURN_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#50 Leaving FUNCTION (fibonacci_iterative) with depth 2
+#80 Leaving FUNCTION (fibonacci_iterative) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -206,7 +308,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_fibonacci_iterative
-#51 End PROGRAM
+#81 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

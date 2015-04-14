@@ -33,11 +33,78 @@ _main:
 	mov	fp, r1
 #7 End ASSIGNMENT_STATEMENT
 #8 Starting WHILE_STATEMENT
-#9 End WHILE_STATEMENT
+_while_start1:
+#9 Starting EXPRESSION of type >
+#10 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#11 End VARIABLE a, depth difference: 0, stack offset: -4
+#12 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#13 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#14 Ending EXPRESSION of type >
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_while_end1
+#15 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#16 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#17 End VARIABLE a, depth difference: 0, stack offset: -4
+	movw	r0, #:lower16:.INTEGER
+	movt	r0, #:upper16:.INTEGER
+	pop	{r1}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#18 Ending PRINT_STATEMENT
+#19 Starting ASSIGNMENT_STATEMENT
+#20 Starting EXPRESSION of type -
+#21 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#22 End VARIABLE a, depth difference: 0, stack offset: -4
+#23 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#24 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#25 Ending EXPRESSION of type -
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-4]
+	mov	fp, r1
+#26 End ASSIGNMENT_STATEMENT
+	b	_while_start1
+_while_end1:
+#27 End WHILE_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#10 Leaving FUNCTION (main) with depth 2
+#28 Leaving FUNCTION (main) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -79,7 +146,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#11 End PROGRAM
+#29 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
