@@ -1,7 +1,0 @@
-/tmp/ccqKCguB.o: In function `_merge_sort':
-(.text+0xf0): undefined reference to `_else1'
-/tmp/ccqKCguB.o: In function `_merge_sort':
-(.text+0x110): undefined reference to `_end1'
-/tmp/ccqKCguB.o: In function `_':
-(.text+0x26c): undefined reference to `_end1'
-collect2: error: ld returned 1 exit status

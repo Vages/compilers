@@ -219,7 +219,7 @@ _max:
 	pop	{fp}
 	pop	{pc}
 #67 End RETURN_STATEMENT
-_end_label:
+_end1:
 #68 End IF_STATEMENT
 #69 Starting IF_STATEMENT'
 #70 Starting EXPRESSION of type >
@@ -258,7 +258,7 @@ _end_label:
 	pop	{fp}
 	pop	{pc}
 #79 End RETURN_STATEMENT
-_end_label:
+_end2:
 #80 End IF_STATEMENT
 #81 Starting RETURN_STATEMENT
 #82 Starting CONSTANT
@@ -317,7 +317,7 @@ _min:
 	pop	{fp}
 	pop	{pc}
 #97 End RETURN_STATEMENT
-_end_label:
+_end3:
 #98 End IF_STATEMENT
 #99 Starting IF_STATEMENT'
 #100 Starting EXPRESSION of type <
@@ -356,7 +356,7 @@ _end_label:
 	pop	{fp}
 	pop	{pc}
 #109 End RETURN_STATEMENT
-_end_label:
+_end4:
 #110 End IF_STATEMENT
 #111 Starting RETURN_STATEMENT
 #112 Starting CONSTANT

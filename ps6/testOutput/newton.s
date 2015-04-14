@@ -234,7 +234,7 @@ _improve:
 	pop	{pc}
 #70 End RETURN_STATEMENT
 	b	_end1
-_:
+_else1:
 #71 Starting RETURN_STATEMENT
 #72 Starting EXPRESSION of type -
 #73 Starting VARIABLE
@@ -259,7 +259,7 @@ _:
 	pop	{pc}
 #78 End RETURN_STATEMENT
 	b	_end1
-_end_label:
+_end1:
 #79 End IF_STATEMENT
 	mov	sp, fp
 	pop	{fp}

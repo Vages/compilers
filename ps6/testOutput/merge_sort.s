@@ -122,7 +122,7 @@ _merge_sort:
 	pop	{pc}
 #39 End RETURN_STATEMENT
 	b	_end1
-_:
+_else1:
 #40 Starting DECLARATION: adding space on stack
 	push	{r0}
 #41 Ending DECLARATION
@@ -257,7 +257,7 @@ _:
 #85 Ending EXPRESSION of type (null)
 #86 Ending EXPRESSION of type FUNC_CALL
 	b	_end1
-_end_label:
+_end1:
 #87 End IF_STATEMENT
 	mov	sp, fp
 	pop	{fp}

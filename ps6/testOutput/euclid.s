@@ -134,7 +134,7 @@ _euclid:
 	bl	putchar
 #32 Ending PRINT_STATEMENT
 	b	_end1
-_:
+_else1:
 #33 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
@@ -177,7 +177,7 @@ _:
 	bl	putchar
 #42 Ending PRINT_STATEMENT
 	b	_end1
-_end_label:
+_end1:
 #43 End IF_STATEMENT
 #44 Starting RETURN_STATEMENT
 #45 Starting CONSTANT
@@ -276,7 +276,7 @@ _gcd:
 	mov	fp, r1
 #75 End ASSIGNMENT_STATEMENT
 	b	_end2
-_:
+_else2:
 #76 Starting ASSIGNMENT_STATEMENT
 #77 Starting VARIABLE
 	push	{fp}
@@ -291,7 +291,7 @@ _:
 	mov	fp, r1
 #79 End ASSIGNMENT_STATEMENT
 	b	_end2
-_end_label:
+_end2:
 #80 End IF_STATEMENT
 #81 Starting RETURN_STATEMENT
 #82 Starting VARIABLE

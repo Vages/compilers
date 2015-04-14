@@ -45,7 +45,7 @@ _main:
 	movt	r0, #:upper16:0x0A
 	bl	putchar
 #8 Ending PRINT_STATEMENT
-_end_label:
+_end1:
 #9 End IF_STATEMENT
 #10 Starting IF_STATEMENT'
 #11 Starting CONSTANT
@@ -71,7 +71,7 @@ _end_label:
 	movt	r0, #:upper16:0x0A
 	bl	putchar
 #16 Ending PRINT_STATEMENT
-_end_label:
+_end2:
 #17 End IF_STATEMENT
 	mov	sp, fp
 	pop	{fp}

@@ -228,7 +228,7 @@ _func1:
 	str	r0, [fp, #-4]
 	mov	fp, r1
 #68 End ASSIGNMENT_STATEMENT
-_end_label:
+_end1:
 #69 End IF_STATEMENT
 #70 Starting RETURN_STATEMENT
 #71 Starting VARIABLE
@@ -371,7 +371,7 @@ _func2:
 	str	r0, [fp, #-4]
 	mov	fp, r1
 #111 End ASSIGNMENT_STATEMENT
-_end_label:
+_end2:
 #112 End IF_STATEMENT
 #113 Starting RETURN_STATEMENT
 #114 Starting VARIABLE
@@ -514,7 +514,7 @@ _func3:
 	str	r0, [fp, #-4]
 	mov	fp, r1
 #154 End ASSIGNMENT_STATEMENT
-_end_label:
+_end3:
 #155 End IF_STATEMENT
 #156 Starting RETURN_STATEMENT
 #157 Starting VARIABLE

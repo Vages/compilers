@@ -107,7 +107,7 @@ _fibonacci_iterative:
 #32 End ASSIGNMENT_STATEMENT
 #33 Starting WHILE_STATEMENT
 #34 End WHILE_STATEMENT
-_end_label:
+_end1:
 #35 End IF_STATEMENT
 #36 Starting PRINT_STATEMENT
 	push	{r6}

@@ -239,7 +239,7 @@ _func1:
 	pop	{pc}
 #74 End RETURN_STATEMENT
 	b	_end1
-_:
+_else1:
 #75 Starting RETURN_STATEMENT
 #76 Starting VARIABLE
 	push	{fp}
@@ -253,7 +253,7 @@ _:
 	pop	{pc}
 #78 End RETURN_STATEMENT
 	b	_end1
-_end_label:
+_end1:
 #79 End IF_STATEMENT
 	mov	sp, fp
 	pop	{fp}

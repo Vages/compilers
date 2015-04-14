@@ -1,3 +1,0 @@
-/tmp/ccFS0L8c.o: In function `_fibonacci_iterative':
-(.text+0xb8): undefined reference to `_end1'
-collect2: error: ld returned 1 exit status

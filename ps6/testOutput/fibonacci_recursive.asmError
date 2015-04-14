@@ -1,5 +1,0 @@
-/tmp/ccpZz1Wo.o: In function `_fibonacci_number':
-(.text+0x14c): undefined reference to `_end1'
-/tmp/ccpZz1Wo.o: In function `_fibonacci_number':
-(.text+0x188): undefined reference to `_end2'
-collect2: error: ld returned 1 exit status

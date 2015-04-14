@@ -106,7 +106,7 @@ _while_test:
 	movt	r0, #:upper16:0x0A
 	bl	putchar
 #26 Ending PRINT_STATEMENT
-_end_label:
+_end1:
 #27 End IF_STATEMENT
 #28 Starting IF_STATEMENT'
 #29 Starting EXPRESSION of type >=
@@ -176,7 +176,7 @@ _end_label:
 	bl	putchar
 #47 Ending PRINT_STATEMENT
 	b	_end3
-_else6:
+_else3:
 #48 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
@@ -192,10 +192,10 @@ _else6:
 	bl	putchar
 #51 Ending PRINT_STATEMENT
 	b	_end3
-_end_label:
+_end3:
 #52 End IF_STATEMENT
 	b	_end2
-_:
+_else2:
 #53 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
@@ -211,7 +211,7 @@ _:
 	bl	putchar
 #56 Ending PRINT_STATEMENT
 	b	_end2
-_end_label:
+_end2:
 #57 End IF_STATEMENT
 #58 Starting IF_STATEMENT'
 #59 Starting EXPRESSION of type >
@@ -276,7 +276,7 @@ _end_label:
 	bl	putchar
 #75 Ending PRINT_STATEMENT
 	b	_end5
-_else6:
+_else5:
 #76 Starting PRINT_STATEMENT
 	push	{r6}
 	pop	{r6}
@@ -292,10 +292,10 @@ _else6:
 	bl	putchar
 #79 Ending PRINT_STATEMENT
 	b	_end5
-_end_label:
+_end5:
 #80 End IF_STATEMENT
 	b	_end4
-_:
+_else4:
 #81 Starting IF_STATEMENT'
 #82 Starting EXPRESSION of type >
 #83 Starting VARIABLE
@@ -351,10 +351,10 @@ _else6:
 	bl	putchar
 #95 Ending PRINT_STATEMENT
 	b	_end6
-_end_label:
+_end6:
 #96 End IF_STATEMENT
 	b	_end4
-_end_label:
+_end4:
 #97 End IF_STATEMENT
 #98 Starting RETURN_STATEMENT
 #99 Starting CONSTANT

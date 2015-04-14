@@ -134,7 +134,7 @@ _test:
 	pop	{fp}
 	pop	{pc}
 #39 End RETURN_STATEMENT
-_end_label:
+_end1:
 #40 End IF_STATEMENT
 #41 Starting IF_STATEMENT'
 #42 Starting CONSTANT
@@ -215,7 +215,7 @@ _end_label:
 	pop	{fp}
 	pop	{pc}
 #67 End RETURN_STATEMENT
-_end_label:
+_end2:
 #68 End IF_STATEMENT
 #69 Starting RETURN_STATEMENT
 #70 Starting EXPRESSION of type UMINUS

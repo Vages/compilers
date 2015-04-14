@@ -1,2 +1,0 @@
-testOutput/return.s: Assembler messages:
-testOutput/return.s:218: Error: symbol `_end_label' is already defined

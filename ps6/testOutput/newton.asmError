@@ -1,7 +1,0 @@
-/tmp/ccfP7W5e.o: In function `_improve':
-(.text+0x200): undefined reference to `_else1'
-/tmp/ccfP7W5e.o: In function `_improve':
-(.text+0x244): undefined reference to `_end1'
-/tmp/ccfP7W5e.o: In function `_':
-(.text+0x284): undefined reference to `_end1'
-collect2: error: ld returned 1 exit status

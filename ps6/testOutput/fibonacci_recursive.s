@@ -222,9 +222,9 @@ _fibonacci_number:
 	str	r0, [fp, #-4]
 	mov	fp, r1
 #68 End ASSIGNMENT_STATEMENT
-_end_label:
+_end2:
 #69 End IF_STATEMENT
-_end_label:
+_end1:
 #70 End IF_STATEMENT
 #71 Starting RETURN_STATEMENT
 #72 Starting VARIABLE

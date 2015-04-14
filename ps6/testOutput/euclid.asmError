@@ -1,3 +1,0 @@
-testOutput/euclid.s: Assembler messages:
-testOutput/euclid.s:279: Error: symbol `_' is already defined
-testOutput/euclid.s:294: Error: symbol `_end_label' is already defined
