@@ -651,7 +651,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     sprintf(start_label, "for_start%d", cur_cond);
     instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
-    root->children[0]->children[0]->generate(root->children[0]->children[0]); // Eirik: Get value of iteration variable at this point
+    root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
     root->children[1]->generate(root->children[1], scopedepth); // Eirik: Evaluate expression after "TO"
     
     instruction_add(POP, r2, NULL, 0, 0);
