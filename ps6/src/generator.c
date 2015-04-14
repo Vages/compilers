@@ -610,7 +610,7 @@ void gen_WHILE_STATEMENT ( node_t *root, int scopedepth )
     stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
     cur_cond = ++cond_i; // Eirik: New conditional scope.
 
-    char* start_label[80];
+    char start_label[80];
     sprintf(start_label, "while_start%d", cur_cond);
     instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
@@ -619,17 +619,17 @@ void gen_WHILE_STATEMENT ( node_t *root, int scopedepth )
  	instruction_add(POP, r1, NULL, 0, 0);
  	instruction_add(CMP, r1, r2, 0, 0);
 
- 	char* end_b_label[80];
+ 	char end_b_label[80];
  	sprintf(end_b_label, "_while_end%d", cur_cond);
  	instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
 
  	root->children[1]->generate(root->children[1], scopedepth);
 
- 	char* start_b_label[80];
+ 	char start_b_label[80];
     sprintf(start_b_label, "_while_start%d", cur_cond);
     instruction_add(B, STRDUP(start_b_label), NULL, 0, 0);
 
-    char* end_label[80];
+    char end_label[80];
     sprintf(end_label, "while_end%d", cur_cond);
     instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
 
@@ -647,7 +647,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
 
     root->children[0]->generate(root->children[0], scopedepth);
 
-    char* start_label[80];
+    char start_label[80];
     sprintf(start_label, "for_start%d", cur_cond);
     instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
@@ -658,7 +658,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     instruction_add(POP, r1, NULL, 0, 0);
     instruction_add(CMP, r1, r2, 0, 0); // Eirik: If the values are equal, the loop has finished its iteration.
     
-    char* end_b_label[80];
+    char end_b_label[80];
     sprintf(end_b_label, "_for_end%d", cur_cond);
     instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
 
@@ -674,11 +674,11 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
 	instruction_add(STR, r0, fp, 0, offset); // Store contents of r0 in the variable (frame pointer + offset)
 
     // Eirik: Branching back to the start
-    char* start_b_label[80];
+    char start_b_label[80];
     sprintf(start_b_label, "_for_start%d", cur_cond);
     instruction_add(BEQ, STRDUP(start_b_label), NULL, 0, 0);
 
-    char* end_label[80];
+    char end_label[80];
     sprintf(end_label, "for_end%d", cur_cond);
     instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
 
@@ -700,31 +700,31 @@ void gen_IF_STATEMENT ( node_t *root, int scopedepth )
  	instruction_add(CMP, r1, r2, 0, 0);
     if(root->n_children == 2){
     	/* Eirik: Jump to end-label if zero (false) */
-    	char* end_b_label[80];
+    	char end_b_label[80];
     	sprintf(end_b_label, "_end%d", cur_cond);
     	instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
     	root->children[1]->generate(root->children[1], scopedepth);
     	
-    	char* end_label[80];
+    	char end_label[80];
     	sprintf(end_label, "end%d", cur_cond);
     	instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
     } else {
-    	char* else_b_label[80];
+    	char else_b_label[80];
     	sprintf(else_b_label, "_else%d", cur_cond);
     	instruction_add(BEQ, STRDUP(else_b_label), NULL, 0, 0);
     	root->children[1]->generate(root->children[1], scopedepth);
     	
-    	char* end_b_label[80];
+    	char end_b_label[80];
     	sprintf(end_b_label, "_end%d", cur_cond);
     	instruction_add(B, STRDUP(end_b_label), NULL, 0, 0);
 
-    	char* else_label[80];
+    	char else_label[80];
     	sprintf(else_label, "else%d", cur_cond);
     	instruction_add(LABEL, STRDUP(else_label), NULL, 0, 0);
     	root->children[2]->generate(root->children[2], scopedepth);
     	instruction_add(B, STRDUP(end_b_label), NULL, 0, 0);
 
-    	char* end_label[80];
+    	char end_label[80];
     	sprintf(end_label, "end%d", cur_cond);
     	instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
     }
