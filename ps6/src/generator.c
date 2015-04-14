@@ -97,7 +97,7 @@ int stack_empty(stack * s)
 int cond_i = 0; // Eirik: Used for enumerating conditionals
 int cur_cond = 0; // Eirik: Holds value of current conditional
 stack* cond_stack = (stack *) malloc(sizeof(stack));
-cond_stack->top = NULL;
+cond_stack.top = NULL;
 
 extern int outputStage; // This variable is located in vslc.c
 
