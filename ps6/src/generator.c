@@ -610,7 +610,28 @@ void gen_WHILE_STATEMENT ( node_t *root, int scopedepth )
     stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
     cur_cond = ++cond_i; // Eirik: New conditional scope.
 
+    char* start_label[80];
+    sprintf(start_label, "while_start%d", cur_cond);
+    instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
+    root->children[0]->generate(root->children[0], scopedepth);
+ 	instruction_add(MOV, r2, STRDUP("#0"), 0, 0);
+ 	instruction_add(POP, r1, NULL, 0, 0);
+ 	instruction_add(CMP, r1, r2, 0, 0);
+
+ 	char* end_b_label[80];
+ 	sprintf(end_b_label, "_while_end%d", cur_cond);
+ 	instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
+
+ 	root->children[1]->generate(root->children[1], scopedepth);
+
+ 	char* start_b_label[80];
+    sprintf(start_b_label, "_while_start%d", cur_cond);
+    instruction_add(B, STRDUP(start_b_label), NULL, 0, 0);
+
+    char* end_label[80];
+    sprintf(end_label, "while_end%d", cur_cond);
+    instruction_add(LABEL, STRDUP(end_label), NULL, 0, 0);
 
     cur_cond = stack_pull(cond_stack); // Eirik: Restore old scope.
 
