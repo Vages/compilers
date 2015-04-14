@@ -662,11 +662,11 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     sprintf(end_b_label, "_for_end%d", cur_cond);
     instruction_add(BEQ, STRDUP(end_b_label), NULL, 0, 0);
 
-    root->children[2]->generate(root->children[2], scopedepth); // Generate the loop body
+    root->children[2]->generate(root->children[2], scopedepth); // Eirik: Generate the loop body
 
     // Eirik: Incrementing the variable
     root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
-    instruction_add(STR, r2, STRDUP("#1"), 0, 0);
+    instruction_add(MOV, r2, STRDUP("#1"), 0, 0);
     instruction_add(POP, r1, NULL, 0, 0);
     instruction_add3(ADD, r0, r1, r2); // Eirik: Increment value by one.
 
