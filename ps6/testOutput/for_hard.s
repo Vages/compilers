@@ -150,7 +150,7 @@ _for_start3:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-12]
-	beq	_for_start3
+	b	_for_start3
 _for_end3:
 #46 End FOR_STATEMENT
 #47 Starting VARIABLE
@@ -163,7 +163,7 @@ _for_end3:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-8]
-	beq	_for_start2
+	b	_for_start2
 _for_end2:
 #49 End FOR_STATEMENT
 #50 Starting VARIABLE
@@ -176,7 +176,7 @@ _for_end2:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-4]
-	beq	_for_start1
+	b	_for_start1
 _for_end1:
 #52 End FOR_STATEMENT
 	mov	sp, fp
@@ -259,7 +259,7 @@ _for_start4:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #16]
-	beq	_for_start4
+	b	_for_start4
 _for_end4:
 #74 End FOR_STATEMENT
 	mov	sp, fp

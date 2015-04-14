@@ -76,7 +76,7 @@ _for_start1:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-4]
-	beq	_for_start1
+	b	_for_start1
 _for_end1:
 #19 End FOR_STATEMENT
 	mov	sp, fp

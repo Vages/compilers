@@ -320,7 +320,7 @@ _for_start2:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-16]
-	beq	_for_start2
+	b	_for_start2
 _for_end2:
 #82 End FOR_STATEMENT
 #83 Starting VARIABLE
@@ -333,7 +333,7 @@ _for_end2:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-12]
-	beq	_for_start1
+	b	_for_start1
 _for_end1:
 #85 End FOR_STATEMENT
 #86 Starting DECLARATION: adding space on stack
@@ -677,7 +677,7 @@ _for_start5:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-24]
-	beq	_for_start5
+	b	_for_start5
 _for_end5:
 #179 End FOR_STATEMENT
 #180 Starting VARIABLE
@@ -690,7 +690,7 @@ _for_end5:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-16]
-	beq	_for_start4
+	b	_for_start4
 _for_end4:
 #182 End FOR_STATEMENT
 #183 Starting VARIABLE
@@ -703,7 +703,7 @@ _for_end4:
 	pop	{r1}
 	add	r0, r1, r2
 	str	r0, [fp, #-12]
-	beq	_for_start3
+	b	_for_start3
 _for_end3:
 #185 End FOR_STATEMENT
 #186 Starting PRINT_STATEMENT
