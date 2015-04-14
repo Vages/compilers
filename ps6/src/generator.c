@@ -96,7 +96,7 @@ int stack_empty(stack * s)
 
 static int cond_i = 0; // Eirik: Used for enumerating conditionals
 static int cur_cond = 0; // Eirik: Holds value of current conditional
-static stack cond_stack = stack_new(); // Eirik: Initialize stack 
+static stack* cond_stack = stack_new(); // Eirik: Initialize stack 
 
 extern int outputStage; // This variable is located in vslc.c
 
