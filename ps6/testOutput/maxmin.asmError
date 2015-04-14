@@ -1,0 +1,4 @@
+testOutput/maxmin.s: Assembler messages:
+testOutput/maxmin.s:261: Error: symbol `_end_label' is already defined
+testOutput/maxmin.s:320: Error: symbol `_end_label' is already defined
+testOutput/maxmin.s:359: Error: symbol `_end_label' is already defined

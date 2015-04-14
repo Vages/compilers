@@ -1,0 +1,2 @@
+testOutput/if_simple.s: Assembler messages:
+testOutput/if_simple.s:74: Error: symbol `_end_label' is already defined

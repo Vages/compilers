@@ -1,0 +1,7 @@
+/tmp/cciVy4BR.o: In function `_func1':
+(.text+0x234): undefined reference to `_else1'
+/tmp/cciVy4BR.o: In function `_func1':
+(.text+0x258): undefined reference to `_end1'
+/tmp/cciVy4BR.o: In function `_':
+(.text+0x27c): undefined reference to `_end1'
+collect2: error: ld returned 1 exit status

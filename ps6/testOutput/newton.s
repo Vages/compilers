@@ -186,11 +186,85 @@ _improve:
 	mov	fp, r1
 #54 End ASSIGNMENT_STATEMENT
 #55 Starting IF_STATEMENT'
-#56 End IF_STATEMENT
+#56 Starting EXPRESSION of type -
+#57 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#58 End VARIABLE next, depth difference: 0, stack offset: -4
+#59 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#60 End VARIABLE estimate, depth difference: 0, stack offset: 8
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#61 Ending EXPRESSION of type -
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_else1
+#62 Starting RETURN_STATEMENT
+#63 Starting EXPRESSION of type FUNC_CALL
+#64 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
+	push	{r0}
+#65 End VARIABLE n, depth difference: 0, stack offset: 12
+#66 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#67 End VARIABLE next, depth difference: 0, stack offset: -4
+	bl	_improve
+	add	sp, sp, $4
+	add	sp, sp, $4
+	push	{r0}
+#68 Ending EXPRESSION of type (null)
+#69 Ending EXPRESSION of type FUNC_CALL
+	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#57 Leaving FUNCTION (improve) with depth 2
+#70 End RETURN_STATEMENT
+	b	_end1
+_:
+#71 Starting RETURN_STATEMENT
+#72 Starting EXPRESSION of type -
+#73 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#74 End VARIABLE next, depth difference: 0, stack offset: -4
+#75 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#76 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#77 Ending EXPRESSION of type -
+	pop	{r0}
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#78 End RETURN_STATEMENT
+	b	_end1
+_end_label:
+#79 End IF_STATEMENT
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#80 Leaving FUNCTION (improve) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -232,7 +306,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_newton
-#58 End PROGRAM
+#81 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

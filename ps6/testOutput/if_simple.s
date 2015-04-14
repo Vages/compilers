@@ -22,13 +22,61 @@ _main:
 	push	{fp}
 	mov	fp, sp
 #2 Starting IF_STATEMENT'
-#3 End IF_STATEMENT
-#4 Starting IF_STATEMENT'
-#5 End IF_STATEMENT
+#3 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#4 End CONSTANT
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end1
+#5 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#6 Starting CONSTANT
+	movw	r0, #:lower16:.STRING0
+	movt	r0, #:upper16:.STRING0
+	push	{r0}
+#7 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#8 Ending PRINT_STATEMENT
+_end_label:
+#9 End IF_STATEMENT
+#10 Starting IF_STATEMENT'
+#11 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#12 End CONSTANT
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end2
+#13 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#14 Starting CONSTANT
+	movw	r0, #:lower16:.STRING1
+	movt	r0, #:upper16:.STRING1
+	push	{r0}
+#15 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#16 Ending PRINT_STATEMENT
+_end_label:
+#17 End IF_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#6 Leaving FUNCTION (main) with depth 2
+#18 Leaving FUNCTION (main) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -70,7 +118,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_main
-#7 End PROGRAM
+#19 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

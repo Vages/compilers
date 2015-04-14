@@ -1,0 +1,9 @@
+testOutput/if_hard.s: Assembler messages:
+testOutput/if_hard.s:195: Error: symbol `_end_label' is already defined
+testOutput/if_hard.s:214: Error: symbol `_end_label' is already defined
+testOutput/if_hard.s:279: Error: symbol `_else6' is already defined
+testOutput/if_hard.s:295: Error: symbol `_end_label' is already defined
+testOutput/if_hard.s:298: Error: symbol `_' is already defined
+testOutput/if_hard.s:338: Error: symbol `_else6' is already defined
+testOutput/if_hard.s:354: Error: symbol `_end_label' is already defined
+testOutput/if_hard.s:357: Error: symbol `_end_label' is already defined

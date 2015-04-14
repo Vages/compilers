@@ -120,23 +120,128 @@ _fibonacci_number:
 	mov	fp, r1
 #32 End ASSIGNMENT_STATEMENT
 #33 Starting IF_STATEMENT'
-#34 End IF_STATEMENT
-#35 Starting RETURN_STATEMENT
-#36 Starting VARIABLE
+#34 Starting EXPRESSION of type -
+#35 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#36 End VARIABLE n, depth difference: 0, stack offset: 8
+#37 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#38 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#39 Ending EXPRESSION of type -
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end1
+#40 Starting IF_STATEMENT'
+#41 Starting EXPRESSION of type -
+#42 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#43 End VARIABLE n, depth difference: 0, stack offset: 8
+#44 Starting CONSTANT
+	movw	r0, #:lower16:2
+	movt	r0, #:upper16:2
+	push	{r0}
+#45 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#46 Ending EXPRESSION of type -
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end2
+#47 Starting ASSIGNMENT_STATEMENT
+#48 Starting EXPRESSION of type +
+#49 Starting EXPRESSION of type FUNC_CALL
+#50 Starting EXPRESSION of type -
+#51 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#52 End VARIABLE n, depth difference: 0, stack offset: 8
+#53 Starting CONSTANT
+	movw	r0, #:lower16:1
+	movt	r0, #:upper16:1
+	push	{r0}
+#54 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#55 Ending EXPRESSION of type -
+	bl	_fibonacci_number
+	add	sp, sp, $4
+	push	{r0}
+#56 Ending EXPRESSION of type (null)
+#57 Ending EXPRESSION of type FUNC_CALL
+#58 Starting EXPRESSION of type FUNC_CALL
+#59 Starting EXPRESSION of type -
+#60 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#61 End VARIABLE n, depth difference: 0, stack offset: 8
+#62 Starting CONSTANT
+	movw	r0, #:lower16:2
+	movt	r0, #:upper16:2
+	push	{r0}
+#63 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	sub	r0, r1, r2
+	push	{r0}
+#64 Ending EXPRESSION of type -
+	bl	_fibonacci_number
+	add	sp, sp, $4
+	push	{r0}
+#65 Ending EXPRESSION of type (null)
+#66 Ending EXPRESSION of type FUNC_CALL
+	pop	{r2}
+	pop	{r1}
+	add	r0, r1, r2
+	push	{r0}
+#67 Ending EXPRESSION of type +
+	push	{fp}
+	pop	{r1}
+	pop	{r0}
+	str	r0, [fp, #-4]
+	mov	fp, r1
+#68 End ASSIGNMENT_STATEMENT
+_end_label:
+#69 End IF_STATEMENT
+_end_label:
+#70 End IF_STATEMENT
+#71 Starting RETURN_STATEMENT
+#72 Starting VARIABLE
 	push	{fp}
 	ldr	r0, [fp, #-4]
 	pop	{fp}
 	push	{r0}
-#37 End VARIABLE y, depth difference: 0, stack offset: -4
+#73 End VARIABLE y, depth difference: 0, stack offset: -4
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#38 End RETURN_STATEMENT
+#74 End RETURN_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#39 Leaving FUNCTION (fibonacci_number) with depth 2
+#75 Leaving FUNCTION (fibonacci_number) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -178,7 +283,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_fibonacci_recursive
-#40 End PROGRAM
+#76 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

@@ -1,0 +1,3 @@
+testOutput/function_hard.s: Assembler messages:
+testOutput/function_hard.s:374: Error: symbol `_end_label' is already defined
+testOutput/function_hard.s:517: Error: symbol `_end_label' is already defined

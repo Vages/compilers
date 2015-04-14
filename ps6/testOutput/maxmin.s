@@ -183,48 +183,196 @@ _max:
 	push	{fp}
 	mov	fp, sp
 #57 Starting IF_STATEMENT'
-#58 End IF_STATEMENT
-#59 Starting IF_STATEMENT'
-#60 End IF_STATEMENT
-#61 Starting RETURN_STATEMENT
-#62 Starting CONSTANT
-	movw	r0, #:lower16:0
-	movt	r0, #:upper16:0
+#58 Starting EXPRESSION of type >
+#59 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
 	push	{r0}
-#63 End CONSTANT
+#60 End VARIABLE a, depth difference: 0, stack offset: 12
+#61 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#62 End VARIABLE b, depth difference: 0, stack offset: 8
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#63 Ending EXPRESSION of type >
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end1
+#64 Starting RETURN_STATEMENT
+#65 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
+	push	{r0}
+#66 End VARIABLE a, depth difference: 0, stack offset: 12
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#64 End RETURN_STATEMENT
+#67 End RETURN_STATEMENT
+_end_label:
+#68 End IF_STATEMENT
+#69 Starting IF_STATEMENT'
+#70 Starting EXPRESSION of type >
+#71 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#72 End VARIABLE b, depth difference: 0, stack offset: 8
+#73 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
+	push	{r0}
+#74 End VARIABLE a, depth difference: 0, stack offset: 12
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#75 Ending EXPRESSION of type >
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end2
+#76 Starting RETURN_STATEMENT
+#77 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#78 End VARIABLE b, depth difference: 0, stack offset: 8
+	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#65 Leaving FUNCTION (max) with depth 2
-#66 Starting FUNCTION (min) with depth 2
+#79 End RETURN_STATEMENT
+_end_label:
+#80 End IF_STATEMENT
+#81 Starting RETURN_STATEMENT
+#82 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#83 End CONSTANT
+	pop	{r0}
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#84 End RETURN_STATEMENT
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#85 Leaving FUNCTION (max) with depth 2
+#86 Starting FUNCTION (min) with depth 2
 _min:
 	push	{lr}
 	push	{fp}
 	mov	fp, sp
-#67 Starting IF_STATEMENT'
-#68 End IF_STATEMENT
-#69 Starting IF_STATEMENT'
-#70 End IF_STATEMENT
-#71 Starting RETURN_STATEMENT
-#72 Starting CONSTANT
-	movw	r0, #:lower16:0
-	movt	r0, #:upper16:0
+#87 Starting IF_STATEMENT'
+#88 Starting EXPRESSION of type <
+#89 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
 	push	{r0}
-#73 End CONSTANT
+#90 End VARIABLE a, depth difference: 0, stack offset: 12
+#91 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#92 End VARIABLE b, depth difference: 0, stack offset: 8
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movlt	 r0, #1
+	push	{r0}
+#93 Ending EXPRESSION of type <
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end3
+#94 Starting RETURN_STATEMENT
+#95 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
+	push	{r0}
+#96 End VARIABLE a, depth difference: 0, stack offset: 12
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#74 End RETURN_STATEMENT
+#97 End RETURN_STATEMENT
+_end_label:
+#98 End IF_STATEMENT
+#99 Starting IF_STATEMENT'
+#100 Starting EXPRESSION of type <
+#101 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#102 End VARIABLE b, depth difference: 0, stack offset: 8
+#103 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #12]
+	pop	{fp}
+	push	{r0}
+#104 End VARIABLE a, depth difference: 0, stack offset: 12
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movlt	 r0, #1
+	push	{r0}
+#105 Ending EXPRESSION of type <
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end4
+#106 Starting RETURN_STATEMENT
+#107 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #8]
+	pop	{fp}
+	push	{r0}
+#108 End VARIABLE b, depth difference: 0, stack offset: 8
+	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#75 Leaving FUNCTION (min) with depth 2
+#109 End RETURN_STATEMENT
+_end_label:
+#110 End IF_STATEMENT
+#111 Starting RETURN_STATEMENT
+#112 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#113 End CONSTANT
+	pop	{r0}
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#114 End RETURN_STATEMENT
+	mov	sp, fp
+	pop	{fp}
+	pop	{pc}
+#115 Leaving FUNCTION (min) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -266,7 +414,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_maxmin
-#76 End PROGRAM
+#116 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit

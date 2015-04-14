@@ -69,26 +69,308 @@ _while_test:
 	mov	fp, r1
 #15 End ASSIGNMENT_STATEMENT
 #16 Starting IF_STATEMENT'
-#17 End IF_STATEMENT
-#18 Starting IF_STATEMENT'
-#19 End IF_STATEMENT
-#20 Starting IF_STATEMENT'
-#21 End IF_STATEMENT
-#22 Starting RETURN_STATEMENT
-#23 Starting CONSTANT
+#17 Starting EXPRESSION of type !=
+#18 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#19 End VARIABLE a, depth difference: 0, stack offset: -4
+#20 Starting CONSTANT
+	movw	r0, #:lower16:10
+	movt	r0, #:upper16:10
+	push	{r0}
+#21 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movne	 r0, #1
+	push	{r0}
+#22 Ending EXPRESSION of type !=
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_end1
+#23 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#24 Starting CONSTANT
+	movw	r0, #:lower16:.STRING0
+	movt	r0, #:upper16:.STRING0
+	push	{r0}
+#25 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#26 Ending PRINT_STATEMENT
+_end_label:
+#27 End IF_STATEMENT
+#28 Starting IF_STATEMENT'
+#29 Starting EXPRESSION of type >=
+#30 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#31 End VARIABLE a, depth difference: 0, stack offset: -4
+#32 Starting CONSTANT
+	movw	r0, #:lower16:10
+	movt	r0, #:upper16:10
+	push	{r0}
+#33 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movge	 r0, #1
+	push	{r0}
+#34 Ending EXPRESSION of type >=
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_else2
+#35 Starting IF_STATEMENT'
+#36 Starting EXPRESSION of type !=
+#37 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#38 End VARIABLE b, depth difference: 0, stack offset: -8
+#39 Starting EXPRESSION of type UMINUS
+#40 Starting CONSTANT
+	movw	r0, #:lower16:15
+	movt	r0, #:upper16:15
+	push	{r0}
+#41 End CONSTANT
+	pop	{r1}
+	neg	r0, r1
+	push	{r0}
+#42 Ending EXPRESSION of type UMINUS
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movne	 r0, #1
+	push	{r0}
+#43 Ending EXPRESSION of type !=
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_else3
+#44 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#45 Starting CONSTANT
+	movw	r0, #:lower16:.STRING1
+	movt	r0, #:upper16:.STRING1
+	push	{r0}
+#46 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#47 Ending PRINT_STATEMENT
+	b	_end3
+_else6:
+#48 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#49 Starting CONSTANT
+	movw	r0, #:lower16:.STRING2
+	movt	r0, #:upper16:.STRING2
+	push	{r0}
+#50 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#51 Ending PRINT_STATEMENT
+	b	_end3
+_end_label:
+#52 End IF_STATEMENT
+	b	_end2
+_:
+#53 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#54 Starting CONSTANT
+	movw	r0, #:lower16:.STRING3
+	movt	r0, #:upper16:.STRING3
+	push	{r0}
+#55 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#56 Ending PRINT_STATEMENT
+	b	_end2
+_end_label:
+#57 End IF_STATEMENT
+#58 Starting IF_STATEMENT'
+#59 Starting EXPRESSION of type >
+#60 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-4]
+	pop	{fp}
+	push	{r0}
+#61 End VARIABLE a, depth difference: 0, stack offset: -4
+#62 Starting CONSTANT
 	movw	r0, #:lower16:0
 	movt	r0, #:upper16:0
 	push	{r0}
-#24 End CONSTANT
+#63 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#64 Ending EXPRESSION of type >
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_else4
+#65 Starting IF_STATEMENT'
+#66 Starting EXPRESSION of type >
+#67 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#68 End VARIABLE b, depth difference: 0, stack offset: -8
+#69 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#70 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#71 Ending EXPRESSION of type >
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_else5
+#72 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#73 Starting CONSTANT
+	movw	r0, #:lower16:.STRING4
+	movt	r0, #:upper16:.STRING4
+	push	{r0}
+#74 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#75 Ending PRINT_STATEMENT
+	b	_end5
+_else6:
+#76 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#77 Starting CONSTANT
+	movw	r0, #:lower16:.STRING5
+	movt	r0, #:upper16:.STRING5
+	push	{r0}
+#78 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#79 Ending PRINT_STATEMENT
+	b	_end5
+_end_label:
+#80 End IF_STATEMENT
+	b	_end4
+_:
+#81 Starting IF_STATEMENT'
+#82 Starting EXPRESSION of type >
+#83 Starting VARIABLE
+	push	{fp}
+	ldr	r0, [fp, #-8]
+	pop	{fp}
+	push	{r0}
+#84 End VARIABLE b, depth difference: 0, stack offset: -8
+#85 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#86 End CONSTANT
+	pop	{r2}
+	pop	{r1}
+	mov	r0, #0
+	cmp	r1,r2
+	movgt	 r0, #1
+	push	{r0}
+#87 Ending EXPRESSION of type >
+	mov	r2, #0
+	pop	{r1}
+	cmp	r1,r2
+	beq	_else6
+#88 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#89 Starting CONSTANT
+	movw	r0, #:lower16:.STRING6
+	movt	r0, #:upper16:.STRING6
+	push	{r0}
+#90 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#91 Ending PRINT_STATEMENT
+	b	_end6
+_else6:
+#92 Starting PRINT_STATEMENT
+	push	{r6}
+	pop	{r6}
+#93 Starting CONSTANT
+	movw	r0, #:lower16:.STRING7
+	movt	r0, #:upper16:.STRING7
+	push	{r0}
+#94 End CONSTANT
+	pop	{r0}
+	bl	printf
+	movw	r0, #:lower16:0x0A
+	movt	r0, #:upper16:0x0A
+	bl	putchar
+#95 Ending PRINT_STATEMENT
+	b	_end6
+_end_label:
+#96 End IF_STATEMENT
+	b	_end4
+_end_label:
+#97 End IF_STATEMENT
+#98 Starting RETURN_STATEMENT
+#99 Starting CONSTANT
+	movw	r0, #:lower16:0
+	movt	r0, #:upper16:0
+	push	{r0}
+#100 End CONSTANT
 	pop	{r0}
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#25 End RETURN_STATEMENT
+#101 End RETURN_STATEMENT
 	mov	sp, fp
 	pop	{fp}
 	pop	{pc}
-#26 Leaving FUNCTION (while_test) with depth 2
+#102 Leaving FUNCTION (while_test) with depth 2
 debugprint:
 	push {r0-r11, lr}
 	movw	r0, #:lower16:.DEBUG
@@ -130,7 +412,7 @@ pusharg:
 	bne	pusharg
 noargs:
 	bl	_while_test
-#27 End PROGRAM
+#103 End PROGRAM
 	mov	sp, fp
 	pop	{fp}
 	bl	exit
