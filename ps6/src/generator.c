@@ -652,7 +652,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     instruction_add(LABEL, STRDUP(start_label), NULL, 0, 0);
 
     root->children[0]->children[0]->generate(root->children[0]->children[0]); // Eirik: Get value of iteration variable at this point
-    root->children[1]->generate(root->children[1]); // Eirik: Evaluate expression after "TO"
+    root->children[1]->generate(root->children[1], scopedepth); // Eirik: Evaluate expression after "TO"
     
     instruction_add(POP, r2, NULL, 0, 0);
     instruction_add(POP, r1, NULL, 0, 0);
@@ -665,7 +665,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     root->children[2]->generate(root->children[2], scopedepth); // Generate the loop body
 
     // Eirik: Incrementing the variable
-    root->children[0]->children[0]->generate(root->children[0]->children[0]); // Eirik: Get value of iteration variable at this point
+    root->children[0]->children[0]->generate(root->children[0]->children[0], scopedepth); // Eirik: Get value of iteration variable at this point
     instruction_add(STR, r2, STRDUP("#1"), 0, 0);
     instruction_add(POP, r1, NULL, 0, 0);
     instruction_add3(ADD, r0, r1, r2); // Eirik: Increment value by one.
