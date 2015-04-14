@@ -645,6 +645,7 @@ void gen_FOR_STATEMENT ( node_t *root, int scopedepth )
     stack_put(cond_stack, cur_cond); // Eirik: Push outer conditional scope onto stack.
     cur_cond = ++cond_i; // Eirik: New conditional scope.
 
+    // Eirik: Generate the assignment statement for iteration variable
     root->children[0]->generate(root->children[0], scopedepth);
 
     char start_label[80];
